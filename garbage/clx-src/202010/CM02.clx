@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9737c1a4" version="1.0.0.0">
+  <head std:sid="head-cd2a9ab5">
+    <title>CM02</title>
+    <screen std:sid="screen-9d807087" id="content-default" name="content-default" minwidth="1324px" width="1324px" height="768px" customHeight="600" customWidth="800" active="true"/>
+    <screen std:sid="screen-a6028347" id="content-tablet" name="content-tablet" maxwidth="1323px" width="700px" height="768px" active="false"/>
+    <cl:model std:sid="model-50d4c9be">
+      <cl:datamap std:sid="d-map-3c450d2f" id="input">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-92c1ab39" name="trscDvCd" defaultvalue=""/>
+          <cl:datacolumn std:sid="d-column-243bf1af" name="userId"/>
+          <cl:datacolumn std:sid="d-column-0d831da7" name="trscBrNo"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:dataset comment="data for manager combobox" std:sid="d-set-4949669a" id="grid01">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-537b755e" name="userId"/>
+          <cl:datacolumn std:sid="d-column-db624923" name="usrLocalNm"/>
+          <cl:datacolumn std:sid="d-column-d6a5595b" name="ipAdr"/>
+          <cl:datacolumn std:sid="d-column-e74a8684" name="mngrId"/>
+          <cl:datacolumn std:sid="d-column-038210d9" name="mngrIpAdr"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset comment="data for grid" std:sid="d-set-b8eb2f99" id="grid02">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="User ID" std:sid="d-column-c34a1369" name="userId"/>
+          <cl:datacolumn comment="Manager ID" std:sid="d-column-939970c7" name="mngrId1"/>
+          <cl:datacolumn std:sid="d-column-fa76521a" name="mngrUsrNm1"/>
+          <cl:datacolumn std:sid="d-column-ba5d712e" name="mngrIpAdr1"/>
+          <cl:datacolumn std:sid="d-column-665e9302" name="mngrId2"/>
+          <cl:datacolumn std:sid="d-column-4fe66ba2" name="mngrUsrNm2"/>
+          <cl:datacolumn std:sid="d-column-902f810e" name="mngrIpAdr2"/>
+          <cl:datacolumn std:sid="d-column-9b46bd18" name="mngrId3"/>
+          <cl:datacolumn std:sid="d-column-bbdca8d1" name="mngrUsrNm3"/>
+          <cl:datacolumn std:sid="d-column-32c08c39" name="mngrIpAdr3"/>
+          <cl:datacolumn std:sid="d-column-f4383a52" name="refnUserId"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-bb9c898a" id="subList" action="/CMO0200A.SVC" mediatype="application/json">
+        <cl:requestdata dataid="input"/>
+        <cl:responsedata dataid="grid02" alias="grid02" isadd="true"/>
+        <cl:responsedata dataid="grid01"/>
+        <cl:responsedata dataid="grid04"/>
+      </cl:submission>
+      <cl:matrix-submission std:sid="m-submission-83019c2f" id="subExec" async="true" withCredentials="false" method="post" action="/CMO0200A.SVC">
+        <cl:matrix>
+          <cl:request type="object">
+            <cl:data key="input">
+              <cl:complex type="object">
+                <cl:data key="trscBrNo">
+                  <cl:pathref dataControl="input" columnName="trscBrNo"/>
+                </cl:data>
+                <cl:data key="trscDvCd">
+                  <cl:pathref dataControl="input" columnName="trscDvCd"/>
+                </cl:data>
+                <cl:data key="grid01">
+                  <cl:complex dataControl="grid02" type="array">
+                    <cl:data key="userId">
+                      <cl:pathref columnName="userId"/>
+                    </cl:data>
+                    <cl:data key="mngrId1">
+                      <cl:pathref columnName="mngrId1"/>
+                    </cl:data>
+                    <cl:data key="mngrUsrNm1">
+                      <cl:pathref columnName="mngrUsrNm1"/>
+                    </cl:data>
+                    <cl:data key="mngrIpAdr1">
+                      <cl:pathref columnName="mngrIpAdr1"/>
+                    </cl:data>
+                    <cl:data key="mngrId2">
+                      <cl:pathref columnName="mngrId2"/>
+                    </cl:data>
+                    <cl:data key="mngrUsrNm2">
+                      <cl:pathref columnName="mngrUsrNm2"/>
+                    </cl:data>
+                    <cl:data key="mngrIpAdr2">
+                      <cl:pathref columnName="mngrIpAdr2"/>
+                    </cl:data>
+                    <cl:data key="mngrId3">
+                      <cl:pathref columnName="mngrId3"/>
+                    </cl:data>
+                    <cl:data key="mngrUsrNm3">
+                      <cl:pathref columnName="mngrUsrNm3"/>
+                    </cl:data>
+                    <cl:data key="mngrIpAdr3">
+                      <cl:pathref columnName="mngrIpAdr3"/>
+                    </cl:data>
+                    <cl:data key="refnUserId">
+                      <cl:pathref columnName="refnUserId"/>
+                    </cl:data>
+                  </cl:complex>
+                </cl:data>
+              </cl:complex>
+            </cl:data>
+          </cl:request>
+          <cl:response type="object"/>
+        </cl:matrix>
+      </cl:matrix-submission>
+      <cl:datamap std:sid="d-map-e3c5b231" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="User ID" std:sid="d-column-948935fe" name="userId"/>
+          <cl:datacolumn comment="Manager ID" std:sid="d-column-a4461ca1" name="mngrId1"/>
+          <cl:datacolumn std:sid="d-column-eb3ab7b3" name="mngrUsrNm1"/>
+          <cl:datacolumn std:sid="d-column-36ea1970" name="mngrIpAdr1"/>
+          <cl:datacolumn std:sid="d-column-3da9434a" name="mngrId2"/>
+          <cl:datacolumn std:sid="d-column-916b6129" name="mngrUsrNm2"/>
+          <cl:datacolumn std:sid="d-column-6e10bfbf" name="mngrIpAdr2"/>
+          <cl:datacolumn std:sid="d-column-51c073f0" name="mngrId3"/>
+          <cl:datacolumn std:sid="d-column-5de270a8" name="mngrUsrNm3"/>
+          <cl:datacolumn std:sid="d-column-077d971a" name="mngrIpAdr3"/>
+          <cl:datacolumn std:sid="d-column-ce95448e" name="refnUserId"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:dataset comment="data for refnUserId" std:sid="d-set-a2adcec2" id="grid04">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="User ID" std:sid="d-column-ffcda233" name="userId"/>
+          <cl:datacolumn comment="Manager ID" std:sid="d-column-26cadc21" name="mngrId1"/>
+          <cl:datacolumn std:sid="d-column-68dadc17" name="mngrUsrNm1"/>
+          <cl:datacolumn std:sid="d-column-430063f6" name="mngrIpAdr1"/>
+          <cl:datacolumn std:sid="d-column-73c412c4" name="mngrId2"/>
+          <cl:datacolumn std:sid="d-column-116c3cc4" name="mngrUsrNm2"/>
+          <cl:datacolumn std:sid="d-column-18fbc4d6" name="mngrIpAdr2"/>
+          <cl:datacolumn std:sid="d-column-f0396369" name="mngrId3"/>
+          <cl:datacolumn std:sid="d-column-accea43d" name="mngrUsrNm3"/>
+          <cl:datacolumn std:sid="d-column-f1e91cbb" name="mngrIpAdr3"/>
+          <cl:datacolumn std:sid="d-column-edd13e63" name="refnUserId"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-7cdf4bb8" style="top:0px; left:0px; width:800px; font-size:12px; height:600px;">
+    <cl:listener std:sid="listener-dd803ad4" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-8cebd2ea">
+      <cl:responsivexylayoutdata std:sid="rxyl-data-cdde9c7b">
+        <cl:xylayoutdata std:sid="sxyl-data-94a1c1d0" top="10px" left="10px" width="1004px" height="748px" horizontalAnchor="LEFT" verticalAnchor="TOP" screenid="content-default"/>
+        <cl:xylayoutdata std:sid="sxyl-data-0d5a8257" top="10px" right="5px" left="5px" height="748px" horizontalAnchor="BOTH" verticalAnchor="TOP" screenid="content-tablet"/>
+      </cl:responsivexylayoutdata>
+      <cl:group std:sid="group-83b566ce" id="srch" class="search-box">
+        <cl:verticaldata std:sid="v-data-dc613f24" width="924px" height="45px" autosize="none"/>
+        <cl:button std:sid="button-535b1cad">
+          <cl:listener std:sid="listener-e327bb15" name="click" handler="onButtonClick"/>
+          <cl:langbind property="value" category="PROPERTY" keypath="srch"/>
+          <cl:formdata std:sid="f-data-a9d906ae" halign="CENTER" valign="CENTER" row="0" col="12"/>
+        </cl:button>
+        <cl:output std:sid="output-5cac395e" class="label pr-1">
+          <cl:langbind property="value" category="PROPERTY" keypath="trscBrNo_s1"/>
+          <cl:formdata std:sid="f-data-43cbbbfd" row="0" col="0"/>
+        </cl:output>
+        <cl:combobox std:sid="c-box-b2ed2597" id="cmbTrscBrNo" class="required">
+          <cl:attribute name="dvCd" value="BR_CD:0000"/>
+          <cl:attribute name="required" value="Y"/>
+          <cl:datamapbind property="value" datacontrolid="input" columnname="trscBrNo"/>
+          <cl:formdata std:sid="f-data-d9556530" row="0" col="1" rowspan="1" colspan="3"/>
+        </cl:combobox>
+        <cl:output std:sid="output-f7af1f53" class="label pr-1">
+          <cl:langbind property="value" category="PROPERTY" keypath="userId"/>
+          <cl:formdata std:sid="f-data-92ab5650" row="0" col="4"/>
+        </cl:output>
+        <cl:searchinput std:sid="s-input-e6cf1624" id="ipbUserId" style="font-family:sans-serif;">
+          <cl:listener std:sid="listener-db9df188" name="search" handler="onInpUserIdClick"/>
+          <cl:datamapbind property="value" datacontrolid="input" columnname="userId"/>
+          <cl:formdata std:sid="f-data-77acd87d" row="0" col="5" rowspan="1" colspan="3"/>
+        </cl:searchinput>
+        <cl:formlayout std:sid="f-layout-5a24ab02" top-margin="1fr" right-margin="5px" bottom-margin="1fr" left-margin="5px">
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="140" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:grid std:sid="grid-4d93b143" id="grd1" readonly="true" datasetid="grid02">
+        <cl:listener std:sid="listener-728f4cf1" name="selection-change" handler="onGrid2SelectionChange"/>
+        <cl:verticaldata std:sid="v-data-71756551" width="924px" height="145px" autosize="none"/>
+        <cl:gridcolumn std:sid="g-column-66d53d83"/>
+        <cl:gridcolumn std:sid="g-column-2260269c"/>
+        <cl:gridcolumn std:sid="g-column-364c57c5"/>
+        <cl:gridcolumn std:sid="g-column-f4b8a09a"/>
+        <cl:gridcolumn std:sid="g-column-c6ab28c6"/>
+        <cl:gridcolumn std:sid="g-column-079dce12"/>
+        <cl:gridcolumn std:sid="g-column-47e495d1"/>
+        <cl:gridcolumn std:sid="g-column-92a2d8f4"/>
+        <cl:gridheader std:sid="gh-band-b75d5c83">
+          <cl:gridrow std:sid="g-row-c63e2e56"/>
+          <cl:gridrow std:sid="g-row-cc01ecb0"/>
+          <cl:gridcell std:sid="gh-cell-4e5adda5" rowindex="0" colindex="0" rowspan="2" colspan="1" targetcolumnname="userId" sortable="false" filterable="false">
+            <cl:langbind property="text" category="PROPERTY" keypath="userId"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gh-cell-2e5fac4b" rowindex="1" colindex="1" targetcolumnname="mngrId1" sortable="false" filterable="false">
+            <cl:langbind property="text" category="PROPERTY" keypath="mngrId"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gh-cell-157acc5d" rowindex="1" colindex="2" targetcolumnname="mngrUsrNm1" sortable="false" filterable="false">
+            <cl:langbind property="text" category="PROPERTY" keypath="nm"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gh-cell-1958a944" rowindex="1" colindex="3" targetcolumnname="mngrId2" sortable="false" filterable="false">
+            <cl:langbind property="text" category="PROPERTY" keypath="mngrId"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gh-cell-cade0e65" rowindex="1" colindex="4" targetcolumnname="mngrUsrNm2" sortable="false" filterable="false">
+            <cl:langbind property="text" category="PROPERTY" keypath="nm"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gh-cell-fd7fd481" rowindex="1" colindex="5" targetcolumnname="mngrId3" sortable="false" filterable="false">
+            <cl:langbind property="text" category="PROPERTY" keypath="mngrId"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gh-cell-2ba4343c" rowindex="1" colindex="6" targetcolumnname="mngrUsrNm3" sortable="false" filterable="false">
+            <cl:langbind property="text" category="PROPERTY" keypath="nm"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gh-cell-48d1c683" rowindex="0" colindex="1" rowspan="1" colspan="2">
+            <cl:langbind property="text" category="PROPERTY" keypath="mngr1"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gh-cell-262f3807" rowindex="0" colindex="3" rowspan="1" colspan="2">
+            <cl:langbind property="text" category="PROPERTY" keypath="mngr2"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gh-cell-620d7848" rowindex="0" colindex="5" rowspan="1" colspan="2">
+            <cl:langbind property="text" category="PROPERTY" keypath="mngr3"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gh-cell-26ace7d9" rowindex="0" colindex="7" rowspan="2" colspan="1">
+            <cl:langbind property="text" keypath="refnUserId"/>
+          </cl:gridcell>
+        </cl:gridheader>
+        <cl:griddetail std:sid="gd-band-60df897c">
+          <cl:gridrow std:sid="g-row-500f1e3f"/>
+          <cl:gridcell std:sid="gd-cell-1a20c1a8" rowindex="0" colindex="0" columnname="userId"/>
+          <cl:gridcell std:sid="gd-cell-ecaad8dc" rowindex="0" colindex="1" columnname="mngrId1"/>
+          <cl:gridcell std:sid="gd-cell-2a49261c" rowindex="0" colindex="2" columnname="mngrUsrNm1"/>
+          <cl:gridcell std:sid="gd-cell-24b9bb2a" rowindex="0" colindex="3" columnname="mngrId2"/>
+          <cl:gridcell std:sid="gd-cell-b7802f48" rowindex="0" colindex="4" columnname="mngrUsrNm2"/>
+          <cl:gridcell std:sid="gd-cell-186b511f" rowindex="0" colindex="5" columnname="mngrId3"/>
+          <cl:gridcell std:sid="gd-cell-c78b08ad" rowindex="0" colindex="6" columnname="mngrUsrNm3"/>
+          <cl:gridcell std:sid="gd-cell-0fcd8d49" rowindex="0" colindex="7" columnname="refnUserId"/>
+        </cl:griddetail>
+      </cl:grid>
+      <cl:group std:sid="group-f079040b" class="edit-group">
+        <cl:verticaldata std:sid="v-data-3caf16c8" width="924px" height="45px" autosize="none"/>
+        <cl:button std:sid="button-ad085573" id="btnAdd">
+          <cl:listener std:sid="listener-ca5b40da" name="click" handler="onButtonClick2"/>
+          <cl:langbind property="value" category="PROPERTY" keypath="add"/>
+          <cl:formdata std:sid="f-data-d112c0f7" halign="CENTER" valign="CENTER" row="0" col="2"/>
+        </cl:button>
+        <cl:button std:sid="button-ad679a41" id="btnUpd">
+          <cl:listener std:sid="listener-8796fe2c" name="click" handler="onButtonClick5"/>
+          <cl:langbind property="value" category="PROPERTY" keypath="upd"/>
+          <cl:formdata std:sid="f-data-83adbd97" halign="LEFT" valign="CENTER" row="0" col="3"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-89b6f099" top-margin="1fr" right-margin="5px" bottom-margin="1fr" left-margin="5px">
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-e24506fd" id="grd2" class="cl-form-group">
+        <cl:attribute name="isGrid01" value="Y"/>
+        <cl:relativebind property="visible" category="PROPERTY" columnname="mngrId1"/>
+        <cl:datamapcontext datacontrolid="dm1"/>
+        <cl:verticaldata std:sid="v-data-f272ef17" width="924px" height="346px" autosize="none"/>
+        <cl:output std:sid="output-498e5209" style="font-weight:bold; font-style:normal;">
+          <cl:langbind property="value" category="PROPERTY" keypath="userIdMngrDtls"/>
+          <cl:formdata std:sid="f-data-21deae18" row="0" col="0" rowspan="1" colspan="6"/>
+        </cl:output>
+        <cl:output std:sid="output-51f1bdb6" class="label pr-1">
+          <cl:langbind property="value" category="PROPERTY" keypath="userId"/>
+          <cl:formdata std:sid="f-data-56937427" row="1" col="0"/>
+        </cl:output>
+        <cl:searchinput std:sid="s-input-3eb0769b" id="srchUserId">
+          <cl:listener std:sid="listener-01ca2dd0" name="search" handler="onSearchInputClick"/>
+          <cl:listener std:sid="listener-09b9d90c" name="search" handler="onSrchUserIdSearch"/>
+          <cl:relativebind property="value" category="PROPERTY" columnname="userId"/>
+          <cl:formdata std:sid="f-data-f0cd93bc" row="1" col="1"/>
+        </cl:searchinput>
+        <cl:combobox std:sid="c-box-3ec4d93e" id="cmbRefnUserId">
+          <cl:listener std:sid="listener-693ff99f" name="selection-change" handler="onCmbRefnUserIdSelectionChange"/>
+          <cl:listener std:sid="listener-3c79b636" name="item-click" handler="onCmbRefnUserIdItemClick"/>
+          <cl:relativebind property="value" columnname="refnUserId"/>
+          <cl:formdata std:sid="f-data-666a2ce0" row="1" col="3"/>
+          <cl:item std:sid="item-bb23af27" label="" value="">
+            <std:metadata>
+              <std:property key="ignored-translatable-features" value="label"/>
+            </std:metadata>
+          </cl:item>
+          <cl:itemset datasetid="grid04" label="userId" value="userId"/>
+        </cl:combobox>
+        <cl:output std:sid="output-f74d8e44" class="label pr-1">
+          <cl:langbind property="value" keypath="refnUserId"/>
+          <cl:formdata std:sid="f-data-a85ba36c" row="1" col="2"/>
+        </cl:output>
+        <cl:group std:sid="group-d487bb57" id="grdMngrs">
+          <cl:formdata std:sid="f-data-82d71483" row="2" col="0" rowspan="5" colspan="6"/>
+          <cl:output std:sid="output-ec911a21" class="text-center fw-bold align-bottom">
+            <cl:langbind property="value" category="PROPERTY" keypath="mngr1"/>
+            <cl:formdata std:sid="f-data-282ee445" row="0" col="0" rowspan="1" colspan="2"/>
+          </cl:output>
+          <cl:output std:sid="output-6835457f" class="label pr-1">
+            <cl:langbind property="value" category="PROPERTY" keypath="id"/>
+            <cl:formdata std:sid="f-data-5d92edb8" row="1" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-c5ab3a4d" id="ipbMngr1" readonly="true">
+            <cl:relativebind property="value" columnname="mngrId1"/>
+            <cl:formdata std:sid="f-data-6c324b56" row="1" col="1"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-28ff6ce5" class="label pr-1">
+            <cl:langbind property="value" category="PROPERTY" keypath="nm"/>
+            <cl:formdata std:sid="f-data-3eacd2e0" row="2" col="0"/>
+          </cl:output>
+          <cl:combobox std:sid="c-box-a8f3c1de" id="cmbMngr1">
+            <cl:listener std:sid="listener-4808b0cc" name="selection-change" handler="onCmbMngr1SelectionChange2"/>
+            <cl:relativebind property="value" columnname="mngrUsrNm1"/>
+            <cl:formdata std:sid="f-data-d4878340" row="2" col="1"/>
+            <cl:itemset datasetid="grid01" label="usrLocalNm" value="userId"/>
+          </cl:combobox>
+          <cl:output std:sid="output-a11e2e59" class="label pr-1">
+            <cl:langbind property="value" category="PROPERTY" keypath="ipAdr_s1"/>
+            <cl:formdata std:sid="f-data-14096a1e" row="3" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-da9aa140" id="ipbIpAdr1">
+            <cl:relativebind property="value" columnname="mngrIpAdr1"/>
+            <cl:formdata std:sid="f-data-b8267f54" row="3" col="1"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-20b17f16" class="text-center fw-bold align-bottom">
+            <cl:langbind property="value" category="PROPERTY" keypath="mngr2"/>
+            <cl:formdata std:sid="f-data-1c7ada50" row="0" col="2" rowspan="1" colspan="2"/>
+          </cl:output>
+          <cl:output std:sid="output-8040b9cb" class="label pr-1">
+            <cl:langbind property="value" category="PROPERTY" keypath="id"/>
+            <cl:formdata std:sid="f-data-e052b367" row="1" col="2"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-2dbbe91f" id="ipbMngr2" readonly="true">
+            <cl:relativebind property="value" columnname="mngrId2"/>
+            <cl:formdata std:sid="f-data-de360ce2" row="1" col="3"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-aa4d41f2" class="label pr-1">
+            <cl:langbind property="value" category="PROPERTY" keypath="nm"/>
+            <cl:formdata std:sid="f-data-3af1d110" row="2" col="2"/>
+          </cl:output>
+          <cl:combobox std:sid="c-box-be621232" id="cmbMngr2">
+            <cl:listener std:sid="listener-be4c7b13" name="selection-change" handler="onCmbMngr2SelectionChange"/>
+            <cl:relativebind property="value" columnname="mngrUsrNm2"/>
+            <cl:formdata std:sid="f-data-67b2c6b0" row="2" col="3"/>
+            <cl:item std:sid="item-c2e17263" value="">
+              <cl:langbind property="label" category="PROPERTY" keypath="blankSpace"/>
+            </cl:item>
+            <cl:itemset datasetid="grid01" label="usrLocalNm" value="userId"/>
+          </cl:combobox>
+          <cl:output std:sid="output-b60e89c5" class="label pr-1">
+            <cl:langbind property="value" category="PROPERTY" keypath="ipAdr_s1"/>
+            <cl:formdata std:sid="f-data-9dc01714" row="3" col="2"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-32549779" id="ipbIpAdr2">
+            <cl:relativebind property="value" columnname="mngrIpAdr2"/>
+            <cl:formdata std:sid="f-data-98d3e922" row="3" col="3"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-7aa61784" class="text-center fw-bold align-bottom">
+            <cl:langbind property="value" category="PROPERTY" keypath="mngr3"/>
+            <cl:formdata std:sid="f-data-779d2c3e" row="0" col="4" rowspan="1" colspan="2"/>
+          </cl:output>
+          <cl:output std:sid="output-ef5bd926" class="label pr-1">
+            <cl:langbind property="value" category="PROPERTY" keypath="id"/>
+            <cl:formdata std:sid="f-data-2ba801db" row="1" col="4"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-0c239363" id="ipbMngr3" readonly="true">
+            <cl:relativebind property="value" columnname="mngrId3"/>
+            <cl:formdata std:sid="f-data-f8dedd49" row="1" col="5"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-2f7b1000" class="label pr-1">
+            <cl:langbind property="value" category="PROPERTY" keypath="nm"/>
+            <cl:formdata std:sid="f-data-83a4a837" row="2" col="4"/>
+          </cl:output>
+          <cl:combobox std:sid="c-box-72b953ed" id="cmbMngr3">
+            <cl:listener std:sid="listener-1fbab0fb" name="selection-change" handler="onCmbMngr3SelectionChange"/>
+            <cl:relativebind property="value" columnname="mngrUsrNm3"/>
+            <cl:formdata std:sid="f-data-239e29ef" row="2" col="5"/>
+            <cl:item std:sid="item-bc1e8b5d" value="">
+              <cl:langbind property="label" category="PROPERTY" keypath="blankSpace"/>
+            </cl:item>
+            <cl:itemset datasetid="grid01" label="usrLocalNm" value="userId"/>
+          </cl:combobox>
+          <cl:output std:sid="output-fddf3be2" class="label pr-1">
+            <cl:langbind property="value" category="PROPERTY" keypath="ipAdr_s1"/>
+            <cl:formdata std:sid="f-data-b518f2a3" row="3" col="4"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-8964a93f" id="ipbIpAdr3">
+            <cl:relativebind property="value" columnname="mngrIpAdr3"/>
+            <cl:formdata std:sid="f-data-5041f96f" row="3" col="5"/>
+          </cl:inputbox>
+          <cl:formlayout std:sid="f-layout-35cfc0f0" hspace="10px" vspace="10px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="100" unit="PIXEL"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="100" unit="PIXEL"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="100" unit="PIXEL"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:button std:sid="button-6dc2ccc0" id="btnSave">
+          <cl:listener std:sid="listener-547fb5a3" name="click" handler="onButtonClick6"/>
+          <cl:langbind property="value" category="PROPERTY" keypath="save"/>
+          <cl:formdata std:sid="f-data-23dc11b2" halign="CENTER" valign="CENTER" row="7" col="5"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-58a2c47f" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="100" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-950c094a">
+        <cl:verticaldata std:sid="v-data-6a018335" width="1076px" height="48px" autosize="none"/>
+        <cl:formlayout std:sid="f-layout-2767682e">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="140" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="140" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-982019b1"/>
+    </cl:group>
+    <cl:responsivexylayout std:sid="r-xylayout-fabeaaa9"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

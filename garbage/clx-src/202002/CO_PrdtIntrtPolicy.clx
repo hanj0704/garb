@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ed598d24" version="1.0.0.0">
+  <head std:sid="head-3fadaaad">
+    <title>CO_PrdtIntrtPolicy</title>
+    <screen std:sid="screen-42beeb72" id="default" customHeight="600" customWidth="800" height="768px" name="default" width="1024px"/>
+    <cl:model std:sid="model-6ecf5f17">
+      <cl:dataset std:sid="d-set-df950e96" id="pro_guban">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="label"/>
+          <cl:datacolumn name="value"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[요구불]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[요구불]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[정기성]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[정기성]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[적금성]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[적금성]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[할인어음]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[할인어음]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[가수가지]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[가수가지]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[수탁어음]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[수탁어음]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[후선업무]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[후선업무]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[NPL]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[NPL]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[대여금]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[대여금]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-36691abd" id="jujam">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="label"/>
+          <cl:datacolumn name="value"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[영업점]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[영업점]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-0c2b2cd5" id="proinfor">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="이율"/>
+          <cl:datacolumn name="이율일련번호"/>
+          <cl:datacolumn name="이율명"/>
+          <cl:datacolumn name="이자계산방법"/>
+          <cl:datacolumn name="이율구간코드"/>
+          <cl:datacolumn name="이율구간세부코드"/>
+          <cl:datacolumn name="이율구간단위코드"/>
+          <cl:datacolumn name="이율변동구분코드"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="이율"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="이율일련번호"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="이율명"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="이자계산방법"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="이율구간코드"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="이율구간세부코드"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="이율구간단위코드"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="이율변동구분코드"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="이율"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="이율일련번호"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="이율명"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="이자계산방법"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="이율구간코드"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="이율구간세부코드"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="이율구간단위코드"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="이율변동구분코드"><![CDATA[2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="이율"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="이율일련번호"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="이율명"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="이자계산방법"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="이율구간코드"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="이율구간세부코드"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="이율구간단위코드"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="이율변동구분코드"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="이율"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="이율일련번호"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="이율명"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="이자계산방법"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="이율구간코드"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="이율구간세부코드"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="이율구간단위코드"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="이율변동구분코드"><![CDATA[4]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="이율"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="이율일련번호"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="이율명"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="이자계산방법"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="이율구간코드"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="이율구간세부코드"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="이율구간단위코드"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="이율변동구분코드"><![CDATA[5]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="이율"><![CDATA[6]]></cl:datavalue>
+            <cl:datavalue columnname="이율일련번호"><![CDATA[6]]></cl:datavalue>
+            <cl:datavalue columnname="이율명"><![CDATA[6]]></cl:datavalue>
+            <cl:datavalue columnname="이자계산방법"><![CDATA[6]]></cl:datavalue>
+            <cl:datavalue columnname="이율구간코드"><![CDATA[6]]></cl:datavalue>
+            <cl:datavalue columnname="이율구간세부코드"><![CDATA[6]]></cl:datavalue>
+            <cl:datavalue columnname="이율구간단위코드"><![CDATA[6]]></cl:datavalue>
+            <cl:datavalue columnname="이율변동구분코드"><![CDATA[6]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-59015388" id="no">
+        <cl:datacolumnlist>
+          <cl:datacolumn datatype="string" name="label"/>
+          <cl:datacolumn name="value"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[4]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[5]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[6]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[6]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-65cd0961" id="gesan">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="label"/>
+          <cl:datacolumn name="value"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[4]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[5]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[6]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[6]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-dd305939" id="gugancod">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="label"/>
+          <cl:datacolumn name="value"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[4]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[5]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[6]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[6]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-edd9d559" id="gugansebu">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="label"/>
+          <cl:datacolumn name="value"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[4]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[5]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[6]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[6]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-c873f50b" id="gugandanwe">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="label"/>
+          <cl:datacolumn name="value"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[4]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[5]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[6]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[6]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-73d3bdc0" id="bendongcode">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="label"/>
+          <cl:datacolumn name="value"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[4]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[5]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[6]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[6]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-53dcf2d1" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="pro_guban"/>
+          <cl:datacolumn name="이율명"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-9f7922e2" id="sms1">
+        <cl:listener std:sid="listener-f7a335d1" handler="onSms1SubmitSuccess" name="submit-success"/>
+        <cl:requestdata dataid="dm1"/>
+        <cl:responsedata dataid="proinfor"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-6160041a" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-d5292acd" handler="onBodyInit" name="init"/>
+    <cl:listener std:sid="listener-ad594023" handler="onBodyLoad" name="load"/>
+    <cl:group std:sid="group-ddd6e1d4">
+      <cl:xylayoutdata std:sid="xyl-data-dba2290b" height="496px" horizontalAnchor="CENTER" verticalAnchor="CENTER" width="875px"/>
+      <cl:group std:sid="group-2676ee3b" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#959393; border-right-width:1px; border-left-color:#959393; border-right-color:#959393; background-position:1px; border-left-width:1px; border-top-style:solid; background-color:#fefefe; border-radius:5px; border-left-style:solid; border-bottom-width:1px; border-top-color:#959393; border-bottom-style:solid;">
+        <cl:formdata std:sid="f-data-dbfba8d0" col="0" row="2"/>
+        <cl:button std:sid="button-52420ff0" value="수정">
+          <cl:xylayoutdata std:sid="xyl-data-4b14ebe0" height="33px" horizontalAnchor="LEFT" left="643px" top="5px" verticalAnchor="TOP" width="100px"/>
+        </cl:button>
+        <cl:button std:sid="button-68251f3e" value="입력">
+          <cl:xylayoutdata std:sid="xyl-data-7bec87da" height="33px" horizontalAnchor="LEFT" left="753px" top="5px" verticalAnchor="TOP" width="100px"/>
+        </cl:button>
+        <cl:button std:sid="button-745abdc7" value="검색">
+          <cl:listener std:sid="listener-e4c635d5" handler="onButtonClick" name="click"/>
+          <cl:xylayoutdata std:sid="xyl-data-ce44f723" height="33px" horizontalAnchor="LEFT" left="533px" top="5px" verticalAnchor="TOP" width="100px"/>
+        </cl:button>
+        <cl:xylayout std:sid="xylayout-d92b58b3"/>
+      </cl:group>
+      <cl:group std:sid="group-90b4b296" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#959393; border-right-width:1px; border-left-color:#959393; border-right-color:#959393; border-left-width:1px; border-top-style:solid; background-color:#fefefe; border-radius:5px; border-left-style:solid; border-bottom-width:1px; border-top-color:#959393; border-bottom-style:solid;">
+        <cl:formdata std:sid="f-data-d3af5aac" col="0" row="0"/>
+        <cl:output std:sid="output-586ab13d" style="border-right-style:solid; border-bottom-color:#77c1e5; border-top-width:1px; border-right-width:1px; border-left-color:#77c1e5; font-size:13px; border-right-color:#77c1e5; border-left-width:1px; border-top-style:solid; background-color:#ecf7f8; border-left-style:solid; border-bottom-width:1px; border-top-color:#77c1e5; border-bottom-style:solid; text-align:right;" value="상품구분">
+          <cl:xylayoutdata std:sid="xyl-data-f76274ee" height="29px" horizontalAnchor="LEFT" left="9px" top="9px" verticalAnchor="TOP" width="100px"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-3ddf033d" id="ipb1" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#77c1e5; border-left-style:solid; border-right-width:1px; border-bottom-width:1px; border-left-color:#77c1e5; border-top-color:#77c1e5; border-bottom-style:solid; border-right-color:#77c1e5; border-left-width:1px; border-top-style:solid;">
+          <cl:xylayoutdata std:sid="xyl-data-5cf63b62" height="29px" horizontalAnchor="LEFT" left="108px" top="9px" verticalAnchor="TOP" width="207px"/>
+        </cl:inputbox>
+        <cl:combobox std:sid="c-box-c711d6f7" id="cmb1">
+          <cl:datamapbind category="PROPERTY" property="value" columnname="pro_guban" datacontrolid="dm1"/>
+          <cl:xylayoutdata std:sid="xyl-data-3d30e5ec" height="20px" horizontalAnchor="LEFT" left="112px" top="13px" verticalAnchor="TOP" width="140px"/>
+          <cl:itemset datasetid="pro_guban" label="label" value="value"/>
+        </cl:combobox>
+        <cl:output std:sid="output-7e396d1b" style="border-right-style:solid; border-bottom-color:#77c1e5; border-top-width:1px; border-right-width:1px; border-left-color:#77c1e5; font-size:13px; border-right-color:#77c1e5; border-left-width:1px; border-top-style:solid; background-color:#ecf7f8; border-left-style:solid; border-bottom-width:1px; border-top-color:#77c1e5; border-bottom-style:solid; text-align:right;" value="지점">
+          <cl:xylayoutdata std:sid="xyl-data-cea2481a" height="29px" horizontalAnchor="LEFT" left="547px" top="8px" verticalAnchor="TOP" width="100px"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-10d899fd" id="ipb2" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#77c1e5; border-left-style:solid; border-right-width:1px; border-bottom-width:1px; border-left-color:#77c1e5; border-top-color:#77c1e5; border-bottom-style:solid; border-right-color:#77c1e5; border-left-width:1px; border-top-style:solid;">
+          <cl:xylayoutdata std:sid="xyl-data-46154f64" height="29px" horizontalAnchor="LEFT" left="646px" top="8px" verticalAnchor="TOP" width="207px"/>
+        </cl:inputbox>
+        <cl:combobox std:sid="c-box-5d94fff0" id="cmb2">
+          <cl:xylayoutdata std:sid="xyl-data-3f9d7788" height="20px" horizontalAnchor="LEFT" left="650px" top="13px" verticalAnchor="TOP" width="140px"/>
+          <cl:itemset datasetid="jujam" label="label" value="value"/>
+        </cl:combobox>
+        <cl:xylayout std:sid="xylayout-6385325a"/>
+      </cl:group>
+      <cl:grid std:sid="grid-6514a52c" id="grd1" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#959393; border-right-width:1px; border-left-color:#959393; border-right-color:#959393; border-left-width:1px; border-top-style:solid; background-color:#fefefe; border-left-style:solid; border-bottom-width:1px; border-top-color:#959393; border-bottom-style:solid;" datasetid="proinfor">
+        <cl:formdata std:sid="f-data-2d8a4ecb" col="0" row="1"/>
+        <cl:gridcolumn std:sid="g-column-e0523afe"/>
+        <cl:gridcolumn std:sid="g-column-ae98459f"/>
+        <cl:gridcolumn std:sid="g-column-5ad0a3f1"/>
+        <cl:gridcolumn std:sid="g-column-ec72f72c"/>
+        <cl:gridcolumn std:sid="g-column-17db3ce1"/>
+        <cl:gridcolumn std:sid="g-column-2d2dc7b1"/>
+        <cl:gridcolumn std:sid="g-column-b4c88bd7"/>
+        <cl:gridcolumn std:sid="g-column-1bd2ca3c"/>
+        <cl:gridheader>
+          <cl:gridrow std:sid="g-row-3fc20591"/>
+          <cl:gridcell std:sid="gh-cell-d326b1c5" colindex="0" rowindex="0" filterable="false" sortable="false" targetcolumnname="이율" text="이율"/>
+          <cl:gridcell std:sid="gh-cell-7a3bb530" colindex="1" rowindex="0" filterable="false" sortable="false" targetcolumnname="이율일련번호" text="이율일련번호"/>
+          <cl:gridcell std:sid="gh-cell-84e6a6fc" colindex="2" rowindex="0" filterable="false" sortable="false" targetcolumnname="이율명" text="이율명"/>
+          <cl:gridcell std:sid="gh-cell-92809bd2" colindex="3" rowindex="0" filterable="false" sortable="false" targetcolumnname="이자계산방법" text="이자계산방법"/>
+          <cl:gridcell std:sid="gh-cell-7dfa8f52" colindex="4" rowindex="0" filterable="false" sortable="false" targetcolumnname="이율구간코드" text="이율구간코드"/>
+          <cl:gridcell std:sid="gh-cell-c3ce15b1" colindex="5" rowindex="0" filterable="false" sortable="false" targetcolumnname="이율구간세부코드" text="이율구간세부코드"/>
+          <cl:gridcell std:sid="gh-cell-49b6f84f" colindex="6" rowindex="0" filterable="false" sortable="false" targetcolumnname="이율구간단위코드" text="이율구간단위코드"/>
+          <cl:gridcell std:sid="gh-cell-102f6181" colindex="7" rowindex="0" filterable="false" sortable="false" targetcolumnname="이율변동구분코드" text="이율변동구분코드"/>
+        </cl:gridheader>
+        <cl:griddetail>
+          <cl:gridrow std:sid="g-row-d8539838"/>
+          <cl:gridcell std:sid="gd-cell-695de81b" colindex="0" rowindex="0" columnname="이율"/>
+          <cl:gridcell std:sid="gd-cell-3c28dd8a" colindex="1" rowindex="0" columnname="이율일련번호">
+            <cl:combobox std:sid="c-box-abb8c408" id="cmb9">
+              <cl:itemset datasetid="no" label="label" value="value"/>
+            </cl:combobox>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-d2f765c4" colindex="2" rowindex="0" columnname="이율명"/>
+          <cl:gridcell std:sid="gd-cell-e48668e0" colindex="3" rowindex="0" columnname="이자계산방법">
+            <cl:combobox std:sid="c-box-cd457515" id="cmb10">
+              <cl:itemset datasetid="gesan" label="label" value="value"/>
+            </cl:combobox>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-7f9d6b89" colindex="4" rowindex="0" columnname="이율구간코드">
+            <cl:combobox std:sid="c-box-077bd263" id="cmb11">
+              <cl:itemset datasetid="gugancod" label="label" value="value"/>
+            </cl:combobox>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-b3ca1933" colindex="5" rowindex="0" columnname="이율구간세부코드">
+            <cl:combobox std:sid="c-box-a520d06c" id="cmb12">
+              <cl:itemset datasetid="gugansebu" label="label" value="value"/>
+            </cl:combobox>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-641b2682" colindex="6" rowindex="0" columnname="이율구간단위코드">
+            <cl:combobox std:sid="c-box-c132444f" id="cmb13">
+              <cl:itemset datasetid="gugandanwe" label="label" value="value"/>
+            </cl:combobox>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-fe0a98a0" colindex="7" rowindex="0" columnname="이율변동구분코드">
+            <cl:combobox std:sid="c-box-0095723e" id="cmb14">
+              <cl:itemset datasetid="bendongcode" label="label" value="value"/>
+            </cl:combobox>
+          </cl:gridcell>
+        </cl:griddetail>
+      </cl:grid>
+      <cl:formlayout std:sid="f-layout-267f9257">
+        <cl:rows autoSizing="false" length="50" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:rows autoSizing="false" length="45" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-823747bd"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

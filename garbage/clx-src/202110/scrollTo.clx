@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-190de123" version="1.0.3221">
+  <head std:sid="head-ce588b96">
+    <screen std:sid="screen-87f19671" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-0f602255" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-852a91ef" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-24dd4570"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-7f0e3f6d">
+    <cl:listener std:sid="listener-947f91f0" name="init" handler="onBodyInit"/>
+    <cl:listener std:sid="listener-182679f4" name="scroll" handler="onBodyScroll"/>
+    <cl:group std:sid="group-957a0122" id="grp1">
+      <cl:xylayoutdata std:sid="xyl-data-9d36ce79" top="0px" left="0px" width="352px" height="1237px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:output std:sid="output-84f3dd9b" id="opt1" style="background-color:#0045cb;" value="Output">
+        <cl:verticaldata std:sid="v-data-1c95846b" width="100px" height="509px"/>
+      </cl:output>
+      <cl:output std:sid="output-09e2cf1d" id="opt2" style="background-color:#ff8e8e;" value="Output">
+        <cl:verticaldata std:sid="v-data-3e90ddc8" width="100px" height="509px"/>
+      </cl:output>
+      <cl:output std:sid="output-1c086c22" id="opt3" style="background-color:#d1ffaa;" value="Output">
+        <cl:verticaldata std:sid="v-data-99808954" width="100px" height="509px"/>
+      </cl:output>
+      <cl:verticallayout std:sid="v-layout-51a167db" animationduration="0.2"/>
+    </cl:group>
+    <cl:button std:sid="button-e7ad762d" id="btn1" value="Button">
+      <cl:listener std:sid="listener-cbbf9c29" name="click" handler="onBtn1Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-de00f83d" top="56px" left="430px" width="93px" height="24px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-e37bcaa8"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

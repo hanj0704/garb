@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9eb58a23" version="1.0.0.0">
+  <head std:sid="head-be08e94e">
+    <title>Dashboard</title>
+    <screen std:sid="screen-e93b0602" id="default" name="default" width="1280px" height="768px"/>
+    <cl:model std:sid="model-eefc4cd3"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-bc3b0ed4" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-890686c5" class="keyword-cont" clipcontent="false">
+      <cl:verticaldata std:sid="v-data-bd184d68" width="592px" height="162px" autosize="both"/>
+      <cl:group std:sid="group-8fc12dd0" clipcontent="false">
+        <cl:verticaldata std:sid="v-data-dd546b41" width="592px" height="72px"/>
+        <cl:inputbox std:sid="i-box-164908eb" id="ipb1" class="keyword-search" placeholder="검색어를 입력하세요">
+          <cl:xylayoutdata std:sid="xyl-data-a82b6423" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+        </cl:inputbox>
+        <cl:button std:sid="button-13175ab8" class="btn-keyword-search" value="" icon="../../../theme/images/com/main/das/ico_btn_search_w.png">
+          <cl:xylayoutdata std:sid="xyl-data-51489e09" top="0px" right="0px" bottom="0px" width="72px" horizontalAnchor="RIGHT" verticalAnchor="BOTH"/>
+        </cl:button>
+        <cl:xylayout std:sid="xylayout-7deb64c6" scrollable="false"/>
+      </cl:group>
+      <cl:group std:sid="group-445bf611" class="keyword-tags" clipcontent="false">
+        <cl:verticaldata std:sid="v-data-766a8a16" width="592px" height="16px" autosize="width"/>
+        <cl:output std:sid="output-ed08cb77" value="# 출산지원">
+          <cl:flowlayoutdata std:sid="f-data-b7717356" width="100px" height="16px" autosize="width"/>
+        </cl:output>
+        <cl:output std:sid="output-3217f467" value="# 차상위계층">
+          <cl:flowlayoutdata std:sid="f-data-41abe02e" width="100px" height="16px" autosize="width"/>
+        </cl:output>
+        <cl:output std:sid="output-dfe58a85" value="# 난임부부시술비지원">
+          <cl:flowlayoutdata std:sid="f-data-18781347" width="100px" height="16px" autosize="width"/>
+        </cl:output>
+        <cl:output std:sid="output-4eb3bb8a" value="# 통합문화이용권">
+          <cl:flowlayoutdata std:sid="f-data-20610c7b" width="100px" height="16px" autosize="width"/>
+        </cl:output>
+        <cl:flowlayout std:sid="f-layout-b88aa79b" scrollable="false" spacing="23" linewrap="false"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-47316956" scrollable="false" distribution="center" spacing="18" bottommargin="56"/>
+    </cl:group>
+    <cl:group std:sid="group-add242cc">
+      <cl:verticaldata std:sid="v-data-51376cc8" width="1216px" height="302px" autosize="none"/>
+      <cl:group std:sid="group-94b2435a" class="frequent-service-cont">
+        <cl:verticaldata std:sid="v-data-b5648449" width="400px" height="232px"/>
+        <cl:group std:sid="group-ec009f62" class="frequent-service-txt">
+          <cl:formdata std:sid="f-data-210733c9" row="0" col="0"/>
+          <cl:output std:sid="output-def8f429" class="tit" value="자주 찾는 서비스">
+            <cl:verticaldata std:sid="v-data-6612608b" width="100px" height="50px" autosize="height"/>
+          </cl:output>
+          <cl:button std:sid="button-fc90bb21" class="btn-frequent-service btn-transparent" value="메뉴설정" icon="../../../theme/images/com/main/das/ico_setting.png">
+            <cl:verticaldata std:sid="v-data-43dbd47a" width="100px" height="20px" autosize="width"/>
+          </cl:button>
+          <cl:verticallayout std:sid="v-layout-3ec45bb0" spacing="57" topmargin="55"/>
+        </cl:group>
+        <cl:group std:sid="group-d734e9cb" class="frequent-service-slide">
+          <cl:formdata std:sid="f-data-1ba90c8d" row="0" col="1"/>
+          <cl:button std:sid="button-7e723aee" class="service-item" value="복지지갑" icon="../../../theme/images/com/main/das/ico_menu_01.png" iconalign="top">
+            <cl:flowlayoutdata std:sid="f-data-ef824dfe" width="104px" height="136px"/>
+          </cl:button>
+          <cl:button std:sid="button-3e231541" class="service-item" value="모의계산" icon="../../../theme/images/com/main/das/ico_menu_02.png" iconalign="top">
+            <cl:flowlayoutdata std:sid="f-data-969576b4" width="104px" height="136px"/>
+          </cl:button>
+          <cl:button std:sid="button-8931bba4" class="service-item" value="서비스신청" icon="../../../theme/images/com/main/das/ico_menu_03.png" iconalign="top">
+            <cl:flowlayoutdata std:sid="f-data-1ea6ef75" width="104px" height="136px"/>
+          </cl:button>
+          <cl:button std:sid="button-d15e114d" class="service-item" value="증명서발급" icon="../../../theme/images/com/main/das/ico_menu_04.png" iconalign="top">
+            <cl:flowlayoutdata std:sid="f-data-20ffaa4d" width="104px" height="136px"/>
+          </cl:button>
+          <cl:button std:sid="button-26ee9602" class="service-item" value="복지서비스" icon="../../../theme/images/com/main/das/ico_menu_05.png" iconalign="top">
+            <cl:flowlayoutdata std:sid="f-data-2dfddafa" width="104px" height="136px"/>
+          </cl:button>
+          <cl:button std:sid="button-c7c1184c" class="service-item" value="부정수급신고" icon="../../../theme/images/com/main/das/ico_menu_06.png" iconalign="top">
+            <cl:flowlayoutdata std:sid="f-data-b2061248" width="104px" height="136px"/>
+          </cl:button>
+          <cl:button std:sid="button-a285e084" class="service-item" value="급여계좌변경" icon="../../../theme/images/com/main/das/ico_menu_07.png" iconalign="top">
+            <cl:flowlayoutdata std:sid="f-data-13752a24" width="104px" height="136px" autosize="none"/>
+          </cl:button>
+          <cl:button std:sid="button-bbfebd37" class="service-item" value="자격증명관리" icon="../../../theme/images/com/main/das/ico_menu_08.png" iconalign="top">
+            <cl:flowlayoutdata std:sid="f-data-f06eb444" width="104px" height="136px" autosize="none"/>
+          </cl:button>
+          <cl:button std:sid="button-558320b5" class="service-item" value="복지시설" icon="../../../theme/images/com/main/das/ico_menu_09.png" iconalign="top">
+            <cl:flowlayoutdata std:sid="f-data-9896f38e" width="104px" height="136px" autosize="none"/>
+          </cl:button>
+          <cl:button std:sid="button-7d63b8c8" class="service-item" value="신청서식" icon="../../../theme/images/com/main/das/ico_menu_10.png" iconalign="top">
+            <cl:flowlayoutdata std:sid="f-data-0a3448ac" width="104px" height="136px" autosize="none"/>
+          </cl:button>
+          <cl:flowlayout std:sid="f-layout-cd1036fa" spacing="62" valign="middle" linewrap="false" leftmargin="77" rightmargin="72" topmargin="48" bottommargin="0"/>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-66768d4f" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="43px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="100" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-e66f0966" topmargin="0" bottommargin="70"/>
+    </cl:group>
+    <cl:group std:sid="group-3b9ce4e4" class="welfare-service-cont">
+      <cl:verticaldata std:sid="v-data-9f72fc50" width="100%" height="590px" autosize="height"/>
+      <cl:group std:sid="group-78444888" class="welfare-service-tab-group">
+        <cl:verticaldata std:sid="v-data-5d3cf62b" width="1217px" height="588px" autosize="height"/>
+        <cl:group std:sid="group-052ff8f1" class="welfare-service-tab-group">
+          <cl:verticaldata std:sid="v-data-c9cafa1b" width="1217px" height="62px"/>
+          <cl:radiobutton std:sid="r-button-0f113cb0" id="rdb1" class="welfare-service-tab-header" value="service" fixedwidth="195" itemspacing="0">
+            <cl:flowlayoutdata std:sid="f-data-47278c0e" width="585px" height="62px" autosize="width"/>
+            <cl:item std:sid="item-b43d2557" label="복지서비스" value="service"/>
+            <cl:item std:sid="item-b82eef99" label="서비스신청" value="application"/>
+            <cl:item std:sid="item-a4be612b" label="복지지갑" value="wallet"/>
+          </cl:radiobutton>
+          <cl:group std:sid="group-797a81d2" class="welfare-service-all">
+            <cl:flowlayoutdata std:sid="f-data-d0d17fd8" width="calc(100% - 591px)" height="62px"/>
+            <cl:button std:sid="button-9c6244df" class="btn-welfare-service-all btn-transparent" value="복지서비스 전체보기" icon="../../../theme/images/com/main/das/ico_arrow_right.png" iconalign="right">
+              <cl:flowlayoutdata std:sid="f-data-aecdde03" width="165px" height="20px" autosize="width"/>
+            </cl:button>
+            <cl:button std:sid="button-c05b9e62" class="btn-welfare-service-all btn-transparent" visible="false" value="서비스신청 바로가기" icon="../../../theme/images/com/main/das/ico_arrow_right.png" iconalign="right">
+              <cl:flowlayoutdata std:sid="f-data-2eb90889" width="165px" height="20px" autosize="width"/>
+            </cl:button>
+            <cl:button std:sid="button-727e951c" class="btn-welfare-service-all btn-transparent" visible="false" value="지갑 바로가기" icon="../../../theme/images/com/main/das/ico_arrow_right.png" iconalign="right">
+              <cl:flowlayoutdata std:sid="f-data-ddd1e7cc" width="165px" height="20px" autosize="width"/>
+            </cl:button>
+            <cl:flowlayout std:sid="f-layout-b8dfd92a" scrollable="false" spacing="0" halign="right" linewrap="false" topmargin="25"/>
+          </cl:group>
+          <cl:flowlayout std:sid="f-layout-88e1bc60" scrollable="false" spacing="0" linewrap="false"/>
+        </cl:group>
+        <cl:tabfolder std:sid="t-folder-11f4c517" class="welfare-service-tab" hideHeader="true" headerarrowposition="none" item-sizing="fixed" preferred-item-width="195">
+          <cl:verticaldata std:sid="v-data-c0a1ff40" width="1217px" height="526px" autosize="height"/>
+          <cl:tabitem std:sid="t-item-ba83b090" name="service" selected="true" text="복지서비스">
+            <std:metadata>
+              <std:property key="is-active-item" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-b6af9dc7" id="grp1" class="tab-cont-01">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:group std:sid="group-9b2d479f" id="grp2" style="background-color:red;" class="welfare-service-tags" clipcontent="false">
+                <cl:verticaldata std:sid="v-data-ad69a2e4" width="400px" height="40px"/>
+                <cl:radiobutton std:sid="r-button-4ecc47e3" id="rdb2" style="background-color:blue;" class="welfare-service-tag" value="value2" fixedwidth="false" itemspacing="6">
+                  <cl:flowlayoutdata std:sid="f-data-743d525b" width="647px" height="40px" autosize="width"/>
+                  <cl:item std:sid="item-fe351f99" label="# 임신·출산" value="value1"/>
+                  <cl:item std:sid="item-c3b0c11b" label="# 영유아" value="value2"/>
+                  <cl:item std:sid="item-10b0a116" label="# 아동·청소년" value="value3"/>
+                  <cl:item std:sid="item-da654945" label="# 노년" value="value4"/>
+                  <cl:item std:sid="item-993398be" label="# 장애인" value="value5"/>
+                </cl:radiobutton>
+                <cl:flowlayout std:sid="f-layout-bbf0add8" scrollable="false" spacing="10" linewrap="false"/>
+              </cl:group>
+              <cl:group std:sid="group-1ac97c54" id="grp3">
+                <cl:verticaldata std:sid="v-data-fd04ef91" width="400px" height="260px" autosize="none"/>
+                <cl:button std:sid="button-477f83d5" id="btn1" value="Button">
+                  <cl:flowlayoutdata std:sid="f-data-091f043a" width="100px" height="260px"/>
+                </cl:button>
+                <cl:group std:sid="group-674b4ea8" id="grp4" class="slide-box">
+                  <cl:flowlayoutdata std:sid="f-data-58d9c8c7" width="400px" height="260px" autosize="none"/>
+                  <cl:group std:sid="group-5499cc07" id="grp5" class="related-tags">
+                    <cl:verticaldata std:sid="v-data-aa54d9c8" width="100%" height="30px"/>
+                    <cl:output std:sid="output-883a4fdd" id="opt1" value="# 영유아">
+                      <cl:flowlayoutdata std:sid="f-data-af4f0bc4" width="100px" height="30px" autosize="width"/>
+                    </cl:output>
+                    <cl:output std:sid="output-7ed8759b" id="opt2" value="# 중앙부처">
+                      <cl:flowlayoutdata std:sid="f-data-43ecd4ec" width="100px" height="30px" autosize="width"/>
+                    </cl:output>
+                    <cl:flowlayout std:sid="f-layout-365b4e8a" scrollable="false" spacing="6" linewrap="false"/>
+                  </cl:group>
+                  <cl:group std:sid="group-3853720c" id="grp6">
+                    <cl:verticaldata std:sid="v-data-d6b91da0" width="100%" height="122px" autosize="height"/>
+                    <cl:output std:sid="output-c0a68069" id="opt3" value="보육료 지원">
+                      <cl:verticaldata std:sid="v-data-b1fca6d1" width="100px" height="20px" autosize="height"/>
+                    </cl:output>
+                    <cl:output std:sid="output-97397ae1" id="opt4" value="만 0세 ~ 5세 어린이집을 이용하는 영유아가구의 보육료 등을 지원">
+                      <cl:verticaldata std:sid="v-data-c7f2bfdf" width="100px" height="20px" autosize="height"/>
+                    </cl:output>
+                    <cl:verticallayout std:sid="v-layout-9937c4ed" spacing="16" topmargin="24" bottommargin="42"/>
+                  </cl:group>
+                  <cl:button std:sid="button-12020377" id="btn2" value="자세히 보기">
+                    <cl:verticaldata std:sid="v-data-aca98caa" width="100px" height="23px"/>
+                  </cl:button>
+                  <cl:verticallayout std:sid="v-layout-137fb134" distribution="leading" spacing="0" leftmargin="30" rightmargin="30" topmargin="30" bottommargin="30"/>
+                </cl:group>
+                <cl:flowlayout std:sid="f-layout-96864cc1" scrollable="false" spacing="0" linewrap="false"/>
+              </cl:group>
+              <cl:verticallayout std:sid="v-layout-a36848f2" spacing="0" topmargin="46" bottommargin="55"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-1d46ac54" name="application" text="서비스신청">
+            <cl:group std:sid="group-3010f124" id="grp7" class="tab-cont-02">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:verticallayout std:sid="v-layout-6b50f799"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-d1cd22ae" name="wallet" text="복지지갑">
+            <cl:group std:sid="group-75b1a537" id="grp8" class="tab-cont-03">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:verticallayout std:sid="v-layout-344a9e69"/>
+            </cl:group>
+          </cl:tabitem>
+        </cl:tabfolder>
+        <cl:verticallayout std:sid="v-layout-e48f0a30" distribution="center" spacing="0"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-4654b6f5" scrollable="false" distribution="center" spacing="0" topmargin="64" bottommargin="0"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-f8649bc0" distribution="center" spacing="0" leftmargin="0" rightmargin="0" topmargin="70" bottommargin="80"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

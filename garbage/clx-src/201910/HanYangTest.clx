@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-d65a4d9d" version="1.0.0.0">
+  <head std:sid="head-04a3605c">
+    <title>HanYangTest</title>
+    <screen std:sid="screen-f0a90f86" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-0e8fb15e" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-ef3fc84f" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <link std:sid="link-9c597f1b" href="hanyang.less" rel="stylesheet" type="text/css"/>
+    <cl:model std:sid="model-6db8bcb0">
+      <cl:dataset std:sid="d-set-8dcbdac3" id="dsMainMenu">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="label"/>
+          <cl:datacolumn name="value"/>
+          <cl:datacolumn name="parent"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label">교과</cl:datavalue>
+            <cl:datavalue columnname="value">subject</cl:datavalue>
+            <cl:datavalue columnname="parent">hycu</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">수업</cl:datavalue>
+            <cl:datavalue columnname="value">class</cl:datavalue>
+            <cl:datavalue columnname="parent">hycu</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">업무3</cl:datavalue>
+            <cl:datavalue columnname="value">value3</cl:datavalue>
+            <cl:datavalue columnname="parent">hycu</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">업무4</cl:datavalue>
+            <cl:datavalue columnname="value">value4</cl:datavalue>
+            <cl:datavalue columnname="parent">hycu</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">업무5</cl:datavalue>
+            <cl:datavalue columnname="value">value5</cl:datavalue>
+            <cl:datavalue columnname="parent">hycu</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">업무6</cl:datavalue>
+            <cl:datavalue columnname="value">value6</cl:datavalue>
+            <cl:datavalue columnname="parent">hycu</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">업무7</cl:datavalue>
+            <cl:datavalue columnname="value">value7</cl:datavalue>
+            <cl:datavalue columnname="parent">hycu</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-40407388" id="dsMenu">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="cd"/>
+          <cl:datacolumn name="cd_nm"/>
+          <cl:datacolumn name="label"/>
+          <cl:datacolumn name="value"/>
+          <cl:datacolumn datatype="number" name="group"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label">교과목관리</cl:datavalue>
+            <cl:datavalue columnname="value">value2</cl:datavalue>
+            <cl:datavalue columnname="group">1</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[course]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[교과]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">교과운영현황</cl:datavalue>
+            <cl:datavalue columnname="value">value3</cl:datavalue>
+            <cl:datavalue columnname="group">1</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[course]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[교과]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">담당교수/시간표관리</cl:datavalue>
+            <cl:datavalue columnname="value">value5</cl:datavalue>
+            <cl:datavalue columnname="group">2</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[class]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[수업]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">강의실관리</cl:datavalue>
+            <cl:datavalue columnname="value">value6</cl:datavalue>
+            <cl:datavalue columnname="group">2</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[class]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[수업]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">수업계획서관리</cl:datavalue>
+            <cl:datavalue columnname="value">value7</cl:datavalue>
+            <cl:datavalue columnname="group">2</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[class]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[수업]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">수업평가</cl:datavalue>
+            <cl:datavalue columnname="value">value8</cl:datavalue>
+            <cl:datavalue columnname="group">2</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[class]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[수업]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">휴/보강, 출강 관리</cl:datavalue>
+            <cl:datavalue columnname="value">value9</cl:datavalue>
+            <cl:datavalue columnname="group">2</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[class]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[수업]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">강의운영현황</cl:datavalue>
+            <cl:datavalue columnname="value">value10</cl:datavalue>
+            <cl:datavalue columnname="group">2</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[class]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[수업]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">담당교수/시간표관리</cl:datavalue>
+            <cl:datavalue columnname="value">value11</cl:datavalue>
+            <cl:datavalue columnname="group">2</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[class]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[수업]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">강의실관리</cl:datavalue>
+            <cl:datavalue columnname="value">value12</cl:datavalue>
+            <cl:datavalue columnname="group">2</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[class]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[수업]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">수업계획서관리</cl:datavalue>
+            <cl:datavalue columnname="value">value13</cl:datavalue>
+            <cl:datavalue columnname="group">2</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[class]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[수업]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">수업평가</cl:datavalue>
+            <cl:datavalue columnname="value">value14</cl:datavalue>
+            <cl:datavalue columnname="group">2</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[class]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[수업]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">휴/보강, 출강 관리</cl:datavalue>
+            <cl:datavalue columnname="value">value15</cl:datavalue>
+            <cl:datavalue columnname="group">3</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[class]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[수업]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">강의운영현황</cl:datavalue>
+            <cl:datavalue columnname="value">value16</cl:datavalue>
+            <cl:datavalue columnname="group">3</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[class]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[수업]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">입시관리</cl:datavalue>
+            <cl:datavalue columnname="value">value18</cl:datavalue>
+            <cl:datavalue columnname="group">4</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[service]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[병무]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">수강관리</cl:datavalue>
+            <cl:datavalue columnname="value">value19</cl:datavalue>
+            <cl:datavalue columnname="group">4</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[service]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[병무]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">수강정보</cl:datavalue>
+            <cl:datavalue columnname="value">value20</cl:datavalue>
+            <cl:datavalue columnname="group">4</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[service]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[병무]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">승진평가</cl:datavalue>
+            <cl:datavalue columnname="value">value21</cl:datavalue>
+            <cl:datavalue columnname="group">4</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[service]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[병무]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">수험평가</cl:datavalue>
+            <cl:datavalue columnname="value">value22</cl:datavalue>
+            <cl:datavalue columnname="group">4</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[service]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[병무]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">기준정보관리</cl:datavalue>
+            <cl:datavalue columnname="value">value23</cl:datavalue>
+            <cl:datavalue columnname="group">4</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[service]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[병무]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">코드관리</cl:datavalue>
+            <cl:datavalue columnname="value">value24</cl:datavalue>
+            <cl:datavalue columnname="group">4</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[service]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[병무]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">정기평가</cl:datavalue>
+            <cl:datavalue columnname="value">value25</cl:datavalue>
+            <cl:datavalue columnname="group">4</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[service]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[병무]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">자기평가서</cl:datavalue>
+            <cl:datavalue columnname="value">value26</cl:datavalue>
+            <cl:datavalue columnname="group">4</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[service]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[병무]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">개편안내/메뉴얼</cl:datavalue>
+            <cl:datavalue columnname="value">value27</cl:datavalue>
+            <cl:datavalue columnname="group">4</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[service]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[병무]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">장학금신청/접수관리</cl:datavalue>
+            <cl:datavalue columnname="value">value29</cl:datavalue>
+            <cl:datavalue columnname="group">5</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[scholarship]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[장학]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">장학추천관리</cl:datavalue>
+            <cl:datavalue columnname="value">value30</cl:datavalue>
+            <cl:datavalue columnname="group">5</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[scholarship]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[장학]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">장학정보</cl:datavalue>
+            <cl:datavalue columnname="value">value31</cl:datavalue>
+            <cl:datavalue columnname="group">5</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[scholarship]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[장학]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">보고서</cl:datavalue>
+            <cl:datavalue columnname="value">value32</cl:datavalue>
+            <cl:datavalue columnname="group">5</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[scholarship]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[장학]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">기준관리</cl:datavalue>
+            <cl:datavalue columnname="value">value34</cl:datavalue>
+            <cl:datavalue columnname="group">6</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[hours]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[시수]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">책임시간 과리</cl:datavalue>
+            <cl:datavalue columnname="value">value35</cl:datavalue>
+            <cl:datavalue columnname="group">6</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[hours]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[시수]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">시수 관리</cl:datavalue>
+            <cl:datavalue columnname="value">value36</cl:datavalue>
+            <cl:datavalue columnname="group">6</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[hours]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[시수]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">강의료 관리</cl:datavalue>
+            <cl:datavalue columnname="value">value37</cl:datavalue>
+            <cl:datavalue columnname="group">6</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[hours]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[시수]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">보고서</cl:datavalue>
+            <cl:datavalue columnname="value">value38</cl:datavalue>
+            <cl:datavalue columnname="group">6</cl:datavalue>
+            <cl:datavalue columnname="cd"><![CDATA[hours]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[시수]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="cd">cd34</cl:datavalue>
+            <cl:datavalue columnname="cd_nm">cd_nm34</cl:datavalue>
+            <cl:datavalue columnname="label">label34</cl:datavalue>
+            <cl:datavalue columnname="value">value34</cl:datavalue>
+            <cl:datavalue columnname="group"><![CDATA[7]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="cd">cd35</cl:datavalue>
+            <cl:datavalue columnname="cd_nm">cd_nm35</cl:datavalue>
+            <cl:datavalue columnname="label">label35</cl:datavalue>
+            <cl:datavalue columnname="value">value35</cl:datavalue>
+            <cl:datavalue columnname="group"><![CDATA[8]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="cd">cd36</cl:datavalue>
+            <cl:datavalue columnname="cd_nm">cd_nm36</cl:datavalue>
+            <cl:datavalue columnname="label">label36</cl:datavalue>
+            <cl:datavalue columnname="value">value36</cl:datavalue>
+            <cl:datavalue columnname="group"><![CDATA[9]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="cd"><![CDATA[cd37]]></cl:datavalue>
+            <cl:datavalue columnname="cd_nm"><![CDATA[마지막]]></cl:datavalue>
+            <cl:datavalue columnname="label">label37</cl:datavalue>
+            <cl:datavalue columnname="value">value37</cl:datavalue>
+            <cl:datavalue columnname="group"><![CDATA[10]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-d9535d28" id="dsRecmdMenu">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="label"/>
+          <cl:datacolumn name="value"/>
+          <cl:datacolumn name="parent"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label">기준관리</cl:datavalue>
+            <cl:datavalue columnname="value">value1</cl:datavalue>
+            <cl:datavalue columnname="parent">parent1</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">책임시간 관리</cl:datavalue>
+            <cl:datavalue columnname="value">value2</cl:datavalue>
+            <cl:datavalue columnname="parent">parent2</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">시수 관리</cl:datavalue>
+            <cl:datavalue columnname="value">value3</cl:datavalue>
+            <cl:datavalue columnname="parent">parent3</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">강의료 관리</cl:datavalue>
+            <cl:datavalue columnname="value">value4</cl:datavalue>
+            <cl:datavalue columnname="parent">parent4</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">보고서</cl:datavalue>
+            <cl:datavalue columnname="value">value5</cl:datavalue>
+            <cl:datavalue columnname="parent">parent5</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="거의완성된 동적메뉴"/>
+  </head>
+  <body std:sid="body-edd1d303" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-8862c2e8" handler="onBodyLoad" name="load"/>
+    <cl:group std:sid="group-34e634a1" class="menu-wrap">
+      <cl:xylayoutdata std:sid="xyl-data-67c53999" height="400px" horizontalAnchor="LEFT" left="20px" top="20px" verticalAnchor="TOP" width="1100px"/>
+      <cl:group std:sid="group-7e29a01a" class="menu-header">
+        <cl:xylayoutdata std:sid="xyl-data-56144c80" height="50px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="TOP"/>
+        <cl:radiobutton std:sid="r-button-b40cb84a" id="rdbMenu" class="menu">
+          <cl:listener std:sid="listener-3f8c81c0" handler="onRdbMenuSelectionChange" name="selection-change"/>
+          <cl:xylayoutdata std:sid="xyl-data-2c43024a" bottom="0px" horizontalAnchor="BOTH" left="0px" right="175px" top="0px" verticalAnchor="BOTH"/>
+          <cl:itemset datasetid="dsMainMenu" label="label" value="value"/>
+        </cl:radiobutton>
+        <cl:output std:sid="output-c8a0d124" style="background-color:#475F78;">
+          <cl:xylayoutdata std:sid="xyl-data-f3905f7a" height="25px" horizontalAnchor="RIGHT" right="173px" verticalAnchor="CENTER" width="2px"/>
+        </cl:output>
+        <cl:button std:sid="button-8442e003" value="메뉴설정">
+          <cl:xylayoutdata std:sid="xyl-data-832a541d" bottom="15px" horizontalAnchor="RIGHT" right="15px" top="15px" verticalAnchor="BOTH" width="80px"/>
+        </cl:button>
+        <cl:xylayout std:sid="xylayout-39fe42c8"/>
+      </cl:group>
+      <cl:group std:sid="group-cdde6ca5">
+        <cl:xylayoutdata std:sid="xyl-data-70faf0fe" bottom="0px" horizontalAnchor="BOTH" left="0px" right="225px" top="50px" verticalAnchor="BOTH"/>
+        <cl:group std:sid="group-0af938e5" id="grpSubMenuWrap" childcombinatorclass="sub-menu-wrap">
+          <cl:xylayoutdata std:sid="xyl-data-f154eec6" bottom="20px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+          <cl:flowlayout std:sid="f-layout-83ac49f6" scrollable="false" bottommargin="0" leftmargin="0" linewrap="false" rightmargin="0" spacing="0" topmargin="20"/>
+        </cl:group>
+        <cl:group std:sid="group-120dda91" id="grpPageIndexWrap">
+          <cl:xylayoutdata std:sid="xyl-data-381f25e8" bottom="0px" height="20px" horizontalAnchor="BOTH" left="0px" right="0px" verticalAnchor="BOTTOM"/>
+          <cl:flowlayout std:sid="f-layout-767853ca" scrollable="false" halign="center" valign="middle"/>
+        </cl:group>
+        <cl:xylayout std:sid="xylayout-564fdbae"/>
+      </cl:group>
+      <cl:group std:sid="group-cbcb8cab" class="recommand-menu-wrap">
+        <cl:xylayoutdata std:sid="xyl-data-a3604072" bottom="0px" horizontalAnchor="RIGHT" right="0px" top="50px" verticalAnchor="BOTH" width="175px"/>
+        <cl:output std:sid="output-fbf8e560" class="menu-title left" value="메뉴추천">
+          <cl:verticaldata std:sid="v-data-d3ec1ca0" autosize="height" height="35px" width="100px"/>
+        </cl:output>
+        <cl:listbox std:sid="l-box-3f96dc81" id="lbx6" class="sub-menu recmd-menu">
+          <cl:verticaldata std:sid="v-data-7df1babe" autosize="height" height="100%" width="100px"/>
+          <cl:itemset datasetid="dsRecmdMenu" label="label" value="value"/>
+        </cl:listbox>
+        <cl:verticallayout std:sid="v-layout-8aab0120" bottommargin="0" leftmargin="20" rightmargin="20" topmargin="20"/>
+      </cl:group>
+      <cl:group std:sid="group-0b261c33">
+        <cl:xylayoutdata std:sid="xyl-data-9f054ef1" bottom="0px" horizontalAnchor="RIGHT" right="175px" top="50px" verticalAnchor="BOTH" width="50px"/>
+        <cl:button std:sid="button-f4d67305" id="btnPrev" value="&lt;">
+          <cl:listener std:sid="listener-8066a7be" handler="onBtnPrevClick" name="click"/>
+          <cl:expbind category="PROPERTY" property="enabled" expression="abcc()"/>
+          <cl:xylayoutdata std:sid="xyl-data-df06bd6a" bottom="50px" height="40px" horizontalAnchor="BOTH" left="5px" right="5px" verticalAnchor="BOTTOM"/>
+        </cl:button>
+        <cl:button std:sid="button-925300fc" id="btnNext" value=">">
+          <cl:listener std:sid="listener-1328b935" handler="onBtnNextClick" name="click"/>
+          <cl:xylayoutdata std:sid="xyl-data-bb1556cd" bottom="5px" height="40px" horizontalAnchor="BOTH" left="5px" right="5px" verticalAnchor="BOTTOM"/>
+        </cl:button>
+        <cl:xylayout std:sid="xylayout-12b687df"/>
+      </cl:group>
+      <cl:xylayout std:sid="xylayout-7b0ecdb9"/>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-32e3fb7d"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

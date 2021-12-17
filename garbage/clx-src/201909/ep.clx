@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-eec9d356" version="1.0.0.0">
+  <head std:sid="head-a63765eb">
+    <title>ep</title>
+    <screen std:sid="screen-ddbc12c1" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-4435dfb7" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-b8ed05d0" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-aaa8807f">
+      <cl:dataset std:sid="d-set-964cd65a" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="work"/>
+          <cl:datacolumn datatype="number" name="percent"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="work"><![CDATA[Work]]></cl:datavalue>
+            <cl:datavalue columnname="percent"><![CDATA[11]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="work"><![CDATA[Eat]]></cl:datavalue>
+            <cl:datavalue columnname="percent"><![CDATA[12]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="work"><![CDATA[Commute]]></cl:datavalue>
+            <cl:datavalue columnname="percent"><![CDATA[13]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="work"><![CDATA[Watch TV]]></cl:datavalue>
+            <cl:datavalue columnname="percent"><![CDATA[14]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="work"><![CDATA[Sleep]]></cl:datavalue>
+            <cl:datavalue columnname="percent"><![CDATA[11]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-fd73e533" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-0b970ffc">
+      <cl:xylayoutdata std:sid="xyl-data-e0957922" height="400px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="TOP"/>
+      <cl:embeddedpage std:sid="e-page-e2e8c3ce" id="ep1" style="border-right-style:solid; border-top-width:1px; border-bottom-color:black; border-left-style:solid; border-right-width:1px; border-bottom-width:1px; border-left-color:black; border-top-color:black; border-bottom-style:solid; border-right-color:black; border-left-width:1px; border-top-style:solid;" src="example.html">
+        <cl:listener std:sid="listener-bb284756" handler="onEp1Load" name="load"/>
+        <cl:formdata std:sid="f-data-391bc86d" col="0" row="1"/>
+      </cl:embeddedpage>
+      <cl:embeddedpage std:sid="e-page-409e2a6f" id="ep2" style="border-right-style:solid; border-top-width:1px; border-bottom-color:black; border-left-style:solid; border-right-width:1px; border-bottom-width:1px; border-left-color:black; border-top-color:black; border-bottom-style:solid; border-right-color:black; border-left-width:1px; border-top-style:solid;" src="../index.html">
+        <cl:listener std:sid="listener-7a164119" handler="onEp2Load" name="load"/>
+        <cl:formdata std:sid="f-data-2251094d" col="1" row="1"/>
+      </cl:embeddedpage>
+      <cl:button std:sid="button-654ed38d" id="btn1" value="메서드 실행하기">
+        <cl:listener std:sid="listener-cae435b7" handler="onBtn1Click" name="click"/>
+        <cl:formdata std:sid="f-data-680b1595" col="0" row="0"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-49380bc7">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns autoSizing="false" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-6209150e"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-7df525ed" version="1.0.0.0">
+  <head std:sid="head-5c08913e">
+    <title>InitLoadTestUDC</title>
+    <screen std:sid="screen-d94b6f77" id="default" customHeight="600" customWidth="800" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-67cf09ed" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-30cc2a0b" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-877c75ae"/>
+    <cl:appspec>
+      <cl:event name="intt" type="cpr.events.CUIEvent"/>
+      <cl:event name="loads" type="cpr.events.CUIEvent"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-0cf6dbdb" style="top:0px; left:0px; width:250px; height:30px;">
+    <cl:listener std:sid="listener-0ed1afeb" handler="onBodyLoad" name="load"/>
+    <cl:listener std:sid="listener-86d06a2f" handler="onBodyInit" name="init"/>
+    <cl:button std:sid="button-b4c5b732" id="btn1" value="">
+      <cl:formdata std:sid="f-data-589f760f" col="1" row="0"/>
+    </cl:button>
+    <cl:inputbox std:sid="i-box-5341f964" id="ipb1">
+      <cl:formdata std:sid="f-data-e534d1ad" col="0" row="0"/>
+    </cl:inputbox>
+    <cl:formlayout>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+      <cl:columns autoSizing="false" length="40" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

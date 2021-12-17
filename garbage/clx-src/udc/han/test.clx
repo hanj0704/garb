@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-666113b0" version="1.0.3313">
+  <head std:sid="head-35222b42">
+    <screen std:sid="screen-dfb2424b" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-b11381a7" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-e8d00b35" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-bb9a43f7">
+      <cl:datamap std:sid="d-map-d634d085" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-4eb41f9a" name="column1"/>
+          <cl:datacolumn std:sid="d-column-c8477cb4" name="column2"/>
+          <cl:datacolumn std:sid="d-column-c3de6bdd" name="column3"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec>
+      <cl:property name="newProperty1" type="expression"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-870b74b7" style="top:0px; left:0px; width:300px; height:300px;">
+    <cl:inputbox std:sid="i-box-7488cc44" id="ipb1">
+      <cl:relativebind property="value" category="PROPERTY" columnname="column1"/>
+      <cl:xylayoutdata std:sid="xyl-data-0f69dfa7" top="20px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:inputbox>
+    <cl:inputbox std:sid="i-box-2745cb20" id="ipb2">
+      <cl:relativebind property="value" category="PROPERTY" columnname="column2"/>
+      <cl:xylayoutdata std:sid="xyl-data-c9862574" top="50px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:inputbox>
+    <cl:inputbox std:sid="i-box-b9e901ba" id="ipb3">
+      <cl:relativebind property="value" category="PROPERTY" columnname="column3"/>
+      <cl:xylayoutdata std:sid="xyl-data-28e839a0" top="80px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:inputbox>
+    <cl:button std:sid="button-e6427eee" id="btn1" value="Button">
+      <cl:xylayoutdata std:sid="xyl-data-4ce76da5" top="50px" left="140px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:inputbox std:sid="i-box-f1d58066" id="ipb4">
+      <cl:expbind property="value" category="PROPERTY" expression="@newProperty1"/>
+      <cl:xylayoutdata std:sid="xyl-data-4eb1e52e" top="110px" left="20px" width="229px" height="36px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:inputbox>
+    <cl:xylayout std:sid="xylayout-308b764a"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

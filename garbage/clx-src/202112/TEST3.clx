@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-2ca46dce" version="1.0.3388">
+  <head std:sid="head-ff7eff7f">
+    <screen std:sid="screen-8991e8a4" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-150cd9a3" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-8ddc8e16" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-cc515cd6"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-7124f2d6">
+    <cl:listener std:sid="listener-f26c5c0f" name="init" handler="onBodyInit"/>
+    <cl:group std:sid="group-0f12929d" id="header" style="background-color:#ffffff; border-bottom-color:#cccccc; border-bottom-width:1px; border-bottom-style:solid;">
+      <cl:verticaldata std:sid="v-data-881c091b" width="400px" height="100px"/>
+      <cl:img std:sid="image-f1899949" tabindex="0" src="../theme/image/btn_sch_ico.png">
+        <cl:xylayoutdata std:sid="xyl-data-d1794fe1" top="34px" left="20px" width="100px" height="50px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      </cl:img>
+      <cl:group std:sid="group-44a9b7e6">
+        <cl:xylayoutdata std:sid="xyl-data-386e2d0e" top="9px" right="20px" left="20px" height="20px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+        <cl:output std:sid="output-6512b90f" tabindex="0" value="로그인">
+          <cl:flowlayoutdata std:sid="f-data-df3359ba" width="100px" height="20px" autosize="width"/>
+        </cl:output>
+        <cl:output std:sid="output-6d017cfb" tabindex="0" value="복지소식">
+          <cl:flowlayoutdata std:sid="f-data-245f1f9e" width="100px" height="20px" autosize="width"/>
+        </cl:output>
+        <cl:flowlayout std:sid="f-layout-57748bf7" scrollable="false" vspacing="0" halign="right"/>
+      </cl:group>
+      <cl:group std:sid="group-176afeb9">
+        <cl:xylayoutdata std:sid="xyl-data-6e7ff87a" top="34px" right="20px" left="130px" height="50px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+        <cl:button std:sid="button-f51d8fb0" value="아이템">
+          <cl:flowlayoutdata std:sid="f-data-26a2e8e9" width="100px" height="100%"/>
+        </cl:button>
+        <cl:button std:sid="button-3bffc763" value="아이템">
+          <cl:flowlayoutdata std:sid="f-data-eca2b2cc" width="100px" height="100%"/>
+        </cl:button>
+        <cl:button std:sid="button-0272bb28" value="아이템">
+          <cl:flowlayoutdata std:sid="f-data-c46f891c" width="100px" height="100%"/>
+        </cl:button>
+        <cl:button std:sid="button-c8991f62" value="아이템">
+          <cl:flowlayoutdata std:sid="f-data-958f9dd6" width="100px" height="100%"/>
+        </cl:button>
+        <cl:button std:sid="button-0e9bb79d" value="아이템">
+          <cl:flowlayoutdata std:sid="f-data-29677aa9" width="100px" height="100%"/>
+        </cl:button>
+        <cl:flowlayout std:sid="f-layout-a410c909" scrollable="false" hspacing="0" vspacing="0"/>
+      </cl:group>
+      <cl:xylayout std:sid="xylayout-ecb3908f"/>
+    </cl:group>
+    <cl:output std:sid="output-a878a8ff" value="">
+      <cl:verticaldata std:sid="v-data-4c5e1760" width="100px" height="180px"/>
+    </cl:output>
+    <cl:embeddedapp std:sid="e-app-93194535" id="ea1" src="TEST4.clx">
+      <cl:verticaldata std:sid="v-data-61777cd4" width="320px" height="1387px" autosize="height"/>
+    </cl:embeddedapp>
+    <cl:group std:sid="group-34e0917b" id="footer" style="background-color:#ffffff; border-top-width:1px; border-top-color:#cccccc; border-top-style:solid;">
+      <cl:verticaldata std:sid="v-data-9dc92f7b" width="400px" height="200px" autosize="height"/>
+      <cl:group std:sid="group-cd7b94bd">
+        <cl:verticaldata std:sid="v-data-136d2dd9" width="400px" height="120px" autosize="height"/>
+        <cl:group std:sid="group-eeac9f2f">
+          <cl:formdata std:sid="f-data-55c4eeed" row="0" col="0"/>
+          <cl:group std:sid="group-c128607e">
+            <cl:verticaldata std:sid="v-data-a0532fbf" width="984px" height="20px" autosize="none"/>
+            <cl:button std:sid="button-ecab1f0b" value="Button">
+              <cl:flowlayoutdata std:sid="f-data-75dda2e1" width="100px" height="100%"/>
+            </cl:button>
+            <cl:button std:sid="button-19e871d0" value="Button">
+              <cl:flowlayoutdata std:sid="f-data-9694c0a2" width="100px" height="100%"/>
+            </cl:button>
+            <cl:button std:sid="button-e15e5af0" value="Button">
+              <cl:flowlayoutdata std:sid="f-data-7f9f2143" width="100px" height="100%"/>
+            </cl:button>
+            <cl:button std:sid="button-9081baf3" value="Button">
+              <cl:flowlayoutdata std:sid="f-data-b3f31926" width="100px" height="100%"/>
+            </cl:button>
+            <cl:button std:sid="button-6d4d31ca" value="Button">
+              <cl:flowlayoutdata std:sid="f-data-407a7780" width="100px" height="100%"/>
+            </cl:button>
+            <cl:button std:sid="button-360c60f0" value="Button">
+              <cl:flowlayoutdata std:sid="f-data-4cde57cb" width="100px" height="100%"/>
+            </cl:button>
+            <cl:flowlayout std:sid="f-layout-45f68da7" scrollable="false" vspacing="0"/>
+          </cl:group>
+          <cl:output std:sid="output-7582ad7c" value="텍스트">
+            <cl:verticaldata std:sid="v-data-949eea08" width="100px" height="20px"/>
+          </cl:output>
+          <cl:output std:sid="output-84db62db" value="텍스트">
+            <cl:verticaldata std:sid="v-data-66c4f195" width="100px" height="20px"/>
+          </cl:output>
+          <cl:output std:sid="output-579436ce" value="텍스트">
+            <cl:verticaldata std:sid="v-data-bde7f7bf" width="100px" height="20px"/>
+          </cl:output>
+          <cl:verticallayout std:sid="v-layout-5e7d118d" scrollable="false"/>
+        </cl:group>
+        <cl:group std:sid="group-19ca9308">
+          <cl:formdata std:sid="f-data-3bcf7737" row="0" col="1"/>
+          <cl:combobox std:sid="c-box-7242dedc" id="cmb1">
+            <cl:verticaldata std:sid="v-data-30d613cc" width="100px" height="40px"/>
+          </cl:combobox>
+          <cl:group std:sid="group-8b7ab2d9">
+            <cl:verticaldata std:sid="v-data-193fcd9a" width="400px" height="30px"/>
+            <cl:button std:sid="button-1e703fe6" value="Button">
+              <cl:flowlayoutdata std:sid="f-data-3aa9ba6a" width="30px" height="100%"/>
+            </cl:button>
+            <cl:button std:sid="button-042391a7" value="Button">
+              <cl:flowlayoutdata std:sid="f-data-dfe417f3" width="30px" height="100%"/>
+            </cl:button>
+            <cl:button std:sid="button-dffd4788" value="z">
+              <cl:flowlayoutdata std:sid="f-data-7b078f8c" width="30px" height="100%"/>
+            </cl:button>
+            <cl:flowlayout std:sid="f-layout-7b7a3b74" scrollable="false" vspacing="0" halign="right"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-f53e9c75" scrollable="false" spacing="10"/>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-01c5a774" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="250" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-b1bd8e86" scrollable="false" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-7ebaccc8" spacing="0" leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

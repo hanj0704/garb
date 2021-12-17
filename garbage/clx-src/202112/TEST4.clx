@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-4c535837" version="1.0.3388">
+  <head std:sid="head-89e81511">
+    <screen std:sid="screen-23d4e509" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-0b627932" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-ec931dad" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-c52c4bfb"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-518e34ff">
+    <cl:group std:sid="group-dca99b60">
+      <cl:verticaldata std:sid="v-data-0acc7803" width="900px" height="86px" autosize="height"/>
+      <cl:group std:sid="group-23ccdc09">
+        <cl:verticaldata std:sid="v-data-f91d3e50" width="400px" height="60px"/>
+        <cl:inputbox std:sid="i-box-ae14193a" id="ipb1">
+          <cl:formdata std:sid="f-data-1d58cede" row="0" col="0"/>
+        </cl:inputbox>
+        <cl:button std:sid="button-4327c166" value="Button">
+          <cl:formdata std:sid="f-data-6772f7c3" row="0" col="1"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-94b08efe" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="60" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-3474a2ce">
+        <cl:verticaldata std:sid="v-data-1f74f26e" width="400px" height="20px"/>
+        <cl:output std:sid="output-ce17de15" tabindex="0" value="#아웃풋">
+          <cl:flowlayoutdata std:sid="f-data-2bb0c85f" width="100px" height="100%" autosize="width"/>
+        </cl:output>
+        <cl:output std:sid="output-42267dd1" tabindex="0" value="#아웃풋">
+          <cl:flowlayoutdata std:sid="f-data-cb3de441" width="100px" height="100%" autosize="width"/>
+        </cl:output>
+        <cl:output std:sid="output-29ecedd7" tabindex="0" value="#아웃풋">
+          <cl:flowlayoutdata std:sid="f-data-21d44380" width="100px" height="100%" autosize="width"/>
+        </cl:output>
+        <cl:output std:sid="output-8dc4f58b" tabindex="0" value="#아웃풋">
+          <cl:flowlayoutdata std:sid="f-data-d7d02762" width="100px" height="100%" autosize="width"/>
+        </cl:output>
+        <cl:output std:sid="output-938704be" tabindex="0" value="#아웃풋">
+          <cl:flowlayoutdata std:sid="f-data-fa1ef11f" width="100px" height="100%" autosize="width"/>
+        </cl:output>
+        <cl:flowlayout std:sid="f-layout-aa5b2a79" scrollable="false" vspacing="0" halign="center"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-98d3fbba"/>
+    </cl:group>
+    <cl:group std:sid="group-31b24b5a">
+      <cl:verticaldata std:sid="v-data-8b973d0b" width="900px" height="200px" autosize="height"/>
+      <cl:group std:sid="group-159f9ce4">
+        <cl:verticaldata std:sid="v-data-40ad5326" width="900px" height="200px"/>
+        <cl:group std:sid="group-212274a6">
+          <cl:xylayoutdata std:sid="xyl-data-8a4c65bb" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+          <cl:button std:sid="button-fa305676">
+            <cl:formdata std:sid="f-data-7bed0afd" valign="CENTER" height="30" row="0" col="0"/>
+          </cl:button>
+          <cl:group std:sid="group-825124f3">
+            <cl:formdata std:sid="f-data-1c31c8c1" row="0" col="1"/>
+            <cl:button std:sid="button-451d19f8" value="Button">
+              <cl:flowlayoutdata std:sid="f-data-08dfcbc8" width="100px" height="100%"/>
+            </cl:button>
+            <cl:button std:sid="button-fb54512e" value="Button">
+              <cl:flowlayoutdata std:sid="f-data-e27b2b78" width="100px" height="100%"/>
+            </cl:button>
+            <cl:button std:sid="button-39a96fdd" value="Button">
+              <cl:flowlayoutdata std:sid="f-data-591cb0b0" width="100px" height="100%"/>
+            </cl:button>
+            <cl:button std:sid="button-e83db46d" value="Button">
+              <cl:flowlayoutdata std:sid="f-data-f5edc6f0" width="100px" height="100%"/>
+            </cl:button>
+            <cl:button std:sid="button-0f1c67c5" value="Button">
+              <cl:flowlayoutdata std:sid="f-data-522160fe" width="100px" height="100%"/>
+            </cl:button>
+            <cl:button std:sid="button-81cf2227" value="Button">
+              <cl:flowlayoutdata std:sid="f-data-57df56e3" width="100px" height="100%"/>
+            </cl:button>
+            <cl:button std:sid="button-4890f29d" value="Button">
+              <cl:flowlayoutdata std:sid="f-data-9cbb2771" width="100px" height="100%"/>
+            </cl:button>
+            <cl:flowlayout std:sid="f-layout-66051e74" scrollable="false" hspacing="20" vspacing="0" halign="center"/>
+          </cl:group>
+          <cl:button std:sid="button-83f485ec">
+            <cl:formdata std:sid="f-data-d9beb1b7" valign="CENTER" height="30" row="0" col="2"/>
+          </cl:button>
+          <cl:formlayout std:sid="f-layout-d395a1d1" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="30" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="30" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:xylayout std:sid="xylayout-82f2951a"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-4e3dc6e2" scrollable="false" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-d99887a5">
+      <cl:verticaldata std:sid="v-data-40164acf" width="900px" height="350px" autosize="height"/>
+      <cl:tabfolder std:sid="t-folder-e955ee12">
+        <cl:listener std:sid="listener-aa3f63cc" name="selection-change" handler="onTabFolderSelectionChange"/>
+        <cl:verticaldata std:sid="v-data-eea9653d" width="320px" height="350px" autosize="height"/>
+        <cl:tabitem std:sid="t-item-0a8cc3a4" text="아이템 - 1">
+          <cl:group std:sid="group-ccf43ff2">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-4ff15b8c" value="텍스트">
+              <cl:verticaldata std:sid="v-data-e4aae3ce" width="100px" height="20px"/>
+            </cl:output>
+            <cl:output std:sid="output-6e4698f0" value="텍스트">
+              <cl:verticaldata std:sid="v-data-91200fd6" width="100px" height="20px"/>
+            </cl:output>
+            <cl:output std:sid="output-3b29d776" value="텍스트">
+              <cl:verticaldata std:sid="v-data-95104103" width="100px" height="20px"/>
+            </cl:output>
+            <cl:output std:sid="output-cad6eb38" value="텍스트">
+              <cl:verticaldata std:sid="v-data-b9c30149" width="100px" height="20px"/>
+            </cl:output>
+            <cl:output std:sid="output-64b29220" value="텍스트">
+              <cl:verticaldata std:sid="v-data-8f1b507f" width="100px" height="20px"/>
+            </cl:output>
+            <cl:verticallayout std:sid="v-layout-e1a417d1" scrollable="false" spacing="20" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-4a1cfe58" text="아이템 - 2">
+          <cl:group std:sid="group-d99f676c">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-dec646f4">
+              <cl:verticaldata std:sid="v-data-2a2ed740" width="858px" height="200px" autosize="none"/>
+              <cl:group std:sid="group-7d8148bf">
+                <cl:xylayoutdata std:sid="xyl-data-ec8dae7a" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+                <cl:button std:sid="button-fbafefc3">
+                  <cl:formdata std:sid="f-data-dd0c6c44" valign="CENTER" height="30" row="0" col="0"/>
+                </cl:button>
+                <cl:group std:sid="group-7324c735">
+                  <cl:formdata std:sid="f-data-44a681f4" row="0" col="1"/>
+                  <cl:button std:sid="button-fbed57ca" value="Button">
+                    <cl:flowlayoutdata std:sid="f-data-b89d248e" width="250px" height="100%"/>
+                  </cl:button>
+                  <cl:button std:sid="button-3a3ce7cd" value="Button">
+                    <cl:flowlayoutdata std:sid="f-data-b3f0c2dc" width="250px" height="100%"/>
+                  </cl:button>
+                  <cl:button std:sid="button-b4f54368" value="Button">
+                    <cl:flowlayoutdata std:sid="f-data-1c712af5" width="250px" height="100%"/>
+                  </cl:button>
+                  <cl:button std:sid="button-442aaa08" value="Button">
+                    <cl:flowlayoutdata std:sid="f-data-24a5f761" width="250px" height="100%"/>
+                  </cl:button>
+                  <cl:button std:sid="button-dcacec02" value="Button">
+                    <cl:flowlayoutdata std:sid="f-data-86017c18" width="250px" height="100%"/>
+                  </cl:button>
+                  <cl:button std:sid="button-ed48a39e" value="Button">
+                    <cl:flowlayoutdata std:sid="f-data-70b21c10" width="250px" height="100%"/>
+                  </cl:button>
+                  <cl:button std:sid="button-12fe6cd4" value="Button">
+                    <cl:flowlayoutdata std:sid="f-data-df61af4f" width="100px" height="100%"/>
+                  </cl:button>
+                  <cl:flowlayout std:sid="f-layout-c471d707" scrollable="false" hspacing="20" vspacing="0" halign="center" linewrap="false"/>
+                </cl:group>
+                <cl:button std:sid="button-19288623">
+                  <cl:formdata std:sid="f-data-7861be22" valign="CENTER" height="30" row="0" col="2"/>
+                </cl:button>
+                <cl:formlayout std:sid="f-layout-8d1f34d3" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:columns length="30" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="30" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:xylayout std:sid="xylayout-a7d7fe75"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-905a46c7" scrollable="false" spacing="20" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-2301bbaf" text="아이템 - 3">
+          <cl:group std:sid="group-cf89bd6b">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-a5f20d4c">
+              <cl:verticaldata std:sid="v-data-c48cf66e" width="840px" height="40px" autosize="none"/>
+              <cl:button std:sid="button-374597aa" value="Button">
+                <cl:flowlayoutdata std:sid="f-data-497f06f2" width="100px" height="100%"/>
+              </cl:button>
+              <cl:button std:sid="button-833651e1" value="Button">
+                <cl:flowlayoutdata std:sid="f-data-4fe31e6f" width="100px" height="100%"/>
+              </cl:button>
+              <cl:button std:sid="button-5ea4d347" value="Button">
+                <cl:flowlayoutdata std:sid="f-data-e81de4f6" width="100px" height="100%"/>
+              </cl:button>
+              <cl:button std:sid="button-1a1b3957" value="Button">
+                <cl:flowlayoutdata std:sid="f-data-4dcde059" width="100px" height="100%"/>
+              </cl:button>
+              <cl:button std:sid="button-3de09989" value="Button">
+                <cl:flowlayoutdata std:sid="f-data-735899f1" width="100px" height="100%"/>
+              </cl:button>
+              <cl:button std:sid="button-17f12437" value="Button">
+                <cl:flowlayoutdata std:sid="f-data-e0e4d4ee" width="100px" height="100%"/>
+              </cl:button>
+              <cl:button std:sid="button-d88d67d9" value="Button">
+                <cl:flowlayoutdata std:sid="f-data-9515e6d5" width="100px" height="100%"/>
+              </cl:button>
+              <cl:flowlayout std:sid="f-layout-f5e92919" scrollable="false" hspacing="20" vspacing="0"/>
+            </cl:group>
+            <cl:group std:sid="group-9bed4dab">
+              <cl:verticaldata std:sid="v-data-9a2f6888" width="900px" height="200px" autosize="none"/>
+              <cl:group std:sid="group-0c6cfb85">
+                <cl:xylayoutdata std:sid="xyl-data-f13b0560" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+                <cl:button std:sid="button-dea0e88c">
+                  <cl:formdata std:sid="f-data-0515183e" valign="CENTER" height="30" row="0" col="0"/>
+                </cl:button>
+                <cl:group std:sid="group-5ce8e91c">
+                  <cl:formdata std:sid="f-data-b63e86ff" row="0" col="1"/>
+                  <cl:button std:sid="button-8a8c9fd5" value="Button">
+                    <cl:flowlayoutdata std:sid="f-data-23c13ad9" width="250px" height="100%"/>
+                  </cl:button>
+                  <cl:button std:sid="button-aa9a8bd6" value="Button">
+                    <cl:flowlayoutdata std:sid="f-data-bfef892d" width="250px" height="100%"/>
+                  </cl:button>
+                  <cl:button std:sid="button-35847ccf" value="Button">
+                    <cl:flowlayoutdata std:sid="f-data-3d900329" width="250px" height="100%"/>
+                  </cl:button>
+                  <cl:button std:sid="button-dc3facbf" value="Button">
+                    <cl:flowlayoutdata std:sid="f-data-e2d66345" width="250px" height="100%"/>
+                  </cl:button>
+                  <cl:button std:sid="button-16d29cfe" value="Button">
+                    <cl:flowlayoutdata std:sid="f-data-82d6c330" width="250px" height="100%"/>
+                  </cl:button>
+                  <cl:button std:sid="button-a392f094" value="Button">
+                    <cl:flowlayoutdata std:sid="f-data-4fde0cf8" width="250px" height="100%"/>
+                  </cl:button>
+                  <cl:button std:sid="button-6257806f" value="Button">
+                    <cl:flowlayoutdata std:sid="f-data-3e7f9d38" width="100px" height="100%"/>
+                  </cl:button>
+                  <cl:flowlayout std:sid="f-layout-87f8cd42" scrollable="false" hspacing="20" vspacing="0" halign="center" linewrap="false"/>
+                </cl:group>
+                <cl:button std:sid="button-321c2b54">
+                  <cl:formdata std:sid="f-data-7d3e1158" valign="CENTER" height="30" row="0" col="2"/>
+                </cl:button>
+                <cl:formlayout std:sid="f-layout-d43f029a" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:columns length="30" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="30" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:xylayout std:sid="xylayout-3b7e4c0d"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-75819eea" scrollable="false" spacing="20" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-a938191d" selected="true" text="아이템 - 4">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-c51629f0">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-30c8bd60">
+              <cl:verticaldata std:sid="v-data-12e6569e" width="400px" height="200px"/>
+              <cl:img std:sid="image-85baa23e" src="../theme/image/btn_sch_ico.png">
+                <cl:formdata std:sid="f-data-67c51ac2" row="0" col="0"/>
+              </cl:img>
+              <cl:img std:sid="image-3cbb578a" src="../theme/image/btn_sch_ico.png">
+                <cl:formdata std:sid="f-data-282c1e9d" row="0" col="1"/>
+              </cl:img>
+              <cl:img std:sid="image-7765c083" src="../theme/image/btn_sch_ico.png">
+                <cl:formdata std:sid="f-data-c862c690" row="0" col="2"/>
+              </cl:img>
+              <cl:button std:sid="button-cf1f9f5f" value="Button">
+                <cl:formdata std:sid="f-data-dbee658d" row="0" col="3"/>
+              </cl:button>
+              <cl:formlayout std:sid="f-layout-fc3fa970" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                <cl:rows length="1" unit="FRACTION"/>
+                <cl:columns length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="1" unit="FRACTION"/>
+                <cl:columns length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-2168acf5" scrollable="false" spacing="20" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:group std:sid="group-3f49630d" id="grpBtns">
+          <cl:headercontroldata std:sid="thc-data-1e6bf01e" width="200" position="right"/>
+          <cl:button std:sid="button-6c9766ae" value="1">
+            <cl:flowlayoutdata std:sid="f-data-aa4343d2" width="50px" height="100%"/>
+          </cl:button>
+          <cl:button std:sid="button-65e8460e" visible="false" value="2">
+            <cl:flowlayoutdata std:sid="f-data-ebb61218" width="50px" height="100%"/>
+          </cl:button>
+          <cl:button std:sid="button-57d0d825" visible="false" value="3">
+            <cl:flowlayoutdata std:sid="f-data-8c506a7d" width="50px" height="100%"/>
+          </cl:button>
+          <cl:button std:sid="button-bfb166ca" visible="false" value="4">
+            <cl:flowlayoutdata std:sid="f-data-08013d66" width="50px" height="100%"/>
+          </cl:button>
+          <cl:flowlayout std:sid="f-layout-cbe0646d" scrollable="false" hspacing="0" vspacing="0" halign="right"/>
+        </cl:group>
+      </cl:tabfolder>
+      <cl:verticallayout std:sid="v-layout-79b4543e" scrollable="false" spacing="0"/>
+    </cl:group>
+    <cl:embeddedpage std:sid="e-page-711af494" id="ep1" src="NewFile2.html">
+      <cl:verticaldata std:sid="v-data-bcf3f8fa" width="900px" height="240px"/>
+    </cl:embeddedpage>
+    <cl:verticallayout std:sid="v-layout-06004b35" scrollable="false" distribution="center" spacing="100" topmargin="60" bottommargin="20"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

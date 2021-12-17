@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-8bab23d6" version="1.0.3125">
+  <head std:sid="head-ac7b4afb">
+    <screen std:sid="screen-836bf447" id="default" name="default" minwidth="1024px" width="1024px" height="768px" active="true"/>
+    <screen std:sid="screen-3fd334bc" id="mobile" name="mobile" maxwidth="1023px" width="350px" height="525px" active="false"/>
+    <cl:model std:sid="model-380a28ac">
+      <cl:dataset std:sid="d-set-5319f668" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="개인신용정보 범위" std:sid="d-column-bca70a19" name="column1"/>
+          <cl:datacolumn comment="개인신용정보 범위" std:sid="d-column-3184b118" name="column2"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[계좌목록]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[거래내역]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[고객정보]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[상세정보]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec dev-comment="templates/Mobile.clx 템플릿 사용하여 작성 함." title="전송요구 내역 확인"/>
+  </head>
+  <body std:sid="body-fc560388" class="P00004">
+    <cl:group std:sid="group-2e9e9260" id="grp1">
+      <cl:verticaldata std:sid="v-data-e073dc33" width="343px" height="410px" autosize="height"/>
+      <cl:output std:sid="output-83acc886" id="opt1" value="현대차증권의 ">
+        <cl:flowlayoutdata std:sid="f-data-d9be1936" width="100px" height="20px" autosize="both"/>
+      </cl:output>
+      <cl:output std:sid="output-688f9bb4" id="opt2" value="개인신용정보">
+        <cl:flowlayoutdata std:sid="f-data-920f46e7" width="100px" height="20px" autosize="both"/>
+      </cl:output>
+      <cl:output std:sid="output-58f7a69b" id="opt3" value="가">
+        <cl:flowlayoutdata std:sid="f-data-eaa1908c" width="100px" height="20px" autosize="both"/>
+      </cl:output>
+      <cl:combobox std:sid="c-box-007b3693" id="cmb1">
+        <cl:flowlayoutdata std:sid="f-data-8484b778" width="72px" height="40px"/>
+      </cl:combobox>
+      <cl:output std:sid="output-8d4e248f" id="opt4" value="동안">
+        <cl:flowlayoutdata std:sid="f-data-ab0f2532" width="52px" height="20px" syncminwidth="true" autosize="both"/>
+      </cl:output>
+      <cl:combobox std:sid="c-box-261e201c" id="cmb2">
+        <cl:flowlayoutdata std:sid="f-data-d235dd90" width="97px" height="40px" autosize="none"/>
+      </cl:combobox>
+      <cl:output std:sid="output-41674a05" id="opt5" value="으로">
+        <cl:flowlayoutdata std:sid="f-data-a62fcb7d" width="52px" height="20px" syncminwidth="false" autosize="both"/>
+      </cl:output>
+      <cl:output std:sid="output-af1e3ef5" id="opt6" value="사업자 A에게 제공">
+        <cl:flowlayoutdata std:sid="f-data-77ebd708" width="180px" height="20px" autosize="both"/>
+      </cl:output>
+      <cl:output std:sid="output-5da49f92" id="opt7" value="되며">
+        <cl:flowlayoutdata std:sid="f-data-6a38b7b2" width="100px" height="20px" autosize="both"/>
+      </cl:output>
+      <cl:combobox std:sid="c-box-cc11f2da" id="cmb3">
+        <cl:flowlayoutdata std:sid="f-data-428d341e" width="72px" height="40px"/>
+      </cl:combobox>
+      <cl:output std:sid="output-3d7c40d4" id="opt8" value="동안 정보를 보관하게 됩니다.">
+        <cl:flowlayoutdata std:sid="f-data-d3430884" width="199px" height="20px" autosize="both"/>
+      </cl:output>
+      <cl:flowlayout std:sid="f-layout-dc1d4286" hspacing="0" vspacing="30" valign="middle" leftmargin="30" rightmargin="30" topmargin="30" bottommargin="30"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-31c6cc3d" spacing="0"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

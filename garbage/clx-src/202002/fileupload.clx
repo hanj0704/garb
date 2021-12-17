@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-cd9ecc1d" version="1.0.0.0">
+  <head std:sid="head-2289bb5d">
+    <title>fileupload</title>
+    <screen std:sid="screen-745d25f5" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-60a9679d" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-8642d7b0" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-dca11462">
+      <cl:submission std:sid="submission-844d1d02" id="upload" action="/cisweb/upload.do" mediatype="multipart/form-data" responsetype="javascript"/>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-3186edc7" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:fileinput std:sid="f-input-449ef02c" id="fi1">
+      <cl:xylayoutdata std:sid="xyl-data-d39b4afb" height="20px" horizontalAnchor="LEFT" left="57px" top="53px" verticalAnchor="TOP" width="100px"/>
+    </cl:fileinput>
+    <cl:button std:sid="button-1fadfa70" id="btn1" value="upload">
+      <cl:listener std:sid="listener-649e3a27" handler="onBtn1Click" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-5754cd9e" height="20px" horizontalAnchor="LEFT" left="57px" top="83px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-e348669e"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

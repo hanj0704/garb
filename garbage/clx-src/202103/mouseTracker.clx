@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-50564b47" version="1.0.0.0">
+  <head std:sid="head-f587749d">
+    <title>mouseTracker</title>
+    <screen std:sid="screen-7d523907" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-e6aad394" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-b8dd1fe5" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-34910829"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-4bd49297" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:button std:sid="button-324ed34d" value="소켓연결">
+      <cl:listener std:sid="listener-ae5e6baa" name="click" handler="onButtonClick"/>
+      <cl:xylayoutdata std:sid="xyl-data-b7d157c2" top="20px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-fe664f32" value="소켓끊어">
+      <cl:listener std:sid="listener-0b0dc611" name="click" handler="onButtonClick2"/>
+      <cl:xylayoutdata std:sid="xyl-data-66031e99" top="77px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:group std:sid="group-9b0a190d">
+      <cl:xylayoutdata std:sid="xyl-data-72c0fd97" top="96px" left="160px" width="389px" height="161px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:slider std:sid="slider-88fc126d" id="sld1">
+        <cl:formdata std:sid="f-data-305f4ce0" row="0" col="1"/>
+      </cl:slider>
+      <cl:slider std:sid="slider-871c29c7" id="sld3">
+        <cl:formdata std:sid="f-data-8aacb402" row="2" col="1"/>
+      </cl:slider>
+      <cl:slider std:sid="slider-1e12c6b8" id="sld4" step="1.0">
+        <cl:formdata std:sid="f-data-b285de55" row="3" col="1"/>
+      </cl:slider>
+      <cl:output std:sid="output-fe7e8aab" value="프로그레스">
+        <cl:formdata std:sid="f-data-ed2c4218" row="0" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-f58a1c79" value="col1">
+        <cl:formdata std:sid="f-data-41bc1206" row="1" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-15ea29da" value="col2">
+        <cl:formdata std:sid="f-data-1795c26d" row="2" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-9835a478" value="col3">
+        <cl:formdata std:sid="f-data-599df74f" row="3" col="0"/>
+      </cl:output>
+      <cl:slider std:sid="slider-52ec51f3" id="sld2">
+        <cl:formdata std:sid="f-data-58377585" row="1" col="1"/>
+      </cl:slider>
+      <cl:formlayout std:sid="f-layout-a34780e0" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="100" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:button std:sid="button-891d35ed" value="통신시작">
+      <cl:listener std:sid="listener-bb3b75ec" name="click" handler="onButtonClick3"/>
+      <cl:xylayoutdata std:sid="xyl-data-a1cc28e1" top="50px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-6bdd0eef"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

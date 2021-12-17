@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ffa021c4" version="1.0.0.0">
+  <head std:sid="head-5bd68bab">
+    <title>tester</title>
+    <screen std:sid="screen-08bfa28d" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-4b32e7ab" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-edad7c3e" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-ff4ca79e">
+      <cl:submission std:sid="submission-b372efa7" id="sms1" action="/cisweb/build.do">
+        <cl:listener std:sid="listener-d835dfa1" handler="onSms1SubmitSuccess" name="submit-success"/>
+        <cl:responsedata dataid="ds1"/>
+      </cl:submission>
+      <cl:dataset std:sid="d-set-4430acb7" id="ds1" altercolumnlayout="server"/>
+      <cl:datamap std:sid="d-map-4eef4e82" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-70d5ca40" name="column1"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-90432512" id="sms2" action="/cisweb/download.do" mediatype="application/x-www-form-urlencoded" responsetype="filedownload"/>
+      <cl:submission std:sid="submission-012dbfc9" id="sms3" action="/cisweb/test.do"/>
+      <cl:dataset std:sid="d-set-08ceb65e" id="dsList">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-ae2d0750" datatype="number" name="key"/>
+          <cl:datacolumn std:sid="d-column-d6809fdf" name="value"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-3cfe6d6b" id="sms4" action="datas/MOCK_DATA.json">
+        <cl:listener std:sid="listener-2b35fa39" handler="onSms4SubmitSuccess" name="submit-success"/>
+        <cl:responsedata dataid="dsList"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-d522f600" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-7d2106f9" handler="onBodyLoad" name="load"/>
+    <cl:button std:sid="button-bafa3332" id="btn1">
+      <cl:listener std:sid="listener-17071b64" handler="onBtn1Click2" name="click"/>
+      <cl:expbind category="PROPERTY" property="value" expression="123"/>
+      <cl:flowlayoutdata height="20px" width="100px"/>
+    </cl:button>
+    <cl:flowlayout/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

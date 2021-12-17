@@ -1,0 +1,135 @@
+@import "../settings.part.less";
+@import "../custom-settings.part.less";
+
+ /* 링크드 콤보 박스 루트 */
+.cl-linkedcombobox{
+	font: @default-font;
+	color: @color-selectbox-text-light;
+	font-size: @font-select-box;
+
+	/* 콤보 박스 */
+	.cl-linkedcombobox-combo {
+		background-color: @color-selectbox-bg-light;
+		border: 1px solid @color-selectbox-default-border-light;
+		border-radius : 3px;
+		width: 150px;
+
+		/* 콤보 박스 인풋 텍스트 */
+		.cl-text{
+			padding : 0px 0px 0px 10px;
+			
+			/* preventInput속성일때 스타일*/
+			&.cl-preventinput{
+
+			}
+		}
+
+		/* 콤보 박스 펼침 버튼 */
+		.cl-linkedcombobox-button {
+			background-image: url(images/icon/img_selectbox_close_light.png);
+			background-size : 8px 5px;
+			width : 24px;
+		}
+	}
+
+	/* 콤보 박스 - 포커스 상태 */
+	.cl-linkedcombobox-combo  {
+		&.cl-focus {
+			border-color: @color-selectbox-focus-border-light;
+			
+			.cl-text {
+				color : @color-selectbox-focus-text-light;
+			}
+		}
+	}
+	
+	/* 콤보 박스 - disabled 상태 */
+	&.cl-disabled {
+		.cl-linkedcombobox-combo{
+			border-color: @disabled-border-color;
+			background-color: @disabled-selection-background;
+			color: @default-text-color;
+		}
+
+		/* 콤보 박스 펼침 버튼 - disabled 상태 */
+		.cl-linkedcombobox-button{
+			background-image: url(images/icon/img_selectbox_close_light.png);
+			background-size : 8px 5px;
+			width : 24px;
+		}
+	}
+}
+
+
+/* 콤보 박스 리스트 박스 */
+.cl-linkedcombobox-list {
+	font: @default-font;
+	color: @color-selectbox-text-light;
+	border: 1px solid @color-selectbox-default-border-light;
+	border-width : 0 1px 1px 1px;
+	background-color: @color-selectbox-bg-light;
+	font-size : @font-select-box;
+	
+	/*리스트박스의 쉐도우*/
+	&.cl-popup {
+		 box-shadow: none;
+	}
+
+	/* 콤보 박스 아이템 */
+	.cl-linkedcombobox-item {
+		padding : 7px 10px;
+		
+		/* 콤보 박스 아이템 텍스트 */
+		.cl-text {
+			padding-left : 0px;
+		}
+
+		/* 콤보 박스 아이템 드릴다운 아이콘 */
+		.cl-linkedcombobox-arrow.cl-folder {
+			 background-image: url(images/list.png);
+			 background-size : 6px 10px;
+		}
+		
+		/* 콤보 박스 아이템 리프 아이콘 */
+		.cl-linkedcombobox-arrow.cl-leaf {
+		}
+
+
+		/* 콤보 박스 아이템 - 선택됨 */
+		&.cl-selected { 
+			background-color: @color-selectbox-bg-light;
+			color: @color-selectbox-focus-text-light;
+
+			/* 콤보 박스 아이템 드릴 다운 아이콘 - 선택됨 */
+			.cl-linkedcombobox-arrow.cl-folder {
+				background-image: url(images/list.png);
+				background-size : 6px 10px;
+			}
+		}
+
+		/* 콤보 박스 아이템 - disabled 상태 */
+		&.cl-disabled {
+			color: @disabled-text-color;
+
+			/* 콤보 박스 아이템 - 선택됨, disabled 상태 */
+			&.cl-selected {
+				color: @disabled-selection-foreground;
+				background-color:  @disabled-selection-background;
+			}
+		}
+
+		&:not(.cl-disabled){
+			/* 콤보 박스 아이템 - 호버 상태 */
+			&:not(.cl-selected):hover, &:not(.cl-selected).cl-hover {
+				color: @color-selectbox-hover-text-light;
+				background-color: @color-selectbox-bg-light;
+				border-color : @color-selectbox-hover-border-light;
+				
+				.cl-linkedcombobox-arrow.cl-folder {
+					background-image: url(images/list.png);
+					background-size : 6px 10px;
+				}
+			}
+		}
+	}
+}

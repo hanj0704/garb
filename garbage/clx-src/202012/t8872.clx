@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-8c8a6d7f" version="1.0.0.0">
+  <head std:sid="head-005bd4d7">
+    <title>t8872</title>
+    <screen std:sid="screen-d1f55c96" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-18fd53a8" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-1d937a49" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-ce1e6121">
+      <cl:dataset std:sid="d-set-ab8144f9" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-29470e81" name="column1" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-e890dc4a" name="column2"/>
+          <cl:datacolumn std:sid="d-column-1b6ea64a" name="column3"/>
+          <cl:datacolumn std:sid="d-column-88b41de4" name="group_seq" displayonly="true"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="column2">column21</cl:datavalue>
+            <cl:datavalue columnname="column3">column31</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="column2">column22</cl:datavalue>
+            <cl:datavalue columnname="column3">column32</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="column2">column23</cl:datavalue>
+            <cl:datavalue columnname="column3">column33</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="column2">column24</cl:datavalue>
+            <cl:datavalue columnname="column3">column34</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="column2">column25</cl:datavalue>
+            <cl:datavalue columnname="column3">column35</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="column2">column26</cl:datavalue>
+            <cl:datavalue columnname="column3">column36</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="column2">column29</cl:datavalue>
+            <cl:datavalue columnname="column3">column39</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="column2">column27</cl:datavalue>
+            <cl:datavalue columnname="column3">column37</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="column2">column28</cl:datavalue>
+            <cl:datavalue columnname="column3">column38</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="column2">column210</cl:datavalue>
+            <cl:datavalue columnname="column3">column310</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[6]]></cl:datavalue>
+            <cl:datavalue columnname="column2">column211</cl:datavalue>
+            <cl:datavalue columnname="column3">column311</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-fed8faa3" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-ca4aa2d7" name="init" handler="onBodyInit"/>
+    <cl:grid std:sid="grid-e601a2e6" id="grd1" datasetid="ds1" suppressedcelltype="merged">
+      <cl:xylayoutdata std:sid="xyl-data-d09d9c44" top="59px" left="68px" width="697px" height="379px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:rowstyle>
+        <cl:expbind property="background-color" category="STYLER" expression="group_seq % 2 == 0 ? &quot;rgba(255, 217, 250, 0.5)&quot; : &quot;rgba(183, 240, 177, 0.5)&quot;"/>
+      </cl:rowstyle>
+      <cl:gridcolumn std:sid="g-column-a1e20039"/>
+      <cl:gridcolumn std:sid="g-column-adac655e"/>
+      <cl:gridcolumn std:sid="g-column-a9738eab"/>
+      <cl:gridheader std:sid="gh-band-9c9a8be2">
+        <cl:gridrow std:sid="g-row-ca1b0b87"/>
+        <cl:gridcell std:sid="gh-cell-583ad9f1" rowindex="0" colindex="0" targetcolumnname="column1" sortable="false" filterable="false" text="column1"/>
+        <cl:gridcell std:sid="gh-cell-1493ce05" rowindex="0" colindex="1" targetcolumnname="column2" sortable="false" filterable="false" text="column2"/>
+        <cl:gridcell std:sid="gh-cell-b26ee5ab" rowindex="0" colindex="2" targetcolumnname="column3" sortable="false" filterable="false" text="column3"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-e3bf03f1">
+        <cl:gridrow std:sid="g-row-88c8d290" height="30px"/>
+        <cl:gridcell std:sid="gd-cell-ee281d7f" rowindex="0" colindex="0" columnname="column1" suppressible="true"/>
+        <cl:gridcell std:sid="gd-cell-0d083607" rowindex="0" colindex="1" columnname="column2"/>
+        <cl:gridcell std:sid="gd-cell-ebf75af7" rowindex="0" colindex="2" columnname="column3"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:xylayout std:sid="xylayout-6f497c39"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

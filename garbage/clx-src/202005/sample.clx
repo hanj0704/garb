@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-4621aac9" version="1.0.0.0">
+  <head std:sid="head-d40ce6f8">
+    <title>sample</title>
+    <screen std:sid="screen-f3693f6a" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-da6d13ca" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-c6435e69" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-e4221c10"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-69f9fb1c" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:inputbox std:sid="i-box-4fa36bdb" id="ipb1" lengthunit="utf8">
+      <cl:xylayoutdata std:sid="xyl-data-4fd31d93" height="20px" horizontalAnchor="LEFT" left="68px" top="131px" verticalAnchor="TOP" width="100px"/>
+    </cl:inputbox>
+    <cl:output std:sid="output-4f5fabec" style="background-color:lightgrey; background-image:none;" value="인풋박스에 값을 입력 후 &#xA;버튼을 누르면 utf8 byte의 길이가 표시됩니다.">
+      <cl:xylayoutdata std:sid="xyl-data-720fcd06" height="87px" horizontalAnchor="LEFT" left="68px" top="34px" verticalAnchor="TOP" width="365px"/>
+    </cl:output>
+    <cl:output std:sid="output-c34bff32" id="result" value="">
+      <cl:xylayoutdata std:sid="xyl-data-165b6183" height="53px" horizontalAnchor="LEFT" left="68px" top="161px" verticalAnchor="TOP" width="365px"/>
+    </cl:output>
+    <cl:button std:sid="button-1b3180d8" value="Button">
+      <cl:listener std:sid="listener-8435e838" handler="onButtonClick" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-7c3d4291" height="20px" horizontalAnchor="LEFT" left="178px" top="131px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:button std:sid="button-5696dae5" id="btn1" value="Button">
+      <cl:listener std:sid="listener-e36c17b4" handler="onBtn1Click" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-e610dd1c" height="20px" horizontalAnchor="LEFT" left="288px" top="131px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:output std:sid="output-30550da2" id="result2" value="">
+      <cl:xylayoutdata std:sid="xyl-data-3bbc540b" height="53px" horizontalAnchor="LEFT" left="68px" top="224px" verticalAnchor="TOP" width="365px"/>
+    </cl:output>
+    <cl:xylayout std:sid="xylayout-41f04803"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

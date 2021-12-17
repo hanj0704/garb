@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-714cc2bf" version="1.0.0.0">
+  <head std:sid="head-2bacf21a">
+    <title>cmnCTSample1</title>
+    <screen std:sid="screen-9f0a1e54" id="JXF" customHeight="600" customWidth="800" height="768px" minwidth="1280px" name="JXF" width="1280px"/>
+    <screen std:sid="screen-585079a2" id="default" active="false" customHeight="600" customWidth="800" height="768px" maxwidth="1279px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-f195c507" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-a3cd455e" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-b3531f0e">
+      <cl:datamap std:sid="d-map-94caa261" id="dmParam">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="strUnitSystemRcd"/>
+          <cl:datacolumn name="param001"/>
+          <cl:datacolumn name="param002"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:dataset std:sid="d-set-758ee4ca" id="dsUnitSystemRcd">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="CD_NM"/>
+          <cl:datacolumn name="CD"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-a5537b5e" id="subList" action="/EXB/STORY_PUBLIC_R01_C.do">
+        <cl:requestdata dataid="pageInfo"/>
+        <cl:responsedata dataid="pageInfo"/>
+        <cl:responsedata dataid="dsTnsStory"/>
+      </cl:submission>
+      <cl:datamap std:sid="d-map-57da3d6f" id="pageInfo">
+        <cl:datacolumnlist>
+          <cl:datacolumn datatype="number" defaultvalue="0" name="recordsTotal"/>
+          <cl:datacolumn datatype="number" defaultvalue="5" name="pageIndexerCount"/>
+          <cl:datacolumn datatype="number" defaultvalue="20" name="recordCountPerPage"/>
+          <cl:datacolumn datatype="number" defaultvalue="1" name="pageNo"/>
+          <cl:datacolumn defaultvalue="Y" name="paging"/>
+          <cl:datacolumn name="pageResultKey"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:dataset std:sid="d-set-5390930c" id="dsTnsStory" info="storyId,storySeq">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="storyId"/>
+          <cl:datacolumn name="storySeq"/>
+          <cl:datacolumn name="storyTitle"/>
+          <cl:datacolumn name="totalSs"/>
+          <cl:datacolumn name="storyClass"/>
+          <cl:datacolumn name="storyClassNm"/>
+          <cl:datacolumn name="storyTp"/>
+          <cl:datacolumn name="storyTpNm"/>
+          <cl:datacolumn name="storyLevel"/>
+          <cl:datacolumn name="storyLevelNm"/>
+          <cl:datacolumn name="reporterId"/>
+          <cl:datacolumn name="reporterNm"/>
+          <cl:datacolumn name="reporterDt"/>
+          <cl:datacolumn name="updUserId"/>
+          <cl:datacolumn name="updUserNm"/>
+          <cl:datacolumn name="updDt"/>
+          <cl:datacolumn name="onairDate"/>
+          <cl:datacolumn name="embargoYn"/>
+          <cl:datacolumn name="urgentYn"/>
+          <cl:datacolumn name="deptCd"/>
+          <cl:datacolumn name="deptNm"/>
+          <cl:datacolumn name="pgmId"/>
+          <cl:datacolumn name="pgmNm"/>
+          <cl:datacolumn name="apprReqDt"/>
+          <cl:datacolumn name="apprDt"/>
+          <cl:datacolumn name="apprUserNm"/>
+          <cl:datacolumn name="storyCount"/>
+          <cl:datacolumn name="cueCnt"/>
+          <cl:datacolumn name="editStatus"/>
+          <cl:datacolumn name="delYn"/>
+          <cl:datacolumn name="deskNote"/>
+          <cl:datacolumn name="editYn"/>
+          <cl:datacolumn name="superDeskYn"/>
+          <cl:datacolumn name="editUserNm"/>
+          <cl:datacolumn name="storyTenseYn"/>
+          <cl:datacolumn name="superDeskUserNm"/>
+          <cl:datacolumn name="superDeskDt"/>
+          <cl:datacolumn name="dubbingNm"/>
+          <cl:datacolumn name="publishYn"/>
+          <cl:datacolumn name="audioYn"/>
+          <cl:datacolumn name="portalYn"/>
+          <cl:datacolumn name="publishUserId"/>
+          <cl:datacolumn name="publishUserNm"/>
+          <cl:datacolumn name="publishDt"/>
+          <cl:datacolumn name="portalUserId"/>
+          <cl:datacolumn name="portalUserNm"/>
+          <cl:datacolumn name="portalDt"/>
+          <cl:datacolumn name="ancMentSs"/>
+          <cl:datacolumn name="contentsSs"/>
+          <cl:datacolumn name="storyOpenRange"/>
+          <cl:datacolumn name="storyOpenRangeNm"/>
+          <cl:datacolumn name="cgReqYn"/>
+          <cl:datacolumn name="subscribeYn"/>
+          <cl:datacolumn name="interviewSs"/>
+          <cl:datacolumn name="embargoDt"/>
+          <cl:datacolumn name="ancMentContents"/>
+          <cl:datacolumn datatype="string" name="contents"/>
+          <cl:datacolumn name="intervieweePhone"/>
+          <cl:datacolumn name="reporterPosition"/>
+          <cl:datacolumn name="mtrlAudioId"/>
+          <cl:datacolumn name="phone"/>
+          <cl:datacolumn name="email"/>
+          <cl:datacolumn name="reportLevel"/>
+          <cl:datacolumn name="editUserId"/>
+          <cl:datacolumn name="totalSsShow"/>
+          <cl:datacolumn name="ancMentSsShow"/>
+          <cl:datacolumn name="contentsSsShow"/>
+          <cl:datacolumn name="apprUserId"/>
+          <cl:datacolumn name="superDeskUserId"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist/>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="report 연계 (postMethod)"/>
+  </head>
+  <body std:sid="body-d424f3c6" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-eeeb85f6" handler="onBodyLoad" name="load"/>
+    <cl:embeddedpage std:sid="e-page-938e8712" id="embReport">
+      <cl:formdata std:sid="f-data-d852a8d1" col="0" row="2"/>
+    </cl:embeddedpage>
+    <cl:group std:sid="group-b036ee08">
+      <cl:formdata std:sid="f-data-d5424242" col="0" row="1"/>
+      <cl:button std:sid="button-4d0559d1" id="btnSearch" value="조회">
+        <cl:listener std:sid="listener-ae34a89c" handler="onBtnSearchClick2" name="click"/>
+        <cl:flowlayoutdata std:sid="f-data-e862324b" height="30px" width="204px"/>
+      </cl:button>
+      <cl:flowlayout std:sid="f-layout-21d4c9ac" halign="right"/>
+    </cl:group>
+    <cl:output std:sid="output-c214b30a" value="클립리포트를 연계한 sample 페이지 입니다. 적용한 파라미터는 json방식으로 구현되어 있습니다. (  report는 아래의 임베디드 페이지에 보이게 되는 방식 입니다. )">
+      <cl:formdata std:sid="f-data-361b137d" col="0" row="0"/>
+    </cl:output>
+    <cl:formlayout std:sid="f-layout-6132364d">
+      <cl:rows autoSizing="false" length="25" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      <cl:rows autoSizing="false" length="35" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

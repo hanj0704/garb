@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-f4749d1d" version="1.0.0.0">
+  <head std:sid="head-a5dd63ca">
+    <title>ZoomSub</title>
+    <screen std:sid="screen-9cfa11de" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-329bc010" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-a07ffb45" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-5259107f">
+      <cl:dataset std:sid="d-set-255b5768" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-7a2de584" name="column1"/>
+          <cl:datacolumn std:sid="d-column-34eb8026" name="column2"/>
+          <cl:datacolumn std:sid="d-column-c15b1520" name="column3"/>
+          <cl:datacolumn std:sid="d-column-db6f5ccf" name="column4"/>
+          <cl:datacolumn std:sid="d-column-19c69456" name="column5"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec preferred-height="900"/>
+  </head>
+  <body std:sid="body-aa327947" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-f87d807b">
+      <cl:formdata std:sid="f-data-b0902e8c" row="1" col="0"/>
+      <cl:output std:sid="output-33e7d334" value="조건">
+        <cl:formdata std:sid="f-data-efa93620" row="0" col="0"/>
+      </cl:output>
+      <cl:searchinput std:sid="s-input-2346d27a">
+        <cl:formdata std:sid="f-data-a963d765" row="0" col="1"/>
+      </cl:searchinput>
+      <cl:button std:sid="button-0d723376" value="조회">
+        <cl:formdata std:sid="f-data-3a41d249" row="0" col="2"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-0fb8aa88" hspace="5px" vspace="5px" top-margin="12px" right-margin="20px" bottom-margin="12px" left-margin="20px">
+        <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-bc46c878" value="프로그램 타이틀">
+      <cl:formdata std:sid="f-data-545eaa18" row="0" col="0"/>
+    </cl:output>
+    <cl:grid std:sid="grid-38ef4141" id="grd1" datasetid="ds1">
+      <cl:formdata std:sid="f-data-eb41ddb0" row="2" col="0"/>
+      <cl:gridcolumn std:sid="g-column-30ca83e1" width="35px"/>
+      <cl:gridcolumn std:sid="g-column-7b845e3f" width="50px"/>
+      <cl:gridcolumn std:sid="g-column-a7ad89d5"/>
+      <cl:gridcolumn std:sid="g-column-56d99445"/>
+      <cl:gridcolumn std:sid="g-column-987a9217"/>
+      <cl:gridcolumn std:sid="g-column-5946cac9"/>
+      <cl:gridcolumn std:sid="g-column-65ca3258"/>
+      <cl:gridheader std:sid="gh-band-acabc272">
+        <cl:gridrow std:sid="g-row-a24a3d01"/>
+        <cl:gridcell std:sid="gh-cell-50f7c9c6" rowindex="0" colindex="0" sortable="false" filterable="false" columntype="checkbox"/>
+        <cl:gridcell std:sid="gh-cell-e1e2fb92" rowindex="0" colindex="1" sortable="false" filterable="false"/>
+        <cl:gridcell std:sid="gh-cell-d2fd81c2" rowindex="0" colindex="2" targetcolumnname="column1" sortable="false" filterable="false" text="column1"/>
+        <cl:gridcell std:sid="gh-cell-9c80102c" rowindex="0" colindex="3" targetcolumnname="column2" sortable="false" filterable="false" text="column2"/>
+        <cl:gridcell std:sid="gh-cell-3e88717a" rowindex="0" colindex="4" targetcolumnname="column3" sortable="false" filterable="false" text="column3"/>
+        <cl:gridcell std:sid="gh-cell-91e02d9d" rowindex="0" colindex="5" targetcolumnname="column4" sortable="false" filterable="false" text="column4"/>
+        <cl:gridcell std:sid="gh-cell-b9670819" rowindex="0" colindex="6" targetcolumnname="column5" sortable="false" filterable="false" text="column5"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-24f427a0">
+        <cl:gridrow std:sid="g-row-1ae531b3"/>
+        <cl:gridcell std:sid="gd-cell-60db1938" rowindex="0" colindex="0" columntype="checkbox"/>
+        <cl:gridcell std:sid="gd-cell-ea0fcac7" rowindex="0" colindex="1" columntype="rowindex"/>
+        <cl:gridcell std:sid="gd-cell-8f899545" rowindex="0" colindex="2" columnname="column1">
+          <cl:inputbox std:sid="i-box-deedd762" id="ipb1"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-ca5e95cb" rowindex="0" colindex="3" columnname="column2">
+          <cl:inputbox std:sid="i-box-b90bbe42" id="ipb2"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-aa0e3882" rowindex="0" colindex="4" columnname="column3">
+          <cl:inputbox std:sid="i-box-08b1b56d" id="ipb3"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-1d22dba8" rowindex="0" colindex="5" columnname="column4">
+          <cl:inputbox std:sid="i-box-a3205d15" id="ipb4"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-1b4dec27" rowindex="0" colindex="6" columnname="column5">
+          <cl:inputbox std:sid="i-box-580506c3" id="ipb5"/>
+        </cl:gridcell>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:formlayout std:sid="f-layout-bf363e93" scrollable="false" hspace="5px" vspace="5px" top-margin="10px" right-margin="10px" bottom-margin="10px" left-margin="10px">
+      <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:rows length="50" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

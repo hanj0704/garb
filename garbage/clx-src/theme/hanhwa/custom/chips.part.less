@@ -1,0 +1,289 @@
+@import "../settings.part.less";
+@import "../custom-settings.part.less";
+
+.cl-container.category-box { // chips를 감싸는 그룹
+	border : 1px solid @color-chips-border;
+	
+	&.sub { // 그룹에 chips가 들어가는 경우
+		border : none;
+	}
+	
+	.cl-tabfolder .cl-tabfolder-body {border: none;}
+	
+	.cl-formlayout-vertical-separator,
+	.cl-formlayout-horizontal-separator
+	{
+		/* 구분 선 스타일 */
+		border-right : 1px solid @color-chips-border;
+		border-bottom : 1px solid @color-chips-contnet-border;
+	}
+	
+	.cl-listbox.category-list {
+		background-color: @color-chips-list-bg;
+		border: none;
+		color: @color-chips-list-text;
+		font-size : @font-small-text;
+	
+		.cl-listbox-list {
+			.cl-listbox-item {
+				padding : 7px 25px 7px 10px;
+				
+				&.cl-selected {
+					background-color : @color-chips-list-active-bg;
+					color : @color-chips-list-active-text;
+					font-weight : @font-bold;
+					
+					background-image : url(images/icon/img_chip_list.png);
+					background-position : calc(100% - 10px) center;
+					background-repeat : no-repeat;
+					background-size : 5px 8px;
+					
+					.cl-text, .cl-badge {
+						color : @color-chips-list-ative-badge-text;
+					}
+				}
+				
+				.cl-text {
+					
+				}
+				
+				.cl-badge {
+					color : @color-chips-list-badge-text;
+				}
+			}
+		}
+		
+		&:not(.cl-disabled) {
+			.cl-listbox-item:not(.cl-disabled) {
+		
+				&:not(.cl-selected){
+					/* 포커스된 아이템 */
+					&:focus{
+						color: @color-chips-list-text;
+						background-color: @color-chips-list-bg;
+					}
+					/* 호버된 아이템 */
+					&:hover{
+						color: @color-chips-list-text;
+						background-color: @color-chips-list-bg;
+					}
+				}
+			}
+		}
+		
+		&.cl-focus {
+			
+		}
+	}
+
+	.cl-listbox.category-sublist {
+		background-color : @color-chips-sublist-bg;
+		border : none;
+		color : @color-chips-text;
+		font-size : @font-small-text;
+		
+		.cl-listbox-list {
+			.cl-listbox-item {
+				padding : 8px 10px;
+				
+				&.cl-selected {
+					background-color : transparent;
+					color : @color-chips-text;
+				}
+				
+				.cl-text {
+				}
+				
+				.cl-badge {
+					background-image : url(images/icon/img_label_box.png);
+					background-repeat : no-repeat;
+					background-size : contain;
+					background-position : center;
+					color : @color-chips-list-active-text;
+					font-weight : @font-bold;
+					text-align : center;
+					
+					min-width : 15px;
+				}
+				
+				.cl-text, .cl-badge {
+//					padding : 1px 0px;
+				}
+			}
+		}
+		
+		&:not(.cl-disabled) {
+			.cl-listbox-item:not(.cl-disabled) {
+		
+				&:not(.cl-selected){
+					/* 포커스된 아이템 */
+					&:focus{
+						color: @color-chips-text;
+						background-color: transparent;
+					}
+					/* 호버된 아이템 */
+					&:hover{
+						color: @color-chips-text;
+						background-color: transparent;
+					}
+				}
+			}
+		}
+		
+		&.cl-focus {
+			
+		}		
+	}
+	
+		
+	.cl-checkboxgroup {
+		background-color : @color-filter-bg;
+		border-radius : 3px;
+		color : @color-chips-text;
+		font-size : @font-small-text;
+		padding : 10px 20px;
+		
+		.cl-checkbox {
+			.cl-icon-wrapper {
+			}
+			
+			.cl-checkbox-icon {
+				margin-left : 5px;
+			}
+			
+			.cl-text {
+			}
+			
+			&.cl-checked {
+				color : @color-chips-active-text;
+				font-weight : @font-bold;
+				
+				.cl-checkbox-icon {
+				}
+				
+				.cl-text {}
+			}
+			
+			&.cl-disabled {
+				.cl-checkbox {
+					.cl-checkbox-icon {
+						
+					}
+	
+					.cl-text {
+					}
+					
+					&.cl-checked {
+						.cl-checkbox-icon {}
+						.cl-text {}
+						
+					}
+					
+					&:hover, &.cl-hover{
+						.cl-checkbox-icon {}
+					}
+				}
+			}
+			
+			&.cl-focus {
+				.cl-checkbox {
+					.cl-checkbox-icon {
+						/* 포커스를 가진 체크박스 아이템의 아이콘 */
+						&:focus, &.cl-focus {
+							outline: none;
+						}
+					}
+				}
+			}
+			
+			&:not(.cl-disabled) {
+				.cl-checkbox {
+					&:not(.cl-checked):hover, &:not(.cl-checked).cl-hover {
+						/* 체크 박스 아이콘 - 호버 */
+						.cl-checkbox-icon {
+						}
+					}
+				}
+			}
+		}
+	}
+	
+		
+	.chip-checkbox{
+		.cl-checkbox {			
+			background-color : #ebf0f6;
+			border-radius : 15px;
+			text-align : center;	
+			.cl-checkbox-icon {
+				background-image : none ;
+				&:hover, &.cl-hover{
+					background-image : none ;
+					
+				}
+			
+			}
+			&:hover, &.cl-hover{
+				/* 체크 박스 아이콘 호버 상태 */
+				.cl-checkbox-icon {
+					background-image : none;
+				}
+			}
+			&.cl-checked {
+				background-color : #ebf0f6 !important;		
+				/* 체크 박스 아이콘 호버 상태 */
+				.cl-checkbox-icon {
+					background-image : none; 
+				}
+				&:hover, &.cl-hover{					
+						background-image : none;
+				}
+				.cl-text {
+					text-align : center !important;	
+				}
+			}	
+		}
+			
+	
+		.cl-checkbox .cl-checkbox-icon{
+				background-image : none ;		
+		}
+	}
+	
+	.chip-checkbox .cl-checkboxgroup .cl-checkbox .cl-checkbox-icon{
+		
+				background-image : none ;		
+	}
+}
+
+
+.chip-add-box{
+	padding : 5px 20px 5px 20px;
+	
+	.chip-add-area{
+		//margin-top: -2.5px;
+		//margin-bottom: -2.5px;
+		//padding : 5px 20px 5px 20px;	
+		background-color : #dddddd;
+		
+		.label {
+			text-align : center;
+		}
+		.value {
+			background-color : #ffffff;
+			border : 1px solid #dfdfdf;
+			border-radius : 3px;
+			font-size : @font-small-text-r;
+			color : #444444;
+			text-align : left;
+		}
+		
+		.cond-flow-area{
+			
+		}
+		
+		.btn-chip-add {
+			background-color : #7093BA;
+			border-radius : 0px 3px 3px 0px;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-7425473c" version="1.0.0.0">
+  <head std:sid="head-a25bf56c">
+    <title>ipbs</title>
+    <screen std:sid="screen-0d9b3122" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-83ab245b" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-4c3b3b9a" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-57fb9881"/>
+    <cl:appspec>
+      <cl:property name="newProperty1"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-34c78a6e" style="top:0px; left:0px; width:300px; height:300px;">
+    <cl:inputbox std:sid="i-box-df10a3cc" id="ipb1" placeholder="place">
+      <cl:xylayoutdata std:sid="xyl-data-17a615b7" height="39px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="TOP"/>
+    </cl:inputbox>
+    <cl:xylayout std:sid="xylayout-2d9398bd"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

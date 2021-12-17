@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-8bfca411" version="1.0.0.0">
+  <head std:sid="head-0bc3ecb7">
+    <title>우동규</title>
+    <screen std:sid="screen-2905de07" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-1531dbc7" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-f4d14571" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-d685c5e0">
+      <cl:dataset comment="그리드 데이터" std:sid="d-set-b56c9cf1" id="dsGrid">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="부서코드" std:sid="d-column-8f06945e" name="code"/>
+          <cl:datacolumn comment="부서코드명" std:sid="d-column-2ce1dfcc" name="codeName"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="code">code1</cl:datavalue>
+            <cl:datavalue columnname="codeName"><![CDATA[부서1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="code">code2</cl:datavalue>
+            <cl:datavalue columnname="codeName"><![CDATA[부서2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="code">code3</cl:datavalue>
+            <cl:datavalue columnname="codeName"><![CDATA[부서3]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset comment="부서코드 콤보박스 데이터" std:sid="d-set-78adf3ce" id="dsCombo">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-db93fb1c" name="label"/>
+          <cl:datacolumn std:sid="d-column-951b4d24" name="value"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[부서명1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[code1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[부서명2]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[code2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[부서명3]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[code3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[부서명4]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[code4]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[부서명5]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[code5]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-0e28ecfe" id="sms1" action="asdasd.do" mediatype="application/json">
+        <cl:requestdata dataid="dsGrid" payload="all"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-5fb20ba3" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-28424240">
+      <cl:xylayoutdata std:sid="xyl-data-1117e048" top="314px" left="63px" width="858px" height="346px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:grid std:sid="grid-def6a095" id="grd1" datasetid="dsGrid" pastemode="editable" selectionunit="row" columnMovable="true">
+        <cl:listener std:sid="listener-e53e97c6" name="selection-change" handler="onGrd1SelectionChange"/>
+        <cl:listener std:sid="listener-82b6bd63" name="cell-click" handler="onGrd1CellClick"/>
+        <cl:formdata std:sid="f-data-eb6c3423" row="2" col="0"/>
+        <cl:gridcolumn std:sid="g-column-478abb9d"/>
+        <cl:gridcolumn std:sid="g-column-ff2b0fd9"/>
+        <cl:gridheader std:sid="gh-band-32f96e90">
+          <cl:gridrow std:sid="g-row-97d492b7"/>
+          <cl:gridcell std:sid="gh-cell-878130cb" rowindex="0" colindex="0" targetcolumnname="code" sortable="false" filterable="false" text="code"/>
+          <cl:gridcell std:sid="gh-cell-f4248a4c" rowindex="0" colindex="1" targetcolumnname="codeName" sortable="false" filterable="false" text="codeName"/>
+        </cl:gridheader>
+        <cl:griddetail std:sid="gd-band-ece63f49">
+          <cl:gridrow std:sid="g-row-349d8a1e"/>
+          <cl:gridcell std:sid="gd-cell-f8015a1d" rowindex="0" colindex="0" columnname="code">
+            <cl:combobox std:sid="c-box-129c741e" id="cmb1">
+              <cl:itemset datasetid="dsCombo" label="label" value="value"/>
+            </cl:combobox>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-011d78f7" rowindex="0" colindex="1" columnname="codeName">
+            <cl:output std:sid="output-04841676">
+              <cl:expbind property="value" category="PROPERTY" expression="#cmb1.text"/>
+            </cl:output>
+          </cl:gridcell>
+        </cl:griddetail>
+      </cl:grid>
+      <cl:button std:sid="button-f74ff95d" value="행 추가">
+        <cl:listener std:sid="listener-ace96745" name="click" handler="onButtonClick"/>
+        <cl:formdata std:sid="f-data-745c5bfc" row="0" col="0" rowspan="1" colspan="2"/>
+      </cl:button>
+      <cl:grid std:sid="grid-c66ceced" id="grd2" datasetid="dsGrid" pastemode="editable" columnMovable="true">
+        <cl:formdata std:sid="f-data-7785ec3d" row="2" col="1"/>
+        <cl:gridcolumn std:sid="g-column-df13bca8"/>
+        <cl:gridcolumn std:sid="g-column-9a66dc62"/>
+        <cl:gridheader std:sid="gh-band-e8684d1c">
+          <cl:gridrow std:sid="g-row-b46343dd"/>
+          <cl:gridcell std:sid="gh-cell-25f73cae" rowindex="0" colindex="0" targetcolumnname="code" sortable="false" filterable="false" text="code"/>
+          <cl:gridcell std:sid="gh-cell-d5413ae7" rowindex="0" colindex="1" targetcolumnname="codeName" sortable="false" filterable="false" text="codeName"/>
+        </cl:gridheader>
+        <cl:griddetail std:sid="gd-band-469a59d4">
+          <cl:gridrow std:sid="g-row-5ea13cd6"/>
+          <cl:gridcell std:sid="gd-cell-3fd66e30" rowindex="0" colindex="0" columnname="code">
+            <cl:combobox std:sid="c-box-51bcdbd9" id="cmb2">
+              <cl:itemset datasetid="dsCombo" label="label" value="value"/>
+            </cl:combobox>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-4dde62a9" rowindex="0" colindex="1" columnname="codeName">
+            <cl:output std:sid="output-1e2c25c8">
+              <cl:expbind property="value" category="PROPERTY" expression="code"/>
+            </cl:output>
+          </cl:gridcell>
+        </cl:griddetail>
+      </cl:grid>
+      <cl:group std:sid="group-ef806fe3" class="cl-form-group">
+        <cl:formdata std:sid="f-data-c51383f9" row="3" col="0"/>
+        <cl:output std:sid="output-e679f15f" value="selection-change">
+          <cl:formdata std:sid="f-data-b7bf02d1" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-e5542c60" value="cell-click">
+          <cl:formdata std:sid="f-data-1115e5b8" row="1" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-fc6d8870" id="optSelCh" value="">
+          <cl:formdata std:sid="f-data-ac7222c5" row="0" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-4593a2ba" id="optCellClick" value="">
+          <cl:formdata std:sid="f-data-74a2b91d" row="1" col="1"/>
+        </cl:output>
+        <cl:formlayout std:sid="f-layout-d3c168bf" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="120" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:output std:sid="output-05f068f0" style="font-weight:bold;" value="[그리드1] codeName 아웃풋 value에 콤보박스 텍스트 값 익스프레션 바인딩">
+        <cl:formdata std:sid="f-data-bef66855" row="1" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-bb60a45e" style="font-weight:bold;" value="[그리드2] codeName 아웃풋 value에 같은 로우의 code 컬럼 값 익스프레션 바인딩">
+        <cl:formdata std:sid="f-data-bfff78ae" row="1" col="1"/>
+      </cl:output>
+      <cl:formlayout std:sid="f-layout-5d276b69" hspace="10px" vspace="10px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="60" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-e02088d2" class="cl-form-group">
+      <cl:xylayoutdata std:sid="xyl-data-72ebe7d5" top="20px" left="57px" width="857px" height="261px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:output std:sid="output-438bb031" style="color:#2e3284; font-weight:bold; font-size:13pt;" value="익스프레션 바인딩을 이용하여 다른 컬럼의 텍스트를 value로 지정하는 예제">
+        <cl:formdata std:sid="f-data-7712dca2" row="0" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-b5b36a26" value="- 그리드1 의 행을 클릭하여 선택된 행이 변경되면 selection-change 이벤트가 발생하고, 그리드1 하단의 selection-change 아웃풋 우측에 콤보박스의 text가 반환됩니다.&#xD;&#xA;- 그리드1 의 행의 콤보박스를 클릭하면 cell-click 이벤트가 발생되면 그리드1 하단의 cell-click 아웃풋 우측에 콤보박스 text가 반환됩니다.&#xD;&#xA;&#xD;&#xA;- 행 추가 버튼을 누르면 dsGrid에 새 행이 추가됩니다. 이 때, 그리드1과 그리드2는 같은 데이터셋에 바인딩 되어있으므로 데이터 변경, 행추가 등의 동작이 동시에 발생합니다.&#xD;&#xA;&#xD;&#xA;- 각 그리드는 pasteMode = editable로 지정되어있기 때문에 codeName 컬럼에 배치된 아웃풋은 붙여넣기로 값이 변경되지 않습니다.&#xD;&#xA;">
+        <cl:formdata std:sid="f-data-020ea8e5" row="1" col="0"/>
+      </cl:output>
+      <cl:formlayout std:sid="f-layout-8a8c1e65" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+        <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:button std:sid="button-f099fb19" value="Button">
+      <cl:listener std:sid="listener-873e854d" name="click" handler="onButtonClick2"/>
+      <cl:xylayoutdata std:sid="xyl-data-fb1a3eb2" top="680px" left="113px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-3cf904d2"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-0a2b1a78" version="1.0.0.0">
+  <head std:sid="head-c6520134">
+    <title>sampleIn29Weeks</title>
+    <screen std:sid="screen-5f8193ab" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-428ef017" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-fdf47dc6" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-d07c75ff">
+      <cl:dataset std:sid="d-set-2a1d5c3e" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-0d121f3e" name="column1"/>
+          <cl:datacolumn std:sid="d-column-1b705058" name="column2"/>
+          <cl:datacolumn std:sid="d-column-73416008" name="column3"/>
+          <cl:datacolumn std:sid="d-column-01754266" name="column4"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column11</cl:datavalue>
+            <cl:datavalue columnname="column2">column21</cl:datavalue>
+            <cl:datavalue columnname="column3">column31</cl:datavalue>
+            <cl:datavalue columnname="column4">column41</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column12</cl:datavalue>
+            <cl:datavalue columnname="column2">column22</cl:datavalue>
+            <cl:datavalue columnname="column3">column32</cl:datavalue>
+            <cl:datavalue columnname="column4">column42</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column13</cl:datavalue>
+            <cl:datavalue columnname="column2">column23</cl:datavalue>
+            <cl:datavalue columnname="column3">column33</cl:datavalue>
+            <cl:datavalue columnname="column4">column43</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column14</cl:datavalue>
+            <cl:datavalue columnname="column2">column24</cl:datavalue>
+            <cl:datavalue columnname="column3">column34</cl:datavalue>
+            <cl:datavalue columnname="column4">column44</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-b7187625" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-c2fef541" style="border-right-style:solid; border-top-width:2px; border-bottom-color:lightgray; border-left-style:solid; border-right-width:2px; border-bottom-width:2px; border-left-color:lightgray; border-top-color:lightgray; border-bottom-style:solid; border-right-color:lightgray; border-left-width:2px; border-top-style:solid;">
+      <cl:verticaldata std:sid="v-data-91b17032" width="400px" height="282px"/>
+      <cl:grid std:sid="grid-c742bdad" id="grd1" datasetid="ds1">
+        <cl:formdata std:sid="f-data-e769dcef" row="1" col="0"/>
+        <cl:gridcolumn std:sid="g-column-c1c4c7d2"/>
+        <cl:gridcolumn std:sid="g-column-3873169f"/>
+        <cl:gridcolumn std:sid="g-column-be70f981"/>
+        <cl:gridcolumn std:sid="g-column-fcb2c640"/>
+        <cl:gridheader std:sid="gh-band-73facbc1">
+          <cl:gridrow std:sid="g-row-f65d1236"/>
+          <cl:gridcell std:sid="gh-cell-8768329a" rowindex="0" colindex="0" targetcolumnname="column1" sortable="false" filterable="false" text="column1"/>
+          <cl:gridcell std:sid="gh-cell-b7c896d4" rowindex="0" colindex="1" targetcolumnname="column2" sortable="false" filterable="false" text="column2"/>
+          <cl:gridcell std:sid="gh-cell-6542e008" rowindex="0" colindex="2" targetcolumnname="column3" sortable="false" filterable="false" text="column3"/>
+          <cl:gridcell std:sid="gh-cell-9e1b1b33" rowindex="0" colindex="3" targetcolumnname="column4" sortable="false" filterable="false" text="column4"/>
+        </cl:gridheader>
+        <cl:griddetail std:sid="gd-band-b8fc4a5e">
+          <cl:gridrow std:sid="g-row-374c3eb9"/>
+          <cl:gridcell std:sid="gd-cell-9f2068a5" rowindex="0" colindex="0" columnname="column1">
+            <cl:inputbox std:sid="i-box-1d81bde7" id="ipb1"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-094ca279" rowindex="0" colindex="1" columnname="column2">
+            <cl:inputbox std:sid="i-box-2673f16b" id="ipb2"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-6882c02a" rowindex="0" colindex="2" columnname="column3">
+            <cl:inputbox std:sid="i-box-45d86889" id="ipb3"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-691aa924" rowindex="0" colindex="3" columnname="column4">
+            <cl:inputbox std:sid="i-box-92bf8856" id="ipb4"/>
+          </cl:gridcell>
+        </cl:griddetail>
+      </cl:grid>
+      <cl:output std:sid="output-0f2e856c" value="1.데이터 change 여부 판단하는 방법">
+        <cl:formdata std:sid="f-data-b94f9e8f" row="0" col="0"/>
+      </cl:output>
+      <cl:button std:sid="button-fe9ddb12" id="btn1" value="console">
+        <cl:listener std:sid="listener-24729fda" name="click" handler="onBtn1Click2"/>
+        <cl:formdata std:sid="f-data-7d1a1802" halign="RIGHT" row="2" col="0"/>
+      </cl:button>
+      <cl:output std:sid="output-bc9c5645" value="데이터셋의 행에서 getState(), getStateString()과 같은 api를 사용하면 각 행의 상태값을 가져와서 사용할 수 있습니다.">
+        <cl:formdata std:sid="f-data-20cf2a7e" row="3" col="0"/>
+      </cl:output>
+      <cl:formlayout std:sid="f-layout-e16ea366" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="CUSTOM" shadecolor="#f8c3c3" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="28" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="28" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-085d85db" style="border-right-style:solid; border-top-width:2px; border-bottom-color:lightgray; border-left-style:solid; border-right-width:2px; border-bottom-width:2px; border-left-color:lightgray; border-top-color:lightgray; border-bottom-style:solid; border-right-color:lightgray; border-left-width:2px; border-top-style:solid;">
+      <cl:verticaldata std:sid="v-data-d0a3bc55" width="1024px" height="280px" autosize="none"/>
+      <cl:output std:sid="output-a4b93ff2" value="2.페이지인덱서 사용하는 방법">
+        <cl:formdata std:sid="f-data-d3f23394" row="0" col="0"/>
+      </cl:output>
+      <cl:pageindexer std:sid="p-indexer-ac306df0">
+        <cl:formdata std:sid="f-data-4245e578" row="1" col="0"/>
+      </cl:pageindexer>
+      <cl:output std:sid="output-450ff1a3" value="많은 속성들이 있으나 기본적을 totalRowCount, currentPageIndex, pageRowCount를 활용합니다. &#xD;&#xA;totalRowCount / pageRowCount로 전체 페이지인덱서의 페이지 갯수를 계산할 수 있으며&#xD;&#xA;totalRowCount는 서버에서 구하고, pageRowCount는 클라이언트나 서버, 원하는곳에서 지정합니다.&#xD;&#xA;기본적으로 사용하는 방법은 페이지인덱서에서 selection-change가 발생했을 때, currentPageIndex와 pageRowCount를 파라미터로 가져가는 서브미션을 send하여, &#xD;&#xA;각 페이지에서 보여주어야 하는 행들을 pageIndexCount* (currentPageIndex-1) ~ pageIndexCount * currentPageIndex 사이의 인덱스의 데이터를 요청하는 형태로 사용합니다.">
+        <cl:formdata std:sid="f-data-7bb11a39" row="2" col="0"/>
+      </cl:output>
+      <cl:formlayout std:sid="f-layout-0ed8ec42" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="CUSTOM" shadecolor="#f8c3c3" minlength="0"/>
+        <cl:rows length="50" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-a913d5b2" style="border-right-style:solid; border-top-width:2px; border-bottom-color:lightgray; border-left-style:solid; border-right-width:2px; border-bottom-width:2px; border-left-color:lightgray; border-top-color:lightgray; border-bottom-style:solid; border-right-color:lightgray; border-left-width:2px; border-top-style:solid;">
+      <cl:verticaldata std:sid="v-data-c06295ec" width="1024px" height="153px" autosize="none"/>
+      <cl:output std:sid="output-5ee89a5c" value="3.콤보박스의 값을 deselect하는 방법">
+        <cl:formdata std:sid="f-data-bd36bb23" row="0" col="0"/>
+      </cl:output>
+      <cl:button std:sid="button-3719c335" id="btn2" value="clear">
+        <cl:listener std:sid="listener-9a70910e" name="click" handler="onBtn2Click"/>
+        <cl:formdata std:sid="f-data-86815a04" halign="RIGHT" row="2" col="0"/>
+      </cl:button>
+      <cl:combobox std:sid="c-box-66d95401" id="cmb1">
+        <cl:formdata std:sid="f-data-5030f60a" halign="LEFT" row="1" col="0"/>
+        <cl:item std:sid="item-c0c10a81" label="label1" value="value1"/>
+        <cl:item std:sid="item-659a3c21" label="label2" value="value2"/>
+        <cl:item std:sid="item-607594e3" label="label3" value="value3"/>
+        <cl:item std:sid="item-4ebe76de" label="label4" value="value4"/>
+        <cl:item std:sid="item-925ff6c7" label="label5" value="value5"/>
+      </cl:combobox>
+      <cl:output std:sid="output-24f69205" value="콤보박스의 clearSelection() api를 사용할 수 있습니다">
+        <cl:formdata std:sid="f-data-98baa09d" row="3" col="0"/>
+      </cl:output>
+      <cl:formlayout std:sid="f-layout-f546e77d" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="CUSTOM" shadecolor="#f8c3c3" minlength="0"/>
+        <cl:rows length="28" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="28" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="28" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-75a2da35" style="border-right-style:solid; border-top-width:2px; border-bottom-color:lightgray; border-left-style:solid; border-right-width:2px; border-bottom-width:2px; border-left-color:lightgray; border-top-color:lightgray; border-bottom-style:solid; border-right-color:lightgray; border-left-width:2px; border-top-style:solid;">
+      <cl:verticaldata std:sid="v-data-140bc71d" width="1024px" height="179px" autosize="none"/>
+      <cl:output std:sid="output-1b45965b" value="4. 필드에 대문자만 허용하는 방법, 인풋박스 길이제한">
+        <cl:formdata std:sid="f-data-c7695867" row="0" col="0"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-a4a46202" id="ipb5" inputfilter="[A-Z]">
+        <cl:formdata std:sid="f-data-44b971cb" row="1" col="0"/>
+      </cl:inputbox>
+      <cl:output std:sid="output-2cfaf092" value="입력값에 대한 체한은 인풋박스 컨트롤의 inputFilter속성을 사용하십시오. 다만 서치인풋 컨트롤에서는 사용할 수 없습니다.(사용자가 검색하는 값에 대해서 제한을 두지 않기 때문에)&#xD;&#xA;&#xD;&#xA;인풋박스의 길이제한은 maxLength와 lengthUnit 속성을 사용하십시오.">
+        <cl:formdata std:sid="f-data-1f6619ac" row="2" col="0"/>
+      </cl:output>
+      <cl:formlayout std:sid="f-layout-379b7e0c" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="CUSTOM" shadecolor="#f8c3c3" minlength="0"/>
+        <cl:rows length="28" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-79279903" style="border-right-style:solid; border-top-width:2px; border-bottom-color:lightgray; border-left-style:solid; border-right-width:2px; border-bottom-width:2px; border-left-color:lightgray; border-top-color:lightgray; border-bottom-style:solid; border-right-color:lightgray; border-left-width:2px; border-top-style:solid;">
+      <cl:verticaldata std:sid="v-data-94ee7ad1" width="1024px" height="115px" autosize="none"/>
+      <cl:output std:sid="output-da903827" value="6.데이트인풋 9999/12/31입력 가능하게 하는 방법">
+        <cl:formdata std:sid="f-data-0697f8db" row="0" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-3e8eacdc" value="maxDate속성을 사용하십시오.">
+        <cl:formdata std:sid="f-data-1fe2e1b4" row="2" col="0"/>
+      </cl:output>
+      <cl:dateinput std:sid="d-input-09afe236" id="dti1" value="99991230" maxdate="9999-12-31">
+        <cl:formdata std:sid="f-data-9dc24ec3" row="1" col="0"/>
+      </cl:dateinput>
+      <cl:formlayout std:sid="f-layout-850f413c" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="CUSTOM" shadecolor="#f8c3c3" minlength="0"/>
+        <cl:rows length="28" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="28" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-b80a4276" style="border-right-style:solid; border-top-width:2px; border-bottom-color:lightgray; border-left-style:solid; border-right-width:2px; border-bottom-width:2px; border-left-color:lightgray; border-top-color:lightgray; border-bottom-style:solid; border-right-color:lightgray; border-left-width:2px; border-top-style:solid;">
+      <cl:verticaldata std:sid="v-data-427570a9" width="1024px" height="315px" autosize="none"/>
+      <cl:output std:sid="output-6079e333" value="7.그룹 안에 있는 모든 컨트롤의 value를 clear하는 방법">
+        <cl:formdata std:sid="f-data-2225a867" row="0" col="0"/>
+      </cl:output>
+      <cl:group std:sid="group-9d4d7f5d" id="grp1" class="cl-form-group">
+        <cl:formdata std:sid="f-data-ccfd2e4b" height="177" row="1" col="0" rowspan="1" colspan="1"/>
+        <cl:output std:sid="output-853f3d6a" value="Output">
+          <cl:formdata std:sid="f-data-298262bf" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-cdc12e1a" value="Output">
+          <cl:formdata std:sid="f-data-467b8b37" row="1" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-92cf1791" value="Output">
+          <cl:formdata std:sid="f-data-23fc6f8e" row="2" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-e31ee16e" value="Output">
+          <cl:formdata std:sid="f-data-7c5a7d88" row="3" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-aaa5b690" value="Output">
+          <cl:formdata std:sid="f-data-bb4b858b" row="4" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-6d8d520a" value="Output">
+          <cl:formdata std:sid="f-data-0eabacf4" row="0" col="2"/>
+        </cl:output>
+        <cl:output std:sid="output-1c6e2826" value="Output">
+          <cl:formdata std:sid="f-data-bd912645" row="1" col="2"/>
+        </cl:output>
+        <cl:output std:sid="output-cdc0290e" value="Output">
+          <cl:formdata std:sid="f-data-52e05fa7" row="2" col="2"/>
+        </cl:output>
+        <cl:output std:sid="output-b3117719" value="Output">
+          <cl:formdata std:sid="f-data-53105f9b" row="3" col="2"/>
+        </cl:output>
+        <cl:output std:sid="output-3b5200d4" value="Output">
+          <cl:formdata std:sid="f-data-3c5f80d0" row="4" col="2"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-9ff60f35" id="ipb6" value="a">
+          <cl:formdata std:sid="f-data-c7b6f971" row="0" col="1"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-0d2c929d" id="ipb7" value="b">
+          <cl:formdata std:sid="f-data-15126773" row="1" col="1"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-ad02dd95" id="ipb8" value="c">
+          <cl:formdata std:sid="f-data-5c1f4aa0" row="2" col="1"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-45939a6c" id="ipb9" value="d">
+          <cl:formdata std:sid="f-data-b4f6b67c" row="3" col="1"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-df7db120" id="ipb10" value="e">
+          <cl:formdata std:sid="f-data-daa5e92e" row="4" col="1"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-109f9532" id="ipb11" value="f">
+          <cl:formdata std:sid="f-data-2465aa16" row="0" col="3"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-c1509f56" id="ipb12" value="g">
+          <cl:formdata std:sid="f-data-ff2da9bf" row="1" col="3"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-2123bd2a" id="ipb13" value="h">
+          <cl:formdata std:sid="f-data-2ef2663d" row="2" col="3"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-6cba714c" id="ipb14" value="i">
+          <cl:formdata std:sid="f-data-eadfa24a" row="3" col="3"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-11cce886" id="ipb15" value="j">
+          <cl:formdata std:sid="f-data-f0c61a91" row="4" col="3"/>
+        </cl:inputbox>
+        <cl:formlayout std:sid="f-layout-b5bcef67" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="100" unit="PIXEL" shadetype="BY_CLASS"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="100" unit="PIXEL" shadetype="BY_CLASS"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:button std:sid="button-1f7a0f6d" id="btn3" value="clear">
+        <cl:listener std:sid="listener-56ace0c7" name="click" handler="onBtn3Click"/>
+        <cl:formdata std:sid="f-data-e5478ea2" halign="RIGHT" row="2" col="0"/>
+      </cl:button>
+      <cl:output std:sid="output-ff191b30" value="공통모듈에 clearAllChildren 함수가 추가되었습니다.">
+        <cl:formdata std:sid="f-data-18cff777" row="3" col="0"/>
+      </cl:output>
+      <cl:formlayout std:sid="f-layout-3f56f3c6" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="CUSTOM" shadecolor="#f8c3c3" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+        <cl:rows length="28" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="28" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-14846f3b" style="border-right-style:solid; border-top-width:2px; border-bottom-color:lightgray; border-left-style:solid; border-right-width:2px; border-bottom-width:2px; border-left-color:lightgray; border-top-color:lightgray; border-bottom-style:solid; border-right-color:lightgray; border-left-width:2px; border-top-style:solid;">
+      <cl:verticaldata std:sid="v-data-a2f294cf" width="1024px" height="294px" autosize="none"/>
+      <cl:output std:sid="output-51463487" value="18.1번 화면에서 다른화면으로 이동할 때 파라미터를 넘기는 방법.">
+        <cl:formdata std:sid="f-data-4007d610" row="0" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-05504c6f" value="mdi폴더에서 addItemWithApp api를 사용하면 앱id를 통해서 아이템을 자동으로 추가할 수 있되, 세번 째 전달인자로 콜백함수를 작성할 수 있는것을 확인할 수 있습니다.&#xD;&#xA;해당 함수에서는appLoadCompleteCallback 으로 App이 로드된 후 호출되는 TabItem을 인자로 받는 콜백함수를 작성할 수 있는데,&#xD;&#xA;이곳에서 item.content.initValue ={}를 통해서 호출된 화면에 파라미터를 전달할 수 있습니다.&#xD;&#xA;파라미터를 보내는 쪽이 있으면 받는 쪽이 존재해야 하는듯이, 호출된 화면의 load이벤트 혹은 init 이벤트에서 app.getHostProperty(&quot;initValue&quot;)를 통해서 해당 파라미터를 받아야 합니다.">
+        <cl:formdata std:sid="f-data-e9d6f853" row="2" col="0" rowspan="1" colspan="1"/>
+      </cl:output>
+      <cl:group std:sid="group-74b60b3d">
+        <cl:formdata std:sid="f-data-6d0a4dec" row="1" col="0"/>
+        <cl:button std:sid="button-f0abbe67" id="btn4" value="Button">
+          <cl:listener std:sid="listener-5adc9f46" name="click" handler="onBtn4Click"/>
+          <cl:xylayoutdata std:sid="xyl-data-1fe2d347" top="20px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        </cl:button>
+        <cl:mdifolder std:sid="mdifolder-15fc2eed" id="mdi1">
+          <cl:xylayoutdata std:sid="xyl-data-a3b53a02" top="20px" left="130px" width="421px" height="75px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        </cl:mdifolder>
+        <cl:xylayout std:sid="xylayout-af8f31b9"/>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-d1032c46" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="CUSTOM" shadecolor="#f8c3c3" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-8f3e1dba"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

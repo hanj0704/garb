@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-c3b1fb80" version="1.0.0.0">
+  <head std:sid="head-5fc5e1a8">
+    <title>PickingBot</title>
+    <screen std:sid="screen-c73a3628" id="default" name="default" minwidth="1024px" width="1024px" height="768px" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-c591c897" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-f3880956" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-a1af1551"/>
+    <cl:appspec>
+      <cl:property name="distance" type="number" default="100"/>
+      <cl:property name="picking" type="number" default="100"/>
+      <cl:property name="direction" type="number" default="0"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-47f9e7f2" style="top:0px; left:0px; width:600px; height:600px;">
+    <cl:listener std:sid="listener-8a245d12" name="init" handler="onBodyInit"/>
+    <cl:listener std:sid="listener-c15e9b41" name="property-change" handler="onBodyPropertyChange"/>
+    <cl:htmlobject std:sid="htmlobject-a44ff991" id="img" data="udc/svg/pickingBot.svg" mediatype="image/svg+xml">
+      <std:metadata>
+        <std:property key="hidden" value="true"/>
+      </std:metadata>
+      <cl:listener std:sid="listener-b7358b61" name="load" handler="onImgLoad"/>
+      <cl:xylayoutdata std:sid="xyl-data-9637d8a7" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+    </cl:htmlobject>
+    <cl:img std:sid="image-e26e3b1c" removeOnBuild="true" src="pickingBot.svg">
+      <cl:xylayoutdata std:sid="xyl-data-7d3eab93" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+    </cl:img>
+    <cl:xylayout std:sid="xylayout-70225c7b" scrollable="false"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

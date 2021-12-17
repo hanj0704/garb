@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-27f22327" version="1.0.0.0">
+  <head std:sid="head-d87c5830">
+    <title>tester</title>
+    <screen std:sid="screen-16c26c9c" id="default" active="true" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-59839a7a" id="tablet" active="false" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-31d83e40" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-3570df8b">
+      <cl:dataset std:sid="d-set-5dbbf809" id="ds1" sortcondition="">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="" std:sid="d-column-1ab31a29" datatype="string" info="aaaa" name="column1"/>
+          <cl:datacolumn std:sid="d-column-1bf6648e" name="column2"/>
+          <cl:datacolumn std:sid="d-column-b99ac59e" name="column3"/>
+          <cl:datacolumn std:sid="d-column-1a1d6da7" name="column4"/>
+          <cl:datacolumn std:sid="d-column-f6df1639" name="column5"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column11</cl:datavalue>
+            <cl:datavalue columnname="column2">column21</cl:datavalue>
+            <cl:datavalue columnname="column3">column31</cl:datavalue>
+            <cl:datavalue columnname="column4">column41</cl:datavalue>
+            <cl:datavalue columnname="column5">column51</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column12</cl:datavalue>
+            <cl:datavalue columnname="column2">column22</cl:datavalue>
+            <cl:datavalue columnname="column3">column32</cl:datavalue>
+            <cl:datavalue columnname="column4">column42</cl:datavalue>
+            <cl:datavalue columnname="column5">column52</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column13</cl:datavalue>
+            <cl:datavalue columnname="column2">column23</cl:datavalue>
+            <cl:datavalue columnname="column3">column33</cl:datavalue>
+            <cl:datavalue columnname="column4">column43</cl:datavalue>
+            <cl:datavalue columnname="column5">column53</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column14</cl:datavalue>
+            <cl:datavalue columnname="column2">column24</cl:datavalue>
+            <cl:datavalue columnname="column3">column34</cl:datavalue>
+            <cl:datavalue columnname="column4">column44</cl:datavalue>
+            <cl:datavalue columnname="column5">column54</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-4d50e809" id="ds2">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-000aa0db" datatype="string" name="column1"/>
+          <cl:datacolumn std:sid="d-column-1fa2452a" datatype="number" name="column2"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">q</cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">w</cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">e</cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[4]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">r</cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[7]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-b747c3c1" id="ds3">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-a0924882" name="column1"/>
+          <cl:datacolumn std:sid="d-column-3e0489d0" name="column2"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column11</cl:datavalue>
+            <cl:datavalue columnname="column2">column21</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column12</cl:datavalue>
+            <cl:datavalue columnname="column2">column22</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column13</cl:datavalue>
+            <cl:datavalue columnname="column2">column23</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column14</cl:datavalue>
+            <cl:datavalue columnname="column2">column24</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column15</cl:datavalue>
+            <cl:datavalue columnname="column2">column25</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column16</cl:datavalue>
+            <cl:datavalue columnname="column2">column26</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-7cd5bf7b" id="sms1" action="/cisweb/getList.do">
+        <cl:responsedata dataid="dsPlan"/>
+      </cl:submission>
+      <cl:dataset std:sid="d-set-54f09873" id="dsPlan" altercolumnlayout="server">
+        <cl:listener std:sid="listener-f51c1530" handler="onDsPlanLoad" name="load"/>
+        <cl:listener std:sid="listener-60007a2d" handler="onDsPlanUpdate" name="update"/>
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-81af234b" name="rowNum"/>
+          <cl:datacolumn std:sid="d-column-e395b769" name="totCnt"/>
+          <cl:datacolumn std:sid="d-column-bad47af5" name="schId"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="rowNum"><![CDATA[ㅁ나운미ㅏㄷ;ㅎ루;ㅇ니훙ㄴㄹ휘ㅏㅇ너ㅜㅍㅊ을누ㅠㅏ러후ㅠㅣ호ㅜㅡㅗ]]></cl:datavalue>
+            <cl:datavalue columnname="totCnt">totCnt1</cl:datavalue>
+            <cl:datavalue columnname="schId">schId1</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="rowNum">rowNum2</cl:datavalue>
+            <cl:datavalue columnname="totCnt">totCnt2</cl:datavalue>
+            <cl:datavalue columnname="schId">schId2</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="rowNum">rowNum3</cl:datavalue>
+            <cl:datavalue columnname="totCnt">totCnt3</cl:datavalue>
+            <cl:datavalue columnname="schId">schId3</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="rowNum">rowNum4</cl:datavalue>
+            <cl:datavalue columnname="totCnt">totCnt4</cl:datavalue>
+            <cl:datavalue columnname="schId">schId4</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="rowNum">rowNum5</cl:datavalue>
+            <cl:datavalue columnname="totCnt">totCnt5</cl:datavalue>
+            <cl:datavalue columnname="schId">schId5</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="rowNum">rowNum6</cl:datavalue>
+            <cl:datavalue columnname="totCnt">totCnt6</cl:datavalue>
+            <cl:datavalue columnname="schId">schId6</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-e381fcc2" id="ds4">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-f9b95b55" name="column1"/>
+          <cl:datacolumn std:sid="d-column-718651e2" name="column2"/>
+          <cl:datacolumn std:sid="d-column-be9ac523" name="column3"/>
+          <cl:datacolumn std:sid="d-column-d0f8fda1" name="column4"/>
+          <cl:datacolumn std:sid="d-column-44d94833" name="column5"/>
+          <cl:datacolumn std:sid="d-column-46ebfc16" name="column6"/>
+          <cl:datacolumn std:sid="d-column-f1f38fbf" name="column7"/>
+          <cl:datacolumn std:sid="d-column-1311843c" name="column8"/>
+          <cl:datacolumn std:sid="d-column-dfac58e8" name="column9"/>
+          <cl:datacolumn std:sid="d-column-c5a261ef" name="column10"/>
+          <cl:datacolumn std:sid="d-column-6a88216d" name="column11"/>
+          <cl:datacolumn std:sid="d-column-8df8c736" name="column12"/>
+          <cl:datacolumn std:sid="d-column-0d993683" name="column13"/>
+          <cl:datacolumn std:sid="d-column-a738e477" name="column14"/>
+          <cl:datacolumn std:sid="d-column-cf11fe42" name="column15"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column11</cl:datavalue>
+            <cl:datavalue columnname="column2">column21</cl:datavalue>
+            <cl:datavalue columnname="column3">column31</cl:datavalue>
+            <cl:datavalue columnname="column4">column41</cl:datavalue>
+            <cl:datavalue columnname="column5">column51</cl:datavalue>
+            <cl:datavalue columnname="column6">column61</cl:datavalue>
+            <cl:datavalue columnname="column7">column71</cl:datavalue>
+            <cl:datavalue columnname="column8">column81</cl:datavalue>
+            <cl:datavalue columnname="column9">column91</cl:datavalue>
+            <cl:datavalue columnname="column10">column101</cl:datavalue>
+            <cl:datavalue columnname="column11">column111</cl:datavalue>
+            <cl:datavalue columnname="column12">column121</cl:datavalue>
+            <cl:datavalue columnname="column13">column131</cl:datavalue>
+            <cl:datavalue columnname="column14">column141</cl:datavalue>
+            <cl:datavalue columnname="column15">column151</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column12</cl:datavalue>
+            <cl:datavalue columnname="column2">column22</cl:datavalue>
+            <cl:datavalue columnname="column3">column32</cl:datavalue>
+            <cl:datavalue columnname="column4">column42</cl:datavalue>
+            <cl:datavalue columnname="column5">column52</cl:datavalue>
+            <cl:datavalue columnname="column6">column62</cl:datavalue>
+            <cl:datavalue columnname="column7">column72</cl:datavalue>
+            <cl:datavalue columnname="column8">column82</cl:datavalue>
+            <cl:datavalue columnname="column9">column92</cl:datavalue>
+            <cl:datavalue columnname="column10">column102</cl:datavalue>
+            <cl:datavalue columnname="column11">column112</cl:datavalue>
+            <cl:datavalue columnname="column12">column122</cl:datavalue>
+            <cl:datavalue columnname="column13">column132</cl:datavalue>
+            <cl:datavalue columnname="column14">column142</cl:datavalue>
+            <cl:datavalue columnname="column15">column152</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column13</cl:datavalue>
+            <cl:datavalue columnname="column2">column23</cl:datavalue>
+            <cl:datavalue columnname="column3">column33</cl:datavalue>
+            <cl:datavalue columnname="column4">column43</cl:datavalue>
+            <cl:datavalue columnname="column5">column53</cl:datavalue>
+            <cl:datavalue columnname="column6">column63</cl:datavalue>
+            <cl:datavalue columnname="column7">column73</cl:datavalue>
+            <cl:datavalue columnname="column8">column83</cl:datavalue>
+            <cl:datavalue columnname="column9">column93</cl:datavalue>
+            <cl:datavalue columnname="column10">column103</cl:datavalue>
+            <cl:datavalue columnname="column11">column113</cl:datavalue>
+            <cl:datavalue columnname="column12">column123</cl:datavalue>
+            <cl:datavalue columnname="column13">column133</cl:datavalue>
+            <cl:datavalue columnname="column14">column143</cl:datavalue>
+            <cl:datavalue columnname="column15">column153</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column14</cl:datavalue>
+            <cl:datavalue columnname="column2">column24</cl:datavalue>
+            <cl:datavalue columnname="column3">column34</cl:datavalue>
+            <cl:datavalue columnname="column4">column44</cl:datavalue>
+            <cl:datavalue columnname="column5">column54</cl:datavalue>
+            <cl:datavalue columnname="column6">column64</cl:datavalue>
+            <cl:datavalue columnname="column7">column74</cl:datavalue>
+            <cl:datavalue columnname="column8">column84</cl:datavalue>
+            <cl:datavalue columnname="column9">column94</cl:datavalue>
+            <cl:datavalue columnname="column10">column104</cl:datavalue>
+            <cl:datavalue columnname="column11">column114</cl:datavalue>
+            <cl:datavalue columnname="column12">column124</cl:datavalue>
+            <cl:datavalue columnname="column13">column134</cl:datavalue>
+            <cl:datavalue columnname="column14">column144</cl:datavalue>
+            <cl:datavalue columnname="column15">column154</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column15</cl:datavalue>
+            <cl:datavalue columnname="column2">column25</cl:datavalue>
+            <cl:datavalue columnname="column3">column35</cl:datavalue>
+            <cl:datavalue columnname="column4">column45</cl:datavalue>
+            <cl:datavalue columnname="column5">column55</cl:datavalue>
+            <cl:datavalue columnname="column6">column65</cl:datavalue>
+            <cl:datavalue columnname="column7">column75</cl:datavalue>
+            <cl:datavalue columnname="column8">column85</cl:datavalue>
+            <cl:datavalue columnname="column9">column95</cl:datavalue>
+            <cl:datavalue columnname="column10">column105</cl:datavalue>
+            <cl:datavalue columnname="column11">column115</cl:datavalue>
+            <cl:datavalue columnname="column12">column125</cl:datavalue>
+            <cl:datavalue columnname="column13">column135</cl:datavalue>
+            <cl:datavalue columnname="column14">column145</cl:datavalue>
+            <cl:datavalue columnname="column15">column155</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-0421e93b" id="sms2" action="/cisweb/encode.do" mediatype="application/json">
+        <cl:listener std:sid="listener-47572ea0" handler="onSms2SubmitDone" name="submit-done"/>
+      </cl:submission>
+      <cl:dataset std:sid="d-set-0688beed" id="ds5">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-eff03a42" name="column1"/>
+          <cl:datacolumn std:sid="d-column-ada46651" datatype="number" name="column2"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[가나다라 \n 마바사아자]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column12</cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column13</cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column14</cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column15</cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column16</cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column17</cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column18</cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column19</cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column110</cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column111</cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-a4ede4dd" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="" std:sid="d-column-0ca82628" datatype="string" defaultvalue="가나다라마\n바사아자" name="column1"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:datamap std:sid="d-map-f3f32fc0" id="dm2">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-84521ddf" name="column1"/>
+          <cl:datacolumn std:sid="d-column-8bfa5a9c" name="column2"/>
+          <cl:datacolumn std:sid="d-column-83ab8ec4" name="column3"/>
+          <cl:datacolumn std:sid="d-column-380eb3c5" name="column4"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-859cc400" id="sms3" action="datas/dataDtl.json">
+        <cl:requestdata dataid="dm2"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-21a25a3e" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-ba0f18ab" handler="onBodyLoad" name="load"/>
+    <cl:combobox std:sid="c-box-34657f26" id="cmb1">
+      <cl:xylayoutdata std:sid="xyl-data-a919dc5b" height="20px" horizontalAnchor="LEFT" left="233px" top="86px" verticalAnchor="TOP" width="100px"/>
+      <cl:itemset datasetid="ds5" label="column1" value="column2"/>
+    </cl:combobox>
+    <cl:button std:sid="button-f6eda7bf" id="btn1" value="Button">
+      <cl:listener std:sid="listener-cf691c0f" handler="onBtn1Click3" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-de9c5a73" height="20px" horizontalAnchor="LEFT" left="233px" top="130px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:grid std:sid="grid-d968a67f" id="grd1" datasetid="ds5">
+      <cl:xylayoutdata std:sid="xyl-data-f84d97a8" height="200px" horizontalAnchor="LEFT" left="404px" top="116px" verticalAnchor="TOP" width="400px"/>
+      <cl:gridcolumn std:sid="g-column-b66ea10a"/>
+      <cl:gridcolumn std:sid="g-column-d148e4dd"/>
+      <cl:gridheader>
+        <cl:gridrow std:sid="g-row-e1cf7a38"/>
+        <cl:gridcell std:sid="gh-cell-b575aaf1" colindex="0" rowindex="0" filterable="false" sortable="false" targetcolumnname="column1" text="column1"/>
+        <cl:gridcell std:sid="gh-cell-0ac1510f" colindex="1" rowindex="0" filterable="false" sortable="false" targetcolumnname="column2" text="column2"/>
+      </cl:gridheader>
+      <cl:griddetail>
+        <cl:gridrow std:sid="g-row-2c35619a"/>
+        <cl:gridcell std:sid="gd-cell-7caf9936" colindex="0" rowindex="0" columnname="column1"/>
+        <cl:gridcell std:sid="gd-cell-82d6e195" colindex="1" rowindex="0" columnname="column2">
+          <cl:numbereditor std:sid="n-editor-9205b719" id="nbe2"/>
+        </cl:gridcell>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:numbereditor std:sid="n-editor-1e35b33c" id="nbe1">
+      <cl:xylayoutdata std:sid="xyl-data-a2ac2f9b" height="20px" horizontalAnchor="LEFT" left="207px" top="198px" verticalAnchor="TOP" width="100px"/>
+    </cl:numbereditor>
+    <cl:xylayout std:sid="xylayout-21b0b9c7"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

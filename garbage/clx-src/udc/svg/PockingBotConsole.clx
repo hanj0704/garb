@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-249d32cd" version="1.0.0.0">
+  <head std:sid="head-e04fd638">
+    <title>PockingBotConsole</title>
+    <screen std:sid="screen-6a1568ed" id="default" name="default" minwidth="1024px" width="1024px" height="768px" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-ee10a9cf" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-6a414f8b" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-f7c98c62"/>
+    <cl:appspec>
+      <cl:property name="bot" type="control"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-d1dcfb2b" style="top:0px; left:0px; width:300px; height:150px;" class="cl-form-group">
+    <cl:listener std:sid="listener-fdefdba5" name="property-change" handler="onBodyPropertyChange"/>
+    <cl:output std:sid="output-ca54746b" style="text-align:right;" value="방향">
+      <cl:formdata std:sid="f-data-637374a4" row="0" col="0"/>
+    </cl:output>
+    <cl:output std:sid="output-24a01d28" style="text-align:right;" value="팔">
+      <cl:formdata std:sid="f-data-9caef461" row="1" col="0"/>
+    </cl:output>
+    <cl:output std:sid="output-6a3fe35d" style="text-align:right;" value="집게">
+      <cl:formdata std:sid="f-data-46c19447" row="2" col="0"/>
+    </cl:output>
+    <cl:radiobutton std:sid="r-button-082e777b" id="dirField" value="0">
+      <cl:listener std:sid="listener-9f6e3898" name="selection-change" handler="onDirFieldSelectionChange"/>
+      <cl:formdata std:sid="f-data-2173f2e6" row="0" col="1"/>
+      <cl:item std:sid="item-e9a66670" label="북" value="0"/>
+      <cl:item std:sid="item-09c3e041" label="동" value="90"/>
+      <cl:item std:sid="item-13591756" label="남" value="180"/>
+      <cl:item std:sid="item-9ba74603" label="서" value="270"/>
+    </cl:radiobutton>
+    <cl:radiobutton std:sid="r-button-38f452af" id="armField" value="0">
+      <cl:listener std:sid="listener-67a41a5f" name="selection-change" handler="onArmFieldSelectionChange"/>
+      <cl:formdata std:sid="f-data-b5a8b0e5" row="1" col="1"/>
+      <cl:item std:sid="item-4925e2c0" label="접기" value="0"/>
+      <cl:item std:sid="item-faf38bb9" label="펼치기" value="100"/>
+    </cl:radiobutton>
+    <cl:radiobutton std:sid="r-button-f6282918" id="pickerField" value="0">
+      <cl:listener std:sid="listener-0afc994d" name="selection-change" handler="onPickerFieldSelectionChange"/>
+      <cl:formdata std:sid="f-data-ed9b9914" row="2" col="1"/>
+      <cl:item std:sid="item-1bdfb592" label="잡기" value="0"/>
+      <cl:item std:sid="item-a3b5fe63" label="놓기" value="100"/>
+    </cl:radiobutton>
+    <cl:formlayout std:sid="f-layout-751a526e" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="65" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

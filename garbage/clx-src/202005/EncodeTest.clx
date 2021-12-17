@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-8ba459e7" version="1.0.0.0">
+  <head std:sid="head-ea3c2344">
+    <title>EncodeTest</title>
+    <screen std:sid="screen-0a65bd4e" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-afe072ee" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-15eda206" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-e7b981cf">
+      <cl:dataset std:sid="d-set-e7786dcc" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-d906a0e3" name="idGb"/>
+          <cl:datacolumn std:sid="d-column-67346e91" name="cjum"/>
+          <cl:datacolumn std:sid="d-column-02092c81" name="ajum"/>
+          <cl:datacolumn std:sid="d-column-4c718501" name="sjum"/>
+          <cl:datacolumn std:sid="d-column-1c8df442" name="grpId"/>
+          <cl:datacolumn std:sid="d-column-b33038cc" name="userId"/>
+          <cl:datacolumn std:sid="d-column-b38f2ccb" name="grpNo"/>
+          <cl:datacolumn std:sid="d-column-ee32156a" name="fnm"/>
+          <cl:datacolumn std:sid="d-column-a44cfd96" name="sts"/>
+          <cl:datacolumn std:sid="d-column-b1aa54a7" name="opGb"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="idGb"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="cjum"><![CDATA[0888]]></cl:datavalue>
+            <cl:datavalue columnname="ajum"><![CDATA[0888]]></cl:datavalue>
+            <cl:datavalue columnname="sjum"><![CDATA[0888]]></cl:datavalue>
+            <cl:datavalue columnname="grpId"><![CDATA[903]]></cl:datavalue>
+            <cl:datavalue columnname="userId"><![CDATA[SHF0003]]></cl:datavalue>
+            <cl:datavalue columnname="grpNo"><![CDATA[SUPER01]]></cl:datavalue>
+            <cl:datavalue columnname="fnm"><![CDATA[HELLO]]></cl:datavalue>
+            <cl:datavalue columnname="sts"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="opGb"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-63acfba2" id="sms1" action="/cisweb/encode.do" mediatype="application/json">
+        <cl:listener std:sid="listener-584df02c" name="before-submit" handler="onSms1BeforeSubmit"/>
+        <cl:listener std:sid="listener-c38d34ad" name="submit-done" handler="onSms1SubmitDone"/>
+        <cl:requestdata dataid="dm1"/>
+        <cl:requestdata dataid="ds1" payload="all"/>
+      </cl:submission>
+      <cl:datamap std:sid="d-map-ccf22a7a" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-5770ae5b" name="opNo"/>
+          <cl:datacolumn std:sid="d-column-42aa7604" name="sts"/>
+          <cl:datacolumn std:sid="d-column-98766d28" name="opGb"/>
+          <cl:datacolumn std:sid="d-column-d826d359" name="fnm"/>
+          <cl:datacolumn std:sid="d-column-acaf8d6e" name="openIl"/>
+          <cl:datacolumn std:sid="d-column-c3cf5952" name="openUser"/>
+          <cl:datacolumn std:sid="d-column-502d1bd5" name="cjum"/>
+          <cl:datacolumn std:sid="d-column-b2e9d5ea" name="ajum"/>
+          <cl:datacolumn std:sid="d-column-dbf50aea" name="sjum"/>
+          <cl:datacolumn std:sid="d-column-5bad1009" name="dealerNo"/>
+          <cl:datacolumn std:sid="d-column-a6160ee0" name="dealerYn"/>
+          <cl:datacolumn std:sid="d-column-2f148ea0" name="tgb"/>
+          <cl:datacolumn std:sid="d-column-fa8e3631" name="type"/>
+          <cl:datacolumn std:sid="d-column-2b408b4e" name="tseq"/>
+          <cl:datacolumn std:sid="d-column-d7e1ee32" name="tellNo"/>
+          <cl:datacolumn std:sid="d-column-8566c6e8" name="grpId"/>
+          <cl:datacolumn std:sid="d-column-f0268dd8" name="ipAddr"/>
+          <cl:datacolumn std:sid="d-column-f2632097" name="passwdIl"/>
+          <cl:datacolumn std:sid="d-column-d88cfe3b" name="seniorOpNo"/>
+          <cl:datacolumn std:sid="d-column-26c8a46a" name="lstIbIl"/>
+          <cl:datacolumn std:sid="d-column-5781f79d" name="grpNo"/>
+          <cl:datacolumn std:sid="d-column-00ae548e" name="linePrt1"/>
+          <cl:datacolumn std:sid="d-column-4bd55b02" name="linePrt2"/>
+          <cl:datacolumn std:sid="d-column-d525c88e" name="passwdLock"/>
+          <cl:datacolumn std:sid="d-column-77c9c398" name="remark"/>
+          <cl:datacolumn std:sid="d-column-9816f03c" name="expiDt"/>
+          <cl:datacolumn std:sid="d-column-8c71507d" name="mobileNo"/>
+          <cl:datacolumn std:sid="d-column-615c6441" name="startMenu"/>
+          <cl:datacolumn std:sid="d-column-1fca2eaf" name="themeKind"/>
+          <cl:datacolumn std:sid="d-column-6441c463" name="labelLang"/>
+          <cl:datacolumn std:sid="d-column-7ae26422" name="titleLang"/>
+          <cl:datacolumn std:sid="d-column-822343f8" name="mobUsr"/>
+          <cl:datacolumn std:sid="d-column-6061184e" name="chgBrnoYn"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:dataset std:sid="d-set-61672e15" id="ds2">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-86e8f819" name="schId"/>
+          <cl:datacolumn std:sid="d-column-ce6d3094" name="totCnt"/>
+          <cl:datacolumn std:sid="d-column-056f5158" name="rowNum"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-e8a6e458" id="ds3">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-e85677c6" name="schId"/>
+          <cl:datacolumn std:sid="d-column-66dbb874" name="totCnt"/>
+          <cl:datacolumn std:sid="d-column-85931446" name="rowNum"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-984bcc4a" id="ds4">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-74eb40aa" name="schId"/>
+          <cl:datacolumn std:sid="d-column-57906964" name="totCnt"/>
+          <cl:datacolumn std:sid="d-column-81a68a2b" name="rowNum"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-cbe4c154" id="sms2" action="./cisweb/getList.do" mediatype="application/json">
+        <cl:listener std:sid="listener-1fad8dbe" name="submit-done" handler="onSms2SubmitDone"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-acebe58f" id="sms3" action="cisweb/encode.do" mediatype="application/json"/>
+      <cl:submission std:sid="submission-9a965dd9" id="sms4" action="http://localhost:8080/garbage-webs/cisweb/encode.do" mediatype="application/json"/>
+      <cl:submission std:sid="submission-0e6feca5" id="sms5" action="datas/MOCK_DATA.json"/>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-32f005cd" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:grid std:sid="grid-deeda3c9" id="grd1" datasetid="ds2">
+      <cl:xylayoutdata std:sid="xyl-data-b253ff84" top="80px" left="20px" width="400px" height="200px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:gridcolumn std:sid="g-column-840391db"/>
+      <cl:gridcolumn std:sid="g-column-4570bd42"/>
+      <cl:gridcolumn std:sid="g-column-f0c604e0"/>
+      <cl:gridheader std:sid="gh-band-bfafce13">
+        <cl:gridrow std:sid="g-row-9a63ad4b"/>
+        <cl:gridcell std:sid="gh-cell-3fa09ab0" rowindex="0" colindex="0" targetcolumnname="schId" sortable="false" filterable="false" text="schId"/>
+        <cl:gridcell std:sid="gh-cell-35625673" rowindex="0" colindex="1" targetcolumnname="totCnt" sortable="false" filterable="false" text="totCnt"/>
+        <cl:gridcell std:sid="gh-cell-02a64144" rowindex="0" colindex="2" targetcolumnname="rowNum" sortable="false" filterable="false" text="rowNum"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-319957b0">
+        <cl:gridrow std:sid="g-row-f8390b37"/>
+        <cl:gridcell std:sid="gd-cell-087fc57c" rowindex="0" colindex="0" columnname="schId"/>
+        <cl:gridcell std:sid="gd-cell-71e33404" rowindex="0" colindex="1" columnname="totCnt"/>
+        <cl:gridcell std:sid="gd-cell-e8b8e09f" rowindex="0" colindex="2" columnname="rowNum"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:combobox std:sid="c-box-4aa4e292" id="cmb1">
+      <cl:xylayoutdata std:sid="xyl-data-712ea8f2" top="50px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:itemset datasetid="ds4" label="rowNum" value="totCnt"/>
+    </cl:combobox>
+    <cl:tree std:sid="tree-b1c7c723" id="tre1">
+      <cl:xylayoutdata std:sid="xyl-data-ac04d963" top="290px" left="20px" width="200px" height="150px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:treeitemset datasetid="ds3" label="totCnt" value="totCnt" parent="rowNum"/>
+    </cl:tree>
+    <cl:button std:sid="button-037b6746" id="btn1" value="Button">
+      <cl:listener std:sid="listener-fffeff37" name="click" handler="onBtn1Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-ba627bf1" top="20px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-085eb809" id="btn2" value="Button">
+      <cl:listener std:sid="listener-b6671b20" name="click" handler="onBtn2Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-2fb394ca" top="20px" left="130px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-351a9e74" id="btn3" value="Button">
+      <cl:listener std:sid="listener-4b34902a" name="click" handler="onBtn3Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-5f08f039" top="20px" left="240px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-183e2ffd" id="btn4" value="Button">
+      <cl:listener std:sid="listener-21a63d29" name="click" handler="onBtn4Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-2e5a6a02" top="20px" left="350px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-c4d45a91" id="btn5" value="Button">
+      <cl:listener std:sid="listener-17bbaffc" name="click" handler="onBtn5Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-24a91cb0" top="20px" left="460px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-ffefc7b5"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

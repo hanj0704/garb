@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-3781b7ba" version="1.0.3388">
+  <head std:sid="head-7b0ed5e3">
+    <screen std:sid="screen-89fb4df5" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-1cd7f44d" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-993d35e9" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-87b9d6c6"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-f1f41e90">
+    <cl:button std:sid="button-5eb8940d" value="플로팅">
+      <cl:listener std:sid="listener-5eb0d55f" name="click" handler="onButtonClick"/>
+      <cl:xylayoutdata std:sid="xyl-data-71e0f753" top="20px" left="20px" width="131px" height="53px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:group std:sid="group-6d3addfd" id="wrap" style="border-right-style:solid; border-top-width:1px; border-bottom-color:red; border-right-width:1px; border-left-style:solid; border-bottom-width:1px; border-left-color:red; border-top-color:red; border-bottom-style:solid; border-right-color:red; border-left-width:1px; border-top-style:solid;" clipcontent="false">
+      <cl:xylayoutdata std:sid="xyl-data-56003bdb" top="83px" left="20px" width="672px" height="44px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:inputbox std:sid="i-box-3c3a9bee" id="ipb1">
+        <cl:formdata std:sid="f-data-3e871ced" row="0" col="0"/>
+      </cl:inputbox>
+      <cl:formlayout std:sid="f-layout-7e1ae44e" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="44" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:button std:sid="button-520f7911" value="해제">
+      <cl:listener std:sid="listener-e8abe28c" name="click" handler="onButtonClick2"/>
+      <cl:xylayoutdata std:sid="xyl-data-c5bece19" top="20px" left="161px" width="113px" height="53px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:output std:sid="output-924919e9" value="← clipContent=false">
+      <cl:xylayoutdata std:sid="xyl-data-e2d6bf15" top="94px" left="702px" width="154px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:button std:sid="button-7bd826f4" value="플로팅">
+      <cl:listener std:sid="listener-30fff926" name="click" handler="onButtonClick3"/>
+      <cl:xylayoutdata std:sid="xyl-data-901412da" top="189px" left="20px" width="131px" height="53px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-e4e63b7a" value="해제">
+      <cl:listener std:sid="listener-3e8849e4" name="click" handler="onButtonClick4"/>
+      <cl:xylayoutdata std:sid="xyl-data-d089565d" top="189px" left="161px" width="113px" height="53px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:group std:sid="group-db0fd76c" id="wrap2" style="border-right-style:solid; border-top-width:1px; border-bottom-color:red; border-right-width:1px; border-left-style:solid; border-bottom-width:1px; border-left-color:red; border-top-color:red; border-bottom-style:solid; border-right-color:red; border-left-width:1px; border-top-style:solid;" clipcontent="false">
+      <cl:xylayoutdata std:sid="xyl-data-67696419" top="252px" left="20px" width="672px" height="44px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:inputbox std:sid="i-box-35879841" id="ipb2">
+        <cl:verticaldata std:sid="v-data-96070028" width="670px" height="44px"/>
+      </cl:inputbox>
+      <cl:verticallayout std:sid="v-layout-37c3191d" scrollable="false" spacing="0"/>
+    </cl:group>
+    <cl:output std:sid="output-333931b8" value="← clipContent=false">
+      <cl:xylayoutdata std:sid="xyl-data-f18a8f28" top="264px" left="702px" width="154px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:output std:sid="output-3ea3d711" value="↓ 버티컬 레이아웃">
+      <cl:xylayoutdata std:sid="xyl-data-f89e9969" top="222px" left="284px" width="154px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:output std:sid="output-59d41817" value="↓ 폼 레이아웃">
+      <cl:xylayoutdata std:sid="xyl-data-ec8958d7" top="53px" left="279px" width="154px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:button std:sid="button-3d981edb" value="플로팅">
+      <cl:listener std:sid="listener-1188dbcd" name="click" handler="onButtonClick5"/>
+      <cl:xylayoutdata std:sid="xyl-data-e65657b9" top="371px" left="20px" width="131px" height="53px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-67ff406b" value="해제">
+      <cl:listener std:sid="listener-330f85d5" name="click" handler="onButtonClick6"/>
+      <cl:xylayoutdata std:sid="xyl-data-ca36b945" top="371px" left="161px" width="113px" height="53px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:output std:sid="output-ee06dee0" value="↓ XY 레이아웃">
+      <cl:xylayoutdata std:sid="xyl-data-579850c7" top="404px" left="284px" width="154px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:group std:sid="group-e1939ecb" id="wrap3" style="border-right-style:solid; border-top-width:1px; border-bottom-color:red; border-right-width:1px; border-left-style:solid; border-bottom-width:1px; border-left-color:red; border-top-color:red; border-bottom-style:solid; border-right-color:red; border-left-width:1px; border-top-style:solid;" clipcontent="false">
+      <cl:xylayoutdata std:sid="xyl-data-ec115f09" top="434px" left="20px" width="672px" height="44px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:inputbox std:sid="i-box-fe5a996b" id="ipb3">
+        <cl:xylayoutdata std:sid="xyl-data-aeb50e5e" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+      </cl:inputbox>
+      <cl:xylayout std:sid="xylayout-66906296" scrollable="false"/>
+    </cl:group>
+    <cl:output std:sid="output-ec2c4ca1" value="← clipContent=false">
+      <cl:xylayoutdata std:sid="xyl-data-2ab9fed2" top="446px" left="702px" width="154px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:button std:sid="button-041d1dd2" id="btn1" value="해제">
+      <cl:listener std:sid="listener-a14a13d2" name="click" handler="onBtn1Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-5ceb70bb" top="1px" left="284px" width="113px" height="53px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-d1fba4d4"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

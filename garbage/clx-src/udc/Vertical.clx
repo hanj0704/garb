@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-52c476b8" version="1.0.0.0">
+  <head std:sid="head-2cafbe75">
+    <title>Vertical</title>
+    <screen std:sid="screen-e302bff1" id="default" customHeight="600" customWidth="800" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-b0f3ee8b" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-ba799422" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-9b663968"/>
+    <cl:appspec>
+      <cl:property name="optValue" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-6790d124" style="border-right-style:solid; top:0px; left:0px; border-left-style:solid; border-right-width:1px; width:100px; border-left-color:red; border-right-color:red; border-left-width:1px; height:30px;">
+    <cl:output std:sid="output-dc24b004" id="opt1" style="text-align:center;">
+      <cl:apppropbind category="PROPERTY" property="value" app-property="optValue"/>
+      <cl:xylayoutdata std:sid="xyl-data-f12c314a" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+    </cl:output>
+    <cl:output std:sid="output-049570a1" id="opt2" style="border-right-style:solid; border-top-width:1px; border-bottom-color:red; border-left-style:solid; border-right-width:1px; border-bottom-width:1px; border-left-color:red; border-top-color:red; border-bottom-style:solid; border-right-color:red; border-left-width:1px; border-top-style:solid;">
+      <cl:xylayoutdata std:sid="xyl-data-1ed0bd4f" height="1px" horizontalAnchor="BOTH" left="0px" right="0px" verticalAnchor="CENTER"/>
+    </cl:output>
+    <cl:xylayout std:sid="xylayout-aebcb4b1" scrollable="false"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

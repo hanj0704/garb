@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-2da0dfdb" version="1.0.3388">
+  <head std:sid="head-15b4beac">
+    <screen std:sid="screen-81543316" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-6616eb1d" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-3c3c7822" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-9d28c6d1">
+      <cl:dataset std:sid="d-set-98494e32" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-367b2aa5" name="column1"/>
+          <cl:datacolumn std:sid="d-column-a3b39f3f" name="column2"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column11</cl:datavalue>
+            <cl:datavalue columnname="column2">column21</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column12</cl:datavalue>
+            <cl:datavalue columnname="column2">column22</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column13</cl:datavalue>
+            <cl:datavalue columnname="column2">column23</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column14</cl:datavalue>
+            <cl:datavalue columnname="column2">column24</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column15</cl:datavalue>
+            <cl:datavalue columnname="column2">column25</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column16</cl:datavalue>
+            <cl:datavalue columnname="column2">column26</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column17</cl:datavalue>
+            <cl:datavalue columnname="column2">column27</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column18</cl:datavalue>
+            <cl:datavalue columnname="column2">column28</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column19</cl:datavalue>
+            <cl:datavalue columnname="column2">column29</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-1c419481" id="sms1" action="test/tes.do">
+        <cl:requestdata dataid="ds1" payload="all"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-24b8119e">
+    <cl:button std:sid="button-6f892b6f" id="btn1" value="시간 문자열인지&#xD;&#xA;체크하는로직">
+      <cl:listener std:sid="listener-8f66b090" name="click" handler="onBtn1Click"/>
+      <cl:flowlayoutdata std:sid="f-data-fa6a06d2" width="200px" height="40px"/>
+    </cl:button>
+    <cl:button std:sid="button-1c546513" id="btn2" value="withCredential send">
+      <cl:listener std:sid="listener-0bd564e4" name="click" handler="onBtn2Click"/>
+      <cl:flowlayoutdata std:sid="f-data-e7805202" width="200px" height="40px" autosize="none"/>
+    </cl:button>
+    <cl:button std:sid="button-6482a3a9" id="btn3" value="voDataSend">
+      <cl:listener std:sid="listener-c84c4e12" name="click" handler="onBtn3Click"/>
+      <cl:flowlayoutdata std:sid="f-data-08eb775a" width="200px" height="40px" autosize="none"/>
+    </cl:button>
+    <cl:flowlayout std:sid="f-layout-adff95ee" hspacing="20" vspacing="20" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

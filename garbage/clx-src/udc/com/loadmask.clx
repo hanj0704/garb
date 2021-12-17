@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-c8dcd765" version="1.0.0.0">
+  <head std:sid="head-4347dd83">
+    <title>loadmask</title>
+    <screen std:sid="screen-310a97eb" id="default" customHeight="600" customWidth="800" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-2c89cfda" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-f94579e6" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-d5b540c5"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-b9705799" class="cl-loadmask cl-overlay" style="background-color:rgba(0, 0, 0, 0.2); top:0px; left:0px; width:500px; height:400px;">
+    <cl:group std:sid="group-677f139c" id="grpLoad">
+      <cl:xylayoutdata std:sid="xyl-data-39c0c733" height="200px" horizontalAnchor="CENTER" verticalAnchor="CENTER" width="300px"/>
+      <cl:img std:sid="image-afe2ccb4" src="../../theme/images/icon_spinner.gif">
+        <cl:xylayoutdata std:sid="xyl-data-4d6a706f" height="26px" horizontalAnchor="LEFT" left="100px" verticalAnchor="CENTER" width="26px"/>
+      </cl:img>
+      <cl:output std:sid="output-1e8d6b96" value="Loading...">
+        <cl:xylayoutdata std:sid="xyl-data-29057946" height="26px" horizontalAnchor="LEFT" left="131px" verticalAnchor="CENTER" width="69px"/>
+      </cl:output>
+      <cl:xylayout std:sid="xylayout-beefac53"/>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-0971d5a1"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-26c50ee9" version="1.0.3221">
+  <head std:sid="head-7068bdc0">
+    <screen std:sid="screen-0b6fb4ac" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-56420988" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-aa6c77b8" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-20f37ff3"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-8bcceccc" style="background-color:transparent;">
+    <cl:listener std:sid="listener-aea797d3" name="load" handler="onBodyLoad"/>
+    <cl:button std:sid="button-b9c97723" id="btn1" value="Button">
+      <cl:listener std:sid="listener-7f78a25f" name="click" handler="onBtn1Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-d638f162" top="20px" left="20px" width="193px" height="25px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-99274723" id="btn2" value="Button">
+      <cl:listener std:sid="listener-5c7a3711" name="click" handler="onBtn2Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-6bed6099" top="66px" left="20px" width="193px" height="25px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-6ce7ed5d"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

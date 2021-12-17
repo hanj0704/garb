@@ -1,0 +1,1849 @@
+@import "../settings.part.less";
+@import "../custom-settings.part.less";
+
+.cl-navigationbar-list {	
+	background-color : @light-hover-background;
+
+	/* megamenu 타입의 카테고리 */
+	.cl-navigationbar-category{
+		   width:35%;
+		/* 카테고리의 아이템 영역 */
+		.sub-items {
+			
+			/* 카테고리의 목록 아이템*/
+			.cl-navigationbar-listitem{
+				
+				/* 네비게이션 바 드랍다운 메뉴 아이템 - 호버 */
+				&.cl-hover{
+					background-color: @light-selection-background;
+					color: @hover-foreground;
+				}
+			}
+		}
+		
+	}
+	
+	
+}
+
+
+
+.cl-combobox .cl-combobox-button{
+		 background-image: url(images/icon/img_selectbox_close_light.png);
+		 background-size : 8px 5px;
+		 width : 24px;
+
+}
+
+.categorySelected{
+	background-color :@light-hover-background;
+	color : @focus-text-color;
+	
+	/* 버튼위에 마우스를 올렸을 때의 스타일 */
+	&:not(.cl-disabled):hover{
+		color: @focus-text-color;
+		font-weight : bold;
+	}	
+}
+
+
+.required {
+		border-color : @required;
+}
+
+/** 토글 라디오 버튼 */
+.toggle-rdo-btn{
+			background-image : none;
+}
+
+
+
+.cl-inputbox.copiable-text{
+	border : none; 
+}
+
+/** 영역간의 버티컬 스페이스 (간격-상하) */
+.vertical-space{
+	padding-top : 10px;
+}
+
+/** 팝업 관련  */
+.cl-dialog{
+	.cl-dialog-close{
+		// background-image: url(icons/dialog-close.png);
+	}
+	.pop-title-separate{
+		//border : 1px solid #efefef 0px 0px 1px 0px;
+	}
+}
+
+
+
+
+.cl-output.required{			
+	color : @required;
+	font-weight : inherit; // 폰트의 굵기가 적용되도록 .
+}
+
+.cl-text.required{	
+		border-color : @required;
+}
+
+.cl-input{			
+	.required{	
+		border-color : @required;
+		
+		/* 인풋 박스 - 포커스 상태 */
+		&.cl-focus {
+			color : @required;
+			border-color: @required;
+		}
+	}
+}
+
+
+.min-width{
+	min-width : 900px;
+}
+
+
+.min-height{
+	min-height : 500px;
+}
+
+/** 메인 레이아웃 하단의 메뉴 최소화 관련 버튼  */
+.float-display-menubar{
+	z-index : 9999;
+}
+
+.float-display-menu{
+	padding : 0px 10px 0px 10px;
+}
+
+
+
+/** Table  */
+.form-table{
+	border-color :@lightdark;
+	border-width : 1px;
+	border-style : solid;
+	
+	//Table내 라벨depth가 하나인 경우 첫번째로 사용. 두 개인 경우 두번째로 사용.
+	.cl-output.label {
+		font-weight : bold;
+		text-align : center;
+		background-color : @light;
+	}
+	//Table내 라벨depth가 두개인 경우 첫번째로 사용.
+	.cl-output.label2 {
+		color : @white;
+		font-weight : bold;
+		text-align : center;
+		background-color : @lightdark;
+	}
+	.button-area{
+		padding : 5px 5px 5px 5px;
+	}
+	.cl-button.btn-add {
+		background : url(images/tree_icon04.png) no-repeat center;
+	}
+	.cl-button.btn-close {
+		background : url(images/tree_icon03.png) no-repeat center;
+	}	
+}
+
+/*콤보박스 조회 영역 */
+.form-combo{
+	.search-combo{
+		
+	}
+}
+
+/*계산 영역 */
+.form-calt{
+	
+	.calt-label{
+		background-color : @white;
+		font-weight : bold;
+		color : @black;
+	}
+	.calt-value{
+		background-color : @white;
+		font-weight : bold;
+		color : #247CFF;
+	}
+}
+
+/*체크박스그룹 영역 */
+.checkbox-area{
+	//라벨
+	.cbg-label{
+		
+	}
+	//체크박스그룹
+	.cgb-normal{
+		
+	}
+}
+
+/*아이템영역 */
+.item-area{
+	padding : 0px 20px 0px 20px;
+}
+
+/*아이템영역_1셋_타입1 디자인가이드p239 Select Card */
+.itemArea-type1{
+	border-color : #f5a281;
+	border-width : 1px;
+	border-style : solid;
+	
+	//라벨
+	.label{
+		background-color : #fef6f2;
+		color : #888888;
+		font-size : 14px;
+		font-weight :@font-bold;
+		text-align : center;
+	}
+	//값
+	.value{
+		background-color : #ffffff;
+		color : #444444;
+		font-size : 14px;
+		font-weight :@font-bold;
+		text-align : center;
+		
+		&.hyper-text{
+			text-decoration : underline;
+			color : #f5a281;
+			font-size : 14px;
+			font-weight :@font-bold;
+			text-align : center;
+		}
+	}
+}
+
+/*아이템영역_1셋_타입2 디자인가이드p239 Select Card */
+.itemArea-type2{
+	border-color : #7cacd5;
+	border-width : 1px;
+	border-style : solid;
+	
+	//라벨
+	.label{
+		background-color : #e8eff8;
+		color : #888888;
+		font-size : 14px;
+		font-weight :@font-bold;
+		text-align : center;
+	}
+	//값
+	.value{
+		background-color : #ffffff;
+		color : #444444;
+		font-size : 14px;
+		font-weight :@font-bold;
+		text-align : center;
+		
+		&.hyper-text{
+			text-decoration : underline;
+			color : #7cacd5;
+			font-size : 14px;
+			font-weight :@font-bold;
+			text-align : center;
+		}
+	}
+}
+
+/*하단버튼영역 */
+.bottom-button-area{
+	background-color : @black;
+	padding : 5px;
+}
+
+/*아이콘라벨타이틀영역 */
+.icon-label-title-area{
+	/*아이콘라벨타이틀 */
+	.icon-label-title{
+		font-weight : bold;
+	}	
+}
+
+
+.grid-box{
+	padding : 0px 20px 0px 20px;
+	.cl-grid {
+		//margin : 0px 20px 0px 20px;
+	}
+}
+
+.list-box{
+	//가이드p232 Card가 나열되는 영역
+	padding : 0px 20px 0px 0px;
+	
+	.cl-checkbox {
+		//가이드p232 Card가 나열되는 영역내 체크박스 좌우 패딩
+		padding-left: 20px;
+		padding-right:10px;
+	}
+	
+}
+
+.file-box{
+	padding : 0px 20px 0px 20px;
+	
+	.file-form{
+		.label{
+		
+		}
+	}
+	.cl-fileinput .cl-text{
+		text-align : left;
+	}
+	
+	//파일선택 버튼
+	.btn-file-select{
+		background-color : white;
+		color : @color-primary-02;
+		font-size : @font-basic;
+		border-color : @color-primary-02;
+		border : 1px solid;
+		border-radius : 3px;
+		
+		&:not(.cl-disabled):hover {
+			background-color : #FFFFFF;
+			color : @color-primary-02;
+			border : 1px solid #7093BA;
+			border-radius : 3px;	
+		}
+		
+		&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+			background-color : #FFFFFF;		
+			color : @color-primary-02;
+			border : 1px solid #7093BA;
+			border-radius : 3px;	
+		}
+		
+		&.cl-disabled {
+			background-color : #FFFFFF;		
+			font : 13px center #7093BA;
+			color : @color-primary-02;
+		}
+	}
+	
+	//파일선택 버튼
+	.btn-file-input{
+		background-color : @color-primary-02;
+		font-size : @font-basic;
+		border-radius : 3px;
+			
+		&:not(.cl-disabled):hover {
+			background-color : #FFFFFF;
+			color : @color-primary-02;
+			border : 1px solid #7093BA;
+			border-radius : 3px;	
+		}
+		
+		&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+			background-color : #FFFFFF;		
+			color : @color-primary-02;
+			border : 1px solid #7093BA;
+			border-radius : 3px;	
+		}
+		
+		&.cl-disabled {
+			background-color : #FFFFFF;		
+			font : 13px center #7093BA;
+			color : @color-primary-02;
+		}
+	}
+	
+	//파일선택 버튼
+	.btn-file-upload{
+		background-color : @color-primary-02;
+		font-size : @font-basic;
+		border-radius : 3px;
+		
+		&:not(.cl-disabled):hover {
+			background-color : #FFFFFF;
+			color : @color-primary-02;
+			border : 1px solid #7093BA;
+			border-radius : 3px;	
+		}
+		
+		&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+			background-color : #FFFFFF;		
+			color : @color-primary-02;
+			border : 1px solid #7093BA;
+			border-radius : 3px;	
+		}
+		
+		&.cl-disabled {
+			background-color : #FFFFFF;		
+			font : 13px center #7093BA;
+			color : @color-primary-02;
+		}
+	}
+}
+
+.html-box{
+	
+}
+
+.viewer-box{
+	padding : 0px 20px 0px 20px;
+	
+	.viewer-area{
+		background-color: #999999;
+	}
+}
+
+// Description (디자인가이드 20191007 158page) (2019.10.10)
+.guide-stnr-box{
+	margin-left: 20px;
+	margin-right: 40px;
+	padding : 20px 20px 20px 50px;
+	background-color : @color-guide-bg-color;
+	background-image : url(images/icon/desc_icon.png);
+	background-repeat : no-repeat;
+	background-position : 20px 20px;
+	
+	.guide-stnr {
+		 // 구분점 아이콘 사이즈 만큼의 간격 
+		padding-left : 15px;
+		font : @font-small-text;
+		color : @color-table-text;	
+		text-align : center;
+		background-image : url(images/icon/desc_bullet.png);
+		background-repeat : no-repeat;
+		background-position : left;
+		
+		&.left{
+			text-align : left;
+		}
+		
+		&.right{
+			text-align : right;
+		}
+		
+		&.black{
+			color: black;
+		}
+		
+		&.red{
+			color: red;
+		}
+	}
+}
+
+.guide-stnr-box-ingrid{
+	
+	padding : 20px 20px 20px 50px;
+	background-color : @color-guide-bg-color;
+	background-image : url(images/icon/desc_icon.png);
+	background-repeat : no-repeat;
+	background-position : 20px 20px;
+	
+	.guide-stnr {
+		padding-left : 15px;
+		font : @font-small-text;
+		color : @color-table-text;	
+		text-align : center;
+		background-image : url(images/icon/desc_bullet.png);
+		background-repeat : no-repeat;
+		background-position : left;
+		
+		&.left{
+			text-align : left;
+		}
+		
+		&.right{
+			text-align : right;
+		}
+		
+		&.black{
+			color: black;
+		}
+		
+		&.red{
+			color: red;
+		}
+	}
+}
+
+.tab-box{
+	padding : 0px 20px 0px 20px;
+	
+	.tab-area{
+		padding : 5px 0px 5px 0px;
+	}
+}
+
+.chart-box{
+	padding : 0px 20px 0px 20px;
+	
+	.chart-area{
+		padding-left : 20px;
+	}
+}
+
+.editor-box{
+	padding : 0px 20px 0px 20px;
+	
+	.editor-area{
+		
+	}
+}
+
+.tree-box{
+	padding : 0px 20px 0px 20px;
+	
+	.tree-left-area{
+		
+		background-color : silver;
+		
+		.cl-output.tree-category{
+			border : 1px solid;
+			text-align : center;
+			-ms-writing-mode : tb-lr;
+		}
+		
+	}
+	.tree-right-area{
+		.cl-tree.tree-detail{
+			padding : 10px 5px 10px 5px;
+		}
+	}
+	.tree-content-area{
+		
+	}
+}
+
+.tree-chk-all{
+	padding-left : 25px;
+}
+
+
+.accordion-box{
+	padding : 0px 20px 0px 20px;
+	
+	.accordion-area{
+		padding : 5px 10px 5px 10px;
+	}
+}
+
+.accordion-box-custom {
+	padding : 10px 20px 10px 20px;
+}
+
+.cond-txt-area{
+	vertical-align : middle;
+	background-color : @color-table-bg-header;
+	border-radius : 15px;
+	
+	.cl-output.label {
+		color : @color-text-blue-01 !important;
+		font-size : 14px !important;
+		font-weight : bold !important;
+		text-align : center !important;
+	}
+	
+	.cl-button.close {
+		background-color : @color-table-bg-header;
+		background-image : url(images/icon/img_chips_del.png);
+		background-repeat : no-repeat;
+		background-position : center center;
+	}
+}
+
+//image-viewer 디자인 가이드 151p
+.image-box{
+	background-color : @color-image-bg-default;
+}
+
+.image-area{
+	background-color : @color-image-bg-default;
+	
+	.image-title{
+		color : @color-image-font-default;
+		font-weight : @cl-font-regular;
+		font-size : 14px !important;
+	}
+	&:hover, &.cl-hover{
+		background-color : @color-image-bg-hover;
+	}
+	
+	&.on{
+		background-color : @color-image-bg-active;
+		border-color : @color-image-border-active;
+		border-width : 1px;
+		border-style : solid;
+		.image-title{
+			color : @color-image-font-active;
+			font-weight : @cl-font-bold;
+			font-size : 14px !important;
+		}
+	}
+}
+
+.image-detail-box{
+	background-color : #999999;
+	
+	.image-detail-area{
+		background-color : @white;
+		text-align : center;
+	}
+}
+//image-viewer 디자인 가이드 151p
+
+.type1-area{
+	background-color : #FFFFFF;
+	border : solid 1px #DDDDDD;
+	
+	.function-area {
+		border-left : solid 1px #EFEFEF;
+		
+		.dtl{
+			background-color : @color-card-type1-btn-add-bg;
+			background-image : url(images/icon/img_card_v.png);
+			background-repeat : no-repeat;
+			background-position : center center;
+			
+			&.on{
+				background-color : @color-card-type1-btn-add-bg;
+				background-image : url(images/icon/img_card_^.png);
+				background-repeat : no-repeat;
+				background-position : center center;
+			}
+		}
+	}
+	
+	.title-status-01 {
+		background-color : @color-title-bg-status-01;
+		border-left: solid 4px @color-title-status-01;
+		
+		.title-top{
+			color : @color-title-status-01;
+			font-size : 16px !important;
+			font-weight : @font-bold;
+		}
+		
+		.title-middle{
+			color : #666666;
+			font-size : 14px !important;
+			font-weight : @font-bold;
+			text-align : left;
+		}
+		
+		.title-middle-02{
+			color : #666666;
+			font-size : 12px !important;
+			font-weight : @font-bold;
+			text-align : left;
+		}
+		
+		.title-bottom{
+			background-color : @color-card-type1-btn-bg;
+			font-size : 12px !important;
+			font-weight : @font-bold;
+			
+			&.status-01{
+				padding : 2px;
+				font-weight : @font-bold;
+				font-size : 12px !important;
+				color : #ffffff;
+				text-align : center;
+				background-color : #2a6650;
+			}
+			
+			&.status-02{
+				padding : 2px;
+				font-weight : @font-bold;
+				font-size : 12px !important;
+				color : #ffffff;
+				text-align : center;
+				background-color : #2c4f72;
+			}
+		}
+	}
+	
+	.title-status-02 {
+		background-color : @color-title-bg-status-02;
+		border-left: solid 4px @color-title-status-02;
+		
+		.title-top{
+			color : @color-title-status-02;
+			font-size : 16px !important;
+			font-weight : @font-bold;
+		}
+		
+		.title-middle{
+			color : #666666;
+			font-size : 14px !important;
+			font-weight : @font-bold;
+			text-align : left;
+		}
+		
+		.title-middle-02{
+			color : #666666;
+			font-size : 12px !important;
+			font-weight : @font-bold;
+			text-align : left;
+		}
+		
+		.title-bottom{
+			background-color : @color-card-type1-btn-bg;
+			font-size : 12px !important;
+			font-weight : @font-bold;
+			
+			&.status-01{
+				padding : 2px;
+				font-weight : @font-bold;
+				font-size : 12px !important;
+				color : #ffffff;
+				text-align : center;
+				background-color : #2a6650;
+			}
+			
+			&.status-02{
+				padding : 2px;
+				font-weight : @font-bold;
+				font-size : 12px !important;
+				color : #ffffff;
+				text-align : center;
+				background-color : #2c4f72;
+			}
+		}
+	}
+	
+	.title-status-03 {
+		background-color : @color-title-bg-status-03;
+		border-left: solid 4px @color-title-status-03;
+		
+		.title-top{
+			color : @color-title-status-03;
+			font-size : 16px !important;
+			font-weight : @font-bold;
+		}
+		
+		.title-middle{
+			color : #666666;
+			font-size : 14px !important;
+			font-weight : @font-bold;
+			text-align : left;
+		}
+		
+		.title-middle-02{
+			color : #666666;
+			font-size : 12px !important;
+			font-weight : @font-bold;
+			text-align : left;
+		}
+		
+		.title-bottom{
+			background-color : @color-card-type1-btn-bg;
+			font-size : 12px !important;
+			font-weight : @font-bold;
+			
+			&.status-01{
+				padding : 2px;
+				font-weight : @font-bold;
+				font-size : 12px !important;
+				color : #ffffff;
+				text-align : center;
+				background-color : #2a6650;
+			}
+			
+			&.status-02{
+				padding : 2px;
+				font-weight : @font-bold;
+				font-size : 12px !important;
+				color : #ffffff;
+				text-align : center;
+				background-color : #2c4f72;
+			}
+		}
+	}
+	
+	.title-status-04 {
+		background-color : @color-title-bg-status-04;
+		border-left: solid 4px @color-title-status-04;
+		
+		.title-top{
+			color : @color-title-status-04;
+			font-size : 16px !important;
+			font-weight : @font-bold;
+		}
+		
+		.title-middle{
+			color : #666666;
+			font-size : 14px !important;
+			font-weight : @font-bold;
+			text-align : left;
+		}
+		
+		.title-middle-02{
+			color : #666666;
+			font-size : 12px !important;
+			font-weight : @font-bold;
+			text-align : left;
+		}
+		
+		.title-bottom{
+			background-color : @color-card-type1-btn-bg;
+			font-size : 12px !important;
+			font-weight : @font-bold;
+			
+			&.status-01{
+				padding : 2px;
+				font-weight : @font-bold;
+				font-size : 12px !important;
+				color : #ffffff;
+				text-align : center;
+				background-color : #2a6650;
+			}
+			
+			&.status-02{
+				padding : 2px;
+				font-weight : @font-bold;
+				font-size : 12px !important;
+				color : #ffffff;
+				text-align : center;
+				background-color : #2c4f72;
+			}
+		}
+	}
+	
+	// 카드의 라벨색상 변경 및 텍스트 정렬 변경 (2019.10.31)
+	.contents-label{		
+		color : #247CFF !important;//칼라는 현업의 요청으로 인해 수정 	
+		font-size : 12px !important;
+		text-align : right !important;
+		padding-right : 5px;
+		font-weight : @font-bold;
+	}
+	
+	.contents-value{
+		//color : #444444;
+		color : #666666;
+		font-size : 14px !important;
+		text-align : left !important;
+	}
+	
+	.memo-label{
+		color : #FFFFFF;
+		font-size : 12px !important;
+		text-align : center !important;
+		font-weight : @font-bold;
+		background-color : #7093BA;
+		border-radius: 3px 0px 0px 3px;
+		&.on{
+			color : #FFFFFF;
+			background-color : @color-on;
+			font-size : 12px !important;
+			
+		}
+		&.off{
+			color : #FFFFFF;
+			background-color : @color-off;
+			font-size : 12px !important;		
+		}
+	}
+	
+	.memo-label-02{
+		color : #FFFFFF;
+		font-size : 12px !important;
+		text-align : center !important;
+		font-weight : @font-bold;
+		background-color : @color-primary-03;
+		border-radius: 3px 0px 0px 3px;
+		&.on{
+			color : #FFFFFF;
+			background-color : @color-on;
+			font-size : 12px !important;
+			
+		}
+		&.off{
+			color : #FFFFFF;
+			background-color : @color-off;
+			font-size : 12px !important;		
+		}
+	}
+	
+	.memo-value{
+		//color : #444444;
+		color : #666666;
+		font-size : 14px !important;
+		text-align : left !important;
+		background-color : #F1F1F1;
+		border-radius: 0px 3px 3px 0px;
+	}
+	
+	.memo-value-02{
+		//color : #444444;
+		color : #666666;
+		font-size : 14px !important;
+		text-align : left !important;
+		background-color : #F1F1F1;
+		border-radius: 0px 3px 3px 0px;
+	}
+}
+
+.type2-area{
+	background-color : @color-black-04;
+	.cl-output {
+		color : @color-text-white-01;
+	}
+	
+	.title {
+		text-align : left !important;
+		font-weight : @cl-font-bold;
+		font-size : 16px !important;
+	}
+	
+	.date {
+		text-align : right !important;
+		font-weight : @cl-font-bold;
+		font-size : 14px !important;
+	}
+	
+	.dtl {
+		text-align : left !important;
+		font-weight : @cl-font-regular;
+		font-size : 14px !important;
+	}
+}
+
+
+
+.panel-box{
+	padding : 0px 20px 0px 20px;
+}
+
+
+.panelcard-box{
+	
+
+	.title-box{	
+		background-color : #6F8294;
+		// 임의 설정 (2019.10.28) 
+		&.disable {
+			background-color : #dfdfdf ;  
+			
+			.title-name {
+				color : #000000 !important;
+				font-size : 16px !important;
+				text-align : left !important;
+				font-weight : @font-bold;
+				.cl-text{
+					padding-left : 15px;
+				}
+			
+			}
+			.title-btn {
+				background-color : #dfdfdf ;  
+				background-image : url(images/icon/icon_setting.png);
+				background-repeat : no-repeat;
+				background-position : center center;
+			}
+		}
+		.title-name {
+			color : #FFFFFF;
+			font-size : 15px !important;
+			text-align : left !important;
+			font-weight : @font-bold;
+			.cl-text{
+				padding-left : 15px;
+			}
+		}
+		.title-btn {
+			background-color : #6F8294;	
+			background-image : url(images/icon/icon_setting.png);
+			background-repeat : no-repeat;
+			background-position : center center;
+		}
+	}
+	
+	.accd-area{
+		border: solid 1px #96A4B5;
+		
+		.panel-title{
+			background-color : #96A4B5;
+			
+			.title-name {
+				color : #FFFFFF;
+				font-size : 13px !important;
+				text-align : left !important;
+				font-weight : @font-bold;
+				.cl-text{
+					padding-left : 15px;
+				}
+			}
+			
+			.title-cunt{
+				.cunt{
+					color : #FFFF00;
+					font-size : 12px !important;
+					text-align : center !important;
+					font-weight : @font-bold;
+				}
+				.unts{
+					color : #FFFFFF;
+					font-size : 12px !important;
+					text-align : center !important;
+					font-weight : @font-bold;
+				}
+			}
+				
+			.title-add {
+				background-color : #6F8294;
+				background-image : url(images/icon/img_selectbox_open_dark.png);
+				background-repeat : no-repeat;
+				background-position : center center;
+			}
+				
+		}
+		
+		
+		.panel-sheet{
+			background-color : #FFFFFF;
+			
+			// 임의 설정 (2019.10.28) 
+			&.disable {
+				background-color : #dfdfdf ;
+			
+			}  
+			.panel-dtl{
+				.panel-sub-title{
+					color : #444444;
+					font-size : 13px !important;
+					text-align : left !important;
+					font-weight : @font-bold;
+				}
+				.panel-label{
+					color : #444444;
+					font-size : 12px !important;
+					text-align : left !important;
+					//볼드정의가 가이드디자인과 상이하여 임의조치
+					//font-weight : @font-bold;
+				}
+				.panel-value{
+					color : #444444;
+					font-size : 12px !important;
+					text-align : right !important;
+					//볼드정의가 가이드디자인과 상이하여 임의조치
+					//font-weight : @font-bold;
+				}
+				.panel-value-sum{
+					color : #444444;
+					font-size : 12px !important;
+					text-align : right !important;
+					font-weight : @font-regular;
+				}
+				.panel-new{
+					&.on {
+						background-image : url(images/icon/icon_new.png);
+						background-repeat : no-repeat;
+						background-position : right center;
+					}
+				}
+				.panel-bar{
+					background-image : url(images/icon/bar.png);
+					background-repeat : no-repeat;
+					background-position : left center;
+				}
+			}
+			.panel-srch{
+				//색상값이 가이드와 상이하여 임의조치
+				color : #EA7224;
+				//color : #E47cff; 
+				font-size : 12px !important;
+				text-align : right !important;
+				padding-right : 15px;
+				font-weight : @font-bold;
+				background-image : url(images/icon/icon_link.png);
+				background-position : right center; 
+				background-repeat : no-repeat;
+			}
+			
+			.panel-summary{
+				border-bottom : 1px solid #444444;
+			}
+//			.panel-srch-btn{
+//				background-color : transparent;
+//				background-image : url(images/icon/icon_link.png);
+//				background-repeat : no-repeat;
+//				background-position : center center;
+//			}
+		}
+	}
+	
+	
+}
+
+
+//디자인가이드p149~150
+.filter-box{ 
+	
+	background-color : @light;
+	border : 1px solid #c2c2c2;
+	padding : 0px 20px 0px 20px;
+	
+	.filter-count-area{
+		margin-top : 10px;
+	}
+	
+	.filter-area{
+		
+		.cl-checkboxgroup{
+			
+			.cl-checkbox {
+				
+				background-color : #FFFFFF;
+				border: solid 1px #dfdfdf;
+				border-radius : 3px;
+				min-width : 100px;
+				text-align : center;
+				
+				/* 체크 박스 텍스트 */
+				.cl-text {
+					font-weight : @font-regular;
+					color : #888888;
+				}
+				
+				&.cl-checked {
+					/* 체크 박스 아이콘 - 선택된 상태 */
+					background-color : #E8EEF7;
+					border: solid 1px #dfdfdf;
+					
+					.cl-text {
+						font-weight : @font-bold;
+						color : #247cff;
+					}
+				}
+				
+				&:hover, &.cl-hover{
+					border: solid 1px #CCCCCC;
+				}
+			}
+		}
+	}
+	
+}
+
+
+
+/** 취소선을 표시하는 아웃풋에서 사용  */
+.cancel{	
+		text-decoration : line-through;
+		color : @color-bg-disabled;
+}
+
+
+/** 취소선을 표시하는 아웃풋에서 사용  */
+.error{	
+		color : @color-primary-01;
+}
+
+@media print{
+	@page{
+		size:21cm 29.7cm;
+		margin:10mm;
+	}
+	
+	&.print {
+		zoom:0.8;
+	}
+}
+
+// 라디오, 체크박스 일반스타일에 적용시 아이콘이 정중앙으로 표시되도록 
+.center{
+	text-align : center;
+}
+
+.right{
+	.cl-text{
+		text-align : right !important;
+	}	
+}
+
+/* 플로팅 배경 */
+.search-float-area{
+	background-color : @color-search-float-area-bg;
+}
+
+
+// 모든 컨트롤에 빨강하고 싶을때, 엎어치도록 설정 (2019.10.22) 
+.cl-control &.red{
+	color : red !important;
+}
+
+
+
+
+
+// 데이터 건수에 대한 스타일 추가 
+.data-count{
+	color : #ff8100;
+}
+.msg-emph01{
+	font-weight : @font-bold;
+}
+.msg-emph{
+	font-weight : @font-bold;
+	color : blue;
+}
+
+// 파일인풋의 최소사이즈 수정 
+.cl-fileinput{
+	min-height : 24px;
+}
+
+
+//폼 변경후 배경
+.cl-container.label-form-bg-after {
+	  .cl-formlayout-row-shade , .cl-formlayout-column-shade {			   
+			background-color : #FD6767;
+			text-align : center;
+			color : @color-text-blue-01;
+			font-weight : @font-bold;
+	  }
+			
+	
+}
+
+.cl-number{
+	text-align : right;
+}
+
+// pannel안의 그리드 설정 (20191017가이드 - 244p)
+.panel-sheet{
+	.cl-grid{
+		border-width : 0px;
+		border-bottom : none;
+		.cl-rowgroup-header{
+			.panel-bar{
+				background-image : url(images/icon/bar.png);
+				background-repeat : no-repeat;
+				background-position : left center;
+				.cl-text{
+					padding-left : 10px;
+				}
+			}
+		}
+		.cl-detail {
+			
+		}
+		.cl-footer{
+			border-top : none;
+		}
+	}
+}
+
+.info-chip{
+	background-color : #FFFFFF !important;
+	.chip-text{
+		color : #000000 !important;
+		text-decoration : underline !important;
+		text-align : right !important;
+		padding-left : 5px;
+		
+	}
+	.chip-close{		
+		color : #000000 !important;
+		background-color : #FFFFFF !important;
+	}
+}
+
+.cond-chip{
+	background-color : #ebf0f6;
+	border-radius : 15px;
+	
+	.chip-text{
+		color : #1e62c9;
+		text-align : right !important;
+		padding-left : 15px;
+		min-width : 50px;
+		
+	}
+	.chip-close{
+		color : #1e62c9;
+		background-color : #ebf0f6;
+		height : 25px;
+		width : 25px;
+	}
+}
+
+
+
+//그리드 냉 셀 구분 선  : 계약별 증번별 관리 화면 
+// 그리드 셀 내에서의 오른쪽 영역에 보더 색상을 주도록 (2019.10.23) 
+.red-border-right{
+	border-right : 1px solid red;
+}
+
+//그리드 테이블 구분선 : 컨텐츠 영역 내 구분 - 디자인가이드p195
+.content-divider-right{
+	border-right : 1px solid #aaaaaa;
+}
+
+
+
+//그리드 테이블 구분선 : 테이블 전체 영역 내 구분 - 디자인가이드p195
+.all-divider-right{
+	border-right : 1px solid #666666;
+}
+
+//그리드 정보보안 상태 표기 - 디자인가이드p192
+.bg-security{
+	background-image: url(images/icon/icon_security.png);
+	background-repeat: no-repeat;
+}
+
+
+.blue {
+	color : #247CFF !important;  //2019.10.24가이드  86페이지 	
+}
+
+
+
+// 단위를 표시하는 그리드 단위 영역의 아웃풋에 대한 클래스 정의 (2019.10.23) 
+.title-unit{
+	color : @color-black-05;
+}
+
+
+
+
+.cl-htmlsnippet.dark{
+	color : @color-text-white-01;
+}
+
+
+// 체크박스 리스트 같은 느낌으로 표현 (2019.10.24 ) 일검증에서 사용  
+// TODO : 디자인 가이드  확인 필요  // 테두리 임의 설정 (2019.10.24)
+.tree-left-area{	
+	background-color : #dfdfdf;
+	
+	.tree-category {
+		background-color: @color-accordion-bg;
+		color: @color-accordion-text;
+		text-align : center; 
+		padding-left : 5px;
+			
+	}
+}
+.cl-tree.tree-detail{
+	
+	background-color : #FFFFFF;
+	border : none;
+	color : @color-text-black-03;
+	padding : 10px 10px 10px 10px;
+	
+	border : 1px solid #dfdfdf ;  
+	
+	
+	
+	.cl-tree-item {
+		.cl-tree-itemicon{
+			background-image : none;
+			width : 0px;
+		}
+		height : 30px;		
+		
+		.cl-leaf {			
+	//		background-image: url(images/icon/checkbox_default_light.png) !important;
+	//		background-position : right ;
+			background-color : pink;
+		}
+		
+		
+	}
+
+	
+	.cl-checkbox{
+		 margin-right: 5px;
+		 background-image: url(images/icon/checkbox_default_light.png) !important;
+		 background-size : 12px;
+		 background-position : center center ;
+		 
+		 width : 12px;
+		 min-width : 12px;
+		 
+		 
+		 &.cl-checked {
+		 	background-color : @color-primary-02;
+			background-image: url(images/icon/checkbox_active_light.png) !important;
+		 }
+	}
+	
+	.cl-text {
+		height : 20px; // 폰트 11에 맞추어 높이 수정 (2019.10.24) 
+		max-height : 48px;
+	}
+	
+	
+	.cl-selected {
+		background-color : @color-primary-02;
+	}
+	.cl-hover {
+		background-color : @color-primary-02;
+	}
+	.cl-focus {
+		background-color : @color-primary-02;
+	}
+
+	
+}
+
+// 계약관리 
+.chips{
+	
+	border-color : @color-accordion-bg;
+	background-color : @color-chips-sublist-bg;
+	border-radius : 15px;
+//	color : @color-chips-text;
+	font-size : @font-small-text;
+	
+	color : #1e62c9;
+	text-align : center !important;
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 6px;
+	
+	&.no-linewrap {
+//		white-space : nowrap;
+//		display:inline;
+//		list-style:none;
+//		height:30px;
+	}
+
+}
+
+
+.card-accident-area{
+	
+	.title-top{
+		color : @color-card-accident-title-top;
+		font-size : 14px !important;
+		font-weight : @cl-font-bold;
+		text-align : center;
+	}
+	
+	.title-bottom{
+		color : @color-card-accident-title-bottom;
+		font-size : 20px !important;
+		font-weight : @cl-font-bold;
+		text-align : center;
+	}
+	
+	.title-color{
+		background-color : @color-card-accident-title-bg-color;
+	}
+	
+	.content-color{
+		border : solid 1px @color-card-accident-title-bg-color;
+		background-color : @color-card-accident-content-bg-color;
+	}
+	
+	.contents-label{
+		color : @color-card-accident-content-label-color;
+		font-size : 13px !important;
+		font-weight : @cl-font-regular;
+	}
+	
+	.contents-value{
+		color : @color-card-accident-content-value-color;
+		font-size : 13px !important;
+		font-weight : @cl-font-bold;
+	}
+	
+	.contents-value{
+		color : @color-card-accident-content-value-color;
+		font-size : 13px !important;
+		font-weight : @cl-font-bold;
+	}
+	
+	.dtl{
+//		border-top : solid 1px @color-card-accident-title-bg-color;
+//		border-bottom : solid 1px @color-card-accident-title-bg-color;
+//		border-right : solid 1px @color-card-accident-title-bg-color;
+		background-color : @color-card-type1-btn-add-bg;
+		background-image : url(images/icon/img_card_v.png);
+		background-repeat : no-repeat;
+		background-position : center 90%;
+		
+		&.on{
+			background-color : @color-card-type1-btn-add-bg;
+			background-image : url(images/icon/img_card_^.png);
+			background-repeat : no-repeat;
+			background-position : center 100%;
+		}
+	}
+}
+
+.grid-box-main{
+	background-color : @color-card-accident-main-bg-color
+}
+
+.memo-button{
+		color : #FFFFFF;
+		font-size : 12px !important;
+		text-align : center !important;
+		font-weight : @cl-font-bold;
+		background-color : #7093BA;
+		border-radius: 3px 0px 0px 3px;
+		&.on{
+			color : #FFFFFF;
+			background-color : @color-on;
+			font-size : 12px !important;
+			
+		}
+		&.off{
+			color : #FFFFFF;
+			background-color : @color-off;
+			font-size : 12px !important;		
+		}
+	}
+	
+	
+.body-overflow {
+//	 overflow-y :hidden !important;
+	 .cl-layout {
+	 	
+	 }
+		 .cl-scrollbar {
+		 	overflow-y : hidden !important;
+		 }
+}
+
+.btn-grid-select {
+	
+}
+
+
+.btn-fixedheader {
+	
+	&.on {
+		
+	}
+}
+
+.table-custom {
+	width : auto;
+	table-layout : fixed;
+	word-break : break-all;
+	height : auto;
+	border-collapse : separate;
+	border-spacing : 5px;
+	
+}
+
+.table-custom td {
+	padding-right : 5px;
+	
+}
+
+.cl-output.keyString {
+		.cl-text {
+			color : #888888 !important;
+		}
+		&.on {
+			font-weight : bold;
+		}
+}
+.cl-output.valueString {
+		.cl-text {
+			color : #ffffff !important;
+		}
+		&.on {
+			font-weight : bold;
+		}
+		&.pad-left {
+			padding-left : 10px;
+		}
+}
+
+.blue-custom {
+	.cl-text {
+		color : #5896FE !important;
+		font-weight : bold !important;
+	}
+}
+
+.red-custom {
+	.cl-text {
+		color : #FE5858 !important;
+		font-weight : bold !important;
+	}
+}
+.black-custom {
+	.cl-text {
+		color : #222222 !important;
+		font-weight : bold !important;
+	}
+}
+
+
+.custom-dialog {
+
+	.cl-dialog-header {
+		background-color : #ffffff ;
+		border : none;
+	}
+	.cl-dialog-close {
+		
+		background : url(images/icon/popup_btn_close.png) no-repeat center !important;
+	}
+}
+
+.custom-dialog-02 {
+
+	.cl-dialog-header {
+		background-color : @color-title-bg-status-04;
+		color : black;
+		border : none;
+	}
+}
+
+.left {
+	.cl-text {
+		text-align : left;
+	}
+}
+
+.ptag-class {
+	color : @color-text-black-02;
+	font-weight : @font-bold;
+	font-size : 8pt;
+	text-align : center;
+	line-height: 0.1em;
+}
+.litag-class {
+	background-color : #e1e1e1;
+	color : @color-text-black-05;
+		padding-left : 10px;
+		margin-left  :10px;
+}
+.hyper-label {
+	color : @black;
+//	text-decoration : underline;
+	border-bottom  :solid 1px black;
+	min-width : 200px !important;
+}
+.hyper-li-tag {
+	color : @black;
+//	text-decoration : underline;
+	border-bottom  :solid 1px black;
+	width : 200px !important;
+}
+/** 언더라이팅 최종판정 버튼 영역  */
+.button-last-dcld-area{
+	padding: 0px 20px 0px 20px;
+	//background-color : #3A3A3A;
+	
+	.btn-center-area{
+		
+	}
+	
+	// 20191007 디자인 가이드  수정 	
+	.btn-primary01{
+		font-size : @font-button-b;
+		min-height : 40px;
+	}
+	.btn-primary02{
+		font-size : @font-button-b;
+		min-height : 40px;
+	}
+	.btn-secondary01{
+		font-size : @font-button-b;
+		color : @color-primary-02-lightdark;
+		border : 1px solid;
+		border-color : @color-primary-02-lightdark; 
+		min-height : 40px;
+	}
+	
+	//20191017 비밀번호 버튼
+	.btn-form-pop{
+		margin-top : -3px !important;
+		margin-bottom : -3px !important;
+		font-size : @font-button-b;
+	}
+	
+	.cl-text{
+		color : #ffffff;
+	}	
+	
+	.cl-combobox {
+		.cl-text{
+			color : @color-text-black-01 ;
+			
+		}
+	}
+	.cl-radiobutton {
+		.cl-text{
+			color : @color-text-white-01 ;
+			
+		}
+	}
+	
+}
+
+
+.snp-fixHeader {
+	vertical-align : middle;
+}
+
+.cl-checkbox.toggler {
+	/* 체크 박스 아이콘 - 기본 상태 */
+	.cl-checkbox-icon {
+		background-image :none !important;
+		width : 0px !important;
+		 display :none;
+	}
+	.cl-icon-wrapper {
+		// vertical-align: baseline;
+	}
+	
+	&.cl-checked {
+		/* 체크 박스 아이콘 - 선택된 상태 */
+			 background-color : #D678D1 !important;
+	}
+}
+
+.cl-checkbox.toggler-standard {
+	
+	text-align : center;
+	/* 체크 박스 아이콘 - 기본 상태 */
+	.cl-checkbox-icon {
+		background-image :none !important;
+		width : 0px !important;
+		 display :none !important;
+	}
+	.cl-icon-wrapper {
+		// vertical-align: baseline;
+//		display : none !important;
+	}
+	
+	&.cl-checked {
+		/* 체크 박스 아이콘 - 선택된 상태 */
+	}
+}
+
+
+//디자인가이드 Blank-Alert-Box 165p 적용
+.blank-alert-box{
+	background-color : #EFEFEF;
+	
+	.cl-text {
+		color : #CCCCCC !important;
+		font-size : 16px;
+		text-align : center;
+		font-weight : @font-bold;
+	}
+}
+
+//디자인가이드 v1.1_20191024 291p Alert Popup 
+.alert-popup{
+	background-color : #ffffff;
+	.msgText-title{
+		.cl-text{
+			font-size : 16px;
+			color : #444444;
+			font-weight: @font-bold;
+		}
+	}
+	
+	.flowlayout-center{
+		.cl-layout-content{
+			text-align : center !important;		
+			padding: 20px 0px 20px 0px !important;			
+		}
+		
+		.msg-emph{
+			font-weight : @font-bold;
+			color : blue;
+			font-size : 14px;
+		}
+
+	}
+	
+	.msgText-content{			
+		.cl-text{
+			padding : 20px 0px 20px 0px;
+			font-size : 14px;
+			color : #444444;
+			//Line-height : 22px;
+			text-align : center;
+		}			
+		
+	}
+	
+	.form-normal{
+		.label{
+			.cl-text{
+			font-weight : @font-bold;
+			}	
+		}
+	}	
+}
+
+
+.vertical-middle-text {
+	background-color : @color-table-bg-header;
+	
+				.cl-text{					
+					font-size : 14px;
+					letter-spacing : 5px;
+					text-align : center ;
+					vertical-align : middle !important;
+							
+				}
+		}
+
+		
+/* 폼 헤더 20191120 */
+.cl-form-header {
+	background-image : none;
+	background-color : @color-table-bg-header;
+	margin-top : -2px !important;
+	margin-bottom : -2px !important; 
+	margin-left : -4px !important;
+	margin-right : -4px !important; 
+}
+
+//디자인가이드p213 폼내 인풋박스 하이라이팅 표시
+.input-highlight{
+	background-color: #ffe8d8;
+	border: 1px solid #f37321;
+	
+	&:hover, &.cl-hover {
+		border: 1px solid #f37321;
+	}
+	
+	/* 인풋 박스 - 포커스 상태 */
+	&.cl-focus {
+		border: 1px solid #f37321;
+	}
+}
+
+//검은색 X버튼
+.pop-btn-close{
+	background : url(images/icon/popup_btn_close.png) no-repeat center !important;
+}
+
+
+.float-border{
+	border : 1px solid @black;
+}
+.header-white-text {
+	color : @white;
+}
+
+
+.sliderTabItemWrap {
+	background-image  :none;
+	background-color : @white;
+}
+
+

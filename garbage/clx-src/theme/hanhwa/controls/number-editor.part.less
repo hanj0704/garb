@@ -1,0 +1,185 @@
+@import "../settings.part.less";
+@import "../custom-settings.part.less";
+
+/* 넘버 에디터  */
+.cl-numbereditor {	
+	background-image : none;
+	background : inherit;
+	border: 1px solid @color-input-border;
+	color: @color-text-black-01;
+	font: @default-font;
+	text-align : right;
+	font-size : @font-small-text-r;
+	border-radius : 3px;
+	
+	.cl-text {
+		padding : 0 10px;
+	} 
+
+	.cl-numbereditor-buttons {
+		border-left: solid 1px @color-input-border;
+		
+		/* 넘버 에디터 스핀 업 버튼 */
+		.cl-numbereditor-increase  {
+			background-image : url(images/icon/icon_dropdown_active_b.png);
+			background-size : 8px 5px;
+		}
+
+		/* 넘버 에디터 스핀 다운 버튼 */
+		.cl-numbereditor-decrease {
+			background-image : url(images/icon/icon_dropdown_default_b.png);
+			background-size : 8px 5px;
+		}
+	}
+
+	&:not(.cl-disabled) {
+		&:hover, &.cl-hover {
+			border-color : @color-input-hover-border;
+			
+			.cl-numbereditor-buttons {
+				border-left-color : @color-input-hover-border;
+			}
+		}
+		
+		
+		/* 넘버 에디터 스핀 업 버튼 호버 */
+		.cl-numbereditor-increase:hover {
+			background-color : @color-input-focus-border;
+			background-image : url(images/icon/icon_dropdown_active_w.png);
+			background-size : 8px 5px;
+		}
+		/* 넘버 에디터 스핀 업 버튼 액티브  */
+		.cl-numbereditor-increase:active {
+			background-color : @color-input-focus-border;
+			background-image : url(images/icon/icon_dropdown_active_w.png);
+			background-size : 8px 5px;
+		}
+
+		/* 넘버 에디터 스핀 다운 버튼 호버 */
+		.cl-numbereditor-decrease:hover {
+			background-color : @color-input-focus-border;
+			background-image : url(images/icon/icon_dropdown_default_w.png);
+			background-size : 8px 5px;
+		}
+		/* 넘버 에디터 스핀 다운 버튼 액티브 */
+		.cl-numbereditor-decrease:active {
+			background-color : @color-input-focus-border;
+			background-image : url(images/icon/icon_dropdown_default_w.png);
+			background-size : 8px 5px;
+		}
+	}
+	
+
+	/* 넘버 에디터 disabled 상태  */
+	&.cl-disabled {
+		border-color: @color-input-disabled-border;
+		background-color: @color-input-disabled;
+		color : @disabled-text-color;
+		
+		.cl-numbereditor-buttons {
+			border-left: solid 1px @color-input-disabled-border;
+			
+			/* 넘버 에디터 스핀 업 버튼 */
+			.cl-numbereditor-increase  {
+			}
+	
+			/* 넘버 에디터 스핀 다운 버튼 */
+			.cl-numbereditor-decrease {
+			}
+		}
+	}
+}
+
+
+/* 넘버 에디터 focus 상태 */
+.cl-numbereditor.cl-focus {
+	border-color: @color-input-focus-border;
+	
+	/* 넘버 에디터 focus 상태 스핀 버튼 영역 */
+	.cl-numbereditor-buttons {
+		border-left-color: @color-input-focus-border;
+	}
+}
+
+/* 넘버 에디터  */
+.cl-numbereditor.dark {	
+	background-color : @color-input-bg-dark;
+	border: 1px solid @color-input-bg-dark;
+	color: @color-text-white-01;
+	
+	.cl-text {
+		padding : 0 10px;
+	} 
+
+	.cl-numbereditor-buttons {
+		border-left: solid 1px @color-input-hover-border-dark;
+		
+		/* 넘버 에디터 스핀 업 버튼 */
+		.cl-numbereditor-increase  {
+		}
+
+		/* 넘버 에디터 스핀 다운 버튼 */
+		.cl-numbereditor-decrease {
+		}
+	}
+
+	&:not(.cl-disabled) {
+		&:hover, &.cl-hover {
+			border-color : @color-input-hover-border-dark;
+			
+			.cl-numbereditor-buttons {
+				border-left-color : @color-input-hover-border-dark;
+			}
+		}
+		
+		
+		/* 넘버 에디터 스핀 업 버튼 호버 */
+		.cl-numbereditor-increase:hover {
+			background-color : @color-input-focus-border-dark;
+		}
+		/* 넘버 에디터 스핀 업 버튼 액티브  */
+		.cl-numbereditor-increase:active {
+			background-color : @color-input-focus-border-dark;
+		}
+
+		/* 넘버 에디터 스핀 다운 버튼 호버 */
+		.cl-numbereditor-decrease:hover {
+			background-color : @color-input-focus-border-dark;
+		}
+		/* 넘버 에디터 스핀 다운 버튼 액티브 */
+		.cl-numbereditor-decrease:active {
+			background-color : @color-input-focus-border-dark;
+		}
+	}
+	
+
+	/* 넘버 에디터 disabled 상태  */
+	&.cl-disabled {
+		border-color: @color-input-disabled-border-dark;
+		background-color: @color-input-disabled-dark;
+		color : @disabled-text-color;
+		
+		.cl-numbereditor-buttons {
+			border-left: solid 1px @color-input-disabled-border-dark;
+			
+			/* 넘버 에디터 스핀 업 버튼 */
+			.cl-numbereditor-increase  {
+			}
+	
+			/* 넘버 에디터 스핀 다운 버튼 */
+			.cl-numbereditor-decrease {
+			}
+		}
+	}
+}
+
+
+/* 넘버 에디터 focus 상태 */
+.cl-numbereditor.dark.cl-focus {
+	border-color: @color-input-focus-border-dark;
+	
+	/* 넘버 에디터 focus 상태 스핀 버튼 영역 */
+	.cl-numbereditor-buttons {
+		border-left-color: @color-input-focus-border-dark;
+	}
+}

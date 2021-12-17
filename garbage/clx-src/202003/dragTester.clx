@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9c887352" version="1.0.0.0">
+  <head std:sid="head-d5f91893">
+    <title>dragTester</title>
+    <screen std:sid="screen-5c559f9f" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-f4df2339" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-9cea5fda" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-f29e89a9"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-4d5ecea4" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-6519ef56" handler="onBodyLoad" name="load"/>
+    <cl:checkboxgroup std:sid="cb-group-9f7a694f" id="cbg1" class="asda" style="border-right-style:solid; border-top-width:1px; border-bottom-color:black; border-left-style:solid; border-right-width:1px; border-bottom-width:1px; border-left-color:black; border-top-color:black; border-bottom-style:solid; border-right-color:black; border-left-width:1px; border-top-style:solid;" colcount="1">
+      <cl:listener std:sid="listener-fac12163" handler="onCbg1ItemClick" name="item-click"/>
+      <cl:listener std:sid="listener-342e31d9" handler="onCbg1Click" name="click"/>
+      <cl:attribute name="viewClass" value="Y"/>
+      <cl:xylayoutdata std:sid="xyl-data-064380a0" height="353px" horizontalAnchor="LEFT" left="20px" top="37px" verticalAnchor="TOP" width="231px"/>
+      <cl:item std:sid="item-e19485b0" label="label1" value="value1"/>
+      <cl:item std:sid="item-57862013" label="label2" value="value2"/>
+      <cl:item std:sid="item-0d5f36fe" label="label3" value="value3"/>
+      <cl:item std:sid="item-802deaaa" label="label4" value="value4"/>
+      <cl:item std:sid="item-ca46df10" label="label5" value="value5"/>
+    </cl:checkboxgroup>
+    <cl:group std:sid="group-407ab52b" id="grp1" class="cl-form-group">
+      <cl:xylayoutdata std:sid="xyl-data-4408301b" height="200px" horizontalAnchor="LEFT" left="335px" top="45px" verticalAnchor="TOP" width="400px"/>
+      <cl:button std:sid="button-47b6e54a" id="btn1" value="Button">
+        <cl:formdata std:sid="f-data-815323da" col="0" row="0"/>
+      </cl:button>
+      <cl:button std:sid="button-c49e4834" id="btn2" value="Button">
+        <cl:formdata std:sid="f-data-491e388c" col="0" row="1"/>
+      </cl:button>
+      <cl:button std:sid="button-1254bd22" id="btn3" value="Button">
+        <cl:listener std:sid="listener-30ab3523" handler="onBtn3Click" name="click"/>
+        <cl:formdata std:sid="f-data-eabac9ea" col="1" row="1"/>
+      </cl:button>
+      <cl:button std:sid="button-b7aa0996" id="btn4" value="Button">
+        <cl:formdata std:sid="f-data-443c937d" col="1" row="0"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-cfe68af7" hmargin="5px" hseparatortype="BY_CLASS" hseparatorwidth="1" hspace="10px" vmargin="5px" vseparatortype="BY_CLASS" vseparatorwidth="1" vspace="10px">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="100" shadetype="BY_CLASS" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:button std:sid="button-8fa0b674" id="btn5" value="Button">
+      <cl:xylayoutdata std:sid="xyl-data-6e0503de" height="153px" horizontalAnchor="LEFT" left="576px" top="784px" verticalAnchor="TOP" width="278px"/>
+    </cl:button>
+    <cl:embeddedapp std:sid="e-app-b083e989" id="ea1">
+      <cl:xylayoutdata std:sid="xyl-data-ce2ec5a9" height="240px" horizontalAnchor="LEFT" left="367px" top="290px" verticalAnchor="TOP" width="320px"/>
+    </cl:embeddedapp>
+    <cl:xylayout std:sid="xylayout-ac77ffe5"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

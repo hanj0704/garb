@@ -1,0 +1,103 @@
+@import "../settings.part.less";
+@import "../custom-settings.part.less";
+
+ /* 인풋 박스 루트 */
+.cl-inputbox {
+	background-color: @white;
+	background-image : none;
+	border: 1px solid @color-input-border;
+	color: @color-text-black-05;
+	font: @default-font;
+	border-radius : 3px;
+	font-size : @font-small-text-r;
+
+	/* 인풋 박스 텍스트 */
+	.cl-text{
+		padding : 0 10px;
+	}
+	
+	&:hover, &.cl-hover {
+		border-color : @color-input-hover-border;
+	}
+	
+	/* 인풋 박스 - 포커스 상태 */
+	&.cl-focus {
+		border-color: @color-input-focus-border;
+	}
+
+	/* 인풋 박스 - disabled 상태 */
+	&.cl-disabled {
+		border-color: @color-input-disabled-border;
+		background-color: @color-input-disabled;
+		color: @color-text-black-03;
+	}
+}
+
+.cl-inputbox.dark {
+	background-color: @color-input-bg-dark;
+	border: 1px solid @color-input-bg-dark;
+	color: @color-text-white-01;
+
+	/* 인풋 박스 텍스트 */
+	.cl-text{
+		padding : 0 10px;
+	}
+	
+	&:hover, &.cl-hover {
+		border-color : @color-input-hover-border-dark;
+	}
+	
+	/* 인풋 박스 - 포커스 상태 */
+	&.cl-focus {
+		border-color: @color-input-focus-border-dark;
+	}
+
+	/* 인풋 박스 - disabled 상태 */
+	&.cl-disabled {
+		border-color: @color-input-disabled-border-dark;
+		background-color: @color-input-disabled-dark;
+		color: @disabled-text-color;
+	}
+}
+
+/** (20190920) 인풋박스 placeholder 스타일 - 류다은 추가 */
+
+.cl-inputbox ::-webkit-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-text-black-04 !important;
+}
+
+.cl-inputbox :-ms-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-text-black-04 !important;
+}
+
+.cl-inputbox :-mos-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-text-black-04 !important;
+}
+
+.cl-inputbox ::-mos-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-text-black-04 !important;
+}
+
+.cl-inputbox.dark ::-webkit-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-text-white-04 !important;
+}
+
+.cl-inputbox.dark :-ms-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-text-white-04 !important;
+}
+
+.cl-inputbox.dark :-mos-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-text-white-04 !important;
+}
+
+.cl-inputbox.dark ::-mos-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-text-white-04 !important;
+}

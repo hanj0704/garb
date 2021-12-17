@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-d465bd2a" version="1.0.3109">
+  <head std:sid="head-cd10304f">
+    <screen std:sid="screen-4d34cd44" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-1aa69ceb" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-880c483d" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-e83e7e1d"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-a29e3ac6">
+    <cl:listener std:sid="listener-3c261cbb" name="load" handler="onBodyLoad"/>
+    <cl:button std:sid="button-fd98c577" id="btn1" value="3">
+      <cl:xylayoutdata std:sid="xyl-data-5c5ef55e" top="6px" left="107px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:tabfolder std:sid="t-folder-f81506ca">
+      <cl:xylayoutdata std:sid="xyl-data-a9665a05" top="36px" left="4px" width="940px" height="455px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:tabitem std:sid="t-item-abe57c22" selected="true" text="tab1">
+        <std:metadata>
+          <std:property key="is-active-item" value="true"/>
+        </std:metadata>
+        <cl:group std:sid="group-ec029770" id="grp1">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:button std:sid="button-496220cf" id="btn2" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-9e566c38" top="64px" left="52px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-650010dc" id="btn3" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-c8c2c0fa" top="126px" left="62px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-dab31710" id="btn4" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-45c3b636" top="171px" left="123px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-f5100519" id="btn5" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-c5628448" top="171px" left="233px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-81ed5cb8" id="btn6" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-a804b604" top="107px" left="267px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-c0247711"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-78ef56f7" text="tab 2">
+        <cl:group std:sid="group-e1f96c31" id="grp2">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:button std:sid="button-7a1313b1" id="btn7" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-0d9005df" top="139px" left="131px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-8dc53db1" id="btn8" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-6b9f75cd" top="149px" left="454px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-3ef2ed02" id="btn9" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-4f74b6f9" top="260px" left="214px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-8bc33c0a" id="btn10" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-93a51ed0" top="260px" left="212px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-ee3914d7" id="btn11" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-b09868f8" top="93px" left="263px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-3177c153" id="btn12" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-8d75f21f" top="216px" left="334px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-ccafe5d6" id="btn13" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-3479fdcd" top="158px" left="283px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-89cd5465"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-59a199d3" text="tab 3">
+        <cl:group std:sid="group-3c2f427e" id="grp3">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:button std:sid="button-8e28112a" id="btn14" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-b1c589a2" top="78px" left="151px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-e24bd83d" id="btn15" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-03583a9d" top="145px" left="132px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-02bf5115" id="btn16" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-72b3a562" top="164px" left="132px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-15d5ffcd" id="btn17" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-13e2a0a1" top="236px" left="222px" width="10px" height="10px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-0f27b992" id="btn18" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-834e0904" top="245px" left="296px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-59ebf505" id="btn19" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-53a4704d" top="156px" left="335px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-ddb8b16c"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-94cb391e" text="tab 4">
+        <cl:group std:sid="group-93207e90" id="grp4">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:button std:sid="button-c9dd446d" id="btn20" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-17142d92" top="76px" left="409px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-e2789d93" id="btn21" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-527a3ab4" top="106px" left="428px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-41cc6c50" id="btn22" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-a25dcb81" top="125px" left="435px" width="12px" height="10px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-e40c8807" id="btn23" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-bf84a52a" top="168px" left="495px" width="14px" height="12px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-60a4d1a0" id="btn24" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-431180ef" top="190px" left="519px" width="10px" height="10px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-81b3cec9" id="btn25" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-a811432a" top="210px" left="538px" width="17px" height="21px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-7df0d886" id="btn26" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-ac29182b" top="241px" left="565px" width="10px" height="21px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-6552b64d" id="btn27" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-7d1caa7a" top="272px" left="574px" width="10px" height="11px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-5ec0944b" id="btn28" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-5a55327a" top="282px" left="583px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-d9da6024"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-9a663867" text="tab 5">
+        <cl:group std:sid="group-28aee5d4" id="grp5">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:button std:sid="button-99717a84" id="btn29" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-e89f258d" top="55px" left="783px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-1bc793e8" id="btn30" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-44ea5b18" top="85px" left="716px" width="15px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-dcf2ff95" id="btn31" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-9307a827" top="115px" left="693px" width="13px" height="16px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-6db263dd" id="btn32" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-b85dc67c" top="141px" left="665px" width="18px" height="16px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-08b959cc" id="btn33" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-295eea46" top="167px" left="628px" width="27px" height="21px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-5671d941" id="btn34" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-9f3841e0" top="198px" left="595px" width="23px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-a7f660d2" id="btn35" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-67c6cd40" top="224px" left="588px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-83877a1a" id="btn36" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-07ca1700" top="224px" left="580px" width="10px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-7515c21e" id="btn37" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-30a86f28" top="254px" left="566px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:button std:sid="button-2a3f96ee" id="btn38" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-0852e821" top="273px" left="540px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-8fbb78c2"/>
+        </cl:group>
+      </cl:tabitem>
+    </cl:tabfolder>
+    <cl:xylayout std:sid="xylayout-290ebd8b"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

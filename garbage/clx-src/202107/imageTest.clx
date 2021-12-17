@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-73119966" version="1.0.3167">
+  <head std:sid="head-85a7ad6f">
+    <screen std:sid="screen-c74b2e05" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-913d6405" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-f4bfc3f9" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-745eacaa">
+      <cl:dataset std:sid="d-set-f8e0570a" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-bc2bf888" name="label"/>
+          <cl:datacolumn std:sid="d-column-96151a68" name="value"/>
+          <cl:datacolumn std:sid="d-column-06b1ae4a" name="shape"/>
+          <cl:datacolumn std:sid="d-column-00514087" name="coords"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[label1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[value1]]></cl:datavalue>
+            <cl:datavalue columnname="shape"><![CDATA[poly]]></cl:datavalue>
+            <cl:datavalue columnname="coords"><![CDATA[1,1,200,0,357,194,0,194]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[label2]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[value2]]></cl:datavalue>
+            <cl:datavalue columnname="shape"><![CDATA[poly]]></cl:datavalue>
+            <cl:datavalue columnname="coords"><![CDATA[516,3,374,194,740,194,740,2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[label1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[value1]]></cl:datavalue>
+            <cl:datavalue columnname="shape"><![CDATA[poly]]></cl:datavalue>
+            <cl:datavalue columnname="coords"><![CDATA[365,300,365,424]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[label3]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[value3]]></cl:datavalue>
+            <cl:datavalue columnname="shape"><![CDATA[circle]]></cl:datavalue>
+            <cl:datavalue columnname="coords"><![CDATA[365,210,95]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-5901b20b">
+    <cl:group std:sid="group-e3e2b56b" id="grp1">
+      <cl:xylayoutdata std:sid="xyl-data-8c632fe2" top="20px" left="20px" width="440px" height="230px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:group std:sid="group-914ede63" id="grp2" style="border-right-style:solid; border-top-width:1px; border-left-style:solid; border-right-width:1px; border-bottom-width:1px; border-bottom-style:solid; border-left-width:1px; border-top-style:solid;">
+        <cl:xylayoutdata std:sid="xyl-data-5d2a26f7" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+        <cl:group std:sid="group-6847888f" id="grp3">
+          <cl:formdata std:sid="f-data-448f2c0b" row="1" col="0"/>
+          <cl:xylayout std:sid="xylayout-e946da65"/>
+        </cl:group>
+        <cl:group std:sid="group-df4fef7f" id="grp4">
+          <cl:formdata std:sid="f-data-78e950c0" row="1" col="1"/>
+          <cl:xylayout std:sid="xylayout-c364341c"/>
+        </cl:group>
+        <cl:group std:sid="group-1a2966b4" id="grp5" class="hahaha">
+          <cl:formdata std:sid="f-data-ac033f22" row="0" col="0"/>
+          <cl:xylayout std:sid="xylayout-3151de39"/>
+        </cl:group>
+        <cl:group std:sid="group-b78f6f45" id="grp6">
+          <cl:formdata std:sid="f-data-a50f3bc1" row="0" col="1"/>
+          <cl:xylayout std:sid="xylayout-59f03f1f"/>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-c80f6547" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:output std:sid="output-6fbfef9e" id="opt1" style="text-align:center;" value="Output">
+        <std:metadata>
+          <std:property key="locked" value="true"/>
+        </std:metadata>
+        <cl:xylayoutdata std:sid="xyl-data-6caa40dc" width="120px" height="120px" horizontalAnchor="CENTER" verticalAnchor="CENTER"/>
+      </cl:output>
+      <cl:xylayout std:sid="xylayout-05b48c5c"/>
+    </cl:group>
+    <cl:img std:sid="image-99a47502" class="imgMain">
+      <cl:xylayoutdata std:sid="xyl-data-3adafdc8" top="260px" left="20px" width="770px" height="422px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:area-itemset datasetid="ds1" label="label" value="value" shape="shape" coords="coords"/>
+      <cl:itemstyle>
+        <cl:expbind property="class" category="CLASS" expression="switch(shape){&#xA;&#x9;case &quot;poly&quot; : &quot;item-1&quot;&#xA;&#x9;case &quot;circle&quot;:&quot;item-2&quot;&#xA;&#x9;default : &quot;&quot;&#xA;}"/>
+      </cl:itemstyle>
+    </cl:img>
+    <cl:htmlsnippet std:sid="htmlsnippet-882695b5" value="&lt;style type='text/css'>&#xD;&#xA;.cl-image.imgMain {&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;&#x9;.cl-image-area-item{&#xD;&#xA;&#x9;&#x9;&#x9;animation : blink 2s linear 0s infinite;&#xD;&#xA;&#x9;&#x9;&#x9;fill-opacity : 1;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&amp;.item-1 {&#xD;&#xA;&#x9;&#x9;&#x9;fill : rgba(0,255,0,0.5);&#xD;&#xA;&#x9;&#x9;&#x9;stroke-width :3px;&#xD;&#xA;&#x9;&#x9;&#x9;stroke-opacity:1;&#xD;&#xA;&#x9;&#x9;&#x9;stroke : lightgray;&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&amp;.item-2{&#xD;&#xA;&#x9;&#x9;&#x9;fill : rgba(255,255,255);&#xD;&#xA;&#x9;&#x9;&#x9;fill-opacity : 1;&#xD;&#xA;&#x9;&#x9;&#x9;stroke-width:15px;&#xD;&#xA;&#x9;&#x9;&#x9;stroke-opacity:1;&#xD;&#xA;&#x9;&#x9;&#x9;stroke : blue;&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;.hahaha {&#xD;&#xA;&#x9; width: 0px;height: 0px;&#xD;&#xA;  border-top:50px solid none;&#xD;&#xA;  border-bottom:100px solid red;&#xD;&#xA;  border-right: 50px solid transparent;&#xD;&#xA;  border-left: 50px solid  transparent;&#xD;&#xA;}&#xD;&#xA;&lt;/style>">
+      <cl:xylayoutdata std:sid="xyl-data-0246f9a3" top="143px" left="535px" width="255px" height="107px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:htmlsnippet>
+    <cl:xylayout std:sid="xylayout-8c45b061"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

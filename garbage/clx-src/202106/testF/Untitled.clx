@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-04697ff2" version="1.0.3109">
+  <head std:sid="head-acf8f162">
+    <screen std:sid="screen-1368e4e3" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-92c0f00d" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-beb6fd46" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-d9ef3e00"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-2b84f594">
+    <cl:listener std:sid="listener-d70f26ab" name="host-change" handler="onBodyHostChange"/>
+    <cl:listener std:sid="listener-36647e0a" name="before-unload" handler="onBodyBeforeUnload"/>
+    <cl:listener std:sid="listener-7dd0a951" name="load" handler="onBodyLoad"/>
+    <cl:tabfolder std:sid="t-folder-32061402">
+      <cl:xylayoutdata std:sid="xyl-data-3ee1bbd1" top="20px" left="20px" width="840px" height="546px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:tabitem std:sid="t-item-9fa4a896" selected="true" text="tab1">
+        <std:metadata>
+          <std:property key="is-active-item" value="true"/>
+        </std:metadata>
+        <cl:group std:sid="group-e47f80c8" id="grp1">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:button std:sid="button-b6bae160" id="btn1" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-cf2ad24f" top="20px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-8a12c0b0"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-4120a6a1" text="tab 2">
+        <cl:group std:sid="group-4aeef18c" id="grp2">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:button std:sid="button-ffab7e75" id="btn2" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-d35f48a7" top="10px" left="10px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-b8831c34"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-0460cac5" text="tab 3">
+        <cl:group std:sid="group-352371ef" id="grp3">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:button std:sid="button-24ad0c0a" id="btn3" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-7714a07b" top="87px" left="53px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-0f1fabab"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-ee59e9e8" text="tab 4">
+        <cl:group std:sid="group-fcf1b070" id="grp4">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:button std:sid="button-9f773979" id="btn4" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-87f8ce29" top="74px" left="222px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-7512a54e"/>
+        </cl:group>
+      </cl:tabitem>
+    </cl:tabfolder>
+    <cl:xylayout std:sid="xylayout-fa5d0a9d"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

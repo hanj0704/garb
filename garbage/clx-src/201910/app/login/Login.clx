@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ee2e814e" version="1.0.0.0">
+  <head std:sid="head-c73c592a">
+    <title>LoginSample</title>
+    <screen std:sid="screen-717a76db" id="default" height="1080px" name="default" width="1452px"/>
+    <cl:model std:sid="model-c1fed0c6"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-1861ca19" class="login-body" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-a54a4444">
+      <cl:xylayoutdata std:sid="xyl-data-a9ad9c26" height="693px" horizontalAnchor="CENTER" verticalAnchor="CENTER" width="670px"/>
+      <cl:group std:sid="group-a308ccd9" class="login-box-wrap">
+        <cl:xylayoutdata std:sid="xyl-data-4d1d01ff" height="513px" horizontalAnchor="CENTER" top="120px" verticalAnchor="TOP" width="670px"/>
+        <cl:group std:sid="group-3d6048ad">
+          <cl:xylayoutdata std:sid="xyl-data-7b22c68d" bottom="160px" horizontalAnchor="BOTH" left="80px" right="80px" top="80px" verticalAnchor="BOTH"/>
+          <cl:output std:sid="output-3c867698" class="login-field-title id" value="사용자 아이디">
+            <cl:formdata std:sid="f-data-36b1ead7" col="0" row="0"/>
+          </cl:output>
+          <cl:output std:sid="output-63a581fe" class="login-field-title pw" value="비밀번호">
+            <cl:formdata std:sid="f-data-e595c08c" col="0" row="3"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-35349157" id="ipb1" class="login-field" placeholder="사용자 아이디를 입력하여 주십시오.">
+            <cl:formdata std:sid="f-data-15ddfffa" col="0" row="1"/>
+          </cl:inputbox>
+          <cl:inputbox std:sid="i-box-04913501" id="ipb2" class="login-field" placeholder="비밀번호를 입력하여 주십시오." secret="true">
+            <cl:formdata std:sid="f-data-8c511b03" col="0" row="4"/>
+          </cl:inputbox>
+          <cl:button std:sid="button-c8ab409e" class="btn-login" value="로그인">
+            <cl:formdata std:sid="f-data-b5dbb978" col="0" row="6"/>
+          </cl:button>
+          <cl:formlayout std:sid="f-layout-91822eb3" hspace="0px" vspace="0px">
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="38" unit="PIXEL"/>
+            <cl:rows autoSizing="false" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="38" unit="PIXEL"/>
+            <cl:rows autoSizing="false" length="2" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+            <cl:rows autoSizing="false" length="45" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:xylayout std:sid="xylayout-48ab1592"/>
+      </cl:group>
+      <cl:output std:sid="output-e4eae074" class="login-logo" value="국도교통정보시스템">
+        <cl:xylayoutdata std:sid="xyl-data-bdd6f223" height="64px" horizontalAnchor="CENTER" top="0px" verticalAnchor="TOP" width="280px"/>
+      </cl:output>
+      <cl:output std:sid="output-205d7b43" class="login-footer" value="COPYRIGHT 2019 국도교통정보시스템 All Rights Reserved.">
+        <cl:xylayoutdata std:sid="xyl-data-2d394b1d" bottom="0px" height="25px" horizontalAnchor="BOTH" left="0px" right="0px" verticalAnchor="BOTTOM"/>
+      </cl:output>
+      <cl:xylayout std:sid="xylayout-dda41d43"/>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-9a2355b4"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

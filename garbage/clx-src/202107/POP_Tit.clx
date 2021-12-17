@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9835625b" version="1.0.3179">
+  <head std:sid="head-fbe6e2ea">
+    <screen std:sid="screen-157c26e5" id="mobile" name="mobile" width="360px" height="760px" useCustomWidth="true" useCustomHeight="true" customHeight="230" customWidth="312"/>
+    <cl:model std:sid="model-be008d9c"/>
+    <cl:appspec preferred-width="300" preferred-height="250"/>
+  </head>
+  <body std:sid="body-ecf95b34">
+    <cl:listener std:sid="listener-d694c9d9" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-cfee1916">
+      <cl:verticaldata std:sid="v-data-2742c03f" width="400px" height="230px" autosize="height"/>
+      <cl:group std:sid="group-d9eb3a05">
+        <cl:formdata std:sid="f-data-db7bb871" row="1" col="0"/>
+        <cl:button std:sid="button-f2f5e420" value="예, 계속 할래요">
+          <cl:listener std:sid="listener-4137630e" name="click" handler="onButtonClick"/>
+          <cl:formdata std:sid="f-data-1ff44968" row="0" col="0"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-733860ff" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-f15e856d">
+        <cl:formdata std:sid="f-data-0c5a2c43" row="0" col="0"/>
+        <cl:output std:sid="output-209c65f2" class="h6 fw-bold" value="My Data">
+          <cl:verticaldata std:sid="v-data-31c28431" width="264px" height="27px"/>
+        </cl:output>
+        <cl:output std:sid="output-e47edb99" class="fs-sm" value="당사는 금융투자상품에 관하여 충분히 설명할&#xD;&#xA;의무가 있으며, 투자자는 반드시 영업직원으로&#xD;&#xA;부터 충분한 설명을 듣고, 투자 결정을&#xD;&#xA;내리시기 바랍니다.">
+          <cl:verticaldata std:sid="v-data-7a635418" width="100px" height="75px" autosize="height"/>
+        </cl:output>
+        <cl:verticallayout std:sid="v-layout-e2e0ad99" spacing="8"/>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-c0b12026" hspace="24px" vspace="24px" top-margin="24px" right-margin="24px" bottom-margin="24px" left-margin="24px">
+        <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-9ed364ce"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

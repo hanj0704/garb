@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ebfcf68f" version="1.0.0.0">
+  <head std:sid="head-9efced5b">
+    <title>Embedded</title>
+    <screen std:sid="screen-65a84dd5" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-40991d41" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-a725fbae" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-9f04e879">
+      <cl:dataset std:sid="d-set-e9fcced2" id="ds1">
+        <cl:listener std:sid="listener-6a926f62" handler="onDs1Insert" name="insert"/>
+        <cl:listener std:sid="listener-ac824dad" handler="onDs1Update" name="update"/>
+        <cl:listener std:sid="listener-d7ca293d" handler="onDs1Delete" name="delete"/>
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-74b5611c" name="column1"/>
+          <cl:datacolumn std:sid="d-column-94e5c8d3" name="column2"/>
+          <cl:datacolumn std:sid="d-column-7e9a6e23" name="column3"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[컬럼1-1]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[컬럼2-1]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[컬럼3-1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[컬럼1-2]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[컬럼2-2]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[컬럼3-2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[컬럼1-3]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[컬럼2-3]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[컬럼3-3]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-de3075e1" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:embeddedapp std:sid="e-app-0082e5d5" id="ea1" src="Embedded-child1.clx">
+      <cl:listener std:sid="listener-71524b67" handler="onEa1Load" name="load"/>
+      <cl:listener std:sid="listener-e7213450" handler="onEa1Init" name="init"/>
+      <cl:xylayoutdata std:sid="xyl-data-8fb9fbc0" height="768px" horizontalAnchor="LEFT" left="20px" top="0px" verticalAnchor="TOP" width="800px"/>
+    </cl:embeddedapp>
+    <cl:grid std:sid="grid-dc4001f4" id="grd1" datasetid="ds1">
+      <cl:xylayoutdata std:sid="xyl-data-26f59299" height="300px" horizontalAnchor="LEFT" left="830px" top="20px" verticalAnchor="TOP" width="800px"/>
+      <cl:gridcolumn std:sid="g-column-fd7a9412" width="50px"/>
+      <cl:gridcolumn std:sid="g-column-7e671f69"/>
+      <cl:gridcolumn std:sid="g-column-4836f681"/>
+      <cl:gridcolumn std:sid="g-column-1248c628"/>
+      <cl:gridheader std:sid="gh-band-3b7e6f3b">
+        <cl:gridrow std:sid="g-row-3af2d4e7"/>
+        <cl:gridcell std:sid="gh-cell-8da0e385" colindex="0" rowindex="0" filterable="false" sortable="false" text="row"/>
+        <cl:gridcell std:sid="gh-cell-489aa4b4" colindex="1" rowindex="0" filterable="false" sortable="false" targetcolumnname="column1" text="column1"/>
+        <cl:gridcell std:sid="gh-cell-3eea1140" colindex="2" rowindex="0" filterable="false" sortable="false" targetcolumnname="column2" text="column2"/>
+        <cl:gridcell std:sid="gh-cell-d79ce721" colindex="3" rowindex="0" filterable="false" sortable="false" targetcolumnname="column3" text="column3"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-6ce3dfb6">
+        <cl:gridrow std:sid="g-row-e5b41741"/>
+        <cl:gridcell std:sid="gd-cell-a3ee3ffd" colindex="0" rowindex="0" columntype="rowindex"/>
+        <cl:gridcell std:sid="gd-cell-4f07abbe" colindex="1" rowindex="0" columnname="column1"/>
+        <cl:gridcell std:sid="gd-cell-a5f6ed18" colindex="2" rowindex="0" columnname="column2"/>
+        <cl:gridcell std:sid="gd-cell-f0fdca83" colindex="3" rowindex="0" columnname="column3"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:xylayout std:sid="xylayout-a12d7d6e"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

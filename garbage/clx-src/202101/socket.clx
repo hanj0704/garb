@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-c0b12f21" version="1.0.0.0">
+  <head std:sid="head-b9283200">
+    <title>socket</title>
+    <screen std:sid="screen-0a63bcc9" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-c39c132a" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-4ecf57ee" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-519cc815"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-14c269e4" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-795b2469" name="load" handler="onBodyLoad"/>
+    <cl:udc std:sid="ud-control-ee786a95" id="bot" type="udc.svg.PickingBot">
+      <cl:xylayoutdata std:sid="xyl-data-c487b206" top="134px" left="184px" width="188px" height="175px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:button std:sid="button-c09174e0" id="btn1" value="Button">
+      <cl:listener std:sid="listener-85581c91" name="click" handler="onBtn1Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-57dddfcf" top="20px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-d285a3a4" id="btn2" value="Button">
+      <cl:listener std:sid="listener-c3d2f307" name="click" handler="onBtn2Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-de626a61" top="20px" left="130px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:udc std:sid="ud-control-56e2a613" type="udc.svg.PockingBotConsole">
+      <cl:xylayoutdata std:sid="xyl-data-c2c2e640" top="64px" left="630px" width="300px" height="150px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:property name="bot" value="bot" type="control"/>
+    </cl:udc>
+    <cl:button std:sid="button-64dd49dd" id="btn3" value="Button">
+      <cl:listener std:sid="listener-76b72592" name="click" handler="onBtn3Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-4eafa71c" top="20px" left="240px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-34854367"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

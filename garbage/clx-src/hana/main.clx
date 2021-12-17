@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-383abadd" version="1.0.0.0">
+  <head std:sid="head-2b21d263">
+    <title>windowopen2</title>
+    <screen std:sid="screen-d78ce91d" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-8d27e8f7" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-63bcf1e9" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-355bd24a"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-b51823a6" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:button std:sid="button-21809c09" value="Button">
+      <cl:listener std:sid="listener-a61bf1e3" handler="onButtonClick" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-09329fbc" height="20px" horizontalAnchor="LEFT" left="106px" top="97px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:output std:sid="output-f77fcc65" value="도메인이 다르거나 같은 경우 사용 가능">
+      <cl:xylayoutdata std:sid="xyl-data-33f400dd" height="20px" horizontalAnchor="LEFT" left="20px" top="20px" verticalAnchor="TOP" width="383px"/>
+    </cl:output>
+    <cl:xylayout std:sid="xylayout-facafc10"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

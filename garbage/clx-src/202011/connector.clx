@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9c59bd2c" version="1.0.0.0">
+  <head std:sid="head-2c299c42">
+    <title>connector</title>
+    <screen std:sid="screen-dcfa9113" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-9ab9b363" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-87813e22" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-db2dbfb2">
+      <cl:dataset std:sid="d-set-579f0fd3" id="ds1"/>
+    </cl:model>
+    <cl:appspec dev-comment="  &lt;Connector &#xD;&#xA;     port=&quot;8081&quot; &#xD;&#xA;     protocol=&quot;HTTP/1.1&quot;&#xD;&#xA;      redirectPort=&quot;8443&quot;&#xD;&#xA;      connectionTimeout=&quot;20000&quot;&#xD;&#xA;        compressableMimeType=&quot;text/html,text/xml,text/plain,text/javascript,text/css,application/javascript,application/json,application/x-www-form-urlencoded&quot; &#xD;&#xA;    compression=&quot;on&quot; &#xD;&#xA;    compressionMinSize=&quot;1024&quot; />"/>
+  </head>
+  <body std:sid="body-b8c02171" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:xylayout std:sid="xylayout-41771310"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

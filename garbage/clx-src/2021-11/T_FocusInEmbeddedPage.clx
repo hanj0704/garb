@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9c1be197" version="1.0.3377">
+  <head std:sid="head-4b1320a9">
+    <screen std:sid="screen-3cc59998" id="default" name="default" minwidth="1024px" width="1024px" height="768px" useCustomHeight="true" customHeight="1500" customWidth="800"/>
+    <screen std:sid="screen-806697a5" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-ae90791e" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-e791ea97"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-22f9367d">
+    <cl:group std:sid="group-c90a0462" id="grp" class="cl-form-group">
+      <cl:xylayoutdata std:sid="xyl-data-7324e1e5" top="20px" left="20px" width="616px" height="309px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:output std:sid="output-35c522e5" value="인풋박스">
+        <cl:formdata std:sid="f-data-2974cb6b" row="0" col="0"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-e02e53cd" id="ipb1">
+        <cl:formdata std:sid="f-data-43eac075" row="0" col="1" rowspan="1" colspan="3"/>
+      </cl:inputbox>
+      <cl:output std:sid="output-e7638ef7" value="체크박스">
+        <cl:formdata std:sid="f-data-bbbee576" row="1" col="0"/>
+      </cl:output>
+      <cl:checkbox std:sid="c-box-4443afb5" id="cbx1" text="Check">
+        <cl:formdata std:sid="f-data-dd093250" row="1" col="1" rowspan="1" colspan="1"/>
+      </cl:checkbox>
+      <cl:output std:sid="output-9f5574e0" value="UDC">
+        <cl:formdata std:sid="f-data-42ec277c" row="1" col="2"/>
+      </cl:output>
+      <cl:output std:sid="output-a08efbe2" value="콤보박스">
+        <cl:formdata std:sid="f-data-cf192c10" row="2" col="0"/>
+      </cl:output>
+      <cl:combobox std:sid="c-box-13567f8e" id="cmb1">
+        <cl:formdata std:sid="f-data-690a2bed" row="2" col="1"/>
+      </cl:combobox>
+      <cl:output std:sid="output-2196dc1f" value="데이트인풋">
+        <cl:formdata std:sid="f-data-25848c18" row="2" col="2"/>
+      </cl:output>
+      <cl:dateinput std:sid="d-input-c0b6dbfe" id="dti1">
+        <cl:formdata std:sid="f-data-69b4ad8f" row="2" col="3"/>
+      </cl:dateinput>
+      <cl:output std:sid="output-65a4b60e" value="마스크에디터">
+        <cl:formdata std:sid="f-data-0dfbe60e" row="3" col="0"/>
+      </cl:output>
+      <cl:maskeditor std:sid="m-editor-360556ab" id="mse1">
+        <cl:formdata std:sid="f-data-1f3adc05" row="3" col="1"/>
+      </cl:maskeditor>
+      <cl:output std:sid="output-6a3bef47" value="서치인풋">
+        <cl:formdata std:sid="f-data-8b7409fb" row="3" col="2"/>
+      </cl:output>
+      <cl:searchinput std:sid="s-input-59da79e7">
+        <cl:formdata std:sid="f-data-57ca3c7b" row="3" col="3"/>
+      </cl:searchinput>
+      <cl:output std:sid="output-4f911538" value="텍스트에리어">
+        <cl:formdata std:sid="f-data-907f5657" row="4" col="0"/>
+      </cl:output>
+      <cl:textarea std:sid="t-area-e9bf83b3" id="txa1">
+        <cl:listener std:sid="listener-5cf0aa50" name="keydown" handler="onTxa1Keydown"/>
+        <cl:formdata std:sid="f-data-946ae337" row="4" col="1" rowspan="1" colspan="3"/>
+      </cl:textarea>
+      <cl:formlayout std:sid="f-layout-6cb8d581" scrollable="false" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="100" unit="PIXEL" shadetype="BY_CLASS"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="100" unit="PIXEL" shadetype="BY_CLASS"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:button std:sid="button-6c102b32" value="Button">
+      <cl:listener std:sid="listener-1ba955db" name="click" handler="onButtonClick"/>
+      <cl:xylayoutdata std:sid="xyl-data-06a700b5" top="309px" left="646px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:embeddedapp std:sid="e-app-3ea64cde" id="ea1" removeOnBuild="true" src="test.clx">
+      <cl:xylayoutdata std:sid="xyl-data-6359b92d" top="339px" left="20px" width="874px" height="175px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:embeddedapp>
+    <cl:embeddedpage std:sid="e-page-8e7b8a59" id="ep1" style="border-right-style:solid; border-top-width:1px; border-bottom-color:gray; border-right-width:1px; border-left-style:solid; border-bottom-width:1px; border-left-color:gray; border-top-color:gray; border-bottom-style:solid; border-right-color:gray; border-left-width:1px; border-top-style:solid;" removeOnBuild="true" src="index.html">
+      <cl:xylayoutdata std:sid="xyl-data-bfffdfeb" top="524px" left="20px" width="984px" height="190px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:embeddedpage>
+    <cl:group std:sid="group-00aed879" class="cl-form-group">
+      <cl:xylayoutdata std:sid="xyl-data-d752b913" top="724px" left="20px" width="616px" height="309px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:output std:sid="output-e422f28e" value="인풋박스">
+        <cl:formdata std:sid="f-data-d40e29da" row="0" col="0"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-4327b464" id="ipb2">
+        <cl:formdata std:sid="f-data-cc05d422" row="0" col="1" rowspan="1" colspan="3"/>
+      </cl:inputbox>
+      <cl:output std:sid="output-4b0e3df3" value="체크박스">
+        <cl:formdata std:sid="f-data-6b52911e" row="1" col="0"/>
+      </cl:output>
+      <cl:checkbox std:sid="c-box-1719b85d" id="cbx2" text="Check">
+        <cl:formdata std:sid="f-data-e8ea1a2b" row="1" col="1" rowspan="1" colspan="1"/>
+      </cl:checkbox>
+      <cl:output std:sid="output-aa84564d" value="UDC">
+        <cl:formdata std:sid="f-data-45834e4e" row="1" col="2"/>
+      </cl:output>
+      <cl:output std:sid="output-42436541" value="콤보박스">
+        <cl:formdata std:sid="f-data-af73db1e" row="2" col="0"/>
+      </cl:output>
+      <cl:combobox std:sid="c-box-7ecf7294" id="cmb2">
+        <cl:formdata std:sid="f-data-0e05a1df" row="2" col="1"/>
+      </cl:combobox>
+      <cl:output std:sid="output-56f1d965" value="데이트인풋">
+        <cl:formdata std:sid="f-data-64144b5b" row="2" col="2"/>
+      </cl:output>
+      <cl:dateinput std:sid="d-input-5e42df89" id="dti2">
+        <cl:formdata std:sid="f-data-6f57f3e0" row="2" col="3"/>
+      </cl:dateinput>
+      <cl:output std:sid="output-1c9160ba" value="마스크에디터">
+        <cl:formdata std:sid="f-data-16288f1b" row="3" col="0"/>
+      </cl:output>
+      <cl:maskeditor std:sid="m-editor-5e443802" id="mse2">
+        <cl:formdata std:sid="f-data-4df262ec" row="3" col="1"/>
+      </cl:maskeditor>
+      <cl:output std:sid="output-5dc88779" value="서치인풋">
+        <cl:formdata std:sid="f-data-23f52435" row="3" col="2"/>
+      </cl:output>
+      <cl:searchinput std:sid="s-input-6956ac88">
+        <cl:formdata std:sid="f-data-7ad26c81" row="3" col="3"/>
+      </cl:searchinput>
+      <cl:output std:sid="output-4f60ff12" value="텍스트에리어">
+        <cl:formdata std:sid="f-data-0780eaf3" row="4" col="0"/>
+      </cl:output>
+      <cl:textarea std:sid="t-area-d3f3e433" id="txa2">
+        <cl:formdata std:sid="f-data-b5c06fe2" row="4" col="1" rowspan="1" colspan="3"/>
+      </cl:textarea>
+      <cl:formlayout std:sid="f-layout-88b4d171" scrollable="false" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="100" unit="PIXEL" shadetype="BY_CLASS"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="100" unit="PIXEL" shadetype="BY_CLASS"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:embeddedpage std:sid="e-page-9c1c6d65" id="ep2" src="NewFile.html">
+      <cl:xylayoutdata std:sid="xyl-data-0d6fd738" top="1043px" left="20px" width="954px" height="172px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:embeddedpage>
+    <cl:xylayout std:sid="xylayout-617361a7"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

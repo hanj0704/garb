@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="ASCII"?>
+<settings:LanguageDatabaseSettings xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:settings="kr.co.tomatosystem.exbuilder.model.ui.settings" jarPath="mariadb-java-client-2.0.3.jar" driverClassName="org.mariadb.jdbc.Driver" jdbcURL="jdbc:mariadb://localhost:3307/test" query="select &quot;ko&quot;, DEPT_NO, DEPT_NAME from dept;"/>

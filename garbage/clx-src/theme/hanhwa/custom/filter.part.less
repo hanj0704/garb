@@ -1,0 +1,292 @@
+@import "../settings.part.less";
+@import "../custom-settings.part.less";
+
+/* 단일 필터 - 체크박스 */
+.cl-checkbox.filter {
+	background-color : @color-filter-bg;
+	border : 1px solid @color-filter-border;
+	border-radius : 3px;
+	color : @color-filter-text;
+	text-align : center;
+	font-size : @font-small-text-r;
+	
+	.cl-icon-wrapper {}
+	
+	.cl-checkbox-icon {}
+	
+	.cl-text {}
+	
+	&.cl-checked {
+		background-color : @color-filter-active-bg;
+		border-color : @color-filter-active-border;
+		
+		.cl-checkbox-icon {
+		}
+		
+		.cl-text {
+			color : @color-filter-active-text;
+			font-weight : @font-bold;
+		}
+	}
+	
+	&.cl-disabled {
+		.cl-checkbox-icon {
+		}
+		
+		&.cl-checked {
+			.cl-checkbox-icon {
+			}
+			
+			.cl-text {
+			}
+
+			&:hover, &.cl-hover {
+				
+				.cl-checkbox-icon {
+				}
+			}
+		}
+		
+		&:hover, &.cl-hover {
+			.cl-checkbox-icon {
+			}
+		}
+	}
+	
+	&:not(.cl-disabled) {
+		&:not(.cl-checked):not(.cl-partialchecked):hover, &:not(.cl-checked):not(.cl-partialchecked).cl-hover {
+			border-color : @color-filter-hover-border;
+			
+			.cl-checkbox-icon {
+			}
+		}
+		
+		&.cl-checked:hover, &.cl-checked.cl-hover {
+			border-color : @color-filter-hover-border;
+
+			.cl-checkbox-icon {
+			}
+			.cl-text {}
+		}
+	}
+}
+
+.cl-checkbox.filter.dark {
+	background-color : @color-filter-bg-dark;
+	border : 1px solid @color-filter-border-dark;
+	border-radius : 3px;
+	color : @color-filter-text-dark;
+	text-align : center;
+	font-size : @font-small-text-r;
+	
+	.cl-icon-wrapper {}
+	
+	.cl-checkbox-icon {}
+	
+	.cl-text {}
+	
+	&.cl-checked {
+		background-color : @color-filter-active-bg-dark;
+		border-color : @color-filter-active-border-dark;
+		color : @color-filter-active-text-dark;
+		font-weight : @font-bold;
+		
+		.cl-checkbox-icon {
+		}
+		
+		.cl-text {
+		}
+	}
+	
+	&.cl-disabled {
+		.cl-checkbox-icon {
+		}
+		
+		&.cl-checked {
+			.cl-checkbox-icon {
+			}
+			
+			.cl-text {
+			}
+
+			&:hover, &.cl-hover {
+				
+				.cl-checkbox-icon {
+				}
+			}
+		}
+		
+		&:hover, &.cl-hover {
+			.cl-checkbox-icon {
+			}
+		}
+	}
+	
+	&:not(.cl-disabled) {
+		&:not(.cl-checked):not(.cl-partialchecked):hover, &:not(.cl-checked):not(.cl-partialchecked).cl-hover {
+			border-color : @color-filter-hover-border-dark;
+			
+			.cl-checkbox-icon {
+			}
+		}
+		
+		&.cl-checked:hover, &.cl-checked.cl-hover {
+			border-color : @color-filter-hover-border-dark;
+
+			.cl-checkbox-icon {
+			}
+			.cl-text {}
+		}
+	}	
+}
+
+/* 이중 필터 - 체크박스 그룹 */
+.cl-checkboxgroup.filter {
+	background-color : @color-filter-bg;
+	border : 1px solid @color-filter-border;
+	border-radius : 3px;
+	text-align : center;
+	
+	.cl-checkbox {
+		+ .cl-checkbox {
+			border-left : 1px solid @color-filter-border;
+		}
+		
+		.cl-icon-wrapper {
+		}
+		
+		.cl-checkbox-icon {
+		}
+		
+		.cl-text {
+		}
+		
+		&.cl-checked {
+			background-color : @color-filter-active-bg;
+			color : @color-filter-active-text;
+			font-weight : @font-bold;
+			
+			.cl-checkbox-icon {
+			}
+			
+			.cl-text {}
+		}
+		
+		&.cl-disabled {
+			.cl-checkbox {
+				.cl-checkbox-icon {
+					
+				}
+
+				.cl-text {
+				}
+				
+				&.cl-checked {
+					.cl-checkbox-icon {}
+					.cl-text {}
+					
+				}
+				
+				&:hover, &.cl-hover{
+					.cl-checkbox-icon {}
+				}
+			}
+		}
+		
+		&.cl-focus {
+			.cl-checkbox {
+				.cl-checkbox-icon {
+					/* 포커스를 가진 체크박스 아이템의 아이콘 */
+					&:focus, &.cl-focus {
+						outline: none;
+					}
+				}
+			}
+		}
+		
+		&:not(.cl-disabled) {
+			.cl-checkbox {
+				&:not(.cl-checked):hover, &:not(.cl-checked).cl-hover {
+					/* 체크 박스 아이콘 - 호버 */
+					.cl-checkbox-icon {
+					}
+				}
+			}
+		}
+	}
+}
+
+.cl-checkboxgroup.filter.dark {
+	background-color : @color-filter-bg-dark;
+	border : 1px solid @color-filter-border-dark;
+	border-radius : 3px;
+	text-align : center;
+	
+	.cl-checkbox {
+		+ .cl-checkbox {
+			border-left : 1px solid @color-filter-border-dark;
+		}
+		
+		.cl-icon-wrapper {
+		}
+		
+		.cl-checkbox-icon {
+		}
+		
+		.cl-text {
+		}
+		
+		&.cl-checked {
+			background-color : @color-filter-active-bg-dark;
+			color : @color-filter-active-text-dark;
+			font-weight : @font-bold;
+			
+			.cl-checkbox-icon {
+			}
+			
+			.cl-text {}
+		}
+		
+		&.cl-disabled {
+			.cl-checkbox {
+				.cl-checkbox-icon {
+					
+				}
+
+				.cl-text {
+				}
+				
+				&.cl-checked {
+					.cl-checkbox-icon {}
+					.cl-text {}
+					
+				}
+				
+				&:hover, &.cl-hover{
+					.cl-checkbox-icon {}
+				}
+			}
+		}
+		
+		&.cl-focus {
+			.cl-checkbox {
+				.cl-checkbox-icon {
+					/* 포커스를 가진 체크박스 아이템의 아이콘 */
+					&:focus, &.cl-focus {
+						outline: none;
+					}
+				}
+			}
+		}
+		
+		&:not(.cl-disabled) {
+			.cl-checkbox {
+				&:not(.cl-checked):hover, &:not(.cl-checked).cl-hover {
+					/* 체크 박스 아이콘 - 호버 */
+					.cl-checkbox-icon {
+					}
+				}
+			}
+		}
+	}
+}

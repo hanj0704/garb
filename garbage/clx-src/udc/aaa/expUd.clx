@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-e7be4466" version="1.0.3221">
+  <head std:sid="head-21b25c44">
+    <screen std:sid="screen-067a4207" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-43cfac76" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-7011892e" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-788e3ca2">
+      <cl:datamap std:sid="d-map-7ef29060" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-f0ec141a" name="column1" defaultvalue="qqqq"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec>
+      <cl:property name="newProperty1" type="expression" bindable="false"/>
+      <cl:property name="newProperty2" type="string" default="가가가" bindable="true"/>
+      <cl:property name="score" type="number"/>
+      <cl:property name="newProperty4" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-39db3e3d" style="top:0px; left:0px; width:300px; height:300px;">
+    <cl:output std:sid="output-c0b61ddc" id="opt1" value="Output">
+      <cl:apppropbind property="value" app-property="newProperty1"/>
+      <cl:xylayoutdata std:sid="xyl-data-582bc58d" top="57px" left="20px" width="222px" height="154px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:output std:sid="output-a8b296b6" id="opt2">
+      <cl:apppropbind property="value" app-property="newProperty2"/>
+      <cl:xylayoutdata std:sid="xyl-data-3b0923a1" top="221px" left="20px" width="234px" height="43px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:xylayout std:sid="xylayout-ae773866"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

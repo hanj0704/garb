@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+// function getOutputText(){
+
+// 	if(_ownerApp){
+		
+// 		document.getElementById("ipb").setAttribute("value", _ownerApp.lookup("opt1").value);
+// 	}
+// }
+// function setAppText(){
+	
+// 	if(_ownerApp) {
+		
+// 		_ownerApp.lookup("opt1").value = "TomatoSystem";
+// 	}
+// }
+
+function getHostAppMethod(){
+
+	if(_ownerApp) {
+
+		if(_ownerApp.hasAppMethod("MainPageAlert")) {
+
+				_ownerApp.callAppMethod("MainPageAlert","임베디드페이지에서 호스트앱의 MainPageAlert 함수를 호출합니다.");
+			}
+		
+	}
+}
+
+function EmbeddedMethod(){
+
+	alert("메인페이지에서 임베디드 페이지에서 작성된 함수를 호출합니다.");
+}
+
+function getSecondEmbMethod(){
+
+	if(_ownerApp) {
+
+		var ep2 = _ownerApp.lookup("ep2");
+		if(ep2.hasPageMethod("secondEmbeddedPageMethod")) {
+
+			ep2.callPageMethod("secondEmbeddedPageMethod");
+			}
+	}
+}
+
+</script>
+</head>
+<body>
+<!-- <input id="ipb" type="text" value=""/> -->
+<!-- <button onClick="getOutputText()">받아오기 버튼</button> -->
+<!-- <button onClick="setAppText()">보내기 버튼 </button> -->
+<button id="btn1" onClick="getHostAppMethod()">메인 페이지 함수 호출버튼aa </button>
+<button onClick="getSecondEmbMethod()">다른 임베디드앱 함수 가져오는 버튼 </button>
+
+</body>
+</html>

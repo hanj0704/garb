@@ -1,0 +1,239 @@
+@charset "UTF-8";
+@import "../settings.part.less";
+
+.tarCol1 {
+	
+	background-color : red;
+}
+
+.tarCol2 {
+	
+	background-color : blue;
+}
+.cl-button.hanCont {
+	
+	background-color : rgba(0,0,0,0.7);
+	background-image:none;
+	border-radius: 50px;
+		font-size : 25px;
+		font-weight: bold;
+		text-align: left;
+		color : white;
+		padding-left : 8px;
+		border:none;
+	
+}
+
+/* 모든 UIControl 공통 스타일 */
+.cl-control {
+	font: @default-font;
+	color: @default-text-color;
+}
+
+/* 오류 발생시 표시되는 메시지 스타일 */
+.cl-unavailable {
+	// border: 1px solid red;
+	.cl-text {
+		// color: red;
+		// font-weight: bold;
+	}
+	.cl-text:before {
+		// content: "X";
+	}
+}
+
+
+/* 
+ .cl-output.hintman {
+	
+	background-color : #4D5052;
+	opacity : 0.5;
+	border-radius : 5px;
+	color : white;
+	padding-left : 10px;
+	&:not(.cl-selected):hover{
+		opacity : 1;
+	}
+}
+*/
+.cl-scrollbar.cl-touchdevice::-webkit-scrollbar {
+	-webkit-appearance: none;
+	width: 5px;
+	height: 5px;
+}
+.cl-scrollbar.cl-touchdevice::-moz-scrollbar {
+	-moz-appearance: none;
+	width: 5px;
+	height: 5px;
+}
+.cl-scrollbar.cl-touchdevice::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	background-color: rgba(0,0,0,.3);
+	border: solid 1px transparent;
+	background-clip: content-box;
+}
+.cl-scrollbar.cl-touchdevice::-moz-scrollbar-thumb {
+	border-radius: 4px;
+	background-color: rgba(0,0,0,.3);
+	border: solid 1px transparent;
+	background-clip: content-box;
+}
+
+.hint-box {
+	background: rgba(255, 230, 179,0.5);
+	border-radius: 3px;
+	text-align: center;
+	box-shadow: 5px 5px 12px 0px rgba(240,240,240,1);
+	overflow: visible !important;
+	padding: 3px;
+	
+	&.top {
+		&:before {
+			content: "";
+			display: block;
+			position: relative;
+			
+			top: -7px;
+			left: ~'calc(50% - 3px)';
+			width: 0px;
+			
+			border-left: 4px solid transparent;
+			border-right: 4px solid transparent;
+			border-bottom: 4px solid #FFE6B3;
+		}
+	}
+	
+	&.bottom {
+		&:after {
+			&:before {
+				content: "";
+				display: block;
+				position: relative;
+				
+				bottom: -9px;
+				left: ~'calc(50% - 3px)';
+				width: 0px;
+				
+				border-left: 4px solid transparent;
+				border-right: 4px solid transparent;
+				border-top: 4px solid #FFE6B3;
+			}
+		}
+	}
+}
+
+.hans-padding {
+	padding : 10px;
+}
+
+
+.hans {
+	box-shadow : inset 1px 1px 0px 0px black;
+}
+
+.row-top {
+	
+	border-top : solid 2px red;
+}
+
+
+.progress {
+	
+	border : 1px solid black;
+	&:after{
+	
+	content:'';
+    position:absolute;
+    background:black;
+    top:0; 
+    bottom:0;
+    left:0; 
+    width:60%;
+}
+}
+
+.opt-test {
+	
+	background-color : steelBlue !important;
+	text-align : center;
+	color : white !important; 
+	border : solid 1px green !important;
+}
+
+.cl-vscrollbar {
+	width: 6px;
+	background-color: #ECECEC;
+	
+	.cl-arrow-up {
+		display : none;
+		background-image: none;
+		height: 0px !important;
+	}
+	
+	.cl-track {
+		top: 0px;
+		bottom: 0px;
+		
+		.cl-thumb {
+			background-color : #7F8FA4;
+			border-radius: 12px;
+			opacity: .5;
+			
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+	
+	.cl-arrow-down {
+		display : none;
+		background-image: none;
+		height: 0px;
+	}
+}
+
+.cl-customscrollbar {
+	.cl-with-vscrollbar {
+		width : calc(100% - 6px);
+	}
+}
+
+
+.cl-output.test {
+	
+	background-color : aliceBlue;
+	&:before {
+		content : "";
+		position :absolute;
+		width : 30px;
+		height: 30px;
+		border-top:30px solid inherit;
+ 	 border-bottom:30px solid transparent;
+ 	 border-right: 30px solid transparent;
+ 	 border-left: 30px solid  transparent;
+	}
+}
+
+.cl-output.test2 {
+			background-color: #CFEFFF;
+			//border: 1px solid #BFBFBF;
+			border-radius: 5px;
+			padding: 4px 10px;
+			text-align: left;
+			overflow: visible !important;
+			box-shadow: 0px 5px 10px 0px rgba(221,221,221,1);
+			
+			&:before {
+			    content: "";
+			    position: absolute;
+			    display: block;
+			    top: 0px;
+			    left: 0px;
+			    border-left: 40px solid red;
+			    border-top : 30px solid red;
+			    //border-bottom-left-radius: 20px 20px;
+//			    transform: translate(0, -2px);
+//			    -webkit-transform: translate(0, -2px);
+			    color: #CFEFFE;
+			  }
+		}

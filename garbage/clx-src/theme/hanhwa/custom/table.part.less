@@ -1,0 +1,45 @@
+@import "../settings.part.less";
+@import "../custom-settings.part.less";
+
+.cl-grid {
+	.cl-grid-detail {
+		.cl-grid-row:last-child {
+			.cl-grid-cell {
+			}
+		}
+	}
+	border-bottom : none;
+}
+
+.cl-grid {
+	.cl-grid-detail {
+		.cl-grid-row {
+			.cl-grid-cell {
+				.cl-button {
+					border-radius : 0;
+				}
+			}
+		}
+	}
+}
+
+/** 그리드의 css */
+.list-normal{
+}
+
+
+.grid-header-title{
+	background-color :@dark;
+
+}
+.grid-header-before{
+	background-color :@light;
+}
+.grid-header-after{
+	background-color :@dark;
+}
+
+/** 그리드의 최소높이를 1개의 데이터로 지정 */
+.list-min-height{
+	min-height:50px;
+}

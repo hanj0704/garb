@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-f783eca5" version="1.0.0.0">
+  <head std:sid="head-e015598d">
+    <title>PivotGrid</title>
+    <screen std:sid="screen-bcfbbab9" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-d4a73d11" id="tablet" name="tablet" minwidth="800px" maxwidth="1023px" width="800px" height="768px"/>
+    <screen std:sid="screen-1339e536" id="mobile" name="mobile" maxwidth="799px" width="550px" height="768px"/>
+    <cl:model std:sid="model-551c4bf3">
+      <cl:dataset std:sid="d-set-f0944106" id="dsList">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="자재 전표" std:sid="d-column-2c87817c" info="자재 전표" name="column1"/>
+          <cl:datacolumn comment="품목" std:sid="d-column-df069757" info="품목" name="column2"/>
+          <cl:datacolumn comment="전기일" std:sid="d-column-8d01c7a3" info="전기일" name="column3"/>
+          <cl:datacolumn comment="이동유형" std:sid="d-column-175d75f5" info="이동유형" name="column4"/>
+          <cl:datacolumn comment="이동유형명" std:sid="d-column-e9c192e2" info="이동유형명" name="column5"/>
+          <cl:datacolumn comment="자재" std:sid="d-column-0b7bbf57" info="자재" name="column6"/>
+          <cl:datacolumn comment="자재내역" std:sid="d-column-d096363f" info="자재내역" name="column7"/>
+          <cl:datacolumn comment="플랜트" std:sid="d-column-b25120b1" info="플랜트" name="column8"/>
+          <cl:datacolumn comment="저장위치" std:sid="d-column-1168410d" info="저장위치" name="column9"/>
+          <cl:datacolumn comment="공사번호" std:sid="d-column-cd7e614f" info="공사번호" name="column10" datatype="string" displayonly="false"/>
+          <cl:datacolumn comment="수량" std:sid="d-column-a67ef7a4" info="수량" name="column11" datatype="number"/>
+          <cl:datacolumn comment="EUn" std:sid="d-column-548ffae8" info="EUn" name="column12"/>
+          <cl:datacolumn comment="금액(LC)" std:sid="d-column-5283c235" info="금액(LC)" name="column13" datatype="number"/>
+          <cl:datacolumn comment="배치" std:sid="d-column-ed853aa2" info="배치" name="column14"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist/>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-8db02794" id="ds"/>
+      <cl:submission std:sid="submission-9ce57bb4" id="subList" action="./data/scr/user/PIVOT.json"/>
+      <cl:submission std:sid="submission-1b6a360b" id="subList2" action="data/gridData1k.json">
+        <cl:responsedata dataid="dsList"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec title="피벗그리드"/>
+  </head>
+  <body std:sid="body-d2e54b19" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-962305fc" name="load" handler="onBodyLoad"/>
+    <cl:fileinput std:sid="f-input-d5007952" id="fi1" visible="false">
+      <cl:listener std:sid="listener-3e3cac83" name="value-change" handler="onFi1ValueChange"/>
+      <cl:xylayoutdata std:sid="xyl-data-19ba643d" top="1px" right="1px" width="0px" height="0px" horizontalAnchor="RIGHT" verticalAnchor="TOP"/>
+    </cl:fileinput>
+    <cl:button std:sid="button-a5bffc9f" value="피벗그리기">
+      <cl:listener std:sid="listener-5a555679" name="click" handler="onButtonClick2"/>
+      <cl:xylayoutdata std:sid="xyl-data-18fe6070" top="20px" right="884px" width="120px" height="25px" horizontalAnchor="RIGHT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:grid std:sid="grid-c5d974e5" id="grd1" readonly="true" datasetid="dsList">
+      <cl:xylayoutdata std:sid="xyl-data-0efd6fb4" top="55px" right="20px" bottom="20px" left="20px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+      <cl:gridcolumn std:sid="g-column-2d49d905" width="25px"/>
+      <cl:gridcolumn std:sid="g-column-1d1aedb4"/>
+      <cl:gridcolumn std:sid="g-column-e965a5e6"/>
+      <cl:gridcolumn std:sid="g-column-55c27f0e"/>
+      <cl:gridcolumn std:sid="g-column-63632438"/>
+      <cl:gridcolumn std:sid="g-column-37334bf0"/>
+      <cl:gridcolumn std:sid="g-column-6d641c7e"/>
+      <cl:gridcolumn std:sid="g-column-f9499390"/>
+      <cl:gridcolumn std:sid="g-column-e72956d0"/>
+      <cl:gridcolumn std:sid="g-column-317322c9"/>
+      <cl:gridcolumn std:sid="g-column-57b3bda3"/>
+      <cl:gridcolumn std:sid="g-column-eb18b01b"/>
+      <cl:gridcolumn std:sid="g-column-c0338d29"/>
+      <cl:gridcolumn std:sid="g-column-9938d774"/>
+      <cl:gridcolumn std:sid="g-column-a6d85423"/>
+      <cl:gridheader std:sid="gh-band-d87afc74">
+        <cl:gridrow std:sid="g-row-76659958"/>
+        <cl:gridcell std:sid="gh-cell-5750eb43" rowindex="0" colindex="0" sortable="false" filterable="false" columntype="checkbox"/>
+        <cl:gridcell std:sid="gh-cell-413d5111" rowindex="0" colindex="1" targetcolumnname="column1" sortable="false" filterable="false" text="column1"/>
+        <cl:gridcell std:sid="gh-cell-8676233b" rowindex="0" colindex="2" targetcolumnname="column2" sortable="false" filterable="false" text="column2"/>
+        <cl:gridcell std:sid="gh-cell-413d004b" rowindex="0" colindex="3" targetcolumnname="column3" sortable="false" filterable="false" text="column3"/>
+        <cl:gridcell std:sid="gh-cell-945c1bf1" rowindex="0" colindex="4" targetcolumnname="column4" sortable="false" filterable="false" text="column4"/>
+        <cl:gridcell std:sid="gh-cell-9b2d0780" rowindex="0" colindex="5" targetcolumnname="column5" sortable="false" filterable="false" text="column5"/>
+        <cl:gridcell std:sid="gh-cell-ac70dc5f" rowindex="0" colindex="6" targetcolumnname="column6" sortable="false" filterable="false" text="column6"/>
+        <cl:gridcell std:sid="gh-cell-fc0e252f" rowindex="0" colindex="7" targetcolumnname="column7" sortable="false" filterable="false" text="column7"/>
+        <cl:gridcell std:sid="gh-cell-6406b53f" rowindex="0" colindex="8" targetcolumnname="column8" sortable="false" filterable="false" text="column8"/>
+        <cl:gridcell std:sid="gh-cell-dd19608e" rowindex="0" colindex="9" targetcolumnname="column9" sortable="false" filterable="false" text="column9"/>
+        <cl:gridcell std:sid="gh-cell-fe932ad4" rowindex="0" colindex="10" targetcolumnname="column10" sortable="false" filterable="false" text="column10"/>
+        <cl:gridcell std:sid="gh-cell-025e4711" rowindex="0" colindex="11" targetcolumnname="column11" sortable="false" filterable="false" text="column11"/>
+        <cl:gridcell std:sid="gh-cell-7c6ae7bf" rowindex="0" colindex="12" targetcolumnname="column12" sortable="false" filterable="false" text="column12"/>
+        <cl:gridcell std:sid="gh-cell-35ed4ba4" rowindex="0" colindex="13" targetcolumnname="column13" sortable="false" filterable="false" text="column13"/>
+        <cl:gridcell std:sid="gh-cell-dc004184" rowindex="0" colindex="14" targetcolumnname="column14" sortable="false" filterable="false" text="column14"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-0b2d34c7">
+        <cl:gridrow std:sid="g-row-5a4138ee"/>
+        <cl:gridcell std:sid="gd-cell-72ce6efb" rowindex="0" colindex="0" columntype="checkbox"/>
+        <cl:gridcell std:sid="gd-cell-22954382" rowindex="0" colindex="1" columnname="column1"/>
+        <cl:gridcell std:sid="gd-cell-f9cbdb10" rowindex="0" colindex="2" columnname="column2"/>
+        <cl:gridcell std:sid="gd-cell-311f6088" rowindex="0" colindex="3" columnname="column3"/>
+        <cl:gridcell std:sid="gd-cell-a62adc61" rowindex="0" colindex="4" columnname="column4"/>
+        <cl:gridcell std:sid="gd-cell-3cd75385" rowindex="0" colindex="5" columnname="column5"/>
+        <cl:gridcell std:sid="gd-cell-850b10fa" rowindex="0" colindex="6" columnname="column6"/>
+        <cl:gridcell std:sid="gd-cell-4a372718" rowindex="0" colindex="7" columnname="column7"/>
+        <cl:gridcell std:sid="gd-cell-8366ce3c" rowindex="0" colindex="8" columnname="column8"/>
+        <cl:gridcell std:sid="gd-cell-fa6ea693" rowindex="0" colindex="9" columnname="column9"/>
+        <cl:gridcell std:sid="gd-cell-4c604684" rowindex="0" colindex="10" columnname="column10"/>
+        <cl:gridcell std:sid="gd-cell-310c19ce" rowindex="0" colindex="11" columnname="column11"/>
+        <cl:gridcell std:sid="gd-cell-473ab0cf" rowindex="0" colindex="12" columnname="column12"/>
+        <cl:gridcell std:sid="gd-cell-7f338dfc" rowindex="0" colindex="13" columnname="column13"/>
+        <cl:gridcell std:sid="gd-cell-1c53f983" rowindex="0" colindex="14" columnname="column14"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:xylayout std:sid="xylayout-05dbe095"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-bd91f42b" version="1.0.3109">
+  <head std:sid="head-52299f9c">
+    <screen std:sid="screen-f4d5244d" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-b7d7d76e" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-47aed998" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-0760fde2">
+      <cl:dataset std:sid="d-set-1e41f4ec" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-71a8e188" name="column1"/>
+          <cl:datacolumn std:sid="d-column-2e4466fd" name="column2"/>
+          <cl:datacolumn std:sid="d-column-581ab172" name="column3"/>
+          <cl:datacolumn std:sid="d-column-44929d25" name="column4"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist/>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-7fdda4e7">
+    <cl:listener std:sid="listener-b616535c" name="transitionend" handler="onBodyTransitionend"/>
+    <cl:listener std:sid="listener-17903545" name="before-draw" handler="onBodyBeforeDraw"/>
+    <cl:mdifolder std:sid="mdifolder-788d6cb6" id="mdi1">
+      <cl:xylayoutdata std:sid="xyl-data-4fb26fc6" top="34px" right="20px" left="20px" height="491px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+      <cl:tabitem std:sid="t-item-52ddc3a7" text="다양한 그리드 기능 확인">
+        <cl:embeddedapp std:sid="e-app-43bead78" id="ea1" src="GridFuncs.clx">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+        </cl:embeddedapp>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-70387de7" text="메인">
+        <cl:embeddedapp std:sid="e-app-9664af15" id="ea2" src="Main.clx">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+        </cl:embeddedapp>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-46058af8" text="전송요구 내역 확인">
+        <cl:embeddedapp std:sid="e-app-1c2f80c2" id="ea3" src="P00004.clx">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+        </cl:embeddedapp>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-63bd1238" selected="true" text="Untitled.clx">
+        <std:metadata>
+          <std:property key="is-active-item" value="true"/>
+        </std:metadata>
+        <cl:embeddedapp std:sid="e-app-b705b300" id="ea4" src="Untitled.clx">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+        </cl:embeddedapp>
+      </cl:tabitem>
+    </cl:mdifolder>
+    <cl:xylayout std:sid="xylayout-113b78d3" animationduration="0.5"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

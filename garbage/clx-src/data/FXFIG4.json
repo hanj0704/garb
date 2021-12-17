@@ -1,0 +1,84 @@
+{
+		"dsMan": [
+			{
+				"filter": "XPNT_CD:2",
+				"value": "210000",
+				"label": "Office supplies expense"
+			},
+			{
+				"filter": "XPNT_CD:2",
+				"value": "220000",
+				"label": "MAINTENANCE & REPAIR COSTS"
+			},
+			{
+				"filter": "XPNT_CD:2",
+				"value": "230000",
+				"label": "RENTAL CHARGES"
+			},
+			{
+				"filter": "XPNT_CD:2",
+				"value": "240000",
+				"label": "CAMPAIGN EXPENSES"
+			},
+			{
+				"filter": "XPNT_CD:2",
+				"value": "250000",
+				"label": "RESEARCH & DEVELOPMENT EXPENSES"
+			},
+			{
+				"filter": "XPNT_CD:2",
+				"value": "260000",
+				"label": "COST OF EXPERTS"
+			},
+			{
+				"filter": "XPNT_CD:2",
+				"value": "270000",
+				"label": "TELECOMMUNICATIONS FACILITIES CHARGES"
+			},
+			{
+				"filter": "XPNT_CD:2",
+				"value": "290000",
+				"label": "OTHER OFFICE EXPENSES"
+			},
+			{
+				"filter": "XPNT_CD:2",
+				"value": "210000",
+				"label": "Office supplies expense"
+			},
+			{
+				"filter": "XPNT_CD:2",
+				"value": "220000",
+				"label": "MAINTENANCE & REPAIR COSTS"
+			},
+			{
+				"filter": "XPNT_CD:2",
+				"value": "230000",
+				"label": "RENTAL CHARGES"
+			},
+			{
+				"filter": "XPNT_CD:2",
+				"value": "240000",
+				"label": "CAMPAIGN EXPENSES"
+			},
+			{
+				"filter": "XPNT_CD:2",
+				"value": "250000",
+				"label": "RESEARCH & DEVELOPMENT EXPENSES"
+			},
+			{
+				"filter": "XPNT_CD:2",
+				"value": "260000",
+				"label": "COST OF EXPERTS"
+			},
+			{
+				"filter": "XPNT_CD:2",
+				"value": "270000",
+				"label": "TELECOMMUNICATIONS FACILITIES CHARGES"
+			},
+			{
+				"filter": "XPNT_CD:2",
+				"value": "290000",
+				"label": "OTHER OFFICE EXPENSES"
+			}
+		]
+}

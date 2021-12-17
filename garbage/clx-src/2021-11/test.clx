@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-a0a5fd10" version="1.0.3388">
+  <head std:sid="head-473a9802">
+    <screen std:sid="screen-df42280b" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-52a3ba75" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-45451e99" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-435384fc"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-98d6d42f">
+    <cl:inputbox std:sid="i-box-8c908f71" id="ipb1">
+      <cl:xylayoutdata std:sid="xyl-data-3dbffd63" top="20px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:inputbox>
+    <cl:inputbox std:sid="i-box-eb402814" id="ipb2">
+      <cl:xylayoutdata std:sid="xyl-data-09d47081" top="50px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:inputbox>
+    <cl:inputbox std:sid="i-box-9bc323d9" id="ipb3">
+      <cl:xylayoutdata std:sid="xyl-data-52c50dbe" top="80px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:inputbox>
+    <cl:inputbox std:sid="i-box-72c34ec3" id="ipb4">
+      <cl:xylayoutdata std:sid="xyl-data-c7e52bd9" top="110px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:inputbox>
+    <cl:group std:sid="group-e3ffb06f" id="grp1">
+      <cl:xylayoutdata std:sid="xyl-data-ef8295f6" top="213px" left="219px" width="640px" height="191px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:radiobutton std:sid="r-button-1e15f48b" id="rdb1">
+        <cl:listener std:sid="listener-99059826" name="keydown" handler="onRdb1Keydown"/>
+        <cl:flowlayoutdata std:sid="f-data-17739289" width="200px" height="40px"/>
+        <cl:item std:sid="item-241caa76" label="label1" value="value1"/>
+        <cl:item std:sid="item-f448b7f4" label="label2" value="value2"/>
+        <cl:item std:sid="item-421cd953" label="label3" value="value3"/>
+      </cl:radiobutton>
+      <cl:group std:sid="group-4f593415" id="grp2">
+        <cl:flowlayoutdata std:sid="f-data-cba9e8b7" width="401px" height="51px"/>
+        <cl:button std:sid="button-33e870c3" id="btn1" value="Button">
+          <cl:listener std:sid="listener-d16a0616" name="click" handler="onBtn1Click"/>
+          <cl:flowlayoutdata std:sid="f-data-5ad5da6f" width="100px" height="20px"/>
+        </cl:button>
+        <cl:button std:sid="button-425885f2" id="btn2" visible="false" value="Button">
+          <cl:flowlayoutdata std:sid="f-data-95f63fd5" width="100px" height="20px"/>
+        </cl:button>
+        <cl:flowlayout std:sid="f-layout-8f954f83"/>
+      </cl:group>
+      <cl:flowlayout std:sid="f-layout-22a06ea3"/>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-a8e23dcc"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

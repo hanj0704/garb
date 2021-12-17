@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-d32132fc" version="1.0.0.0">
+  <head std:sid="head-032c9e67">
+    <title>blank</title>
+    <screen std:sid="screen-43a259e1" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-1b269c2b" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-5d60cc24" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-ca3cd24e">
+      <cl:dataset std:sid="d-set-f7baf60d" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="City"/>
+          <cl:datacolumn name="Country"/>
+          <cl:datacolumn name="CountryCode"/>
+          <cl:datacolumn name="TimeZone"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="City"><![CDATA[City1]]></cl:datavalue>
+            <cl:datavalue columnname="Country"><![CDATA[Country1]]></cl:datavalue>
+            <cl:datavalue columnname="CountryCode"><![CDATA[CountryCode1]]></cl:datavalue>
+            <cl:datavalue columnname="TimeZone"><![CDATA[TimeZone1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="City">City2</cl:datavalue>
+            <cl:datavalue columnname="Country">Country2</cl:datavalue>
+            <cl:datavalue columnname="CountryCode">CountryCode2</cl:datavalue>
+            <cl:datavalue columnname="TimeZone">TimeZone2</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="City">City3</cl:datavalue>
+            <cl:datavalue columnname="Country">Country3</cl:datavalue>
+            <cl:datavalue columnname="CountryCode">CountryCode3</cl:datavalue>
+            <cl:datavalue columnname="TimeZone">TimeZone3</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="City">City4</cl:datavalue>
+            <cl:datavalue columnname="Country">Country4</cl:datavalue>
+            <cl:datavalue columnname="CountryCode">CountryCode4</cl:datavalue>
+            <cl:datavalue columnname="TimeZone">TimeZone4</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="City">City5</cl:datavalue>
+            <cl:datavalue columnname="Country">Country5</cl:datavalue>
+            <cl:datavalue columnname="CountryCode">CountryCode5</cl:datavalue>
+            <cl:datavalue columnname="TimeZone">TimeZone5</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="City">City6</cl:datavalue>
+            <cl:datavalue columnname="Country">Country6</cl:datavalue>
+            <cl:datavalue columnname="CountryCode">CountryCode6</cl:datavalue>
+            <cl:datavalue columnname="TimeZone">TimeZone6</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec dev-comment="그리드와 excel 간 히든컬럼도 데이터 copy &amp; paste 가 가능한지, 또는 옵션으로 설정이 가능한지"/>
+  </head>
+  <body std:sid="body-b5a4a578" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-4d66549e" handler="onBodyLoad" name="load"/>
+    <cl:output std:sid="output-63a8ba77" class="main-title" value="1 ) 히든컬럼 copy &amp; paste - 불가">
+      <cl:xylayoutdata std:sid="xyl-data-93ce89e7" height="30px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:grid std:sid="grid-7071c2d9" id="grd1" columnMovable="false" columnResizable="false" datasetid="ds1" readonly="false" selectionmulti="multi" selectionunit="cell">
+      <cl:listener std:sid="listener-81abb077" handler="onGrd1Paste" name="paste"/>
+      <cl:listener std:sid="listener-d54cb633" handler="onGrd1Copy" name="copy"/>
+      <cl:xylayoutdata std:sid="xyl-data-22f2fd85" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="160px" verticalAnchor="BOTH"/>
+      <cl:gridcolumn std:sid="g-column-61d6664d"/>
+      <cl:gridcolumn std:sid="g-column-976e1b8e"/>
+      <cl:gridcolumn std:sid="g-column-40bfe476"/>
+      <cl:gridcolumn std:sid="g-column-517dccb6"/>
+      <cl:gridheader std:sid="gh-band-4040d440">
+        <cl:gridrow std:sid="g-row-981575cb"/>
+        <cl:gridcell std:sid="gh-cell-c307ee08" colindex="0" rowindex="0" filterable="false" sortable="false" targetcolumnname="City" text="City"/>
+        <cl:gridcell std:sid="gh-cell-a7246dba" colindex="1" rowindex="0" filterable="false" sortable="false" targetcolumnname="Country" text="Country" visible="false"/>
+        <cl:gridcell std:sid="gh-cell-0ea5105c" colindex="2" rowindex="0" filterable="false" sortable="false" targetcolumnname="CountryCode" text="CountryCode"/>
+        <cl:gridcell std:sid="gh-cell-f6faabd2" colindex="3" rowindex="0" filterable="false" sortable="false" targetcolumnname="TimeZone" text="TimeZone"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-0063c2ae">
+        <cl:gridrow std:sid="g-row-08e4a50b"/>
+        <cl:gridcell std:sid="gd-cell-f2c66ea9" colindex="0" rowindex="0" columnname="City"/>
+        <cl:gridcell std:sid="gd-cell-403ce433" colindex="1" rowindex="0" columnname="Country"/>
+        <cl:gridcell std:sid="gd-cell-92dcad0e" colindex="2" rowindex="0" columnname="CountryCode"/>
+        <cl:gridcell std:sid="gd-cell-a33aa971" colindex="3" rowindex="0" columnname="TimeZone"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:output std:sid="output-a09ae709" id="opt1" value="1 ) 그리드와 excel 간 히든컬럼도 데이터 copy &amp; paste가 가능한지, 또는 옵션으로 설정이 가능한지&#xD;&#xA;불가능합니다.엑셀에 있는 데이터를 복사할 경우, 클립보드에 숨겨진 컬럼에 대한 값이 복사되지 않아, 해당 기능을 구현할 수 없습니다.">
+      <cl:xylayoutdata std:sid="xyl-data-0798fca7" height="70px" horizontalAnchor="BOTH" left="20px" right="20px" top="70px" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:xylayout std:sid="xylayout-c2fbf4ab"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-628916a7" version="1.0.0.0">
+  <head std:sid="head-63b3a347">
+    <title>verticalTest</title>
+    <screen std:sid="screen-53e5392e" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-a5912264" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-fe2ae1f8" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-85d68218"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-fba03260" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-9a965680" id="grp1">
+      <cl:xylayoutdata std:sid="xyl-data-cd8005c5" top="147px" left="182px" width="574px" height="336px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:button std:sid="button-6d62122f" id="btn3" value="1">
+        <cl:verticaldata std:sid="v-data-f78d74dd" width="100px" height="20px"/>
+      </cl:button>
+      <cl:button std:sid="button-5559f32c" id="btn4" value="2">
+        <cl:verticaldata std:sid="v-data-19acf143" width="100px" height="20px"/>
+      </cl:button>
+      <cl:button std:sid="button-32f342e2" id="btn5" value="3">
+        <cl:verticaldata std:sid="v-data-1f5b39b2" width="100px" height="20px"/>
+      </cl:button>
+      <cl:button std:sid="button-acc8f6ad" id="btn6" value="3">
+        <cl:verticaldata std:sid="v-data-9fa2e960" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-c1233d16" id="btn7" value="3">
+        <cl:verticaldata std:sid="v-data-5779b017" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-ae41d819" id="btn8" value="3">
+        <cl:verticaldata std:sid="v-data-28f6b03a" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-af20600d" id="btn9" value="3">
+        <cl:verticaldata std:sid="v-data-8f897eb2" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-308daaf6" id="btn10" value="3">
+        <cl:verticaldata std:sid="v-data-98c267d7" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-0fcf1528" id="btn11" value="3">
+        <cl:verticaldata std:sid="v-data-3eb2dedd" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-f64bb0a3" id="btn12" value="3">
+        <cl:verticaldata std:sid="v-data-58816004" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-85d85050" id="btn13" value="3">
+        <cl:verticaldata std:sid="v-data-b6731797" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-07f48c8c" id="btn14" value="3">
+        <cl:verticaldata std:sid="v-data-9bd342fb" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-0afae099" id="btn15" value="3">
+        <cl:verticaldata std:sid="v-data-edf0b65f" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-e55f6cf4" id="btn16" value="3">
+        <cl:verticaldata std:sid="v-data-a57e88d4" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-8cc0d0a3" id="btn17" value="3">
+        <cl:verticaldata std:sid="v-data-c3ff71c6" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-576a7bf4" id="btn18" value="3">
+        <cl:verticaldata std:sid="v-data-09622e3b" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-b07fe942" id="btn19" value="3">
+        <cl:verticaldata std:sid="v-data-8fe7213f" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-26cadcc2" id="btn20" value="3">
+        <cl:verticaldata std:sid="v-data-d33fa262" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-b80d3a61" id="btn21" value="3">
+        <cl:verticaldata std:sid="v-data-b901de39" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-9288b936" id="btn22" value="3">
+        <cl:verticaldata std:sid="v-data-5b612039" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-d4a5ce23" id="btn23" value="3">
+        <cl:verticaldata std:sid="v-data-71f2a26f" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-e5f0238a" id="btn24" value="3">
+        <cl:verticaldata std:sid="v-data-a1afe6dc" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-890cea4a" id="btn25" value="3">
+        <cl:verticaldata std:sid="v-data-ae76f77e" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-bb07d061" id="btn26" value="3">
+        <cl:verticaldata std:sid="v-data-3911054d" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-210283dc" id="btn27" value="3">
+        <cl:verticaldata std:sid="v-data-3feb8bb7" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-482aed0a" id="btn28" value="3">
+        <cl:verticaldata std:sid="v-data-0716ad62" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-b13ac903" id="btn29" value="3">
+        <cl:verticaldata std:sid="v-data-0dc4c036" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-0d739605" id="btn30" value="3">
+        <cl:verticaldata std:sid="v-data-7a7f4200" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-a229e535" id="btn31" value="3">
+        <cl:verticaldata std:sid="v-data-49b98433" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-9577b1c5" id="btn32" value="3">
+        <cl:verticaldata std:sid="v-data-ecda9489" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-f7856394" id="btn33" value="3">
+        <cl:verticaldata std:sid="v-data-8c701197" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-0cb233b7" id="btn34" value="3">
+        <cl:verticaldata std:sid="v-data-ec410592" width="574px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:verticallayout std:sid="v-layout-8a4f84e8"/>
+    </cl:group>
+    <cl:button std:sid="button-37196b50" id="btn1" value="Button">
+      <cl:listener std:sid="listener-4e68b160" name="click" handler="onBtn1Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-3d5b3a1b" top="75px" left="160px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-ac5f9837" id="btn2" value="Button">
+      <cl:listener std:sid="listener-7fb3d132" name="click" handler="onBtn2Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-624435c6" top="75px" left="270px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-3ff1a12f"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

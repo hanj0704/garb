@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-80c53005" version="1.0.0.0">
+  <head std:sid="head-53585ff5">
+    <title>Liner</title>
+    <screen std:sid="screen-68591d93" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-2a299b21" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-afdc9aeb" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-eef75727">
+      <cl:dataset std:sid="d-set-da75c8b9" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-03024384" name="label"/>
+          <cl:datacolumn std:sid="d-column-c6937219" name="value"/>
+          <cl:datacolumn std:sid="d-column-44b0be58" name="shape"/>
+          <cl:datacolumn std:sid="d-column-a8fc0efb" name="coords"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[label1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[value1]]></cl:datavalue>
+            <cl:datavalue columnname="shape"><![CDATA[poly]]></cl:datavalue>
+            <cl:datavalue columnname="coords"><![CDATA[119,115,178,325]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[label1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[value1]]></cl:datavalue>
+            <cl:datavalue columnname="shape"><![CDATA[poly]]></cl:datavalue>
+            <cl:datavalue columnname="coords"><![CDATA[139,95,242,232]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[label2]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[value2]]></cl:datavalue>
+            <cl:datavalue columnname="shape"><![CDATA[poly]]></cl:datavalue>
+            <cl:datavalue columnname="coords"><![CDATA[260,254,217,327]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-c99e2702" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-32fbbe60" name="load" handler="onBodyLoad"/>
+    <cl:img std:sid="image-16ab212c" id="img1">
+      <cl:xylayoutdata std:sid="xyl-data-da937c60" top="0px" left="0px" width="930px" height="450px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:area std:sid="a-item-518ba4dd" label="label1" value="value1" shape="poly" coords="414,215,349,310"/>
+      <cl:itemstyle style="stroke-opacity:1; stroke-width:2; fill:white; stroke:red;"/>
+    </cl:img>
+    <cl:button std:sid="button-852767af" id="btnStart" value="Button">
+      <cl:xylayoutdata std:sid="xyl-data-e679a852" top="75px" left="98px" width="42px" height="42px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-99f32298" id="btnEnd" value="Button">
+      <cl:xylayoutdata std:sid="xyl-data-bb151c8e" top="304px" left="176px" width="42px" height="42px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-4fa5dd62" id="btt" value="Button">
+      <cl:xylayoutdata std:sid="xyl-data-2fdffc0e" top="194px" left="288px" width="42px" height="42px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-24c54e3f" value="Button">
+      <cl:xylayoutdata std:sid="xyl-data-87d13bf2" top="52px" left="761px" width="42px" height="42px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-23f70e42" id="btn1" value="Button">
+      <cl:xylayoutdata std:sid="xyl-data-f84fd7ff" top="481px" left="623px" width="42px" height="42px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:inputbox std:sid="i-box-7612100d" id="ipb1">
+      <cl:xylayoutdata std:sid="xyl-data-532fbbe3" top="448px" left="280px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:inputbox>
+    <cl:button std:sid="button-42696411" value="Button">
+      <cl:listener std:sid="listener-cbbd3ab3" name="click" handler="onButtonClick"/>
+      <cl:xylayoutdata std:sid="xyl-data-cdf734b6" top="178px" left="413px" width="277px" height="68px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-db97ab6e" value="Button">
+      <cl:xylayoutdata std:sid="xyl-data-64c284dd" top="198px" left="736px" width="44px" height="34px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-1aff6e3c"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

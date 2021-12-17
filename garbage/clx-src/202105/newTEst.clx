@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-b19660b6" version="1.0.0.0">
+  <head std:sid="head-25bdf59a">
+    <title>newTEst</title>
+    <screen std:sid="screen-d85ea064" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-1c6d9bbb" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-89100ea2" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-5e037c27">
+      <cl:datamap std:sid="d-map-30fd8f10" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-76991ba6" name="column1" defaultvalue="aaaa\nbbb"/>
+          <cl:datacolumn std:sid="d-column-b8290a9a" name="column2" defaultvalue="aa&amp;#xD;&amp;#xA;bb"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-bef71711" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:button std:sid="button-54eb0166" id="btn1" value="Button">
+      <cl:listener std:sid="listener-2e21cb5b" name="click" handler="onBtn1Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-de5df316" top="20px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-592a2bf5" id="btn2" visible="false" value="Button">
+      <cl:xylayoutdata std:sid="xyl-data-37b3a9bb" top="50px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:udc std:sid="ud-control-a7af3923" type="udc.cmn.StatusBox">
+      <cl:xylayoutdata std:sid="xyl-data-196b04ff" top="92px" left="173px" width="380px" height="200px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:property name="Status" value="aa&amp;#xD;&amp;#xA;bb" type="string"/>
+    </cl:udc>
+    <cl:output std:sid="output-5e2f3bfa">
+      <cl:datamapbind property="value" datacontrolid="dm1" columnname="column2"/>
+      <cl:xylayoutdata std:sid="xyl-data-1a3c2bd4" top="302px" left="173px" width="350px" height="53px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:textarea std:sid="t-area-5c7ab167" id="txa1">
+      <cl:datamapbind property="value" datacontrolid="dm1" columnname="column2"/>
+      <cl:xylayoutdata std:sid="xyl-data-eecb5baa" top="365px" left="173px" width="571px" height="203px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:textarea>
+    <cl:output std:sid="output-c9fa8ce6" id="opt1">
+      <cl:datamapbind property="value" datacontrolid="dm1" columnname="column1"/>
+      <cl:xylayoutdata std:sid="xyl-data-77570a37" top="302px" left="533px" width="350px" height="53px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:button std:sid="button-80b3dfba" id="btn3" value="Button">
+      <cl:listener std:sid="listener-a7db2842" name="click" handler="onBtn3Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-37195640" top="283px" left="574px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-42405a38"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

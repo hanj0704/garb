@@ -1,0 +1,155 @@
+@import "../settings.part.less";
+@import "../custom-settings.part.less";
+
+ /* 탭 폴더 - disabled */
+.cl-tabfolder.cl-disabled {
+	.cl-tabfolder-item {
+		.cl-tabfolder-button {
+			background-image : url(images/icon/tabclose_default.png);
+		}
+	}
+}
+
+/* 탭 폴더 */
+.cl-tabfolder {
+	color: @default-text-color;
+	font: @default-font;
+
+	/* 헤더 */
+	.cl-tabfolder-header {
+		background-image : linear-gradient(transparent ~'calc(100% - 1px)', @color-tabitem-border ~'calc(100% - 1px)');
+		
+		.cl-tabfolder-header-viewport {
+			height : 30px;
+		}
+		
+		/* 이전으로 스크롤 버튼 */
+		.cl-tabfolder-prev {
+			border: solid 1px @default-border-color;
+			 background-image: url(images/tab_on_arrow_left.png);
+
+			/* 이전으로 스크롤 버튼 - disabled */
+			&.cl-disabled {
+			 	background-image: url(images/tab_arrow_left.png);
+			}
+		}
+
+		/* 다음으로 스크롤 버튼 */
+		.cl-tabfolder-next {
+			border: solid 1px @default-border-color;
+			background-image: url(images/tab_on_arrow_right.png);
+
+			/* 다음으로 스크롤 버튼 - disabled */
+			&.cl-disabled {
+				background-image: url(images/tab_arrow_right.png);
+			}
+		}
+		
+		/* 탭 헤더 아이템 */
+		.cl-tabfolder-item {
+			background-image : linear-gradient(@color-tabitem-bg ~'calc(100% - 1px)', @color-tabitem-border ~'calc(100% - 1px)');
+			border: solid 1px @color-tabitem-border;
+			color : @color-tabitem-text;
+			font-size : @font-small-text-r;
+			font-weight : @font-bold;
+			text-align : center;
+			
+			//max-width : 140px;
+			min-width : 140px;
+			
+			.cl-text {
+				text-overflow : ellipsis;
+				white-space : nowrap;
+				overflow : hidden;
+				
+				min-width : 120px;
+			//	max-width : 120px;
+			}
+			
+			/* 탭 아이템 체크 박스 */
+			.cl-checkbox {
+				.cl-checkbox-icon {
+					background-image : url(images/icon/checkbox_default_light.png);
+				}
+				
+				&.cl-checked {
+					.cl-checkbox-icon {
+						background-image : url(images/icon/checkbox_active_dark.png);
+					}
+				}
+			}
+
+			/* 탭 헤더 아이템 닫기 버튼 */
+			.cl-tabfolder-button {
+				 background-image: url(images/icon/tabclose_default.png);
+				 background-size : 24px 40px;
+				 background-position : center;
+				 width : 24px;
+				 margin-left : 0px;
+			}
+
+			/* 탭 헤더 아이템 - 선택됨 */
+			&.cl-selected{
+				background-image : none;
+				background-color: @color-tabitem-selected-bg;
+				border-color: @color-tabitem-border;
+				border-top-color : @color-tabitem-selected-border;
+				box-shadow : inset 0px 2px 0px 0px rgba(234, 114, 36, 1);
+				-webkit-box-shadow : inset 0px 2px 0px 0px rgba(234, 114, 36, 1);
+				-moz-box-shadow : inset 0px 2px 0px 0px rgba(234, 114, 36, 1);
+				color: @color-tabitem-selected-text;
+
+				/* 탭 헤더 아이템 닫기 버튼 - 선택 됨 */
+				.cl-tabfolder-button {
+					 background-image: url(images/icon/tab_close_active.png);
+				}
+			}
+	
+			/* 탭 헤더 아이템 - 호버 */
+			&:not(.cl-selected):hover{
+				background-color : @color-tabitem-bg;
+			}
+			
+			&:focus, &.cl-focus {
+				text-decoration : none;
+			}
+			
+			&.cl-disabled {
+				background-color : @disabled-selection-background;
+				border-color : @disabled-border-color;
+				color : @disabled-text-color;
+				
+				&:hover {
+					background-color : @disabled-selection-background;
+				}
+			}
+		}
+	}
+	
+	/* 탭폴더 바디 */
+	.cl-tabfolder-body {
+		background-color: white;
+		color: @default-text-color;
+		border: solid @color-tabitem-border;
+		border-width : 0px 1px 1px 1px;
+	}
+}
+
+/* 삭제 가능한 아이템을 가지는 탭 폴더 스타일 */
+.cl-tabfolder.closable {
+	.cl-tabfolder-item {
+//		max-width : 140px;
+		min-width : 140px;
+		
+		.cl-text {
+			min-width : 104px;
+//			max-width : 104px;
+		}
+	}
+}
+
+.cl-tabfolder.dark {
+	.cl-tabfolder-body {
+		background-color : @color-black-03;
+	}
+}

@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-7f213d4e" version="1.0.0.0">
+  <head std:sid="head-b39bed16">
+    <title>LotWaferProcessSummary</title>
+    <screen std:sid="screen-68bbbb6c" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-d0032182" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-2d55e007" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-9a01eb2e">
+      <cl:dataset std:sid="d-set-11aa4cc6" id="dsGasInfo">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="Gas" std:sid="d-column-4d0fed0a" name="GAS_NAME"/>
+          <cl:datacolumn comment="Set" std:sid="d-column-43402857" name="SET" datatype="number"/>
+          <cl:datacolumn comment="Mean" std:sid="d-column-bba64d7f" name="MEAN" datatype="number"/>
+          <cl:datacolumn comment="Dev" std:sid="d-column-8af94f6a" name="DEV" datatype="number"/>
+          <cl:datacolumn comment="Min" std:sid="d-column-e3e146e1" name="MIN" datatype="number"/>
+          <cl:datacolumn comment="Max" std:sid="d-column-7c1ac7c8" name="MAX" datatype="number"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="GAS_NAME"><![CDATA[(MFC1)]]></cl:datavalue>
+            <cl:datavalue columnname="SET"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MEAN"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="DEV"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MIN"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MAX"><![CDATA[0]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="GAS_NAME"><![CDATA[(MFC2)]]></cl:datavalue>
+            <cl:datavalue columnname="SET"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MEAN"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="DEV"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MIN"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MAX"><![CDATA[0]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="GAS_NAME"><![CDATA[(MFC3)]]></cl:datavalue>
+            <cl:datavalue columnname="SET"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MEAN"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="DEV"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MIN"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MAX"><![CDATA[0]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="GAS_NAME"><![CDATA[(MFC4)]]></cl:datavalue>
+            <cl:datavalue columnname="SET"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MEAN"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="DEV"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MIN"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MAX"><![CDATA[0]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="GAS_NAME"><![CDATA[(MFC5)]]></cl:datavalue>
+            <cl:datavalue columnname="SET"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MEAN"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="DEV"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MIN"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MAX"><![CDATA[0]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="GAS_NAME"><![CDATA[(MFC6)]]></cl:datavalue>
+            <cl:datavalue columnname="SET"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MEAN"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="DEV"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MIN"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MAX"><![CDATA[0]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="GAS_NAME"><![CDATA[(MFC7)]]></cl:datavalue>
+            <cl:datavalue columnname="SET"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MEAN"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="DEV"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MIN"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MAX"><![CDATA[0]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="GAS_NAME"><![CDATA[(MFC8)]]></cl:datavalue>
+            <cl:datavalue columnname="SET"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MEAN"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="DEV"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MIN"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MAX"><![CDATA[0]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="GAS_NAME"><![CDATA[(MFC9)]]></cl:datavalue>
+            <cl:datavalue columnname="SET"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MEAN"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="DEV"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MIN"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MAX"><![CDATA[0]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="GAS_NAME"><![CDATA[(MFC10)]]></cl:datavalue>
+            <cl:datavalue columnname="SET"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MEAN"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="DEV"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MIN"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MAX"><![CDATA[0]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="GAS_NAME"><![CDATA[(MFC11)]]></cl:datavalue>
+            <cl:datavalue columnname="SET"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MEAN"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="DEV"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MIN"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="MAX"><![CDATA[0]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-97139150" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="Mean" std:sid="d-column-e6e1c4c9" name="MEAN" datatype="number"/>
+          <cl:datacolumn comment="Dev" std:sid="d-column-01bd2a38" name="DEV" datatype="number"/>
+          <cl:datacolumn comment="Min" std:sid="d-column-b37bf4c6" name="MIN" datatype="number"/>
+          <cl:datacolumn comment="Max" std:sid="d-column-9337537a" name="MAX" datatype="number"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-b4db3c54" id="dsIOPLogList">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-0a8e8251" name="INDEX" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-48324333" name="STEP_IDX" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-d3dc3fdc" name="STEP_NM"/>
+          <cl:datacolumn std:sid="d-column-3d5cc45b" name="BIRTH_DAY"/>
+          <cl:datacolumn std:sid="d-column-342a659f" name="BIRTH_TIME"/>
+          <cl:datacolumn std:sid="d-column-3a1e470d" name="AR_SET"/>
+          <cl:datacolumn std:sid="d-column-08ff9c54" name="AR_FLOW"/>
+          <cl:datacolumn std:sid="d-column-ec94fff1" name="CF4_SET"/>
+          <cl:datacolumn std:sid="d-column-1cc9d0c3" name="CF4_FLOW"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-6807cf7c" id="dsProcessEventList">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-fc8b45f0" name="DATE_TIME"/>
+          <cl:datacolumn std:sid="d-column-d18375d4" name="SUBSYSTEM"/>
+          <cl:datacolumn std:sid="d-column-4e6d5d15" name="LOT_ID"/>
+          <cl:datacolumn std:sid="d-column-10d2ba9b" name="MESSAGE"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:datamap comment="iop log + event log" std:sid="d-map-5ca7796b" id="dmWaferInfo">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-c16af11f" name="CASSETTE_ID"/>
+          <cl:datacolumn std:sid="d-column-39612bd8" name="LOT_ID"/>
+          <cl:datacolumn std:sid="d-column-fe71575f" name="WAFER_NO"/>
+          <cl:datacolumn std:sid="d-column-c742dd08" name="WAFER_CHAMBER"/>
+          <cl:datacolumn std:sid="d-column-23c47558" name="RECIPE"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:datamap std:sid="d-map-778e8b5f" id="dmWaferProcessInfo">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-1e2c1ea4" name="CASSETTE_ID"/>
+          <cl:datacolumn std:sid="d-column-a5cda1a6" name="FILE_NM"/>
+          <cl:datacolumn std:sid="d-column-2e755624" name="START_DATE"/>
+          <cl:datacolumn std:sid="d-column-5a479ac4" name="LOT_ID"/>
+          <cl:datacolumn std:sid="d-column-6eb0dc76" name="TOTAL_WAFERS" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-63797b51" name="END_DATE"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:datamap std:sid="d-map-0d700895" id="dmProcessAlarmInfo">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-e2b3e254" name="RECIPE_NM"/>
+          <cl:datacolumn std:sid="d-column-c3caacea" name="RECIPE_SEQURITY"/>
+          <cl:datacolumn std:sid="d-column-ec3a9fa4" name="STOP_CNT" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-cc2f5665" name="WARNING_CNT" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-dec70257" name="FAULT_CNT" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-e088e38e" name="POSITIONING_WAFER" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-756864c9" name="RUNNING_PROCESS_STEP" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-2fd7490d" name="PROCESS_STOPPED" datatype="number"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:datamap std:sid="d-map-6ba1c9a5" id="dmWaferMoveInfo">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-32216a86" name="CH_USE"/>
+          <cl:datacolumn std:sid="d-column-83409226" name="WAFER_INDEX"/>
+          <cl:datacolumn std:sid="d-column-b20b118c" name="WAFER_NO"/>
+          <cl:datacolumn std:sid="d-column-83bfaf69" name="SEQ_NO"/>
+          <cl:datacolumn std:sid="d-column-2b7f5671" name="SEQ_TOTAL_WAFER"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:datamap std:sid="d-map-0cbe0164" id="dmStepInfo">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-65927586" name="STEP_NAME"/>
+          <cl:datacolumn std:sid="d-column-2fd6289c" name="STEP_NO"/>
+          <cl:datacolumn std:sid="d-column-607c3426" name="STEP_CURRENT"/>
+          <cl:datacolumn std:sid="d-column-972d115a" name="STEP_TOTAL"/>
+          <cl:datacolumn std:sid="d-column-ba17dc24" name="STEP_TIME"/>
+          <cl:datacolumn std:sid="d-column-88d3bf40" name="STOP_TIME"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-19bd1b06" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:tabfolder std:sid="t-folder-a9ec4890">
+      <cl:xylayoutdata std:sid="xyl-data-24e0ade6" top="10px" right="10px" bottom="10px" left="10px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+      <cl:tabitem std:sid="t-item-6e1e7025" selected="true" text="Lot Wafer Process Summary">
+        <std:metadata>
+          <std:property key="is-active-item" value="true"/>
+        </std:metadata>
+        <cl:group std:sid="group-faa38fa4">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-4c135cc2" id="grp1">
+            <cl:xylayoutdata std:sid="xyl-data-195acd7b" top="10px" right="10px" bottom="10px" left="10px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+            <cl:group std:sid="group-6eef038f" id="grp3" class="search-box">
+              <cl:formdata std:sid="f-data-c32b47fb" halign="FILL" valign="FILL" row="1" col="0" rowspan="1" colspan="2"/>
+              <cl:button std:sid="button-980fa788" id="btn1" enabled="false" value="w1">
+                <cl:flowlayoutdata std:sid="f-data-ae685026" width="31px" height="31px"/>
+              </cl:button>
+              <cl:button std:sid="button-f2d11d52" id="btn3" enabled="false" value="w2">
+                <cl:flowlayoutdata std:sid="f-data-e8cad51c" width="31px" height="31px" autosize="none"/>
+              </cl:button>
+              <cl:button std:sid="button-9884de2d" id="btn4" enabled="false" value="w3">
+                <cl:flowlayoutdata std:sid="f-data-38a240a6" width="31px" height="31px" autosize="none"/>
+              </cl:button>
+              <cl:button std:sid="button-965593be" id="btn5" enabled="false" value="w4">
+                <cl:flowlayoutdata std:sid="f-data-ec20a80d" width="31px" height="31px" autosize="none"/>
+              </cl:button>
+              <cl:button std:sid="button-cfca6f2f" id="btn6" enabled="false" value="w5">
+                <cl:flowlayoutdata std:sid="f-data-95b51ddd" width="31px" height="31px" autosize="none"/>
+              </cl:button>
+              <cl:button std:sid="button-3374f324" id="btn7" enabled="false" value="w6">
+                <cl:flowlayoutdata std:sid="f-data-3f5c9d27" width="31px" height="31px" autosize="none"/>
+              </cl:button>
+              <cl:button std:sid="button-cdc847b1" id="btn8" enabled="false" value="w7">
+                <cl:flowlayoutdata std:sid="f-data-1a3f36e7" width="31px" height="31px" autosize="none"/>
+              </cl:button>
+              <cl:button std:sid="button-e03e5c61" id="btn9" enabled="false" value="w8">
+                <cl:flowlayoutdata std:sid="f-data-2489a8f2" width="31px" height="31px" autosize="none"/>
+              </cl:button>
+              <cl:button std:sid="button-2f530f91" id="btn10" enabled="false" value="w9">
+                <cl:flowlayoutdata std:sid="f-data-118d9817" width="31px" height="31px" autosize="none"/>
+              </cl:button>
+              <cl:button std:sid="button-ee5cd7a2" id="btn11" enabled="false" value="w10">
+                <cl:flowlayoutdata std:sid="f-data-c99aa357" width="31px" height="31px" autosize="none"/>
+              </cl:button>
+              <cl:button std:sid="button-293251dc" id="btn12" enabled="false" value="w11">
+                <cl:flowlayoutdata std:sid="f-data-5a837c60" width="31px" height="31px" autosize="none"/>
+              </cl:button>
+              <cl:button std:sid="button-e9b273f2" id="btn13" enabled="false" value="w12">
+                <cl:flowlayoutdata std:sid="f-data-8345b1ab" width="31px" height="31px" autosize="none"/>
+              </cl:button>
+              <cl:button std:sid="button-ec7c3883" id="btn14" enabled="false" value="w13">
+                <cl:flowlayoutdata std:sid="f-data-af3cf0f6" width="31px" height="31px" autosize="none"/>
+              </cl:button>
+              <cl:button std:sid="button-4acd4c14" id="btn15" enabled="false" value="w14">
+                <cl:flowlayoutdata std:sid="f-data-369dccec" width="31px" height="31px" autosize="none"/>
+              </cl:button>
+              <cl:button std:sid="button-4a44cf4f" id="btn16" enabled="false" value="w15">
+                <cl:flowlayoutdata std:sid="f-data-1dc58f34" width="31px" height="31px" autosize="none"/>
+              </cl:button>
+              <cl:button std:sid="button-1de78492" id="btn17" enabled="false" value="w16">
+                <cl:flowlayoutdata std:sid="f-data-04c7e849" width="31px" height="31px" autosize="none"/>
+              </cl:button>
+              <cl:button std:sid="button-8a0a0212" id="btn18" enabled="false" value="w17">
+                <cl:flowlayoutdata std:sid="f-data-ca6670c0" width="31px" height="31px" autosize="none"/>
+              </cl:button>
+              <cl:button std:sid="button-10a09715" id="btn19" enabled="false" value="w18">
+                <cl:flowlayoutdata std:sid="f-data-e5fd7be7" width="31px" height="31px" autosize="none"/>
+              </cl:button>
+              <cl:button std:sid="button-9724ca1e" id="btn20" enabled="false" value="w19">
+                <cl:flowlayoutdata std:sid="f-data-769cc1ec" width="31px" height="31px" autosize="none"/>
+              </cl:button>
+              <cl:button std:sid="button-1caf7ef7" id="btn21" enabled="false" value="w20">
+                <cl:flowlayoutdata std:sid="f-data-dbe677e2" width="31px" height="31px" autosize="none"/>
+              </cl:button>
+              <cl:button std:sid="button-c11b3efb" id="btn22" enabled="false" value="w21">
+                <cl:flowlayoutdata std:sid="f-data-9cfc965f" width="31px" height="31px" autosize="none"/>
+              </cl:button>
+              <cl:button std:sid="button-71b29b16" id="btn23" enabled="false" value="w22">
+                <cl:flowlayoutdata std:sid="f-data-4b70e391" width="31px" height="31px" autosize="none"/>
+              </cl:button>
+              <cl:button std:sid="button-80367e53" id="btn24" enabled="false" value="w23">
+                <cl:flowlayoutdata std:sid="f-data-4059e3f4" width="31px" height="31px" autosize="none"/>
+              </cl:button>
+              <cl:button std:sid="button-7d3b58eb" id="btn25" enabled="false" value="w24">
+                <cl:flowlayoutdata std:sid="f-data-f3ecad0e" width="31px" height="31px" autosize="none"/>
+              </cl:button>
+              <cl:button std:sid="button-6e7a9f31" id="btn26" enabled="false" value="w25">
+                <cl:flowlayoutdata std:sid="f-data-fdcbc7e1" width="31px" height="31px" autosize="none"/>
+              </cl:button>
+              <cl:flowlayout std:sid="f-layout-40cd816f" leftmargin="5" rightmargin="5" topmargin="5" bottommargin="5"/>
+            </cl:group>
+            <cl:group std:sid="group-9182307d" id="grp2" class="search-box">
+              <cl:formdata std:sid="f-data-acf84fa5" row="0" col="0" rowspan="1" colspan="2"/>
+              <cl:output std:sid="output-b18c495e" id="opt1" class="label" value="Cassette ID">
+                <cl:formdata std:sid="f-data-9952cdce" row="0" col="0"/>
+              </cl:output>
+              <cl:inputbox std:sid="i-box-ddbe8dfb" id="ipb1">
+                <cl:datamapbind property="value" datacontrolid="dmWaferProcessInfo" columnname="CASSETTE_ID"/>
+                <cl:formdata std:sid="f-data-f55be766" row="0" col="1"/>
+              </cl:inputbox>
+              <cl:output std:sid="output-94185922" id="opt2" class="label" value="Lot ID">
+                <cl:formdata std:sid="f-data-515adacf" row="1" col="0"/>
+              </cl:output>
+              <cl:output std:sid="output-a92734ff" id="opt5" class="label" value="Total Wafers">
+                <cl:formdata std:sid="f-data-34d0999d" row="1" col="2"/>
+              </cl:output>
+              <cl:inputbox std:sid="i-box-10b82666" id="ipb3">
+                <cl:datamapbind property="value" datacontrolid="dmWaferProcessInfo" columnname="LOT_ID"/>
+                <cl:formdata std:sid="f-data-1b8ace01" row="1" col="1"/>
+              </cl:inputbox>
+              <cl:output std:sid="output-789d12a4" id="opt3" class="label" value="File Name">
+                <cl:formdata std:sid="f-data-22547617" row="0" col="2"/>
+              </cl:output>
+              <cl:output std:sid="output-aa30acf7" id="opt4" class="label" value="Started">
+                <cl:formdata std:sid="f-data-1fab9d1e" row="0" col="4"/>
+              </cl:output>
+              <cl:output std:sid="output-54575e5a" id="opt6" class="label" value="Ended">
+                <cl:formdata std:sid="f-data-728f9e88" row="1" col="4"/>
+              </cl:output>
+              <cl:numbereditor std:sid="n-editor-29b51e5e" id="nbe1" class="text-left pl-1" spinbutton="false">
+                <cl:datamapbind property="value" datacontrolid="dmWaferProcessInfo" columnname="TOTAL_WAFERS"/>
+                <cl:formdata std:sid="f-data-e8739e95" row="1" col="3"/>
+              </cl:numbereditor>
+              <cl:inputbox std:sid="i-box-add4ab21" id="ipb2">
+                <cl:datamapbind property="value" datacontrolid="dmWaferProcessInfo" columnname="FILE_NM"/>
+                <cl:formdata std:sid="f-data-3f11b043" row="0" col="3"/>
+              </cl:inputbox>
+              <cl:dateinput std:sid="d-input-fab34f4d" id="dti1" hidebutton="true" mask="YYYY-MM-DD HH:mm:ss" format="YYYYMMDDHHmmss">
+                <cl:datamapbind property="value" datacontrolid="dmWaferProcessInfo" columnname="START_DATE"/>
+                <cl:formdata std:sid="f-data-84f488de" row="0" col="5"/>
+              </cl:dateinput>
+              <cl:dateinput std:sid="d-input-184c6c2d" id="dti2" hidebutton="true" mask="YYYY-MM-DD HH:mm:ss" format="YYYYMMDDHHmmss">
+                <cl:datamapbind property="value" datacontrolid="dmWaferProcessInfo" columnname="END_DATE"/>
+                <cl:formdata std:sid="f-data-8b5d609f" row="1" col="5"/>
+              </cl:dateinput>
+              <cl:formlayout std:sid="f-layout-1e904beb" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+                <cl:rows length="30"/>
+                <cl:rows length="30"/>
+                <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="1" unit="FRACTION" autoSizing="false" minlength="0"/>
+                <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:group std:sid="group-7b80fcda" id="grp4" class="cl-form-group">
+              <cl:formdata std:sid="f-data-b0966cf4" row="2" col="0"/>
+              <cl:output std:sid="output-167a92f9" id="opt7" value="Recipe Name / Security">
+                <cl:formdata std:sid="f-data-453999f8" row="0" col="0"/>
+              </cl:output>
+              <cl:output std:sid="output-0d932b60" id="opt8" value="Number of Stops">
+                <cl:formdata std:sid="f-data-7d3f8bd3" row="1" col="0"/>
+              </cl:output>
+              <cl:output std:sid="output-0ae68717" id="opt9" value="Number of Warnings">
+                <cl:formdata std:sid="f-data-57c94308" row="2" col="0"/>
+              </cl:output>
+              <cl:output std:sid="output-6fa6fd18" id="opt10" value="Number of Faluts">
+                <cl:formdata std:sid="f-data-31775a53" row="3" col="0"/>
+              </cl:output>
+              <cl:output std:sid="output-d4217d7c" id="opt11" value="Positioning Wafer">
+                <cl:formdata std:sid="f-data-7bb14f5d" row="1" col="2"/>
+              </cl:output>
+              <cl:output std:sid="output-557c60e8" id="opt12" value="Running Process Step">
+                <cl:formdata std:sid="f-data-4bd68574" row="2" col="2"/>
+              </cl:output>
+              <cl:output std:sid="output-e7d0e3ff" id="opt13" value="Process stoped">
+                <cl:formdata std:sid="f-data-aa7f6aa9" row="3" col="2"/>
+              </cl:output>
+              <cl:inputbox std:sid="i-box-57dc65e6" id="ipb4">
+                <cl:datamapbind property="value" datacontrolid="dmProcessAlarmInfo" columnname="RECIPE_NM"/>
+                <cl:formdata std:sid="f-data-7fbd12e3" row="0" col="1" rowspan="1" colspan="2"/>
+              </cl:inputbox>
+              <cl:inputbox std:sid="i-box-d1821e24" id="ipb5">
+                <cl:datamapbind property="value" datacontrolid="dmProcessAlarmInfo" columnname="RECIPE_SEQURITY"/>
+                <cl:formdata std:sid="f-data-96c228cf" row="0" col="3"/>
+              </cl:inputbox>
+              <cl:numbereditor std:sid="n-editor-c5c70682" id="nbe2" spinbutton="false">
+                <cl:datamapbind property="value" datacontrolid="dmProcessAlarmInfo" columnname="STOP_CNT"/>
+                <cl:formdata std:sid="f-data-2b1a4a1c" row="1" col="1"/>
+              </cl:numbereditor>
+              <cl:numbereditor std:sid="n-editor-36f773d3" id="nbe3" spinbutton="false">
+                <cl:datamapbind property="value" datacontrolid="dmProcessAlarmInfo" columnname="WARNING_CNT"/>
+                <cl:formdata std:sid="f-data-baa74a4b" row="2" col="1"/>
+              </cl:numbereditor>
+              <cl:numbereditor std:sid="n-editor-cbe9ae6b" id="nbe4" spinbutton="false">
+                <cl:datamapbind property="value" datacontrolid="dmProcessAlarmInfo" columnname="FAULT_CNT"/>
+                <cl:formdata std:sid="f-data-353ca931" row="3" col="1"/>
+              </cl:numbereditor>
+              <cl:group std:sid="group-39b3bce1" id="grp6">
+                <cl:formdata std:sid="f-data-987a9adb" row="1" col="3" rowspan="1" colspan="1"/>
+                <cl:numbereditor std:sid="n-editor-f48a24e7" id="nbe5" spinbutton="false" format="s#,##0.0">
+                  <cl:datamapbind property="value" datacontrolid="dmProcessAlarmInfo" columnname="POSITIONING_WAFER"/>
+                  <cl:formdata std:sid="f-data-084b1511" row="0" col="0"/>
+                </cl:numbereditor>
+                <cl:output std:sid="output-4293f546" id="opt14" value="[s]">
+                  <cl:formdata std:sid="f-data-9bd8afa5" row="0" col="1"/>
+                </cl:output>
+                <cl:formlayout std:sid="f-layout-3683e78c" hspace="5px" vspace="5px">
+                  <cl:rows length="30"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:group std:sid="group-10f47873" id="grp7">
+                <cl:formdata std:sid="f-data-790e9f65" row="2" col="3"/>
+                <cl:numbereditor std:sid="n-editor-1522ee90" id="nbe6" spinbutton="false" format="s#,##0.0">
+                  <cl:datamapbind property="value" datacontrolid="dmProcessAlarmInfo" columnname="RUNNING_PROCESS_STEP"/>
+                  <cl:formdata std:sid="f-data-f2efa867" row="0" col="0"/>
+                </cl:numbereditor>
+                <cl:output std:sid="output-902a32d7" id="opt15" value="[s]">
+                  <cl:formdata std:sid="f-data-50a05866" row="0" col="1"/>
+                </cl:output>
+                <cl:formlayout std:sid="f-layout-3c3e1dbd" hspace="5px" vspace="5px">
+                  <cl:rows length="30"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:group std:sid="group-7a160ce8" id="grp8">
+                <cl:formdata std:sid="f-data-0f86505f" row="3" col="3"/>
+                <cl:numbereditor std:sid="n-editor-cd12ce7a" id="nbe7" spinbutton="false" format="s#,##0.0">
+                  <cl:datamapbind property="value" datacontrolid="dmProcessAlarmInfo" columnname="PROCESS_STOPPED"/>
+                  <cl:formdata std:sid="f-data-22099e9e" row="0" col="0"/>
+                </cl:numbereditor>
+                <cl:output std:sid="output-71de9064" id="opt16" value="[s]">
+                  <cl:formdata std:sid="f-data-ad0df6cc" row="0" col="1"/>
+                </cl:output>
+                <cl:formlayout std:sid="f-layout-3bfb6000" hspace="5px" vspace="5px">
+                  <cl:rows length="30"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:formlayout std:sid="f-layout-0b01a25a" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+                <cl:rows length="30"/>
+                <cl:rows length="30"/>
+                <cl:rows length="30"/>
+                <cl:rows length="30"/>
+                <cl:columns length="160" unit="PIXEL" autoSizing="true" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="1" unit="FRACTION"/>
+                <cl:columns length="150" unit="PIXEL" autoSizing="true" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:group std:sid="group-eb474114" id="grp5" class="cl-form-group">
+              <cl:formdata std:sid="f-data-75872af4" row="2" col="1"/>
+              <cl:output std:sid="output-74ab7ad8" id="opt17" value="Ch Use">
+                <cl:formdata std:sid="f-data-1ab7275d" row="0" col="0"/>
+              </cl:output>
+              <cl:output std:sid="output-f154c3ff" id="opt18" value="Wafer Index">
+                <cl:formdata std:sid="f-data-4bca3262" row="1" col="0"/>
+              </cl:output>
+              <cl:output std:sid="output-6636f252" id="opt19" value="Wafer / Seq No">
+                <cl:formdata std:sid="f-data-4f50d9a8" row="2" col="0"/>
+              </cl:output>
+              <cl:output std:sid="output-e58c824b" id="opt20" value="Seq Total / Wafer">
+                <cl:formdata std:sid="f-data-873cca8a" row="3" col="0"/>
+              </cl:output>
+              <cl:numbereditor std:sid="n-editor-a0b62365" id="nbe10" spinbutton="false">
+                <cl:datamapbind property="value" datacontrolid="dmWaferMoveInfo" columnname="SEQ_TOTAL_WAFER"/>
+                <cl:formdata std:sid="f-data-352bbba6" row="3" col="1" rowspan="1" colspan="1"/>
+              </cl:numbereditor>
+              <cl:group std:sid="group-811d78b6" id="grp10">
+                <cl:formdata std:sid="f-data-f84cd510" row="2" col="1"/>
+                <cl:numbereditor std:sid="n-editor-76cfd4bc" id="nbe8" spinbutton="false">
+                  <cl:datamapbind property="value" datacontrolid="dmWaferMoveInfo" columnname="WAFER_NO"/>
+                  <cl:formdata std:sid="f-data-cafdda6e" row="0" col="0"/>
+                </cl:numbereditor>
+                <cl:numbereditor std:sid="n-editor-c91b79d6" id="nbe11" spinbutton="false">
+                  <cl:datamapbind property="value" datacontrolid="dmWaferMoveInfo" columnname="SEQ_NO"/>
+                  <cl:formdata std:sid="f-data-b692b18d" row="0" col="1"/>
+                </cl:numbereditor>
+                <cl:formlayout std:sid="f-layout-5dea9760" hspace="5px" vspace="5px">
+                  <cl:rows length="30"/>
+                  <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  <cl:columns length="1" unit="FRACTION" autoSizing="false" minlength="0"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:numbereditor std:sid="n-editor-c9820e3c" id="nbe9" spinbutton="false">
+                <cl:datamapbind property="value" datacontrolid="dmWaferMoveInfo" columnname="WAFER_INDEX"/>
+                <cl:formdata std:sid="f-data-4ee40cf1" row="1" col="1"/>
+              </cl:numbereditor>
+              <cl:group std:sid="group-acf43229" id="grp11">
+                <cl:formdata std:sid="f-data-02be5eca" row="0" col="1" rowspan="1" colspan="1"/>
+                <cl:inputbox std:sid="i-box-e5a918c7" id="ipb6">
+                  <cl:datamapbind property="value" datacontrolid="dmWaferMoveInfo" columnname="CH_USE"/>
+                  <cl:formdata std:sid="f-data-26596e60" row="0" col="0" rowspan="1" colspan="1"/>
+                </cl:inputbox>
+                <cl:button std:sid="button-f7efe44f" id="btn27" value="WaferMovement">
+                  <cl:formdata std:sid="f-data-136f03a8" row="0" col="1"/>
+                </cl:button>
+                <cl:formlayout std:sid="f-layout-7b000f8e" hspace="5px" vspace="5px">
+                  <cl:rows length="30"/>
+                  <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  <cl:columns length="1" unit="FRACTION" autoSizing="false" minlength="0"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:formlayout std:sid="f-layout-6965ae9c" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+                <cl:rows length="30"/>
+                <cl:rows length="30"/>
+                <cl:rows length="30"/>
+                <cl:rows length="30"/>
+                <cl:columns length="160" unit="PIXEL" autoSizing="true" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:group std:sid="group-9f87bf0c" id="grp9" class="cl-form-group">
+              <cl:formdata std:sid="f-data-2bd03316" row="3" col="0"/>
+              <cl:output std:sid="output-196fbeb8" id="opt21" value="Step Name">
+                <cl:formdata std:sid="f-data-e9e3b5c2" row="0" col="0"/>
+              </cl:output>
+              <cl:output std:sid="output-44228efc" id="opt22" value="Step No/Current/Total">
+                <cl:formdata std:sid="f-data-76701d36" row="1" col="0"/>
+              </cl:output>
+              <cl:output std:sid="output-de33d5bc" id="opt23" value="Proc Step/Stop TIme">
+                <cl:formdata std:sid="f-data-4456e625" row="2" col="0"/>
+              </cl:output>
+              <cl:inputbox std:sid="i-box-90b72e4a" id="ipb7">
+                <cl:datamapbind property="value" datacontrolid="dmStepInfo" columnname="STEP_NAME"/>
+                <cl:formdata std:sid="f-data-b4c9d538" row="0" col="1" rowspan="1" colspan="3"/>
+              </cl:inputbox>
+              <cl:numbereditor std:sid="n-editor-dfb4c9ec" id="nbe12" spinbutton="false">
+                <cl:datamapbind property="value" datacontrolid="dmStepInfo" columnname="STEP_NO"/>
+                <cl:formdata std:sid="f-data-806326f1" row="1" col="1"/>
+              </cl:numbereditor>
+              <cl:numbereditor std:sid="n-editor-822af2c9" id="nbe13" spinbutton="false" format="s#,##0.0">
+                <cl:datamapbind property="value" datacontrolid="dmStepInfo" columnname="STEP_TIME"/>
+                <cl:formdata std:sid="f-data-f0ee0fb1" row="2" col="1"/>
+              </cl:numbereditor>
+              <cl:numbereditor std:sid="n-editor-e92666fd" id="nbe14" spinbutton="false">
+                <cl:datamapbind property="value" datacontrolid="dmStepInfo" columnname="STEP_CURRENT"/>
+                <cl:formdata std:sid="f-data-a43bb044" row="1" col="2"/>
+              </cl:numbereditor>
+              <cl:numbereditor std:sid="n-editor-4bb77e48" id="nbe15" spinbutton="false">
+                <cl:datamapbind property="value" datacontrolid="dmStepInfo" columnname="STEP_TOTAL"/>
+                <cl:formdata std:sid="f-data-84250996" row="1" col="3"/>
+              </cl:numbereditor>
+              <cl:numbereditor std:sid="n-editor-8c71a2a3" id="nbe16" spinbutton="false" format="s#,##0.0">
+                <cl:datamapbind property="value" datacontrolid="dmStepInfo" columnname="STOP_TIME"/>
+                <cl:formdata std:sid="f-data-84a55fa4" row="2" col="2"/>
+              </cl:numbereditor>
+              <cl:formlayout std:sid="f-layout-35cef58a" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+                <cl:rows length="30"/>
+                <cl:rows length="30"/>
+                <cl:rows length="30"/>
+                <cl:columns length="160" unit="PIXEL" autoSizing="true" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="1" unit="FRACTION"/>
+                <cl:columns length="1" unit="FRACTION"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:grid std:sid="grid-80fbfc8a" id="grd1" datasetid="ds1">
+              <cl:formdata std:sid="f-data-b76c1b4d" row="3" col="1" rowspan="2" colspan="1"/>
+              <cl:gridcolumn std:sid="g-column-f06c9cf4"/>
+              <cl:gridcolumn std:sid="g-column-be9c9902"/>
+              <cl:gridcolumn std:sid="g-column-ab41857a"/>
+              <cl:gridcolumn std:sid="g-column-62e774b8"/>
+              <cl:gridheader std:sid="gh-band-2a32aa2c">
+                <cl:gridrow std:sid="g-row-fd7c2483" height="40px"/>
+                <cl:gridcell std:sid="gh-cell-c7c2066d" rowindex="0" colindex="0" targetcolumnname="MEAN" sortable="false" filterable="false" text="Mean"/>
+                <cl:gridcell std:sid="gh-cell-0fc3ba2e" rowindex="0" colindex="1" targetcolumnname="DEV" sortable="false" filterable="false" text="Dev"/>
+                <cl:gridcell std:sid="gh-cell-3cdc8156" rowindex="0" colindex="2" targetcolumnname="MIN" sortable="false" filterable="false" text="Min"/>
+                <cl:gridcell std:sid="gh-cell-5390a876" rowindex="0" colindex="3" targetcolumnname="MAX" sortable="false" filterable="false" text="Max"/>
+              </cl:gridheader>
+              <cl:griddetail std:sid="gd-band-715060a5">
+                <cl:gridrow std:sid="g-row-90eb1645" height="45px"/>
+                <cl:gridcell std:sid="gd-cell-f8fb8aca" rowindex="0" colindex="0" columnname="MEAN"/>
+                <cl:gridcell std:sid="gd-cell-aa0b3c5b" rowindex="0" colindex="1" columnname="DEV"/>
+                <cl:gridcell std:sid="gd-cell-19d55ace" rowindex="0" colindex="2" columnname="MIN"/>
+                <cl:gridcell std:sid="gd-cell-dc7e9efd" rowindex="0" colindex="3" columnname="MAX"/>
+              </cl:griddetail>
+            </cl:grid>
+            <cl:grid std:sid="grid-80d5d178" id="grd2" datasetid="dsGasInfo">
+              <cl:formdata std:sid="f-data-e0f9caf3" row="4" col="0"/>
+              <cl:gridcolumn std:sid="g-column-025c44f4"/>
+              <cl:gridcolumn std:sid="g-column-1a3ddc23"/>
+              <cl:gridcolumn std:sid="g-column-e35fb4f3"/>
+              <cl:gridcolumn std:sid="g-column-c2241249"/>
+              <cl:gridcolumn std:sid="g-column-2aa8f10f"/>
+              <cl:gridcolumn std:sid="g-column-060fd119"/>
+              <cl:gridheader std:sid="gh-band-6dbf7e0b">
+                <cl:gridrow std:sid="g-row-a3b7e0d9" height="40px"/>
+                <cl:gridcell std:sid="gh-cell-bc3f9d92" rowindex="0" colindex="0" targetcolumnname="GAS_NAME" sortable="false" filterable="false" text="Gas"/>
+                <cl:gridcell std:sid="gh-cell-c2a69aa5" rowindex="0" colindex="1" targetcolumnname="SET" sortable="false" filterable="false" text="Set"/>
+                <cl:gridcell std:sid="gh-cell-def3b0d0" rowindex="0" colindex="2" targetcolumnname="MEAN" sortable="false" filterable="false" text="Mean"/>
+                <cl:gridcell std:sid="gh-cell-b5fa8fd2" rowindex="0" colindex="3" targetcolumnname="DEV" sortable="false" filterable="false" text="Dev"/>
+                <cl:gridcell std:sid="gh-cell-a0c36603" rowindex="0" colindex="4" targetcolumnname="MIN" sortable="false" filterable="false" text="Min"/>
+                <cl:gridcell std:sid="gh-cell-81312074" rowindex="0" colindex="5" targetcolumnname="MAX" sortable="false" filterable="false" text="Max"/>
+              </cl:gridheader>
+              <cl:griddetail std:sid="gd-band-20215d26">
+                <cl:gridrow std:sid="g-row-9fbb706e" height="45px"/>
+                <cl:gridcell std:sid="gd-cell-55de22e5" rowindex="0" colindex="0" columnname="GAS_NAME">
+                  <cl:output std:sid="output-baada75f" id="opt24" class="text-right" value="Output"/>
+                </cl:gridcell>
+                <cl:gridcell std:sid="gd-cell-e0a57caf" rowindex="0" colindex="1" columnname="SET">
+                  <cl:output std:sid="output-6b7d5c3d" id="opt25" class="text-right pr-1" value="0" datatype="number" format="s#,##0">
+                    <cl:formdata std:sid="f-data-a3fe8794" row="1" col="1"/>
+                  </cl:output>
+                </cl:gridcell>
+                <cl:gridcell std:sid="gd-cell-9bcae67a" rowindex="0" colindex="2" columnname="MEAN">
+                  <cl:output std:sid="output-1114fbf9" id="opt26" class="text-right pr-1" value="0" datatype="number" format="s#,##0">
+                    <cl:formdata std:sid="f-data-e401005d" row="1" col="1"/>
+                  </cl:output>
+                </cl:gridcell>
+                <cl:gridcell std:sid="gd-cell-b94e4e8d" rowindex="0" colindex="3" columnname="DEV">
+                  <cl:output std:sid="output-ecf817b3" id="opt27" class="text-right pr-1" value="0" datatype="number" format="s#,##0">
+                    <cl:formdata std:sid="f-data-86a24c87" row="1" col="1"/>
+                  </cl:output>
+                </cl:gridcell>
+                <cl:gridcell std:sid="gd-cell-b3bc7628" rowindex="0" colindex="4" columnname="MIN">
+                  <cl:output std:sid="output-6ce79a29" id="opt28" class="text-right pr-1" value="0" datatype="number" format="s#,##0">
+                    <cl:formdata std:sid="f-data-d14767d9" row="1" col="1"/>
+                  </cl:output>
+                </cl:gridcell>
+                <cl:gridcell std:sid="gd-cell-f6b2815c" rowindex="0" colindex="5" columnname="MAX">
+                  <cl:output std:sid="output-c9cb6e78" id="opt29" class="text-right pr-1" value="0" datatype="number" format="s#,##0">
+                    <cl:formdata std:sid="f-data-d0d1af45" row="1" col="1"/>
+                  </cl:output>
+                </cl:gridcell>
+              </cl:griddetail>
+            </cl:grid>
+            <cl:formlayout std:sid="f-layout-eaad8dab" hspace="10px" vspace="10px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="82" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:rows length="45" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:rows length="162" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:rows length="122" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:xylayout std:sid="xylayout-3db07ba4"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-3db0601f" text="Wafer Iop Log">
+        <cl:group std:sid="group-64c9cd20">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-9fb1eb26" class="search-box">
+            <cl:xylayoutdata std:sid="xyl-data-47654074" top="10px" right="10px" left="10px" height="82px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+            <cl:output std:sid="output-ae4e6903" class="label" value="Cassette ID">
+              <cl:formdata std:sid="f-data-1ce7d0f6" row="0" col="0"/>
+            </cl:output>
+            <cl:inputbox std:sid="i-box-14090653" id="ipb8" value="U">
+              <cl:formdata std:sid="f-data-296932c4" row="0" col="1"/>
+            </cl:inputbox>
+            <cl:output std:sid="output-1ed551fe" class="label" value="Lot ID">
+              <cl:formdata std:sid="f-data-f6cff555" row="1" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-f90cfa31" class="label" value="Wft/Ch./Rcp.">
+              <cl:formdata std:sid="f-data-a9d3dd44" row="1" col="2"/>
+            </cl:output>
+            <cl:inputbox std:sid="i-box-88169dbd" id="ipb9" value="">
+              <cl:formdata std:sid="f-data-7de2409c" row="1" col="1"/>
+            </cl:inputbox>
+            <cl:button std:sid="button-6c1b7d64" class="btn-dark" value="Search">
+              <cl:formdata std:sid="f-data-2a4f0f62" row="1" col="6"/>
+            </cl:button>
+            <cl:inputbox std:sid="i-box-9e186d7a" id="ipb10">
+              <cl:formdata std:sid="f-data-83b99aaf" row="1" col="3" rowspan="1" colspan="2"/>
+            </cl:inputbox>
+            <cl:formlayout std:sid="f-layout-f3c8a6a3" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+              <cl:rows length="30"/>
+              <cl:rows length="30"/>
+              <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" minlength="0"/>
+              <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="100" autoSizing="false" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:grid std:sid="grid-b62a6524" id="grd3" datasetid="dsIOPLogList">
+            <cl:xylayoutdata std:sid="xyl-data-d6e3ec56" top="102px" right="10px" bottom="10px" left="10px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+            <cl:gridcolumn std:sid="g-column-e501c871" width="50px"/>
+            <cl:gridcolumn std:sid="g-column-36ffe44f"/>
+            <cl:gridcolumn std:sid="g-column-8d22225b"/>
+            <cl:gridcolumn std:sid="g-column-201494e4"/>
+            <cl:gridcolumn std:sid="g-column-12cbf5c9"/>
+            <cl:gridcolumn std:sid="g-column-cac2e5ab"/>
+            <cl:gridcolumn std:sid="g-column-aaa5baa8"/>
+            <cl:gridcolumn std:sid="g-column-ed783433"/>
+            <cl:gridcolumn std:sid="g-column-2e9a9456"/>
+            <cl:gridcolumn std:sid="g-column-df0671f5"/>
+            <cl:gridheader std:sid="gh-band-e2b9dd27">
+              <cl:gridrow std:sid="g-row-12b8c050" height="40px"/>
+              <cl:gridcell std:sid="gh-cell-286688d1" rowindex="0" colindex="0" sortable="false" filterable="false"/>
+              <cl:gridcell std:sid="gh-cell-6ffb7d77" rowindex="0" colindex="1" targetcolumnname="INDEX" sortable="false" filterable="false" text="INDEX"/>
+              <cl:gridcell std:sid="gh-cell-4b8af019" rowindex="0" colindex="2" targetcolumnname="STEP_IDX" sortable="false" filterable="false" text="STEP_IDX"/>
+              <cl:gridcell std:sid="gh-cell-a746baec" rowindex="0" colindex="3" targetcolumnname="STEP_NM" sortable="false" filterable="false" text="STEP_NM"/>
+              <cl:gridcell std:sid="gh-cell-df97d532" rowindex="0" colindex="4" targetcolumnname="BIRTH_DAY" sortable="false" filterable="false" text="BIRTH_DAY"/>
+              <cl:gridcell std:sid="gh-cell-89c5aa74" rowindex="0" colindex="5" targetcolumnname="BIRTH_TIME" sortable="false" filterable="false" text="BIRTH_TIME"/>
+              <cl:gridcell std:sid="gh-cell-31f50fa7" rowindex="0" colindex="6" targetcolumnname="AR_SET" sortable="false" filterable="false" text="AR_SET"/>
+              <cl:gridcell std:sid="gh-cell-637fdcae" rowindex="0" colindex="7" targetcolumnname="AR_FLOW" sortable="false" filterable="false" text="AR_FLOW"/>
+              <cl:gridcell std:sid="gh-cell-4e7b1fce" rowindex="0" colindex="8" targetcolumnname="CF4_SET" sortable="false" filterable="false" text="CF4_SET"/>
+              <cl:gridcell std:sid="gh-cell-3f51c4b1" rowindex="0" colindex="9" targetcolumnname="CF4_FLOW" sortable="false" filterable="false" text="CF4_FLOW"/>
+            </cl:gridheader>
+            <cl:griddetail std:sid="gd-band-3b7f3d15">
+              <cl:gridrow std:sid="g-row-60fae65a" height="45px"/>
+              <cl:gridcell std:sid="gd-cell-8da017a7" rowindex="0" colindex="0" columntype="rowindex"/>
+              <cl:gridcell std:sid="gd-cell-3d19f137" rowindex="0" colindex="1" columnname="INDEX"/>
+              <cl:gridcell std:sid="gd-cell-277dcd38" rowindex="0" colindex="2" columnname="STEP_IDX"/>
+              <cl:gridcell std:sid="gd-cell-b05ce030" rowindex="0" colindex="3" columnname="STEP_NM"/>
+              <cl:gridcell std:sid="gd-cell-5ec949ff" rowindex="0" colindex="4" columnname="BIRTH_DAY"/>
+              <cl:gridcell std:sid="gd-cell-a7969657" rowindex="0" colindex="5" columnname="BIRTH_TIME"/>
+              <cl:gridcell std:sid="gd-cell-5148ca25" rowindex="0" colindex="6" columnname="AR_SET"/>
+              <cl:gridcell std:sid="gd-cell-d0386b91" rowindex="0" colindex="7" columnname="AR_FLOW"/>
+              <cl:gridcell std:sid="gd-cell-e88b3d2e" rowindex="0" colindex="8" columnname="CF4_SET"/>
+              <cl:gridcell std:sid="gd-cell-83873fee" rowindex="0" colindex="9" columnname="CF4_FLOW"/>
+            </cl:griddetail>
+          </cl:grid>
+          <cl:xylayout std:sid="xylayout-4eec427e"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-9901839a" text="Eventlog of Process">
+        <cl:group std:sid="group-ee0dc533">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-fb0a3c2a" class="search-box">
+            <cl:xylayoutdata std:sid="xyl-data-b55e0ae8" top="10px" right="10px" left="10px" height="82px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+            <cl:output std:sid="output-5f41e4b5" class="label" value="Cassette ID">
+              <cl:formdata std:sid="f-data-872f03ea" row="0" col="0"/>
+            </cl:output>
+            <cl:inputbox std:sid="i-box-c8738e02" id="ipb11" value="U">
+              <cl:formdata std:sid="f-data-7a0e83c7" row="0" col="1"/>
+            </cl:inputbox>
+            <cl:output std:sid="output-92e0c292" class="label" value="Lot ID">
+              <cl:formdata std:sid="f-data-0b542b0c" row="1" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-99e88043" class="label" value="Wft/Ch./Rcp.">
+              <cl:formdata std:sid="f-data-4ceebf50" row="1" col="2"/>
+            </cl:output>
+            <cl:inputbox std:sid="i-box-5c9349d5" id="ipb12" value="">
+              <cl:formdata std:sid="f-data-098b21ef" row="1" col="1"/>
+            </cl:inputbox>
+            <cl:button std:sid="button-cea1601b" class="btn-dark" value="Search">
+              <cl:formdata std:sid="f-data-dcaeccd6" row="1" col="6"/>
+            </cl:button>
+            <cl:inputbox std:sid="i-box-28685672" id="ipb13">
+              <cl:formdata std:sid="f-data-1750f648" row="1" col="3" rowspan="1" colspan="2"/>
+            </cl:inputbox>
+            <cl:formlayout std:sid="f-layout-6e2d753b" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+              <cl:rows length="30"/>
+              <cl:rows length="30"/>
+              <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" minlength="0"/>
+              <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="100" autoSizing="false" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:grid std:sid="grid-284beac3" id="grd4" datasetid="dsProcessEventList">
+            <cl:xylayoutdata std:sid="xyl-data-df9cce59" top="102px" right="10px" bottom="102px" left="10px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+            <cl:gridcolumn std:sid="g-column-dbdf6464" width="50px"/>
+            <cl:gridcolumn std:sid="g-column-08097678"/>
+            <cl:gridcolumn std:sid="g-column-79ffc667"/>
+            <cl:gridcolumn std:sid="g-column-9ec57363"/>
+            <cl:gridcolumn std:sid="g-column-f5883d36"/>
+            <cl:gridheader std:sid="gh-band-616b3da9">
+              <cl:gridrow std:sid="g-row-5f1945ca" height="40px"/>
+              <cl:gridcell std:sid="gh-cell-307db9c0" rowindex="0" colindex="0" sortable="false" filterable="false"/>
+              <cl:gridcell std:sid="gh-cell-dd398d1b" rowindex="0" colindex="1" targetcolumnname="DATE_TIME" sortable="false" filterable="false" text="DATE_TIME"/>
+              <cl:gridcell std:sid="gh-cell-9f014478" rowindex="0" colindex="2" targetcolumnname="SUBSYSTEM" sortable="false" filterable="false" text="SUBSYSTEM"/>
+              <cl:gridcell std:sid="gh-cell-2dc8d44d" rowindex="0" colindex="3" targetcolumnname="LOT_ID" sortable="false" filterable="false" text="LOT_ID"/>
+              <cl:gridcell std:sid="gh-cell-bf61650a" rowindex="0" colindex="4" targetcolumnname="MESSAGE" sortable="false" filterable="false" text="MESSAGE"/>
+            </cl:gridheader>
+            <cl:griddetail std:sid="gd-band-0c557e85">
+              <cl:gridrow std:sid="g-row-8bf7c50d" height="45px"/>
+              <cl:gridcell std:sid="gd-cell-52e9d21b" rowindex="0" colindex="0" columntype="rowindex"/>
+              <cl:gridcell std:sid="gd-cell-36d34866" rowindex="0" colindex="1" columnname="DATE_TIME"/>
+              <cl:gridcell std:sid="gd-cell-8cd3c039" rowindex="0" colindex="2" columnname="SUBSYSTEM"/>
+              <cl:gridcell std:sid="gd-cell-886c4fa4" rowindex="0" colindex="3" columnname="LOT_ID"/>
+              <cl:gridcell std:sid="gd-cell-1f4e1134" rowindex="0" colindex="4" columnname="MESSAGE"/>
+            </cl:griddetail>
+          </cl:grid>
+          <cl:xylayout std:sid="xylayout-c4276c7f"/>
+        </cl:group>
+      </cl:tabitem>
+    </cl:tabfolder>
+    <cl:xylayout std:sid="xylayout-701e2f5c"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

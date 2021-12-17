@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-12b2c15e" version="1.0.0.0">
+  <head std:sid="head-d242cdc7">
+    <title>SideMenu</title>
+    <screen std:sid="screen-ac264429" id="default" height="768px" minwidth="1440px" name="default" width="1440px"/>
+    <screen std:sid="screen-2b7e3577" id="tablet" height="768px" maxwidth="1439px" minwidth="800px" name="tablet" width="800px"/>
+    <screen std:sid="screen-51d96af3" id="mobile" height="768px" maxwidth="799px" name="mobile" width="600px"/>
+    <cl:model std:sid="model-e97dbed9">
+      <cl:dataset std:sid="d-set-7592c062" id="menuData">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="id"/>
+          <cl:datacolumn name="title"/>
+          <cl:datacolumn name="icon"/>
+          <cl:datacolumn name="app"/>
+          <cl:datacolumn name="parent"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[examples]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[예제]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[show-case]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[쇼 케이스]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[examples]]></cl:datavalue>
+            <cl:datavalue columnname="icon"><![CDATA[images/flower.png]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[dash-board]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[대시보드]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[show-case]]></cl:datavalue>
+            <cl:datavalue columnname="app"><![CDATA[dashboard/Dashboard]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[floating-section]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[플로팅 섹션 헤더]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[show-case]]></cl:datavalue>
+            <cl:datavalue columnname="app"><![CDATA[floating-section-header/Scroll]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[scroll]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[스크롤]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[show-case]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[scroll-content-fetch]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[컨텐츠 페치]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[scroll]]></cl:datavalue>
+            <cl:datavalue columnname="app"><![CDATA[scrolls/bottom-fetch]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[scroll-reveal]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[리빌 애니메이션]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[scroll]]></cl:datavalue>
+            <cl:datavalue columnname="app"><![CDATA[scrolls/Reveal]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[field-ani]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[필드 애니메이션]]></cl:datavalue>
+            <cl:datavalue columnname="app"><![CDATA[animations/field-animation]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[show-case]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[form-valid]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[폼 벨리데이션]]></cl:datavalue>
+            <cl:datavalue columnname="app"><![CDATA[animations/form-animation]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[show-case]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[animations]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[애니메이션]]></cl:datavalue>
+            <cl:datavalue columnname="icon"><![CDATA[images/star.png]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[examples]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[content1]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[컨텐트 애니메이션1]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[animations]]></cl:datavalue>
+            <cl:datavalue columnname="app"><![CDATA[animations/content-animation-1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[content2]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[컨텐트 애니메이션 2]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[animations]]></cl:datavalue>
+            <cl:datavalue columnname="app"><![CDATA[animations/content-animation-2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[auto-animate]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[자동 애니메이션]]></cl:datavalue>
+            <cl:datavalue columnname="app"><![CDATA[animations/auto-animate]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[animations]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[css-ani]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[CSS  애니메이션]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[animations]]></cl:datavalue>
+            <cl:datavalue columnname="app"><![CDATA[animations/CSS-Animation]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[number-ani]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[숫자 애니메이션]]></cl:datavalue>
+            <cl:datavalue columnname="app"><![CDATA[animations/NumberAnimation]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[animations]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[others]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[기타 예제]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[examples]]></cl:datavalue>
+            <cl:datavalue columnname="icon"><![CDATA[images/map.png]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[flow-layout]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[플로우 레이아웃]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[others]]></cl:datavalue>
+            <cl:datavalue columnname="app"><![CDATA[layouts/FlowLayout]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[fr-margin]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[FR 마진]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[others]]></cl:datavalue>
+            <cl:datavalue columnname="app"><![CDATA[layouts/FormLayoutFRMargin]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[drill-down]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[드릴 다운]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[others]]></cl:datavalue>
+            <cl:datavalue columnname="app"><![CDATA[drill-down/drill-down-1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[swipe-transition]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[스와이프 트랜지션]]></cl:datavalue>
+            <cl:datavalue columnname="app"><![CDATA[transition/SwipeTransition]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[others]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[new]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[신규]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[new-items]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[예제]]></cl:datavalue>
+            <cl:datavalue columnname="icon"><![CDATA[images/star.png]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[new]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[auto-size-tab]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[자동 크기 탭 폴더]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[new-items]]></cl:datavalue>
+            <cl:datavalue columnname="app"><![CDATA[layouts/AutoSizingTab]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[slide]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[슬라이드]]></cl:datavalue>
+            <cl:datavalue columnname="app"><![CDATA[layouts/Slidify]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[new-items]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[form-float]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[폼 플로팅]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[new-items]]></cl:datavalue>
+            <cl:datavalue columnname="app"><![CDATA[floating-section-header/FormFloat]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[scroll-appear-effect]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[스크롤 등장 효과]]></cl:datavalue>
+            <cl:datavalue columnname="app"><![CDATA[scrolls/NewVisibleHighlight]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[new-items]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[new-examples]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[신규 예제]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[new]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[custom-combo]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[커스텀 콤보]]></cl:datavalue>
+            <cl:datavalue columnname="app"><![CDATA[customcombo/custom-combo]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[new-examples]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[hint-slider]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[힌트 슬라이더]]></cl:datavalue>
+            <cl:datavalue columnname="app"><![CDATA[hintslider/hintslider]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[new-examples]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[dynamic-form]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[다이나믹 플로우 폼]]></cl:datavalue>
+            <cl:datavalue columnname="app"><![CDATA[layouts/DynamicFlowFormExample]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[new-examples]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[grid-header-snippet]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[그리드 + 스니펫]]></cl:datavalue>
+            <cl:datavalue columnname="app"><![CDATA[grids/GroupHTML]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[new-examples]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[bixby]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[Bixby Like]]></cl:datavalue>
+            <cl:datavalue columnname="app"><![CDATA[animations/Bixby-Like]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[new-examples]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[menu-item]]></cl:datavalue>
+            <cl:datavalue columnname="title"><![CDATA[메뉴 아이템]]></cl:datavalue>
+            <cl:datavalue columnname="icon"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="app"><![CDATA[menuitem/menuitem]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[new-examples]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="메인 사이드 메뉴">
+      <cl:event name="app-select" type="cpr.events.CUIEvent"/>
+      <cl:event name="enter" type="cpr.events.CUIEvent"/>
+      <cl:event name="leave" type="cpr.events.CUIEvent"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-ea29f616" class="side-menu-wrapper" style="top:0px; left:0px; width:300px; height:300px;">
+    <cl:listener std:sid="listener-dbe08b9b" handler="onBodyClick" name="click"/>
+    <cl:listener std:sid="listener-abb9d846" handler="onBodyMouseenter" name="mouseenter"/>
+    <cl:listener std:sid="listener-fadaabae" handler="onBodyMouseleave" name="mouseleave"/>
+    <cl:uicontrolshell std:sid="uic-shell-3146f193" id="menuShell" class="side-menu cl-unselectable cl-scrollbar">
+      <cl:listener std:sid="listener-2890aa26" handler="onMenuShellLoad" name="load"/>
+      <cl:listener std:sid="listener-72a712c4" handler="onMenuShellInit" name="init"/>
+      <cl:verticaldata autosize="height" height="300px" width="300px"/>
+    </cl:uicontrolshell>
+    <cl:verticallayout/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

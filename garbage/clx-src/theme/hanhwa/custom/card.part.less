@@ -1,0 +1,29 @@
+@import "../settings.part.less";
+@import "../custom-settings.part.less";
+
+.cl-container.card {
+	background-color : @color-card-accident-title-bg-color;
+	border-radius : 4px;
+	
+	.cl-output.card-title {
+		padding : 0px 0px 0px 5px;
+		font-size : 13px;
+		color : @white;
+		font-weight : @cl-font-bold;
+	}
+	
+	.cl-output.card-value {
+		font-size : 16px;
+		font-weight : @cl-font-bold;
+		text-align : right;
+	}
+	
+	.cl-output.card-usage {
+		background : url(images/icon_arrow.png) no-repeat right center;
+		color : #C7C7C7;
+		font-size : 12px;
+		font-weight : @cl-font-light;
+		text-align : right;
+		padding-right : 30px;
+	}
+}

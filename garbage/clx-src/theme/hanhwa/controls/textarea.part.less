@@ -1,0 +1,105 @@
+@import "../settings.part.less";
+@import "../custom-settings.part.less";
+
+/* 텍스트 에리어 */
+.cl-textarea {
+	font: @default-font;
+	border: 1px solid @color-input-border;
+	color: @color-text-black-01;
+	background-image : none;
+	border-radius : 3px;
+	font-size : @font-small-text-r;
+	
+	/* 텍스트 에리어 텍스트 */
+	.cl-text {
+		padding : 10px;
+		//overflow: auto
+	}
+
+	/* 텍스트 에리어 - disabled */
+	&.cl-disabled {
+		border-color: @color-input-disabled-border;
+		background-color: @color-input-disabled;
+		color: @disabled-text-color;
+	}
+
+	/* 텍스트 에리어 - focus*/
+	&.cl-focus {
+		border-color: @color-input-focus-border;
+	}
+	
+	&:hover, &.cl-hover {
+		border-color : @color-input-hover-border;
+	}
+}
+
+/* 텍스트 에리어 */
+.cl-textarea.dark {
+	background-color : @color-input-bg-dark;
+	border: 1px solid @color-input-bg-dark;
+	color: @color-text-white-01;
+	
+	/* 텍스트 에리어 텍스트 */
+	.cl-text {
+		padding : 10px;
+		//overflow: auto
+	}
+
+	/* 텍스트 에리어 - disabled */
+	&.cl-disabled {
+		border-color: @color-input-disabled-border-dark;
+		background-color: @color-input-disabled-dark;
+		color: @disabled-text-color;
+	}
+
+	/* 텍스트 에리어 - focus*/
+	&.cl-focus {
+		border-color: @color-input-focus-border-dark;
+	}
+	
+	&:hover, &.cl-hover {
+		border-color : @color-input-hover-border-dark;
+	}
+}
+
+/** (20190923) 텍스트에리어 placeholder 스타일 - 류다은 추가 */
+
+.cl-textarea ::-webkit-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-text-black-03 !important;
+}
+
+.cl-textarea :-ms-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-text-black-03 !important;
+}
+
+.cl-textarea :-mos-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-text-black-03 !important;
+}
+
+.cl-textarea ::-mos-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-text-black-03 !important;
+}
+
+.cl-textarea.dark ::-webkit-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-text-white-04 !important;
+}
+
+.cl-textarea.dark :-ms-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-text-white-04 !important;
+}
+
+.cl-textarea.dark :-mos-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-text-white-04 !important;
+}
+
+.cl-textarea.dark ::-mos-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-text-white-04 !important;
+}

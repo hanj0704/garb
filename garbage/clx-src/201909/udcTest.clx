@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-cabf8007" version="1.0.0.0">
+  <head std:sid="head-a73e6720">
+    <title>udcTest</title>
+    <screen std:sid="screen-605e30f6" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-e116fc4c" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-7b4779fe" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-13f0fd28">
+      <cl:dataset std:sid="d-set-9c2f0221" id="ds1">
+        <cl:dataview std:sid="d-view-7ed26376" id="dv1" filtercondition="idx &lt; 13"/>
+        <cl:datacolumnlist>
+          <cl:datacolumn name="label"/>
+          <cl:datacolumn name="value"/>
+          <cl:datacolumn name="parentValue"/>
+          <cl:datacolumn datatype="number" name="idx"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="value">1</cl:datavalue>
+            <cl:datavalue columnname="label">교과</cl:datavalue>
+            <cl:datavalue columnname="parentValue"/>
+            <cl:datavalue columnname="idx"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="value"><![CDATA[qq]]></cl:datavalue>
+            <cl:datavalue columnname="label">교과목관리</cl:datavalue>
+            <cl:datavalue columnname="parentValue">1</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="value"><![CDATA[ww]]></cl:datavalue>
+            <cl:datavalue columnname="label">교과운영현환</cl:datavalue>
+            <cl:datavalue columnname="parentValue">1</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="value"><![CDATA[ee]]></cl:datavalue>
+            <cl:datavalue columnname="label">qqqqqqqq</cl:datavalue>
+            <cl:datavalue columnname="parentValue">1</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[4]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="value"><![CDATA[rr]]></cl:datavalue>
+            <cl:datavalue columnname="label">wwwwww</cl:datavalue>
+            <cl:datavalue columnname="parentValue">1</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[5]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="value"><![CDATA[tt]]></cl:datavalue>
+            <cl:datavalue columnname="label">eeeeeee</cl:datavalue>
+            <cl:datavalue columnname="parentValue">1</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[6]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="value"><![CDATA[yy]]></cl:datavalue>
+            <cl:datavalue columnname="label">rrrrrrr</cl:datavalue>
+            <cl:datavalue columnname="parentValue">1</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[7]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="value"><![CDATA[uu]]></cl:datavalue>
+            <cl:datavalue columnname="label">ttttttt</cl:datavalue>
+            <cl:datavalue columnname="parentValue">1</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[8]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="value"><![CDATA[ii]]></cl:datavalue>
+            <cl:datavalue columnname="label">yyyyyyy</cl:datavalue>
+            <cl:datavalue columnname="parentValue">1</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[9]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="value"><![CDATA[oo]]></cl:datavalue>
+            <cl:datavalue columnname="label">aaaaaa</cl:datavalue>
+            <cl:datavalue columnname="parentValue">1</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[10]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="value"><![CDATA[pp]]></cl:datavalue>
+            <cl:datavalue columnname="label">ssssss</cl:datavalue>
+            <cl:datavalue columnname="parentValue">1</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[11]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="value"><![CDATA[aa]]></cl:datavalue>
+            <cl:datavalue columnname="label">DDDDDD</cl:datavalue>
+            <cl:datavalue columnname="parentValue">1</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[12]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="value"><![CDATA[ss]]></cl:datavalue>
+            <cl:datavalue columnname="label">FFFFFF</cl:datavalue>
+            <cl:datavalue columnname="parentValue">1</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[13]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="value"><![CDATA[dd]]></cl:datavalue>
+            <cl:datavalue columnname="label">GGGGGG</cl:datavalue>
+            <cl:datavalue columnname="parentValue">1</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[14]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="value"><![CDATA[ff]]></cl:datavalue>
+            <cl:datavalue columnname="label">HHHHHHH</cl:datavalue>
+            <cl:datavalue columnname="parentValue">1</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[15]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="value">2</cl:datavalue>
+            <cl:datavalue columnname="label">수업</cl:datavalue>
+            <cl:datavalue columnname="parentValue"/>
+            <cl:datavalue columnname="idx"><![CDATA[16]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">담당교수/시간표관리</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[gg]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">2</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[17]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">가으이실관리</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[hh]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">2</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[18]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">수업계획서관리</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[jj]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">2</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[19]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">수업평가</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[kk]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">2</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[20]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">휴/보강,출강 관리</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[ll]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">2</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[21]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">강의운영현황</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[zz]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">2</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[22]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">병무</cl:datavalue>
+            <cl:datavalue columnname="value">3</cl:datavalue>
+            <cl:datavalue columnname="parentValue"/>
+            <cl:datavalue columnname="idx"><![CDATA[23]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">입시관리</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[xx]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[24]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">수강관리</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[x]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[25]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">수강정보</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[c]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[26]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">승진평가</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[cc]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[27]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">수험평가</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[v]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[28]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">기준정보관리</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[vv]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[29]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">코드관리</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[b]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[30]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">정기편가</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[bb]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[31]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">자기평가서</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[n]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[32]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">개편안내/매뉴얼</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[nn]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[33]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">입시관리</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[m]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[34]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">수강관리</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[mm]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[35]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">수강정보</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[mmm]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[36]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">승진평가</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[nnn]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[37]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">수험평가</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[bbb]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[38]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">기준정보관리</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[vvv]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[39]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">코드관리</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[ccc]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[40]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">정기편가</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[xxx]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[41]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">자기평가서</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[zzz]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[42]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">개편안내/매뉴얼</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[aaa]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[43]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">입시관리</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[sss]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[44]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">수강관리</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[ddd]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[45]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">수강정보</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[fff]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[46]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">승진평가</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[ggg]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[47]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">수험평가</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[hhh]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[48]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">기준정보관리</cl:datavalue>
+            <cl:datavalue columnname="value">value17</cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[49]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">코드관리</cl:datavalue>
+            <cl:datavalue columnname="value">value18</cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[50]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">정기편가</cl:datavalue>
+            <cl:datavalue columnname="value">value19</cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[51]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">자기평가서</cl:datavalue>
+            <cl:datavalue columnname="value">value20</cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[52]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">개편안내/매뉴얼</cl:datavalue>
+            <cl:datavalue columnname="value">value21</cl:datavalue>
+            <cl:datavalue columnname="parentValue">3</cl:datavalue>
+            <cl:datavalue columnname="idx"><![CDATA[53]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-f85b5080" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:udc std:sid="ud-control-16e35126" type="udc.hycu">
+      <cl:xylayoutdata std:sid="xyl-data-6138b926" height="400px" horizontalAnchor="LEFT" left="12px" top="13px" verticalAnchor="TOP" width="1000px"/>
+      <cl:property name="dataS" type="control" value="ds1"/>
+    </cl:udc>
+    <cl:xylayout std:sid="xylayout-5313b2a9"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,259 @@
+@import "../settings.part.less";
+@import "../custom-settings.part.less";
+
+.custom-tab-header {
+	background-image : linear-gradient(transparent ~'calc(100% - 1px)', @color-tabitem-border ~'calc(100% - 1px)');
+	
+	.cl-button {
+		background-color : @color-tabitem-bg;
+		border : solid 1px @color-tabitem-border;
+		border-radius : 0px;
+		color : @color-tabitem-text;
+		font-size : @font-small-text-r;
+		font-weight : @font-bold;
+		
+		&:hover, .cl-hover, &:active, .cl-active {
+			background: @color-tabitem-bg;
+			border : solid 1px @color-tabitem-border;
+			color : @color-tabitem-text;
+			
+			&.selected {
+				background-color : @color-tabitem-selected-bg;
+				color : @color-tabitem-selected-text;
+			}
+		}
+		
+		&.selected {
+			background-color : @color-tabitem-selected-bg;
+			border : solid @color-tabitem-border;
+			border-width : 1px 1px 0px 1px;
+			border-top-color : @color-tabitem-selected-border;
+			color : @color-tabitem-selected-text;
+			box-shadow : inset 0px 2px 0px 0px rgba(234, 114, 36, 1);
+			-webkit-box-shadow : inset 0px 2px 0px 0px rgba(234, 114, 36, 1);
+			-moz-box-shadow : inset 0px 2px 0px 0px rgba(234, 114, 36, 1);
+		}
+	
+	}
+	
+//	&.center, &.left {
+//		.cl-button {
+//			padding-left: 10px;
+//			padding-right: 10px;
+//		}
+//	}
+	
+	.cl-button.btn-add-tabitem {
+		background-color : transparent;
+		background-image : url(images/icon/icon_tab_add.png);
+		background-repeat : no-repeat;
+		background-position : center;
+		background-size : 14px;
+		border : none;
+		cursor : default;
+		
+		.cl-text {
+			padding : 0px 10px !important;
+			
+			&:after {
+				content : "";
+				display : block;
+				position : absolute;
+				top : 0;
+				right : 10px;
+				bottom : 0;
+				left : 10px;
+				cursor : pointer;
+			}
+		}
+		
+		&:not(.cl-disabled):hover, &:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+			background-image : url(images/icon/icon_tab_add.png);
+			background-repeat : no-repeat;
+			background-position : center;
+			background-size : 14px;
+		}
+	}
+}
+
+.custom-tab-header.dark {
+	background-image : linear-gradient(transparent ~'calc(100% - 1px)', @color-black-04 ~'calc(100% - 1px)');
+	
+	.cl-button {
+		background-color : @color-black-02;
+		border : solid 1px @color-black-05;
+		border-radius : 0px;
+		color : @color-text-white-01;
+		font-size : @font-small-text-r;
+		font-weight : @font-bold;
+		
+		&:hover, .cl-hover, &:active, .cl-active {
+			background: @color-black-03;
+			border : solid 1px @color-black-05;
+			color : @color-text-white-01;
+			
+			&.selected {
+				background-color : @color-black-03;
+				color : @color-text-white-01;
+			}
+		}
+		
+		&.selected {
+			background-color : @color-black-03;
+			border : solid @color-black-05;
+			border-width : 1px 1px 0px 1px;
+			border-top-color : @color-black-03;
+			color : @color-text-white-01;
+			box-shadow : none;
+			-webkit-box-shadow : none;
+			-moz-box-shadow : none;
+		}
+	}
+	
+//	&.center, &.left {
+//		.cl-button {
+//			padding-left: 10px;
+//			padding-right: 10px;
+//		}
+//	}
+	
+	.cl-button.btn-add-tabitem {
+		background-color : transparent;
+		background-image : url(images/icon/icon_tab_add.png);
+		background-repeat : no-repeat;
+		background-position : center;
+		background-size : 14px;
+		border : none;
+		cursor : default;
+		
+		.cl-text {
+			padding : 0px 10px !important;
+			
+			&:after {
+				content : "";
+				display : block;
+				position : absolute;
+				top : 0;
+				right : 10px;
+				bottom : 0;
+				left : 10px;
+				cursor : pointer;
+			}
+		}
+		
+		&:not(.cl-disabled):hover, &:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+			background-image : url(images/icon/icon_tab_add.png);
+			background-repeat : no-repeat;
+			background-position : center;
+			background-size : 14px;
+		}
+	}
+}
+
+.custom-tab-header-type1 {
+	background-image : linear-gradient(transparent ~'calc(100% - 1px)', @color-tabitem-border ~'calc(100% - 1px)');
+	
+	.cl-button {
+		background-color : @color-tabitem-bg;
+		border : solid 1px @color-tabitem-border;
+		border-radius : 0px;
+		color : @color-tabitem-text;
+		font-size : @font-small-text-r;
+		font-weight : @font-bold;
+		min-width : 60px;
+		
+		&:hover, .cl-hover, &:active, .cl-active {
+			background: @color-tabitem-bg;
+			border : solid 1px @color-tabitem-border;
+			color : @color-tabitem-text;
+			
+			&.selected {
+//				background-color : @color-tabitem-selected-bg;
+//				color : @color-tabitem-selected-text;
+			}
+		}
+		
+		&.selected {
+			background-color : @color-tabitem-selected-bg;
+			border : solid @color-tabitem-border;
+			border-width : 1px 1px 0px 1px;
+			border-top-color : @color-tabitem-selected-border;
+			color : @color-tabitem-selected-text;
+			box-shadow : inset 0px 2px 0px 0px rgba(234, 114, 36, 1);
+			-webkit-box-shadow : inset 0px 2px 0px 0px rgba(234, 114, 36, 1);
+			-moz-box-shadow : inset 0px 2px 0px 0px rgba(234, 114, 36, 1);
+		}
+		
+		&.fill-up {
+			background-color : @color-primary-01;
+			color : @white ;
+		}
+	}
+	
+//	&.center, &.left {
+//		.cl-button {
+//			padding-left: 10px;
+//			padding-right: 10px;
+//		}
+//	}
+	
+	.cl-button.btn-add-tabitem {
+		background-color : transparent;
+		background-image : url(images/icon/icon_tab_add.png);
+		background-repeat : no-repeat;
+		background-position : center;
+		background-size : 14px;
+		border : none;
+		cursor : default;
+		
+		.cl-text {
+			padding : 0px 10px !important;
+			
+			&:after {
+				content : "";
+				display : block;
+				position : absolute;
+				top : 0;
+				right : 10px;
+				bottom : 0;
+				left : 10px;
+				cursor : pointer;
+			}
+		}
+		
+		&:not(.cl-disabled):hover, &:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+			background-image : url(images/icon/icon_tab_add.png);
+			background-repeat : no-repeat;
+			background-position : center;
+			background-size : 14px;
+		}
+	}
+	
+	.cl-button.nav-button {
+		min-width : 40px;
+	}
+	
+	/* 이전으로 스크롤 버튼 */
+		.cl-tabfolder-prev {
+			border: solid 1px @default-border-color;
+			background-image: url(images/tab_on_arrow_left.png);
+			background-size : cover;
+
+			/* 이전으로 스크롤 버튼 - disabled */
+			&.cl-disabled {
+			 	background-image: url(images/tab_arrow_left.png);
+			}
+		}
+
+		/* 다음으로 스크롤 버튼 */
+		.cl-tabfolder-next {
+			border: solid 1px @default-border-color;
+			background-image: url(images/tab_on_arrow_right.png);
+			background-size : cover;
+
+			/* 다음으로 스크롤 버튼 - disabled */
+			&.cl-disabled {
+				background-image: url(images/tab_arrow_right.png);
+			}
+		}
+}

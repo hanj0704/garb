@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-8266353f" version="1.0.0.0">
+  <head std:sid="head-683b1721">
+    <title>commonTemplate</title>
+    <screen std:sid="screen-6bea787c" id="content-default" name="content-default" minwidth="1324px" width="1324px" height="768px" active="true"/>
+    <screen std:sid="screen-3c9190dd" id="content-tablet" name="content-tablet" maxwidth="1323px" width="700px" height="768px" active="false"/>
+    <cl:model std:sid="model-f6e96828">
+      <cl:dataset std:sid="d-set-42a31937" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-c42316eb" name="column1"/>
+          <cl:datacolumn std:sid="d-column-d0d9eb84" name="column2"/>
+          <cl:datacolumn std:sid="d-column-2152766a" name="column3"/>
+          <cl:datacolumn std:sid="d-column-934d51ec" name="column4"/>
+          <cl:datacolumn std:sid="d-column-9c4fb6c9" name="column5"/>
+          <cl:datacolumn std:sid="d-column-5fe0f44a" name="column6"/>
+          <cl:datacolumn std:sid="d-column-632fd522" name="column7"/>
+          <cl:datacolumn std:sid="d-column-d12be94c" name="column8"/>
+          <cl:datacolumn std:sid="d-column-2364859c" name="column9"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column11</cl:datavalue>
+            <cl:datavalue columnname="column2">column21</cl:datavalue>
+            <cl:datavalue columnname="column3">column31</cl:datavalue>
+            <cl:datavalue columnname="column4">column41</cl:datavalue>
+            <cl:datavalue columnname="column5">column51</cl:datavalue>
+            <cl:datavalue columnname="column6">column61</cl:datavalue>
+            <cl:datavalue columnname="column7">column71</cl:datavalue>
+            <cl:datavalue columnname="column8">column81</cl:datavalue>
+            <cl:datavalue columnname="column9">column91</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column12</cl:datavalue>
+            <cl:datavalue columnname="column2">column22</cl:datavalue>
+            <cl:datavalue columnname="column3">column32</cl:datavalue>
+            <cl:datavalue columnname="column4">column42</cl:datavalue>
+            <cl:datavalue columnname="column5">column52</cl:datavalue>
+            <cl:datavalue columnname="column6">column62</cl:datavalue>
+            <cl:datavalue columnname="column7">column72</cl:datavalue>
+            <cl:datavalue columnname="column8">column82</cl:datavalue>
+            <cl:datavalue columnname="column9">column92</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-2bf763d3" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-7b9a6e1c" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-37f11ace">
+      <cl:responsivexylayoutdata std:sid="rxyl-data-b54fa981">
+        <cl:xylayoutdata std:sid="sxyl-data-79731aa3" top="10px" left="10px" width="1004px" height="750px" horizontalAnchor="LEFT" verticalAnchor="TOP" screenid="content-default"/>
+        <cl:xylayoutdata std:sid="sxyl-data-22ca4c59" top="10px" right="5px" left="5px" height="750px" horizontalAnchor="BOTH" verticalAnchor="TOP" screenid="content-tablet"/>
+      </cl:responsivexylayoutdata>
+      <cl:group std:sid="group-dc54c5ce" class="search-box">
+        <cl:attribute name="useConstraintHintMode" value="true"/>
+        <cl:verticaldata std:sid="v-data-bb08a934" width="1004px" height="45px"/>
+        <cl:output std:sid="output-5cac395e" class="label pr-1" value="Trsc Br.">
+          <cl:formdata std:sid="f-data-22d273f7" row="0" col="0"/>
+        </cl:output>
+        <cl:combobox std:sid="c-box-b2ed2597" id="cmbBlngBrNo">
+          <cl:attribute name="dvCd" value="BR_CD:0000"/>
+          <cl:formdata std:sid="f-data-0a6acc48" row="0" col="1" rowspan="1" colspan="3"/>
+        </cl:combobox>
+        <cl:output std:sid="output-e31a1b2f" class="label pr-1" value="Title Type">
+          <cl:formdata std:sid="f-data-cd853852" row="0" col="4"/>
+        </cl:output>
+        <cl:combobox std:sid="c-box-f398d3a6" id="cmb2">
+          <cl:attribute name="dvCd" value="USR_POSN_CD:0000:ALL"/>
+          <cl:formdata std:sid="f-data-1935f3dd" row="0" col="5" rowspan="1" colspan="3"/>
+        </cl:combobox>
+        <cl:output std:sid="output-f7af1f53" class="label pr-1" value="User ID">
+          <cl:formdata std:sid="f-data-1710826d" row="0" col="8"/>
+        </cl:output>
+        <cl:searchinput std:sid="s-input-e6cf1624" id="inpUserId" style="font-family:sans-serif;">
+          <cl:formdata std:sid="f-data-5c4bfa8a" row="0" col="9" rowspan="1" colspan="3"/>
+        </cl:searchinput>
+        <cl:button std:sid="button-1dc28539" id="btn1" value="Search">
+          <cl:formdata std:sid="f-data-f1c83962" halign="CENTER" valign="CENTER" row="0" col="12"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-12efd10c" top-margin="1fr" right-margin="5px" bottom-margin="1fr" left-margin="5px">
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="100" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="100" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="100" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="140" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-f079040b" class="edit-group">
+        <cl:verticaldata std:sid="v-data-4ed4cba9" width="1004px" height="45px"/>
+        <cl:button std:sid="button-ad085573" id="btnAdd" value="Add">
+          <cl:formdata std:sid="f-data-f75bfa16" halign="CENTER" valign="CENTER" row="0" col="2"/>
+        </cl:button>
+        <cl:button std:sid="button-ed227212" id="btnUpd" value="Update">
+          <cl:formdata std:sid="f-data-d846f4e9" halign="LEFT" valign="CENTER" row="0" col="3"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-930e0daa" top-margin="1fr" right-margin="5px" bottom-margin="1fr" left-margin="5px">
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:grid std:sid="grid-869f5a66" id="grd1" datasetid="ds1">
+        <cl:verticaldata std:sid="v-data-da1364ab" width="360px" height="142px"/>
+        <cl:gridcolumn std:sid="g-column-05198032"/>
+        <cl:gridcolumn std:sid="g-column-669e9d43"/>
+        <cl:gridcolumn std:sid="g-column-01c95831"/>
+        <cl:gridcolumn std:sid="g-column-39e9fc92"/>
+        <cl:gridcolumn std:sid="g-column-884f15d9"/>
+        <cl:gridcolumn std:sid="g-column-98c5d93e"/>
+        <cl:gridcolumn std:sid="g-column-343573e8"/>
+        <cl:gridcolumn std:sid="g-column-c8d94a47"/>
+        <cl:gridcolumn std:sid="g-column-eb94bc73"/>
+        <cl:gridheader std:sid="gh-band-69b53768">
+          <cl:gridrow std:sid="g-row-bb91b849"/>
+          <cl:gridcell std:sid="gh-cell-5c55d547" rowindex="0" colindex="0" targetcolumnname="column1" sortable="false" filterable="false" text="column1"/>
+          <cl:gridcell std:sid="gh-cell-c13425ff" rowindex="0" colindex="1" targetcolumnname="column2" sortable="false" filterable="false" text="column2"/>
+          <cl:gridcell std:sid="gh-cell-c314ba23" rowindex="0" colindex="2" targetcolumnname="column3" sortable="false" filterable="false" text="column3"/>
+          <cl:gridcell std:sid="gh-cell-294f9f07" rowindex="0" colindex="3" targetcolumnname="column4" sortable="false" filterable="false" text="column4"/>
+          <cl:gridcell std:sid="gh-cell-0c1de2d1" rowindex="0" colindex="4" targetcolumnname="column5" sortable="false" filterable="false" text="column5"/>
+          <cl:gridcell std:sid="gh-cell-0e28c8bb" rowindex="0" colindex="5" targetcolumnname="column6" sortable="false" filterable="false" text="column6"/>
+          <cl:gridcell std:sid="gh-cell-1e5cc63f" rowindex="0" colindex="6" targetcolumnname="column7" sortable="false" filterable="false" text="column7"/>
+          <cl:gridcell std:sid="gh-cell-1c2c9849" rowindex="0" colindex="7" targetcolumnname="column8" sortable="false" filterable="false" text="column8"/>
+          <cl:gridcell std:sid="gh-cell-7e9865de" rowindex="0" colindex="8" targetcolumnname="column9" sortable="false" filterable="false" text="column9"/>
+        </cl:gridheader>
+        <cl:griddetail std:sid="gd-band-4eae9bda">
+          <cl:gridrow std:sid="g-row-c116339d"/>
+          <cl:gridcell std:sid="gd-cell-059c7879" rowindex="0" colindex="0" columnname="column1"/>
+          <cl:gridcell std:sid="gd-cell-ad423a61" rowindex="0" colindex="1" columnname="column2"/>
+          <cl:gridcell std:sid="gd-cell-d6b36b74" rowindex="0" colindex="2" columnname="column3"/>
+          <cl:gridcell std:sid="gd-cell-9b784415" rowindex="0" colindex="3" columnname="column4">
+            <cl:output std:sid="output-5185537a" class="tex-left pl-2" value="Output"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-310c6f5a" rowindex="0" colindex="4" columnname="column5"/>
+          <cl:gridcell std:sid="gd-cell-449d50cf" rowindex="0" colindex="5" columnname="column6"/>
+          <cl:gridcell std:sid="gd-cell-2174f7be" rowindex="0" colindex="6" columnname="column7"/>
+          <cl:gridcell std:sid="gd-cell-1ab4a499" rowindex="0" colindex="7" columnname="column8"/>
+          <cl:gridcell std:sid="gd-cell-dc75dc60" rowindex="0" colindex="8" columnname="column9"/>
+        </cl:griddetail>
+      </cl:grid>
+      <cl:group std:sid="group-c825957f" id="grd2" class="cl-form-group">
+        <cl:verticaldata std:sid="v-data-d8b8f466" width="1004px" height="427px"/>
+        <cl:output std:sid="output-b088fcba" id="lblUserId" class="label pr-1 required" value="User ID">
+          <cl:formdata std:sid="f-data-bcad7222" row="0" col="0"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-0b94d02b" id="ipbUserId" maxlength="7">
+          <cl:formdata std:sid="f-data-20bc4e06" row="0" col="1" rowspan="1" colspan="6"/>
+        </cl:inputbox>
+        <cl:button std:sid="button-edb8091c" id="btnDupChk" value="Duplicate Check">
+          <cl:formdata std:sid="f-data-a8838696" valign="CENTER" row="0" col="7" rowspan="1" colspan="4"/>
+        </cl:button>
+        <cl:output std:sid="output-e4287d62" id="lblUsrEngNm" class="fw-bold" value="User Name (Eng)">
+          <cl:formdata std:sid="f-data-7cd2459e" row="0" col="11"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-5b62e174" id="ipbUsrEngNm">
+          <cl:formdata std:sid="f-data-36340c40" row="0" col="12" rowspan="1" colspan="10"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-3b89b2c0" id="lblBlngBrNo" class="label pr-1" value="Transaction Branch">
+          <cl:formdata std:sid="f-data-26c37d2f" row="1" col="0"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-87fe91de" id="ipbBlngBrNo">
+          <cl:formdata std:sid="f-data-eff8580e" row="1" col="1" rowspan="1" colspan="10"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-1fc6237e" class="label pr-1" value="User Name (Local)">
+          <cl:formdata std:sid="f-data-b5d1e233" row="1" col="11"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-541f85c5" id="ipb1">
+          <cl:formdata std:sid="f-data-2c5c04f6" row="1" col="12" rowspan="1" colspan="10"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-5eae324b" id="lblTmlIstBrNo" class="label pr-1" value="Terminal Branch">
+          <cl:formdata std:sid="f-data-d8ba37db" row="2" col="0"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-053de85a" id="ipbTmlIstBrNo">
+          <cl:formdata std:sid="f-data-78dfbef6" row="2" col="1" rowspan="1" colspan="10"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-b84886f7" id="lblMbphNo" class="label pr-1" value="Mobile Phone No.">
+          <cl:formdata std:sid="f-data-1c4d0adf" row="2" col="11"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-13c56774" id="ipbMbphNo">
+          <cl:formdata std:sid="f-data-58c7368e" row="2" col="12" rowspan="1" colspan="10"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-f5c7b420" id="lblStCd" class="label pr-1" value="Status">
+          <cl:formdata std:sid="f-data-0d09d4f1" row="3" col="0"/>
+        </cl:output>
+        <cl:combobox std:sid="c-box-5e39ce36" id="cmbStCd">
+          <cl:attribute name="dvCd" value="LEDG_ST_CD:0000"/>
+          <cl:formdata std:sid="f-data-e744292d" row="3" col="1" rowspan="1" colspan="10"/>
+        </cl:combobox>
+        <cl:output std:sid="output-9dc34880" id="lblEmalAdr" class="label pr-1" value="Email Address">
+          <cl:formdata std:sid="f-data-6e91791d" row="3" col="11"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-ae8659ae" id="ipbEmalAdr">
+          <cl:formdata std:sid="f-data-efaac983" row="3" col="12" rowspan="1" colspan="10"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-ff809d0b" id="lblGrpId" class="label pr-1" value="Authority Group ID">
+          <cl:formdata std:sid="f-data-1cc9e7e5" row="4" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-beeeef9e" id="lblSnrId" class="label pr-1" value="Senior ID">
+          <cl:formdata std:sid="f-data-24117521" row="4" col="11"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-a0732fdf" id="ipbSnrId">
+          <cl:formdata std:sid="f-data-5204107e" row="4" col="12" rowspan="1" colspan="10"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-44bf7a23" id="lblUsrPosnCd" class="label pr-1" value="Title Type">
+          <cl:formdata std:sid="f-data-43685733" row="5" col="0"/>
+        </cl:output>
+        <cl:combobox std:sid="c-box-111af119" id="cmbUsrPosnCd">
+          <cl:attribute name="dvCd" value="USR_POSN_CD:0000"/>
+          <cl:formdata std:sid="f-data-570d44ba" row="5" col="1" rowspan="1" colspan="10"/>
+        </cl:combobox>
+        <cl:output std:sid="output-bad09e86" id="lblIpAdr" class="label pr-1" value="IP Address">
+          <cl:formdata std:sid="f-data-9496a165" row="5" col="11"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-d717cf8a" id="ipbIpAdr">
+          <cl:formdata std:sid="f-data-f93dc8b6" row="5" col="12" rowspan="1" colspan="10"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-dba30797" id="lblBussBrUpdAlwnYn" class="label pr-1" value="Change Branch Y/N">
+          <cl:formdata std:sid="f-data-08c3fa68" row="6" col="0"/>
+        </cl:output>
+        <cl:combobox std:sid="c-box-bdc6a48d" id="cmbBussBrUpdAlwnYn">
+          <cl:attribute name="dvCd" value="INP_MDTY_YN_CD:0000"/>
+          <cl:formdata std:sid="f-data-79b53951" row="6" col="1" rowspan="1" colspan="10"/>
+        </cl:combobox>
+        <cl:output std:sid="output-b78ada76" id="lblTmlDvCd" class="label pr-1" value="&#x9;Terminal Divison">
+          <cl:formdata std:sid="f-data-95064a83" row="6" col="11"/>
+        </cl:output>
+        <cl:combobox std:sid="c-box-1d248921" id="cmbTmlDvCd">
+          <cl:formdata std:sid="f-data-bdb369bc" row="6" col="12" rowspan="1" colspan="10"/>
+        </cl:combobox>
+        <cl:output std:sid="output-3515aadf" id="lblTlrDvCd" class="label pr-1" value="Accounting Teller Division">
+          <cl:formdata std:sid="f-data-4bfde76c" row="7" col="0"/>
+        </cl:output>
+        <cl:combobox std:sid="c-box-e5718497" id="cmbTlrDvCd">
+          <cl:attribute name="dvCd" value="TLR_DV_CD:0000"/>
+          <cl:formdata std:sid="f-data-503f975c" row="7" col="1" rowspan="1" colspan="10"/>
+        </cl:combobox>
+        <cl:output std:sid="output-09055e77" id="lblTmlTypCd" class="label pr-1" value="&#x9;Terminal Type Code">
+          <cl:formdata std:sid="f-data-6c22c921" row="7" col="11"/>
+        </cl:output>
+        <cl:combobox std:sid="c-box-a58f4282" id="cmbTmlTypCd">
+          <cl:formdata std:sid="f-data-db12f39c" row="7" col="12" rowspan="1" colspan="10"/>
+        </cl:combobox>
+        <cl:output std:sid="output-950c900a" id="lblExpryDt" class="label pr-1" value="Expiry Date">
+          <cl:formdata std:sid="f-data-1f45f9b5" row="8" col="0"/>
+        </cl:output>
+        <cl:dateinput std:sid="d-input-97f95f77" id="dtiExpryDt">
+          <cl:formdata std:sid="f-data-8dc68063" row="8" col="1" rowspan="1" colspan="10"/>
+        </cl:dateinput>
+        <cl:output std:sid="output-65acd760" id="lblPwLckYn" class="label pr-1" value="Password Lock">
+          <cl:formdata std:sid="f-data-4ec66e06" row="8" col="11"/>
+        </cl:output>
+        <cl:combobox std:sid="c-box-8f606d63" id="cmbPwLckYn">
+          <cl:attribute name="dvCd" value="INP_MDTY_YN_CD:0000"/>
+          <cl:formdata std:sid="f-data-7399a272" row="8" col="12" rowspan="1" colspan="10"/>
+        </cl:combobox>
+        <cl:output std:sid="output-f4bd75e4" id="lblLstTrscDt" class="label pr-1" value="Last Transaction Date">
+          <cl:formdata std:sid="f-data-ee33a7e5" row="9" col="0"/>
+        </cl:output>
+        <cl:dateinput std:sid="d-input-d03b3cba" id="dtiLstTrscDt">
+          <cl:formdata std:sid="f-data-3ac09dda" row="9" col="1" rowspan="1" colspan="10"/>
+        </cl:dateinput>
+        <cl:output std:sid="output-d5444d53" id="lblPwUpdDt" class="label pr-1" value="PW Updated Date">
+          <cl:formdata std:sid="f-data-dedc1961" row="9" col="11"/>
+        </cl:output>
+        <cl:dateinput std:sid="d-input-97fd6d18" id="dtiPwUpdDt">
+          <cl:formdata std:sid="f-data-62edf32a" row="9" col="12" rowspan="1" colspan="10"/>
+        </cl:dateinput>
+        <cl:inputbox std:sid="i-box-17ef82ce" id="ipbLginPw" visible="false">
+          <cl:formdata std:sid="f-data-6bf4fa12" row="10" col="11"/>
+        </cl:inputbox>
+        <cl:button std:sid="button-32e344fc" id="btnIntz" value="Initialize Password">
+          <cl:formdata std:sid="f-data-5a34665e" valign="CENTER" row="10" col="16" rowspan="1" colspan="6"/>
+        </cl:button>
+        <cl:button std:sid="button-c0c64c99" id="btn2" value="Save">
+          <cl:formdata std:sid="f-data-12447553" row="11" col="19" rowspan="1" colspan="3"/>
+        </cl:button>
+        <cl:searchinput std:sid="s-input-8761efe5" id="ipbGrpId" readonly="true">
+          <cl:formdata std:sid="f-data-6e68532e" row="4" col="1" rowspan="1" colspan="10"/>
+        </cl:searchinput>
+        <cl:formlayout std:sid="f-layout-39e80386" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="180" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="180" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-86702a1a"/>
+    </cl:group>
+    <cl:output std:sid="output-9f5626c5" value=" 새 eXbuilder6 파일 생성시 편집기 좌측 상단에 있는 스크린 설정에 들어가서default, tablet,mobile을 없애버리고 프로젝트 템플릿에 있는 content-default, content-tablet을 추가하여 두가지 스크린만 사용합니다.&#xD;&#xA;루트 컨테이너의 레이아웃은 반응형 XY 레이아웃이며 그룹을 하나 추가하고 버티컬 레이아웃으로 지정하여 그 안에서 화면을 디자인합니다. 이때 이 그룹은 크기를 width : 1004px, heigth : 748px으로 지정하며, left : 10px, top : 10px으로 위치를 앵커를 지정합니다.&#xD;&#xA;&#xD;&#xA; 스크린 설정을 content-tablet으로 이동하여, 버티컬 레이아웃의 앵커를 left : 5px, top : 10px, right : 5px으로 right를 추가적으로 지정하도록 합니다.&#xD;&#xA;기본적으로 폼 레이아웃은 label 구획일 경우 100px이나, 크기에 맞춰서 유동적으로 늘리거나 줄여서 사용하도록 합니다.&#xD;&#xA;fr 유닛을 사용하는 구획은 이후에 아이템이 추가되는 경우가 있거나, 같은 구획임에도 크기를 다르게 디자인하길 바랄 때엔 여러개의 fr 구획을 사용할 수 있으나, 그렇지 않은 경우는 불필요한 fr 구획을 둘 필요 없습니다.&#xD;&#xA; 검색조건의 크기는 기본으로 45px이며, 행의 크기는 25px이며, 행을 하나 추가시킬 때마다 폼 레이아웃의 크기를 30px씩 증가시킵니다.&#xD;&#xA;검색조건의 spacing은 1fr 5px 이며, margin은 각 5px입니다.&#xD;&#xA; 검색조건과 그리드, 검색조건과 입력 폼, 입력폼과 그리드 사이에 api 를 수행하는 버튼등을 위한 공간이 필요할 경우 그룹을 배치하고&#xD;&#xA;레이아웃을 폼 레이아웃을 사용하여 클래스는 edit-group으로 지정하도록 합니다.&#xD;&#xA;행의 크기는 25px이고 폼의 크기는 기본 45px에서 행을 하나 추가시킬 때마다 30px씩 height를 증가시킵니다.&#xD;&#xA;&#xD;&#xA; 검색조건과 에디트그룹에 들어가는 버튼 컨트롤은 기본적으로 width : 100px, height : 25px을 준수합니다.&#xD;&#xA;버튼컨트롤이 단독으로 배치될 때는 구획의 크기를 140px으로 지정하고 그 안에 버튼 컨트롤을 집어넣고, align을 각 center로 지정하며,&#xD;&#xA;복수의 버튼 컨트롤을 사용할 경우 가장 오른쪽 구획의 버튼은 120px, 나머지 버튼은 100px으로 구획 크기를 지정하여 배치합니다.&#xD;&#xA;이때 가장 오른쪽 구획의 버튼은 horizontalAlign을 right로 지정하도록 합니다.&#xD;&#xA;&#xD;&#xA; 입력 폼의 행의 크기는 30px이며,행을 추가시킬 경우 입력 폼에서 우클릭을 누르고 컨텐트 크기에 자동 맞춤을 눌러줍니다.&#xD;&#xA;입력 폼의 컬럼의 크기는 기본적으로 100px이나, 컨텐츠 크기에 맞게 자유롭게 늘리거나 줄이도록 하되 최대한 해당 화면에서 사용중인 크기와 비슷하게 맞춰주도록 합니다.&#xD;&#xA;&#xD;&#xA;그리드에서는 따로 지정하는 스타일이 없으나, 내부에 컨트롤을 삽입할 경우 원하는 클래스를 입력하도록 합니다.&#xD;&#xA;&#xD;&#xA;해당 항목은 이후에 공통 스타일이 변경됨에 따라 수정될 수 있습니다.">
+      <cl:responsivexylayoutdata std:sid="rxyl-data-86ece7a9">
+        <cl:xylayoutdata std:sid="sxyl-data-b92d2abb" top="100px" right="8px" left="1123px" height="738px" horizontalAnchor="BOTH" verticalAnchor="TOP" screenid="content-default"/>
+        <cl:xylayoutdata std:sid="sxyl-data-59fd6b2a" top="10px" right="4px" left="594px" height="0px" horizontalAnchor="BOTH" verticalAnchor="TOP" screenid="content-tablet"/>
+      </cl:responsivexylayoutdata>
+    </cl:output>
+    <cl:responsivexylayout std:sid="r-xylayout-fda8f119"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

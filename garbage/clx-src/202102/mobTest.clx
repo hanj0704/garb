@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-eb17e005" version="1.0.0.0">
+  <head std:sid="head-c732ea6e">
+    <title>mobTest</title>
+    <screen std:sid="screen-9f6f592b" id="default" name="default" minwidth="1024px" width="1024px" height="768px" active="false"/>
+    <screen std:sid="screen-752b1dc6" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-de0cb8b0" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px" active="true"/>
+    <cl:model std:sid="model-9e2e4905"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-a2c2ff7c" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-8a39eac0" name="touchstart" handler="onBodyTouchstart"/>
+    <cl:button std:sid="button-4ad494f5" id="btn1" value="Button">
+      <cl:xylayoutdata std:sid="xyl-data-7fea74ff" width="155px" height="46px" horizontalAnchor="CENTER" verticalAnchor="CENTER"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-b89aa337"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

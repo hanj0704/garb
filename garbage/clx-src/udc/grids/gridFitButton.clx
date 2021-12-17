@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-b14da39e" version="1.0.0.0">
+  <head std:sid="head-c7870af2">
+    <title>gridFitButton</title>
+    <screen std:sid="screen-c60684cd" id="default" name="default" width="1450px" height="768px" customHeight="600" customWidth="800"/>
+    <cl:model std:sid="model-92d4f45a"/>
+    <cl:appspec>
+      <cl:property name="gridControl" type="control" std:desc="크기를 조정할 그리드 컨트롤"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-ba8a7105" style="top:0px; left:0px; width:35px; height:35px;">
+    <cl:listener std:sid="listener-41e3d7a5" name="load" handler="onBodyLoad"/>
+    <cl:button std:sid="button-55a51f5e" value="B">
+      <cl:listener std:sid="listener-636d7aa4" name="click" handler="onButtonClick"/>
+      <cl:xylayoutdata std:sid="xyl-data-5ec77fc4" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-72ed5bc3"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

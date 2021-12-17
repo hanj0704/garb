@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-4613f257" version="1.0.0.0">
+  <head std:sid="head-ffb1e1c2">
+    <title>DragMoveTest</title>
+    <screen std:sid="screen-e60f436a" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-7ab059b7" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-4b1c1d0a" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-68a10543"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-41fb119e" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-4df1218b" id="grp1" style="border-right-style:solid; border-top-width:1px; border-bottom-color:black; border-left-style:solid; border-right-width:1px; border-bottom-width:1px; border-left-color:black; border-top-color:black; border-bottom-style:solid; border-right-color:black; border-left-width:1px; border-top-style:solid;">
+      <cl:xylayoutdata std:sid="xyl-data-bd173ab6" height="340px" horizontalAnchor="LEFT" left="10px" top="20px" verticalAnchor="TOP" width="702px"/>
+      <cl:button std:sid="button-ca307858" id="btn1" value="Button">
+        <cl:attribute name="draggable" value="Y"/>
+        <cl:xylayoutdata std:sid="xyl-data-f3f46353" height="20px" horizontalAnchor="LEFT" left="57px" top="62px" verticalAnchor="TOP" width="100px"/>
+      </cl:button>
+      <cl:button std:sid="button-01c8fee9" id="btn3" value="Button">
+        <cl:attribute name="draggable" value="Y"/>
+        <cl:xylayoutdata std:sid="xyl-data-a8086044" height="20px" horizontalAnchor="LEFT" left="74px" top="92px" verticalAnchor="TOP" width="100px"/>
+      </cl:button>
+      <cl:xylayout std:sid="xylayout-af21dbc3"/>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-38dfa94f"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

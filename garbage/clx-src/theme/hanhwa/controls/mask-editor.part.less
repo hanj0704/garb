@@ -1,0 +1,64 @@
+@import "../settings.part.less";
+@import "../custom-settings.part.less";
+
+/* 마스크 에디터 루트 */
+.cl-maskeditor {
+	font: @default-font;
+	border: 1px solid @color-input-border;
+	background-color: @white;
+	background-image : none;
+	color: @color-text-black-01;
+	border-radius : 3px;
+	font-size : @font-small-text-r;
+
+	/* 마스크 에디터 텍스트 */
+	.cl-text {
+		padding : 0 10px;
+	}
+	
+	&:hover {
+		border-color : @color-input-hover-border;
+	}
+
+	/* 마스크 에디터 - 포커스 */
+	&.cl-focus {
+		border-color: @color-input-focus-border;
+	}
+
+
+	/* 마스크 에디터 - disabled */
+	&.cl-disabled {
+		border-color: @color-input-disabled-border;
+		background-color: @color-input-disabled;
+		color: @disabled-text-color;
+	}
+}
+
+/* 마스크 에디터 루트 */
+.cl-maskeditor.dark {
+	border: 1px solid @color-input-bg-dark;
+	background-color: @color-input-bg-dark;
+	color: @color-text-white-01;
+
+	/* 마스크 에디터 텍스트 */
+	.cl-text {
+		padding : 0 10px;
+	}
+	
+	&:hover {
+		border-color : @color-input-hover-border-dark;
+	}
+
+	/* 마스크 에디터 - 포커스 */
+	&.cl-focus {
+		border-color: @color-input-focus-border-dark;
+	}
+
+
+	/* 마스크 에디터 - disabled */
+	&.cl-disabled {
+		border-color: @color-input-disabled-border-dark;
+		background-color: @color-input-disabled-dark;
+		color: @disabled-text-color;
+	}
+}

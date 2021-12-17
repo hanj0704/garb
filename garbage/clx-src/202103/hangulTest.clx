@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-953f9ee0" version="1.0.0.0">
+  <head std:sid="head-9453f488">
+    <title>hangulTest</title>
+    <screen std:sid="screen-ec5eac6e" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-36bc9222" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-4bd1e9e2" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-0fcac86e"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-ba4ca2f7" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:inputbox std:sid="i-box-52012045" id="ipb1">
+      <cl:listener std:sid="listener-90298d9d" name="blur" handler="onIpb1Blur"/>
+      <cl:listener std:sid="listener-e4465c9c" name="change" handler="onIpb1Change"/>
+      <cl:listener std:sid="listener-b349f50a" name="input" handler="onIpb1Input"/>
+      <cl:listener std:sid="listener-365bbaa4" name="keydown" handler="onIpb1Keydown"/>
+      <cl:xylayoutdata std:sid="xyl-data-aa2d47de" top="20px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:inputbox>
+    <cl:button std:sid="button-8cf47707" value="Button">
+      <cl:listener std:sid="listener-1d1123ab" name="click" handler="onButtonClick"/>
+      <cl:xylayoutdata std:sid="xyl-data-f18a4d22" top="60px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-a33f7e18" value="Button">
+      <cl:listener std:sid="listener-94117b2c" name="click" handler="onButtonClick2"/>
+      <cl:xylayoutdata std:sid="xyl-data-74119d9a" top="79px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-a63fa66e" value="Button">
+      <cl:listener std:sid="listener-daf69f5b" name="click" handler="onButtonClick3"/>
+      <cl:xylayoutdata std:sid="xyl-data-e4ef2451" top="98px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-273b6a6b" value="Button">
+      <cl:listener std:sid="listener-ead8df40" name="click" handler="onButtonClick4"/>
+      <cl:xylayoutdata std:sid="xyl-data-e4066162" top="117px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-6b5a68e4" value="ㄱ">
+      <cl:listener std:sid="listener-2f156142" name="click" handler="onButtonClick5"/>
+      <cl:xylayoutdata std:sid="xyl-data-0f278500" top="158px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-38f4422b" value="ㅝ">
+      <cl:listener std:sid="listener-8f60eae0" name="click" handler="onButtonClick5"/>
+      <cl:xylayoutdata std:sid="xyl-data-2eec0f2e" top="158px" left="130px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-57c07909" value="ㄴ">
+      <cl:listener std:sid="listener-c3332671" name="click" handler="onButtonClick5"/>
+      <cl:xylayoutdata std:sid="xyl-data-3b2ead1d" top="158px" left="240px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-0bec83e8" value="Button">
+      <cl:listener std:sid="listener-bb9d9a9a" name="click" handler="onButtonClick6"/>
+      <cl:xylayoutdata std:sid="xyl-data-57f5637d" top="188px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-297ab514"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

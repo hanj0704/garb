@@ -1,0 +1,251 @@
+@import "../settings.part.less";
+@import "../custom-settings.part.less";
+
+.cl-control.cl-content-box {
+	background-color : @white;
+	border-radius : 10px;
+	
+	box-shadow: 2px 2px 5px 0px rgba(136,136,136,0.3);
+}
+
+.cl-content-h-separator {
+	border-bottom : 1px solid #f0f0f0;
+}
+
+.cl-container.cl-content {
+	background-color : @cl-main-bg;
+}
+
+.cl-control.cl-content-pop-box {
+	background-color : @white;
+	
+	box-shadow: 2px 2px 5px 0px rgba(136,136,136,0.3);
+	
+	.cl-output.pop-title {
+		font-size : 12pt; 
+		font-weight : bold;
+	}
+	
+	.cl-output.pop-title-desc {
+		color : #666;
+	}
+}
+
+
+/** 버티컬 레이아웃의 테두리를 둥글게 표시하고, 안의 컨트롤간의 간격을 10px로 설정 한다.
+*   TODO : 첫 컨트롤의 경우에는 margin-top:0이 적용되도록 처리 필요  
+*/
+.cl-container.content-box {
+	background-color : @white;
+	border-radius : 10px;
+	
+	box-shadow: 2px 2px 5px 0px rgba(136,136,136,0.3);
+	padding : 0px 20px 10px 20px;
+
+	.cl-layout-wrap > * {
+		/** margin-top : 10px; 
+		padding : 5px 5px 5px 5px;	*/ 	
+	}
+}
+
+.no-margin {
+	margin : 0px 0px 0px 0px !important;
+
+}
+
+
+.cl-control.pop-box {
+	background-color : @white;
+	
+	box-shadow: 2px 2px 5px 0px rgba(136,136,136,0.3);
+	padding : 5px 5px 5px 5px;
+	
+	.cl-output.pop-title {
+		font-size : 12pt; 
+		font-weight : bold;
+	}
+	
+	.cl-output.pop-title-desc {
+		color : #666;
+	}
+}
+
+
+
+.content-body {
+	padding : 10px 10px 10px 10px;
+	
+}
+
+
+.tab-content-body {
+	padding : 5px 5px 5px 5px;
+	
+}
+
+
+.pop-content-body {
+	// 상하 간격 20으로 정리 (2019.10.8)
+	padding : 20px 0px 20px 0px;
+	
+}
+
+
+.tab-content-box {
+	background-color : @white;
+	
+	box-shadow: 2px 2px 5px 0px rgba(136,136,136,0.3);
+	padding : 5px 5px 5px 5px;
+	
+}
+
+
+.pop-content-box {
+	background-color : @white;
+	
+	box-shadow: 2px 2px 5px 0px rgba(136,136,136,0.3);
+	
+	padding : 5px 10px 5px 10px;
+	
+}
+
+
+.msg-box{
+	background-color : @metal;
+	color : white;
+	font-size : 12pt;
+	vertical-spacing : 3px;
+	border-radius : 10px;
+	padding : 5px 5px 5px 5px;
+}
+
+
+
+
+//아코디언 영역
+.area-accordian{
+//	border : solid 1px #cfcfcf;
+//	border-radius : 3px;
+//	padding : 15px 15px 15px 15px;
+	
+	//아코디언 아이템 영역
+	.accordian-item{
+//		border : solid 1px #efefef;
+		
+		//타이틀 영역
+		.accordian-title {
+//			font-weight : bold ;
+//			background-color : @color-primary-02;
+		}
+		
+		//컨텐츠 영역
+		.accordian-content {
+//			border : solid 1px #000000;
+		}
+		
+		//펼치기 버튼 영역
+		.accordian-expand {
+			
+		}
+	}
+	
+}
+
+.float-box{
+	&.related-work{
+		background-color : @color-black-03;
+		border : none;
+		
+		.title {
+			color : @color-text-white-01;
+			font-weight : @font-bold;
+			font-size : @font-headline-02;
+			padding : 0px 10px;
+		}
+		.note-box {
+			border-bottom : solid 1px;
+		}
+		.note-title{
+			font-size : 12pt;
+			font-weight : bold;
+		}
+		.note-content{
+			font-size : 10pt;
+		}
+		.note-date{
+			font-size : 8pt;
+			text-align : right;
+		}
+	}
+	&.work-flow{
+		background-color : @color-black-03;
+		border : solid 1px #efefef;
+		
+		.title {
+			color : @color-text-white-01;
+			font-weight : @font-bold;
+			font-size : @font-headline-02;
+			padding : 0px 10px;
+			border-bottom : solid 1px;
+		}
+	}
+}
+
+
+.wide-grid-window-body{	
+	.cl-layout-content{
+		> .cl-scrollbar{
+			padding-bottom : 10px;
+		}
+	}
+	min-width : 1553px;
+//	max-width : 3116px;
+}
+
+.wide-grid-content-body{	
+	padding-bottom : 10px;
+	min-width : 1553px;
+//	max-width : 3116px;
+}
+
+.grid-content-body{
+	padding-bottom : 10px;	
+}
+
+.wide-sub-content-body{
+	padding-bottom : 10px;	
+	
+}
+
+
+.wide-grid-02-window-body{	
+	.cl-layout-content{
+		> .cl-scrollbar{
+			padding-bottom : 10px;
+		}
+	}
+	min-width : 1244px;
+}
+
+.wide-grid-02-content-body{	
+	padding-bottom : 10px;
+	min-width : 1244px;
+}
+
+
+
+
+.grid-window-body{	
+	.cl-layout-content{
+		> .cl-scrollbar{
+			padding-bottom : 10px;
+		}
+	}
+	min-width : 777px ; // (디자인가이드 20191025 - 72p 50% 분할에 자동스크롤로 나타나도록 수정 
+//	min-width : 1088px; // 디자인 가이드 (20191017 - 69p   기본사이즈 - 스크롤영역 공복 등 제거  )  
+//	max-width : 1867px; // 1876에서 7px 제외 (스크롤 영역 및 공백 2px )  
+}
+
+.pop-body{
+	
+}

@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-29d5606d" version="1.0.0.0">
+  <head std:sid="head-55736eae">
+    <title>keyboard</title>
+    <screen std:sid="screen-89522409" id="default" name="default" minwidth="1024px" width="1024px" height="768px" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-5645ed01" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-f97ef013" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-a4391916"/>
+    <cl:appspec>
+      <cl:property name="caps" type="boolean" default="false"/>
+      <cl:property name="targetCtrl" type="string"/>
+      <cl:event name="userEv" type="cpr.events.CAppEvent"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-47e7bb4c" style="top:0px; left:0px; width:600px; height:200px;" class="bg-white">
+    <cl:group std:sid="group-1a301505" id="grp1">
+      <cl:formdata std:sid="f-data-7fa607e8" row="0" col="0"/>
+      <cl:button std:sid="button-03c4820f" id="btn2" class="btn-outline-light bg-white rounded" value="`">
+        <cl:listener std:sid="listener-47d2b046" name="click" handler="onBtnTypingClick"/>
+        <cl:formdata std:sid="f-data-2555c889" row="0" col="1"/>
+      </cl:button>
+      <cl:button std:sid="button-8190ed99" id="btn3" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-5dcbfd71" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;1&quot; : &quot;!&quot;"/>
+        <cl:formdata std:sid="f-data-9916470d" row="0" col="2"/>
+      </cl:button>
+      <cl:button std:sid="button-551c2227" id="btn4" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-b114f687" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;2&quot; : &quot;@&quot;"/>
+        <cl:formdata std:sid="f-data-d873145f" row="0" col="3"/>
+      </cl:button>
+      <cl:button std:sid="button-8a8feb02" id="btn5" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-386d6ce0" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;3&quot; : &quot;#&quot;"/>
+        <cl:formdata std:sid="f-data-67bd70b1" row="0" col="4"/>
+      </cl:button>
+      <cl:button std:sid="button-a4ab7614" id="btn6" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-6d2b1820" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;4&quot; : &quot;$&quot;"/>
+        <cl:formdata std:sid="f-data-54761a0e" row="0" col="5"/>
+      </cl:button>
+      <cl:button std:sid="button-97e7c50c" id="btn7" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-f151db63" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;5&quot; : &quot;%&quot;"/>
+        <cl:formdata std:sid="f-data-7760d2fc" row="0" col="6"/>
+      </cl:button>
+      <cl:button std:sid="button-cb53357c" id="btn8" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-40e23743" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;6&quot; : &quot;^&quot;"/>
+        <cl:formdata std:sid="f-data-1a888bd5" row="0" col="7"/>
+      </cl:button>
+      <cl:button std:sid="button-6d7e25f3" id="btn9" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-6dc0ff90" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;7&quot; : &quot;&amp;&quot;"/>
+        <cl:formdata std:sid="f-data-b97fcab7" row="0" col="8"/>
+      </cl:button>
+      <cl:button std:sid="button-bf5c92f2" id="btn10" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-a32f900a" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;8&quot; : &quot;*&quot;"/>
+        <cl:formdata std:sid="f-data-6a3dd009" row="0" col="9"/>
+      </cl:button>
+      <cl:button std:sid="button-0a1c14d5" id="btn11" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-2c470014" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;9&quot; : &quot;(&quot;"/>
+        <cl:formdata std:sid="f-data-30af4df4" row="0" col="10"/>
+      </cl:button>
+      <cl:button std:sid="button-832b17e7" id="btn12" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-b2d16c63" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;0&quot; : &quot;)&quot;"/>
+        <cl:formdata std:sid="f-data-60699de4" row="0" col="11"/>
+      </cl:button>
+      <cl:button std:sid="button-923bf3fb" id="btn13" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-11707422" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;-&quot; : &quot;_&quot;"/>
+        <cl:formdata std:sid="f-data-f2eed291" row="0" col="12"/>
+      </cl:button>
+      <cl:button std:sid="button-ffb166a4" id="btn14" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-43c69d37" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;=&quot; : &quot;+&quot;"/>
+        <cl:formdata std:sid="f-data-0bd96e91" row="0" col="13"/>
+      </cl:button>
+      <cl:button std:sid="button-c47ecb6e" id="backspace" class="btn-outline-light bg-white rounded" value="backspace">
+        <cl:listener std:sid="listener-7fd3b72f" name="click" handler="onBackspaceClick"/>
+        <cl:formdata std:sid="f-data-36581ac5" row="0" col="14"/>
+      </cl:button>
+      <cl:button std:sid="button-c493dc08" id="btn56" class="btn-outline-light bg-white rounded" value="esc">
+        <cl:listener std:sid="listener-8e5a72a4" name="click" handler="onBtnCloseClick"/>
+        <cl:formdata std:sid="f-data-143ac31a" row="0" col="0"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-c134ca00" hspace="2px" vspace="2px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="35" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="77" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-66c54328" id="grp2">
+      <cl:formdata std:sid="f-data-cdf50cf3" row="1" col="0"/>
+      <cl:button std:sid="button-01df7e97" id="tab" class="btn-outline-light bg-white rounded" value="tab">
+        <cl:listener std:sid="listener-cf616f40" name="click" handler="onTabClick"/>
+        <cl:formdata std:sid="f-data-c188726d" row="0" col="0"/>
+      </cl:button>
+      <cl:button std:sid="button-7b4268a7" id="btn17" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-d966b968" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;q&quot; : &quot;Q&quot;"/>
+        <cl:formdata std:sid="f-data-75a5eb71" row="0" col="1"/>
+      </cl:button>
+      <cl:button std:sid="button-c15f49db" id="btn18" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-4cd6a850" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;e&quot; : &quot;E&quot;"/>
+        <cl:formdata std:sid="f-data-223a0006" row="0" col="3"/>
+      </cl:button>
+      <cl:button std:sid="button-603a80c2" id="btn19" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-f7470c8b" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;w&quot; : &quot;W&quot;"/>
+        <cl:formdata std:sid="f-data-21169d10" row="0" col="2"/>
+      </cl:button>
+      <cl:button std:sid="button-866f8ede" id="btn20" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-0de379bf" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;r&quot; : &quot;R&quot;"/>
+        <cl:formdata std:sid="f-data-f6c6b857" row="0" col="4"/>
+      </cl:button>
+      <cl:button std:sid="button-3b91be6a" id="btn21" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-c30c1f36" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;t&quot; : &quot;T&quot;"/>
+        <cl:formdata std:sid="f-data-a05eb5d5" row="0" col="5"/>
+      </cl:button>
+      <cl:button std:sid="button-d7c88114" id="btn22" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-b5e538d0" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;u&quot; : &quot;U&quot;"/>
+        <cl:formdata std:sid="f-data-7a19464c" row="0" col="7"/>
+      </cl:button>
+      <cl:button std:sid="button-46097d57" id="btn23" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-ead57f3f" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;y&quot; : &quot;Y&quot;"/>
+        <cl:formdata std:sid="f-data-352ff5b5" row="0" col="6"/>
+      </cl:button>
+      <cl:button std:sid="button-01396407" id="btn24" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-83f233d7" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;i&quot; : &quot;I&quot;"/>
+        <cl:formdata std:sid="f-data-3819c9a0" row="0" col="8"/>
+      </cl:button>
+      <cl:button std:sid="button-b8a748f0" id="btn25" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-e7341471" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;o&quot; : &quot;O&quot;"/>
+        <cl:formdata std:sid="f-data-b0a626bf" row="0" col="9"/>
+      </cl:button>
+      <cl:button std:sid="button-c7a5ea77" id="btn26" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-2d007b54" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;p&quot; : &quot;P&quot;"/>
+        <cl:formdata std:sid="f-data-14982cee" row="0" col="10"/>
+      </cl:button>
+      <cl:button std:sid="button-38a28797" id="btn27" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-d5cfd6f7" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;[&quot; : &quot;{&quot;"/>
+        <cl:formdata std:sid="f-data-c0f40b7a" row="0" col="11"/>
+      </cl:button>
+      <cl:button std:sid="button-48b4671e" id="btn28" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-d98a0c41" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;]&quot; : &quot;}&quot;"/>
+        <cl:formdata std:sid="f-data-91cb444d" row="0" col="12"/>
+      </cl:button>
+      <cl:button std:sid="button-96a05830" id="btn29" class="btn-outline-light bg-white rounded" value="\">
+        <cl:listener std:sid="listener-983bb687" name="click" handler="onBtnTypingClick"/>
+        <cl:formdata std:sid="f-data-7a3caf19" row="0" col="13"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-19e1eef3" hspace="2px" vspace="2px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="60" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-ad41a121" id="grp3">
+      <cl:formdata std:sid="f-data-52cf0cfd" row="2" col="0"/>
+      <cl:button std:sid="button-34ba1732" id="btn30" class="btn-outline-light bg-white rounded" value="caps">
+        <cl:listener std:sid="listener-cee9bc02" name="click" handler="onBtn30Click"/>
+        <cl:formdata std:sid="f-data-7de45d3a" row="0" col="0"/>
+      </cl:button>
+      <cl:button std:sid="button-48c93d27" id="btn31" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-fa95228d" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;a&quot; : &quot;A&quot;"/>
+        <cl:formdata std:sid="f-data-03810f12" row="0" col="1"/>
+      </cl:button>
+      <cl:button std:sid="button-d262f879" id="btn32" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-b4030ab3" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;d&quot; : &quot;D&quot;"/>
+        <cl:formdata std:sid="f-data-8e776f95" row="0" col="3"/>
+      </cl:button>
+      <cl:button std:sid="button-65c192b3" id="btn33" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-1542c805" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;s&quot; : &quot;S&quot;"/>
+        <cl:formdata std:sid="f-data-4740d398" row="0" col="2"/>
+      </cl:button>
+      <cl:button std:sid="button-5f04963b" id="btn34" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-f60bdf0d" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;f&quot; : &quot;F&quot;"/>
+        <cl:formdata std:sid="f-data-01029c56" row="0" col="4"/>
+      </cl:button>
+      <cl:button std:sid="button-46f51e03" id="btn35" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-d9a8c144" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;g&quot; : &quot;G&quot;"/>
+        <cl:formdata std:sid="f-data-5acaa25d" row="0" col="5"/>
+      </cl:button>
+      <cl:button std:sid="button-d403b422" id="btn36" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-e6bd9202" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;j&quot; : &quot;J&quot;"/>
+        <cl:formdata std:sid="f-data-f9b068df" row="0" col="7"/>
+      </cl:button>
+      <cl:button std:sid="button-63d6415f" id="btn37" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-3020e961" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;h&quot; : &quot;H&quot;"/>
+        <cl:formdata std:sid="f-data-12807478" row="0" col="6"/>
+      </cl:button>
+      <cl:button std:sid="button-9cf70030" id="btn38" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-a3489b9b" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;k&quot; : &quot;K&quot;"/>
+        <cl:formdata std:sid="f-data-e5526ba1" row="0" col="8"/>
+      </cl:button>
+      <cl:button std:sid="button-eb8fefc2" id="btn39" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-00f6ae6b" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;l&quot; : &quot;L&quot;"/>
+        <cl:formdata std:sid="f-data-862d0466" row="0" col="9"/>
+      </cl:button>
+      <cl:button std:sid="button-4da77803" id="btn40" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-a5767981" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;;&quot; : &quot;:&quot;"/>
+        <cl:formdata std:sid="f-data-a5378219" row="0" col="10"/>
+      </cl:button>
+      <cl:button std:sid="button-38a3ddc0" id="btn41" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-8ad803fd" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;'&quot; : &quot;\&quot;&quot;"/>
+        <cl:formdata std:sid="f-data-357b771e" row="0" col="11"/>
+      </cl:button>
+      <cl:button std:sid="button-e15b5e5a" id="btn42" class="btn-outline-light bg-white rounded" value="enter">
+        <cl:listener std:sid="listener-1fa94c0e" name="click" handler="onBtnCloseClick"/>
+        <cl:formdata std:sid="f-data-934b3211" row="0" col="12" rowspan="1" colspan="2"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-4e9c84d7" hspace="2px" vspace="2px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="77" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-f5c7e9b2" id="grp4">
+      <cl:formdata std:sid="f-data-fe116ccb" row="3" col="0"/>
+      <cl:button std:sid="button-1a042457" id="btn44" class="btn-outline-light bg-white rounded" value="shift">
+        <cl:listener std:sid="listener-6dcbab63" name="click" handler="onBtnShiftClick"/>
+        <cl:formdata std:sid="f-data-b672ee06" row="0" col="0"/>
+      </cl:button>
+      <cl:button std:sid="button-c9d01400" id="btn45" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-0225bff4" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;z&quot; : &quot;Z&quot;"/>
+        <cl:formdata std:sid="f-data-be198c86" row="0" col="1"/>
+      </cl:button>
+      <cl:button std:sid="button-763e4057" id="btn46" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-f5ee966e" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;c&quot; : &quot;C&quot;"/>
+        <cl:formdata std:sid="f-data-fe190b9d" row="0" col="3"/>
+      </cl:button>
+      <cl:button std:sid="button-566b3308" id="btn47" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-5c32bba0" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;x&quot; : &quot;X&quot;"/>
+        <cl:formdata std:sid="f-data-e69d8386" row="0" col="2"/>
+      </cl:button>
+      <cl:button std:sid="button-3b85b506" id="btn48" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-f961a062" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;v&quot; : &quot;V&quot;"/>
+        <cl:formdata std:sid="f-data-36bf1d05" row="0" col="4"/>
+      </cl:button>
+      <cl:button std:sid="button-1200f674" id="btn49" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-faeff66a" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;b&quot; : &quot;B&quot;"/>
+        <cl:formdata std:sid="f-data-8ae7b572" row="0" col="5"/>
+      </cl:button>
+      <cl:button std:sid="button-c801bfa3" id="btn50" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-0dfa4dce" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;m&quot; : &quot;M&quot;"/>
+        <cl:formdata std:sid="f-data-9c477218" row="0" col="7"/>
+      </cl:button>
+      <cl:button std:sid="button-d63d80f0" id="btn51" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-e9e0e1ac" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;n&quot; : &quot;N&quot;"/>
+        <cl:formdata std:sid="f-data-0a22f917" row="0" col="6"/>
+      </cl:button>
+      <cl:button std:sid="button-7622c0a0" id="btn52" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-8a5a62ad" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;,&quot; : &quot;&lt;&quot;"/>
+        <cl:formdata std:sid="f-data-f23d962c" row="0" col="8"/>
+      </cl:button>
+      <cl:button std:sid="button-a5a450da" id="btn53" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-556bf280" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;.&quot; : &quot;>&quot;"/>
+        <cl:formdata std:sid="f-data-de4e3c12" row="0" col="9"/>
+      </cl:button>
+      <cl:button std:sid="button-367ab573" id="btn54" class="btn-outline-light bg-white rounded">
+        <cl:listener std:sid="listener-eab5b8f1" name="click" handler="onBtnTypingClick"/>
+        <cl:expbind property="value" category="PROPERTY" expression="@caps == false ? &quot;/&quot; : &quot;?&quot;"/>
+        <cl:formdata std:sid="f-data-a9e6a750" row="0" col="10"/>
+      </cl:button>
+      <cl:button std:sid="button-f99c8035" id="rightShift" class="btn-outline-light bg-white rounded" value="shift">
+        <cl:listener std:sid="listener-39ab5336" name="click" handler="onBtnShiftClick"/>
+        <cl:formdata std:sid="f-data-c086f7f3" row="0" col="11" rowspan="1" colspan="3"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-5c12b14d" hspace="2px" vspace="2px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-caaa464e" id="grp5">
+      <cl:formdata std:sid="f-data-e6595933" row="4" col="0"/>
+      <cl:button std:sid="button-770dc7f4" id="btn43" class="btn-outline-light bg-white rounded" value="clear">
+        <cl:listener std:sid="listener-64c68512" name="click" handler="onBtn43Click"/>
+        <cl:formdata std:sid="f-data-aab9fdca" row="0" col="0" rowspan="1" colspan="2"/>
+      </cl:button>
+      <cl:button std:sid="button-c15486b5" id="btn57" class="btn-outline-light bg-white rounded" value=" ">
+        <cl:listener std:sid="listener-ec23a9d0" name="click" handler="onBtnTypingClick"/>
+        <cl:formdata std:sid="f-data-e71218d0" row="0" col="3" rowspan="1" colspan="11"/>
+      </cl:button>
+      <cl:button std:sid="button-0e730ab3" id="btn58" class="btn-outline-light bg-white rounded" value="@">
+        <cl:listener std:sid="listener-a87e687f" name="click" handler="onBtnTypingClick"/>
+        <cl:formdata std:sid="f-data-d661c4a4" row="0" col="2"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-96408a72" hspace="2px" vspace="2px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="60" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-813f3cfa" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-12f760d6" version="1.0.0.0">
+  <head std:sid="head-9dcb86b0">
+    <title>chart</title>
+    <screen std:sid="screen-4b1be2d2" id="default" height="600px" name="default" width="800px"/>
+    <cl:model std:sid="model-b7b92fa1"/>
+    <cl:appspec>
+      <cl:property bindable="true" name="title" type="string"/>
+      <cl:property bindable="true" name="explain" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-ed4d0f39" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:uicontrolshell std:sid="uic-shell-dc342252">
+      <cl:listener std:sid="listener-8b409325" handler="onUIControlShellInit" name="init"/>
+      <cl:listener std:sid="listener-e53d0d3e" handler="onUIControlShellLoad" name="load"/>
+      <cl:listener std:sid="listener-4f550460" handler="onUIControlShellDispose" name="dispose"/>
+      <cl:xylayoutdata std:sid="xyl-data-f512e5ee" bottom="10px" horizontalAnchor="BOTH" left="10px" right="10px" top="20px" verticalAnchor="BOTH"/>
+    </cl:uicontrolshell>
+    <cl:xylayout std:sid="xylayout-724dd447"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-44825171" version="1.0.0.0">
+  <head std:sid="head-38d76958">
+    <title>ImpCAlert</title>
+    <screen std:sid="screen-308afd34" id="default" customHeight="450" customWidth="600" height="910px" minwidth="1660px" name="default" useCustomHeight="true" useCustomWidth="true" width="1660px"/>
+    <screen std:sid="screen-8aab9181" id="tablet" height="910px" maxwidth="1659px" minwidth="1024px" name="tablet" width="1024px"/>
+    <screen std:sid="screen-63ca4c1d" id="mobile" height="910px" maxwidth="1023px" name="mobile" width="800px"/>
+    <cl:model std:sid="model-df75b5ca">
+      <cl:datamap std:sid="d-map-d29c27a3" id="dmReq">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-bf6607e9" name="strCd"/>
+          <cl:datacolumn std:sid="d-column-54d1fe01" name="strMsg"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:dataset std:sid="d-set-e4530071" id="dsAlert">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-839cac12" name="alertCd"/>
+          <cl:datacolumn std:sid="d-column-212e9da7" name="alertCdNm"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="alertCd"><![CDATA[process]]></cl:datavalue>
+            <cl:datavalue columnname="alertCdNm"><![CDATA[처리]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="alertCd"><![CDATA[confirm]]></cl:datavalue>
+            <cl:datavalue columnname="alertCdNm"><![CDATA[확인]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="alertCd"><![CDATA[warning]]></cl:datavalue>
+            <cl:datavalue columnname="alertCdNm"><![CDATA[경고]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="alertCd"><![CDATA[info]]></cl:datavalue>
+            <cl:datavalue columnname="alertCdNm"><![CDATA[정보 전달]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="alertCd"><![CDATA[danger]]></cl:datavalue>
+            <cl:datavalue columnname="alertCdNm"><![CDATA[오류]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="alertCd"><![CDATA[error]]></cl:datavalue>
+            <cl:datavalue columnname="alertCdNm"><![CDATA[에러]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title=" "/>
+  </head>
+  <body std:sid="body-51f3ea62" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-f6d1d225" handler="onBodyLoad" name="load"/>
+    <cl:listener std:sid="listener-614604da" handler="onBodyInit" name="init"/>
+    <cl:group std:sid="group-47b1078b" id="grpAlertBox">
+      <cl:formdata std:sid="f-data-3ccad659" col="0" row="0"/>
+      <cl:group std:sid="group-7000412e" id="grp2">
+        <cl:formdata std:sid="f-data-c56cabf7" col="0" row="1"/>
+        <cl:button std:sid="button-07e06176" id="btnSubmit" class="btn-popup" value="확인">
+          <cl:listener std:sid="listener-3189a581" handler="onBtnSubmitClick" name="click"/>
+          <cl:flowlayoutdata std:sid="f-data-fdaa3573" height="30px" width="70px"/>
+        </cl:button>
+        <cl:button std:sid="button-3df843d7" id="btnCancel" class="btn-popup" value="취소">
+          <cl:listener std:sid="listener-934f53bb" handler="onBtnCancelClick" name="click"/>
+          <cl:expbind category="PROPERTY" property="visible" expression="switch(#dmReq.getValue(&quot;strCd&quot;)){&#xD;&#xA;&#x9;case &quot;process&quot;, case &quot;confirm&quot; : true&#xD;&#xA;&#x9;default : false&#xD;&#xA;}"/>
+          <cl:flowlayoutdata std:sid="f-data-80460b2a" height="30px" width="70px"/>
+        </cl:button>
+        <cl:button std:sid="button-379257cc" id="btnShowDtl" class="btn-popup" value="상세보기 ▼">
+          <cl:listener std:sid="listener-9920c3b3" handler="onBtnShowDtlClick" name="click"/>
+          <cl:expbind category="PROPERTY" property="visible" expression="switch(#dmReq.getValue(&quot;strCd&quot;)){&#xD;&#xA;&#x9;case &quot;error&quot; : true&#xD;&#xA;&#x9;default : false&#xD;&#xA;}"/>
+          <cl:flowlayoutdata std:sid="f-data-c16316da" height="30px" width="90px"/>
+        </cl:button>
+        <cl:flowlayout std:sid="f-layout-7e088ea0" scrollable="false" halign="center" valign="middle"/>
+      </cl:group>
+      <cl:group std:sid="group-324796b7" id="grp4">
+        <cl:formdata std:sid="f-data-a45e7ecf" col="0" row="0"/>
+        <cl:img std:sid="image-d8f92308" id="imgAlert">
+          <cl:expbind category="PROPERTY" property="src" expression="switch(#dmReq.getValue(&quot;strCd&quot;)){&#xA;&#x9;case &quot;process&quot; : &quot;theme/common/images/icon/icon-help-circle.svg&quot;,&#xA;&#x9;case &quot;confirm&quot; : &quot;theme/common/images/icon/icon-check-circle.svg&quot;,&#xA;&#x9;case &quot;warning&quot; : &quot;theme/common/images/icon/icon-alert-triangle.svg&quot;,&#xA;&#x9;case &quot;info&quot; : &quot;theme/common/images/icon/icon-alert-circle.svg&quot;,&#xA;&#x9;case &quot;danger&quot; : &quot;theme/common/images/icon/icon-x-circle.svg&quot;,&#xA;&#x9;case &quot;error&quot; : &quot;theme/common/images/icon/icon-x-circle.svg&quot;&#xA;&#x9;default : &quot;&quot;&#xA;}"/>
+          <cl:formdata std:sid="f-data-c50b46ee" height="50" valign="CENTER" col="0" row="0"/>
+        </cl:img>
+        <cl:output std:sid="output-0cc81d65" id="optMsg" class="text-center">
+          <cl:datamapbind property="value" columnname="strMsg" datacontrolid="dmReq"/>
+          <cl:formdata std:sid="f-data-35a4ef65" col="1" row="0"/>
+        </cl:output>
+        <cl:formlayout std:sid="f-layout-baaf0ddb">
+          <cl:rows length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+          <cl:columns autoSizing="false" length="50" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-99fe8b62" scrollable="false" bottom-margin="18px" left-margin="25px" right-margin="25px" top-margin="0px">
+        <cl:rows autoSizing="false" length="1" minlength="50" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-ddd4afbc" id="grpErrorBox" class="message-error-box">
+      <cl:formdata std:sid="f-data-fad91189" col="0" row="1"/>
+      <cl:verticallayout std:sid="v-layout-fff5e0b8" bottommargin="5" leftmargin="10" rightmargin="10" spacing="10" topmargin="5"/>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-2b246396" hseparatorcolor="#7f7f7f" hseparatortype="CUSTOM" hseparatorwidth="1" hspace="0px" vspace="0px">
+      <cl:rows autoSizing="false" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+      <cl:rows autoSizing="true" hidden="true" length="10" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

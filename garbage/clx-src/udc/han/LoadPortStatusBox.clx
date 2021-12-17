@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-0702114d" version="1.0.3102">
+  <head std:sid="head-9f2d57bc">
+    <screen std:sid="screen-e818d88b" id="default" name="default" minwidth="1024px" width="1024px" height="768px" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-7fada51a" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-8f023ed8" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-f02fd64d">
+      <cl:datamap std:sid="d-map-9004bb0b" id="dmLP">
+        <cl:listener std:sid="listener-828408aa" name="load" handler="onDmLPLoad"/>
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-dc993be6" name="LP" defaultvalue="LP"/>
+          <cl:datacolumn std:sid="d-column-b98e42e5" name="CTC.LP_Exist" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-2aa16430" name="CTC.LP_UsageType" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-8f266c11" name="CTC.LP_WfrCount" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-425d7915" name="LP.FoupPlacedStatus" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-403131fe" name="TMC.SimIop.sim_LP_MPLine1" defaultvalue="z"/>
+          <cl:datacolumn std:sid="d-column-554c4f82" name="TMC.SimIop.sim_LP_MPLine2" defaultvalue="zz"/>
+          <cl:datacolumn std:sid="d-column-8c2402fa" name="CTC.LP_Wfr01" datatype="number" defaultvalue=""/>
+          <cl:datacolumn std:sid="d-column-ca3fbb25" name="CTC.LP_Wfr02" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-bf465171" name="CTC.LP_Wfr03" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-90d664f6" name="CTC.LP_Wfr04" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-35e5c6c6" name="CTC.LP_Wfr05" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-ac1516c5" name="CTC.LP_Wfr06" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-52d7fffa" name="CTC.LP_Wfr07" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-16276717" name="CTC.LP_Wfr08" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-38eaab18" name="CTC.LP_Wfr09" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-98b4a8b3" name="CTC.LP_Wfr10" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-80975ab8" name="CTC.LP_Wfr11" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-681487ec" name="CTC.LP_Wfr12" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-ac6d3da5" name="CTC.LP_Wfr13" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-e5c463aa" name="CTC.LP_Wfr14" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-f0a62db9" name="CTC.LP_Wfr15" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-201f329f" name="CTC.LP_Wfr16" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-1dca422e" name="CTC.LP_Wfr17" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-ef3a7f49" name="CTC.LP_Wfr18" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-0d49dee3" name="CTC.LP_Wfr19" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-7b3de9ac" name="CTC.LP_Wfr20" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-bff2e96f" name="CTC.LP_Wfr21" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-0894bbf5" name="CTC.LP_Wfr22" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-aca22e01" name="CTC.LP_Wfr23" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-37ae075b" name="CTC.LP_Wfr24" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-ba233f3b" name="CTC.LP_Wfr25" datatype="number"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec>
+      <cl:property name="lpDataMap" type="control" bindable="false"/>
+      <cl:property name="targetId" type="string" default="LP"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-6d099597" style="top:0px; left:0px; width:400px; height:100px;" class="cl-form-group">
+    <cl:expbind property="visible" category="PROPERTY" expression="#dmLP.getValue(&quot;CTC.LP_Exist&quot;) == 0 ? true : false"/>
+    <cl:output std:sid="output-be15ef3a" id="opt9" class="label pl-2">
+      <cl:apppropbind property="value" app-property="targetId"/>
+      <cl:formdata std:sid="f-data-3aaf2878" row="0" col="0"/>
+    </cl:output>
+    <cl:group std:sid="group-61f4cc55" id="grp1">
+      <cl:formdata std:sid="f-data-a4344915" row="1" col="0"/>
+      <cl:output std:sid="output-43261f29" id="opt1" class="text-center small">
+        <cl:datamapbind property="value" datacontrolid="dmLP" columnname="TMC.SimIop.sim_LP_MPLine1"/>
+        <cl:expbind property="visible" category="PROPERTY" expression="value != &quot;&quot; ? true : false"/>
+        <cl:verticaldata std:sid="v-data-d28467c5" width="100px" height="20px"/>
+      </cl:output>
+      <cl:output std:sid="output-6a987a29" id="opt2" class="text-center small">
+        <cl:datamapbind property="value" datacontrolid="dmLP" columnname="TMC.SimIop.sim_LP_MPLine2"/>
+        <cl:expbind property="visible" category="PROPERTY" expression="value != &quot;&quot; ? true : false"/>
+        <cl:verticaldata std:sid="v-data-eb6419a6" width="100px" height="20px"/>
+      </cl:output>
+      <cl:verticallayout std:sid="v-layout-4d5546c2" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-d16a33e2" id="grp14" class="form-wafer">
+      <cl:formdata std:sid="f-data-3a76e346" row="2" col="0"/>
+      <cl:output std:sid="output-9a5359bf" id="opt59" value="01" datatype="number">
+        <cl:expbind property="background-color" category="STYLER" expression="getTranslatedColor(#dmLP.getValue(&quot;CTC.LP_Wfr01&quot;))"/>
+        <cl:expbind property="visible" category="PROPERTY" expression="#dmLP.getValue(&quot;CTC.LP_WfrCount&quot;) >= Number(value) ? true : false"/>
+        <cl:formdata std:sid="f-data-ca2aa3b6" row="0" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-d762611c" id="opt60" value="02" datatype="number">
+        <cl:expbind property="background-color" category="STYLER" expression="getTranslatedColor(#dmLP.getValue(&quot;CTC.LP_Wfr02&quot;))"/>
+        <cl:expbind property="visible" category="PROPERTY" expression="#dmLP.getValue(&quot;CTC.LP_WfrCount&quot;) >= Number(value) ? true : false"/>
+        <cl:formdata std:sid="f-data-63747825" row="0" col="1"/>
+      </cl:output>
+      <cl:output std:sid="output-0c7b1980" id="opt61" value="03" datatype="number">
+        <cl:expbind property="background-color" category="STYLER" expression="getTranslatedColor(#dmLP.getValue(&quot;CTC.LP_Wfr03&quot;))"/>
+        <cl:expbind property="visible" category="PROPERTY" expression="#dmLP.getValue(&quot;CTC.LP_WfrCount&quot;) >= Number(value) ? true : false"/>
+        <cl:formdata std:sid="f-data-b2f7028f" row="0" col="2"/>
+      </cl:output>
+      <cl:output std:sid="output-d3ef8592" id="opt62" value="04" datatype="number">
+        <cl:expbind property="background-color" category="STYLER" expression="getTranslatedColor(#dmLP.getValue(&quot;CTC.LP_Wfr04&quot;))"/>
+        <cl:expbind property="visible" category="PROPERTY" expression="#dmLP.getValue(&quot;CTC.LP_WfrCount&quot;) >= Number(value) ? true : false"/>
+        <cl:formdata std:sid="f-data-545587c6" row="0" col="3"/>
+      </cl:output>
+      <cl:output std:sid="output-54db8a92" id="opt63" value="05" datatype="number">
+        <cl:expbind property="background-color" category="STYLER" expression="getTranslatedColor(#dmLP.getValue(&quot;CTC.LP_Wfr05&quot;))"/>
+        <cl:expbind property="visible" category="PROPERTY" expression="#dmLP.getValue(&quot;CTC.LP_WfrCount&quot;) >= Number(value) ? true : false"/>
+        <cl:formdata std:sid="f-data-a071dc6c" row="0" col="4"/>
+      </cl:output>
+      <cl:output std:sid="output-0426468d" id="opt64" value="06" datatype="number">
+        <cl:expbind property="background-color" category="STYLER" expression="getTranslatedColor(#dmLP.getValue(&quot;CTC.LP_Wfr06&quot;))"/>
+        <cl:expbind property="visible" category="PROPERTY" expression="#dmLP.getValue(&quot;CTC.LP_WfrCount&quot;) >= Number(value) ? true : false"/>
+        <cl:formdata std:sid="f-data-309287be" row="0" col="5"/>
+      </cl:output>
+      <cl:output std:sid="output-2cd8d2b6" id="opt65" value="07" datatype="number">
+        <cl:expbind property="visible" category="PROPERTY" expression="#dmLP.getValue(&quot;CTC.LP_WfrCount&quot;) >= Number(value) ? true : false"/>
+        <cl:formdata std:sid="f-data-d95ec947" row="0" col="6"/>
+      </cl:output>
+      <cl:output std:sid="output-dc972c52" id="opt66" value="08" datatype="number">
+        <cl:expbind property="visible" category="PROPERTY" expression="#dmLP.getValue(&quot;CTC.LP_WfrCount&quot;) >= Number(value) ? true : false"/>
+        <cl:formdata std:sid="f-data-b5d21d76" row="0" col="7"/>
+      </cl:output>
+      <cl:output std:sid="output-167d160d" id="opt67" value="09" datatype="number">
+        <cl:expbind property="visible" category="PROPERTY" expression="#dmLP.getValue(&quot;CTC.LP_WfrCount&quot;) >= Number(value) ? true : false"/>
+        <cl:formdata std:sid="f-data-8f07432b" row="0" col="8"/>
+      </cl:output>
+      <cl:output std:sid="output-f68fccba" id="opt68" value="10" datatype="number">
+        <cl:expbind property="visible" category="PROPERTY" expression="#dmLP.getValue(&quot;CTC.LP_WfrCount&quot;) >= Number(value) ? true : false"/>
+        <cl:formdata std:sid="f-data-d7d134b2" row="0" col="9"/>
+      </cl:output>
+      <cl:output std:sid="output-3f5cb5cb" id="opt69" value="11" datatype="number">
+        <cl:expbind property="visible" category="PROPERTY" expression="#dmLP.getValue(&quot;CTC.LP_WfrCount&quot;) >= Number(value) ? true : false"/>
+        <cl:formdata std:sid="f-data-6eaf10d2" row="0" col="10"/>
+      </cl:output>
+      <cl:output std:sid="output-1dab8b01" id="opt70" value="12" datatype="number">
+        <cl:expbind property="visible" category="PROPERTY" expression="#dmLP.getValue(&quot;CTC.LP_WfrCount&quot;) >= Number(value) ? true : false"/>
+        <cl:formdata std:sid="f-data-42cd24cf" row="0" col="11"/>
+      </cl:output>
+      <cl:output std:sid="output-b7f34629" id="opt71" value="13" datatype="number">
+        <cl:expbind property="visible" category="PROPERTY" expression="#dmLP.getValue(&quot;CTC.LP_WfrCount&quot;) >= Number(value) ? true : false"/>
+        <cl:formdata std:sid="f-data-0e12368f" row="0" col="12"/>
+      </cl:output>
+      <cl:output std:sid="output-721000dd" id="opt72" value="14" datatype="number">
+        <cl:expbind property="visible" category="PROPERTY" expression="#dmLP.getValue(&quot;CTC.LP_WfrCount&quot;) >= Number(value) ? true : false"/>
+        <cl:formdata std:sid="f-data-6c14664b" row="0" col="13"/>
+      </cl:output>
+      <cl:output std:sid="output-52056fa0" id="opt73" value="15" datatype="number">
+        <cl:expbind property="visible" category="PROPERTY" expression="#dmLP.getValue(&quot;CTC.LP_WfrCount&quot;) >= Number(value) ? true : false"/>
+        <cl:formdata std:sid="f-data-3f56916e" row="0" col="14"/>
+      </cl:output>
+      <cl:output std:sid="output-74de64d2" id="opt74" value="16" datatype="number">
+        <cl:expbind property="visible" category="PROPERTY" expression="#dmLP.getValue(&quot;CTC.LP_WfrCount&quot;) >= Number(value) ? true : false"/>
+        <cl:formdata std:sid="f-data-edae9c8a" row="0" col="15"/>
+      </cl:output>
+      <cl:output std:sid="output-98a32f53" id="opt75" value="17" datatype="number">
+        <cl:expbind property="visible" category="PROPERTY" expression="#dmLP.getValue(&quot;CTC.LP_WfrCount&quot;) >= Number(value) ? true : false"/>
+        <cl:formdata std:sid="f-data-b2d98099" row="0" col="16"/>
+      </cl:output>
+      <cl:output std:sid="output-932481c4" id="opt76" value="18" datatype="number">
+        <cl:expbind property="visible" category="PROPERTY" expression="#dmLP.getValue(&quot;CTC.LP_WfrCount&quot;) >= Number(value) ? true : false"/>
+        <cl:formdata std:sid="f-data-c1d4f7d7" row="0" col="17"/>
+      </cl:output>
+      <cl:output std:sid="output-1e292acc" id="opt77" value="19" datatype="number">
+        <cl:expbind property="visible" category="PROPERTY" expression="#dmLP.getValue(&quot;CTC.LP_WfrCount&quot;) >= Number(value) ? true : false"/>
+        <cl:formdata std:sid="f-data-a0e440fd" row="0" col="18"/>
+      </cl:output>
+      <cl:output std:sid="output-252d13cd" id="opt78" value="20" datatype="number">
+        <cl:expbind property="visible" category="PROPERTY" expression="#dmLP.getValue(&quot;CTC.LP_WfrCount&quot;) >= Number(value) ? true : false"/>
+        <cl:formdata std:sid="f-data-970033a8" row="0" col="19"/>
+      </cl:output>
+      <cl:output std:sid="output-37570aeb" id="opt79" value="21" datatype="number">
+        <cl:expbind property="visible" category="PROPERTY" expression="#dmLP.getValue(&quot;CTC.LP_WfrCount&quot;) >= Number(value) ? true : false"/>
+        <cl:formdata std:sid="f-data-f8d7df2c" row="0" col="20"/>
+      </cl:output>
+      <cl:output std:sid="output-b5b89e51" id="opt80" value="22" datatype="number">
+        <cl:expbind property="visible" category="PROPERTY" expression="#dmLP.getValue(&quot;CTC.LP_WfrCount&quot;) >= Number(value) ? true : false"/>
+        <cl:formdata std:sid="f-data-e5e1b526" row="0" col="21"/>
+      </cl:output>
+      <cl:output std:sid="output-c17c121a" id="opt81" value="23" datatype="number">
+        <cl:expbind property="visible" category="PROPERTY" expression="#dmLP.getValue(&quot;CTC.LP_WfrCount&quot;) >= Number(value) ? true : false"/>
+        <cl:formdata std:sid="f-data-610be384" row="0" col="22"/>
+      </cl:output>
+      <cl:output std:sid="output-eba50f4e" id="opt82" value="24" datatype="number">
+        <cl:expbind property="visible" category="PROPERTY" expression="#dmLP.getValue(&quot;CTC.LP_WfrCount&quot;) >= Number(value) ? true : false"/>
+        <cl:formdata std:sid="f-data-73f18deb" row="0" col="23"/>
+      </cl:output>
+      <cl:output std:sid="output-d41a61c5" id="opt83" value="25" datatype="number">
+        <cl:expbind property="visible" category="PROPERTY" expression="#dmLP.getValue(&quot;CTC.LP_WfrCount&quot;) >= Number(value) ? true : false"/>
+        <cl:formdata std:sid="f-data-28a91c91" row="0" col="24"/>
+      </cl:output>
+      <cl:formlayout std:sid="f-layout-621bc3f8" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px" vseparatorwidth="1" vseparatortype="BY_CLASS">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-76a2840f" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+      <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+      <cl:rows length="2" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

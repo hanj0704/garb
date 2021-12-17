@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ff385cb0" version="1.0.3145">
+  <head std:sid="head-0477b8b2">
+    <screen std:sid="screen-df63ee46" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-80eb0705" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-23c08965" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-9128519b"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-2285354f">
+    <cl:tabfolder std:sid="t-folder-82cfa4f2">
+      <cl:xylayoutdata std:sid="xyl-data-44ce7ac3" top="20px" left="20px" width="948px" height="375px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:tabitem std:sid="t-item-90cc3dee" selected="true" text="tab1" closable="true">
+        <cl:group std:sid="group-1737a226" id="grp1">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:udc std:sid="ud-control-c167cc21" type="udc.aaa.hanj">
+            <cl:xylayoutdata std:sid="xyl-data-d949c546" top="20px" left="38px" width="300px" height="300px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:udc>
+          <cl:xylayout std:sid="xylayout-b4bbc821"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-1bd5f1a4" text="tab 2">
+        <std:metadata>
+          <std:property key="is-active-item" value="true"/>
+        </std:metadata>
+        <cl:group std:sid="group-898017e6" id="grp2">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:xylayout std:sid="xylayout-a80eaf35"/>
+        </cl:group>
+      </cl:tabitem>
+    </cl:tabfolder>
+    <cl:xylayout std:sid="xylayout-9cc6df10"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

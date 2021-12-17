@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ae978860" version="1.0.0.0">
+  <head std:sid="head-7a94f363">
+    <title>hycu</title>
+    <screen std:sid="screen-5b4ba0a5" id="default" customHeight="600" customWidth="800" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-187361ce" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-26d8f792" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-fd8ecc93"/>
+    <cl:appspec>
+      <cl:property name="dataS" type="control"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-55fa8e8b" style="top:0px; left:0px; width:1000px; height:400px;">
+    <cl:listener std:sid="listener-61613bda" handler="onBodyLoad" name="load"/>
+    <cl:group std:sid="group-4adac080">
+      <cl:xylayoutdata std:sid="xyl-data-32a7da90" height="50px" horizontalAnchor="LEFT" left="0px" top="0px" verticalAnchor="TOP" width="1000px"/>
+      <cl:button std:sid="button-8b34f9e6" id="btn1" value="">
+        <cl:listener std:sid="listener-ec1c8f03" handler="onBtn1Click" name="click"/>
+        <cl:xylayoutdata std:sid="xyl-data-bd393671" bottom="0px" horizontalAnchor="RIGHT" right="0px" top="0px" verticalAnchor="BOTH" width="55px"/>
+      </cl:button>
+      <cl:radiobutton std:sid="r-button-fdb00e97" id="rdb1">
+        <cl:xylayoutdata std:sid="xyl-data-8a98b3d4" bottom="0px" horizontalAnchor="LEFT" left="0px" top="0px" verticalAnchor="BOTH" width="800px"/>
+        <cl:item label="교과" value="value1"/>
+        <cl:item label="수업" value="value2"/>
+        <cl:item label="업무3" value="value3"/>
+        <cl:item label="업무4" value="value4"/>
+        <cl:item label="업무5" value="value5"/>
+        <cl:item label="업무6" value="value6"/>
+        <cl:item label="업무7" value="value7"/>
+      </cl:radiobutton>
+      <cl:xylayout std:sid="xylayout-8cc07aac"/>
+    </cl:group>
+    <cl:group std:sid="group-4b4ce35a" id="grpContent" class="cl-form-group" style="border-right-style:solid; border-top-width:1px; border-bottom-color:lightgray; border-left-style:solid; border-right-width:1px; border-bottom-width:1px; border-left-color:lightgray; border-top-color:lightgray; border-bottom-style:solid; border-right-color:lightgray; border-left-width:1px; border-top-style:solid;">
+      <cl:xylayoutdata std:sid="xyl-data-49063a68" height="340px" horizontalAnchor="LEFT" left="0px" top="50px" verticalAnchor="TOP" width="820px"/>
+      <cl:group std:sid="group-b55e34e6" id="grp1">
+        <cl:flowlayoutdata std:sid="f-data-8c84df8b" height="330px" width="142px"/>
+        <cl:verticallayout std:sid="v-layout-56a2a247" bottommargin="10" leftmargin="10" rightmargin="10" spacing="0" topmargin="10"/>
+      </cl:group>
+      <cl:flowlayout std:sid="f-layout-c63c8231" scrollable="false" linewrap="false"/>
+    </cl:group>
+    <cl:group std:sid="group-61412251">
+      <cl:xylayoutdata std:sid="xyl-data-fdfdc2b6" height="350px" horizontalAnchor="LEFT" left="850px" top="50px" verticalAnchor="TOP" width="150px"/>
+      <cl:udc std:sid="ud-control-75ee479e" type="udc.hycuMenu">
+        <cl:verticaldata std:sid="v-data-ea80a69f" height="191px" width="98px"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-c5ce7190"/>
+    </cl:group>
+    <cl:group std:sid="group-37e0e934">
+      <cl:xylayoutdata std:sid="xyl-data-ee1659b7" height="350px" horizontalAnchor="LEFT" left="820px" top="50px" verticalAnchor="TOP" width="30px"/>
+      <cl:button std:sid="button-d373b75e" id="btn2" value="">
+        <cl:xylayoutdata std:sid="xyl-data-4c253e05" bottom="38px" height="20px" horizontalAnchor="LEFT" left="3px" verticalAnchor="BOTTOM" width="24px"/>
+      </cl:button>
+      <cl:button std:sid="button-7dbb814b" id="btn3" value="">
+        <cl:xylayoutdata std:sid="xyl-data-5856cff4" bottom="11px" height="20px" horizontalAnchor="LEFT" left="3px" verticalAnchor="BOTTOM" width="24px"/>
+      </cl:button>
+      <cl:xylayout std:sid="xylayout-c356ba46"/>
+    </cl:group>
+    <cl:group std:sid="group-5344c7f0">
+      <cl:xylayoutdata std:sid="xyl-data-6e0040c6" height="10px" horizontalAnchor="LEFT" left="0px" top="390px" verticalAnchor="TOP" width="820px"/>
+      <cl:xylayout std:sid="xylayout-0288f9e3"/>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-28f54d7f"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

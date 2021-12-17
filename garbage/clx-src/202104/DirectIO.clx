@@ -1,0 +1,1327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-b4fda3bc" version="1.0.0.0">
+  <head std:sid="head-f395f134">
+    <title>DirectIO</title>
+    <screen std:sid="screen-6dda5a8a" id="default" name="default" minwidth="1024px" width="1024px" height="768px" useCustomWidth="true" useCustomHeight="true" customHeight="800" customWidth="1600"/>
+    <screen std:sid="screen-3e8157b6" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-a5c534ae" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-ebfadcb5">
+      <cl:dataset comment="Digital Output Value" std:sid="d-set-6894494d" id="dsTMBuzzerOut" info="TM_OUT">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-d5b98413" info="A" name="UPPER_CLASS"/>
+          <cl:datacolumn std:sid="d-column-7b9396cf" info="B" name="BUZZER_NM"/>
+          <cl:datacolumn std:sid="d-column-7cebc307" info="C" name="BUZZER_STATUS"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[SlitValue Open/Close]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[LLA#1]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[success]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[SlitValue Open/Close]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[LLA#2]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[danger]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[SlitValue Open/Close]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[LLB#1]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[danger]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[SlitValue Open/Close]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[LLB#2]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[warning]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[SlitValue Open/Close]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[chA1]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[warning]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[SlitValue Open/Close]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[chA2]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[warning]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[SlitValue Open/Close]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[chB1]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[warning]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[SlitValue Open/Close]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[chB2]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[SlitValue Open/Close]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[chC1]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[SlitValue Open/Close]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[chC2]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Valve]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[RoughPump]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Valve]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[SlowVent]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Valve]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[FastVent]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Valve]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[SlowPump]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Signal Tower]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[Red]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Signal Tower]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[Green]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Signal Tower]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[Amber]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Signal Tower]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[Blue]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[PCW Shutoff V/V]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[PCW Flow]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Pumb On/Off]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[DryPump TM]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Buzzer]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[Alarm]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset comment="Digital Input Value" std:sid="d-set-25d50103" id="dsTMBuzzerInput" info="TM_IN">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-9609caf6" info="D" name="UPPER_CLASS"/>
+          <cl:datacolumn std:sid="d-column-9b7495e3" info="E" name="BUZZER_NM"/>
+          <cl:datacolumn std:sid="d-column-7c54fc28" info="F" name="BUZZER_STATUS"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Robot Not Extend]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[L1]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[success]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Robot Not Extend]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[L2]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[danger]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Robot Not Extend]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[L3]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Robot Not Extend]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[L4]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Robot Not Extend]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[L5]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Robot Not Extend]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[L6]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Robot Not Extend]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[L7]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Robot Not Extend]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[L8]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Robot Not Extend]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[L9]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Robot Not Extend]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[L10]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[TM Pumb]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[Running]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[TM Pumb]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[Warning]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[TM Pumb]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[Alarm]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Fan]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[AC Rack1]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Fan]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[AC Rack2]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Fan]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[IO Box1]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Fan]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[IO Box2]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Fan]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[Control Rack1]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Fan]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[Control Rack2]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Fan]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[Control Rack3]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Fan]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[Control Rack4]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Fan]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[Main FrameBox]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[EMO Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[EFEM Front]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[EMO Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[EFEM Rear]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[EMO Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[EFEM Right]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[EMO Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[EFEM Left]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[EMO Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[ACRack Front]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[success]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[EMO Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[ACRack Right]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[success]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[EMO Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[CHA]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[EMO Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[CHB]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[EMO Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[CHC]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[NONE]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[Air Press Switch]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[success]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[NONE]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[N2 Press Switch LL]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[success]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[NONE]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[N2 Press Switch]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[NONE]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[EFEM Side Door]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[danger]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[NONE]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[Water Leak Main]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[NONE]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[Water Leak LLA#1]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[NONE]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[Water Leak LLA#2]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[NONE]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[Smoke Detector ACRack]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Slit Value Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[LLA#1_Op]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Slit Value Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[LLA#1_Cl]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Slit Value Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[LLA#2_Op]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Slit Value Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[LLA#2_Cl]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Slit Value Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[LLB#1_Op]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Slit Value Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[LLB#1_Cl]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Slit Value Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[LLB#2_Op]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Slit Value Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[LLB#2_Cl]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Slit Value Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[chA1_Op]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Slit Value Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[chA1_Cl]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Slit Value Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[chA2_Op]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Slit Value Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[chA2_Cl]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Slit Value Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[chB1_Op]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Slit Value Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[chB1_Cl]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Slit Value Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[chB2_Op]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Slit Value Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[chB2_Cl]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Slit Value Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[chC1_Op]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Slit Value Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[chC1_Cl]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Slit Value Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[chC2_Op]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="UPPER_CLASS"><![CDATA[Slit Value Status]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_NM"><![CDATA[chC2_Cl]]></cl:datavalue>
+            <cl:datavalue columnname="BUZZER_STATUS"><![CDATA[off]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-6aab7268" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-279aab1c" info="col1" name="column1" defaultvalue="aq"/>
+          <cl:datacolumn std:sid="d-column-47185fc8" info="col2" name="column2" defaultvalue="bq"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-ccc7ba5a" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-19b3422f" name="load" handler="onBodyLoad"/>
+    <cl:listener std:sid="listener-99f0c1ba" name="host-change" handler="onBodyHostChange"/>
+    <cl:group std:sid="group-3e559e59" id="grp5">
+      <cl:formdata std:sid="f-data-0f390061" row="1" col="0"/>
+      <cl:output std:sid="output-2343d042" id="opt6" class="form-title" value="Digital Output Value">
+        <cl:formdata std:sid="f-data-e73a140a" row="0" col="0" rowspan="1" colspan="3"/>
+      </cl:output>
+      <cl:group std:sid="group-2f3a0e02" id="grp2" class="card">
+        <cl:formdata std:sid="f-data-3b746a92" row="1" col="0" rowspan="2" colspan="1"/>
+        <cl:output std:sid="output-3d59dda4" id="opt2" class="grid-title" value="SlitValue Open/Close">
+          <cl:formdata std:sid="f-data-9981378b" row="0" col="0" rowspan="1" colspan="2"/>
+        </cl:output>
+        <cl:output std:sid="output-57df149b" id="opt1" class="small text-center" value="LLA&#xD;&#xA;#2">
+          <cl:formdata std:sid="f-data-ba5f7149" row="1" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-071cd56c" id="opt16" class="small text-center" value="LLA&#xD;&#xA;#1">
+          <cl:formdata std:sid="f-data-10a8a82a" row="1" col="1"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-42e4c11b" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-09aebb37" halign="CENTER" valign="TOP" width="25" height="25" row="2" col="0"/>
+          <cl:property name="clickable" value="true" type="boolean"/>
+          <cl:property name="status" value="danger" type="enumeration"/>
+          <cl:property name="belong" value="SlitValue Open/Close" type="string"/>
+          <cl:property name="name" value="LLA#2" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-ad635fa3" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-45010b5e" halign="CENTER" valign="TOP" width="25" height="25" row="2" col="1"/>
+          <cl:property name="clickable" value="true" type="boolean"/>
+          <cl:property name="status" value="success" type="enumeration"/>
+          <cl:property name="belong" value="SlitValue Open/Close" type="string"/>
+          <cl:property name="name" value="LLA#1" type="string"/>
+        </cl:udc>
+        <cl:output std:sid="output-11ecf9da" id="opt17" class="small text-center" value="LLB&#xD;&#xA;#2">
+          <cl:formdata std:sid="f-data-918fd10d" row="3" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-a3e871be" id="opt18" class="small text-center" value="LLB&#xD;&#xA;#1">
+          <cl:formdata std:sid="f-data-ff6c2451" row="3" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-40c30982" id="opt19" class="small text-center" value="chA1">
+          <cl:formdata std:sid="f-data-7735fab1" row="5" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-905501d5" id="opt20" class="small text-center" value="chA2">
+          <cl:formdata std:sid="f-data-587190fb" row="5" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-1610b8de" id="opt21" class="small text-center" value="chB1">
+          <cl:formdata std:sid="f-data-bf9a0d30" row="7" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-e546aeb2" id="opt22" class="small text-center" value="chB2">
+          <cl:formdata std:sid="f-data-97afc5c3" row="7" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-3cd44523" id="opt23" class="small text-center" value="chC1">
+          <cl:formdata std:sid="f-data-0dc7dceb" row="9" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-c84a2a70" id="opt24" class="small text-center" value="chC2">
+          <cl:formdata std:sid="f-data-90502a90" row="9" col="1"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-fa354adb" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-053986a2" halign="CENTER" valign="TOP" width="25" height="25" row="4" col="0"/>
+          <cl:property name="clickable" value="true" type="boolean"/>
+          <cl:property name="belong" value="SlitValue Open/Close" type="string"/>
+          <cl:property name="name" value="LLB#2" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-34358b37" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-ae438ed9" halign="CENTER" valign="TOP" width="25" height="25" row="4" col="1"/>
+          <cl:property name="clickable" value="true" type="boolean"/>
+          <cl:property name="status" value="warning" type="enumeration"/>
+          <cl:property name="belong" value="SlitValue Open/Close" type="string"/>
+          <cl:property name="name" value="LLB#1" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-76b5fee7" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-b4b64e2b" halign="CENTER" valign="TOP" width="25" height="25" row="6" col="0"/>
+          <cl:property name="clickable" value="true" type="boolean"/>
+          <cl:property name="belong" value="SlitValue Open/Close" type="string"/>
+          <cl:property name="name" value="chA1" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-1c12d5e5" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-93de897c" halign="CENTER" valign="TOP" width="25" height="25" row="6" col="1"/>
+          <cl:property name="clickable" value="true" type="boolean"/>
+          <cl:property name="belong" value="SlitValue Open/Close" type="string"/>
+          <cl:property name="name" value="chA2" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-875073c7" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-56b4345e" halign="CENTER" valign="TOP" width="25" height="25" row="8" col="0"/>
+          <cl:property name="clickable" value="true" type="boolean"/>
+          <cl:property name="belong" value="SlitValue Open/Close" type="string"/>
+          <cl:property name="name" value="chB1" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-d6560eea" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-9d3b81ce" halign="CENTER" valign="TOP" width="25" height="25" row="8" col="1"/>
+          <cl:property name="clickable" value="true" type="boolean"/>
+          <cl:property name="belong" value="SlitValue Open/Close" type="string"/>
+          <cl:property name="name" value="chB2" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-68cc6f19" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-80687853" halign="CENTER" valign="TOP" width="25" height="25" row="10" col="0"/>
+          <cl:property name="clickable" value="true" type="boolean"/>
+          <cl:property name="belong" value="SlitValue Open/Close" type="string"/>
+          <cl:property name="name" value="chC1" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-2ee8f573" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-d68bb5f2" halign="CENTER" valign="TOP" width="25" height="25" row="10" col="1"/>
+          <cl:property name="clickable" value="true" type="boolean"/>
+          <cl:property name="belong" value="SlitValue Open/Close" type="string"/>
+          <cl:property name="name" value="chC2" type="string"/>
+        </cl:udc>
+        <cl:formlayout std:sid="f-layout-367c2110" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="35" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30"/>
+          <cl:rows length="35" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30"/>
+          <cl:rows length="35" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30"/>
+          <cl:rows length="35" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30"/>
+          <cl:rows length="35" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30"/>
+          <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-8ee9a90f" id="grp6" class="card">
+        <cl:formdata std:sid="f-data-c12b22c8" row="3" col="0"/>
+        <cl:output std:sid="output-905727f4" id="opt5" class="grid-title" value="PCW Shutoff V/V">
+          <cl:formdata std:sid="f-data-bfb9fdca" row="0" col="0" rowspan="1" colspan="1"/>
+        </cl:output>
+        <cl:output std:sid="output-8b41d26e" id="opt25" class="small text-center align-bottom" value="PCW Flow">
+          <cl:formdata std:sid="f-data-a669e205" row="1" col="0"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-f44fa2fa" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-7bf4d7fc" halign="CENTER" valign="TOP" width="25" row="2" col="0"/>
+          <cl:property name="clickable" value="true" type="boolean"/>
+          <cl:property name="belong" value="PCW Shutoff V/V" type="string"/>
+          <cl:property name="name" value="PCW Flow" type="string"/>
+        </cl:udc>
+        <cl:formlayout std:sid="f-layout-498ffefe" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="35" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-5c74c85d" id="grp7" class="card">
+        <cl:formdata std:sid="f-data-47417168" row="2" col="2" rowspan="2" colspan="1"/>
+        <cl:output std:sid="output-420d9d4b" id="opt7" class="grid-title" value="Buzzer">
+          <cl:formdata std:sid="f-data-e2ded3c9" row="0" col="0" rowspan="1" colspan="1"/>
+        </cl:output>
+        <cl:output std:sid="output-5d8c049c" id="opt27" class="small text-center align-bottom" value="Alarm">
+          <cl:formdata std:sid="f-data-3893b47c" row="1" col="0"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-43a1b5ec" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-c4f5ba86" halign="CENTER" valign="TOP" width="25" row="2" col="0"/>
+          <cl:property name="status" value="success" type="enumeration"/>
+          <cl:property name="clickable" value="true" type="boolean"/>
+          <cl:property name="belong" value="Buzzer" type="string"/>
+          <cl:property name="name" value="Alarm" type="string"/>
+        </cl:udc>
+        <cl:formlayout std:sid="f-layout-02827459" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="35" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-21373607" id="grp8" class="card">
+        <cl:formdata std:sid="f-data-d6497e2e" row="2" col="1" rowspan="2" colspan="1"/>
+        <cl:output std:sid="output-ada857e9" id="opt8" class="grid-title" value="Pumb On/Off">
+          <cl:formdata std:sid="f-data-89199f71" row="0" col="0" rowspan="1" colspan="1"/>
+        </cl:output>
+        <cl:output std:sid="output-6f95eefb" id="opt26" class="small text-center align-bottom" value="DryPump TM">
+          <cl:formdata std:sid="f-data-5a48d9a1" row="1" col="0"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-3fbe7756" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-6fa26bbb" halign="CENTER" valign="TOP" width="25" row="2" col="0"/>
+          <cl:property name="status" value="success" type="enumeration"/>
+          <cl:property name="clickable" value="true" type="boolean"/>
+          <cl:property name="belong" value="Pumb On/Off" type="string"/>
+          <cl:property name="name" value="DryPump TM" type="string"/>
+        </cl:udc>
+        <cl:formlayout std:sid="f-layout-5ea359e9" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="35" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-dfa330f1" id="grp3" class="card">
+        <cl:formdata std:sid="f-data-6aad8b50" row="1" col="2"/>
+        <cl:output std:sid="output-1c7448c7" id="opt3" class="grid-title" value="Signal Tower">
+          <cl:formdata std:sid="f-data-20c4bf06" row="0" col="0" rowspan="1" colspan="1"/>
+        </cl:output>
+        <cl:output std:sid="output-0ee55acc" id="opt4" class="small text-center" value="Red">
+          <cl:formdata std:sid="f-data-eaba6053" row="1" col="0"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-35740c04" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-ecbc5674" halign="CENTER" valign="TOP" width="25" height="25" row="2" col="0"/>
+          <cl:property name="clickable" value="true" type="boolean"/>
+          <cl:property name="belong" value="Signal Tower" type="string"/>
+          <cl:property name="name" value="Red" type="string"/>
+        </cl:udc>
+        <cl:output std:sid="output-db289489" id="opt29" class="small text-center" value="Green">
+          <cl:formdata std:sid="f-data-ccb698e3" row="3" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-5caacab8" id="opt31" class="small text-center" value="Amber">
+          <cl:formdata std:sid="f-data-f998b6d7" row="5" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-7fc2fcf1" id="opt33" class="small text-center" value="Blue">
+          <cl:formdata std:sid="f-data-c79d778b" row="7" col="0"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-8b1ac934" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-833db82a" halign="CENTER" valign="TOP" width="25" height="25" row="4" col="0"/>
+          <cl:property name="clickable" value="true" type="boolean"/>
+          <cl:property name="belong" value="Signal Tower" type="string"/>
+          <cl:property name="name" value="Green" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-ac84d7b6" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-ded3f65c" halign="CENTER" valign="TOP" width="25" height="25" row="6" col="0"/>
+          <cl:property name="clickable" value="true" type="boolean"/>
+          <cl:property name="belong" value="Signal Tower" type="string"/>
+          <cl:property name="name" value="Amber" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-55f2c718" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-025805a5" halign="CENTER" valign="TOP" width="25" height="25" row="8" col="0"/>
+          <cl:property name="clickable" value="true" type="boolean"/>
+          <cl:property name="belong" value="Signal Tower" type="string"/>
+          <cl:property name="name" value="Blue" type="string"/>
+        </cl:udc>
+        <cl:formlayout std:sid="f-layout-cb255b78" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="35" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30"/>
+          <cl:rows length="35" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30"/>
+          <cl:rows length="35" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30"/>
+          <cl:rows length="35" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30"/>
+          <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-4be45667" id="grp4" class="card">
+        <cl:formdata std:sid="f-data-adae998e" row="1" col="1"/>
+        <cl:output std:sid="output-c566b6e8" id="opt37" class="grid-title" value="Valve">
+          <cl:formdata std:sid="f-data-ccb5a197" row="0" col="0" rowspan="1" colspan="1"/>
+        </cl:output>
+        <cl:output std:sid="output-d7601688" id="opt38" class="small text-center" value="Rough&#xD;&#xA;Pump">
+          <cl:formdata std:sid="f-data-ea7f414c" row="1" col="0"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-2ff658dc" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-096f5ebe" halign="CENTER" valign="TOP" width="25" height="25" row="2" col="0"/>
+          <cl:property name="status" value="success" type="enumeration"/>
+          <cl:property name="clickable" value="true" type="boolean"/>
+          <cl:property name="belong" value="Valve" type="string"/>
+          <cl:property name="name" value="RoughPump" type="string"/>
+        </cl:udc>
+        <cl:output std:sid="output-1d911edc" id="opt40" class="small text-center" value="Slow&#xD;&#xA;Vent">
+          <cl:formdata std:sid="f-data-fd11027a" row="3" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-b712eff5" id="opt42" class="small text-center" value="Fast&#xD;&#xA;Vent">
+          <cl:formdata std:sid="f-data-b1181ddd" row="5" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-fe9e6045" id="opt44" class="small text-center" value="Slow&#xD;&#xA;Pump">
+          <cl:formdata std:sid="f-data-0c92fc87" row="7" col="0"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-f81a34ed" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-b72638dd" halign="CENTER" valign="TOP" width="25" height="25" row="4" col="0"/>
+          <cl:property name="status" value="success" type="enumeration"/>
+          <cl:property name="clickable" value="true" type="boolean"/>
+          <cl:property name="belong" value="Valve" type="string"/>
+          <cl:property name="name" value="SlowVent" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-f89dc96b" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-63371b96" halign="CENTER" valign="TOP" width="25" height="25" row="6" col="0"/>
+          <cl:property name="clickable" value="true" type="boolean"/>
+          <cl:property name="belong" value="Valve" type="string"/>
+          <cl:property name="name" value="FastVent" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-746828bc" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-3b640957" halign="CENTER" valign="TOP" width="25" height="25" row="8" col="0"/>
+          <cl:property name="clickable" value="true" type="boolean"/>
+          <cl:property name="belong" value="Valve" type="string"/>
+          <cl:property name="name" value="SlowPump" type="string"/>
+        </cl:udc>
+        <cl:formlayout std:sid="f-layout-401fede3" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="35" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30"/>
+          <cl:rows length="35" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30"/>
+          <cl:rows length="35" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30"/>
+          <cl:rows length="35" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30"/>
+          <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-2a01f971" hspace="10px" vspace="10px" hseparatorwidth="1" vseparatorwidth="1">
+        <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="2" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-c12e255b" id="grp9">
+      <cl:formdata std:sid="f-data-75b025ed" row="1" col="1"/>
+      <cl:output std:sid="output-2f3381f2" id="opt9" class="form-title" value="Digital Input Value">
+        <cl:formdata std:sid="f-data-65b010ca" row="0" col="0" rowspan="1" colspan="3"/>
+      </cl:output>
+      <cl:group std:sid="group-e85e00cf" id="grp10" class="card">
+        <cl:formdata std:sid="f-data-aadd3afc" row="1" col="0" rowspan="3" colspan="1"/>
+        <cl:output std:sid="output-0bcb1c91" id="opt10" class="grid-title" value="Slit Value Status">
+          <cl:formdata std:sid="f-data-0743e15e" row="0" col="0" rowspan="1" colspan="3"/>
+        </cl:output>
+        <cl:output std:sid="output-57477fa5" id="opt30" class="text-center" value="Cl">
+          <cl:formdata std:sid="f-data-613f4dff" row="1" col="2"/>
+        </cl:output>
+        <cl:output std:sid="output-6befebfd" id="opt32" class="text-center" value="LLA#1">
+          <cl:formdata std:sid="f-data-cb88bc0d" row="2" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-f82a6155" id="opt34" class="text-center" value="LLA#2">
+          <cl:formdata std:sid="f-data-74058772" row="3" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-a4a13d9f" id="opt35" class="text-center" value="LLB#1">
+          <cl:formdata std:sid="f-data-3416f05c" row="4" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-cca6631f" id="opt36" class="text-center" value="LLB#2">
+          <cl:formdata std:sid="f-data-9848d742" row="5" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-b135cfbf" id="opt39" class="text-center" value="chA1">
+          <cl:formdata std:sid="f-data-3d719cf3" row="6" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-67ca9f49" id="opt41" class="text-center" value="chA2">
+          <cl:formdata std:sid="f-data-9b71418f" row="7" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-3c0fa7d7" id="opt43" class="text-center" value="chB1">
+          <cl:formdata std:sid="f-data-b856c98f" row="8" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-c20797b9" id="opt45" class="text-center" value="chB2">
+          <cl:formdata std:sid="f-data-9514e019" row="9" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-dba88e9b" id="opt46" class="text-center" value="chC1">
+          <cl:formdata std:sid="f-data-123bf33c" row="10" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-c20527ba" id="opt47" class="text-center" value="chC2">
+          <cl:formdata std:sid="f-data-5c95edcc" row="11" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-b1146279" id="opt28" class="text-center" value="Op">
+          <cl:formdata std:sid="f-data-cca195b5" row="1" col="1"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-de1712e7" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-f83115c9" halign="CENTER" valign="CENTER" width="25" row="2" col="1"/>
+          <cl:property name="belong" value="Slit Value Status" type="string"/>
+          <cl:property name="name" value="LLA#1_Op" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-2b6b5359" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-a2e87087" halign="CENTER" valign="CENTER" width="25" row="3" col="1"/>
+          <cl:property name="belong" value="Slit Value Status" type="string"/>
+          <cl:property name="name" value="LLA#2_Op" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-84150f02" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-c0eb9d6d" halign="CENTER" valign="CENTER" width="25" row="4" col="1"/>
+          <cl:property name="belong" value="Slit Value Status" type="string"/>
+          <cl:property name="name" value="LLB#1_Op" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-133ec851" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-fdc6266f" halign="CENTER" valign="CENTER" width="25" row="5" col="1"/>
+          <cl:property name="belong" value="Slit Value Status" type="string"/>
+          <cl:property name="name" value="LLB#2_Op" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-22ef55d3" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-26c35a9a" halign="CENTER" valign="CENTER" width="25" row="6" col="1"/>
+          <cl:property name="belong" value="Slit Value Status" type="string"/>
+          <cl:property name="name" value="chA1_Op" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-49c69b50" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-265cd724" halign="CENTER" valign="CENTER" width="25" row="7" col="1"/>
+          <cl:property name="belong" value="Slit Value Status" type="string"/>
+          <cl:property name="name" value="chA2_Op" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-9dbcc8d7" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-e6d76ab4" halign="CENTER" valign="CENTER" width="25" row="8" col="1"/>
+          <cl:property name="belong" value="Slit Value Status" type="string"/>
+          <cl:property name="name" value="chB1_Op" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-1985a05b" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-ee490a64" halign="CENTER" valign="CENTER" width="25" row="9" col="1"/>
+          <cl:property name="belong" value="Slit Value Status" type="string"/>
+          <cl:property name="name" value="chB2_Op" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-99dc16c6" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-ac486f49" halign="CENTER" valign="CENTER" width="25" row="10" col="1"/>
+          <cl:property name="belong" value="Slit Value Status" type="string"/>
+          <cl:property name="name" value="chC1_Op" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-9e0e33ae" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-fca80487" halign="CENTER" valign="CENTER" width="25" row="11" col="1"/>
+          <cl:property name="belong" value="Slit Value Status" type="string"/>
+          <cl:property name="name" value="chC2_Op" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-50b4eb18" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-35da6140" halign="CENTER" valign="CENTER" width="25" row="2" col="2"/>
+          <cl:property name="belong" value="Slit Value Status" type="string"/>
+          <cl:property name="name" value="LLA#1_Cl" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-f999dee0" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-53376ed4" halign="CENTER" valign="CENTER" width="25" row="3" col="2"/>
+          <cl:property name="belong" value="Slit Value Status" type="string"/>
+          <cl:property name="name" value="LLA#2_Cl" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-b4de11ca" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-5c03e351" halign="CENTER" valign="CENTER" width="25" row="4" col="2"/>
+          <cl:property name="belong" value="Slit Value Status" type="string"/>
+          <cl:property name="name" value="LLB#1_Cl" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-4893ac45" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-df56b10f" halign="CENTER" valign="CENTER" width="25" row="5" col="2"/>
+          <cl:property name="belong" value="Slit Value Status" type="string"/>
+          <cl:property name="name" value="LLB#2_Cl" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-529b9361" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-3f7bc7b8" halign="CENTER" valign="CENTER" width="25" row="6" col="2"/>
+          <cl:property name="belong" value="Slit Value Status" type="string"/>
+          <cl:property name="name" value="chA1_Cl" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-f3e9cc93" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-cccbd056" halign="CENTER" valign="CENTER" width="25" row="7" col="2"/>
+          <cl:property name="belong" value="Slit Value Status" type="string"/>
+          <cl:property name="name" value="chA2_Cl" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-b1540d2e" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-8c2cbd24" halign="CENTER" valign="CENTER" width="25" row="8" col="2"/>
+          <cl:property name="status" value="success" type="enumeration"/>
+          <cl:property name="belong" value="Slit Value Status" type="string"/>
+          <cl:property name="name" value="chB1_Cl" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-292172c7" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-ebf6e72c" halign="CENTER" valign="CENTER" width="25" row="9" col="2"/>
+          <cl:property name="status" value="success" type="enumeration"/>
+          <cl:property name="belong" value="Slit Value Status" type="string"/>
+          <cl:property name="name" value="chB2_Cl" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-1fccc9d4" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-7e8256f5" halign="CENTER" valign="CENTER" width="25" row="10" col="2"/>
+          <cl:property name="status" value="success" type="enumeration"/>
+          <cl:property name="belong" value="Slit Value Status" type="string"/>
+          <cl:property name="name" value="chC1_Cl" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-f9720a49" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-843c8ad6" halign="CENTER" valign="CENTER" width="25" row="11" col="2"/>
+          <cl:property name="status" value="success" type="enumeration"/>
+          <cl:property name="belong" value="Slit Value Status" type="string"/>
+          <cl:property name="name" value="chC2_Cl" type="string"/>
+        </cl:udc>
+        <cl:formlayout std:sid="f-layout-933bfae7" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-5d67f71a" id="grp11" class="card">
+        <cl:formdata std:sid="f-data-bde59ca5" row="1" col="1" rowspan="3" colspan="1"/>
+        <cl:output std:sid="output-3dbfec93" id="opt11" class="grid-title" value="Robot Not Extend">
+          <cl:formdata std:sid="f-data-49617247" row="0" col="0" rowspan="1" colspan="1"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-8ddb2b4e" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-3f20b1e5" halign="CENTER" valign="CENTER" width="25" row="2" col="0"/>
+          <cl:property name="belong" value="Robot Not Extend" type="string"/>
+          <cl:property name="name" value="L1" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-a8dbcd96" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-b454cc88" halign="CENTER" valign="CENTER" width="25" row="3" col="0"/>
+          <cl:property name="belong" value="Robot Not Extend" type="string"/>
+          <cl:property name="name" value="L2" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-3f7af17d" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-2e10f014" halign="CENTER" valign="CENTER" width="25" row="4" col="0"/>
+          <cl:property name="belong" value="Robot Not Extend" type="string"/>
+          <cl:property name="name" value="L3" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-272a7caa" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-aa115db1" halign="CENTER" valign="CENTER" width="25" row="5" col="0"/>
+          <cl:property name="belong" value="Robot Not Extend" type="string"/>
+          <cl:property name="name" value="L4" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-5fa098d4" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-0d761b53" halign="CENTER" valign="CENTER" width="25" row="6" col="0"/>
+          <cl:property name="belong" value="Robot Not Extend" type="string"/>
+          <cl:property name="name" value="L5" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-9439714f" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-99ea4d33" halign="CENTER" valign="CENTER" width="25" row="7" col="0"/>
+          <cl:property name="belong" value="Robot Not Extend" type="string"/>
+          <cl:property name="name" value="L6" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-5c7184cd" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-f092ae23" halign="CENTER" valign="CENTER" width="25" row="8" col="0"/>
+          <cl:property name="belong" value="Robot Not Extend" type="string"/>
+          <cl:property name="name" value="L7" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-d99ea934" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-f9bc528f" halign="CENTER" valign="CENTER" width="25" row="9" col="0"/>
+          <cl:property name="belong" value="Robot Not Extend" type="string"/>
+          <cl:property name="name" value="L8" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-63b515bc" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-24347b24" halign="CENTER" valign="CENTER" width="25" row="10" col="0"/>
+          <cl:property name="belong" value="Robot Not Extend" type="string"/>
+          <cl:property name="name" value="L9" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-e69987ae" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-b874976c" halign="CENTER" valign="CENTER" width="25" row="11" col="0"/>
+          <cl:property name="belong" value="Robot Not Extend" type="string"/>
+          <cl:property name="name" value="L10" type="string"/>
+        </cl:udc>
+        <cl:formlayout std:sid="f-layout-1aa4b77c" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-210f5d3b" id="grp12" class="card">
+        <cl:formdata std:sid="f-data-c52f82df" row="3" col="2"/>
+        <cl:output std:sid="output-635608b2" id="opt12" class="grid-title" value="EMO Status">
+          <cl:formdata std:sid="f-data-5b112dce" valign="TOP" height="20" row="0" col="0" rowspan="6" colspan="1"/>
+        </cl:output>
+        <cl:output std:sid="output-195aeccc" id="opt59" class="small text-center" value="EFEM&#xD;&#xA;Front">
+          <cl:formdata std:sid="f-data-0013af2e" row="0" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-b5913d2c" id="opt60" class="small text-center" value="EFEM&#xD;&#xA;Right">
+          <cl:formdata std:sid="f-data-ab2ae005" row="0" col="3"/>
+        </cl:output>
+        <cl:output std:sid="output-8385616a" id="opt61" class="small text-center" value="EFEM&#xD;&#xA;Rear">
+          <cl:formdata std:sid="f-data-2481221c" row="0" col="2"/>
+        </cl:output>
+        <cl:output std:sid="output-4066e1bc" id="opt62" class="small text-center" value="EFEM&#xD;&#xA;Left">
+          <cl:formdata std:sid="f-data-e003158b" row="0" col="4"/>
+        </cl:output>
+        <cl:output std:sid="output-a6c9bd36" id="opt63" class="small text-center" value="ACRack&#xD;&#xA;Front">
+          <cl:formdata std:sid="f-data-2c9f84d6" row="2" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-a8acb67b" id="opt64" class="small text-center" value="ACRack&#xD;&#xA;Right">
+          <cl:formdata std:sid="f-data-65c455b6" row="2" col="2"/>
+        </cl:output>
+        <cl:output std:sid="output-c52a0c2a" id="opt65" class="small text-center" value="CHA">
+          <cl:formdata std:sid="f-data-d6f126d5" row="4" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-92a2f386" id="opt66" class="small text-center" value="CHB">
+          <cl:formdata std:sid="f-data-a2cf700e" row="4" col="2"/>
+        </cl:output>
+        <cl:output std:sid="output-6d3bf06e" id="opt67" class="small text-center" value="CHC">
+          <cl:formdata std:sid="f-data-260609e9" row="4" col="3"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-297770d9" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-ac44686c" halign="CENTER" valign="CENTER" width="25" row="1" col="1"/>
+          <cl:property name="belong" value="EMO Status" type="string"/>
+          <cl:property name="name" value="EFEM Front" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-3af6eaba" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-27876c62" halign="CENTER" valign="CENTER" width="25" row="1" col="2"/>
+          <cl:property name="belong" value="EMO Status" type="string"/>
+          <cl:property name="name" value="EFEM Rear" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-ba5b2311" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-080171cc" halign="CENTER" valign="CENTER" width="25" row="1" col="3"/>
+          <cl:property name="belong" value="EMO Status" type="string"/>
+          <cl:property name="name" value="EFEM Right" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-e4043fe0" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-27e03054" halign="CENTER" valign="CENTER" width="25" row="1" col="4"/>
+          <cl:property name="belong" value="EMO Status" type="string"/>
+          <cl:property name="name" value="EFEM Left" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-e3b61ca9" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-a2b80d99" halign="CENTER" valign="CENTER" width="25" row="3" col="1"/>
+          <cl:property name="status" value="success" type="enumeration"/>
+          <cl:property name="belong" value="EMO Status" type="string"/>
+          <cl:property name="name" value="ACRack Front" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-71fec1bb" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-1998badd" halign="CENTER" valign="CENTER" width="25" row="3" col="2"/>
+          <cl:property name="status" value="success" type="enumeration"/>
+          <cl:property name="belong" value="EMO Status" type="string"/>
+          <cl:property name="name" value="ACRack Right" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-ff586b62" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-e8057ad0" halign="CENTER" valign="CENTER" width="25" row="5" col="1"/>
+          <cl:property name="belong" value="EMO Status" type="string"/>
+          <cl:property name="name" value="CHA" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-a8d2de74" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-28e5925e" halign="CENTER" valign="CENTER" width="25" row="5" col="2"/>
+          <cl:property name="belong" value="EMO Status" type="string"/>
+          <cl:property name="name" value="CHB" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-4c9e5d2f" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-7fb5e0d4" halign="CENTER" valign="CENTER" width="25" row="5" col="3"/>
+          <cl:property name="belong" value="EMO Status" type="string"/>
+          <cl:property name="name" value="CHC" type="string"/>
+        </cl:udc>
+        <cl:formlayout std:sid="f-layout-1300328c" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="35"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:rows length="35"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:rows length="35"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-680bd218" id="grp13" class="card">
+        <cl:formdata std:sid="f-data-cfff5648" row="4" col="0" rowspan="1" colspan="3"/>
+        <cl:output std:sid="output-da484403" id="opt68" class="small text-center" value="Air Press&#xD;&#xA;Switch">
+          <cl:formdata std:sid="f-data-7d20ede8" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-423300db" id="opt69" class="small text-center" value="N2 Press&#xD;&#xA;Switch LL">
+          <cl:formdata std:sid="f-data-b908e6bb" row="0" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-093f8f6b" id="opt70" class="small text-center" value="EFEM Side&#xD;&#xA;Door">
+          <cl:formdata std:sid="f-data-525e8895" row="0" col="3"/>
+        </cl:output>
+        <cl:output std:sid="output-e6d86340" id="opt71" class="small text-center" value="N2 Press&#xD;&#xA;Switch">
+          <cl:formdata std:sid="f-data-6aaec688" row="0" col="2"/>
+        </cl:output>
+        <cl:output std:sid="output-211c099a" id="opt72" class="small text-center" value="Water Leak&#xD;&#xA;Main">
+          <cl:formdata std:sid="f-data-4b4fdf4f" row="2" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-32183063" id="opt73" class="small text-center" value="Water Leak&#xD;&#xA;LLA#1">
+          <cl:formdata std:sid="f-data-c6b65b2c" row="2" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-b490f4bb" id="opt74" class="small text-center" value="Water Leak&#xD;&#xA;LLA#2">
+          <cl:formdata std:sid="f-data-43979593" row="2" col="2"/>
+        </cl:output>
+        <cl:output std:sid="output-62fdb2ea" id="opt75" class="small text-center" value="Smoke&#xD;&#xA;Detector ACRack">
+          <cl:formdata std:sid="f-data-7a311ce2" row="2" col="3"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-2f65dac7" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-a767e277" halign="CENTER" valign="CENTER" width="25" row="1" col="0"/>
+          <cl:property name="status" value="success" type="enumeration"/>
+          <cl:property name="belong" value="None" type="string"/>
+          <cl:property name="name" value="Air Press Switch" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-9c2bd6cb" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-7eefffdc" halign="CENTER" valign="CENTER" width="25" row="1" col="1"/>
+          <cl:property name="status" value="success" type="enumeration"/>
+          <cl:property name="belong" value="None" type="string"/>
+          <cl:property name="name" value="N2 Press Switch LL" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-4b18b162" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-a82c49ed" halign="CENTER" valign="CENTER" width="25" row="1" col="2"/>
+          <cl:property name="belong" value="None" type="string"/>
+          <cl:property name="name" value="N2 Press Switch" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-ad5de6e4" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-2b3f2649" halign="CENTER" valign="CENTER" width="25" row="1" col="3"/>
+          <cl:property name="status" value="danger" type="enumeration"/>
+          <cl:property name="belong" value="None" type="string"/>
+          <cl:property name="name" value="EFEM Side Door" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-776ee014" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-da502daa" halign="CENTER" valign="CENTER" width="25" row="3" col="3"/>
+          <cl:property name="belong" value="None" type="string"/>
+          <cl:property name="name" value="Smoke Detector ACRack" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-7eebacb5" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-00afc600" halign="CENTER" valign="CENTER" width="25" row="3" col="2"/>
+          <cl:property name="belong" value="None" type="string"/>
+          <cl:property name="name" value="Water Leak LLA#2" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-d323d9e0" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-8bfa8fdd" halign="CENTER" valign="CENTER" width="25" row="3" col="1"/>
+          <cl:property name="belong" value="None" type="string"/>
+          <cl:property name="name" value="Water Leak LLA#1" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-b1ff12dd" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-452621b2" halign="CENTER" valign="CENTER" width="25" row="3" col="0"/>
+          <cl:property name="belong" value="None" type="string"/>
+          <cl:property name="name" value="Water Leak Main" type="string"/>
+        </cl:udc>
+        <cl:formlayout std:sid="f-layout-23b971da" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="35"/>
+          <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+          <cl:rows length="35"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-c71b3d2d" id="grp14" class="card">
+        <cl:formdata std:sid="f-data-48bc7a07" row="2" col="2"/>
+        <cl:output std:sid="output-b5a953c3" id="opt14" class="grid-title" value="Fan">
+          <cl:formdata std:sid="f-data-f2e75f20" valign="TOP" height="20" row="0" col="0" rowspan="6" colspan="1"/>
+        </cl:output>
+        <cl:output std:sid="output-0b5b0788" id="opt13" class="small text-center" value="AC&#xD;&#xA;Rack1">
+          <cl:formdata std:sid="f-data-cae95223" row="0" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-3ef561e6" id="opt51" class="small text-center" value="AC&#xD;&#xA;Rack2">
+          <cl:formdata std:sid="f-data-a326c52c" row="0" col="2"/>
+        </cl:output>
+        <cl:output std:sid="output-9b3a5b6a" id="opt52" class="small text-center" value="IO&#xD;&#xA;Box2">
+          <cl:formdata std:sid="f-data-a3c3f63f" row="0" col="4"/>
+        </cl:output>
+        <cl:output std:sid="output-22b09c70" id="opt53" class="small text-center" value="IO&#xD;&#xA;Box1">
+          <cl:formdata std:sid="f-data-6308f1d1" row="0" col="3"/>
+        </cl:output>
+        <cl:output std:sid="output-0a1c89da" id="opt54" class="small text-center" value="Control&#xD;&#xA;Rack1">
+          <cl:formdata std:sid="f-data-81bb5c28" row="2" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-c7a1861a" id="opt55" class="small text-center" value="Control&#xD;&#xA;Rack2">
+          <cl:formdata std:sid="f-data-59cbbb69" row="2" col="2"/>
+        </cl:output>
+        <cl:output std:sid="output-163c0393" id="opt56" class="small text-center" value="Control&#xD;&#xA;Rack3">
+          <cl:formdata std:sid="f-data-2aa97440" row="2" col="3"/>
+        </cl:output>
+        <cl:output std:sid="output-90b7182e" id="opt57" class="small text-center" value="Control&#xD;&#xA;Rack4">
+          <cl:formdata std:sid="f-data-df50014b" row="2" col="4"/>
+        </cl:output>
+        <cl:output std:sid="output-b3357b0e" id="opt58" class="small text-center" value="Main&#xD;&#xA;FrameBox">
+          <cl:formdata std:sid="f-data-d9f8cdae" row="4" col="1"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-2636d0bd" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-82139574" halign="CENTER" valign="CENTER" width="25" row="1" col="1"/>
+          <cl:property name="belong" value="Fan" type="string"/>
+          <cl:property name="name" value="AC Rack1" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-b889b75c" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-64c5d2aa" halign="CENTER" valign="CENTER" width="25" row="1" col="2"/>
+          <cl:property name="belong" value="Fan" type="string"/>
+          <cl:property name="name" value="AC Rack2" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-3ab8738d" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-8ead9c62" halign="CENTER" valign="CENTER" width="25" row="1" col="3"/>
+          <cl:property name="belong" value="Fan" type="string"/>
+          <cl:property name="name" value="IO Box1" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-6de94035" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-ed2104f7" halign="CENTER" valign="CENTER" width="25" row="1" col="4"/>
+          <cl:property name="belong" value="Fan" type="string"/>
+          <cl:property name="name" value="IO Box2" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-a268664d" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-add68743" halign="CENTER" valign="CENTER" width="25" row="3" col="1"/>
+          <cl:property name="belong" value="Fan" type="string"/>
+          <cl:property name="name" value="Control Rack1" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-d0863750" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-2099feb1" halign="CENTER" valign="CENTER" width="25" row="3" col="3"/>
+          <cl:property name="status" value="success" type="enumeration"/>
+          <cl:property name="belong" value="Fan" type="string"/>
+          <cl:property name="name" value="Control Rack3" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-83971c0f" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-12f30c4f" halign="CENTER" valign="CENTER" width="25" row="3" col="2"/>
+          <cl:property name="belong" value="Fan" type="string"/>
+          <cl:property name="name" value="Control Rack2" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-f399f2f4" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-32733b48" halign="CENTER" valign="CENTER" width="25" row="3" col="4"/>
+          <cl:property name="status" value="success" type="enumeration"/>
+          <cl:property name="belong" value="Fan" type="string"/>
+          <cl:property name="name" value="Control Rack4" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-2d0f43f6" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-52abc171" halign="CENTER" valign="CENTER" width="25" row="5" col="1"/>
+          <cl:property name="belong" value="Fan" type="string"/>
+          <cl:property name="name" value="Main FrameBox" type="string"/>
+        </cl:udc>
+        <cl:formlayout std:sid="f-layout-1844b7b9" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="35" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+          <cl:rows length="35"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:rows length="35"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="110" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-531d4cb7" id="grp15" class="card">
+        <cl:formdata std:sid="f-data-aeaa12a2" row="1" col="2"/>
+        <cl:output std:sid="output-86b450e3" id="opt15" class="grid-title" value="TM Pumb">
+          <cl:formdata std:sid="f-data-7a05b0e3" valign="TOP" height="20" row="0" col="0" rowspan="2" colspan="1"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-4519c3e5" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-a926ba63" halign="CENTER" valign="CENTER" width="25" height="25" row="1" col="1"/>
+          <cl:property name="belong" value="TM Pumb" type="string"/>
+          <cl:property name="name" value="Running" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-319ca80b" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-ee58473e" halign="CENTER" valign="CENTER" width="25" height="25" row="1" col="2"/>
+          <cl:property name="belong" value="TM Pumb" type="string"/>
+          <cl:property name="name" value="Warning" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-d101d69c" type="udc.cmn.LED">
+          <cl:formdata std:sid="f-data-65cec59a" halign="CENTER" valign="CENTER" width="25" height="25" row="1" col="3"/>
+          <cl:property name="belong" value="TM Pumb" type="string"/>
+          <cl:property name="name" value="Alarm" type="string"/>
+        </cl:udc>
+        <cl:output std:sid="output-e4e95fe3" id="opt48" class="small text-center" value="Running">
+          <cl:formdata std:sid="f-data-d92e05dd" row="0" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-f0b99aec" id="opt49" class="small text-center" value="Warning">
+          <cl:formdata std:sid="f-data-ac0f51a9" row="0" col="2"/>
+        </cl:output>
+        <cl:output std:sid="output-12ee5e39" id="opt50" class="small text-center" value="Alarm">
+          <cl:formdata std:sid="f-data-85db0840" row="0" col="3"/>
+        </cl:output>
+        <cl:formlayout std:sid="f-layout-6d1a5586" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="35" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="110" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-a44f5631" hspace="10px" vspace="10px" hseparatorwidth="1" vseparatorwidth="1">
+        <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="3" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="3" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="2" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="2" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="3" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-5683c569">
+      <cl:formdata std:sid="f-data-663da022" row="0" col="0" rowspan="1" colspan="2"/>
+      <cl:button std:sid="button-41d29a54" value="소켓시작">
+        <cl:listener std:sid="listener-574f8dc8" name="click" handler="onButtonClick"/>
+        <cl:xylayoutdata std:sid="xyl-data-b6550efd" top="0px" bottom="0px" left="4px" width="100px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+      </cl:button>
+      <cl:button std:sid="button-b55fee8a" value="그만">
+        <cl:listener std:sid="listener-9ebb6784" name="click" handler="onButtonClick2"/>
+        <cl:xylayoutdata std:sid="xyl-data-4097a338" top="0px" bottom="0px" left="103px" width="100px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+      </cl:button>
+      <cl:button std:sid="button-e2354e45" value="그냥보내">
+        <cl:listener std:sid="listener-d04c54bf" name="click" handler="onButtonClick3"/>
+        <cl:xylayoutdata std:sid="xyl-data-5e794ab9" top="0px" bottom="0px" left="202px" width="100px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+      </cl:button>
+      <cl:xylayout std:sid="xylayout-9918a1cf"/>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-0f222758" hspace="10px" vspace="10px" top-margin="10px" right-margin="10px" bottom-margin="10px" left-margin="10px">
+      <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+      <cl:columns length="2" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

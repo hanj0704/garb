@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-a18967bc" version="1.0.0.0">
+  <head std:sid="head-b41b4453">
+    <title>popup</title>
+    <screen std:sid="screen-19959c46" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-9be5cd09" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-be7875ad" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-87f253fc"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-36e45da7" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-acf18736" handler="onBodyInit" name="init"/>
+    <cl:group std:sid="group-fc8ac65d">
+      <cl:xylayoutdata std:sid="xyl-data-0add0964" height="155px" horizontalAnchor="LEFT" left="20px" top="127px" verticalAnchor="TOP" width="618px"/>
+      <cl:output std:sid="output-537fb279" style="border-right-style:solid; border-top-width:1px; border-bottom-color:black; border-right-width:1px; border-left-style:solid; border-bottom-width:1px; border-left-color:black; border-top-color:black; border-bottom-style:solid; border-right-color:black; border-left-width:1px; border-top-style:solid;" value="param2">
+        <cl:formdata std:sid="f-data-4e6cb5f1" col="0" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-3c24480e" style="border-right-style:solid; border-top-width:1px; border-bottom-color:black; border-right-width:1px; border-left-style:solid; border-bottom-width:1px; border-left-color:black; border-top-color:black; border-bottom-style:solid; border-right-color:black; border-left-width:1px; border-top-style:solid;" value="param1">
+        <cl:formdata std:sid="f-data-d02adaec" col="0" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-01e6ff1f" style="border-right-style:solid; border-top-width:1px; border-bottom-color:black; border-right-width:1px; border-left-style:solid; border-bottom-width:1px; border-left-color:black; border-top-color:black; border-bottom-style:solid; border-right-color:black; border-left-width:1px; border-top-style:solid;" value="param3">
+        <cl:formdata std:sid="f-data-9a32a985" col="0" row="2"/>
+      </cl:output>
+      <cl:output std:sid="output-51818938" id="opt1" style="border-right-style:solid; border-top-width:1px; border-bottom-color:black; border-right-width:1px; border-left-style:solid; border-bottom-width:1px; border-left-color:black; border-top-color:black; border-bottom-style:solid; border-right-color:black; border-left-width:1px; border-top-style:solid;" value="">
+        <cl:formdata std:sid="f-data-94b7f8fe" col="1" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-c910ba7d" id="opt2" style="border-right-style:solid; border-top-width:1px; border-bottom-color:black; border-right-width:1px; border-left-style:solid; border-bottom-width:1px; border-left-color:black; border-top-color:black; border-bottom-style:solid; border-right-color:black; border-left-width:1px; border-top-style:solid;" value="">
+        <cl:formdata std:sid="f-data-2a328464" col="1" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-e390cae9" id="opt3" style="border-right-style:solid; border-top-width:1px; border-bottom-color:black; border-right-width:1px; border-left-style:solid; border-bottom-width:1px; border-left-color:black; border-top-color:black; border-bottom-style:solid; border-right-color:black; border-left-width:1px; border-top-style:solid;" value="">
+        <cl:formdata std:sid="f-data-0fa71aaf" col="1" row="2"/>
+      </cl:output>
+      <cl:formlayout>
+        <cl:rows autoSizing="false" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:rows autoSizing="false" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:rows autoSizing="false" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns length="100" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-52128e24" style="border-right-style:solid; border-top-width:1px; border-bottom-color:black; border-right-width:1px; border-left-style:solid; border-bottom-width:1px; border-left-color:black; border-top-color:black; border-bottom-style:solid; border-right-color:black; border-left-width:1px; border-top-style:solid;" value="POPUP">
+      <cl:xylayoutdata std:sid="xyl-data-76d51d5e" height="45px" horizontalAnchor="LEFT" left="20px" top="72px" verticalAnchor="TOP" width="618px"/>
+    </cl:output>
+    <cl:button std:sid="button-5f14abe4" value="부모창의 alert">
+      <cl:listener std:sid="listener-f0da6948" handler="onButtonClick" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-fd60f651" height="39px" horizontalAnchor="LEFT" left="20px" top="359px" verticalAnchor="TOP" width="166px"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-f2939655"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

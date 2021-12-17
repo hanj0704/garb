@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-12de1249" version="1.0.0.0">
+  <head std:sid="head-5124aa63">
+    <title>apex</title>
+    <screen std:sid="screen-9e3c5f77" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-74d32389" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-813506ea" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-9c2104bb"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-f6e12030" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:uicontrolshell std:sid="uic-shell-daa4c3f0" id="shl1">
+      <cl:listener std:sid="listener-cabc0fa9" name="load" handler="onShl1Load"/>
+      <cl:xylayoutdata std:sid="xyl-data-71987279" top="20px" left="20px" width="798px" height="458px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:uicontrolshell>
+    <cl:button std:sid="button-87492ad6" id="btn1" value="Button">
+      <cl:xylayoutdata std:sid="xyl-data-3fc37ee5" top="488px" left="20px" width="130px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-3dcb80d9"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ea288233" version="1.0.0.0">
+  <head std:sid="head-dc866e47">
+    <title>gridFilter2</title>
+    <screen std:sid="screen-607a47fa" id="default" name="default" minwidth="1024px" width="1024px" height="768px" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-86e6c3b9" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-a1bea49b" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-47cbce9c">
+      <cl:dataset std:sid="d-set-a13f2fd1" id="ds1" staterestore="true">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="컬럼명" std:sid="d-column-eac93b6a" name="COL_NM"/>
+          <cl:datacolumn comment="가로너비" std:sid="d-column-e3738e59" name="width" datatype="number"/>
+          <cl:datacolumn comment="숨김" std:sid="d-column-359720f8" name="visible"/>
+          <cl:datacolumn comment="자동크기" std:sid="d-column-697007f7" name="autoFit"/>
+          <cl:datacolumn comment="셀인덱스" std:sid="d-column-0d347bda" name="CELL_IDX" datatype="number"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec>
+      <cl:property name="gridControl" type="control" std:desc="설정을 변경할 그리드 컨트롤"/>
+      <cl:event name="btnCl" type="cpr.events.CUIEvent"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-67290042" style="border-right-style:solid; border-top-width:1px; border-bottom-color:lightgray; border-right-width:1px; border-left-color:lightgray; border-right-color:lightgray; border-left-width:1px; border-top-style:solid; background-color:#ffffff; top:0px; left:0px; border-left-style:solid; width:402px; border-bottom-width:1px; border-top-color:lightgray; border-bottom-style:solid; height:400px;">
+    <cl:listener std:sid="listener-e8e886bf" name="load" handler="onBodyLoad"/>
+    <cl:output std:sid="output-56ae596c" value="그리드 설정창">
+      <cl:formdata std:sid="f-data-724d12c4" row="0" col="0" rowspan="1" colspan="2"/>
+    </cl:output>
+    <cl:button std:sid="button-1a24e322" value="확인">
+      <cl:listener std:sid="listener-e6cecc5c" name="click" handler="onButtonClick2"/>
+      <cl:formdata std:sid="f-data-e5b440e9" row="2" col="0"/>
+    </cl:button>
+    <cl:button std:sid="button-e9de37b5" value="취소">
+      <cl:listener std:sid="listener-c9575f47" name="click" handler="onButtonClick"/>
+      <cl:formdata std:sid="f-data-e8806a99" row="2" col="1"/>
+    </cl:button>
+    <cl:grid std:sid="grid-da2c989d" id="grd1" datasetid="ds1">
+      <cl:formdata std:sid="f-data-4af6fac7" row="1" col="0" rowspan="1" colspan="2"/>
+      <cl:gridcolumn std:sid="g-column-7f7f6238"/>
+      <cl:gridcolumn std:sid="g-column-a6c27424"/>
+      <cl:gridcolumn std:sid="g-column-ec7055a9"/>
+      <cl:gridcolumn std:sid="g-column-10a26d40"/>
+      <cl:gridheader std:sid="gh-band-f1df94cc">
+        <cl:gridrow std:sid="g-row-a26748cf"/>
+        <cl:gridcell std:sid="gh-cell-04782778" rowindex="0" colindex="0" targetcolumnname="visible" sortable="false" filterable="false" text="숨김처리"/>
+        <cl:gridcell std:sid="gh-cell-bdd512ee" rowindex="0" colindex="1" targetcolumnname="COL_NM" sortable="false" filterable="false" text="컬럼명"/>
+        <cl:gridcell std:sid="gh-cell-c390601f" rowindex="0" colindex="2" targetcolumnname="width" sortable="false" filterable="false" text="너비(px)"/>
+        <cl:gridcell std:sid="gh-cell-9bc05aa8" rowindex="0" colindex="3" text="자동크기">
+          <cl:output std:sid="output-4959eec2" style="text-align:center;" tooltip="그리드에 여유공간이 남을 경우, 지정된 크기에서&#xD;&#xA;자동으로 크기를 늘려서 사용할지에 대한 여부를 표시합니다." value="Output"/>
+        </cl:gridcell>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-bd514d0a">
+        <cl:gridrow std:sid="g-row-d1d7ae91"/>
+        <cl:gridcell std:sid="gd-cell-b841184c" rowindex="0" colindex="0" columnname="visible">
+          <cl:checkbox std:sid="c-box-26a344f9" id="cbx1" falsevalue="false"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-173f0557" rowindex="0" colindex="1" columnname="COL_NM"/>
+        <cl:gridcell std:sid="gd-cell-962a6905" rowindex="0" colindex="2" columnname="width">
+          <cl:numbereditor std:sid="n-editor-351b83e6" id="nbe1"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-6641b92c" rowindex="0" colindex="3" columnname="autoFit">
+          <cl:checkbox std:sid="c-box-285eb3a5" id="cbx2" falsevalue="false"/>
+        </cl:gridcell>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:formlayout std:sid="f-layout-a93d1f05" hspace="0px" vspace="0px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+      <cl:rows length="32" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:rows length="32" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:columns length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

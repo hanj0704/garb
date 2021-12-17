@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-b7f963a8" version="1.0.0.0">
+  <head std:sid="head-c9f7b1a5">
+    <screen std:sid="screen-16a15eeb" id="default" name="default" minwidth="1024px" width="1024px" height="768px" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-601af5a0" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-580f4af0" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-7d5b5b8b">
+      <cl:datamap comment="LP1 정보" std:sid="d-map-9004bb0b" id="dmLP1Info">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-dc993be6" name="LP1" defaultvalue=""/>
+          <cl:datacolumn std:sid="d-column-b98e42e5" name="CTC__LP1_Exist" datatype="number" defaultvalue=""/>
+          <cl:datacolumn std:sid="d-column-2aa16430" name="CTC__LP1_UsageType" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-8f266c11" name="CTC__LP1_WfrCount" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-425d7915" name="LP1__FoupPlacedStatus" datatype="number"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec>
+      <cl:property name="HideScreen" type="boolean" default="true" std:desc="해당 클러스터의 스테이션의 클릭 가능 여부를 설정할 수 있습니다."/>
+      <cl:event name="targetClick" type="cpr.events.CMouseEvent"/>
+      <cl:event name="waferMove" type="cpr.events.CUIEvent"/>
+      <cl:event name="scheduleDone" type="cpr.events.CUIEvent"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-40fc38a7" style="top:0px; left:0px; width:400px; height:517px;">
+    <cl:group comment="스테이션을 클릭하지 못하게 막는 가림막기능을 하도록 만든 컨트롤입니다." std:sid="group-b4a7a9bb" id="grpScreen">
+      <std:metadata>
+        <std:property key="hidden" value="true"/>
+      </std:metadata>
+      <cl:apppropbind property="visible" category="PROPERTY" app-property="HideScreen"/>
+      <cl:xylayoutdata std:sid="xyl-data-ec577de4" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+      <cl:xylayout std:sid="xylayout-3d923074"/>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-7a06d55b" scrollable="false"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

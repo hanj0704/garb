@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 200 200" version="1.1" id="svg8">
+   <defs>
+      <style type="text/css">
+         .debug {
+            fill: darkgreen;
+            /* display: none; */
+         }
+      </style>
+   </defs>
+   <g style="stroke: black; stroke-width:0.5px; fill:#eee; fill-opacity:0.6">
+      <g id="hans" transform="rotate(0,100,100)">
+         <rect class="debug" x="75" y="75" width="50" height="50"/>
+      
+         <g id="direction-anchor" transform="rotate(0, 100, 100)">
+            <g id="main-arm-anchor" transform="rotate(0, 100, 100)">
+               <circle class="debug" cx="100" cy="100" r="5" />
+               <rect id="arm1" y="65" x="95" width="10" height="40" ry="5" />
+               <circle class="debug" cx="100" cy="70" r="5" />
+               <g id="sub-anchor" transform="rotate(0, 100, 70)">
+                  <rect id="arm2" width="10" height="40" y="35" x="95" ry="5" />
+                  <circle class="debug" cx="100" cy="38" r="3" />
+                  
+               </g>
+            </g>
+         </g>
+      </g>
+   </g>
+</svg>

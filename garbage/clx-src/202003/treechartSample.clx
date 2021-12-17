@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-e848efce" version="1.0.0.0">
+  <head std:sid="head-2c8c9da5">
+    <title>treechartSample</title>
+    <screen std:sid="screen-c46f248c" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-825f8c91" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-65bce87a" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-4c94609d">
+      <cl:matrix-submission std:sid="m-submission-29bb3c51" id="matrixsubmission1" action="datas/ndepthJson.json" async="true" method="post" withCredentials="false">
+        <cl:listener std:sid="listener-07f73a09" handler="onMatrixsubmission1SubmitSuccess" name="submit-success"/>
+        <cl:matrix>
+          <cl:request type="object"/>
+          <cl:response type="object"/>
+        </cl:matrix>
+      </cl:matrix-submission>
+    </cl:model>
+    <cl:appspec title="트리차트예제"/>
+  </head>
+  <body std:sid="body-66b94858" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-d8376d9b" handler="onBodyLoad" name="load"/>
+    <cl:uicontrolshell std:sid="uic-shell-9aa7d9da" id="shl1">
+      <cl:listener std:sid="listener-d5d38392" handler="onShl1Load" name="load"/>
+      <cl:listener std:sid="listener-6d4ce024" handler="onShl1Init" name="init"/>
+      <cl:xylayoutdata std:sid="xyl-data-ee309506" height="531px" horizontalAnchor="LEFT" left="20px" top="20px" verticalAnchor="TOP" width="984px"/>
+    </cl:uicontrolshell>
+    <cl:xylayout std:sid="xylayout-0efc23ba"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

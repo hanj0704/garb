@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9a9d0914" version="1.0.0.0">
+  <head std:sid="head-db8b57ab">
+    <title>files</title>
+    <screen std:sid="screen-5a36278e" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-a0eccf8e" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-c8dc3ff6" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-b4e2ee1d">
+      <cl:dataset std:sid="d-set-43d5e9ca" id="ds1"/>
+      <cl:submission std:sid="submission-452d068d" id="sms1" action="/cisweb/upload.do" mediatype="multipart/form-data"/>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-47cd3676" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:button std:sid="button-5cc238f0" id="btn1" value="업로드">
+      <cl:listener std:sid="listener-6d352899" handler="onBtn1Click" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-57ff6ec5" height="20px" horizontalAnchor="LEFT" left="20px" top="57px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:button std:sid="button-82885cb2" id="btn2" value="다운로드">
+      <cl:xylayoutdata std:sid="xyl-data-93a82e09" height="20px" horizontalAnchor="LEFT" left="20px" top="87px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:fileinput std:sid="f-input-865e6639" id="fi1">
+      <cl:xylayoutdata std:sid="xyl-data-fea4f24c" height="20px" horizontalAnchor="LEFT" left="20px" top="20px" verticalAnchor="TOP" width="100px"/>
+    </cl:fileinput>
+    <cl:xylayout std:sid="xylayout-7cb28a4b"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

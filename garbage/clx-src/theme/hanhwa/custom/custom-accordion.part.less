@@ -1,0 +1,416 @@
+@import "../settings.part.less";
+@import "../custom-settings.part.less";
+
+.cl-container.accordion-area {
+	.cl-container.accordion-header {
+		background-color: @color-accordion-bg;
+		border: solid 1px @color-accordion-border;
+		cursor : pointer;
+		
+		.cl-output, .cl-output.accordion-title {
+			color: @color-accordion-text;
+			font-size : @font-small-text-r;
+			vertical-align : middle;
+		}
+		
+		.cl-button.accordion-expander {
+			background : transparent;
+			background-image: url(images/icon/icon_acc_default.png);
+			background-size : 15px 9px;
+			background-repeat : no-repeat;
+			background-position : center;
+			
+			&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+				background : transparent;
+				background-image : url(images/icon/icon_acc_default.png);
+				background-size : 15px 9px;
+				background-repeat : no-repeat;
+				background-position : center;
+				border : none;
+			}
+		}
+		
+		&.on { // 아코디언 활성화
+			background-color: @color-accordion-active-bg;
+			border: solid 1px @color-accordion-active-border;
+			
+			.cl-output.accordion-title {
+			}
+			
+			.cl-button.accordion-expander {
+				background : transparent;
+				background-image: url(images/icon/icon_acc_active.png);
+				background-size : 15px 9px;
+				background-repeat : no-repeat;
+				background-position : center;
+				
+				&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+					background : transparent;
+					background-image: url(images/icon/icon_acc_active.png);
+					background-size : 15px 9px;
+					background-repeat : no-repeat;
+					background-position : center;
+					border : none;
+				}
+			}
+		}
+	}
+	
+	.cl-container.accordion-content {
+		border : 1px solid @color-accordion-active-border;
+	}
+}
+
+.cl-container.accordion-area.dark {
+	.cl-container.accordion-header {
+		background-color: @color-accordion-bg-dark;
+		border: solid 1px @color-accordion-border-dark;
+		cursor : pointer;
+		
+		.cl-output, .cl-output.accordion-title {
+			color: @color-accordion-text;
+			font-size : @font-headline-02;
+			vertical-align : middle;
+		}
+		
+		.cl-button.accordion-expander {
+			background : transparent;
+			background-image: url(images/icon/icon_acc_default.png);
+			background-size : 15px 9px;
+			background-repeat : no-repeat;
+			background-position : center;
+			
+			&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+				background : transparent;
+				background-image : url(images/icon/icon_acc_default.png);
+				background-size : 15px 9px;
+				background-repeat : no-repeat;
+				background-position : center;
+				border : none;
+			}
+		}
+		
+		&.on { // 아코디언 활성화
+			background-color: @color-accordion-active-bg-dark;
+			border: solid 1px @color-accordion-active-border-dark;
+			
+			.cl-output.accordion-title {
+			}
+			
+			.cl-button.accordion-expander {
+				background : transparent;
+				background-image: url(images/icon/icon_acc_active.png);
+				background-size : 15px 9px;
+				background-repeat : no-repeat;
+				background-position : center;
+				
+				&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+					background : transparent;
+					background-image: url(images/icon/icon_acc_active.png);
+					background-size : 15px 9px;
+					background-repeat : no-repeat;
+					background-position : center;
+					border : none;
+				}
+			}
+		}
+	}
+	
+	.cl-container.accordion-content {
+		background-color : @color-black-03;
+		border : none;
+	}
+}
+
+
+
+.cl-accordion.custom-accordion40 {
+	border: none;
+	background-color: transparent;
+	color: @default-text-color;
+	font: @default-font;
+	padding : 0px;
+	
+	:cl-accordion-header{
+		padding-bottom: 1px;
+	}
+	/** 아코디언의 각 헤더 */
+	// 20191024 디자인가이드 --  157페이지
+	// 높이및 닫혔을때 배경색 변경  (2019.11.18)
+	.cl-accordion-header {
+		background-color: @color-accordion-bg;
+		color: @color-accordion-text;
+		border: solid 1px @color-accordion-bg;
+		border-radius : 0px;
+		padding-left : 20px;
+		padding-right : 20px;
+		height : 40px ; 
+		padding-bottom : 1px;
+		
+		.cl-text{
+			font-size : @font-headline-02;
+			vertical-align : middle;
+		}
+
+		/** 아코디언 펼침 버튼 */
+		.cl-accordion-expander {
+			 background-image: url(images/icon/icon_acc_default.png);
+			 background-size : 15px 9px;
+			 width : 15px;
+		}
+
+		/* 아코디언 헤더에 마우스가 호버되었을 떄의 스타일 */
+		&:hover{
+			background-color: @color-accordion-bg;
+			color : @color-accordion-text;
+		}
+
+		/* 아코디언 헤더를 클릭했을 때의 스타일 */
+		&.cl-activated {
+			background-color: @color-accordion-active-bg;
+			border-color: @color-accordion-active-border;
+			color: @color-accordion-text;
+			
+			/* 클릭된 헤더의 펼침 버튼 아이콘 */
+			.cl-accordion-expander{
+				 background-image: url(images/icon/icon_acc_active.png);
+			}
+		}
+		
+		&:focus, &.cl-focus {
+		  text-decoration: none;
+		}
+	}
+
+	.cl-accordion-section:not(.cl-accordion-placeholder) {
+			
+		/* 아코디언 컨텐츠 */
+		.cl-accordion-content {
+			border: 1px solid @color-accordion-active-border;
+		}
+	}
+
+	.cl-accordion-section + .cl-accordion-header {
+		// 아코디언 헤더영역끼리의 간격 설정 (2019.10.07)
+		margin-top : 1px;
+	}
+}
+
+.cl-accordion.custom-accordion30 {
+	border: none;
+	background-color: transparent;
+	color: @default-text-color;
+	font: @default-font;
+	padding : 0px;
+	
+	:cl-accordion-header{
+		padding-bottom: 1px;
+	}
+	/** 아코디언의 각 헤더 */
+	// 20191024 디자인가이드 --  157페이지
+	// 높이및 닫혔을때 배경색 변경  (2019.11.18)
+	.cl-accordion-header {
+		background-color: @color-accordion-bg;
+		color: @color-accordion-text;
+		border: solid 1px @color-accordion-bg;
+		border-radius : 0px;
+		padding-left : 10px;
+		padding-right : 20px;
+		height : 30px ; 
+		padding-bottom : 1px;
+		
+		.cl-text{
+			font-size : @font-headline-02;
+			vertical-align : middle;
+		}
+
+		/** 아코디언 펼침 버튼 */
+		.cl-accordion-expander {
+			 background-image: url(images/icon/icon_acc_default.png);
+			 background-size : 15px 9px;
+			 width : 15px;
+		}
+
+		/* 아코디언 헤더에 마우스가 호버되었을 떄의 스타일 */
+		&:hover{
+			background-color: @color-accordion-bg;
+			color : @color-accordion-text;
+		}
+
+		/* 아코디언 헤더를 클릭했을 때의 스타일 */
+		&.cl-activated {
+			background-color: @color-accordion-active-bg;
+			border-color: @color-accordion-active-border;
+			color: @color-accordion-text;
+			
+			/* 클릭된 헤더의 펼침 버튼 아이콘 */
+			.cl-accordion-expander{
+				 background-image: url(images/icon/icon_acc_active.png);
+			}
+		}
+		
+		&:focus, &.cl-focus {
+		  text-decoration: none;
+		}
+	}
+
+	.cl-accordion-section:not(.cl-accordion-placeholder) {
+			
+		/* 아코디언 컨텐츠 */
+		.cl-accordion-content {
+			border: 1px solid @color-accordion-active-border;
+		}
+	}
+
+	.cl-accordion-section + .cl-accordion-header {
+		// 아코디언 헤더영역끼리의 간격 설정 (2019.10.07)
+		margin-top : 1px;
+	}
+}
+
+
+
+
+.cl-accordion.custom-accordion40 {
+	border: none;
+	background-color: transparent;
+	color: @default-text-color;
+	font: @default-font;
+	padding : 0px;
+	
+	:cl-accordion-header{
+		padding-bottom: 1px;
+	}
+	/** 아코디언의 각 헤더 */
+	// 20191024 디자인가이드 --  157페이지
+	// 높이및 닫혔을때 배경색 변경  (2019.11.18)
+	.cl-accordion-header {
+		background-color: @color-accordion-bg;
+		color: @color-accordion-text;
+		border: solid 1px @color-accordion-bg;
+		border-radius : 0px;
+		padding-left : 20px;
+		padding-right : 20px;
+		height : 40px ; 
+		padding-bottom : 1px;
+		
+		.cl-text{
+			font-size : @font-headline-02;
+			vertical-align : middle;
+		}
+
+		/** 아코디언 펼침 버튼 */
+		.cl-accordion-expander {
+			 background-image: url(images/icon/icon_acc_default.png);
+			 background-size : 15px 9px;
+			 width : 15px;
+		}
+
+		/* 아코디언 헤더에 마우스가 호버되었을 떄의 스타일 */
+		&:hover{
+			background-color: @color-accordion-bg;
+			color : @color-accordion-text;
+		}
+
+		/* 아코디언 헤더를 클릭했을 때의 스타일 */
+		&.cl-activated {
+			background-color: @color-accordion-active-bg;
+			border-color: @color-accordion-active-border;
+			color: @color-accordion-text;
+			
+			/* 클릭된 헤더의 펼침 버튼 아이콘 */
+			.cl-accordion-expander{
+				 background-image: url(images/icon/icon_acc_active.png);
+			}
+		}
+		
+		&:focus, &.cl-focus {
+		  text-decoration: none;
+		}
+	}
+
+	.cl-accordion-section:not(.cl-accordion-placeholder) {
+			
+		/* 아코디언 컨텐츠 */
+		.cl-accordion-content {
+			border: 1px solid @color-accordion-active-border;
+		}
+	}
+
+	.cl-accordion-section + .cl-accordion-header {
+		// 아코디언 헤더영역끼리의 간격 설정 (2019.10.07)
+		margin-top : 1px;
+	}
+}
+
+.cl-accordion.custom-accordion30 {
+	border: none;
+	background-color: transparent;
+	color: @default-text-color;
+	font: @default-font;
+	padding : 0px;
+	
+	:cl-accordion-header{
+		padding-bottom: 1px;
+	}
+	/** 아코디언의 각 헤더 */
+	// 20191024 디자인가이드 --  157페이지
+	// 높이및 닫혔을때 배경색 변경  (2019.11.18)
+	.cl-accordion-header {
+		background-color: @color-accordion-bg;
+		color: @color-accordion-text;
+		border: solid 1px @color-accordion-bg;
+		border-radius : 0px;
+		padding-left : 10px;
+		padding-right : 20px;
+		height : 30px ; 
+		padding-bottom : 1px;
+		
+		.cl-text{
+			font-size : @font-headline-02;
+			vertical-align : middle;
+		}
+
+		/** 아코디언 펼침 버튼 */
+		.cl-accordion-expander {
+			 background-image: url(images/icon/icon_acc_default.png);
+			 background-size : 15px 9px;
+			 width : 15px;
+		}
+
+		/* 아코디언 헤더에 마우스가 호버되었을 떄의 스타일 */
+		&:hover{
+			background-color: @color-accordion-bg;
+			color : @color-accordion-text;
+		}
+
+		/* 아코디언 헤더를 클릭했을 때의 스타일 */
+		&.cl-activated {
+			background-color: @color-accordion-active-bg;
+			border-color: @color-accordion-active-border;
+			color: @color-accordion-text;
+			
+			/* 클릭된 헤더의 펼침 버튼 아이콘 */
+			.cl-accordion-expander{
+				 background-image: url(images/icon/icon_acc_active.png);
+			}
+		}
+		
+		&:focus, &.cl-focus {
+		  text-decoration: none;
+		}
+	}
+
+	.cl-accordion-section:not(.cl-accordion-placeholder) {
+			
+		/* 아코디언 컨텐츠 */
+		.cl-accordion-content {
+			border: 1px solid @color-accordion-active-border;
+		}
+	}
+
+	.cl-accordion-section + .cl-accordion-header {
+		// 아코디언 헤더영역끼리의 간격 설정 (2019.10.07)
+		margin-top : 1px;
+	}
+}

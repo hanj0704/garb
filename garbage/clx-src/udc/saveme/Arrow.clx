@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-628e33dc" version="1.0.0.0">
+  <head std:sid="head-f3d93124">
+    <title>Arrow</title>
+    <screen std:sid="screen-e393cf7d" id="default" customHeight="600" customWidth="800" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-cece56c9" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-63c0dba9" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-7024172a">
+      <cl:dataset std:sid="d-set-92b49b9c" id="dsMenu">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="label"/>
+          <cl:datacolumn name="value"/>
+          <cl:datacolumn name="icon"/>
+          <cl:datacolumn name="parent"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[연결 삭제]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[del]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec>
+      <cl:property std:desc="세로, 가로 화살표 설정(vertical, horizontal)" name="shape" type="enumeration">
+        <cl:available-value>vertical</cl:available-value>
+        <cl:available-value>horizontal</cl:available-value>
+      </cl:property>
+      <cl:event std:desc="라인을 삭제할때 발생하는 이벤트" name="deleteLine" type="cpr.events.CUIEvent"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-c29e27c6" style="top:0px; left:0px; width:130px; height:130px;">
+    <cl:listener std:sid="listener-b750a312" handler="onBodyPropertyChange" name="property-change"/>
+    <cl:listener std:sid="listener-dbd02d18" handler="onBodyContextmenu" name="contextmenu"/>
+    <cl:group std:sid="group-17360acd" id="line1" class="line1">
+      <cl:formdata std:sid="f-data-145f42e3" col="1" colspan="1" row="1" rowspan="2"/>
+      <cl:xylayout std:sid="xylayout-1c60cc66"/>
+    </cl:group>
+    <cl:group std:sid="group-98bf77f0" id="line2" class="line2">
+      <cl:formdata std:sid="f-data-32f716e2" col="2" colspan="1" row="1" rowspan="2"/>
+      <cl:xylayout std:sid="xylayout-1113df8d"/>
+    </cl:group>
+    <cl:group std:sid="group-337a9932" id="arr_right" class="arrow-right">
+      <cl:formdata std:sid="f-data-8586352a" col="3" colspan="1" row="1" rowspan="2"/>
+      <cl:xylayout std:sid="xylayout-37854f90"/>
+    </cl:group>
+    <cl:group std:sid="group-5746ff60" id="arr_left" class="arrow-left">
+      <cl:formdata std:sid="f-data-6615b9d1" col="0" colspan="1" row="1" rowspan="2"/>
+      <cl:xylayout std:sid="xylayout-adbfd296"/>
+    </cl:group>
+    <cl:group std:sid="group-5a42c8dc" id="arr_top" class="arrow-top">
+      <cl:formdata std:sid="f-data-b0f8af01" col="1" colspan="2" row="0" rowspan="1"/>
+      <cl:xylayout std:sid="xylayout-dba9c5fe"/>
+    </cl:group>
+    <cl:group std:sid="group-0a4eb422" id="arr_bottom" class="arrow-down">
+      <cl:formdata std:sid="f-data-695995b1" col="1" colspan="2" row="3" rowspan="1"/>
+      <cl:xylayout std:sid="xylayout-2b6fbd7a"/>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-20de824e" scrollable="false" hspace="0px" vspace="0px">
+      <cl:rows autoSizing="false" length="10" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:rows autoSizing="false" length="10" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      <cl:columns autoSizing="false" length="10" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      <cl:columns length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+      <cl:columns autoSizing="false" length="10" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-e3c32547" version="1.0.0.0">
+  <head std:sid="head-a0cfd206">
+    <title>Embedded-child1</title>
+    <screen std:sid="screen-c385584f" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-cc98d335" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-b5f6951f" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-16eba8e7"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-235d3bc3" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-e2fa7d53" handler="onBodyLoad" name="load"/>
+    <cl:group std:sid="group-87b014b3" id="grp1">
+      <cl:xylayoutdata std:sid="xyl-data-1b7bd8d3" height="759px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="TOP"/>
+      <cl:output std:sid="output-8ddc0f22" style="font-size:20pt;" value="부모앱의 데이터셋 값(첫 번째 로우)">
+        <cl:formdata std:sid="f-data-e4c84d40" col="0" colspan="3" row="0" rowspan="1"/>
+      </cl:output>
+      <cl:output std:sid="output-a84e92a5" id="opt1">
+        <cl:formdata std:sid="f-data-6c36b1e3" col="0" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-6ce5afc1" id="opt2">
+        <cl:formdata std:sid="f-data-5d8886cd" col="1" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-ab898f13" id="opt3">
+        <cl:formdata std:sid="f-data-1b415ed2" col="2" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-e2169c1e" style="font-size:20pt;" value="데이터 셋 Row 추가">
+        <cl:formdata std:sid="f-data-942159cf" col="0" colspan="2" row="3" rowspan="1"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-799848d4" id="ipb1" placeholder="column1">
+        <cl:formdata std:sid="f-data-1eb6b9c7" col="0" row="4"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-c0fc417a" id="ipb2" placeholder="column2">
+        <cl:formdata std:sid="f-data-e5d257ff" col="1" row="4"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-2518f6ff" id="ipb3" placeholder="column3">
+        <cl:formdata col="2" colspan="1" row="4" rowspan="1"/>
+      </cl:inputbox>
+      <cl:button std:sid="button-4b759cad" value="추가">
+        <cl:listener std:sid="listener-ea9e961c" handler="onButtonClick" name="click"/>
+        <cl:formdata std:sid="f-data-47e88654" col="4" row="4"/>
+      </cl:button>
+      <cl:output std:sid="output-3ef9d16a" style="font-size:20pt;" value="데이터 셋 Row 삭제">
+        <cl:formdata std:sid="f-data-d45b0608" col="0" colspan="2" row="6" rowspan="1"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-12a2a7cd" id="ipb4" placeholder="row">
+        <cl:formdata std:sid="f-data-755f4d75" col="0" colspan="1" row="7" rowspan="1"/>
+      </cl:inputbox>
+      <cl:button std:sid="button-1eff628a" value="삭제">
+        <cl:listener std:sid="listener-994bf0eb" handler="onButtonClick2" name="click"/>
+        <cl:formdata std:sid="f-data-11cc34d7" col="4" row="7"/>
+      </cl:button>
+      <cl:output std:sid="output-02440992" style="font-size:20pt;" value="데이터 셋 Row 업데이트">
+        <cl:formdata std:sid="f-data-a6d692b5" col="0" colspan="2" row="9" rowspan="1"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-b23526f2" id="ipb5" placeholder="row">
+        <cl:formdata std:sid="f-data-9f5979f6" col="0" row="10"/>
+      </cl:inputbox>
+      <cl:button std:sid="button-fb7b5c35" value="업데이트">
+        <cl:listener std:sid="listener-d13b423f" handler="onButtonClick3" name="click"/>
+        <cl:formdata std:sid="f-data-4642b0c4" col="4" row="10"/>
+      </cl:button>
+      <cl:inputbox std:sid="i-box-6d9d3933" id="ipb6" placeholder="column1">
+        <cl:formdata std:sid="f-data-63eabd74" col="1" row="10"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-f718a78a" id="ipb7" placeholder="column2">
+        <cl:formdata std:sid="f-data-a10d9225" col="2" row="10"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-6cbaded3" id="ipb8" placeholder="column3">
+        <cl:formdata std:sid="f-data-1e141883" col="3" row="10"/>
+      </cl:inputbox>
+      <cl:button std:sid="button-d39852e7" id="btn1" value="조회">
+        <cl:listener std:sid="listener-6dbe7066" handler="onBtn1Click" name="click"/>
+        <cl:formdata std:sid="f-data-4fd3b195" col="4" row="12"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-0843f85c" hseparatortype="BY_CLASS" hspace="15px" vspace="0px">
+        <cl:rows autoSizing="false" length="45" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="40" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="45" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="40" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="45" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="40" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="45" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="40" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="3" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns autoSizing="false" length="2" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns length="2" unit="FRACTION"/>
+        <cl:columns length="2" unit="FRACTION"/>
+        <cl:columns length="2" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-903faba9"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

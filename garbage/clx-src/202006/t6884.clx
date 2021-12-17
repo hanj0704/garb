@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-22b961e4" version="1.0.0.0">
+  <head std:sid="head-a7be355a">
+    <title>t6884</title>
+    <screen std:sid="screen-56f145de" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-0d2373f3" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-520d72e7" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-e9236c7f">
+      <cl:dataset std:sid="d-set-037b9281" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-c0d4d161" name="column1"/>
+          <cl:datacolumn std:sid="d-column-6ae0c93b" name="column2"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[20200116142317]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[A]]></cl:datavalue>
+            <cl:datavalue>column31</cl:datavalue>
+            <cl:datavalue><![CDATA[20200116]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[20200116152320]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[B]]></cl:datavalue>
+            <cl:datavalue>column32</cl:datavalue>
+            <cl:datavalue><![CDATA[20200117]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[20200116172324]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[C]]></cl:datavalue>
+            <cl:datavalue>column33</cl:datavalue>
+            <cl:datavalue><![CDATA[20200118]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[20200116192326]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[D]]></cl:datavalue>
+            <cl:datavalue>column34</cl:datavalue>
+            <cl:datavalue><![CDATA[20200119]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-47d5056f" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-b3b0de2e" name="load" handler="onBodyLoad"/>
+    <cl:grid std:sid="grid-5c49b9ec" id="grd1" datasetid="ds1" selectionunit="cell">
+      <cl:listener std:sid="listener-554cc813" name="selection-change" handler="onGrd1SelectionChange"/>
+      <cl:xylayoutdata std:sid="xyl-data-790c8a0f" top="106px" left="69px" width="772px" height="336px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:gridcolumn std:sid="g-column-9b8d14ac"/>
+      <cl:gridcolumn std:sid="g-column-be51ffee"/>
+      <cl:gridheader std:sid="gh-band-6a509b2b">
+        <cl:gridrow std:sid="g-row-340f6b8b"/>
+        <cl:gridcell std:sid="gh-cell-38b3ca89" rowindex="0" colindex="0" targetcolumnname="column1" sortable="false" filterable="false" text="등록날짜" visible="true"/>
+        <cl:gridcell std:sid="gh-cell-ea1bb3e9" rowindex="0" colindex="1" targetcolumnname="column2" sortable="false" filterable="false" text="등록자"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-0cb1dcba">
+        <cl:gridrow std:sid="g-row-747ff9d6"/>
+        <cl:gridcell std:sid="gd-cell-e1cb7b9a" rowindex="0" colindex="0" columnname="column1">
+          <cl:dateinput std:sid="d-input-41516e60" id="dti1" mask="YYYY-MM-DD HH:mm:ss" format="YYYYMMDDHHmmss">
+            <cl:listener std:sid="listener-7380a066" name="before-value-change" handler="onDti1BeforeValueChange"/>
+            <cl:listener std:sid="listener-df611571" name="value-change" handler="onDti1ValueChange"/>
+          </cl:dateinput>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-5efa5edd" rowindex="0" colindex="1" columnname="column2"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:dateinput std:sid="d-input-0fe76b48" id="dti2">
+      <cl:listener std:sid="listener-82ddbfb3" name="value-change" handler="onDti2ValueChange"/>
+      <cl:xylayoutdata std:sid="xyl-data-53409bf7" top="35px" left="69px" width="209px" height="36px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:dateinput>
+    <cl:button std:sid="button-6553a33a" id="btn1" value="Button">
+      <cl:listener std:sid="listener-a7bf1bc0" name="click" handler="onBtn1Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-09a8759a" top="35px" left="288px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-b2124481"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

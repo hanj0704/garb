@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-e132ea6c" version="1.0.0.0">
+  <head std:sid="head-de480a59">
+    <title>mobileTest</title>
+    <screen std:sid="screen-0e89c8a3" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-873aa213" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-de2edb33" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-1f0b3bac"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-42d7ff5c" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:grid std:sid="grid-93ae5432" id="grd1">
+      <cl:listener std:sid="listener-e5ff1d19" name="mousedown" handler="onGrd1Mousedown"/>
+      <cl:listener std:sid="listener-27455ed7" name="mouseup" handler="onGrd1Mouseup"/>
+      <cl:listener std:sid="listener-a7658c3f" name="touchstart" handler="onGrd1Touchstart"/>
+      <cl:listener std:sid="listener-a8ad9281" name="touchend" handler="onGrd1Touchend"/>
+      <cl:xylayoutdata std:sid="xyl-data-eeee3fb0" top="20px" left="20px" width="170px" height="200px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:gridcolumn std:sid="g-column-9554e55b"/>
+      <cl:gridcolumn std:sid="g-column-9faacc2d"/>
+      <cl:gridcolumn std:sid="g-column-28ebc7c3"/>
+      <cl:gridcolumn std:sid="g-column-44a0fcad"/>
+      <cl:gridcolumn std:sid="g-column-03725616"/>
+      <cl:gridheader std:sid="gh-band-e11fb16e">
+        <cl:gridrow std:sid="g-row-e1ca56c2"/>
+        <cl:gridcell std:sid="gh-cell-a8db78ba" rowindex="0" colindex="0"/>
+        <cl:gridcell std:sid="gh-cell-513aebc3" rowindex="0" colindex="1"/>
+        <cl:gridcell std:sid="gh-cell-09bd4d83" rowindex="0" colindex="2"/>
+        <cl:gridcell std:sid="gh-cell-ba9ecc94" rowindex="0" colindex="3"/>
+        <cl:gridcell std:sid="gh-cell-e90cbf71" rowindex="0" colindex="4"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-1a1984f7">
+        <cl:gridrow std:sid="g-row-5316edea"/>
+        <cl:gridcell std:sid="gd-cell-82bdd76b" rowindex="0" colindex="0"/>
+        <cl:gridcell std:sid="gd-cell-0325eee6" rowindex="0" colindex="1"/>
+        <cl:gridcell std:sid="gd-cell-2ce1008f" rowindex="0" colindex="2"/>
+        <cl:gridcell std:sid="gd-cell-b68a1b88" rowindex="0" colindex="3"/>
+        <cl:gridcell std:sid="gd-cell-ae7f00c7" rowindex="0" colindex="4"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:output std:sid="output-ce3953d3" id="opt1">
+      <cl:xylayoutdata std:sid="xyl-data-d8c55ffd" top="230px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:xylayout std:sid="xylayout-bb4bb39b"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

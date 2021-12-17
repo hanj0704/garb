@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-66bdd039" version="1.0.0.0">
+  <head std:sid="head-3d2338b2">
+    <title>bugTester</title>
+    <screen std:sid="screen-af5730f0" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-87565d7e" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-06b1697c" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-8051f5a2">
+      <cl:dataset std:sid="d-set-09563890" id="dsList"/>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-d8eeef71" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:grid std:sid="grid-0a6186f6" id="grd1" datasetid="dsList" autofit="1, 2, 3, 4, 5, 6, 7, 8, 9, 13" resizablecolumns="14">
+      <cl:xylayoutdata std:sid="xyl-data-e2f5b596" top="20px" right="20px" bottom="236px" left="20px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+      <cl:gridcolumn std:sid="g-column-daaa94cb" width="37px"/>
+      <cl:gridcolumn std:sid="g-column-dbeae301"/>
+      <cl:gridcolumn std:sid="g-column-933cf9c2"/>
+      <cl:gridcolumn std:sid="g-column-4b9175e6"/>
+      <cl:gridcolumn std:sid="g-column-ffe675b2"/>
+      <cl:gridcolumn std:sid="g-column-59abfef9"/>
+      <cl:gridcolumn std:sid="g-column-0b06195b"/>
+      <cl:gridcolumn std:sid="g-column-52f30cec" width="80px"/>
+      <cl:gridcolumn std:sid="g-column-2654268e" width="80px"/>
+      <cl:gridcolumn std:sid="g-column-879541fd" width="80px"/>
+      <cl:gridcolumn std:sid="g-column-e490ea3e"/>
+      <cl:gridcolumn std:sid="g-column-475f388e"/>
+      <cl:gridcolumn std:sid="g-column-4f549273"/>
+      <cl:gridcolumn std:sid="g-column-f76b99e8" width="157px"/>
+      <cl:gridcolumn std:sid="g-column-15c9423a" width="70px"/>
+      <cl:gridheader std:sid="gh-band-44a2ded6">
+        <cl:gridrow std:sid="g-row-4bee9c97" height="38px"/>
+        <cl:gridcell std:sid="gh-cell-12f31b00" rowindex="0" colindex="1" targetcolumnname="WRITNG_DE" sortable="true" filterable="false" text="작성일자"/>
+        <cl:gridcell std:sid="gh-cell-c7c94945" rowindex="0" colindex="2" targetcolumnname="MTLTY" sortable="true" filterable="false" text="상호명"/>
+        <cl:gridcell std:sid="gh-cell-07ff6464" rowindex="0" colindex="3" targetcolumnname="BSNM_NO" sortable="false" filterable="false" text="사업자번호"/>
+        <cl:gridcell std:sid="gh-cell-72b458e9" rowindex="0" colindex="4" targetcolumnname="PRDLST" sortable="true" filterable="false" text="품목"/>
+        <cl:gridcell std:sid="gh-cell-6e75e424" rowindex="0" colindex="5" targetcolumnname="ACNT_SBJECT" sortable="true" filterable="false" text="계정과목"/>
+        <cl:gridcell std:sid="gh-cell-737a037b" rowindex="0" colindex="6" targetcolumnname="PRUF_SE" sortable="false" filterable="false" text="증빙구분"/>
+        <cl:gridcell std:sid="gh-cell-7ac6918e" rowindex="0" colindex="7" targetcolumnname="SPLPC_AM" sortable="false" filterable="false" text="공급가액"/>
+        <cl:gridcell std:sid="gh-cell-41a6f399" rowindex="0" colindex="8" targetcolumnname="TAX_AM" sortable="false" filterable="false" text="세액"/>
+        <cl:gridcell std:sid="gh-cell-fe1c05bf" rowindex="0" colindex="9" targetcolumnname="SM" sortable="false" filterable="false" text="합계"/>
+        <cl:gridcell std:sid="gh-cell-b03cbeb6" rowindex="0" colindex="11" targetcolumnname="ETC_SE" sortable="false" filterable="false" text="기타구분"/>
+        <cl:gridcell std:sid="gh-cell-d7f30cde" rowindex="0" colindex="12" targetcolumnname="JRNLZ_STTUS" sortable="false" filterable="false" text="분개상태"/>
+        <cl:gridcell std:sid="gh-cell-5050ed51" rowindex="0" colindex="14" text="세부보기"/>
+        <cl:gridcell std:sid="gh-cell-e34aa5b7" rowindex="0" colindex="13" text="비고"/>
+        <cl:gridcell std:sid="gh-cell-327bcef2" rowindex="0" colindex="0" text="#"/>
+        <cl:gridcell std:sid="gh-cell-bb96ffd3" rowindex="0" colindex="10" text="비율">
+          <cl:output std:sid="output-f4e7db37" class="text-center" tooltip="상호 전체 금액 대비 합계" value="Output"/>
+        </cl:gridcell>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-f295d82f">
+        <cl:gridrow std:sid="g-row-d3308cf3" height="35px"/>
+        <cl:gridcell std:sid="gd-cell-5183a1a0" rowindex="0" colindex="1" columnname="WRITNG_DE">
+          <cl:dateinput std:sid="d-input-796f2e8a" id="dti1"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-8c862b52" rowindex="0" colindex="2" columnname="MTLTY"/>
+        <cl:gridcell std:sid="gd-cell-fc235739" rowindex="0" colindex="3" columnname="BSNM_NO"/>
+        <cl:gridcell std:sid="gd-cell-fcfd3461" rowindex="0" colindex="4" columnname="PRDLST">
+          <cl:udc std:sid="ud-control-fe1b14b5" type="udc.scr.TreeCombo">
+            <cl:relativebind property="values" category="PROPERTY" columnname="PRDLST"/>
+            <cl:property name="itemDataSet" value="dsItem" type="control"/>
+            <cl:property name="labelColumn" value="label" type="string"/>
+            <cl:property name="valueColumn" value="value" type="string"/>
+            <cl:property name="parentColumn" value="parent" type="string"/>
+          </cl:udc>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-2dfa7d02" rowindex="0" colindex="5" columnname="ACNT_SBJECT">
+          <cl:udc std:sid="ud-control-7cff6dc5" type="udc.scr.TableCombo">
+            <cl:relativebind property="values" category="PROPERTY" columnname="ACNT_SBJECT"/>
+            <cl:property name="itemDataSet" value="dsItem2" type="control"/>
+            <cl:property name="labelColumn" value="label" type="string"/>
+            <cl:property name="valueColumn" value="value" type="string"/>
+          </cl:udc>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-4ea1d4d6" rowindex="0" colindex="6" columnname="PRUF_SE"/>
+        <cl:gridcell std:sid="gd-cell-32264fec" rowindex="0" colindex="7" columnname="SPLPC_AM">
+          <cl:numbereditor std:sid="n-editor-eb2ea41e" id="nbe1" class="text-left"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-95796c84" rowindex="0" colindex="8" columnname="TAX_AM">
+          <cl:output std:sid="output-3e81efe5" datatype="number" format="s#,##0"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-bb47583d" rowindex="0" colindex="9" columnname="SM">
+          <cl:output std:sid="output-027ea509" datatype="number" format="s#,##0"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-7d57f1b0" rowindex="0" colindex="11">
+          <cl:output std:sid="output-91d32b95">
+            <cl:expbind property="class" category="CLASS" expression="ETC_SE ==&quot;정상&quot; ? &quot;sun&quot; : &quot;cloud&quot;"/>
+          </cl:output>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-c9a31c47" rowindex="0" colindex="12" columnname="JRNLZ_STTUS">
+          <cl:checkbox std:sid="c-box-bba4d1f6" id="cbx1" class="text-center" truevalue="분개"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-617be062" rowindex="0" colindex="14">
+          <cl:button std:sid="button-d5a620b6" value="" icon="../../../theme/images/com/main/icon-global-search-button.png"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-6a2a627d" rowindex="0" colindex="13" columnname="RM">
+          <cl:radiobutton std:sid="r-button-0ff702c9" id="rdb2">
+            <cl:item std:sid="item-caf354dd" label="영수증첨부" value="value1"/>
+            <cl:item std:sid="item-4e24387f" label="파일첨부" value="value2"/>
+          </cl:radiobutton>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-1e873380" rowindex="0" colindex="0" columntype="rowindex"/>
+        <cl:gridcell std:sid="gd-cell-0f0c8aae" rowindex="0" colindex="10">
+          <cl:progress std:sid="progress-16d30f3a" id="pgr1">
+            <cl:relativebind property="value" category="PROPERTY" columnname="SM"/>
+            <cl:expbind property="max" category="PROPERTY" expression="getConditionalSum(&quot;MTLTY=='&quot;+MTLTY+&quot;'&quot;, &quot;SM&quot;)"/>
+          </cl:progress>
+        </cl:gridcell>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:xylayout std:sid="xylayout-80688efe"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

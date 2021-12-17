@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-8c8176f8" version="1.0.3174">
+  <head std:sid="head-0bbea3e3">
+    <screen std:sid="screen-119210ca" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-0190aaf8" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-bf20ff6c" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-b4402fe7">
+      <cl:dataset std:sid="d-set-0c18a875" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-fb68f2fc" name="column1"/>
+          <cl:datacolumn std:sid="d-column-3fdc060c" name="column2"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column11</cl:datavalue>
+            <cl:datavalue columnname="column2">column21</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column12</cl:datavalue>
+            <cl:datavalue columnname="column2">column22</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column13</cl:datavalue>
+            <cl:datavalue columnname="column2">column23</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column14</cl:datavalue>
+            <cl:datavalue columnname="column2">column24</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column15</cl:datavalue>
+            <cl:datavalue columnname="column2">column25</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column16</cl:datavalue>
+            <cl:datavalue columnname="column2">column26</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-0d7f58c7">
+    <cl:udc std:sid="ud-control-604614e3" type="udc.han.cmb">
+      <cl:xylayoutdata std:sid="xyl-data-71038e9b" top="20px" left="20px" width="215px" height="117px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:property name="targetDs" value="ds1" type="control"/>
+      <cl:property name="labelC" value="column1" type="string"/>
+      <cl:property name="valueC" value="column2" type="string"/>
+    </cl:udc>
+    <cl:combobox std:sid="c-box-1c345562" id="cmb1" preventinput="true">
+      <cl:listener std:sid="listener-2f877348" name="open" handler="onCmb1Open"/>
+      <cl:xylayoutdata std:sid="xyl-data-82b4bf48" top="20px" left="245px" width="157px" height="41px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:item std:sid="t-item-22172722" label="label1" value="value1"/>
+      <cl:item std:sid="t-item-d9105bc3" label="label2" value="value2"/>
+      <cl:item std:sid="t-item-31cc456a" label="label3" value="value3"/>
+      <cl:item std:sid="t-item-eb834636" label="label4" value="value4"/>
+      <cl:item std:sid="t-item-d5f8113e" label="label5" value="value5"/>
+    </cl:combobox>
+    <cl:button std:sid="button-d168a190" id="btn1" value="Button">
+      <cl:listener std:sid="listener-539046e5" name="click" handler="onBtn1Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-ce286539" top="71px" left="245px" width="157px" height="29px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-45ff091a"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

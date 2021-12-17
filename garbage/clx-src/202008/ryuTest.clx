@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-a714a15d" version="1.0.0.0">
+  <head std:sid="head-36a949b5">
+    <title>ryuTest</title>
+    <screen std:sid="screen-f770ec1b" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-0fde70db" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-061b85dd" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-f1aa687a"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-6c0a8c2f" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-9b341982" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-e79f5d38" id="grp1" class="cl-form-group">
+      <cl:xylayoutdata std:sid="xyl-data-278e6bd7" top="20px" left="20px" width="642px" height="151px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:button std:sid="button-a0f94595" id="btn1" value="Button">
+        <cl:formdata std:sid="f-data-e6df8bdd" row="1" col="0" rowspan="1" colspan="1"/>
+      </cl:button>
+      <cl:button std:sid="button-f05fbd90" id="btn2" value="Button">
+        <cl:formdata std:sid="f-data-a131837f" row="1" col="1"/>
+      </cl:button>
+      <cl:button std:sid="button-0c872c5d" id="btn3" value="Button">
+        <cl:attribute name="hints" value="쿄쿄쿄쿄쿄쿄"/>
+        <cl:formdata std:sid="f-data-0eb0a195" row="1" col="3"/>
+      </cl:button>
+      <cl:button std:sid="button-1828e445" id="btn4" value="Button">
+        <cl:formdata std:sid="f-data-a0562c9e" row="1" col="2"/>
+      </cl:button>
+      <cl:button std:sid="button-0e3f8c3c" id="btn5" value="Button">
+        <cl:formdata std:sid="f-data-4def65b6" row="0" col="0"/>
+      </cl:button>
+      <cl:button std:sid="button-9b0d4aa4" id="btn6" value="Button">
+        <cl:formdata std:sid="f-data-93c18f78" row="0" col="1"/>
+      </cl:button>
+      <cl:button std:sid="button-1ac56cef" id="btn7" value="Button">
+        <cl:formdata std:sid="f-data-b3f6f6a3" row="0" col="2"/>
+      </cl:button>
+      <cl:button std:sid="button-031a4a4b" id="btn8" value="Button">
+        <cl:formdata std:sid="f-data-35aa00b3" row="0" col="3"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-c907ad71" hspace="5px" top-margin="1fr" right-margin="5px" bottom-margin="1fr" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+        <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="100" unit="PIXEL" shadetype="BY_CLASS"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-178fa399"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

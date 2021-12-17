@@ -1,0 +1,2276 @@
+@import "../settings.part.less";
+@import "../custom-settings.part.less";
+
+/*
+ * 메인에서 쓰이는 버튼
+ */
+.cl-button.btn-logout {
+	background-color : transparent;
+	border : 1px solid @white;
+	color : @white;
+	
+	&:not(.cl-disabled):hover, &.cl-focus, &:focus { 
+		border : 1px solid @white;
+		color: @white;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background-color : transparent;
+	}
+}
+
+
+/*
+ * 아이콘 버튼
+ */
+.cl-button.btn-view {
+	background-color : @dark;
+	border : 1px solid @dark;
+	color : @white;
+	text-align : center;
+	
+	.cl-text {
+	}
+	
+	&:not(.cl-disabled):hover{ 
+		color: @white;
+	}
+	
+	&:focus, &.cl-focus{
+		border: solid 1px @focus-border-color;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background-image: none;
+		background-color : @dark;
+	}
+}
+
+.cl-button.btn-search {
+	background-color : @lightdark;
+	border : 1px solid @lightdark;
+	color : @white;
+	text-align : center;
+	padding-left : 10px;
+	padding-right : 10px;
+	
+	.cl-text {
+	}
+	
+	&:not(.cl-disabled):hover{ 
+		color: @white;
+	}
+	
+	&:focus, &.cl-focus{
+		border: solid 1px @focus-border-color;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background-image: none;
+		background-color : @lightdark;
+	}
+}
+
+// 신규(혹은 추가)
+.cl-button.btn-add {
+	background : none; /*url(images/btnA_ico_plus_w.png) no-repeat 10px center;*/
+	background-color : @cl-point-color-2;
+	padding-left : 28px;
+	text-align : left;
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background : url(images/btnA_ico_plus_w.png) no-repeat 10px center;
+		background-color : @cl-point-color-2;
+	}
+	
+	&.cl-disabled{
+		background : url(images/btnA_ico_plus_w.png) no-repeat 10px center;
+		background-color : #DBE4ED;
+		border : #DBE4ED;
+		color: @white;
+	}
+}
+
+//등록
+.cl-button.btn-reg { 
+	background : url(images/btnA_registration.png) no-repeat 10px center;
+	background-color : @cl-point-color-2;
+	padding-left : 28px;
+	text-align : left;
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background : url(images/btnA_registration.png) no-repeat 10px center;
+		background-color : @cl-point-color-2;
+	}
+	
+	&.cl-disabled{
+		background : url(images/btnA_registration.png) no-repeat 10px center;
+		background-color : #DBE4ED;
+		border : #DBE4ED;
+		color: @white;
+	}
+}
+
+// 삭제
+.cl-button.btn-delete {
+	background : url(images/btnA_delete_g.png) no-repeat 10px center;
+	background-color : @white;
+	border : 1px solid @cl-basic-color;
+	color : @cl-basic-color;
+	padding-left : 28px;
+	text-align : left;
+	
+	&:not(.cl-disabled):hover{ 
+		color: @cl-basic-color;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background : url(images/btnA_delete_g.png) no-repeat 10px center;
+		background-color : @white;
+		color : @cl-basic-color;
+	}
+	
+	&.cl-disabled{
+		background : url(images/btnA_delete.png) no-repeat 10px center;
+		background-color : #DBE4ED;
+		border : #DBE4ED;
+		color: @white;
+	}
+}
+
+// 저장
+.cl-button.btn-save {
+	background : url(images/btnA_save.png) no-repeat 10px center;
+	background-color : @cl-button-bg-color-1;
+	padding-left : 28px;
+	text-align : left;
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background : url(images/btnA_save.png) no-repeat 10px center;
+		background-color : @cl-button-bg-color-1;
+	}
+	
+	&.cl-disabled{
+		background : url(images/btnA_save.png) no-repeat 10px center;
+		background-color : #DBE4ED;
+		border : #DBE4ED;
+		color: @white;
+	}
+}
+
+// 출력
+.cl-button.btn-print {
+	background : url(images/btnA_print.png) no-repeat 10px center;
+	background-color : @cl-point-color-2;
+	padding-left : 28px;
+	text-align : left;
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background : url(images/btnA_print.png) no-repeat 10px center;
+		background-color : @cl-point-color-2;
+	}
+	
+	&.cl-disabled{
+		background : url(images/btnA_print.png) no-repeat 10px center;
+		background-color : #DBE4ED;
+		border : #DBE4ED;
+		color: @white;
+	}
+}
+
+// 생성
+.cl-button.btn-create {
+	background : url(images/btnA_new.png) no-repeat 10px center;
+	background-color : @cl-point-color-2;
+	padding-left : 28px;
+	text-align : left;
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background : url(images/btnA_new.png) no-repeat 10px center;
+		background-color : @cl-point-color-2;
+	}
+	
+	&.cl-disabled{
+		background : url(images/btnA_new.png) no-repeat 10px center;
+		background-color : #DBE4ED;
+		border : #DBE4ED;
+		color: @white;
+	}
+}
+
+// 조인
+.cl-button.btn-join {
+	background : url(images/btnA_ico_close2_w.png) no-repeat 10px center;
+	background-color : @cl-point-color-2;
+	padding-left : 28px;
+	text-align : left;
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background : url(images/btnA_ico_close2_w.png) no-repeat 10px center;
+		background-color : @cl-point-color-2;
+	}
+	
+	&.cl-disabled{
+		background : url(images/btnA_ico_close2_w.png) no-repeat 10px center;
+		background-color : #DBE4ED;
+		border : #DBE4ED;
+		color: @white;
+	}
+}
+
+// > 이동 버튼
+.cl-button.btn-move-to-left {
+	background : url(images/btnA_ico_arr01_w.png) no-repeat center;
+	background-color : @cl-point-color-2;
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background : url(images/btnA_ico_arr01_w.png) no-repeat center;
+		background-color : @cl-point-color-2;
+	}
+	
+	&.cl-disabled{
+		background : url(images/btnA_ico_arr01_w.png) no-repeat center;
+		background-color : #DBE4ED;
+		border : #DBE4ED;
+		color: @white;
+	}
+}
+
+// > 이동 버튼
+.cl-button.btn-move-to-right {
+	background : url(images/btnA_ico_arr02_w.png) no-repeat center;
+	background-color : @cl-point-color-2;
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background : url(images/btnA_ico_arr02_w.png) no-repeat center;
+		background-color : @cl-point-color-2;
+	}
+	
+	&.cl-disabled{
+		background : url(images/btnA_ico_arr02_w.png) no-repeat center;
+		background-color : #DBE4ED;
+		border : #DBE4ED;
+		color: @white;
+	}
+}
+
+// 확인
+.cl-button.btn-submit {
+	border-radius : 0;
+	font-size : 15px;
+}
+
+// 취소
+.cl-button.btn-cancel {
+	background-color : #DBE4ED;
+	border : none;
+	border-radius : 0;
+	color : @default-text-color;
+	font-size : 15px;
+	
+	&:not(.cl-disabled):hover{ 
+		color: @default-text-color;
+	}
+	
+	&:focus, &.cl-focus{
+		border: none;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background-image: none;
+		background-color : #DBE4ED;
+	}
+}
+
+
+/*
+ * 플로팅 되는 연관업무/워크플로우 화면에서 쓰이는 버튼
+ */
+ 
+//연관업무 메모 설정 버튼
+.cl-button.btn-setting {
+	background-image:url('images/btnA_new_g.png'); 
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-color : white;
+}
+ 
+//연관업무 메모 쓰기 버튼
+.cl-button.btn-write {
+	background-image:url('images/btnA_registration_g.png'); 
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-color : white;
+} 
+ 
+//연관업무 메모 카테고리 선택 버튼
+.cl-button.btn-setting-selected {
+	background-color : #ff5b00;
+} 
+
+//연관업무 메모 카테고리 비선택 버튼
+.cl-button.btn-setting-unselected {
+	background-color : @metal;
+} 
+
+//연관업무 녹취 버튼(각 버튼에 따른 이미지 추가 필요)
+.cl-button.btn-icon-record {
+	background-color : @metal;
+	color : white;
+}
+
+//연관업무 핀패드 버튼
+.cl-button.btn-icon-pin {
+	background-color : @metal;
+	color : white;
+}
+
+//연관업무 추가 버튼
+.cl-button.btn-icon-add {
+	background-color : @metal;
+	color : white;
+}
+
+//2019.08.13 변경된 디자인가이드 추가
+.cl-button.btn-primary01 {
+	background-color : @color-primary-01;
+	color : white;
+	padding-left : 10px;
+	padding-right : 10px;
+	min-width : 60px;
+	min-height : 30px;
+	
+	&.cl-disabled{
+		background-color : @color-bg-disabled-lightdark;
+		color : @color-disabled;
+	}
+	
+}
+.cl-button.btn-primary01-dark {
+	background-color : @color-primary-01;
+	color : white;
+	padding-left : 10px;
+	padding-right : 10px;
+	min-width : 60px;
+	min-height : 30px;
+	
+	
+		
+}
+
+.btn-primary02 {
+	background-color : @color-primary-02;
+	color : white;
+	padding-left : 10px;
+	padding-right : 10px;
+	min-width : 60px;
+	min-height : 30px;
+	
+	&.cl-disabled{
+		background-color : @color-bg-disabled-lightdark;
+		color : @color-disabled;
+	}
+}
+
+.btn-primary03 {
+	background-color : @color-secondary-01;
+	color : white;
+	padding-left : 10px;
+	padding-right : 10px;
+	min-width : 60px;
+	min-height : 30px;
+	&.cl-disabled{
+		background-color : @color-bg-disabled-lightdark;
+		color : @color-disabled;
+	}
+}
+
+
+.btn-primary04 {
+	background-color : @color-primary-03;
+	color : white; 
+	padding-left : 10px;
+	padding-right : 10px;
+	min-width : 60px;
+	min-height : 30px;
+	&.cl-disabled{
+		background-color : @color-bg-disabled-lightdark;
+		color : @color-disabled;
+	}
+}
+
+.btn-secondary01 {
+	background-color : white;
+	color : @color-primary-02;
+	font-size : @font-button;
+	font-weight : bold;
+	border-color : @color-primary-02;
+	border : 1px solid;
+	min-width : 60px;
+	min-height : 24px; //Table상단버튼 높이 변경으로 인한 수정
+	padding-left : 10px;
+	padding-right : 10px;
+	
+	&:not(.cl-disabled):hover, &.cl-focus, &:focus { 
+		background-color : rgba(0,0,0,0.05);
+		border : 1px solid @white;
+		color : @color-primary-02;
+		border-color : @color-primary-02;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background-color : rgba(0, 0, 0, 0.03);
+		color : @color-primary-02;
+		border-color : @color-primary-02;
+	}
+	
+	&.cl-disabled{
+	background-color : white;
+//	border-color : @color-text-black-02;
+	border : @color-text-black-02 1px solid;
+	color: @color-text-white-04;
+}
+}
+
+.btn-secondary02 {
+	background-color : @secondary02;
+	color : white;
+	border-color : @color-primary-02;
+	border : 1px solid;
+	min-width : 50px;
+	min-height : 30px;
+}
+
+.btn-secondary03 {
+	background-color : @primary02;
+	color : white;
+	border-color : @color-primary-02;
+	border : 1px solid;
+	min-width : 50px;
+	min-height : 30px;
+}
+
+//Dropdown Button (1) - 일반
+.btn-dropdown01 {
+	border-radius : 3px 0px 0px 3px;
+	background-color : #4e6c8d;
+	color : white;
+	
+	&.cl-disabled {
+		background-color : @color-bg-disabled-dark;
+	}
+	&.btn-dropup{
+		//이미지 필요
+		
+		background : url(images/btn/btn_dropdownMenu_green_default.png) no-repeat 10px center;
+		background-color : #4e6c8d;
+	}
+	
+}
+//Dropdown Button (1) - 언더라이팅
+.btn-dropdown02 {
+	background-color : #66bb8a;
+	border-radius : 0px;
+	
+	&.btn-dropTitle{
+		background-color : #66bb8a;
+		text-align : left;
+		font-weight : bold;
+		padding-left : 10px;
+		border : 1px solid #46805e;
+	}
+	
+	&.btn-dropup{
+		//이미지 필요
+		background : url(images/btn/btn_dropdownMenu_green_default.png) no-repeat 10px center;
+		background-color : @color-secondary-02-dark;
+		border : 1px solid #6884a4;
+		
+			text-align : left;
+			padding-left : 25px;
+	}
+	
+	&.header-text {
+		background-color : #66bb8a;
+		border-radius : 3px;
+		color : @white;
+		font-weight : @font-bold;
+		font-size : 12px;
+		padding-left : 10px;
+		}
+}
+
+.btn-dropup{
+		//이미지 필요
+		background : url(images/btn/btn_dropdownMenu_green_default.png) no-repeat 10px center;
+		background-color : transparent;
+}
+//Dropdown Button (2)
+.btn-dropdown {
+	background-color : #4e6c8d;
+	font-size : @font-button-b;
+	font-weight : @font-bold;
+	
+	&.cl-disabled {
+		background-color : @color-bg-disabled-dark;
+	}
+}
+
+//(+)버튼
+.btn-secondary-add {
+	background-color : @white;
+	//이미지 필요
+	background : url(images/icon/btn_table_add_row.png) no-repeat center;
+}
+
+//(X)버튼
+.btn-secondary-del {
+	background-color : @white;
+	//이미지 필요
+	background : url(images/icon/window_btn_close.png) no-repeat center;
+}
+
+.btn-more {
+	background : url(images/icon/btn_moreview.png) no-repeat center;
+	background-color : #E8EFF8;	
+}
+
+//드롭다운버튼 화살표 아이콘(△)
+.btn-dropdown-show {
+	background-color : #3f5975;
+	background-image : url(images/icon/icon_dropdown_active_w.png);
+	background-repeat : no-repeat;
+	background-position : center;
+}
+
+.btn-dropdown-show02 {
+	background-color : #53966f;
+	background-image : url(images/icon/icon_dropdown_active_w.png);
+	background-repeat : no-repeat;
+	background-position : center;
+}
+
+.btn-dropdown-show2 {
+	background-color : #4e6c8d;
+	background-image : url(images/icon/icon_dropdown_active_w.png);
+	background-repeat : no-repeat;
+	background-position : center;
+}
+
+//드롭다운버튼 화살표 아이콘(▽)
+.btn-dropdown-hide {
+	background-color : #3f5975;
+	background-image : url(images/icon/icon_dropdown_default_w.png);
+	background-repeat : no-repeat;
+	background-position : center;
+	border-radius : 0px 3px 3px 0px;
+	&.cl-disabled {
+		background-color : @color-bg-disabled-darker;
+	}
+}
+
+.btn-dropdown-hide02 {
+	border-radius : 0px 3px 3px 0px;
+	background-color : #53966f;
+	background-image : url(images/icon/icon_dropdown_default_w.png);
+	background-repeat : no-repeat;
+	background-position : center;
+	&.cl-disabled {
+		background-color : @color-bg-disabled-lightdark;
+	}
+}
+
+.btn-dropdown-hide2 {
+	background-color : #4e6c8d;
+	background-image : url(images/icon/icon_dropdown_default_w.png);
+	background-repeat : no-repeat;
+	background-position : center;
+	transform : rotate(180deg);
+	&.cl-disabled {
+		background-color : @color-bg-disabled-dark;
+	}
+}
+
+//멀티다중선택버튼
+.btn-multi-select {
+	
+	color : #247cff;
+	background-color : #ffffff;
+	border : solid 1px;
+			
+	&.selected{
+	}
+	&.unselected{
+	}
+}
+
+//버튼그룹영역내 버튼
+/*(2019.11.15) 버튼의 클래스로 변경, 마우스 호버에 대한 추가 작성 - 조한진 */
+.cl-button.btn-group {
+	color : @white;
+	background-color : @black;
+	border : solid 1px @white;
+	border-radius : 5px;
+	min-width : 60px;
+	&:not(.cl-disabled):hover{
+		color: @white;		
+		border : solid 1px @white;
+		background-color : rgba(255,255,255,0.05);
+	}
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		color: @white;		
+		border : solid 1px @white;
+		background-color : rgba(255,255,255,0.03);
+	}
+	
+	&.cl-disabled{
+		color: @color-disabled-secondary-dark;
+		border-color : solid 1px @color-disabled-secondary-dark;
+	}
+}
+
+
+.button-bottom-area{	
+	background-color : @color-black-01;
+}
+
+//돋보기버튼 이미지
+.cl-button.btn-glass {
+}
+
+//공통_버튼_아이콘01(Icon)
+.btn-icon-tooltip {
+	background-color : @white;
+	//이미지 필요
+	//background : url(images/) no-repeat center;
+}
+
+//공통_버튼_아이콘02_빼기(Icon)
+.btn-icon-minus {
+	background-color : @black;
+	//이미지 필요
+	background : url(images/tree_icon03.png) no-repeat center;
+}
+
+//공통_버튼_아이콘02_더하기(Icon)
+.btn-icon-plus {
+	background-color : @black;
+	//이미지 필요
+	background : url(images/tree_icon04.png) no-repeat center;
+}
+
+//공통_버튼_아이콘03_접음(Icon)
+.btn-icon-fold {
+	background-color : @white;
+	opacity : 0.5;
+	//이미지 필요
+	background : url(images/list.png) no-repeat center;
+}
+
+//공통_버튼_아이콘03_펼침(Icon)
+.btn-icon-unfold {
+	background-color : @white;
+	opacity : 0.5;
+	//이미지 필요
+	background : url(images/icon_arrow_down.png) no-repeat center;
+}
+
+//공통_버튼_하이퍼링크_문자(Text)
+.cl-button.btn-hyper-text {
+	color : @black;
+	&.required {
+		color : @required;
+	}
+	font-weight : bold;
+	background : transparent;
+	.cl-text{
+		text-decoration : underline;
+		text-decoration-color : @black;
+	}
+	&:hover, &.cl-hover{
+		color : @color-primary-03;
+		background-color : none;
+	}
+}
+
+//공통_버튼_하이퍼링크_아이콘(Text)
+.cl-button.btn-hyper-icon {
+	text-align : right;
+	color : @black;
+	&.required {
+		color : @required;
+	}
+	padding-right : 12px;
+	font-weight : bold;
+	background-color : @white;
+	opacity : 0.5;
+	//이미지 필요
+	background : url(images/calendar03.png) no-repeat right;
+	&:hover, &.cl-hover{
+		color : @color-primary-03;
+		background-color : none;
+	}
+}
+
+//공통_버튼_하이퍼링크_숫자(Text)
+.cl-button.btn-hyper-number {
+	color : @black;
+	&.required {
+		color : @required;
+	}
+	font-weight : bold;
+	background : transparent;
+	.cl-text{
+		text-decoration : underline;
+		text-decoration-color : @black;
+	}
+	&:hover, &.cl-hover{
+		color : @color-primary-03;
+		background-color : none;
+	}
+}
+
+.btn-hyper-text {
+	color : @black;
+	&.required {
+		color : @required;
+	}
+	font-weight : bold;
+	background : transparent;
+	.cl-text{
+		text-decoration : underline;
+		text-decoration-color : @black;
+		cursor: pointer;
+	}
+	&:hover, &.cl-hover{
+		color : @color-primary-03;
+		background-color : none;
+	}
+}
+
+.btn-icon-search{
+	background : url('images/icon/btn_search_black.png') no-repeat center ;
+//	background-size: cover;
+	.center{
+		background-poistion : center;
+	}
+}
+
+// 버튼의 좌우 간격을 설정 (2019.10.18)
+.btn-form-pop{
+	padding-left : 10px ;
+	padding-right : 10px ;
+}
+
+.btn-cal{	
+	background : url(images/icon/btn_form_calendar_b.png) no-repeat right;
+	
+}
+
+.btn-icon-search-w{
+	background : url('images/icon/btn_search.png') no-repeat center ;
+	background-color : @color-primary-02;
+}
+
+/* (2019.09.20) 버튼 스타일 추가 - 류다은 */
+.cl-button.btn-primary-type1 {
+	background-color : @color-primary-01;
+	color : @color-text-white-01;
+	font-size : @font-button-b;
+	font-weight : @font-bold;
+	
+	&:not(.cl-disabled):hover {
+		background-color : @color-primary-01;
+		color : @color-text-white-01;
+		opacity : 0.8;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-color : @color-primary-01;
+		color : @color-text-white-01;
+		opacity : 0.9;
+	}
+	
+	&.cl-disabled {
+		background-color : @color-bg-disabled-dark;
+		color : @color-disabled-dark;
+	}
+}
+
+.cl-button.btn-primary-type1-right {
+	background-color : @color-primary-01;
+	color : @color-text-white-01;
+	font-size : @font-button;
+	font-weight : @font-bold;
+	border-radius : 0 3px 3px 0;
+	
+	&:not(.cl-disabled):hover {
+		background-color : @color-primary-01;
+		color : @color-text-white-01;
+		opacity : 0.8;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-color : @color-primary-01;
+		color : @color-text-white-01;
+		opacity : 0.9;
+	}
+	
+	&.cl-disabled {
+		background-color : @color-bg-disabled;
+		color : @color-disabled;
+	}
+}
+
+.cl-button.btn-primary-type2 {
+	background-color : @color-primary-02;
+	color : @color-text-white-01;
+	font-size : @font-button;
+	font-weight : @font-bold;
+	
+	&:not(.cl-disabled):hover {
+		background-color : @color-primary-02;
+		color : @color-text-white-01;
+		opacity : 0.8;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-color : @color-primary-02;
+		color : @color-text-white-01;
+		opacity : 0.9;
+	}
+	
+	&.cl-disabled {
+			background-color : @color-bg-disabled-dark;
+		color : @color-disabled-dark;
+	}
+}
+
+.cl-button.btn-primary-type2-outline {
+	border : 1px solid @color-primary-02;
+	background : transparent;
+	color : @color-primary-02;
+	font-size : @font-button;
+	font-weight : @font-bold;
+	
+	&:not(.cl-disabled):hover {
+		background-color : rgba(0, 0, 0, 0.05);
+		border : 1px solid @color-primary-02;
+		color : @color-primary-02;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-color : rgba(0, 0, 0, 0.03);
+		border : 1px solid @color-primary-02;
+		color : @color-primary-02;
+	}
+	
+	&.cl-disabled {
+		border : 1px solid @color-bg-disabled;
+		color : @color-bg-disabled;
+	}
+}
+
+.cl-button.btn-primary-type2-dark-outline {
+	border : 1px solid @color-primary-02-lightdark;
+	background : transparent;
+	color : @color-primary-02;
+	font-size : @font-button-b;
+	font-weight : @font-bold;
+	
+	&:not(.cl-disabled):hover {
+		background-color : rgba(0, 0, 0, 0.05);
+		border : 1px solid @color-primary-02-lightdark;
+		color : @color-primary-02;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-color : rgba(0, 0, 0, 0.03);
+		border : 1px solid @color-primary-02-lightdark;
+		color : @color-primary-02;
+	}
+	
+	&.cl-disabled {
+		background : transparent;
+		border : 1px solid @color-bg-disabled-dark;
+		color : @color-disabled-dark;
+	}
+}
+
+
+.cl-button.btn-light-outline {
+	border : 1px solid @white;
+	background : transparent;
+	color : @color-text-white-01;
+	font-size : @font-button;
+	font-weight : @font-bold;
+	
+	&:not(.cl-disabled):hover {
+		background-color : rgba(255, 255, 255, 0.05);
+		border : 1px solid @white;
+		color : @color-text-white-01;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-color : rgba(255, 255, 255, 0.03);
+		border : 1px solid @white;
+		color : @color-text-white-01;
+	}
+	
+	&.cl-disabled {
+		background : transparent;
+		border : 1px solid @color-bg-disabled;
+		color : @color-bg-disabled;
+	}
+}
+
+.cl-button.btn-dark-outline {
+	border : 1px solid @black;
+	background : transparent;
+	color : @black;
+	font-size : @font-button;
+	font-weight : @font-bold;
+	
+	&:not(.cl-disabled):hover {
+		background-color : rgba(0, 0, 0, 0.05);
+		border : 1px solid @black;
+		color : @black;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-color : rgba(0, 0, 0, 0.03);
+		border : 1px solid @black;
+		color : @black;
+	}
+	
+	&.cl-disabled {
+		background : transparent;
+		border : 1px solid @color-disabled-lightdark;
+		color : @color-disabled-lightdark;
+	}
+}
+
+.cl-button.btn-primary-type3 {
+	background-color : @color-primary-03;
+	color : @color-text-white-01;
+	font-size : @font-button;
+	font-weight : @font-bold;
+	
+	&:not(.cl-disabled):hover {
+		background-color : @color-primary-03;
+		color : @color-text-white-01;
+		opacity : 0.8;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-color : @color-primary-03;
+		color : @color-text-white-01;
+		opacity : 0.9;
+	}
+	
+	&.cl-disabled {
+		background-color : @color-bg-disabled-dark;
+		color : @color-disabled-dark;
+	}
+}
+
+// 컨테이너 버튼그룹 적용 시 적용되는 버튼 스타일 정의
+.cl-container.btn-group {
+	.cl-button {
+		background-color : @color-primary-03;
+		color : @color-text-white-01;
+		font-size : @font-button;
+		font-weight : @font-bold;
+		
+		&:not(.cl-disabled):hover {
+			background-color : @color-primary-03;
+			color : @color-text-white-01;
+			opacity : 0.8;
+		}
+		
+		&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+			background-color : @color-primary-03;
+			color : @color-text-white-01;
+			opacity : 0.9;
+		}
+		
+		&.cl-disabled {
+			background-color : @color-bg-disabled;
+			color : @color-disabled;
+		}
+	}
+}
+
+
+
+.cl-container.btn-radius-group {
+	border-radius : 3px;
+	overflow : hidden;
+	
+	.cl-button {
+		border-radius : 0px;
+	}
+	
+	.cl-button.left {
+		border-right : none;
+		border-radius : 3px 0px 0px 3px;
+	}
+	
+	.cl-button.middle {
+		border-radius : 0px;
+	}
+	
+	.cl-button.right {
+		border-left : none;
+		border-radius : 0px 3px 3px 0px;
+	}
+}
+
+.cl-button.btn-secondary-type1 {
+	background-color : @color-secondary-01;
+	color : @color-text-white-01;
+	font-size : @font-button;
+	font-weight : @font-bold;
+	
+	&:not(.cl-disabled):hover {
+		background-color : @color-secondary-01;
+		color : @color-text-white-01;
+		opacity : 0.8;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-color : @color-secondary-01;
+		color : @color-text-white-01;
+		opacity : 0.9;
+	}
+	
+	&.cl-disabled {
+		background-color : @color-bg-disabled;
+		color : @color-disabled;
+	}
+}
+
+/* text button */
+
+.cl-button.square {
+	border-radius : 0;
+}
+
+.cl-button.btn-reset {
+	background-image : url(images/icon/btn_reset.png);
+	background-repeat : no-repeat;
+	background-position : center;
+	background-color : transparent;
+	border : none;
+	
+	&:not(.cl-disabled):hover {
+		background-image : url(images/icon/btn_reset.png);
+		background-repeat : no-repeat;
+		background-position : center;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background : transparent;
+		background-image : url(images/icon/btn_reset.png);
+		background-repeat : no-repeat;
+		background-position : center;
+	}
+	
+	&.cl-disabled {
+		background-image : url(images/icon/btn_reset.png);
+		background-repeat : no-repeat;
+		background-position : center;
+	}
+	
+	&.reverse {
+		background-image : url(images/icon/btn_text_reset_dark.png);
+	}
+}
+
+// 파일업로드의 재입력 버튼 (2019.10.21) 
+.cl-button.btn-reinput{
+	background-image : url(images/icon/btn_reset.png);
+	background-repeat : no-repeat;
+	background-position : center;
+	background-color : transparent;
+	border : none;
+	
+	&:not(.cl-disabled):hover {
+		background-image : url(images/icon/btn_reset.png);
+		background-repeat : no-repeat;
+		background-position : center;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background : transparent;
+		background-image : url(images/icon/btn_reset.png);
+		background-repeat : no-repeat;
+		background-position : center;
+	}
+	
+	&.cl-disabled {
+		background-image : url(images/icon/btn_reset.png);
+		background-repeat : no-repeat;
+		background-position : center;
+	}
+	
+}
+
+.cl-button.btn-arrow-down {
+	background-image : url(images/icon/btn_menu_arrow_default.png);
+	background-repeat : no-repeat;
+	background-position : right 10px center;
+	background-color : @color-black-04;
+	border : none;
+	color : @color-text-white-01;
+	font-size : @font-small-text-r;
+	text-align : right;
+	padding-right : 30px;
+	
+	&:not(.cl-disabled):hover {
+		background-image : url(images/icon/btn_menu_arrow_default.png);
+		background-repeat : no-repeat;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-image : url(images/icon/btn_menu_arrow_default.png);
+		background-repeat : no-repeat;
+	}
+	
+	&.cl-disabled {
+		background-image : url(images/icon/btn_menu_arrow_default.png);
+		background-repeat : no-repeat;
+	}
+}
+
+/* Dropdown Button */
+.cl-button.btn-primary-dropdown-type1 {
+	background-color : @color-primary-02-dark;
+	color : @color-text-white-01;
+	font-size : @font-button-b;
+	font-weight : @font-bold;
+	padding-right : 24px;
+	
+	&:before {
+		content : "";
+		position : absolute;
+		display : block;
+		
+		width : 24px;
+		height : 100%;
+		top : 0;
+		right : 0;
+		
+		background-color : @color-primary-02-darker;
+		border-radius : 0 3px 3px 0px;
+		background-image : url(images/icon/icon_dropdown_default_w.png);
+		background-repeat : no-repeat;
+		background-position : center;
+	}
+	
+	&:not(.cl-disabled):hover {
+		background-color : @color-primary-02-dark;
+		opacity : 0.8;
+		
+		&:before {
+			content : "";
+			position : absolute;
+			display : block;
+			
+			width : 24px;
+			height : 100%;
+			top : 0;
+			right : 0;
+			
+			background-color : @color-primary-02-darker;
+			border-radius : 0 3px 3px 0px;
+			background-image : url(images/icon/icon_dropdown_active_w.png);
+			background-repeat : no-repeat;
+			background-position : center;
+			opacity : 0.8;
+		}
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-color : @color-primary-02-dark;
+		opacity : 0.9;
+		
+		&:before {
+			content : "";
+			position : absolute;
+			display : block;
+			
+			width : 24px;
+			height : 100%;
+			top : 0;
+			right : 0;
+			
+			background-color : @color-primary-02-darker;
+			border-radius : 0 3px 3px 0px;
+			background-image : url(images/icon/icon_dropdown_active_w.png);
+			background-repeat : no-repeat;
+			background-position : center;
+			opacity : 0.9;
+		}
+	}
+	
+	&.cl-disabled {
+		background-color : @color-bg-disabled-dark;
+		color : @color-disabled;
+		
+		&:before {
+			content : "";
+			position : absolute;
+			display : block;
+			
+			width : 24px;
+			height : 100%;
+			top : 0;
+			right : 0;
+			
+			background-color : @color-bg-disabled-darker;
+			border-radius : 0 3px 3px 0px;
+			background-image : url(images/icon/icon_dropdown_default_w.png);
+			background-repeat : no-repeat;
+			background-position : center;
+			opacity : 0.9;
+		}
+	}
+}
+
+.cl-button.btn-secondary-dropdown-type1 {
+	background-color : @color-secondary-02;
+	color : @color-text-white-01;
+	font-size : @font-button-b;
+	font-weight : @font-bold;
+	padding-right : 24px;
+	
+	&:before {
+		content : "";
+		position : absolute;
+		display : block;
+		
+		width : 24px;
+		height : 100%;
+		top : 0;
+		right : 0;
+		
+		background-color : @color-secondary-02-dark;
+		border-radius : 0 3px 3px 0px;
+		background-image : url(images/icon/icon_dropdown_default_w.png);
+		background-repeat : no-repeat;
+		background-position : center;
+	}
+	
+	&:not(.cl-disabled):hover {
+		background-color : @color-secondary-02;
+		opacity : 0.8;
+		
+		&:before {
+			content : "";
+			position : absolute;
+			display : block;
+			
+			width : 24px;
+			height : 100%;
+			top : 0;
+			right : 0;
+			
+			background-color : @color-secondary-02-dark;
+			border-radius : 0 3px 3px 0px;
+			background-image : url(images/icon/icon_dropdown_active_w.png);
+			background-repeat : no-repeat;
+			background-position : center;
+			opacity : 0.8;
+		}
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-color : @color-secondary-02;
+		opacity : 0.9;
+		
+		&:before {
+			content : "";
+			position : absolute;
+			display : block;
+			
+			width : 24px;
+			height : 100%;
+			top : 0;
+			right : 0;
+			
+			background-color : @color-secondary-02-dark;
+			border-radius : 0 3px 3px 0px;
+			background-image : url(images/icon/icon_dropdown_active_w.png);
+			background-repeat : no-repeat;
+			background-position : center;
+			opacity : 0.9;
+		}
+	}
+	
+	&.cl-disabled {
+		background-color : @color-bg-disabled;
+		color : @color-disabled;
+		
+		&:before {
+			content : "";
+			position : absolute;
+			display : block;
+			
+			width : 24px;
+			height : 100%;
+			top : 0;
+			right : 0;
+			
+			background-color : @color-bg-disabled-lightdark;
+			border-radius : 0 3px 3px 0px;
+			background-image : url(images/icon/icon_dropdown_default_w.png);
+			background-repeat : no-repeat;
+			background-position : center;
+			opacity : 0.9;
+		}
+	}
+}
+
+.cl-button.btn-dropdown-type2 {
+	background-color : @color-primary-02-dark;
+	color : @color-text-white-01;
+	font-size : @font-button-b;
+	font-weight : @font-bold;
+	
+	background-image : url(images/icon/icon_dropdown_active_w.png); // 아이콘 변경 필요
+	background-position : calc(100% - 10px) center;
+	background-size : 8px 5px;
+	background-repeat : no-repeat;
+	padding-right : 15px;
+	
+	&:not(.cl-disabled):hover {
+		background-color : @color-primary-02-dark;
+		color : @color-text-white-01;
+		opacity : 0.8;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-color : @color-primary-02-dark;
+		color : @color-text-white-01;
+		opacity : 0.9;
+		
+		background-image : url(images/icon/icon_dropdown_active_w.png); // 아이콘 변경 필요
+	}
+	
+	&.cl-disabled {
+		background-image : url(images/icon/icon_dropdown_active_b.png); // 아이콘 변경 필요
+		background-color : @color-bg-disabled-dark;
+		color : @color-disabled-dark;
+	}
+}
+
+
+.btn-window-add{
+	background-image : url(images/icon/btn_header_add_window_default.png); 
+	background-repeat : no-repeat;
+	background-color : transparent;
+	background-position : center;
+	
+	&:not(.cl-disabled):hover {
+		background-image : url(images/icon/window_title_addWindow_hover.png); 
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-image : url(images/icon/window_title_addWindow_active.png); 
+	}
+	
+}
+
+
+.btn-window-search{
+	background-image : url(images/window/window_title_search_default.png); 
+	background-repeat : no-repeat;
+	background-color : transparent;
+	background-position : center;
+	
+	&:not(.cl-disabled):hover {
+		background-image : url(images/window/window_title_search_hover.png); 
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-image : url(images/window/window_title_search_active.png); 
+	}
+	&.on{
+		background-color : @color-primary-01;
+		//background-image : url(images/window/window_title_search_active.png);
+	}
+}
+
+.btn-window-min{
+	background-image : url(images/window/window_title_btn_min.png); 
+	background-repeat : no-repeat;
+	background-color : transparent;
+	background-position : center;
+}
+
+
+.btn-window-max{
+	background-image : url(images/window/window_title_btn_max.png); 
+	background-repeat : no-repeat;
+	background-color : transparent;
+	background-position : center;
+	
+	
+}
+
+.btn-window-close{
+	background-image : url(images/window/window_btn_close.png); 
+	background-repeat : no-repeat;
+	background-color : transparent;
+	background-position : center;
+	
+	
+}
+
+.btn-window-move{
+	background-image : url(images/window/window_title_sequence_default.png); 
+	background-repeat : no-repeat;
+	background-color : transparent;
+	background-position : center;
+	
+	&:not(.cl-disabled):hover {
+		background-image : url(images/window/window_title_sequence_hover.png); 
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-image : url(images/window/window_title_sequence_active.png); 
+	}
+	
+	
+}
+
+
+
+
+.btn-window-save{
+	background-image : url(images/window/window_title_saveLayout_active.png); 
+	background-repeat : no-repeat;
+	background-color : transparent;
+	background-position : center;
+	
+	&:not(.cl-disabled):hover {
+		background-image : url(images/window/window_title_sequence_hover.png); 
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-image : url(images/window/window_title_sequence_active.png); 
+	}
+}
+
+.btn-window-reg{
+	background-image : url(images/window/window_title_addWindow_active.png); 
+	background-repeat : no-repeat;
+	background-color : transparent;
+	background-position : center;
+	
+	&:not(.cl-disabled):hover {
+		background-image : url(images/window/window_title_sequence_hover.png); 
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-image : url(images/window/window_title_sequence_active.png); 
+	}
+}
+
+.btn-window-empty{
+	background-image : url(images/window/window_title_emptyLayout_active.png); 
+	background-repeat : no-repeat;
+	background-color : transparent;
+	background-position : center;
+	
+	&:not(.cl-disabled):hover {
+		background-image : url(images/window/window_title_emptyLayout_hover.png); 
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-image : url(images/icon/window_title_emptyLayout_active.png); 
+	}
+}
+
+.btn-window-open{
+	background-image : url(images/window/window_title_openWindow_active.png); 
+	background-repeat : no-repeat;
+	background-color : transparent;
+	background-position : center;
+	
+	&:not(.cl-disabled):hover {
+		background-image : url(images/window/window_title_openWindow_hover.png); 
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-image : url(images/window/window_title_openWindow_active.png); 
+	}
+}
+
+.btn-accordion-expander{
+
+	background : @color-accordion-bg;
+	background-image: url(images/icon/icon_acc_default.png);
+	background-size : 15px 9px;
+	background-repeat : no-repeat;
+	background-position : center;
+	&.on{		
+		background : @color-accordion-active-bg;
+		background-image: url(images/icon/icon_acc_active.png);
+		background-size : 15px 9px;
+		background-repeat : no-repeat;
+		background-position : center;
+	}
+}
+//아코디언 더보기 버튼
+.btn-icon-expand{
+	//이미지 필요
+}
+
+// 파일업로드용 닫기 버튼 
+.btn-chips-del{
+	background-image: url(images/icon/img_chips_del.png);
+	background-repeat : no-repeat;
+	background-position : center;
+}
+
+
+.panel-link{
+	color : #247CFF;
+	font-size : 12px; 
+	font-weight : bold;	
+	background-image : url(images/icon/icon_link.png);
+	background-repeat : no-repeat;
+	background-position : center center;
+}
+
+
+
+// 그리드 내의 버튼이 안쪽에 공간을 차지 하며
+//.grid-in-btn{
+//	padding : 3px 10px 3px 10px; 
+//}
+//.cl-grid-cell.cl-grid-cell-inherit.grid-in-btn .cl-button{
+//	height : 24px !important;
+//	border-radius : 10px !important;
+//}
+
+
+.btn-condition-expand{
+	background : url('images/icon/img_card_^.png') no-repeat center center;
+	
+	&.on{
+		background : url('images/icon/img_card_v.png') no-repeat center center;	
+	}
+	
+	
+	&.cl-activated {	
+		background-color : none;
+	}
+	
+	&:not(.cl-disabled):hover {
+		background-color : none; 
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-color : none;
+	}
+	
+	&:hover {	
+		background-color : none;
+	}
+	&.cl-disabled {
+		background-color : none;
+	}
+	
+}
+
+
+// 이미지가 없어 임의의  버튼으로 설정  (언더라이팅 45p -  가이드 223p) 2019.10.28
+.btn-more-dot {
+	background : url(images/btn_more.png) no-repeat center;
+	background-color : #FFFFFF;	
+}
+
+
+// 이전 데이터를 보는 아이콘 표시 (2019.11.04) 
+.btn-dtl-prev{
+	
+	background : url(images/icon/dropdown_tri_blue_left.png) no-repeat center;
+	background-color : #FFFFFF;	
+}
+
+.btn-dtl-next{
+	
+	background : url(images/icon/dropdown_tri_blue_right.png) no-repeat center;
+	background-color : #FFFFFF;	
+}
+
+.btn-dtl-add{
+	
+	background : url(images/icon/dropdown_tri_blue_right.png) no-repeat center;
+	background-color : #FFFFFF;	
+}
+
+.btn-year-prev{
+	background : url(images/icon/btn_year_prev.png) no-repeat center;
+	background-color : #FFFFFF;	
+	
+}
+
+
+.btn-year-next{
+	background : url(images/icon/btn_year_next.png) no-repeat center;
+	background-color : #FFFFFF;	
+	
+}
+
+
+.btn-prev{
+	background : url(images/icon/btn_month_prev.png) no-repeat center;
+	background-color : #FFFFFF;	
+	
+}
+
+
+.btn-next{
+	background : url(images/icon/btn_month_next.png) no-repeat center;
+	background-color : #FFFFFF;	
+	
+}
+
+
+.cl-button.btn-pin {
+	background : url(images/header/info_btn_pin_active.png) no-repeat center;
+	min-width : 30px;
+	min-height : 30px;
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background-image: none;
+		background-color : #DBE4ED;
+	}
+	
+	&.cl-disabled{
+		background-color : #DBE4ED;
+	}
+	
+}
+
+.cl-button.btn-screen {
+	background :#294055 url(images/header/info_btn_list_default.png) no-repeat center;
+		&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background : none;
+		
+	}
+}
+
+.cl-button.btn-collapse {
+	
+	background : url(images/header/info_btn_open_active.png) no-repeat center;
+	
+	&.reverse {
+		transform : rotate(180deg);
+	}
+	
+	&.dark {
+		background : #294055 url(images/header/info_btn_open_default.png) no-repeat center;
+	}
+}
+
+////UI_CLM_3074 - 클레임코드정의관리 에서 양 그리드 사이에 추가 삭제 버튼 임시적으로 스타일 추가
+.cl-button.btn-add2{
+		background : url(images/icon/icon_arrow_add.png) no-repeat center;
+	}
+.cl-button.btn-delete2{
+		background : url(images/icon/icon_arrow_remove.png) no-repeat center;
+	}
+
+
+
+
+.btn-grid-select{
+	background-color : @color-primary-02;
+	border-radius : 5px;
+	color : white;
+	padding-left : 10px;
+	padding-right : 10px;
+	min-width : 60px;
+	min-height : 30px;
+	width : 100px;
+	height : 30px;
+}
+
+
+//디자인가이드p139 Chips내 콤보박스 이미지
+.btn-tagbox{
+	//▼
+	background : url(images/icon/img_selectbox_close_light.png) no-repeat center;
+	
+	&.on{
+		background : url(images/icon/img_selectbox_open_light.png) no-repeat center;
+	}
+}
+
+
+/* (2019.11.11) 라디오 토글용 클래스 - 조한진 */
+.cl-radiobutton.toggle {
+		border-radius: 5px;
+		border-collapse: collapse;
+		min-width : 130px;
+		.cl-radiobutton-item {
+			background-color: white;
+			border: solid 1px @color-bg-disabled-lightdark;
+			text-align: center;
+			
+			.cl-text {
+				font-weight : @font-bold;
+				font-size : @font-button;
+				color : @color-bg-disabled-lightdark;
+				
+			}
+			.cl-radiobutton-icon {
+				width: 0px ! important;
+			}
+
+
+			&.cl-first-column {
+				border-left-style: solid;
+				border-radius: 5px 0px 0px 5px;
+			}
+
+			&.cl-last-column {
+				border-radius: 0px 5px 5px 0px;
+				border-right-style: solid;
+			}
+
+					&:not(.cl-disabled):hover{
+							
+					background-color : rgba(0,0,0,0.05);
+				}
+					
+				&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+					background-color : rgba(0,0,0,0.03);
+			}
+			&.cl-selected {
+				border-color: @color-primary-02;
+				background-color: transparent;
+				.cl-text {
+					color: @color-primary-02;
+				}
+			}
+		}
+		
+		&.cl-focus .cl-radiobutton-item.cl-selected {
+			.cl-radiobutton-icon {
+				outline: none;
+			}
+		}
+		
+		&.cl-disabled {
+			.cl-text {
+				color : #DDDDDD !important;
+			}
+			.cl-radiobutton-item {
+				border-color : #DDDDDD ;
+			}
+			
+		}
+}
+	
+/* (2019.11.15) primary버튼 DARK disabled을 위한 공용 클래스  - 조한진 */
+.Darker {
+	
+	&.cl-disabled{
+			background-color : @color-bg-disabled-dark !important;
+			color : @color-disabled-dark !important;
+	}
+}
+
+
+.cl-button.btn-down-arrow {
+	
+	background-image : url(images/related_work/related_arrow_default.png);
+	background-repeat : no-repeat;
+	background-position : right 15px center;
+	background-color : @color-primary-02;
+	border : none;
+	color : @color-text-white-01;
+	font-size : @font-small-text-r;
+	text-align : right;
+	padding-right : 30px;
+}
+
+.cl-button.btn-up-arrow {
+	background-image : url(images/related_work/related_arrow_active.png);
+	background-repeat : no-repeat;
+	background-position : right 15px center;
+	background-color : @color-primary-02;
+	border : none;
+	color : @color-text-white-01;
+	font-size : @font-small-text-r;
+	text-align : right;
+	padding-right : 30px;
+}
+
+
+
+/** 버튼 플로팅영역  */
+.button-float-area{
+	padding: 0px 20px 0px 20px;
+	background-color : #3A3A3A;
+	
+	.btn-center-input-area{
+		
+	}
+	.btn-right-area{
+		
+	}
+	.btn-left-area{
+		
+	}
+	
+	// 20191007 디자인 가이드  수정 	
+	.btn-primary01{
+		background-color : @color-primary-01;
+	color : @color-text-white-01;
+	font-size : @font-button-b;
+	font-weight : @font-bold;
+	
+	&:not(.cl-disabled):hover {
+		background-color : @color-primary-01;
+		color : @color-text-white-01;
+		opacity : 0.8;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-color : @color-primary-01;
+		color : @color-text-white-01;
+		opacity : 0.9;
+	}
+	
+	&.cl-disabled {
+		background-color : @color-bg-disabled-dark;
+		color : @color-disabled-dark;
+	}
+	}
+	.btn-primary02 {
+	background-color : @color-primary-02;
+	color : @color-text-white-01;
+	font-size : @font-button;
+	font-weight : @font-bold;
+	min-height : 40px;
+	
+	&:not(.cl-disabled):hover {
+		background-color : @color-primary-02;
+		color : @color-text-white-01;
+		opacity : 0.8;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-color : @color-primary-02;
+		color : @color-text-white-01;
+		opacity : 0.9;
+	}
+	
+	&.cl-disabled {
+		background-color : @color-bg-disabled-dark;
+		color : @color-disabled-dark;
+	}
+}
+	.btn-primary04 {
+	background-color : @color-primary-03;
+	color : @color-text-white-01;
+	font-size : @font-button;
+	font-weight : @font-bold;
+	
+	&:not(.cl-disabled):hover {
+		background-color : @color-primary-03;
+		color : @color-text-white-01;
+		opacity : 0.8;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-color : @color-primary-03;
+		color : @color-text-white-01;
+		opacity : 0.9;
+	}
+	
+	&.cl-disabled {
+		background-color : @color-bg-disabled-dark;
+		color : @color-disabled-dark;
+	}
+}
+	.btn-secondary01{
+		border : 1px solid @color-primary-02-lightdark;
+	background : transparent;
+	color : @color-primary-02;
+	font-size : @font-button-b;
+	font-weight : @font-bold;
+	
+	&:not(.cl-disabled):hover {
+		background-color : rgba(0, 0, 0, 0.05);
+		border : 1px solid @color-primary-02-lightdark;
+		color : @color-primary-02;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-color : rgba(0, 0, 0, 0.03);
+		border : 1px solid @color-primary-02-lightdark;
+		color : @color-primary-02;
+	}
+	
+	&.cl-disabled {
+		background : transparent;
+		border : 1px solid @color-bg-disabled-dark;
+		color : @color-disabled-dark;
+	}
+	}
+	
+	//20191017 비밀번호 버튼
+	.btn-form-pop{
+		margin-top : -3px !important;
+		margin-bottom : -3px !important;
+		font-size : @font-button-b;
+	}
+	
+	.cl-text{
+		color : #ffffff;
+	}	
+	
+	.cl-combobox {
+		.cl-text{
+			color : @color-text-black-01 ;
+			
+		}
+	}
+	.cl-radiobutton {
+		.cl-text{
+			color : @color-text-white-01 ;
+			
+		}
+	}
+	
+}
+
+/* 버튼그룹영역 */
+.button-group-area{
+	background-color : @black;
+	padding : 3px;
+}
+
+/* 버튼그룹영역 아이콘 하얀바탕*/
+.button-group-area2{
+	background-color : @white;
+}
+
+/* 드롭다운버튼그룹 */
+.button-dropdown-area{
+}
+
+
+.dropup-custom-line {
+	border-color: #6884a4;
+		
+}
+
+//흰바탕의 검은색 X버튼 (화면에서 특정이벤트를 통해 열리는 플로팅 화면에서 닫기 버튼 대용으로 사용 ) 
+.pop-btn-close{
+	background : url(images/icon/popup_btn_close.png) no-repeat center !important;
+}
+
+
+
+/* 드롭다운버튼그룹2 */
+.button-dropdown-area2{
+	background-color : #4e6c8d;
+	padding: 0px 10px 0px 10px;
+	&:not(.cl-disabled):hover{
+		border : none;
+		opacity : 0.8;
+	}
+	&.cl-disabled {
+		background-color : @color-bg-disabled-dark;
+	}
+}
+
+/* 드롭다운버튼그룹2 플로팅영역*/
+.button-dropdown-area2-float-list{
+	background-color : #3c526a;
+	padding: 0px 10px 0px 10px;
+	border-color : #435e7c;
+	border-width : 1px;
+	border-style : solid;
+}
+
+/* 드롭다운버튼그룹2 플로팅버튼*/
+.button-dropdown-area2-float{
+	background-color : #3c526a;
+	
+}
+
+
+.pop-close{
+	background : url(images/icon/popup_btn_close.png) no-repeat center;
+}
+
+
+/** 버튼영역  */
+.button-area{
+	padding: 0px 20px 0px 20px;
+	
+	.multi-select-group{
+		background-color : @color-text-black-04;
+		padding: 5px 5px 5px 5px;
+	}	
+	
+	.button-right-area{		
+		
+		> .cl-layout-wrap{
+			padding-right : 20px;
+		}
+	}
+	
+	.cl-output.password-label {
+		font-weight : bold;
+	}
+	
+	.btn-primary01 {
+	background-color : @color-primary-01;
+	color : @color-text-white-01;
+	font-size : @font-button;
+	font-weight : @font-bold;
+	border-radius : 0 3px 3px 0;
+	
+	&:not(.cl-disabled):hover {
+		background-color : @color-primary-01;
+		color : @color-text-white-01;
+		opacity : 0.8;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-color : @color-primary-01;
+		color : @color-text-white-01;
+		opacity : 0.9;
+	}
+	
+	&.cl-disabled {
+		background-color : @color-bg-disabled;
+		color : @color-disabled;
+	}
+}
+}
+
+/** Table 버튼 영역  */
+.button-table-area{
+	
+	//Table 상단 버튼 영역
+	.button-table-top-area{
+		
+	}
+	//Table 하단 좌측 버튼 영역
+	.button-table-bottom-left-area{
+		
+	}
+	//Table 하단 중앙 버튼 영역
+	.button-table-bottom-center-area{
+		
+	}
+	//Table 하단 우측 버튼 영역
+	.button-table-bottom-right-area{
+		//padding-right: 10px
+	}
+	
+}
+
+
+//공통_버튼_하이퍼링크_문자(Text)
+.cl-control.hyper-text{
+	color : ;
+	text-decoration : underline;
+	text-decoration-color : @black;
+	font-weight : bold;
+	background-color : @white;
+	opacity : 0.5;
+	cursor : pointer;
+}
+
+//공통_버튼_하이퍼링크_아이콘(Text)
+.cl-output.hyper-icon{
+	text-align : left;
+	color : @black;
+	font-weight : bold;
+	background-color : @white;
+	opacity : 0.5;
+	//이미지 필요
+	background : url(images/calendar03.png) no-repeat right;
+	cursor : pointer;
+}
+
+//공통_버튼_하이퍼링크_숫자(Text)
+.cl-output.hyper-number{
+	color : @black;
+	background-color : @white;
+	opacity : 0.5;
+	font-weight : bold;
+	text-decoration : underline;
+	text-decoration-color : @black;
+	text-align : right;
+	cursor : pointer;
+}
+
+
+// 드랍다운 버튼처럼 메뉴 컨트롤을 버튼 primary02와 동일하게 설정하도록 (2019.11.26)
+.btn-primary02-menu{
+	
+	background-color : @color-primary-02-dark;
+	font-size : @font-button-b;
+	font-weight : @font-bold;
+
+	min-height : 30px;
+	.cl-menu-list{
+		background-color : @color-primary-02-dark;
+		.cl-menu-item{
+			//background-color : @color-primary-02-dark;	
+			min-width : 60px;
+			color : white;
+			.cl-text{
+				padding-left : 10px;
+				padding-right : 10px;
+				text-align : left;
+			
+			}	
+			&.cl-folder
+			{
+				&:not(.cl-hover){
+					
+					> .cl-menu-arrow {						
+					 	background-image: url(images/main/btn_menu_arrow_right_default.png);
+					 	background-size  : 12px 12px;
+					}
+					> .cl-menu-arrow-wrapper .cl-menu-arrow{			
+					 	background-image: url(images/main/btn_menu_arrow_right_default.png);
+					 	background-size  : 12px 12px;
+						
+					}
+				}
+			}
+		}
+		
+	}
+}
+
+
+
+
+// 드랍다운 버튼처럼 리스트 박스 컨트롤을 버튼 primary02와 동일하게 설정하도록 (2019.11.26)
+.btn-primary02-listbox{
+	.cl-linkedlistbox-list{
+		.cl-linkedlistbox-item{
+			background-color : @color-primary-02-dark;	
+			min-width : 60px;
+			color : white;
+			min-height : 30px;
+			border-bottom : 1px solid #dfdfdf;
+			//이미지 필요			
+			background-image: url(images/btn/btn_dropdownMenu_green_default.png) ;
+			background-repeat : no-repeat;
+			background-size : 10px 10px;
+			padding-left : 10px;
+			background-position-x : 10px; 
+			background-position-y : center; 
+			
+//			&:last-child{	
+//				border : none;	
+//			}
+			.cl-text{
+				padding-left : 30px;
+				padding-right : 10px;
+				text-align : center;
+				font-size : @font-button-b;
+				font-weight : @font-bold;
+							
+			
+			}	
+			&.cl-folder
+			{
+				&:not(.cl-hover){
+					
+					> .cl-menu-arrow {						
+					 	background-image: url(images/main/btn_menu_arrow_right_default.png);
+					 	background-size  : 12px 12px;
+					}
+					> .cl-menu-arrow-wrapper .cl-menu-arrow{			
+					 	background-image: url(images/main/btn_menu_arrow_right_default.png);
+					 	background-size  : 12px 12px;
+						
+					}
+				}
+			}
+			
+			&:hover {
+//				background-color : transparent;
+				background-color : @color-secondary-01;
+				color : @color-text-white-01;
+				opacity : 0.8;
+			}
+			
+		}
+		
+	}
+}
+
+.btn-dropdown01-dropup-menu{
+	
+	background-color : @color-primary-02-dark;
+	font-size : @font-button-b;
+
+	min-height : 30px;
+	.cl-menu-list{
+		background-color : @color-primary-02-dark;
+		.cl-menu-item{
+			background-image: url(images/btn/btn_dropdownMenu_green_default.png) ;
+			background-repeat : no-repeat;
+			background-size : 10px 10px;
+			padding-left : 10px;
+			background-position-x : 10px; 
+			background-position-y : center; 
+			min-height : 30px;
+			border-bottom : 1px solid #dfdfdf;
+			//background-color : @color-primary-02-dark;	
+			min-width : 60px;
+			color : white;
+			.cl-text{
+				padding-left : 10px;
+				padding-right : 10px;
+				text-align : center;
+			
+			}	
+			&.cl-folder
+			{
+				&:not(.cl-hover){
+					
+					> .cl-menu-arrow {						
+					 	background-image: url(images/main/btn_menu_arrow_right_default.png);
+					 	background-size  : 12px 12px;
+					}
+					> .cl-menu-arrow-wrapper .cl-menu-arrow{			
+					 	background-image: url(images/main/btn_menu_arrow_right_default.png);
+					 	background-size  : 12px 12px;
+						
+					}
+				}
+			}
+		}
+		
+	}
+}
+
+
+//디자인가이드p170, 파일업로드에서 사용하는 재입력 버튼
+.btn-reenter{
+	background-image : url(images/btn/btn_text_reEnter.png);
+	background-repeat : no-repeat;
+	background-position : center;
+	background-color : transparent;
+	border : none;
+}

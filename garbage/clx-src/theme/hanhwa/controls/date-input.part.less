@@ -1,0 +1,232 @@
+@import "../settings.part.less";
+@import "../custom-settings.part.less";
+
+
+ /* 데이트 인풋 */
+.cl-dateinput {
+	background-color: @color-input-bg;
+	background : inherit;
+	border: 1px solid @color-input-border;
+	border-radius: 3px;
+	color: @color-text-black-01;
+	font: @default-font;
+
+	/* 데이트 인풋 텍스트 */
+	.cl-text {
+		padding : 0px 0px 0px 10px;
+	}
+
+	/* 데이트 인풋 버튼 */
+	.cl-dateinput-button {
+		 background-image: url(images/icon/icon_form_calendar_b.png); 
+		 background-size : 30px;
+		 width : 30px;
+	}
+
+	&.cl-disabled{ 
+		/* 데이트 인풋 disabled 상태 버튼 */
+		.cl-dateinput-button {
+			background-image: url(images/icon/icon_form_calendar_b.png); 
+		}
+	}
+	// 스핀 버튼 영역
+	.cl-dateinput-spinbuttons {
+		border-left: solid 1px @default-border-color;
+		// width:16px;
+		
+		// 증가 버튼
+		.cl-dateinput-increase  {
+		}
+
+		// 감소 버튼
+		.cl-dateinput-decrease {
+		}
+	}
+	
+	&:not(.cl-disabled) {
+		&.cl-dateinput:not(.cl-focus):hover{
+			border: 1px solid @color-input-hover-border;
+		}
+		
+		.cl-dateinput-increase:hover {
+		}
+		.cl-dateinput-increase:active {
+		}
+
+		.cl-dateinput-decrease:hover {
+		}
+		.cl-dateinput-decrease:active {
+		}
+	}
+}
+
+/* 데이트 인풋 disabled 상태 */
+.cl-dateinput.cl-disabled {
+	color: @disabled-text-color;
+	background-color: @color-input-disabled;
+	border-color: @color-input-disabled-border;
+	
+		// 스핀 버튼 영역
+	.cl-dateinput-spinbuttons {
+		border-left: solid 1px @default-border-color;
+		// width:16px;
+		
+		// 증가 버튼
+		.cl-dateinput-increase  {
+		}
+
+		// 감소 버튼
+		.cl-dateinput-decrease {
+		}
+	}
+	
+	/* 데이트 인풋 disabled 상태 텍스트*/
+	input[disabled] {
+		color : @disabled-text-color;
+	}
+}
+
+/* 데이트 인풋 포커스 상태 */
+.cl-dateinput.cl-focus {
+	border: 1px solid @color-input-focus-border;
+	
+	.cl-dateinput-spinbuttons {
+		border-left-color: @focus-border-color;
+	}
+}
+
+ /* 데이트 인풋 - dark */
+.cl-dateinput.dark {
+	background-color: @color-input-bg-dark;
+	border: 1px solid @color-input-bg-dark;
+	border-radius: 3px;
+	color: @color-text-white-01;
+	font: @default-font;
+
+	/* 데이트 인풋 텍스트 */
+	.cl-text {
+		padding : 0px 0px 0px 10px;
+		font-size: @font-small-text-r;
+	}
+
+	/* 데이트 인풋 버튼 */
+	.cl-dateinput-button {
+		 background-image: url(images/icon/icon_form_calendar_w.png); 
+		 background-size : 30px;
+		 width : 30px;
+	}
+
+	&.cl-disabled{ 
+		/* 데이트 인풋 disabled 상태 버튼 */
+		.cl-dateinput-button {
+			 background-image: url(images/icon/icon_form_calendar_w.png); 
+		}
+	}
+	// 스핀 버튼 영역
+	.cl-dateinput-spinbuttons {
+		border-left: solid 1px @default-border-color;
+		// width:16px;
+		
+		// 증가 버튼
+		.cl-dateinput-increase  {
+		}
+
+		// 감소 버튼
+		.cl-dateinput-decrease {
+		}
+	}
+	
+	&:not(.cl-disabled) {
+		&.cl-dateinput:not(.cl-focus):hover{
+			border: 1px solid @color-input-disabled-border-dark;
+		}
+		
+		.cl-dateinput-increase:hover {
+		}
+		.cl-dateinput-increase:active {
+		}
+
+		.cl-dateinput-decrease:hover {
+		}
+		.cl-dateinput-decrease:active {
+		}
+	}
+}
+
+/* 데이트 인풋 disabled 상태 */
+.cl-dateinput.dark.cl-disabled {
+	color: @disabled-text-color;
+	background-color: @color-input-bg-dark;
+	border-color: @color-input-disabled-border-dark;
+	
+	// 스핀 버튼 영역
+	.cl-dateinput-spinbuttons {
+		border-left: solid 1px @color-input-disabled-border-dark;
+		
+		// 증가 버튼
+		.cl-dateinput-increase  {
+		}
+
+		// 감소 버튼
+		.cl-dateinput-decrease {
+		}
+	}
+	
+	/* 데이트 인풋 disabled 상태 텍스트*/
+	input[disabled] {
+		color : @color-input-disabled-dark;
+	}
+}
+
+/* 데이트 인풋 포커스 상태 */
+.cl-dateinput.dark.cl-focus {
+	border: 1px solid @color-input-focus-border-dark;
+	
+	.cl-dateinput-spinbuttons {
+		border-left-color: @color-input-focus-border-dark;
+	}
+}
+
+
+/** (20190923) 데이트 인풋 placeholder 스타일 - 류다은 추가 */
+
+.cl-dateinput ::-webkit-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-text-black-03 !important;
+}
+
+.cl-dateinput :-ms-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-text-black-03 !important;
+}
+
+.cl-dateinput :-mos-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-text-black-03 !important;
+}
+
+.cl-dateinput ::-mos-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-text-black-03 !important;
+}
+
+.cl-dateinput.dark ::-webkit-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-text-white-04 !important;
+}
+
+.cl-dateinput.dark :-ms-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-text-white-04 !important;
+}
+
+.cl-dateinput.dark :-mos-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-text-white-04 !important;
+}
+
+.cl-dateinput.dark ::-mos-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-text-white-04 !important;
+}
+

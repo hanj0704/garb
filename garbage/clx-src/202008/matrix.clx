@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ec49afd0" version="1.0.0.0">
+  <head std:sid="head-35b4e2c2">
+    <title>matrix</title>
+    <screen std:sid="screen-c95bc143" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-acceb5a5" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-0fcaf5b3" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-0544f300">
+      <cl:dataset std:sid="d-set-439c1346" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-1fb3b5a1" name="column1"/>
+          <cl:datacolumn std:sid="d-column-8c9f24e5" name="column2"/>
+          <cl:datacolumn std:sid="d-column-2fedce28" name="column3"/>
+          <cl:datacolumn std:sid="d-column-4ba51228" name="column4"/>
+          <cl:datacolumn std:sid="d-column-923190e3" name="column5"/>
+          <cl:datacolumn std:sid="d-column-31935c34" name="column6"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-71b55e06" id="sms1" action="data/SAMPLE_DATA.json">
+        <cl:listener std:sid="listener-2a32e8af" name="before-submit" handler="onSms1BeforeSubmit"/>
+        <cl:listener std:sid="listener-ffead09e" name="submit-done" handler="onSms1SubmitDone"/>
+        <cl:responsedata dataid="dm1" alias="output"/>
+        <cl:responsedata dataid="ds2" alias="d"/>
+      </cl:submission>
+      <cl:datamap std:sid="d-map-de707444" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-576f9002" name="a"/>
+          <cl:datacolumn std:sid="d-column-6cf8cf88" name="b"/>
+          <cl:datacolumn std:sid="d-column-0ce93c5c" name="c"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:dataset std:sid="d-set-5f821bac" id="ds2">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-0ee9931b" name="key"/>
+          <cl:datacolumn std:sid="d-column-845f0b99" name="value"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:matrix-submission std:sid="m-submission-6b879b7d" id="msm1" async="true" withCredentials="false" method="post" action="data/SAMPLE_DATA.json">
+        <cl:listener std:sid="listener-e2cefa40" name="submit-done" handler="onMsm1SubmitDone"/>
+        <cl:matrix>
+          <cl:request type="object"/>
+          <cl:response type="object">
+            <cl:data key="output">
+              <cl:complex dataControl="dm1" type="object">
+                <cl:data key="a">
+                  <cl:pathref columnName="a"/>
+                </cl:data>
+                <cl:data key="b">
+                  <cl:pathref columnName="b"/>
+                </cl:data>
+                <cl:data key="c">
+                  <cl:pathref columnName="c"/>
+                </cl:data>
+                <cl:data key="d">
+                  <cl:complex dataControl="ds2" type="array">
+                    <cl:data key="key">
+                      <cl:pathref columnName="key"/>
+                    </cl:data>
+                    <cl:data key="value">
+                      <cl:pathref columnName="value"/>
+                    </cl:data>
+                  </cl:complex>
+                </cl:data>
+              </cl:complex>
+            </cl:data>
+          </cl:response>
+        </cl:matrix>
+      </cl:matrix-submission>
+      <cl:matrix-submission std:sid="m-submission-68f8b508" id="msm2" async="true" withCredentials="false" method="post" action="">
+        <cl:matrix>
+          <cl:request type="object"/>
+          <cl:response type="object">
+            <cl:data key="child1">
+              <cl:complex dataControl="ds2" type="array"/>
+            </cl:data>
+          </cl:response>
+        </cl:matrix>
+      </cl:matrix-submission>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-efe67608" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-244a2e00" name="load" handler="onBodyLoad"/>
+    <cl:button std:sid="button-a2bdeaae" id="btn1" value="Button">
+      <cl:listener std:sid="listener-a9644679" name="click" handler="onBtn1Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-d399f0dc" top="20px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-5adc6e33" value="Button">
+      <cl:xylayoutdata std:sid="xyl-data-288d208b" top="20px" left="130px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-6517dddf"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

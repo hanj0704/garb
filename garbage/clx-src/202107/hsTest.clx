@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-19f41e43" version="1.0.3174">
+  <head std:sid="head-57ddd4eb">
+    <screen std:sid="screen-632bb026" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-08af1a13" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-fb6b9c38" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-2b336832"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-fe9db07e">
+    <cl:listener std:sid="listener-ca643536" name="load" handler="onBodyLoad"/>
+    <cl:output std:sid="output-3bfb9bee" id="opt1" value="Output">
+      <cl:verticaldata std:sid="v-data-bf8d2093" width="457px" height="295px"/>
+    </cl:output>
+    <cl:button std:sid="button-3ea350f2" id="btn1" value="Button">
+      <cl:listener std:sid="listener-30ea7e6a" name="click" handler="onBtn1Click"/>
+      <cl:verticaldata std:sid="v-data-e64211c5" width="100px" height="20px"/>
+    </cl:button>
+    <cl:group std:sid="group-45ac98d4" id="grpMenuWrap" style="background-color:#a1c9ff;" clipcontent="false">
+      <cl:verticaldata std:sid="v-data-f9fbbb36" width="1216px" height="868px" autosize="none"/>
+      <cl:group std:sid="group-f1cb0194" id="grpMenu" style="background-color:#ff7575;">
+        <cl:flowlayoutdata std:sid="f-data-d050e8a6" width="0px" height="868px" autosize="none"/>
+        <cl:group std:sid="group-bda342d8" id="grp1" class="bg-danger-dim" clipcontent="false">
+          <cl:verticaldata std:sid="v-data-b22057e8" width="382px" height="334px" autosize="none"/>
+          <cl:formlayout std:sid="f-layout-8fa66f1f" scrollable="false" hspace="0px" vspace="0px" top-margin="20px" right-margin="20px" bottom-margin="20px" left-margin="20px">
+            <cl:rows length="118" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="176" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-8ffe2624" id="grp2" class="bg-warning-dim" clipcontent="false">
+          <cl:verticaldata std:sid="v-data-1664c8d8" width="382px" height="146px" autosize="none"/>
+          <cl:formlayout std:sid="f-layout-039db1cb" scrollable="false" hspace="0px" vspace="0px" top-margin="20px" right-margin="20px" bottom-margin="20px" left-margin="20px">
+            <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-1267c56a" id="grp3" class="bg-primary-dim" clipcontent="false">
+          <cl:verticaldata std:sid="v-data-b255bc3a" width="382px" height="387px" autosize="none"/>
+          <cl:formlayout std:sid="f-layout-729e270a" scrollable="false" hspace="0px" vspace="10px">
+            <cl:rows length="48" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-a45549ca" scrollable="false" spacing="0"/>
+      </cl:group>
+      <cl:group std:sid="group-155d840c" id="grp4">
+        <cl:flowlayoutdata std:sid="f-data-156d6371" width="19px" height="868px" autosize="none"/>
+        <cl:button std:sid="button-118b1c52" id="btnOpen" class="btn-white" value="▶">
+          <cl:listener std:sid="listener-d1744c19" name="click" handler="onBtnOpenClick"/>
+          <cl:flowlayoutdata std:sid="f-data-646d9685" width="19px" height="46px"/>
+        </cl:button>
+        <cl:flowlayout std:sid="f-layout-e6db44ac" scrollable="false" hspacing="0" vspacing="0" valign="middle" linewrap="false"/>
+      </cl:group>
+      <cl:flowlayout std:sid="f-layout-e069ceb3" scrollable="false" hspacing="0" vspacing="0" linewrap="false"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-82ca8dd2"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

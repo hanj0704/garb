@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9fb2f6a0" version="1.0.3174">
+  <head std:sid="head-31ecd3c7">
+    <screen std:sid="screen-1f0e69e3" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-67ee1cfb" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-36b1acf1" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-88d39328"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-7eb6a8de">
+    <cl:listener std:sid="listener-6808874d" name="load" handler="onBodyLoad"/>
+    <cl:embeddedapp std:sid="e-app-ed09c1d9" id="복지지도" style="border-right-style:solid; border-top-width:1px; border-bottom-color:black; border-left-style:solid; border-right-width:1px; border-bottom-width:1px; border-left-color:black; border-top-color:black; border-bottom-style:solid; border-right-color:black; border-left-width:1px; border-top-style:solid;" src="tester.clx">
+      <cl:verticaldata std:sid="v-data-bd50abfe" width="34px" height="230px"/>
+    </cl:embeddedapp>
+    <cl:output std:sid="output-3ae02daa" id="opt1" value="Output">
+      <cl:verticaldata std:sid="v-data-5c702871" width="26px" height="127px"/>
+    </cl:output>
+    <cl:button std:sid="button-a8fc3971" id="btn1" value="Button">
+      <cl:listener std:sid="listener-fbc188b1" name="click" handler="onBtn1Click"/>
+      <cl:verticaldata std:sid="v-data-6139b066" width="143px" height="87px"/>
+    </cl:button>
+    <cl:verticallayout std:sid="v-layout-7f2f8bbe"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

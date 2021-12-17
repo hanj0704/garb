@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-04cc035f" version="1.0.0.0">
+  <head std:sid="head-f67cccf0">
+    <title>hyundaeTest</title>
+    <screen std:sid="screen-910f9cb4" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-21f2db63" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-d09d9b3f" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-c70bf18e">
+      <cl:dataset std:sid="d-set-27aa8f4a" id="ds1" staterestore="false">
+        <cl:datacolumnlist>
+          <cl:datacolumn datatype="number" name="idx"/>
+          <cl:datacolumn datatype="number" name="code"/>
+          <cl:datacolumn name="AccountName"/>
+          <cl:datacolumn datatype="number" name="debit"/>
+          <cl:datacolumn datatype="number" name="credit"/>
+          <cl:datacolumn name="ProofName"/>
+          <cl:datacolumn name="briefs"/>
+          <cl:datacolumn name="budget"/>
+          <cl:datacolumn name="acc"/>
+          <cl:datacolumn name="column1"/>
+          <cl:datacolumn name="column2"/>
+          <cl:datacolumn name="column3"/>
+          <cl:datacolumn name="column4"/>
+          <cl:datacolumn name="column5"/>
+          <cl:datacolumn name="column6"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="idx">1</cl:datavalue>
+            <cl:datavalue columnname="code">1</cl:datavalue>
+            <cl:datavalue columnname="AccountName">AccountName1</cl:datavalue>
+            <cl:datavalue columnname="debit">1</cl:datavalue>
+            <cl:datavalue columnname="credit">1</cl:datavalue>
+            <cl:datavalue columnname="ProofName">ProofName1</cl:datavalue>
+            <cl:datavalue columnname="briefs">briefs1</cl:datavalue>
+            <cl:datavalue columnname="budget">budget1</cl:datavalue>
+            <cl:datavalue columnname="acc">acc1</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="idx">2</cl:datavalue>
+            <cl:datavalue columnname="code">2</cl:datavalue>
+            <cl:datavalue columnname="AccountName">AccountName2</cl:datavalue>
+            <cl:datavalue columnname="debit">2</cl:datavalue>
+            <cl:datavalue columnname="credit">2</cl:datavalue>
+            <cl:datavalue columnname="ProofName">ProofName2</cl:datavalue>
+            <cl:datavalue columnname="briefs">briefs2</cl:datavalue>
+            <cl:datavalue columnname="budget">budget2</cl:datavalue>
+            <cl:datavalue columnname="acc">acc2</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="idx">3</cl:datavalue>
+            <cl:datavalue columnname="code">3</cl:datavalue>
+            <cl:datavalue columnname="AccountName">AccountName3</cl:datavalue>
+            <cl:datavalue columnname="debit">3</cl:datavalue>
+            <cl:datavalue columnname="credit">3</cl:datavalue>
+            <cl:datavalue columnname="ProofName">ProofName3</cl:datavalue>
+            <cl:datavalue columnname="briefs">briefs3</cl:datavalue>
+            <cl:datavalue columnname="budget">budget3</cl:datavalue>
+            <cl:datavalue columnname="acc">acc3</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="idx">4</cl:datavalue>
+            <cl:datavalue columnname="code">4</cl:datavalue>
+            <cl:datavalue columnname="AccountName">AccountName4</cl:datavalue>
+            <cl:datavalue columnname="debit">4</cl:datavalue>
+            <cl:datavalue columnname="credit">4</cl:datavalue>
+            <cl:datavalue columnname="ProofName">ProofName4</cl:datavalue>
+            <cl:datavalue columnname="briefs">briefs4</cl:datavalue>
+            <cl:datavalue columnname="budget">budget4</cl:datavalue>
+            <cl:datavalue columnname="acc">acc4</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="idx">5</cl:datavalue>
+            <cl:datavalue columnname="code">5</cl:datavalue>
+            <cl:datavalue columnname="AccountName">AccountName5</cl:datavalue>
+            <cl:datavalue columnname="debit">5</cl:datavalue>
+            <cl:datavalue columnname="credit">5</cl:datavalue>
+            <cl:datavalue columnname="ProofName">ProofName5</cl:datavalue>
+            <cl:datavalue columnname="briefs">briefs5</cl:datavalue>
+            <cl:datavalue columnname="budget">budget5</cl:datavalue>
+            <cl:datavalue columnname="acc">acc5</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="idx">6</cl:datavalue>
+            <cl:datavalue columnname="code">6</cl:datavalue>
+            <cl:datavalue columnname="AccountName">AccountName6</cl:datavalue>
+            <cl:datavalue columnname="debit">6</cl:datavalue>
+            <cl:datavalue columnname="credit">6</cl:datavalue>
+            <cl:datavalue columnname="ProofName">ProofName6</cl:datavalue>
+            <cl:datavalue columnname="briefs">briefs6</cl:datavalue>
+            <cl:datavalue columnname="budget">budget6</cl:datavalue>
+            <cl:datavalue columnname="acc">acc6</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="idx">7</cl:datavalue>
+            <cl:datavalue columnname="code">7</cl:datavalue>
+            <cl:datavalue columnname="AccountName">AccountName7</cl:datavalue>
+            <cl:datavalue columnname="debit">7</cl:datavalue>
+            <cl:datavalue columnname="credit">7</cl:datavalue>
+            <cl:datavalue columnname="ProofName">ProofName7</cl:datavalue>
+            <cl:datavalue columnname="briefs">briefs7</cl:datavalue>
+            <cl:datavalue columnname="budget">budget7</cl:datavalue>
+            <cl:datavalue columnname="acc">acc7</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="idx">8</cl:datavalue>
+            <cl:datavalue columnname="code">8</cl:datavalue>
+            <cl:datavalue columnname="AccountName">AccountName8</cl:datavalue>
+            <cl:datavalue columnname="debit">8</cl:datavalue>
+            <cl:datavalue columnname="credit">8</cl:datavalue>
+            <cl:datavalue columnname="ProofName">ProofName8</cl:datavalue>
+            <cl:datavalue columnname="briefs">briefs8</cl:datavalue>
+            <cl:datavalue columnname="budget">budget8</cl:datavalue>
+            <cl:datavalue columnname="acc">acc8</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="idx">9</cl:datavalue>
+            <cl:datavalue columnname="code">9</cl:datavalue>
+            <cl:datavalue columnname="AccountName">AccountName9</cl:datavalue>
+            <cl:datavalue columnname="debit">9</cl:datavalue>
+            <cl:datavalue columnname="credit">9</cl:datavalue>
+            <cl:datavalue columnname="ProofName">ProofName9</cl:datavalue>
+            <cl:datavalue columnname="briefs">briefs9</cl:datavalue>
+            <cl:datavalue columnname="budget">budget9</cl:datavalue>
+            <cl:datavalue columnname="acc">acc9</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="idx">10</cl:datavalue>
+            <cl:datavalue columnname="code">10</cl:datavalue>
+            <cl:datavalue columnname="AccountName">AccountName10</cl:datavalue>
+            <cl:datavalue columnname="debit">10</cl:datavalue>
+            <cl:datavalue columnname="credit">10</cl:datavalue>
+            <cl:datavalue columnname="ProofName">ProofName10</cl:datavalue>
+            <cl:datavalue columnname="briefs">briefs10</cl:datavalue>
+            <cl:datavalue columnname="budget">budget10</cl:datavalue>
+            <cl:datavalue columnname="acc">acc10</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-dbcb7ad9" id="ds2">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="c1"/>
+          <cl:datacolumn name="c2"/>
+          <cl:datacolumn name="c3"/>
+          <cl:datacolumn name="c4"/>
+          <cl:datacolumn name="c5"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="c1"><![CDATA[선급부가가치세]]></cl:datavalue>
+            <cl:datavalue columnname="c2"><![CDATA[column1]]></cl:datavalue>
+            <cl:datavalue columnname="c3"><![CDATA[column2]]></cl:datavalue>
+            <cl:datavalue columnname="c4"><![CDATA[column3]]></cl:datavalue>
+            <cl:datavalue columnname="c5"><![CDATA[column4]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="c1"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="c2"><![CDATA[column1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="c1"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="c2"><![CDATA[column5]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="현대아산 테스트"/>
+  </head>
+  <body std:sid="body-1c9d0496" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:grid std:sid="grid-21b3887c" id="grd1" autofit="none" datasetid="ds1">
+      <cl:listener std:sid="listener-43c19457" handler="onGrd1SelectionChange" name="selection-change"/>
+      <cl:xylayoutdata std:sid="xyl-data-9353af43" height="259px" horizontalAnchor="BOTH" left="20px" right="20px" top="180px" verticalAnchor="TOP"/>
+      <cl:gridcolumn std:sid="g-column-013d2c5d" width="36px"/>
+      <cl:gridcolumn std:sid="g-column-ef396cf6"/>
+      <cl:gridcolumn std:sid="g-column-fae57023"/>
+      <cl:gridcolumn std:sid="g-column-e1980a41"/>
+      <cl:gridcolumn std:sid="g-column-55872811"/>
+      <cl:gridcolumn std:sid="g-column-f9d1946a"/>
+      <cl:gridcolumn std:sid="g-column-bbd3341f"/>
+      <cl:gridcolumn std:sid="g-column-2fa7b67d"/>
+      <cl:gridcolumn std:sid="g-column-3ecd544c"/>
+      <cl:gridcolumn std:sid="g-column-aa678247"/>
+      <cl:gridcolumn std:sid="g-column-ad0815ab"/>
+      <cl:gridcolumn std:sid="g-column-71fce191"/>
+      <cl:gridcolumn std:sid="g-column-6ac65bf4"/>
+      <cl:gridcolumn std:sid="g-column-8edbf9e3"/>
+      <cl:gridcolumn std:sid="g-column-356442bb"/>
+      <cl:gridheader std:sid="gh-band-bb7d8358">
+        <cl:gridrow std:sid="g-row-7cc48daf"/>
+        <cl:gridcell std:sid="gh-cell-a8eae3f4" colindex="0" rowindex="0" filterable="false" sortable="false" targetcolumnname="idx" text="순번"/>
+        <cl:gridcell std:sid="gh-cell-7d0c010a" colindex="1" rowindex="0" filterable="false" sortable="false" targetcolumnname="code" text="계정코드"/>
+        <cl:gridcell std:sid="gh-cell-b4eb2ca2" colindex="2" rowindex="0" filterable="false" sortable="false" targetcolumnname="AccountName" text="계정명"/>
+        <cl:gridcell std:sid="gh-cell-d8e1b3f6" colindex="3" rowindex="0" filterable="false" sortable="false" targetcolumnname="debit" text="차변금액"/>
+        <cl:gridcell std:sid="gh-cell-fb9969d6" colindex="4" rowindex="0" filterable="false" sortable="false" targetcolumnname="credit" text="대변금액"/>
+        <cl:gridcell std:sid="gh-cell-152ea271" colindex="5" rowindex="0" filterable="false" sortable="false" targetcolumnname="ProofName" text="증빙명"/>
+        <cl:gridcell std:sid="gh-cell-4b32469b" colindex="6" rowindex="0" filterable="false" sortable="false" targetcolumnname="briefs" text="적요"/>
+        <cl:gridcell std:sid="gh-cell-55049432" colindex="7" rowindex="0" filterable="false" sortable="false" targetcolumnname="budget" text="예산"/>
+        <cl:gridcell std:sid="gh-cell-e377fee1" colindex="8" rowindex="0" filterable="false" sortable="false" targetcolumnname="acc" text="거래처"/>
+        <cl:gridcell std:sid="gh-cell-0a31d42b" colindex="14" rowindex="0" targetcolumnname="column6" text="column6"/>
+        <cl:gridcell std:sid="gh-cell-b01dfe10" colindex="13" rowindex="0" targetcolumnname="column5" text="column5"/>
+        <cl:gridcell std:sid="gh-cell-f0811a6a" colindex="12" rowindex="0" targetcolumnname="column4" text="column4"/>
+        <cl:gridcell std:sid="gh-cell-73f718fc" colindex="11" rowindex="0" targetcolumnname="column3" text="column3"/>
+        <cl:gridcell std:sid="gh-cell-a495cf33" colindex="10" rowindex="0" targetcolumnname="column2" text="column2"/>
+        <cl:gridcell std:sid="gh-cell-d5f4df9b" colindex="9" rowindex="0" targetcolumnname="column1" text="column1"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-3e1f97dd">
+        <cl:gridrow std:sid="g-row-27c37c0b"/>
+        <cl:gridcell std:sid="gd-cell-e0adb1ef" colindex="0" rowindex="0" columnname="idx"/>
+        <cl:gridcell std:sid="gd-cell-7b239b43" colindex="1" rowindex="0" columnname="code"/>
+        <cl:gridcell std:sid="gd-cell-1730a871" colindex="2" rowindex="0" columnname="AccountName">
+          <cl:inputbox std:sid="i-box-241b6cc6" id="ipb1"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-0a3ea7f0" colindex="3" rowindex="0" columnname="debit">
+          <cl:numbereditor std:sid="n-editor-63190257" id="nbe1"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-d49cb6b0" colindex="4" rowindex="0" columnname="credit">
+          <cl:numbereditor std:sid="n-editor-34492e29" id="nbe2"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-d7903e47" colindex="5" rowindex="0" columnname="ProofName">
+          <cl:inputbox std:sid="i-box-56e39d8d" id="ipb2"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-c1341870" colindex="6" rowindex="0" columnname="briefs">
+          <cl:inputbox std:sid="i-box-f1487d95" id="ipb3"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-b98710e2" colindex="7" rowindex="0" columnname="budget">
+          <cl:inputbox std:sid="i-box-87d370da" id="ipb4"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-15fd983a" colindex="8" rowindex="0" columnname="acc">
+          <cl:inputbox std:sid="i-box-959815cc" id="ipb5"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-2c531571" colindex="14" rowindex="0" columnname="column6"/>
+        <cl:gridcell std:sid="gd-cell-d268b813" colindex="13" rowindex="0" columnname="column5"/>
+        <cl:gridcell std:sid="gd-cell-ed09b1ac" colindex="12" rowindex="0" columnname="column4"/>
+        <cl:gridcell std:sid="gd-cell-5c684908" colindex="11" rowindex="0" columnname="column3"/>
+        <cl:gridcell std:sid="gd-cell-61546a5f" colindex="10" rowindex="0" columnname="column2"/>
+        <cl:gridcell std:sid="gd-cell-b97b6bb5" colindex="9" rowindex="0" columnname="column1"/>
+      </cl:griddetail>
+      <cl:gridfooter std:sid="gf-band-fcc8570a">
+        <cl:gridrow std:sid="g-row-a89e189d"/>
+        <cl:gridcell std:sid="gf-cell-bf601906" colindex="0" rowindex="0" expr="&quot;&quot;"/>
+        <cl:gridcell std:sid="gf-cell-797bf872" colindex="1" rowindex="0" expr="&quot;&quot;"/>
+        <cl:gridcell std:sid="gf-cell-f98d175c" colindex="2" rowindex="0" expr="&quot;합계&quot;"/>
+        <cl:gridcell std:sid="gf-cell-d78a7f9c" colindex="3" rowindex="0" expr="getSum(&quot;debit&quot;)"/>
+        <cl:gridcell std:sid="gf-cell-8adce229" colindex="4" rowindex="0" expr="getSum(&quot;credit&quot;)"/>
+        <cl:gridcell std:sid="gf-cell-c7710446" colindex="5" rowindex="0" expr="&quot;&quot;"/>
+        <cl:gridcell std:sid="gf-cell-c65b1dd2" colindex="6" rowindex="0" expr="&quot;&quot;"/>
+        <cl:gridcell std:sid="gf-cell-74514c88" colindex="7" rowindex="0" expr="&quot;&quot;"/>
+        <cl:gridcell std:sid="gf-cell-87b2268e" colindex="8" rowindex="0" expr="&quot;&quot;"/>
+        <cl:gridcell std:sid="gf-cell-777f21db" colindex="14" rowindex="0" expr="&quot;&quot;"/>
+        <cl:gridcell std:sid="gf-cell-5b697848" colindex="13" rowindex="0" expr="&quot;&quot;"/>
+        <cl:gridcell std:sid="gf-cell-2c4e1349" colindex="12" rowindex="0" expr="&quot;&quot;"/>
+        <cl:gridcell std:sid="gf-cell-f1cb5cf4" colindex="11" rowindex="0" expr="&quot;&quot;"/>
+        <cl:gridcell std:sid="gf-cell-5aafa31a" colindex="10" rowindex="0" expr="&quot;&quot;"/>
+        <cl:gridcell std:sid="gf-cell-d2c18ddf" colindex="9" rowindex="0" expr="&quot;&quot;"/>
+      </cl:gridfooter>
+    </cl:grid>
+    <cl:group std:sid="group-e1ad172d">
+      <cl:xylayoutdata std:sid="xyl-data-34f02f30" height="91px" horizontalAnchor="BOTH" left="20px" right="20px" top="448px" verticalAnchor="TOP"/>
+      <cl:output std:sid="output-87e52584" id="opt10" style="text-align:center;" value="순번">
+        <cl:formdata std:sid="f-data-90882495" col="0" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-66b53383" id="opt11" style="text-align:center;" value="계정코드">
+        <cl:formdata std:sid="f-data-8680eb8c" col="1" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-823cb2dc" id="opt12" style="text-align:center;" value="계정명">
+        <cl:formdata std:sid="f-data-23299247" col="2" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-6caaa597" id="opt13" style="text-align:center;" value="차변금액">
+        <cl:formdata std:sid="f-data-c307e5a3" col="3" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-641f24a9" id="opt14" style="text-align:center;" value="대변금액">
+        <cl:formdata std:sid="f-data-ba0ac3d3" col="4" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-de7b7a38" id="opt15" style="text-align:center;" value="증빙명">
+        <cl:formdata std:sid="f-data-5221f333" col="5" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-971f61eb" id="opt16" style="text-align:center;" value="거래처">
+        <cl:formdata std:sid="f-data-f915a7ca" col="6" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-07c7e38d" id="opt17" style="text-align:center;" value="부서">
+        <cl:formdata std:sid="f-data-6382fe80" col="7" colspan="2" row="0" rowspan="1"/>
+      </cl:output>
+      <cl:output std:sid="output-ae9cfc48" id="opt18" value="">
+        <cl:formdata std:sid="f-data-ac46ffe2" col="7" row="2"/>
+      </cl:output>
+      <cl:output std:sid="output-428e4a53" id="opt19" value="">
+        <cl:formdata std:sid="f-data-b204a7e7" col="0" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-2946825b" id="opt20" value="">
+        <cl:formdata std:sid="f-data-493b6681" col="1" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-965b6210" id="opt21" value="">
+        <cl:formdata std:sid="f-data-2d1cd7ef" col="2" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-889c257d" id="opt22" value="">
+        <cl:formdata std:sid="f-data-fcac8f15" col="6" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-5b0fb7b8" id="opt23" value="">
+        <cl:formdata std:sid="f-data-7b8c21ea" col="7" colspan="2" row="1" rowspan="1"/>
+      </cl:output>
+      <cl:output std:sid="output-1cdbe72a" id="opt24" style="background-color:lightgray; background-image:none;" value="적요">
+        <cl:formdata std:sid="f-data-160862b2" col="0" row="2"/>
+      </cl:output>
+      <cl:output std:sid="output-644064b8" id="opt25" value="">
+        <cl:formdata std:sid="f-data-4f28d29b" col="1" colspan="6" row="2" rowspan="1"/>
+      </cl:output>
+      <cl:output std:sid="output-4dfd167d" id="opt26" value="Output">
+        <cl:formdata std:sid="f-data-6687c89a" col="4" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-30615aff" id="opt27" value="Output">
+        <cl:formdata std:sid="f-data-be3daab2" col="3" row="1"/>
+      </cl:output>
+      <cl:combobox std:sid="c-box-d96aa806" id="cmb3">
+        <cl:formdata std:sid="f-data-5ccc58eb" halign="FILL" valign="FILL" col="8" row="2"/>
+      </cl:combobox>
+      <cl:formlayout std:sid="f-layout-44ad6ae0" hseparatortype="BY_CLASS" hseparatorwidth="1" hspace="0px" vseparatortype="BY_CLASS" vseparatorwidth="1" vspace="0px">
+        <cl:rows autoSizing="false" length="1" minlength="0" shadecolor="#000000" shadetype="BY_CLASS" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns autoSizing="false" length="40" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns autoSizing="false" length="75" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns autoSizing="false" length="2" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns autoSizing="false" length="100" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-d9efc4c0" class="cl-form-group">
+      <cl:xylayoutdata std:sid="xyl-data-63d69ed8" height="120px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="TOP"/>
+      <cl:output std:sid="output-7b257881" id="opt1" value="전표번호">
+        <cl:formdata std:sid="f-data-f137f4b5" col="0" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-151a4581" id="opt2" value="접수번호">
+        <cl:formdata std:sid="f-data-6b407445" col="0" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-05ab58f0" id="opt3" value="적요">
+        <cl:formdata std:sid="f-data-ffb387ba" col="0" row="2"/>
+      </cl:output>
+      <cl:output std:sid="output-8d14b41e" id="opt4" value="적요">
+        <cl:formdata std:sid="f-data-f89db38c" col="2" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-81d66374" id="opt5" value="회계일자">
+        <cl:formdata std:sid="f-data-373bc91e" col="2" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-c44590e6" id="opt6" value="전표상태">
+        <cl:formdata std:sid="f-data-cc0aa390" col="4" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-01c16591" id="opt7" value="금액">
+        <cl:formdata std:sid="f-data-22e8227b" col="4" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-ae8fd074" id="opt8" value="담당부서">
+        <cl:formdata std:sid="f-data-2d91264e" col="6" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-76ea3e6a" id="opt9" value="담당자">
+        <cl:formdata std:sid="f-data-2635ab50" col="6" row="1"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-9e80cfcc" id="ipb6">
+        <cl:formdata std:sid="f-data-6668f41e" col="1" colspan="7" row="2" rowspan="1"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-c2dfb263" id="ipb7">
+        <cl:formdata std:sid="f-data-165f9dcd" col="7" row="1"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-94608a9b" id="ipb8">
+        <cl:formdata std:sid="f-data-843e3454" col="7" row="0"/>
+      </cl:inputbox>
+      <cl:combobox std:sid="c-box-f0865508" id="cmb1">
+        <cl:formdata std:sid="f-data-dd09c4ee" col="5" row="0"/>
+      </cl:combobox>
+      <cl:combobox std:sid="c-box-721871c2" id="cmb2" class="abras">
+        <cl:formdata std:sid="f-data-fd08a016" col="3" row="0"/>
+      </cl:combobox>
+      <cl:numbereditor std:sid="n-editor-c3a7ad2d" id="nbe3" class="abras" spinbutton="false">
+        <cl:formdata std:sid="f-data-bbdb37cb" col="5" row="1"/>
+      </cl:numbereditor>
+      <cl:dateinput std:sid="d-input-51d2a615" id="dti1" class="abras">
+        <cl:formdata std:sid="f-data-d8306b32" halign="LEFT" col="3" row="1"/>
+      </cl:dateinput>
+      <cl:formlayout std:sid="f-layout-079f07c6" hmargin="5px" hseparatortype="BY_CLASS" hseparatorwidth="1" hspace="10px" vmargin="5px" vseparatortype="BY_CLASS" vseparatorwidth="1" vspace="10px">
+        <cl:rows autoSizing="false" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:rows autoSizing="false" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="100" shadetype="BY_CLASS" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="100" shadetype="BY_CLASS" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="100" shadetype="BY_CLASS" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="100" shadetype="BY_CLASS" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-00240879">
+      <cl:xylayoutdata std:sid="xyl-data-a77174ae" height="56px" horizontalAnchor="BOTH" left="20px" right="20px" top="541px" verticalAnchor="TOP"/>
+      <cl:output std:sid="output-d72308ec" id="opt28" value="">
+        <cl:formdata std:sid="f-data-f91e2ed6" col="0" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-2dc12026" id="opt29" value="">
+        <cl:formdata std:sid="f-data-24fa445f" col="1" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-8254c8a8" id="opt30" value="">
+        <cl:formdata std:sid="f-data-8e9ff38f" col="2" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-fcff0b39" id="opt31" value="">
+        <cl:formdata std:sid="f-data-a6bac122" col="3" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-716ae5c1" id="opt32" value="">
+        <cl:formdata std:sid="f-data-848c6c29" col="4" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-3e03cabd" id="opt33" value="">
+        <cl:formdata std:sid="f-data-3dbd6d89" col="5" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-9ad6477d" id="opt34" value="">
+        <cl:formdata std:sid="f-data-33782abb" col="6" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-0b9e9673" id="opt35" value="">
+        <cl:formdata std:sid="f-data-75888b8e" col="7" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-56c5d824" id="opt36" value="">
+        <cl:formdata std:sid="f-data-e7858eae" col="0" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-33a3c47c" id="opt37" value="">
+        <cl:formdata std:sid="f-data-8568df3c" col="1" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-fa69af8e" id="opt38" value="">
+        <cl:formdata std:sid="f-data-ecaeddc4" col="2" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-8ca3080c" id="opt39" value="">
+        <cl:formdata std:sid="f-data-7150194d" col="3" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-31a5d2f7" id="opt40" value="">
+        <cl:formdata std:sid="f-data-07aa695b" col="4" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-bb36675c" id="opt41" value="">
+        <cl:formdata std:sid="f-data-525cc814" col="6" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-cd909e15" id="opt42" value="">
+        <cl:formdata std:sid="f-data-2a9543f1" col="5" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-4b761ce5" id="opt43" value="">
+        <cl:formdata std:sid="f-data-fd75f29d" col="7" row="1"/>
+      </cl:output>
+      <cl:formlayout std:sid="f-layout-786999ed" hseparatortype="BY_CLASS" hseparatorwidth="1" vseparatortype="BY_CLASS" vseparatorwidth="1">
+        <cl:rows autoSizing="false" length="1" minlength="0" shadecolor="#000000" shadetype="BY_CLASS" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:grid std:sid="grid-3862c211" id="grd2">
+      <cl:xylayoutdata std:sid="xyl-data-d55b41e0" height="50px" horizontalAnchor="BOTH" left="20px" right="20px" top="604px" verticalAnchor="TOP"/>
+      <cl:gridcolumn std:sid="g-column-416b8891"/>
+      <cl:gridcolumn std:sid="g-column-3b2b0f95"/>
+      <cl:gridcolumn std:sid="g-column-a168dd5f"/>
+      <cl:gridcolumn std:sid="g-column-53cfc58c"/>
+      <cl:gridcolumn std:sid="g-column-f8fc325c"/>
+      <cl:gridcolumn std:sid="g-column-df9be00a"/>
+      <cl:gridcolumn std:sid="g-column-b0ce2b36"/>
+      <cl:gridcolumn std:sid="g-column-67815fee"/>
+      <cl:gridheader std:sid="gh-band-08cf5f26">
+        <cl:gridrow std:sid="g-row-d1025b19"/>
+        <cl:gridcell std:sid="gh-cell-7c0979d1" colindex="0" rowindex="0"/>
+        <cl:gridcell std:sid="gh-cell-1161c773" colindex="1" rowindex="0"/>
+        <cl:gridcell std:sid="gh-cell-a7c51ae7" colindex="2" rowindex="0"/>
+        <cl:gridcell std:sid="gh-cell-aae66d9b" colindex="3" rowindex="0"/>
+        <cl:gridcell std:sid="gh-cell-c15daeb0" colindex="4" rowindex="0"/>
+        <cl:gridcell std:sid="gh-cell-dccbe722" colindex="5" rowindex="0"/>
+        <cl:gridcell std:sid="gh-cell-b6e21ff9" colindex="6" rowindex="0"/>
+        <cl:gridcell std:sid="gh-cell-38e8593a" colindex="7" rowindex="0"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-f8f51373">
+        <cl:gridrow std:sid="g-row-76599644"/>
+        <cl:gridcell std:sid="gd-cell-49ae2d71" colindex="0" rowindex="0"/>
+        <cl:gridcell std:sid="gd-cell-7841435c" colindex="1" rowindex="0"/>
+        <cl:gridcell std:sid="gd-cell-4a0c196e" colindex="2" rowindex="0"/>
+        <cl:gridcell std:sid="gd-cell-b7dbcc5a" colindex="3" rowindex="0"/>
+        <cl:gridcell std:sid="gd-cell-111125fa" colindex="4" rowindex="0"/>
+        <cl:gridcell std:sid="gd-cell-254e194d" colindex="5" rowindex="0"/>
+        <cl:gridcell std:sid="gd-cell-ff5eb0c5" colindex="6" rowindex="0"/>
+        <cl:gridcell std:sid="gd-cell-24702b10" colindex="7" rowindex="0"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:xylayout std:sid="xylayout-68f48b06"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,66 @@
+@import "../settings.part.less";
+@import "../custom-settings.part.less";
+
+.cl-container.single-line-textbox {
+	.cl-inputbox.textbox {
+		border-width : 1px 0px 1px 1px;
+		border-radius : 3px 0px 0px 3px;
+	}
+	
+	.cl-button.btn-icon-search {
+		background : @color-primary-02 url(images/icon/btn_search.png) no-repeat center;
+		border-width : 1px 1px 1px 0px;
+		border-radius : 0px 3px 3px 0px;
+		
+		&.cl-disabled {
+			background : @color-primary-02 url(images/icon/btn_search.png) no-repeat center;
+			border-width : 1px 1px 1px 0px;
+			border-radius : 0px 3px 3px 0px;
+		}
+	}
+	
+	&.dark {
+		.cl-inputbox.textbox {
+			background-color : @color-input-bg-dark;
+			border-color : transparent;
+			color : @color-text-white-01;
+			
+			&:hover {
+				border-color : @color-input-hover-border-dark;
+			}
+			
+			&.cl-focus {
+				border-color : @color-input-focus-border-dark;
+			}
+			
+			&.cl-disabled {
+				background-color : @color-input-disabled-dark;
+				border-color : @color-input-disabled-border-dark;
+			}
+		}
+		
+		.cl-inputbox.textbox ::-webkit-input-placeholder {
+			font-size : @font-small-text-r !important;
+			color : @color-text-white-04 !important;
+		}
+		
+		.cl-inputbox.textbox :-ms-input-placeholder {
+			font-size : @font-small-text-r !important;
+			color : @color-text-white-04 !important;
+		}
+		
+		.cl-inputbox.textbox :-mos-input-placeholder {
+			font-size : @font-small-text-r !important;
+			color : @color-text-white-04 !important;
+		}
+		
+		.cl-inputbox.textbox ::-mos-input-placeholder {
+			font-size : @font-small-text-r !important;
+			color : @color-text-white-04 !important;
+		}
+		
+		.cl-button.btn-icon-search {
+			background : @color-primary-01 url(images/icon/btn_search.png) no-repeat center;
+		}
+	}
+}

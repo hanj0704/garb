@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ac7f4487" version="1.0.0.0">
+  <head std:sid="head-e5fd4b5b">
+    <title>heightSample</title>
+    <screen std:sid="screen-e98b1567" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-4020733c" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-2651fa77" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-6cf8414a"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-246f53ae" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-85e7e1d9" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-2a5ba8b1" id="grp1" style="border-right-style:solid; border-top-width:1px; border-bottom-color:red; border-left-style:solid; border-right-width:1px; border-bottom-width:1px; border-left-color:red; border-top-color:red; border-bottom-style:solid; border-right-color:red; border-left-width:1px; border-top-style:solid;">
+      <cl:verticaldata std:sid="v-data-b33697a2" width="400px" height="200px"/>
+      <cl:button std:sid="button-9327fd8a" id="btn1" value="Button">
+        <cl:listener std:sid="listener-bfc611d0" name="click" handler="onBtn1Click"/>
+        <cl:xylayoutdata std:sid="xyl-data-18b03056" top="20px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      </cl:button>
+      <cl:xylayout std:sid="xylayout-0f395eca"/>
+    </cl:group>
+    <cl:group std:sid="group-80080215" id="grp2" style="border-right-style:solid; border-top-width:1px; border-bottom-color:black; border-left-style:solid; border-right-width:1px; border-bottom-width:1px; border-left-color:black; border-top-color:black; border-bottom-style:solid; border-right-color:black; border-left-width:1px; border-top-style:solid;">
+      <cl:verticaldata std:sid="v-data-f0e66c58" width="400px" height="200px"/>
+      <cl:xylayout std:sid="xylayout-40bf4125"/>
+    </cl:group>
+    <cl:group std:sid="group-ed0e7877" id="grp3" style="border-right-style:solid; border-top-width:1px; border-bottom-color:purple; border-left-style:solid; border-right-width:1px; border-bottom-width:1px; border-left-color:purple; border-top-color:purple; border-bottom-style:solid; border-right-color:purple; border-left-width:1px; border-top-style:solid;">
+      <cl:verticaldata std:sid="v-data-1e5d8340" width="400px" height="200px"/>
+      <cl:xylayout std:sid="xylayout-3fbe2ca4"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-d0c421c6"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

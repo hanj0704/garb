@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-6b3021e9" version="1.0.3221">
+  <head std:sid="head-5f03f47d">
+    <screen std:sid="screen-be742299" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-8db86e59" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-f167d76d" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-367fd718">
+      <cl:dataset std:sid="d-set-c5c822bb" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-34839f02" name="column1"/>
+          <cl:datacolumn std:sid="d-column-1346afff" name="column2"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-25b549a0" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-8bf9a0ba" name="column1"/>
+          <cl:datacolumn std:sid="d-column-9f885402" name="column2"/>
+          <cl:datacolumn std:sid="d-column-bd0d2444" name="column3"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-e178eef4">
+    <cl:udc std:sid="ud-control-695a5e89" type="udc.aaa.hanj">
+      <cl:datamapbind property="newProperty1" datacontrolid="dm1" columnname="column2"/>
+      <cl:xylayoutdata std:sid="xyl-data-90a731b6" top="9px" left="52px" width="300px" height="300px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:property name="newProperty1" value="가가가" type="string"/>
+    </cl:udc>
+    <cl:button std:sid="button-65ea71b0" id="btn1" value="Button">
+      <cl:listener std:sid="listener-b0c77d5b" name="click" handler="onBtn1Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-b36d8ccd" top="121px" left="600px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:inputbox std:sid="i-box-0ba452f8" id="ipb1">
+      <cl:xylayoutdata std:sid="xyl-data-c07765fb" top="121px" left="490px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:inputbox>
+    <cl:xylayout std:sid="xylayout-ca747d77"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

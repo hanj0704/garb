@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-f8fe6fa9" version="1.0.0.0">
+  <head std:sid="head-e7ecd505">
+    <title>MDITesterInTest</title>
+    <screen std:sid="screen-69677b83" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-686a35ee" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-993b1552" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-b4098d40"/>
+    <cl:appspec dev-comment="테스트 버젼을 사용하실 경우&#xD;&#xA;MDI폴더와 탭 폴더에 키보드 이벤트가 추가되었습니다.&#xD;&#xA;더이상 bodyKeyDown이벤트에서 커맨드를 누른데 mdi내부에서 누른건지 에 대한 확인을 할 필요 없으며,&#xD;&#xA;탭 아이템에 focus() api도 추가되었습니다.&#xD;&#xA;해당 기능은 5/22(금)에 릴리즈 될 예정에 있습니다."/>
+  </head>
+  <body std:sid="body-92d2c0fe" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:mdifolder std:sid="mdifolder-3d3fffad" id="mdi1">
+      <cl:listener std:sid="listener-90266d70" handler="onMdi1Keydown" name="keydown"/>
+      <cl:xylayoutdata std:sid="xyl-data-7bde7b2c" height="436px" horizontalAnchor="LEFT" left="10px" top="10px" verticalAnchor="TOP" width="730px"/>
+      <cl:tabitem std:sid="t-item-c8484ecc" selected="true" text="tab 1">
+        <std:metadata>
+          <std:property key="is-active-item" value="true"/>
+        </std:metadata>
+        <cl:group std:sid="group-a7fef626" id="grp1">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:inputbox std:sid="i-box-7a1117f4" id="ipb1">
+            <cl:xylayoutdata std:sid="xyl-data-6a9aa943" height="20px" horizontalAnchor="LEFT" left="20px" top="20px" verticalAnchor="TOP" width="100px"/>
+          </cl:inputbox>
+          <cl:xylayout std:sid="xylayout-63ab4ae1"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-ac348932" text="tab 2">
+        <cl:group std:sid="group-2c811f0c" id="grp2">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:inputbox std:sid="i-box-2b4e6673" id="ipb2">
+            <cl:xylayoutdata std:sid="xyl-data-aff30f6c" height="20px" horizontalAnchor="LEFT" left="84px" top="20px" verticalAnchor="TOP" width="100px"/>
+          </cl:inputbox>
+          <cl:xylayout std:sid="xylayout-04f76522"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-c28e6b9b" text="tab 3">
+        <cl:group std:sid="group-c3f5380b" id="grp3">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:inputbox std:sid="i-box-48b4d9ec" id="ipb3">
+            <cl:xylayoutdata std:sid="xyl-data-ddb7bb36" height="20px" horizontalAnchor="LEFT" left="142px" top="20px" verticalAnchor="TOP" width="100px"/>
+          </cl:inputbox>
+          <cl:xylayout std:sid="xylayout-7987355b"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-6edaac6f" text="tab 4">
+        <cl:group std:sid="group-d6a819df" id="grp4">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:inputbox std:sid="i-box-8d0bebb7" id="ipb4">
+            <cl:xylayoutdata std:sid="xyl-data-6c815b8c" height="20px" horizontalAnchor="LEFT" left="196px" top="20px" verticalAnchor="TOP" width="100px"/>
+          </cl:inputbox>
+          <cl:xylayout std:sid="xylayout-198babf7"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-7f43b193" text="tab 5">
+        <cl:group std:sid="group-010e1d14" id="grp5">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:inputbox std:sid="i-box-c2248022" id="ipb5">
+            <cl:xylayoutdata std:sid="xyl-data-3749c9ab" height="20px" horizontalAnchor="LEFT" left="254px" top="20px" verticalAnchor="TOP" width="100px"/>
+          </cl:inputbox>
+          <cl:xylayout std:sid="xylayout-b3206999"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-30d5d0e0" text="tab 6">
+        <cl:group std:sid="group-54e582ba" id="grp6">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:inputbox std:sid="i-box-28d16cc5" id="ipb7">
+            <cl:xylayoutdata std:sid="xyl-data-edede966" height="20px" horizontalAnchor="LEFT" left="316px" top="20px" verticalAnchor="TOP" width="100px"/>
+          </cl:inputbox>
+          <cl:xylayout std:sid="xylayout-a53018fe"/>
+        </cl:group>
+      </cl:tabitem>
+    </cl:mdifolder>
+    <cl:xylayout std:sid="xylayout-c60615bf"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

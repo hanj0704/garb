@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-c2d4f5f3" version="1.0.0.0">
+  <head std:sid="head-f9ff6d38">
+    <title>comboTest</title>
+    <screen std:sid="screen-13baccd8" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-08c9f25e" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-e9acae2e" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-2e14d980">
+      <cl:dataset std:sid="d-set-e955e3f5" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-13b60479" name="column1"/>
+          <cl:datacolumn std:sid="d-column-14cdf886" name="column2"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column11</cl:datavalue>
+            <cl:datavalue columnname="column2">column21</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column12</cl:datavalue>
+            <cl:datavalue columnname="column2">column22</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column13</cl:datavalue>
+            <cl:datavalue columnname="column2">column23</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column14</cl:datavalue>
+            <cl:datavalue columnname="column2">column24</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column15</cl:datavalue>
+            <cl:datavalue columnname="column2">column25</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-a555fef6" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-e84bb603" name="load" handler="onBodyLoad"/>
+    <cl:combobox std:sid="c-box-b08b21d2" id="cmb1">
+      <cl:xylayoutdata std:sid="xyl-data-2f6e0d26" top="20px" left="20px" width="197px" height="42px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:item std:sid="t-item-d1224d31" label="label1" value="value1"/>
+      <cl:item std:sid="t-item-8cb94595" label="label2" value="value2"/>
+      <cl:item std:sid="t-item-991d1773" label="label3" value="value3"/>
+      <cl:item std:sid="t-item-a8d1ad87" label="label4" value="value4"/>
+      <cl:item std:sid="t-item-55686030" label="label5" value="value5"/>
+      <cl:item std:sid="t-item-39f6e1ba" label="label6" value="value6"/>
+    </cl:combobox>
+    <cl:tabfolder std:sid="t-folder-348ce27d" id="t1">
+      <cl:xylayoutdata std:sid="xyl-data-31102a91" top="72px" left="20px" width="403px" height="244px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:tabitem std:sid="t-item-0c038140" selected="true" text="tab1">
+        <cl:group std:sid="group-50114299" id="grp1">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:xylayout std:sid="xylayout-b7363ad3"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-94cc6654" text="tab 2">
+        <std:metadata>
+          <std:property key="is-active-item" value="true"/>
+        </std:metadata>
+        <cl:group std:sid="group-574f134f" id="grp2">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:xylayout std:sid="xylayout-e2b57673"/>
+        </cl:group>
+      </cl:tabitem>
+    </cl:tabfolder>
+    <cl:grid std:sid="grid-426ab13e" id="grd1" datasetid="ds1">
+      <cl:xylayoutdata std:sid="xyl-data-272d28e7" top="32px" left="447px" width="398px" height="254px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:gridcolumn std:sid="g-column-d50d324c" width="50px"/>
+      <cl:gridcolumn std:sid="g-column-7e38cb90"/>
+      <cl:gridcolumn std:sid="g-column-05244e72"/>
+      <cl:gridheader std:sid="gh-band-1b2590da">
+        <cl:gridrow std:sid="g-row-32b6b59e"/>
+        <cl:gridcell std:sid="gh-cell-2266373b" rowindex="0" colindex="0" sortable="false" filterable="false"/>
+        <cl:gridcell std:sid="gh-cell-e7d31ce0" rowindex="0" colindex="1" targetcolumnname="column1" sortable="false" filterable="false" text="column1"/>
+        <cl:gridcell std:sid="gh-cell-864e35bd" rowindex="0" colindex="2" targetcolumnname="column2" sortable="false" filterable="false" text="column2"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-978f90f7">
+        <cl:gridrow std:sid="g-row-18d344fd"/>
+        <cl:gridcell std:sid="gd-cell-605d7fc0" rowindex="0" colindex="0" columntype="rowindex"/>
+        <cl:gridcell std:sid="gd-cell-fe4d2083" rowindex="0" colindex="1" columnname="column1"/>
+        <cl:gridcell std:sid="gd-cell-e38bc464" rowindex="0" colindex="2" columnname="column2"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:xylayout std:sid="xylayout-d8b34e4a"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

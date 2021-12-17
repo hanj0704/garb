@@ -1,0 +1,28 @@
+.zoom-90 .cl-layout-content.cl-out {
+  transform: scale3d(0.9, 0.9, 1);
+  transform-origin: center;
+}
+.zoom-95 .cl-layout-content.cl-out {
+  transform: scale3d(0.95, 0.95, 1);
+  transform-origin: center;
+}
+.zoom-100 .cl-layout-content.cl-out {
+  transform: scale3d(1, 1, 1);
+  transform-origin: 0 0;
+}
+.zoom-105 .cl-layout-content.cl-out {
+  transform: scale3d(1, 1, 1);
+  transform-origin: 0 0;
+}
+.zoom-110 .cl-layout-content.cl-out {
+  transform: scale3d(1.1, 1.1, 1);
+  transform-origin: 0 0;
+}
+.zoom-115 .cl-layout-content.cl-out {
+  transform: scale3d(1.15, 1.15, 1);
+  transform-origin: 0 0;
+}
+.zoom-120 .cl-layout-content.cl-out {
+  transform: scale3d(1.2, 1.2, 1);
+  transform-origin: 0 0;
+}

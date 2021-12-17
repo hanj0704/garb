@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-409ebe85" version="1.0.0.0">
+  <head std:sid="head-520f4e62">
+    <title>tanTest</title>
+    <screen std:sid="screen-fddd14f9" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-6b166477" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-3defc526" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-be1323ae"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-3effd508" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:xylayout std:sid="xylayout-fcfd33c5"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

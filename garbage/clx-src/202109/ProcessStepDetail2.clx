@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-6af861df" version="1.0.3182">
+  <head std:sid="head-52e32470">
+    <screen std:sid="screen-a5216616" id="default" name="default" minwidth="1024px" width="1024px" height="768px" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-f8543e68" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-9b21535e" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-489e83f7">
+      <cl:dataset comment="Chamber Selection 아이템 셋" std:sid="d-set-4fbe0d1a" id="dsSelectionChList">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-f2be75a5" name="label"/>
+          <cl:datacolumn std:sid="d-column-d7c80e37" name="value"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset comment="Send to Host 아이템 셋" std:sid="d-set-8651e5b0" id="dsSelectHostList">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-db9b5c0a" name="label"/>
+          <cl:datacolumn std:sid="d-column-e8a3296a" name="value"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-7c22e895" id="dmStepInfo">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-f2d0bed1" name="RECIPE_NAME"/>
+          <cl:datacolumn std:sid="d-column-aaab8327" name="STEP_NUMBER"/>
+          <cl:datacolumn std:sid="d-column-13a33676" name="STEP_NAME"/>
+          <cl:datacolumn std:sid="d-column-59d9bec7" name="SELECTION_CHAMBER_A"/>
+          <cl:datacolumn std:sid="d-column-8dc2cca7" name="SELECTION_CHAMBER_B"/>
+          <cl:datacolumn std:sid="d-column-db40d972" name="SELECTION_CHAMBER_C"/>
+          <cl:datacolumn std:sid="d-column-0df85c30" name="LOOP"/>
+          <cl:datacolumn std:sid="d-column-ce7441e9" name="STEP_END_CONTROL"/>
+          <cl:datacolumn std:sid="d-column-4fa0fa41" name="MAXIMUM_STEP_TIME"/>
+          <cl:datacolumn std:sid="d-column-367dd136" name="INIT_RF_POWER"/>
+          <cl:datacolumn std:sid="d-column-160b7189" name="INIT_RF_POWER_TIME"/>
+          <cl:datacolumn std:sid="d-column-7772ec90" name="WAFER_PLACE_CHECK"/>
+          <cl:datacolumn std:sid="d-column-148ae5c6" name="WPC_IGNORE_TIME"/>
+          <cl:datacolumn std:sid="d-column-055a156f" name="WPC_LOWER_PRESS"/>
+          <cl:datacolumn std:sid="d-column-34a17256" name="WPC_UPPER_PRESS"/>
+          <cl:datacolumn std:sid="d-column-f4ed5121" name="PRESSURE_CH1"/>
+          <cl:datacolumn std:sid="d-column-b5f27776" name="PRESSURE_RAMP_RATE_CH1"/>
+          <cl:datacolumn std:sid="d-column-11a17bcf" name="HEATER_SPACING_CH1"/>
+          <cl:datacolumn std:sid="d-column-3a24a7dc" name="RF_POWER_CH1"/>
+          <cl:datacolumn std:sid="d-column-bdd1b27d" name="RF_POWER_TIME_CH1"/>
+          <cl:datacolumn std:sid="d-column-ee9dfab6" name="RF_RAMP_UP_CH1"/>
+          <cl:datacolumn std:sid="d-column-047db987" name="RF_RAMP_DOWN_CH1"/>
+          <cl:datacolumn std:sid="d-column-09e96ccb" name="RF_SHUNT_CH1"/>
+          <cl:datacolumn std:sid="d-column-510ed45d" name="RF_SERIES_CH1"/>
+          <cl:datacolumn std:sid="d-column-053afa11" name="PRESSURE_CH2"/>
+          <cl:datacolumn std:sid="d-column-7e0dc493" name="PRESSURE_RAMP_RATE_CH2"/>
+          <cl:datacolumn std:sid="d-column-84ec8101" name="HEATER_SPACING_CH2"/>
+          <cl:datacolumn std:sid="d-column-d92ae983" name="RF_POWER_CH2"/>
+          <cl:datacolumn std:sid="d-column-bd94635d" name="RF_POWER_TIME_CH2"/>
+          <cl:datacolumn std:sid="d-column-f71b8f0b" name="RF_RAMP_UP_CH2"/>
+          <cl:datacolumn std:sid="d-column-73f14453" name="RF_RAMP_DOWN_CH2"/>
+          <cl:datacolumn std:sid="d-column-289eb131" name="RF_SHUNT_CH2"/>
+          <cl:datacolumn std:sid="d-column-66c44a1c" name="RF_SERIES_CH2"/>
+          <cl:datacolumn std:sid="d-column-6d21a3b8" name="GAS01_CH1"/>
+          <cl:datacolumn std:sid="d-column-8102598c" name="GAS01_RAMP_CH1"/>
+          <cl:datacolumn std:sid="d-column-47c077de" name="GAS02_CH1"/>
+          <cl:datacolumn std:sid="d-column-28d4ec25" name="GAS02_RAMP_CH1"/>
+          <cl:datacolumn std:sid="d-column-993577e9" name="GAS03_CH1"/>
+          <cl:datacolumn std:sid="d-column-662af5b5" name="GAS03_RAMP_CH1"/>
+          <cl:datacolumn std:sid="d-column-e191ef27" name="GAS04_CH1"/>
+          <cl:datacolumn std:sid="d-column-f55adc84" name="GAS04_RAMP_CH1"/>
+          <cl:datacolumn std:sid="d-column-26648687" name="GAS05_CH1"/>
+          <cl:datacolumn std:sid="d-column-07df5f96" name="GAS05_RAMP_CH1"/>
+          <cl:datacolumn std:sid="d-column-6a7f1103" name="GAS06_CH1"/>
+          <cl:datacolumn std:sid="d-column-12cc789d" name="GAS06_RAMP_CH1"/>
+          <cl:datacolumn std:sid="d-column-ce5f8867" name="GAS07_CH1"/>
+          <cl:datacolumn std:sid="d-column-43ef637d" name="GAS07_RAMP_CH1"/>
+          <cl:datacolumn std:sid="d-column-c24b823b" name="GAS08_CH1"/>
+          <cl:datacolumn std:sid="d-column-aff90b97" name="GAS08_RAMP_CH1"/>
+          <cl:datacolumn std:sid="d-column-85305ddf" name="GAS09_CH1"/>
+          <cl:datacolumn std:sid="d-column-aa45bf3d" name="GAS09_RAMP_CH1"/>
+          <cl:datacolumn std:sid="d-column-e44f2818" name="GAS10_CH1"/>
+          <cl:datacolumn std:sid="d-column-764443f6" name="GAS10_RAMP_CH1"/>
+          <cl:datacolumn std:sid="d-column-d36c7d9b" name="GAS01_CH2"/>
+          <cl:datacolumn std:sid="d-column-3763ca79" name="GAS01_RAMP_CH2"/>
+          <cl:datacolumn std:sid="d-column-7df9e55d" name="GAS02_CH2"/>
+          <cl:datacolumn std:sid="d-column-c470df8a" name="GAS02_RAMP_CH2"/>
+          <cl:datacolumn std:sid="d-column-231efcb0" name="GAS03_CH2"/>
+          <cl:datacolumn std:sid="d-column-21b8df22" name="GAS03_RAMP_CH2"/>
+          <cl:datacolumn std:sid="d-column-b6a1b277" name="GAS04_CH2"/>
+          <cl:datacolumn std:sid="d-column-530fb187" name="GAS04_RAMP_CH2"/>
+          <cl:datacolumn std:sid="d-column-63c283f1" name="GAS05_CH2"/>
+          <cl:datacolumn std:sid="d-column-3ee9463d" name="GAS05_RAMP_CH2"/>
+          <cl:datacolumn std:sid="d-column-441d84f3" name="GAS06_CH2"/>
+          <cl:datacolumn std:sid="d-column-1d5666f5" name="GAS06_RAMP_CH2"/>
+          <cl:datacolumn std:sid="d-column-e654c681" name="GAS07_CH2"/>
+          <cl:datacolumn std:sid="d-column-dd10ace9" name="GAS07_RAMP_CH2"/>
+          <cl:datacolumn std:sid="d-column-f8e2ba2f" name="GAS08_CH2"/>
+          <cl:datacolumn std:sid="d-column-c773ad4a" name="GAS08_RAMP_CH2"/>
+          <cl:datacolumn std:sid="d-column-61124daa" name="GAS09_CH2"/>
+          <cl:datacolumn std:sid="d-column-d24865a0" name="GAS09_RAMP_CH2"/>
+          <cl:datacolumn std:sid="d-column-2181f954" name="GAS10_CH2"/>
+          <cl:datacolumn std:sid="d-column-84ac9f54" name="GAS10_RAMP_CH2"/>
+          <cl:datacolumn std:sid="d-column-7402adec" name="SELECT_HOST"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-e2295d0c" id="subComboList" action="data/RecipeListDatas.json">
+        <cl:responsedata dataid="dsSelectionChList"/>
+        <cl:responsedata dataid="dsSelectHostList"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec>
+      <cl:property name="dataRow" type="object"/>
+      <cl:property name="rowIndex" type="number"/>
+      <cl:property name="loopValue" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-f66bed63" style="top:0px; left:0px; width:180px; height:700px;" class="bg-gray-100 border">
+    <cl:listener std:sid="listener-e89ce088" name="load" handler="onBodyLoad"/>
+    <cl:listener std:sid="listener-b2775ba7" name="property-change" handler="onBodyPropertyChange"/>
+    <cl:listener std:sid="listener-b9e6b909" name="init" handler="onBodyInit"/>
+    <cl:group std:sid="group-88f3f7d5" id="grp11">
+      <cl:datamapcontext datacontrolid="dmStepInfo"/>
+      <cl:formdata std:sid="f-data-b1ba44aa" row="0" col="0"/>
+      <cl:group std:sid="group-0e7a8c5e" id="grp12">
+        <cl:verticaldata std:sid="v-data-f17185a2" width="148px" height="155px"/>
+        <cl:group std:sid="group-eef45e94" id="grp13">
+          <cl:formdata std:sid="f-data-0b636c76" row="0" col="0"/>
+          <cl:numbereditor std:sid="n-editor-d213e61a" id="nbeStepNum" spinbutton="false">
+            <cl:apppropbind property="value" app-property="rowIndex"/>
+            <cl:formdata std:sid="f-data-11b2c57c" row="0" col="0"/>
+          </cl:numbereditor>
+          <cl:numbereditor std:sid="n-editor-19deff76" id="nbe19" spinbutton="false">
+            <cl:relativebind property="value" columnname="STEP_NAME"/>
+            <cl:formdata std:sid="f-data-e126ed7a" row="0" col="1"/>
+          </cl:numbereditor>
+          <cl:formlayout std:sid="f-layout-2c4c28c5" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="70" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-a7836238" id="grp14">
+          <cl:formdata std:sid="f-data-0e18e2d6" row="1" col="0"/>
+          <cl:combobox std:sid="c-box-fde304e5" id="cmbChA" class="text-center" hidebutton="true" preventinput="true">
+            <cl:listener std:sid="listener-635131d7" name="selection-change" handler="onCmbChSelectionChange"/>
+            <cl:relativebind property="value" columnname="SELECTION_CHAMBER_A"/>
+            <cl:formdata std:sid="f-data-b56c2f79" row="0" col="0"/>
+            <cl:itemset datasetid="dsSelectionChList" label="label" value="value"/>
+          </cl:combobox>
+          <cl:combobox std:sid="c-box-09f67e5f" id="cmbChB" class="text-center" hidebutton="true" preventinput="true">
+            <cl:listener std:sid="listener-40118443" name="selection-change" handler="onCmbChSelectionChange"/>
+            <cl:relativebind property="value" columnname="SELECTION_CHAMBER_B"/>
+            <cl:formdata std:sid="f-data-6f56fc99" row="0" col="1"/>
+            <cl:itemset datasetid="dsSelectionChList" label="label" value="value"/>
+          </cl:combobox>
+          <cl:combobox std:sid="c-box-d70f19b3" id="cmbChC" class="text-center" hidebutton="true" preventinput="true">
+            <cl:listener std:sid="listener-59444475" name="selection-change" handler="onCmbChSelectionChange"/>
+            <cl:relativebind property="value" columnname="SELECTION_CHAMBER_C"/>
+            <cl:formdata std:sid="f-data-e8a178f5" row="0" col="2"/>
+            <cl:itemset datasetid="dsSelectionChList" label="label" value="value"/>
+          </cl:combobox>
+          <cl:formlayout std:sid="f-layout-32042810" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-652f448a" id="grp15">
+          <cl:formdata std:sid="f-data-bfc15701" row="5" col="0"/>
+          <cl:numbereditor std:sid="n-editor-c8e7e562" id="nbe12" spinbutton="false" format="s#,##0.0">
+            <cl:relativebind property="value" columnname="INIT_RF_POWER"/>
+            <cl:formdata std:sid="f-data-85b733c7" row="0" col="0"/>
+          </cl:numbereditor>
+          <cl:numbereditor std:sid="n-editor-d8871b95" id="nbe13" spinbutton="false" format="s#,##0.00">
+            <cl:relativebind property="value" columnname="INIT_RF_POWER_TIME"/>
+            <cl:formdata std:sid="f-data-0523d4a5" row="0" col="1"/>
+          </cl:numbereditor>
+          <cl:formlayout std:sid="f-layout-efecea47" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:inputbox std:sid="i-box-6b404999" id="ipb2" class="text-center">
+          <cl:listener std:sid="listener-086dead8" name="click" handler="onIpb2Click"/>
+          <cl:attribute name="ignorePolicy" value="Y"/>
+          <cl:expbind property="value" category="PROPERTY" expression="@getLoopExp(LOOP,@loopValue)"/>
+          <cl:formdata std:sid="f-data-f99e5383" row="2" col="0"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-2dd2cd3f" id="ipb3" class="text-center">
+          <cl:listener std:sid="listener-69f32275" name="click" handler="onIpb3Click"/>
+          <cl:attribute name="ignorePolicy" value="Y"/>
+          <cl:relativebind property="value" columnname="STEP_END_CONTROL"/>
+          <cl:formdata std:sid="f-data-5ec67630" row="3" col="0"/>
+        </cl:inputbox>
+        <cl:numbereditor std:sid="n-editor-046d16b1" id="nbe8" spinbutton="false" format="s#,##0.000">
+          <cl:relativebind property="value" columnname="MAXIMUM_STEP_TIME"/>
+          <cl:formdata std:sid="f-data-f8c8d92b" row="4" col="0"/>
+        </cl:numbereditor>
+        <cl:formlayout std:sid="f-layout-8fb9a4d0" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="20"/>
+          <cl:rows length="20"/>
+          <cl:rows length="20"/>
+          <cl:rows length="20"/>
+          <cl:rows length="20"/>
+          <cl:rows length="20"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-14c19368" id="grp16">
+        <cl:verticaldata std:sid="v-data-59ea62ab" width="148px" height="205px"/>
+        <cl:numbereditor std:sid="n-editor-a153b8e4" id="nbe6" spinbutton="false" format="s#,##0.0">
+          <cl:relativebind property="value" columnname="RF_POWER_CH1"/>
+          <cl:formdata std:sid="f-data-6a51db19" row="2" col="0"/>
+        </cl:numbereditor>
+        <cl:numbereditor std:sid="n-editor-a93f7ed8" id="nbe7" spinbutton="false" format="s#,##0.0">
+          <cl:relativebind property="value" columnname="RF_SHUNT_CH1"/>
+          <cl:formdata std:sid="f-data-8af4a0e4" row="3" col="0"/>
+        </cl:numbereditor>
+        <cl:numbereditor std:sid="n-editor-aeae4fab" id="nbe14" spinbutton="false" format="s#,##0.000">
+          <cl:relativebind property="value" columnname="RF_POWER_TIME_CH1"/>
+          <cl:formdata std:sid="f-data-23b903c8" row="2" col="1"/>
+        </cl:numbereditor>
+        <cl:numbereditor std:sid="n-editor-c86db29c" id="nbe15" spinbutton="false" format="s#,##0.0">
+          <cl:relativebind property="value" columnname="RF_SERIES_CH1"/>
+          <cl:formdata std:sid="f-data-86590df4" row="3" col="1"/>
+        </cl:numbereditor>
+        <cl:inputbox std:sid="i-box-c24d1bfd" id="ipbPresCH1" class="text-center">
+          <cl:listener std:sid="listener-11603a87" name="click" handler="onIpbPresCHClick"/>
+          <cl:attribute name="ignorePolicy" value="Y"/>
+          <cl:relativebind property="value" columnname="PRESSURE_CH1"/>
+          <cl:formdata std:sid="f-data-bec297a3" row="0" col="0" rowspan="1" colspan="2"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-d1671ad8" id="ipbHeatCh1" class="text-right">
+          <cl:listener std:sid="listener-4fea1707" name="click" handler="onIpbHeatChClick"/>
+          <cl:attribute name="ignorePolicy" value="Y"/>
+          <cl:relativebind property="value" columnname="HEATER_SPACING_CH1"/>
+          <cl:formdata std:sid="f-data-88cbd22a" row="1" col="0" rowspan="1" colspan="2"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-49d937ad" id="ipbGas2Ch1" class="text-right" fieldLabel="Ar">
+          <cl:listener std:sid="listener-53de7c5e" name="click" handler="onIpbGasClick"/>
+          <cl:attribute name="ignorePolicy" value="Y"/>
+          <cl:relativebind property="value" columnname="GAS02_CH1"/>
+          <cl:formdata std:sid="f-data-6e357d10" row="4" col="1"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-fb14ad55" id="ipbGas3Ch1" class="text-right" fieldLabel="CF4">
+          <cl:listener std:sid="listener-424095d0" name="click" handler="onIpbGasClick"/>
+          <cl:attribute name="ignorePolicy" value="Y"/>
+          <cl:relativebind property="value" columnname="GAS03_CH1"/>
+          <cl:formdata std:sid="f-data-4debcb74" row="5" col="0"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-0572a7e2" id="ipbGas5Ch1" class="text-right" fieldLabel="CH2F2">
+          <cl:listener std:sid="listener-f059da01" name="click" handler="onIpbGasClick"/>
+          <cl:attribute name="ignorePolicy" value="Y"/>
+          <cl:relativebind property="value" columnname="GAS05_CH1"/>
+          <cl:formdata std:sid="f-data-d5b2a56d" row="6" col="0"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-b130483b" id="ipbGas6Ch1" class="text-right" fieldLabel="N2">
+          <cl:listener std:sid="listener-d192f2ad" name="click" handler="onIpbGasClick"/>
+          <cl:attribute name="ignorePolicy" value="Y"/>
+          <cl:relativebind property="value" columnname="GAS06_CH1"/>
+          <cl:formdata std:sid="f-data-c7d67c1e" row="6" col="1"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-c788d910" id="ipbGas7Ch1" class="text-right" fieldLabel="O2">
+          <cl:listener std:sid="listener-bdb79122" name="click" handler="onIpbGasClick"/>
+          <cl:attribute name="ignorePolicy" value="Y"/>
+          <cl:relativebind property="value" columnname="GAS07_CH1"/>
+          <cl:formdata std:sid="f-data-f9eaebe9" row="7" col="0"/>
+        </cl:inputbox>
+        <cl:formlayout std:sid="f-layout-b35f4a0e" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="20"/>
+          <cl:rows length="20"/>
+          <cl:rows length="20"/>
+          <cl:rows length="20"/>
+          <cl:rows length="20"/>
+          <cl:rows length="20"/>
+          <cl:rows length="20"/>
+          <cl:rows length="20"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-78bcc07a" id="grp28">
+        <cl:verticaldata std:sid="v-data-7161c71b" width="148px" height="205px"/>
+        <cl:numbereditor std:sid="n-editor-be7fc37a" id="nbe22" spinbutton="false" format="s#,##0.0">
+          <cl:relativebind property="value" columnname="RF_POWER_CH2"/>
+          <cl:formdata std:sid="f-data-7f2d2c7a" row="2" col="0"/>
+        </cl:numbereditor>
+        <cl:numbereditor std:sid="n-editor-94d05ed2" id="nbe23" spinbutton="false" format="s#,##0.0">
+          <cl:relativebind property="value" columnname="RF_SHUNT_CH2"/>
+          <cl:formdata std:sid="f-data-2e460cbf" row="3" col="0"/>
+        </cl:numbereditor>
+        <cl:numbereditor std:sid="n-editor-8d5b365a" id="nbe30" spinbutton="false" format="s#,##0.0">
+          <cl:relativebind property="value" columnname="RF_POWER_TIME_CH2"/>
+          <cl:formdata std:sid="f-data-2633e902" row="2" col="1"/>
+        </cl:numbereditor>
+        <cl:numbereditor std:sid="n-editor-3d74d32a" id="nbe31" spinbutton="false" format="s#,##0.0">
+          <cl:relativebind property="value" columnname="RF_SERIES_CH2"/>
+          <cl:formdata std:sid="f-data-762b91a1" row="3" col="1"/>
+        </cl:numbereditor>
+        <cl:inputbox std:sid="i-box-83c0c9be" id="ipbPresCh2" class="text-center">
+          <cl:listener std:sid="listener-31d8c97b" name="click" handler="onIpbPresCHClick"/>
+          <cl:attribute name="ignorePolicy" value="Y"/>
+          <cl:relativebind property="value" columnname="PRESSURE_CH2"/>
+          <cl:formdata std:sid="f-data-7b9816d7" row="0" col="0" rowspan="1" colspan="2"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-fce4d425" id="ipbHeatCh2" class="text-right">
+          <cl:listener std:sid="listener-fec865b4" name="click" handler="onIpbHeatChClick"/>
+          <cl:attribute name="ignorePolicy" value="Y"/>
+          <cl:relativebind property="value" columnname="HEATER_SPACING_CH2"/>
+          <cl:formdata std:sid="f-data-5884fb26" row="1" col="0" rowspan="1" colspan="2"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-ca06ee5b" id="ipbGas2Ch2" class="text-right" fieldLabel="Ar">
+          <cl:listener std:sid="listener-d860d952" name="click" handler="onIpbGasClick"/>
+          <cl:attribute name="ignorePolicy" value="Y"/>
+          <cl:relativebind property="value" columnname="GAS02_CH2"/>
+          <cl:formdata std:sid="f-data-61028b42" row="4" col="1"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-936a525c" id="ipbGas3Ch2" class="text-right" fieldLabel="CF4">
+          <cl:listener std:sid="listener-6217661a" name="click" handler="onIpbGasClick"/>
+          <cl:attribute name="ignorePolicy" value="Y"/>
+          <cl:relativebind property="value" columnname="GAS03_CH2"/>
+          <cl:formdata std:sid="f-data-c9340a20" row="5" col="0"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-1cfb9628" id="ipbGas5Ch2" class="text-right" fieldLabel="CH2F2">
+          <cl:listener std:sid="listener-28e1af47" name="click" handler="onIpbGasClick"/>
+          <cl:attribute name="ignorePolicy" value="Y"/>
+          <cl:relativebind property="value" columnname="GAS05_CH2"/>
+          <cl:formdata std:sid="f-data-f324ba58" row="6" col="0"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-04ff98e7" id="ipbGas6Ch2" class="text-right" fieldLabel="N2">
+          <cl:listener std:sid="listener-d12b8881" name="click" handler="onIpbGasClick"/>
+          <cl:attribute name="ignorePolicy" value="Y"/>
+          <cl:relativebind property="value" columnname="GAS06_CH2"/>
+          <cl:formdata std:sid="f-data-614f8b78" row="6" col="1"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-6bf27e17" id="ipbGas7Ch2" class="text-right" fieldLabel="O2">
+          <cl:listener std:sid="listener-418ce98a" name="click" handler="onIpbGasClick"/>
+          <cl:attribute name="ignorePolicy" value="Y"/>
+          <cl:relativebind property="value" columnname="GAS07_CH2"/>
+          <cl:formdata std:sid="f-data-eeb67058" row="7" col="0"/>
+        </cl:inputbox>
+        <cl:formlayout std:sid="f-layout-a9b78f91" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="20"/>
+          <cl:rows length="20"/>
+          <cl:rows length="20"/>
+          <cl:rows length="20"/>
+          <cl:rows length="20"/>
+          <cl:rows length="20"/>
+          <cl:rows length="20"/>
+          <cl:rows length="20"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-f86cf3ae"/>
+    </cl:group>
+    <cl:combobox std:sid="c-box-6193e1c2" id="cmbHost" hidebutton="true" preventinput="true">
+      <cl:datamapbind property="value" datacontrolid="dmStepInfo" columnname="SELECT_HOST"/>
+      <cl:formdata std:sid="f-data-4ae73fdb" row="1" col="0"/>
+      <cl:itemset datasetid="dsSelectHostList" label="label" value="value"/>
+    </cl:combobox>
+    <cl:formlayout std:sid="f-layout-113a706d" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+      <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+      <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

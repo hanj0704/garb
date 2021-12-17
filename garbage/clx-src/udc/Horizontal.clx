@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-62c99d41" version="1.0.0.0">
+  <head std:sid="head-a505cc36">
+    <title>Horizontal</title>
+    <screen std:sid="screen-598e62e6" id="default" customHeight="600" customWidth="800" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-a9d3efd9" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-f3331b79" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-5e9cdb68"/>
+    <cl:appspec>
+      <cl:property name="optValue" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-159caae3" style="top:0px; border-top-width:1px; border-bottom-color:red; left:0px; width:40px; border-bottom-width:1px; border-top-color:red; border-bottom-style:solid; border-top-style:solid; height:100px;">
+    <cl:output std:sid="output-c56b0242" id="opt1" style="text-align:right;">
+      <cl:apppropbind property="value" app-property="optValue"/>
+      <cl:xylayoutdata std:sid="xyl-data-9faf26be" height="30px" horizontalAnchor="BOTH" left="0px" right="0px" verticalAnchor="CENTER"/>
+    </cl:output>
+    <cl:output std:sid="output-21c48309" id="opt2" style="border-right-style:solid; border-top-width:1px; border-bottom-color:red; border-left-style:solid; border-right-width:1px; border-bottom-width:1px; border-left-color:red; border-top-color:red; border-bottom-style:solid; border-right-color:red; border-left-width:1px; border-top-style:solid;">
+      <cl:xylayoutdata std:sid="xyl-data-fd9a4b09" bottom="0px" horizontalAnchor="CENTER" top="0px" verticalAnchor="BOTH" width="1px"/>
+    </cl:output>
+    <cl:xylayout std:sid="xylayout-3cc67042" scrollable="false"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

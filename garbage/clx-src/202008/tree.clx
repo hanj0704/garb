@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ae6e7b83" version="1.0.0.0">
+  <head std:sid="head-7b97e461">
+    <title>tree</title>
+    <screen std:sid="screen-e95e2863" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-8c17a6af" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-6e3b240c" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-992d8b8e">
+      <cl:dataset std:sid="d-set-9f21aa7d" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-26006603" name="HEADER_NM"/>
+          <cl:datacolumn std:sid="d-column-e89ce8bf" name="HEADER_ID"/>
+          <cl:datacolumn std:sid="d-column-8b58e430" name="PARENT_HDRID"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist/>
+      </cl:dataset>
+      <cl:submission std:sid="submission-8d6d60c5" id="sms1" action="202008/treeData.json">
+        <cl:listener std:sid="listener-10b2d65b" name="submit-done" handler="onSms1SubmitDone"/>
+        <cl:responsedata dataid="ds1"/>
+      </cl:submission>
+      <cl:dataset std:sid="d-set-ed983530" id="ds2">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-1f616d82" name="label"/>
+          <cl:datacolumn std:sid="d-column-cca45ff0" name="value"/>
+          <cl:datacolumn std:sid="d-column-2739711a" name="parent"/>
+          <cl:datacolumn std:sid="d-column-daca15d3" name="label2"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[User ID]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[User ID]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[202008/tab1]]></cl:datavalue>
+            <cl:datavalue columnname="label2"><![CDATA[User ID]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[Transaction Branch]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[Transaction Branch]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[202008/tab2]]></cl:datavalue>
+            <cl:datavalue columnname="label2"><![CDATA[Transaction Branch]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-8b228747" id="ds3">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-5f591a85" name="column1" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-2011d90b" name="column2" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-be3d3520" name="column3" datatype="number"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-4d98c7ef" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-f4e46902" name="load" handler="onBodyLoad"/>
+    <cl:tree std:sid="tree-822faded" id="tre1">
+      <cl:listener std:sid="listener-8e2ce09a" name="selection-change" handler="onTre1SelectionChange"/>
+      <cl:listener std:sid="listener-994204b9" name="item-click" handler="onTre1ItemClick"/>
+      <cl:xylayoutdata std:sid="xyl-data-469b6c42" top="0px" bottom="0px" left="0px" width="200px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+      <cl:treeitemset datasetid="ds2" label="label" value="value"/>
+    </cl:tree>
+    <cl:group std:sid="group-48f79fbd" style="background-color:white; background-image:none;">
+      <cl:xylayoutdata std:sid="xyl-data-06beda4c" top="0px" right="0px" left="200px" height="54px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+      <cl:combobox std:sid="c-box-0f946d0e" id="cmb1">
+        <cl:listener std:sid="listener-84e7d423" name="selection-change" handler="onCmb1SelectionChange"/>
+        <cl:attribute name="language" value="Y"/>
+        <cl:xylayoutdata std:sid="xyl-data-0db63504" top="16px" right="130px" width="100px" height="20px" horizontalAnchor="RIGHT" verticalAnchor="TOP"/>
+        <cl:item std:sid="item-f8059d96" label="ko" value="ko"/>
+        <cl:item std:sid="item-fa726171" label="en" value="en"/>
+      </cl:combobox>
+      <cl:button std:sid="button-f3375c74" id="btn1" value="click">
+        <cl:listener std:sid="listener-7d9fe3e7" name="click" handler="onButtonClick"/>
+        <cl:xylayoutdata std:sid="xyl-data-f10d9916" top="12px" right="20px" width="100px" height="28px" horizontalAnchor="RIGHT" verticalAnchor="TOP"/>
+      </cl:button>
+      <cl:output std:sid="output-927eee4a" value="User ID">
+        <cl:xylayoutdata std:sid="xyl-data-12c353bd" top="16px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      </cl:output>
+      <cl:xylayout std:sid="xylayout-01f4b944"/>
+    </cl:group>
+    <cl:mdifolder std:sid="mdifolder-0e9535c5" id="mdi1">
+      <cl:xylayoutdata std:sid="xyl-data-ac68fe06" top="53px" right="0px" bottom="100px" left="200px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+    </cl:mdifolder>
+    <cl:group std:sid="group-c6fd9b88">
+      <cl:xylayoutdata std:sid="xyl-data-c389b97a" top="667px" left="200px" width="825px" height="101px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:xylayout std:sid="xylayout-72bde5cc"/>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-d8995a00"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

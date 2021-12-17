@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-dc656ca0" version="1.0.0.0">
+  <head std:sid="head-34665178">
+    <title>PivotExam</title>
+    <screen std:sid="screen-788ecbc5" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-157bcafc" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-b7ddf8e5" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-ea2180e4">
+      <cl:dataset std:sid="d-set-172cc524" id="dsList">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-c4af682e" name="R_CAT"/>
+          <cl:datacolumn std:sid="d-column-405c077f" name="C_CAT1"/>
+          <cl:datacolumn std:sid="d-column-cfac7e32" name="C_CAT2"/>
+          <cl:datacolumn std:sid="d-column-434d828c" name="C_CAT3"/>
+          <cl:datacolumn std:sid="d-column-21b6c6ec" datatype="number" name="VALUE"/>
+          <cl:datacolumn std:sid="d-column-d018f4d6" name="DUMMY1"/>
+          <cl:datacolumn std:sid="d-column-2e7c63e3" name="DUMMY2"/>
+          <cl:datacolumn std:sid="d-column-1d64d19e" name="DUMMY3"/>
+          <cl:datacolumn std:sid="d-column-11a55eed" name="DUMMY4"/>
+          <cl:datacolumn std:sid="d-column-96e3ef73" name="DUMMY5"/>
+          <cl:datacolumn std:sid="d-column-9687bbb7" name="DUMMY6"/>
+          <cl:datacolumn std:sid="d-column-c9f29572" name="DUMMY7"/>
+          <cl:datacolumn std:sid="d-column-7c73b944" name="DUMMY8"/>
+          <cl:datacolumn std:sid="d-column-459b45b9" name="DUMMY9"/>
+          <cl:datacolumn std:sid="d-column-371fbad2" name="DUMMY10"/>
+          <cl:datacolumn std:sid="d-column-90b041ee" name="DUMMY11"/>
+          <cl:datacolumn std:sid="d-column-e10ecf48" name="DUMMY12"/>
+          <cl:datacolumn std:sid="d-column-65dc1917" name="DUMMY13"/>
+          <cl:datacolumn std:sid="d-column-3ae48fd8" name="DUMMY14"/>
+          <cl:datacolumn std:sid="d-column-8c425b4f" name="DUMMY15"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-169a5229" id="subList" action="data/pf3/pivot-raw.json">
+        <cl:responsedata dataid="dsList"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-e1ca9d02" style="background-color:transparent; top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-f068b8f7" handler="onBodyLoad" name="load"/>
+    <cl:group std:sid="group-fb05758d" id="grp2">
+      <cl:xylayoutdata std:sid="xyl-data-9841b651" bottom="5px" horizontalAnchor="BOTH" left="5px" right="5px" top="5px" verticalAnchor="BOTH"/>
+      <cl:udc std:sid="ud-control-4b0e82cf" id="pivothelper1" type="udc.com.PivotHelper">
+        <cl:listener std:sid="listener-306941df" handler="onPivothelper1Update" name="update"/>
+        <cl:xylayoutdata std:sid="xyl-data-9f44af5d" bottom="0px" horizontalAnchor="RIGHT" right="0px" top="0px" verticalAnchor="BOTH" width="300px"/>
+        <cl:property name="targetGrid" type="control" value="grd1"/>
+      </cl:udc>
+      <cl:group std:sid="group-84d9b9dc" id="grp1" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#bbbbbb; border-right-width:1px; border-left-style:solid; border-bottom-width:1px; border-left-color:#bbbbbb; border-top-color:#bbbbbb; border-bottom-style:solid; border-right-color:#bbbbbb; border-left-width:1px; border-top-style:solid;">
+        <cl:xylayoutdata std:sid="xyl-data-6ba96605" bottom="0px" horizontalAnchor="BOTH" left="0px" right="305px" top="0px" verticalAnchor="BOTH"/>
+        <cl:grid std:sid="grid-ff9166d6" id="grd1" columnMovable="true" columnResizable="true" datasetid="dsList" readonly="true" selectionmulti="multi">
+          <cl:xylayoutdata std:sid="xyl-data-0651a6fd" bottom="10px" horizontalAnchor="BOTH" left="10px" right="10px" top="50px" verticalAnchor="BOTH"/>
+          <cl:gridcolumn std:sid="g-column-f99e4651"/>
+          <cl:gridcolumn std:sid="g-column-8ddc5ee4"/>
+          <cl:gridcolumn std:sid="g-column-c0db5387"/>
+          <cl:gridcolumn std:sid="g-column-1914d45d"/>
+          <cl:gridcolumn std:sid="g-column-40f9469f"/>
+          <cl:gridcolumn std:sid="g-column-094cd5c6"/>
+          <cl:gridcolumn std:sid="g-column-22f33eac"/>
+          <cl:gridcolumn std:sid="g-column-7dcc8677"/>
+          <cl:gridcolumn std:sid="g-column-04292b04"/>
+          <cl:gridcolumn std:sid="g-column-bbd08be6"/>
+          <cl:gridcolumn std:sid="g-column-f6ac7e20"/>
+          <cl:gridcolumn std:sid="g-column-89bb8708"/>
+          <cl:gridcolumn std:sid="g-column-246e51fc"/>
+          <cl:gridcolumn std:sid="g-column-712ac7a5"/>
+          <cl:gridcolumn std:sid="g-column-d3b42467"/>
+          <cl:gridcolumn std:sid="g-column-f16103dc"/>
+          <cl:gridcolumn std:sid="g-column-decffbd6"/>
+          <cl:gridcolumn std:sid="g-column-7902db69"/>
+          <cl:gridcolumn std:sid="g-column-3ef419c1"/>
+          <cl:gridcolumn std:sid="g-column-9d354d6a"/>
+          <cl:gridheader std:sid="gh-band-60f4406f">
+            <cl:gridrow std:sid="g-row-a23a6d94" height="35px"/>
+            <cl:gridcell std:sid="gh-cell-c741d8b4" colindex="0" rowindex="0" filterable="false" sortable="false" targetcolumnname="R_CAT" text="R_CAT"/>
+            <cl:gridcell std:sid="gh-cell-0fcc53af" colindex="1" rowindex="0" filterable="false" sortable="false" targetcolumnname="C_CAT1" text="C_CAT1"/>
+            <cl:gridcell std:sid="gh-cell-d0971200" colindex="2" rowindex="0" filterable="false" sortable="false" targetcolumnname="C_CAT2" text="C_CAT2"/>
+            <cl:gridcell std:sid="gh-cell-71a1de15" colindex="3" rowindex="0" filterable="false" sortable="false" targetcolumnname="C_CAT3" text="C_CAT3"/>
+            <cl:gridcell std:sid="gh-cell-f32fe071" colindex="4" rowindex="0" filterable="false" sortable="false" targetcolumnname="VALUE" text="VALUE"/>
+            <cl:gridcell std:sid="gh-cell-4b2980b6" colindex="5" rowindex="0" filterable="false" sortable="false" targetcolumnname="DUMMY1" text="DUMMY1"/>
+            <cl:gridcell std:sid="gh-cell-21749840" colindex="6" rowindex="0" filterable="false" sortable="false" targetcolumnname="DUMMY2" text="DUMMY2"/>
+            <cl:gridcell std:sid="gh-cell-dc849175" colindex="7" rowindex="0" filterable="false" sortable="false" targetcolumnname="DUMMY3" text="DUMMY3"/>
+            <cl:gridcell std:sid="gh-cell-e3a5a491" colindex="8" rowindex="0" filterable="false" sortable="false" targetcolumnname="DUMMY4" text="DUMMY4"/>
+            <cl:gridcell std:sid="gh-cell-bb742c62" colindex="9" rowindex="0" filterable="false" sortable="false" targetcolumnname="DUMMY5" text="DUMMY5"/>
+            <cl:gridcell std:sid="gh-cell-af29acca" colindex="10" rowindex="0" filterable="false" sortable="false" targetcolumnname="DUMMY6" text="DUMMY6"/>
+            <cl:gridcell std:sid="gh-cell-f8e8c6b4" colindex="11" rowindex="0" filterable="false" sortable="false" targetcolumnname="DUMMY7" text="DUMMY7"/>
+            <cl:gridcell std:sid="gh-cell-aedbeed6" colindex="12" rowindex="0" filterable="false" sortable="false" targetcolumnname="DUMMY8" text="DUMMY8"/>
+            <cl:gridcell std:sid="gh-cell-d27f9f8d" colindex="13" rowindex="0" filterable="false" sortable="false" targetcolumnname="DUMMY9" text="DUMMY9"/>
+            <cl:gridcell std:sid="gh-cell-a962373a" colindex="14" rowindex="0" filterable="false" sortable="false" targetcolumnname="DUMMY10" text="DUMMY10"/>
+            <cl:gridcell std:sid="gh-cell-4c995b95" colindex="15" rowindex="0" filterable="false" sortable="false" targetcolumnname="DUMMY11" text="DUMMY11"/>
+            <cl:gridcell std:sid="gh-cell-32ac40ee" colindex="16" rowindex="0" filterable="false" sortable="false" targetcolumnname="DUMMY12" text="DUMMY12"/>
+            <cl:gridcell std:sid="gh-cell-775000e0" colindex="17" rowindex="0" filterable="false" sortable="false" targetcolumnname="DUMMY13" text="DUMMY13"/>
+            <cl:gridcell std:sid="gh-cell-605caa54" colindex="18" rowindex="0" filterable="false" sortable="false" targetcolumnname="DUMMY14" text="DUMMY14"/>
+            <cl:gridcell std:sid="gh-cell-f22e4ac8" colindex="19" rowindex="0" filterable="false" sortable="false" targetcolumnname="DUMMY15" text="DUMMY15"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-a0f5ad21">
+            <cl:gridrow std:sid="g-row-fbb2e1c3" height="35px"/>
+            <cl:gridcell std:sid="gd-cell-2903799a" colindex="0" rowindex="0" columnname="R_CAT">
+              <cl:inputbox std:sid="i-box-75e6c37e" id="ipb1"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-9f9c684a" colindex="1" rowindex="0" columnname="C_CAT1">
+              <cl:inputbox std:sid="i-box-97f3ec11" id="ipb2"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-42a26290" colindex="2" rowindex="0" columnname="C_CAT2">
+              <cl:inputbox std:sid="i-box-bd224d6e" id="ipb3"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-49da000c" colindex="3" rowindex="0" columnname="C_CAT3">
+              <cl:inputbox std:sid="i-box-a1aa3238" id="ipb4"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-5556bd74" colindex="4" rowindex="0" columnname="VALUE">
+              <cl:numbereditor std:sid="n-editor-3dc6da23" id="nbe1"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-99dc3ad2" colindex="5" rowindex="0" columnname="DUMMY1">
+              <cl:inputbox std:sid="i-box-f2000b53" id="ipb5"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-2fcb7e59" colindex="6" rowindex="0" columnname="DUMMY2">
+              <cl:inputbox std:sid="i-box-3170a818" id="ipb6"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-0d0b6d5e" colindex="7" rowindex="0" columnname="DUMMY3">
+              <cl:inputbox std:sid="i-box-1edf5d88" id="ipb7"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-b6786976" colindex="8" rowindex="0" columnname="DUMMY4">
+              <cl:inputbox std:sid="i-box-addc26b7" id="ipb8"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-9c8ab5cd" colindex="9" rowindex="0" columnname="DUMMY5">
+              <cl:inputbox std:sid="i-box-dc0779a1" id="ipb9"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-a1a78929" colindex="10" rowindex="0" columnname="DUMMY6">
+              <cl:inputbox std:sid="i-box-b8f0ce0b" id="ipb10"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-f5918b40" colindex="11" rowindex="0" columnname="DUMMY7">
+              <cl:inputbox std:sid="i-box-136c9bdb" id="ipb11"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-474d803f" colindex="12" rowindex="0" columnname="DUMMY8">
+              <cl:inputbox std:sid="i-box-62753dba" id="ipb12"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-5fdc23be" colindex="13" rowindex="0" columnname="DUMMY9">
+              <cl:inputbox std:sid="i-box-a4ce25fe" id="ipb13"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-089e3c72" colindex="14" rowindex="0" columnname="DUMMY10">
+              <cl:inputbox std:sid="i-box-0e71d731" id="ipb14"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-4021d458" colindex="15" rowindex="0" columnname="DUMMY11">
+              <cl:inputbox std:sid="i-box-25ade6ad" id="ipb15"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-d1dbcd32" colindex="16" rowindex="0" columnname="DUMMY12">
+              <cl:inputbox std:sid="i-box-a9e64720" id="ipb16"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-f1cecf8d" colindex="17" rowindex="0" columnname="DUMMY13">
+              <cl:inputbox std:sid="i-box-b2a401ff" id="ipb17"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-5e7562a8" colindex="18" rowindex="0" columnname="DUMMY14">
+              <cl:inputbox std:sid="i-box-14c9b229" id="ipb18"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-5f30e5f0" colindex="19" rowindex="0" columnname="DUMMY15">
+              <cl:inputbox std:sid="i-box-beb04f4d" id="ipb19"/>
+            </cl:gridcell>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:button std:sid="button-5cf114ab" id="btn1" value="Button">
+          <cl:listener std:sid="listener-2eb1968d" handler="onBtn1Click" name="click"/>
+          <cl:xylayoutdata std:sid="xyl-data-b2a57bbe" height="30px" horizontalAnchor="RIGHT" right="10px" top="10px" verticalAnchor="TOP" width="100px"/>
+        </cl:button>
+        <cl:button std:sid="button-2e50a492" id="btn2" value="Button">
+          <cl:listener std:sid="listener-811adb2a" handler="onBtn2Click" name="click"/>
+          <cl:xylayoutdata std:sid="xyl-data-591a5872" height="30px" horizontalAnchor="RIGHT" right="120px" top="10px" verticalAnchor="TOP" width="100px"/>
+        </cl:button>
+        <cl:button std:sid="button-09f8b830" id="btn3" value="Button">
+          <cl:listener std:sid="listener-5b8da1e9" handler="onBtn3Click" name="click"/>
+          <cl:xylayoutdata std:sid="xyl-data-19ee56c8" height="30px" horizontalAnchor="RIGHT" right="230px" top="10px" verticalAnchor="TOP" width="100px"/>
+        </cl:button>
+        <cl:xylayout std:sid="xylayout-53d0c228"/>
+      </cl:group>
+      <cl:xylayout std:sid="xylayout-4325c19c"/>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-e6501cde"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

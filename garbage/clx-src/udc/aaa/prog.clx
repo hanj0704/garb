@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-81c5c788" version="1.0.0.0">
+  <head std:sid="head-09b86cca">
+    <title>prog</title>
+    <screen std:sid="screen-bdde6ed9" id="default" name="default" minwidth="1024px" width="1024px" height="768px" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-77387b9f" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-8e8454c8" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-b68d7c3f"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-bb106459" style="top:0px; left:0px; width:300px; height:100px;">
+    <cl:progress std:sid="progress-371695be" id="pgr1" value="50">
+      <cl:xylayoutdata std:sid="xyl-data-8100b197" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+    </cl:progress>
+    <cl:output std:sid="output-a4d0c936" id="opt1" value="25%">
+      <cl:xylayoutdata std:sid="xyl-data-de572ced" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+    </cl:output>
+    <cl:xylayout std:sid="xylayout-a80fd775"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,239 @@
+@import "../settings.part.less";
+@import "../custom-settings.part.less";
+
+ /* 라디오 버튼 */
+.cl-radiobutton {
+	font: @default-font;
+	color: @default-text-color;
+	
+
+	/* 라디오 버튼 아이템 */
+	.cl-radiobutton-item {
+		padding : 0px;
+		
+		.cl-radiobutton-icon {
+			background-image : url(images/icon/radiobutton_default_light.png);
+			width : 12px;
+			height: 12px;
+			margin-left : 0px;
+		}
+
+		/* 아이콘 정렬을 설정 */
+		.cl-icon-wrapper {
+			// vertical-align: baseline;
+		}
+
+		/* 라디오 버튼 아이템 텍스트 */
+		.cl-text {
+			/* 한 줄/말줄임 style 적용 */
+			// overflow: hidden;
+			// text-overflow: ellipsis;
+			// white-space: nowrap;
+
+			/* 여러 줄 style 적용 */
+			// white-space: pre-wrap;
+			// word-break: break-all;
+			
+			padding-left : 5px;
+		}
+
+		&.cl-selected {
+			/* 라디오 버튼 아이템 아이콘 - 선택됨 */
+			.cl-radiobutton-icon {
+				 background-image: url(images/icon/radiobutton_active_light.png);
+			}
+		}
+	}
+
+	&.cl-focus {
+		.cl-radiobutton-item {
+			&.cl-selected {
+				/* 라디오 버튼 아이템 아이콘 - focus */
+				.cl-radiobutton-icon {
+					 background-image: url(images/icon/radiobutton_active_light.png);
+				}
+			}
+		}
+	}
+
+	/* 라디오 버튼 - disabled */
+	&.cl-disabled{
+		.cl-text {
+			color: @disabled-text-color;
+		}
+		
+		.cl-radiobutton-item {
+			.cl-radiobutton-icon {
+				background-image : url(images/radio_disabled.png);
+			}
+		}
+		
+		.cl-radiobutton-item.cl-selected {
+			/* 라디오 버튼 아이템 아이콘 - disabled, selected */
+			.cl-radiobutton-icon {
+				 background-image:url(images/radio_disabled_selected.png);
+			}
+		}
+	}
+
+}
+
+.cl-radiobutton:not(.cl-disabled){
+	.cl-radiobutton-item{
+		&:not(.cl-selected):not(.cl-disabled) {
+			/* 라디오 버튼 아이템 아이콘 - hover */
+			&:hover .cl-radiobutton-icon{
+				 background-image:url(images/icon/radiobutton_hover_light.png);
+			}
+		}
+		
+		&.cl-selected:not(.cl-disabled) {
+			&:hover, &.cl-hover {
+				.cl-radiobutton-icon {
+					 background-image:url(images/icon/radiobutton_active_light.png);
+				}
+			}
+		}
+	}
+}
+
+.cl-radiobutton.cl-disabled {
+	.cl-radiobutton-item {
+		&:hover, .cl-hover {
+			.cl-radiobutton-icon {
+				background-image : url(images/radio_disabled.png);
+			}
+		}
+		
+		&.cl-selected {
+			&:hover, .cl-hover {
+				.cl-radiobutton-icon {
+					background-image : url(images/radio_disabled_selected.png);
+				}
+			}
+		}
+	}
+}
+
+//dark
+ /* 라디오 버튼 */
+.cl-radiobutton.dark {
+	font: @default-font;
+	color: @color-text-white-04;
+	background-color : @color-filter-active-bg-dark;
+	/* 라디오 버튼 아이템 */
+	.cl-radiobutton-item {
+		
+		.cl-radiobutton-icon {
+			background-image : url(images/icon/radiobutton_default_dark.png);
+			margin-left : 0px;
+			width : 12px;
+			height: 12px;
+		}
+
+		/* 아이콘 정렬을 설정 */
+		.cl-icon-wrapper {
+			// vertical-align: baseline;
+		}
+
+		/* 라디오 버튼 아이템 텍스트 */
+		.cl-text {
+			/* 한 줄/말줄임 style 적용 */
+			// overflow: hidden;
+			// text-overflow: ellipsis;
+			// white-space: nowrap;
+
+			/* 여러 줄 style 적용 */
+			// white-space: pre-wrap;
+			// word-break: break-all;
+			padding-left : 5px;
+		}
+
+		&.cl-selected {
+			
+			/* 라디오 버튼 아이템 아이콘 - 선택됨 */
+			.cl-radiobutton-icon {
+				 background-image: url(images/icon/radiobutton_active_dark.png);
+			}
+		}
+	}
+
+	&.cl-focus {
+		.cl-radiobutton-item {
+						
+			&.cl-selected {
+				font-weight: @font-bold;
+				color: @color-text-white-01;
+				
+				/* 라디오 버튼 아이템 아이콘 - focus */
+				.cl-radiobutton-icon {
+					 background-image: url(images/icon/radiobutton_active_dark.png);
+				}
+			}
+		}
+	}
+
+	/* 라디오 버튼 - disabled */
+	&.cl-disabled{
+		.cl-text {
+			color: @disabled-text-color;
+		}
+		
+		.cl-radiobutton-item {
+			.cl-radiobutton-icon {
+				background-image : url(images/radio_disabled.png);
+			}
+		}
+		
+		.cl-radiobutton-item.cl-selected {
+			/* 라디오 버튼 아이템 아이콘 - disabled, selected */
+			.cl-radiobutton-icon {
+				 background-image:url(images/radio_disabled_selected.png);
+			}
+		}
+	}
+
+	&:not(.cl-disabled){
+		.cl-radiobutton-item{
+			&:not(.cl-selected):not(.cl-disabled) {
+				/* 라디오 버튼 아이템 아이콘 - hover */
+				&:hover .cl-radiobutton-icon{
+					 background-image:url(images/icon/radiobutton_hover_dark.png);
+				}
+			}
+			
+			&.cl-selected:not(.cl-disabled) {
+				&:hover, &.cl-hover {
+					.cl-radiobutton-icon {
+						 background-image:url(images/icon/radiobutton_active_dark.png);
+					}
+				}
+			}
+		}
+	}
+
+	&.cl-disabled {
+		.cl-radiobutton-item {
+			&:hover, .cl-hover {
+				.cl-radiobutton-icon {
+					background-image : url(images/radio_disabled.png);
+				}
+			}
+			
+			&.cl-selected {
+				&:hover, .cl-hover {
+					.cl-radiobutton-icon {
+						background-image : url(images/radio_disabled_selected.png);
+					}
+				}
+			}
+		}
+	}
+}
+
+.cl-radiobutton:focus .cl-radiobutton-item .cl-radiobutton-icon:focus,
+.cl-radiobutton.cl-focus .cl-radiobutton-item .cl-radiobutton-icon:focus,
+.cl-radiobutton:focus .cl-radiobutton-item .cl-radiobutton-icon.cl-focus,
+.cl-radiobutton.cl-focus .cl-radiobutton-item .cl-radiobutton-icon.cl-focus {
+  outline: none;
+}

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-61283848" version="1.0.3313">
+  <head std:sid="head-07d432ae">
+    <screen std:sid="screen-13667471" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-a402bfcd" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-48811d8a" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-e47f6531">
+      <cl:dataset std:sid="d-set-17481129" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-0d46c3a0" name="column1"/>
+          <cl:datacolumn std:sid="d-column-9f8dd358" name="column2"/>
+          <cl:datacolumn std:sid="d-column-5d00b302" name="column3"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column11</cl:datavalue>
+            <cl:datavalue columnname="column2">column21</cl:datavalue>
+            <cl:datavalue columnname="column3">column31</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column12</cl:datavalue>
+            <cl:datavalue columnname="column2">column22</cl:datavalue>
+            <cl:datavalue columnname="column3">column32</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column13</cl:datavalue>
+            <cl:datavalue columnname="column2">column23</cl:datavalue>
+            <cl:datavalue columnname="column3">column33</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column14</cl:datavalue>
+            <cl:datavalue columnname="column2">column24</cl:datavalue>
+            <cl:datavalue columnname="column3">column34</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-46225488">
+    <cl:udc std:sid="ud-control-e5fc37b6" id="ha" type="udc.han.test">
+      <cl:xylayoutdata std:sid="xyl-data-d5c06b9a" top="20px" left="20px" width="300px" height="300px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:property name="newProperty1" value="self.getParent().getChindren().indexOf(self)" type="expression"/>
+    </cl:udc>
+    <cl:button std:sid="button-9bda8c18" id="btn1" value="Button">
+      <cl:listener std:sid="listener-ddb6abac" name="click" handler="onBtn1Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-6544834d" top="20px" left="330px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:grid std:sid="grid-388c84d4" id="grd1" datasetid="ds1">
+      <cl:xylayoutdata std:sid="xyl-data-53e3b77b" top="50px" left="330px" width="625px" height="270px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:gridcolumn std:sid="g-column-dd6dab67" width="50px"/>
+      <cl:gridcolumn std:sid="g-column-b22889dc"/>
+      <cl:gridcolumn std:sid="g-column-fc35f639"/>
+      <cl:gridcolumn std:sid="g-column-2bfa2063"/>
+      <cl:gridheader std:sid="gh-band-81929cb3">
+        <cl:gridrow std:sid="g-row-7d4c1e19"/>
+        <cl:gridcell std:sid="gh-cell-dce5a089" rowindex="0" colindex="0" sortable="false" filterable="false"/>
+        <cl:gridcell std:sid="gh-cell-c3d348e4" rowindex="0" colindex="1" targetcolumnname="column1" sortable="false" filterable="false" text="column1"/>
+        <cl:gridcell std:sid="gh-cell-b2e4ae4a" rowindex="0" colindex="2" targetcolumnname="column2" sortable="false" filterable="false" text="column2"/>
+        <cl:gridcell std:sid="gh-cell-1992eeb0" rowindex="0" colindex="3" targetcolumnname="column3" sortable="false" filterable="false" text="column3"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-d5ec8cb1">
+        <cl:gridrow std:sid="g-row-8c3fedcb"/>
+        <cl:gridcell std:sid="gd-cell-ee6f0a37" rowindex="0" colindex="0" columntype="rowindex"/>
+        <cl:gridcell std:sid="gd-cell-a7deb185" rowindex="0" colindex="1" columnname="column1"/>
+        <cl:gridcell std:sid="gd-cell-d08ce9f9" rowindex="0" colindex="2" columnname="column2"/>
+        <cl:gridcell std:sid="gd-cell-cffa111e" rowindex="0" colindex="3" columnname="column3"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:button std:sid="button-89155975" id="btn2" value="insert">
+      <cl:listener std:sid="listener-c341dab5" name="click" handler="onBtn2Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-4f460246" top="20px" left="745px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-39e25ab0" id="btn3" value="delete">
+      <cl:xylayoutdata std:sid="xyl-data-8b9fe5c1" top="20px" left="855px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:group std:sid="group-74e6cb96" id="grp1">
+      <cl:datarowcontext datacontrolid="ds1" rowindex="2"/>
+      <cl:xylayoutdata std:sid="xyl-data-0adb40d4" top="330px" left="492px" width="320px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:inputbox std:sid="i-box-fb582be4" id="ipb1">
+        <cl:relativebind property="value" columnname="column1"/>
+        <cl:xylayoutdata std:sid="xyl-data-5fb1c51f" top="0px" left="0px" width="100px" height="20px"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-38dff80b" id="ipb2">
+        <cl:relativebind property="value" columnname="column2"/>
+        <cl:xylayoutdata std:sid="xyl-data-30d1082f" top="0px" left="110px" width="100px" height="20px"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-b24f953e" id="ipb3">
+        <cl:relativebind property="value" columnname="column3"/>
+        <cl:xylayoutdata std:sid="xyl-data-67a80256" top="0px" left="220px" width="100px" height="20px"/>
+      </cl:inputbox>
+      <cl:xylayout std:sid="xylayout-fda467fc"/>
+    </cl:group>
+    <cl:group std:sid="group-c457316a" id="grp2">
+      <cl:xylayoutdata std:sid="xyl-data-d9838d8c" top="360px" left="172px" width="321px" height="174px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:button std:sid="button-988f30ff" id="btn4" value="Button">
+        <cl:xylayoutdata std:sid="xyl-data-15c44d94" top="500px" left="145px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      </cl:button>
+      <cl:xylayout std:sid="xylayout-c8aa60ec"/>
+    </cl:group>
+    <cl:button std:sid="button-9fa099f3" id="btn5">
+      <cl:datasetbind property="value" category="PROPERTY" datacontrolid="ds1" columnname="column1" rowindex="1"/>
+      <cl:xylayoutdata std:sid="xyl-data-b09f443c" top="360px" left="612px" width="91px" height="26px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-e0d8e898"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

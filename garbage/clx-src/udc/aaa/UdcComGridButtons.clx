@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-d35ecc64" version="1.0.0.0">
+  <head std:sid="head-9fa0b568">
+    <title>UdcComGridButtons</title>
+    <screen std:sid="screen-51ab87e0" id="default" name="default" minwidth="1024px" width="1024px" height="768px" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-1fecd0f8" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-3265275a" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-8b634ee5">
+      <cl:submission std:sid="submission-f4d2982d" id="subDirectExport" mediatype="application/json" responsetype="blob"/>
+    </cl:model>
+    <cl:appspec title="공통_그리드버튼(UdcComGridButtons)">
+      <cl:property name="grid" type="control" std:desc="해당 UDC가 제어할 그리드"/>
+      <cl:property name="btnSaveVisible" type="boolean" default="true" bindable="true"/>
+      <cl:property name="btnAddRowVisible" type="boolean" default="true" bindable="true"/>
+      <cl:property name="btnDelRowVisible" type="boolean" default="true" bindable="true"/>
+      <cl:property name="btnExcelVisible" type="boolean" default="true" bindable="true"/>
+      <cl:property name="insertedFocusColNm" type="string" bindable="false" std:desc="insertRow 시 포커스 될 컬럼명(ex.CD_NM)"/>
+      <cl:property name="excelExportTitle" type="string" std:desc="엑셀 다운로드 시 엑셀파일 명"/>
+      <cl:property name="excelExportDsId" type="string"/>
+      <cl:property name="excelExportSubId" type="string"/>
+      <cl:property name="insertRowYn" type="boolean" default="true" std:desc="행추가시 UDC내부에서 insertRow할것인지"/>
+      <cl:event name="insertRow" type="cpr.events.CUIEvent" std:desc="연결 된 그리드에 행을 추가한다."/>
+      <cl:event name="deleteRow" type="cpr.events.CUIEvent" std:desc="연결 된 그리드에 행을 삭제한다."/>
+      <cl:event name="save" type="cpr.events.CUIEvent" std:desc="연결 된 그리드의 저장 함수를 작성할수 있다."/>
+      <cl:event name="excelDownload" type="cpr.events.CUIEvent" std:desc="연결 된 그리드의 조회조건에 해당하는 모든 데이터를 엑셀파일로 export 한다."/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-11f07b3c" style="top:0px; left:0px; width:500px; height:24px;">
+    <cl:listener std:sid="listener-20b9f88d" name="init" handler="onBodyInit"/>
+    <cl:listener std:sid="listener-ecf224ee" name="property-change" handler="onBodyPropertyChange"/>
+    <cl:listener std:sid="listener-2a4ab40a" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-11e972e5" id="grpContent">
+      <cl:xylayoutdata std:sid="xyl-data-fa323730" right="0px" left="0px" height="24px" horizontalAnchor="BOTH" verticalAnchor="CENTER"/>
+      <cl:button std:sid="button-f6aebfdb" id="btnExcel" class="btnExcel" value="다운로드">
+        <cl:listener std:sid="listener-81ccb887" name="click" handler="onBtnExcelClick"/>
+        <cl:formdata std:sid="f-data-094b409b" row="0" col="1"/>
+      </cl:button>
+      <cl:button std:sid="button-0a1f3f8d" id="btnAddRow" class="btnAddRow" value="행추가">
+        <cl:listener std:sid="listener-ae726373" name="click" handler="onBtnNewClick"/>
+        <cl:formdata std:sid="f-data-7537fcef" row="0" col="2"/>
+      </cl:button>
+      <cl:button std:sid="button-57fb8c55" id="btnDelRow" class="btnDelRow" value="행삭제">
+        <cl:listener std:sid="listener-3f8c9761" name="click" handler="onBtnDelClick"/>
+        <cl:formdata std:sid="f-data-d17281ed" row="0" col="3"/>
+      </cl:button>
+      <cl:button std:sid="button-2d22249a" id="btnSave" class="btnSave" value="저장">
+        <cl:listener std:sid="listener-6e05b8d3" name="click" handler="onBtnSaveClick"/>
+        <cl:formdata std:sid="f-data-c01f3082" row="0" col="4"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-022dcab3" hspace="3px" vspace="0px">
+        <cl:rows length="24" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="73" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="65" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="65" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="55" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-bb2575ec"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler>
+      <std:guide position="483"/>
+    </std:hruler>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

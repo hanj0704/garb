@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-41653d75" version="1.0.3313">
+  <head std:sid="head-7ecb7842">
+    <screen std:sid="screen-4be3858e" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-178e1298" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-4c738d67" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-aba783f4"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-b1c6f64f">
+    <cl:tabfolder std:sid="t-folder-b8eaf59a">
+      <cl:xylayoutdata std:sid="xyl-data-8a2d88ca" top="159px" left="20px" width="551px" height="314px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:tabitem std:sid="t-item-4e060d17" selected="true" text="tab1">
+        <cl:group std:sid="group-d9cb2d96" id="grp1">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:xylayout std:sid="xylayout-44beb11a"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-1cbb2c88" text="tab 2">
+        <cl:group std:sid="group-7fd0078f" id="grp2">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:xylayout std:sid="xylayout-1def59ee"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-be377aba" text="tab 3">
+        <std:metadata>
+          <std:property key="is-active-item" value="true"/>
+        </std:metadata>
+        <cl:group std:sid="group-06a0c8cf" id="grp3">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:xylayout std:sid="xylayout-f78b8000"/>
+        </cl:group>
+      </cl:tabitem>
+    </cl:tabfolder>
+    <cl:group std:sid="group-543dee02" id="grp4">
+      <cl:xylayoutdata std:sid="xyl-data-7822dc68" top="260px" left="741px" width="400px" height="200px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:xylayout std:sid="xylayout-9b521ac8"/>
+    </cl:group>
+    <cl:button std:sid="button-d988dda6" id="btn1" value="Button">
+      <cl:xylayoutdata std:sid="xyl-data-fb7c91fe" top="51px" left="669px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-8def0fad" id="btn2" value="Button">
+      <cl:listener std:sid="listener-75548a1a" name="click" handler="onBtn2Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-ff38535c" top="94px" left="669px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-34865603"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

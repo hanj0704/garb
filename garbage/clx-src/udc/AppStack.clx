@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ef73dcab" version="1.0.0.0">
+  <head std:sid="head-f0e5fa07">
+    <title>AppStack</title>
+    <screen std:sid="screen-d2c6aeb7" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-255fd564" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-7b46d518" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-6ba6dde5"/>
+    <cl:appspec dev-description="앱 전환 및 push/pop을 지원합니다." title="앱 스택">
+      <cl:property default="true" std:desc="이 값이 참이면, 브라우저의 히스토리 기록과 연동 됩니다." name="synchronizeWithHistory" type="boolean"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-6dd1b873" style="top:0px; left:0px; width:300px; height:300px;">
+    <cl:listener std:sid="listener-2b8d6a86" handler="onBodyPropertyChange" name="property-change"/>
+    <cl:listener std:sid="listener-dd733353" handler="onBodyUnload" name="unload"/>
+    <cl:xylayout std:sid="xylayout-6712f670"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

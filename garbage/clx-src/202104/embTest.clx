@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-945a3097" version="1.0.0.0">
+  <head std:sid="head-ef29ef26">
+    <title>embTest</title>
+    <screen std:sid="screen-03a6f634" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-8b106924" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-c4da496f" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-9e7cecc7"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-2bdebb5e" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-134d42a2" name="init" handler="onBodyInit"/>
+    <cl:listener std:sid="listener-87853771" name="load" handler="onBodyLoad"/>
+    <cl:embeddedapp std:sid="e-app-71078a82" id="ea1" src="tester.clx">
+      <cl:listener std:sid="listener-f88376ae" name="init" handler="onEa1Init"/>
+      <cl:listener std:sid="listener-13e57fa4" name="app-ready" handler="onEa1AppReady"/>
+      <cl:listener std:sid="listener-f7f315ed" name="load" handler="onEa1Load"/>
+      <cl:xylayoutdata std:sid="xyl-data-0c5c7458" top="20px" left="20px" width="320px" height="240px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:embeddedapp>
+    <cl:button std:sid="button-766ee3a7" id="btn1" value="Button">
+      <cl:listener std:sid="listener-c042fb5f" name="click" handler="onBtn1Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-d6fe3af3" top="298px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:embeddedapp std:sid="e-app-41362eab" id="ea2" src="../202006/BindTest.clx">
+      <cl:xylayoutdata std:sid="xyl-data-fe9d07fb" top="20px" left="350px" width="320px" height="240px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:embeddedapp>
+    <cl:embeddedapp std:sid="e-app-6a834774" id="ea3" src="Liner.clx">
+      <cl:xylayoutdata std:sid="xyl-data-62c0d84c" top="270px" left="350px" width="320px" height="240px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:embeddedapp>
+    <cl:xylayout std:sid="xylayout-b73afb0a"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

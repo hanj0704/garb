@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ea84a5e6" version="1.0.3167">
+  <head std:sid="head-d2521bbf">
+    <screen std:sid="screen-8ff23880" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-5831f5f8" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-14466d8c" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-c477c89a">
+      <cl:dataset std:sid="d-set-252fd35d" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-a53cedc8" name="label"/>
+          <cl:datacolumn std:sid="d-column-1fc9dabb" name="value"/>
+          <cl:datacolumn std:sid="d-column-363e0c0b" name="shgape"/>
+          <cl:datacolumn std:sid="d-column-1a538a91" name="coords"/>
+          <cl:datacolumn std:sid="d-column-01873449" name="cla"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[label2]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[value2]]></cl:datavalue>
+            <cl:datavalue columnname="shgape"><![CDATA[poly]]></cl:datavalue>
+            <cl:datavalue columnname="coords"><![CDATA[305,121,388,121,388,198,493,198,493,121]]></cl:datavalue>
+            <cl:datavalue columnname="cla"><![CDATA[red]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[label3]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[value3]]></cl:datavalue>
+            <cl:datavalue columnname="shgape"><![CDATA[poly]]></cl:datavalue>
+            <cl:datavalue columnname="coords"><![CDATA[319,263,519,263,498,285,442,285,420,263]]></cl:datavalue>
+            <cl:datavalue columnname="cla"><![CDATA[blue]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[label1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[value1]]></cl:datavalue>
+            <cl:datavalue columnname="shgape"><![CDATA[poly]]></cl:datavalue>
+            <cl:datavalue columnname="coords"><![CDATA[62,42,62,195,93,259,116,259,116,212,116,42]]></cl:datavalue>
+            <cl:datavalue columnname="cla"><![CDATA[yellow]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-cc6b5515" id="ds2">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-d404dfb0" name="label"/>
+          <cl:datacolumn std:sid="d-column-a7a68146" name="value"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label1</cl:datavalue>
+            <cl:datavalue columnname="value">value1</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label2</cl:datavalue>
+            <cl:datavalue columnname="value">value2</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label3</cl:datavalue>
+            <cl:datavalue columnname="value">value3</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label4</cl:datavalue>
+            <cl:datavalue columnname="value">value4</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[aaaaaaaaaaaa]]></cl:datavalue>
+            <cl:datavalue columnname="value">value5</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label6</cl:datavalue>
+            <cl:datavalue columnname="value">value6</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label7</cl:datavalue>
+            <cl:datavalue columnname="value">value7</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label8</cl:datavalue>
+            <cl:datavalue columnname="value">value8</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label9</cl:datavalue>
+            <cl:datavalue columnname="value">value9</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-5eec7132">
+    <cl:listener std:sid="listener-6499f4c0" name="init" handler="onBodyInit"/>
+    <cl:group std:sid="group-a58daf0a" id="grp1" class="cl-form-group">
+      <cl:verticaldata std:sid="v-data-86286ee5" width="984px" height="396px" autosize="height"/>
+      <cl:checkboxgroup std:sid="cb-group-3b5f0585" id="cbg1" fixedwidth="95">
+        <cl:listener std:sid="listener-a683bbb9" name="before-selection-change" handler="onCbg1BeforeSelectionChange"/>
+        <cl:listener std:sid="listener-d0bd1cc7" name="selection-change" handler="onCbg1SelectionChange"/>
+        <cl:formdata std:sid="f-data-9801ada4" row="0" col="1"/>
+        <cl:item std:sid="item-8971dba5" label="label1" value="value1"/>
+        <cl:item std:sid="item-4c78c793" label="label3" value="value2"/>
+        <cl:item std:sid="item-2c89015e" label="label2" value="value3"/>
+        <cl:item std:sid="item-86208ce8" label="label4" value="value4"/>
+        <cl:item std:sid="item-0a58bdb5" label="label5" value="value5"/>
+        <cl:item std:sid="item-6e1776e7" label="aaaaaaaaaaaaaaaa" value="value6"/>
+        <cl:item std:sid="item-eb9cfad6" label="label7" value="value7"/>
+        <cl:item std:sid="item-12d6573a" label="label8" value="value8"/>
+        <cl:item std:sid="item-0c5ace04" label="label9" value="value9"/>
+      </cl:checkboxgroup>
+      <cl:group std:sid="group-b5c6627f" id="grp2">
+        <cl:formdata std:sid="f-data-0d732452" row="0" col="3"/>
+        <cl:checkbox std:sid="c-box-e49e927e" id="cbx1" text="label1">
+          <cl:listener std:sid="listener-88ac4a60" name="before-value-change" handler="onCbx1BeforeValueChange"/>
+          <cl:flowlayoutdata std:sid="f-data-6bf33382" width="101px" height="20px" autosize="both"/>
+        </cl:checkbox>
+        <cl:checkbox std:sid="c-box-b489b7cf" id="cbx2" text="label1">
+          <cl:flowlayoutdata std:sid="f-data-ccdd8822" width="101px" height="20px" autosize="both"/>
+        </cl:checkbox>
+        <cl:checkbox std:sid="c-box-a7c9643b" id="cbx3" text="label1">
+          <cl:flowlayoutdata std:sid="f-data-52a1b91b" width="101px" height="20px" autosize="both"/>
+        </cl:checkbox>
+        <cl:checkbox std:sid="c-box-5db28082" id="cbx8" text="label1">
+          <cl:flowlayoutdata std:sid="f-data-d6df885d" width="101px" height="20px" autosize="both"/>
+        </cl:checkbox>
+        <cl:checkbox std:sid="c-box-f6d14ca4" id="cbx7" text="label1">
+          <cl:flowlayoutdata std:sid="f-data-64fc940e" width="101px" height="20px" autosize="both"/>
+        </cl:checkbox>
+        <cl:checkbox std:sid="c-box-1d8e1150" id="cbx6" text="aaaaaaaaaaaaaaaa">
+          <cl:flowlayoutdata std:sid="f-data-22a44f0e" width="101px" height="20px" autosize="both"/>
+        </cl:checkbox>
+        <cl:checkbox std:sid="c-box-db1b0025" id="cbx5" text="label1">
+          <cl:flowlayoutdata std:sid="f-data-c3498203" width="101px" height="20px" autosize="both"/>
+        </cl:checkbox>
+        <cl:checkbox std:sid="c-box-a3b6cc6d" id="cbx4" text="label1">
+          <cl:flowlayoutdata std:sid="f-data-f13105c0" width="101px" height="20px" autosize="both"/>
+        </cl:checkbox>
+        <cl:checkbox std:sid="c-box-7a94d025" id="cbx9" text="label1">
+          <cl:flowlayoutdata std:sid="f-data-a102687e" width="101px" height="20px" autosize="both"/>
+        </cl:checkbox>
+        <cl:flowlayout std:sid="f-layout-4809454b"/>
+      </cl:group>
+      <cl:udc std:sid="ud-control-99166f2d" id="c1" type="udc.aaa.customCbxGrp">
+        <cl:listener std:sid="listener-4ff8a088" name="before-value-change" handler="onC1BeforeValueChange"/>
+        <cl:listener std:sid="listener-2bf34f39" name="before-selection-change" handler="onC1BeforeSelectionChange"/>
+        <cl:listener std:sid="listener-d0938cb3" name="selection-change" handler="onC1SelectionChange"/>
+        <cl:formdata std:sid="f-data-19abb468" row="1" col="3"/>
+        <cl:property name="dataSet" value="ds2" type="control"/>
+        <cl:property name="labelColumn" value="label" type="string"/>
+        <cl:property name="valueColumn" value="value" type="string"/>
+      </cl:udc>
+      <cl:button std:sid="button-2cab4142" id="btn1" value="Button">
+        <cl:listener std:sid="listener-bd794898" name="click" handler="onBtn1Click"/>
+        <cl:formdata std:sid="f-data-f7f4891a" row="1" col="2"/>
+      </cl:button>
+      <cl:button std:sid="button-a3980f42" id="btn3" value="Button">
+        <cl:listener std:sid="listener-b0cb64b9" name="click" handler="onBtn3Click"/>
+        <cl:formdata std:sid="f-data-fb195c23" row="0" col="0"/>
+      </cl:button>
+      <cl:button std:sid="button-a20c5833" id="btn4" value="Button">
+        <cl:listener std:sid="listener-f0d9b7d8" name="click" handler="onBtn4Click"/>
+        <cl:formdata std:sid="f-data-c4c0633f" row="1" col="0"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-57cccdf0" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+        <cl:rows length="25" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="100" unit="PIXEL" shadetype="BY_CLASS"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="100" unit="PIXEL" shadetype="BY_CLASS"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-5d85fafd"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

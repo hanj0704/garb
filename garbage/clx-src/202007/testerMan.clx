@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ea422577" version="1.0.0.0">
+  <head std:sid="head-bb14c88a">
+    <title>testerMan</title>
+    <screen std:sid="screen-5c15c8b9" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-f5f15b0b" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-5197236e" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-26a4e259">
+      <cl:dataset std:sid="d-set-9815dc5b" id="ds1">
+        <cl:listener std:sid="listener-d344a69c" name="load" handler="onDs1Load"/>
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-cd2e4f9b" name="column1"/>
+          <cl:datacolumn std:sid="d-column-dddfbf7e" name="column2"/>
+          <cl:datacolumn std:sid="d-column-8453898c" name="column3"/>
+          <cl:datacolumn std:sid="d-column-2c2c1148" name="column4"/>
+          <cl:datacolumn std:sid="d-column-56ed8e14" name="column5"/>
+          <cl:datacolumn std:sid="d-column-a5010b45" name="column6"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column11</cl:datavalue>
+            <cl:datavalue columnname="column2">column21</cl:datavalue>
+            <cl:datavalue columnname="column3">column31</cl:datavalue>
+            <cl:datavalue columnname="column4">column41</cl:datavalue>
+            <cl:datavalue columnname="column5">column51</cl:datavalue>
+            <cl:datavalue columnname="column6">column61</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column12</cl:datavalue>
+            <cl:datavalue columnname="column2">column22</cl:datavalue>
+            <cl:datavalue columnname="column3">column32</cl:datavalue>
+            <cl:datavalue columnname="column4">column42</cl:datavalue>
+            <cl:datavalue columnname="column5">column52</cl:datavalue>
+            <cl:datavalue columnname="column6">column62</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column13</cl:datavalue>
+            <cl:datavalue columnname="column2">column23</cl:datavalue>
+            <cl:datavalue columnname="column3">column33</cl:datavalue>
+            <cl:datavalue columnname="column4">column43</cl:datavalue>
+            <cl:datavalue columnname="column5">column53</cl:datavalue>
+            <cl:datavalue columnname="column6">column63</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column14</cl:datavalue>
+            <cl:datavalue columnname="column2">column24</cl:datavalue>
+            <cl:datavalue columnname="column3">column34</cl:datavalue>
+            <cl:datavalue columnname="column4">column44</cl:datavalue>
+            <cl:datavalue columnname="column5">column54</cl:datavalue>
+            <cl:datavalue columnname="column6">column64</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column15</cl:datavalue>
+            <cl:datavalue columnname="column2">column25</cl:datavalue>
+            <cl:datavalue columnname="column3">column35</cl:datavalue>
+            <cl:datavalue columnname="column4">column45</cl:datavalue>
+            <cl:datavalue columnname="column5">column55</cl:datavalue>
+            <cl:datavalue columnname="column6">column65</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column16</cl:datavalue>
+            <cl:datavalue columnname="column2">column26</cl:datavalue>
+            <cl:datavalue columnname="column3">column36</cl:datavalue>
+            <cl:datavalue columnname="column4">column46</cl:datavalue>
+            <cl:datavalue columnname="column5">column56</cl:datavalue>
+            <cl:datavalue columnname="column6">column66</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column17</cl:datavalue>
+            <cl:datavalue columnname="column2">column27</cl:datavalue>
+            <cl:datavalue columnname="column3">column37</cl:datavalue>
+            <cl:datavalue columnname="column4">column47</cl:datavalue>
+            <cl:datavalue columnname="column5">column57</cl:datavalue>
+            <cl:datavalue columnname="column6">column67</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column18</cl:datavalue>
+            <cl:datavalue columnname="column2">column28</cl:datavalue>
+            <cl:datavalue columnname="column3">column38</cl:datavalue>
+            <cl:datavalue columnname="column4">column48</cl:datavalue>
+            <cl:datavalue columnname="column5">column58</cl:datavalue>
+            <cl:datavalue columnname="column6">column68</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-67166f42" id="ds2">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-aa97a282" name="label"/>
+          <cl:datacolumn std:sid="d-column-6e42d118" name="value"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label1</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[column61]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label2</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[column62]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label3</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[column63]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label4</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[column64]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label5</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[column65]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label6</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[column66]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-a1345e52" id="dm1"/>
+      <cl:submission std:sid="submission-58105a68" id="sms1"/>
+      <cl:dataset std:sid="d-set-13d5f4d4" id="ds3">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-2b4b8284" name="column1"/>
+          <cl:datacolumn std:sid="d-column-aa80cf24" name="column2"/>
+          <cl:datacolumn std:sid="d-column-a82cf60f" name="column3"/>
+          <cl:datacolumn std:sid="d-column-39bb28f8" name="column4"/>
+          <cl:datacolumn std:sid="d-column-db73ac33" name="column5"/>
+          <cl:datacolumn std:sid="d-column-ecc75dc9" name="column6"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column11</cl:datavalue>
+            <cl:datavalue columnname="column2">column21</cl:datavalue>
+            <cl:datavalue columnname="column3">column31</cl:datavalue>
+            <cl:datavalue columnname="column4">column41</cl:datavalue>
+            <cl:datavalue columnname="column5">column51</cl:datavalue>
+            <cl:datavalue columnname="column6">column61</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column12</cl:datavalue>
+            <cl:datavalue columnname="column2">column22</cl:datavalue>
+            <cl:datavalue columnname="column3">column32</cl:datavalue>
+            <cl:datavalue columnname="column4">column42</cl:datavalue>
+            <cl:datavalue columnname="column5">column52</cl:datavalue>
+            <cl:datavalue columnname="column6">column62</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column13</cl:datavalue>
+            <cl:datavalue columnname="column2">column23</cl:datavalue>
+            <cl:datavalue columnname="column3">column33</cl:datavalue>
+            <cl:datavalue columnname="column4">column43</cl:datavalue>
+            <cl:datavalue columnname="column5">column53</cl:datavalue>
+            <cl:datavalue columnname="column6">column63</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column14</cl:datavalue>
+            <cl:datavalue columnname="column2">column24</cl:datavalue>
+            <cl:datavalue columnname="column3">column34</cl:datavalue>
+            <cl:datavalue columnname="column4">column44</cl:datavalue>
+            <cl:datavalue columnname="column5">column54</cl:datavalue>
+            <cl:datavalue columnname="column6">column64</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column15</cl:datavalue>
+            <cl:datavalue columnname="column2">column25</cl:datavalue>
+            <cl:datavalue columnname="column3">column35</cl:datavalue>
+            <cl:datavalue columnname="column4">column45</cl:datavalue>
+            <cl:datavalue columnname="column5">column55</cl:datavalue>
+            <cl:datavalue columnname="column6">column65</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column16</cl:datavalue>
+            <cl:datavalue columnname="column2">column26</cl:datavalue>
+            <cl:datavalue columnname="column3">column36</cl:datavalue>
+            <cl:datavalue columnname="column4">column46</cl:datavalue>
+            <cl:datavalue columnname="column5">column56</cl:datavalue>
+            <cl:datavalue columnname="column6">column66</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-8006a92c" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-e95f49cf" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-80ad3b5b" class="cl-form-group">
+      <cl:xylayoutdata std:sid="xyl-data-0c968810" top="262px" right="20px" left="20px" height="117px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+      <cl:output std:sid="output-653a2145" value="name">
+        <cl:formdata std:sid="f-data-ba588998" row="0" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-52e926e8" value="age">
+        <cl:formdata std:sid="f-data-1d3ad28d" row="1" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-da4c4135" value="column3">
+        <cl:formdata std:sid="f-data-2c2db448" row="2" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-f323b814" value="column4">
+        <cl:formdata std:sid="f-data-5f7dc3a4" row="0" col="2"/>
+      </cl:output>
+      <cl:output std:sid="output-f49c95a7" value="column5">
+        <cl:formdata std:sid="f-data-e5b45af5" row="1" col="2"/>
+      </cl:output>
+      <cl:output std:sid="output-c1a343b3" value="column6">
+        <cl:formdata std:sid="f-data-713dec28" row="2" col="2"/>
+      </cl:output>
+      <cl:combobox std:sid="c-box-e289b01d" id="cmb2">
+        <cl:listener std:sid="listener-c0e8cf35" name="selection-change" handler="onCmb2SelectionChange"/>
+        <cl:formdata std:sid="f-data-6862e1bd" row="0" col="1"/>
+        <cl:itemset datasetid="ds2" label="label" value="value"/>
+      </cl:combobox>
+      <cl:inputbox std:sid="i-box-b78afb0f" id="ipb2">
+        <cl:listener std:sid="listener-72165ece" name="value-change" handler="onIpb2ValueChange"/>
+        <cl:formdata std:sid="f-data-49ec8a6b" row="1" col="1"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-f3db605b" id="ipb3">
+        <cl:formdata std:sid="f-data-ff58e272" row="2" col="1"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-c427bd2e" id="ipb4">
+        <cl:formdata std:sid="f-data-4404a1da" row="0" col="3"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-ef0508ad" id="ipb5">
+        <cl:formdata std:sid="f-data-67f8bc74" row="1" col="3"/>
+      </cl:inputbox>
+      <cl:combobox std:sid="c-box-7104c2a5" id="cmb1">
+        <cl:formdata std:sid="f-data-55e55c78" row="2" col="3"/>
+        <cl:itemset datasetid="ds2" label="label" value="value"/>
+      </cl:combobox>
+      <cl:formlayout std:sid="f-layout-e8c32510" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="100" unit="PIXEL" shadetype="BY_CLASS"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="100" unit="PIXEL" shadetype="BY_CLASS"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:grid std:sid="grid-4a033d83" id="grd1" datasetid="ds1">
+      <cl:listener std:sid="listener-daaa10dd" name="selection-change" handler="onGrd1SelectionChange"/>
+      <cl:xylayoutdata std:sid="xyl-data-59122f1e" top="47px" right="20px" left="20px" height="205px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+      <cl:gridcolumn std:sid="g-column-3da8039e"/>
+      <cl:gridcolumn std:sid="g-column-4881a0b0"/>
+      <cl:gridcolumn std:sid="g-column-cea19427"/>
+      <cl:gridcolumn std:sid="g-column-16235b22"/>
+      <cl:gridcolumn std:sid="g-column-28949413"/>
+      <cl:gridcolumn std:sid="g-column-33409135"/>
+      <cl:gridheader std:sid="gh-band-feb3ae03">
+        <cl:gridrow std:sid="g-row-b16f3e4a"/>
+        <cl:gridcell std:sid="gh-cell-7c6ecfb8" rowindex="0" colindex="0" targetcolumnname="column1" sortable="false" filterable="false" text="column1"/>
+        <cl:gridcell std:sid="gh-cell-2b293ada" rowindex="0" colindex="1" targetcolumnname="column2" sortable="false" filterable="false" text="column2"/>
+        <cl:gridcell std:sid="gh-cell-52e54751" rowindex="0" colindex="2" targetcolumnname="column3" sortable="false" filterable="false" text="column3"/>
+        <cl:gridcell std:sid="gh-cell-fcfa66ef" rowindex="0" colindex="3" targetcolumnname="column4" sortable="false" filterable="false" text="column4"/>
+        <cl:gridcell std:sid="gh-cell-86240562" rowindex="0" colindex="4" targetcolumnname="column5" sortable="false" filterable="false" text="column5"/>
+        <cl:gridcell std:sid="gh-cell-337514c6" rowindex="0" colindex="5" targetcolumnname="column6" sortable="false" filterable="false" text="column6"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-156f9fac">
+        <cl:gridrow std:sid="g-row-fa57b79f"/>
+        <cl:gridcell std:sid="gd-cell-32c6c98b" rowindex="0" colindex="0" columnname="column1"/>
+        <cl:gridcell std:sid="gd-cell-41f21b47" rowindex="0" colindex="1" columnname="column2"/>
+        <cl:gridcell std:sid="gd-cell-3205d250" rowindex="0" colindex="2" columnname="column3"/>
+        <cl:gridcell std:sid="gd-cell-335042e9" rowindex="0" colindex="3" columnname="column4"/>
+        <cl:gridcell std:sid="gd-cell-93312720" rowindex="0" colindex="4" columnname="column5"/>
+        <cl:gridcell std:sid="gd-cell-de601219" rowindex="0" colindex="5" columnname="column6"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:button std:sid="button-3ee224c3" id="btn1" value="보오오오옥사">
+      <cl:listener std:sid="listener-fd6f1398" name="click" handler="onBtn1Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-718c9d59" top="17px" right="20px" width="100px" height="20px" horizontalAnchor="RIGHT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-0e3e607a" id="btn2" value="열으어어어어">
+      <cl:listener std:sid="listener-7332bf61" name="click" handler="onBtn2Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-460ec111" top="17px" right="130px" width="100px" height="20px" horizontalAnchor="RIGHT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:tabfolder std:sid="t-folder-3ca09d89">
+      <cl:xylayoutdata std:sid="xyl-data-13bbd3bf" top="389px" left="20px" width="984px" height="275px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:tabitem std:sid="t-item-f8e354ca" selected="true" text="tab1">
+        <std:metadata>
+          <std:property key="is-active-item" value="true"/>
+        </std:metadata>
+        <cl:group std:sid="group-94c1f363">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:xylayout std:sid="xylayout-02b6c2d5"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-8f159f01" text="tab 2">
+        <cl:group std:sid="group-2d07aa61">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:inputbox std:sid="i-box-806aa29f" id="ipb6" value="ㅋㅋ">
+            <cl:xylayoutdata std:sid="xyl-data-888bbfac" top="20px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:inputbox>
+          <cl:xylayout std:sid="xylayout-48d960c0"/>
+        </cl:group>
+      </cl:tabitem>
+    </cl:tabfolder>
+    <cl:button std:sid="button-5592cf74" id="btn3" value="다시열으어">
+      <cl:listener std:sid="listener-2a6be0b6" name="click" handler="onBtn3Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-821126c4" top="17px" right="240px" width="100px" height="20px" horizontalAnchor="RIGHT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-17dd0c92" id="btn4" value="Button">
+      <cl:listener std:sid="listener-6d47af30" name="click" handler="onBtn4Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-af605d84" top="17px" right="350px" width="100px" height="20px" horizontalAnchor="RIGHT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:searchinput std:sid="s-input-c5f8bed9">
+      <cl:xylayoutdata std:sid="xyl-data-9b7e2235" top="17px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:searchinput>
+    <cl:button std:sid="button-445ddec8" id="btn5" value="Button">
+      <cl:listener std:sid="listener-a848f285" name="click" handler="onBtn5Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-f8cff44b" top="17px" left="140px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-171018c9"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

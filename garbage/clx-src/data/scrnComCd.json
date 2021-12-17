@@ -1,0 +1,70 @@
+{
+  "scrnComCd":[
+    {
+      "SCRN_PRN_CD_CTT":null,
+      "TYP_CD":"0001",
+      "SCRN_PRN_CD":"IDR",
+      "CD_NM":"CUR_CD"
+    },
+    {
+      "SCRN_PRN_CD_CTT":"Current Deposit",
+      "TYP_CD":"0001",
+      "SCRN_PRN_CD":"11",
+      "CD_NM":"SUBJ_CD"
+    },
+    {
+      "SCRN_PRN_CD_CTT":"Saving Deposit",
+      "TYP_CD":"0001",
+      "SCRN_PRN_CD":"12",
+      "CD_NM":"SUBJ_CD"
+    },
+    {
+      "SCRN_PRN_CD_CTT":"Time Deposit",
+      "TYP_CD":"0001",
+      "SCRN_PRN_CD":"13",
+      "CD_NM":"SUBJ_CD"
+    },
+    {
+      "SCRN_PRN_CD_CTT":"Installment Deposit",
+      "TYP_CD":"0001",
+      "SCRN_PRN_CD":"14",
+      "CD_NM":"SUBJ_CD"
+    },
+    {
+      "SCRN_PRN_CD_CTT":"계정단말(계정성업무)",
+      "TYP_CD":"0001",
+      "SCRN_PRN_CD":"TOD",
+      "CD_NM":"CHNL_TYP_CD"
+    },
+    {
+      "SCRN_PRN_CD_CTT":"Monday",
+      "TYP_CD":"0001",
+      "SCRN_PRN_CD":"MON",
+      "CD_NM":"WDAY_DV_CD"
+    },
+    {
+      "SCRN_PRN_CD_CTT":"TUESDAY",
+      "TYP_CD":"0001",
+      "SCRN_PRN_CD":"TUE",
+      "CD_NM":"WDAY_DV_CD"
+    },
+    {
+      "SCRN_PRN_CD_CTT":"Monday",
+      "TYP_CD":"0002",
+      "SCRN_PRN_CD":"MON",
+      "CD_NM":"WDAY_DV_CD"
+    },
+    {
+      "SCRN_PRN_CD_CTT":"TUESDAY",
+      "TYP_CD":"0002",
+      "SCRN_PRN_CD":"TUE",
+      "CD_NM":"WDAY_DV_CD"
+    },
+    {
+      "SCRN_PRN_CD_CTT":"WEDNESDAY",
+      "TYP_CD":"0002",
+      "SCRN_PRN_CD":"WED",
+      "CD_NM":"WDAY_DV_CD"
+    }
+  ]
+}

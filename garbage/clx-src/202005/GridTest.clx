@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-07eb7bb5" version="1.0.0.0">
+  <head std:sid="head-31e96129">
+    <title>GridTest</title>
+    <screen std:sid="screen-d54000bc" id="default" customHeight="300" customWidth="300" height="768px" minwidth="1024px" name="default" useCustomHeight="true" useCustomWidth="true" width="1024px"/>
+    <screen std:sid="screen-f2d5ad3f" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-be68c974" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-006eda82">
+      <cl:dataset std:sid="d-set-6f25d420" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-c7b35dff" name="column1"/>
+          <cl:datacolumn std:sid="d-column-4b66dc56" name="column2"/>
+          <cl:datacolumn std:sid="d-column-0b6139b8" name="column3"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column11</cl:datavalue>
+            <cl:datavalue columnname="column2">column21</cl:datavalue>
+            <cl:datavalue columnname="column3">column31</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column12</cl:datavalue>
+            <cl:datavalue columnname="column2">column22</cl:datavalue>
+            <cl:datavalue columnname="column3">column32</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column13</cl:datavalue>
+            <cl:datavalue columnname="column2">column23</cl:datavalue>
+            <cl:datavalue columnname="column3">column33</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column14</cl:datavalue>
+            <cl:datavalue columnname="column2">column24</cl:datavalue>
+            <cl:datavalue columnname="column3">column34</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-f26a31f8" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-857682c9" handler="onBodyInit" name="init"/>
+    <cl:grid std:sid="grid-a74be1ac" id="grd1" datasetid="ds1">
+      <cl:listener std:sid="listener-fda71e0a" handler="onGrd1SelectionChange" name="selection-change"/>
+      <cl:listener std:sid="listener-aea41fe3" handler="onGrd1Contextmenu" name="contextmenu"/>
+      <cl:xylayoutdata std:sid="xyl-data-cdd64e5d" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+      <cl:gridcolumn std:sid="g-column-9b288868"/>
+      <cl:gridcolumn std:sid="g-column-902dcf93"/>
+      <cl:gridcolumn std:sid="g-column-38474804"/>
+      <cl:gridheader std:sid="gh-band-d70ecca1">
+        <cl:gridrow std:sid="g-row-6ec64abb"/>
+        <cl:gridcell std:sid="gh-cell-486d72ba" colindex="0" rowindex="0" filterable="false" sortable="false" targetcolumnname="column1" text="column1"/>
+        <cl:gridcell std:sid="gh-cell-e3f2ff8e" colindex="1" rowindex="0" filterable="false" sortable="false" targetcolumnname="column2" text="column2"/>
+        <cl:gridcell std:sid="gh-cell-9d27c39a" colindex="2" rowindex="0" filterable="false" sortable="false" targetcolumnname="column3" text="column3"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-1a157c14">
+        <cl:gridrow std:sid="g-row-55e59eb0"/>
+        <cl:gridcell std:sid="gd-cell-72ec3a4d" colindex="0" rowindex="0" columnname="column1"/>
+        <cl:gridcell std:sid="gd-cell-8326ec56" colindex="1" rowindex="0" columnname="column2"/>
+        <cl:gridcell std:sid="gd-cell-8c637e77" colindex="2" rowindex="0" columnname="column3"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:button std:sid="button-a87becf5" id="btn1" value="Button">
+      <cl:listener std:sid="listener-c8b48e90" handler="onBtn1Click" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-1bf06361" bottom="0px" height="20px" horizontalAnchor="RIGHT" right="0px" verticalAnchor="BOTTOM" width="100px"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-0f29c3b5"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

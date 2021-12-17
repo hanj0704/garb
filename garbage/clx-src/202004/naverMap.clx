@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-250811d4" version="1.0.0.0">
+  <head std:sid="head-64c00263">
+    <title>naverMap</title>
+    <screen std:sid="screen-9f3df2cd" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-d40bb8cb" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-dadbeebb" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-110503ba"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-bc9e307f" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:uicontrolshell std:sid="uic-shell-24fd203c" id="shl1">
+      <cl:listener std:sid="listener-82943db0" handler="onShl1Init" name="init"/>
+      <cl:listener std:sid="listener-756eaabe" handler="onShl1Load" name="load"/>
+      <cl:xylayoutdata std:sid="xyl-data-16a08911" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="58px" verticalAnchor="BOTH"/>
+    </cl:uicontrolshell>
+    <cl:button std:sid="button-31b54408" id="btn1" value="Button">
+      <cl:xylayoutdata std:sid="xyl-data-dc0dc38b" height="20px" horizontalAnchor="LEFT" left="20px" top="20px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-a6f608e8"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

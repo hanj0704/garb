@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ae978860" version="1.0.0.0">
+  <head std:sid="head-7a94f363">
+    <title>hycu</title>
+    <screen std:sid="screen-a6c80220" id="default" customHeight="600" customWidth="800" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-c5c4e676" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-bfd63ae7" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-fd8ecc93"/>
+    <cl:appspec>
+      <cl:property name="dataS" type="control"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-55fa8e8b" style="top:0px; left:0px; width:800px; height:400px;">
+    <cl:listener std:sid="listener-61613bda" handler="onBodyLoad" name="load"/>
+    <cl:group std:sid="group-4adac080">
+      <cl:formdata std:sid="f-data-0280e2f7" col="0" colspan="3" row="0" rowspan="1"/>
+      <cl:output std:sid="output-714cd0f7" id="opt1" value="업무3">
+        <cl:xylayoutdata std:sid="xyl-data-40738037" bottom="0px" horizontalAnchor="LEFT" left="358px" top="0px" verticalAnchor="BOTH" width="100px"/>
+      </cl:output>
+      <cl:output std:sid="output-5beceed7" id="opt2" value="수업">
+        <cl:xylayoutdata std:sid="xyl-data-41d6ed61" bottom="0px" horizontalAnchor="LEFT" left="259px" top="0px" verticalAnchor="BOTH" width="100px"/>
+      </cl:output>
+      <cl:output std:sid="output-4f9c37d4" id="opt3" value="교과">
+        <cl:listener std:sid="listener-fe6b7c2c" handler="onOpt3Mouseup" name="mouseup"/>
+        <cl:listener std:sid="listener-da30775c" handler="onOpt3Mouseenter" name="mouseenter"/>
+        <cl:listener std:sid="listener-e458b65c" handler="onOpt3Click" name="click"/>
+        <cl:xylayoutdata std:sid="xyl-data-91d5b216" bottom="0px" horizontalAnchor="LEFT" left="160px" top="0px" verticalAnchor="BOTH" width="100px"/>
+      </cl:output>
+      <cl:output std:sid="output-b4b45244" id="opt4" value="업무4">
+        <cl:xylayoutdata std:sid="xyl-data-554a5401" bottom="0px" horizontalAnchor="LEFT" left="457px" top="0px" verticalAnchor="BOTH" width="100px"/>
+      </cl:output>
+      <cl:output std:sid="output-272045a4" id="opt5" value="업무5">
+        <cl:xylayoutdata std:sid="xyl-data-788c10d1" bottom="0px" horizontalAnchor="LEFT" left="556px" top="0px" verticalAnchor="BOTH" width="100px"/>
+      </cl:output>
+      <cl:button std:sid="button-8b34f9e6" id="btn1" value="">
+        <cl:listener std:sid="listener-38cb901e" handler="onBtn1Click" name="click"/>
+        <cl:xylayoutdata std:sid="xyl-data-bd393671" bottom="0px" horizontalAnchor="RIGHT" right="0px" top="0px" verticalAnchor="BOTH" width="55px"/>
+      </cl:button>
+      <cl:xylayout std:sid="xylayout-8cc07aac"/>
+    </cl:group>
+    <cl:group std:sid="group-4b4ce35a" id="grpContent" class="cl-form-group">
+      <cl:formdata std:sid="f-data-52063845" col="0" row="1"/>
+      <cl:group std:sid="group-b55e34e6" id="grp1">
+        <cl:flowlayoutdata std:sid="f-data-8c84df8b" height="328px" width="117px"/>
+        <cl:verticallayout std:sid="v-layout-56a2a247" bottommargin="10" leftmargin="10" rightmargin="10" topmargin="10"/>
+      </cl:group>
+      <cl:flowlayout std:sid="f-layout-c63c8231" scrollable="false" linewrap="false"/>
+    </cl:group>
+    <cl:group std:sid="group-61412251">
+      <cl:formdata std:sid="f-data-5d3ac35a" col="2" colspan="1" row="1" rowspan="2"/>
+      <cl:udc std:sid="ud-control-75ee479e" type="udc.hycuMenu">
+        <cl:verticaldata std:sid="v-data-ea80a69f" height="191px" width="98px"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-c5ce7190"/>
+    </cl:group>
+    <cl:group std:sid="group-37e0e934">
+      <cl:formdata std:sid="f-data-d7144fe4" col="1" colspan="1" row="1" rowspan="2"/>
+      <cl:button std:sid="button-d373b75e" id="btn2" value="">
+        <cl:xylayoutdata std:sid="xyl-data-4c253e05" bottom="38px" height="20px" horizontalAnchor="LEFT" left="3px" verticalAnchor="BOTTOM" width="24px"/>
+      </cl:button>
+      <cl:button std:sid="button-7dbb814b" id="btn3" value="">
+        <cl:xylayoutdata std:sid="xyl-data-5856cff4" bottom="11px" height="20px" horizontalAnchor="LEFT" left="3px" verticalAnchor="BOTTOM" width="24px"/>
+      </cl:button>
+      <cl:xylayout std:sid="xylayout-c356ba46"/>
+    </cl:group>
+    <cl:group std:sid="group-5344c7f0">
+      <cl:formdata std:sid="f-data-1014d614" col="0" row="2"/>
+      <cl:xylayout std:sid="xylayout-0288f9e3"/>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-91e27cde" hspace="0" vspace="0px">
+      <cl:rows autoSizing="false" length="50" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:rows hidden="true" length="10" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      <cl:columns length="1" unit="FRACTION"/>
+      <cl:columns autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      <cl:columns autoSizing="false" length="150" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

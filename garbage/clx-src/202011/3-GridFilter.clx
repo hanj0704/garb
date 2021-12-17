@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-d75fd6d2" version="1.0.0.0">
+  <head std:sid="head-5bb6de70">
+    <title>GridFilter</title>
+    <screen std:sid="screen-19536a4d" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-b429f5d7" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-089f6d61" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-cf072840">
+      <cl:dataset std:sid="d-set-b732d22e" id="dsList">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-fba0e35c" name="id" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-a1441e9a" name="first_name"/>
+          <cl:datacolumn std:sid="d-column-e8b607b0" name="last_name"/>
+          <cl:datacolumn std:sid="d-column-a779a34b" name="email"/>
+          <cl:datacolumn std:sid="d-column-b59c4539" name="gender"/>
+          <cl:datacolumn std:sid="d-column-751f5519" name="ip_address"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-ad3ed78b" id="subList" action="202011/GridExamData.json">
+        <cl:responsedata dataid="dsList"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec title="그리드 정렬 필터"/>
+  </head>
+  <body std:sid="body-f08229a6" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-86ef07ae" name="load" handler="onBodyLoad"/>
+    <cl:output std:sid="output-6f9e0e4a" value="그리드 정렬, 필터, supress">
+      <cl:xylayoutdata std:sid="xyl-data-6187ae3c" top="10px" right="30px" left="10px" height="25px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:grid std:sid="grid-33020e54" id="grd1" readonly="false" datasetid="dsList" topsplitheight="30" bottomsplitheight="30" suppressedcelltype="merged" selectionunit="cell" resizablecolumns="none" columnMovable="false">
+      <cl:xylayoutdata std:sid="xyl-data-95aff7a5" top="45px" right="30px" bottom="30px" left="10px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+      <cl:gridcolumn std:sid="g-column-bab09183"/>
+      <cl:gridcolumn std:sid="g-column-6ccfb70c"/>
+      <cl:gridcolumn std:sid="g-column-a6c925a2"/>
+      <cl:gridcolumn std:sid="g-column-aa1ebb71"/>
+      <cl:gridcolumn std:sid="g-column-b93911e8"/>
+      <cl:gridcolumn std:sid="g-column-e856de20"/>
+      <cl:gridheader std:sid="gh-band-8d0c8cfe">
+        <cl:gridrow std:sid="g-row-95f23c29"/>
+        <cl:gridcell std:sid="gh-cell-bddfce04" rowindex="0" colindex="0" targetcolumnname="id" sortable="true" filterable="false" text="id"/>
+        <cl:gridcell std:sid="gh-cell-358bdfe2" rowindex="0" colindex="1" targetcolumnname="first_name" sortable="true" filterable="false" text="first_name"/>
+        <cl:gridcell std:sid="gh-cell-ea815e2a" rowindex="0" colindex="2" targetcolumnname="last_name" sortable="true" filterable="false" text="last_name"/>
+        <cl:gridcell std:sid="gh-cell-b7f56de0" rowindex="0" colindex="3" targetcolumnname="email" sortable="true" filterable="false" text="email"/>
+        <cl:gridcell std:sid="gh-cell-1b1519f4" rowindex="0" colindex="4" targetcolumnname="gender" sortable="true" filterable="false" text="gender"/>
+        <cl:gridcell std:sid="gh-cell-4adcee4d" rowindex="0" colindex="5" targetcolumnname="ip_address" sortable="true" filterable="false" text="ip_address"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-96902daa">
+        <cl:gridrow std:sid="g-row-2b81e8e0"/>
+        <cl:gridcell std:sid="gd-cell-6ead7cd7" rowindex="0" colindex="0" columnname="id" suppressible="true" mergedcolumnname="first_name"/>
+        <cl:gridcell std:sid="gd-cell-8714120f" rowindex="0" colindex="1" columnname="first_name" suppressible="true" mergetoindexexpr="first_name == last_name ? 2 : 1" mergedcolumnname="last_name"/>
+        <cl:gridcell std:sid="gd-cell-cad5f00a" rowindex="0" colindex="2" columnname="last_name" suppressible="true"/>
+        <cl:gridcell std:sid="gd-cell-34d60ffe" rowindex="0" colindex="3" columnname="email"/>
+        <cl:gridcell std:sid="gd-cell-6d38f820" rowindex="0" colindex="4" columnname="gender"/>
+        <cl:gridcell std:sid="gd-cell-5bc05f03" rowindex="0" colindex="5" columnname="ip_address"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:xylayout std:sid="xylayout-33c84470"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-6e00ad7b" version="1.0.0.0">
+  <head std:sid="head-f53e7a8a">
+    <title>DragSpan</title>
+    <screen std:sid="screen-92785182" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-57f8e69a" id="tablet" height="768px" maxwidth="1023px" minwidth="800px" name="tablet" width="800px"/>
+    <screen std:sid="screen-135b3d60" id="mobile" height="768px" maxwidth="799px" name="mobile" width="500px"/>
+    <cl:model std:sid="model-61ebbc17"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-6ade2238" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-1a89c7c3" handler="onBodyLoad" name="load"/>
+    <cl:group std:sid="group-4ffc86e8" id="grpMain" style="border-right-style:solid; border-top-width:1px; border-bottom-color:black; border-right-width:1px; border-left-style:solid; border-bottom-width:1px; border-left-color:black; border-top-color:black; border-bottom-style:solid; border-right-color:black; border-left-width:1px; border-top-style:solid;">
+      <cl:attribute name="portlet" value="Y"/>
+      <cl:xylayoutdata std:sid="xyl-data-764e0711" height="265px" horizontalAnchor="LEFT" left="20px" top="20px" verticalAnchor="TOP" width="521px"/>
+      <cl:group std:sid="group-73db286b" id="grp1">
+        <cl:listener std:sid="listener-4f053c99" handler="onGrp5Mousedown" name="mousedown"/>
+        <cl:formdata std:sid="f-data-e004d225" col="0" row="0"/>
+        <cl:button std:sid="button-7dd7af63" id="btn1" style="background-color:red;" value="1">
+          <cl:xylayoutdata std:sid="xyl-data-51341cbb" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+        </cl:button>
+        <cl:xylayout std:sid="xylayout-9f32fc97"/>
+      </cl:group>
+      <cl:group std:sid="group-6232c5ce" id="grp2">
+        <cl:formdata std:sid="f-data-14402d67" col="1" row="0"/>
+        <cl:button std:sid="button-e0544f2b" id="btn2" style="background-color:orange;" value="2">
+          <cl:xylayoutdata std:sid="xyl-data-0474ee91" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+        </cl:button>
+        <cl:xylayout std:sid="xylayout-affbf62f"/>
+      </cl:group>
+      <cl:group std:sid="group-ddee2f48" id="grp3">
+        <cl:formdata std:sid="f-data-b60ff1d1" col="2" row="0"/>
+        <cl:button std:sid="button-fda81bec" id="btn3" style="background-color:yellow;" value="3">
+          <cl:xylayoutdata std:sid="xyl-data-d6315ac5" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+        </cl:button>
+        <cl:xylayout std:sid="xylayout-290f7b61"/>
+      </cl:group>
+      <cl:group std:sid="group-1e2b5135" id="grp4">
+        <cl:formdata std:sid="f-data-c0925b31" col="0" row="1"/>
+        <cl:button std:sid="button-a5998c3c" id="btn4" style="background-color:green;" value="4">
+          <cl:xylayoutdata std:sid="xyl-data-ea76ea27" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+        </cl:button>
+        <cl:xylayout std:sid="xylayout-01f79ce1"/>
+      </cl:group>
+      <cl:group std:sid="group-c7c84a82" id="grp5">
+        <cl:formdata std:sid="f-data-97849dbd" col="1" row="1"/>
+        <cl:button std:sid="button-c1524a57" id="btn5" style="background-color:blue;" value="5">
+          <cl:xylayoutdata std:sid="xyl-data-43656b51" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+        </cl:button>
+        <cl:xylayout std:sid="xylayout-8a6b1d47"/>
+      </cl:group>
+      <cl:group std:sid="group-e7505810" id="grp6">
+        <cl:formdata std:sid="f-data-9e0a43f7" col="2" row="1"/>
+        <cl:button std:sid="button-f446f16f" id="btn6" style="background-color:purple;" value="6">
+          <cl:xylayoutdata std:sid="xyl-data-3ad546d4" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+        </cl:button>
+        <cl:xylayout std:sid="xylayout-d9680748"/>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-f52751ad" hseparatortype="BY_CLASS" hseparatorwidth="1" vseparatortype="BY_CLASS" vseparatorwidth="1">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-f8513a66"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

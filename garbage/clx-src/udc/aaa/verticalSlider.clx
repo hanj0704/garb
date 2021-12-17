@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-f5581333" version="1.0.0.0">
+  <head std:sid="head-6e66cb28">
+    <title>verticalSlider</title>
+    <screen std:sid="screen-9d65f8cc" id="default" name="default" minwidth="1024px" width="1024px" height="768px" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-1ab4d9b0" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-a1116dc3" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-a6048328"/>
+    <cl:appspec>
+      <cl:property name="apakewlem" type="enumeration"/>
+      <cl:property name="newProperty1" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-cc690d8a" style="top:0px; left:0px; width:100px; height:25px;">
+    <cl:listener std:sid="listener-3bf69420" name="load" handler="onBodyLoad"/>
+    <cl:listener std:sid="listener-79bc047f" name="unload" handler="onBodyUnload"/>
+    <cl:listener std:sid="listener-f969b4dc" name="mouseenter" handler="onBodyMouseenter"/>
+    <cl:listener std:sid="listener-15f8d5db" name="mouseleave" handler="onBodyMouseleave"/>
+    <cl:verticallayout std:sid="v-layout-081915e5" scrollable="false"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

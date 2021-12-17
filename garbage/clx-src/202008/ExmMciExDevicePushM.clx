@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-bf7cb65a" version="1.0.0.0">
+  <head std:sid="head-3d8c3a69">
+    <title>CmnTemplateWideWindow01</title>
+    <screen std:sid="screen-b155b66f" id="Hlicp-FULL" name="Hlicp-FULL" minwidth="1600px" width="1600px" height="1000px" customHeight="600" customWidth="800" active="false"/>
+    <screen std:sid="screen-f349ec3d" id="Hlicp-DIV" name="Hlicp-DIV" maxwidth="1599px" width="790px" height="1000px"/>
+    <cl:model std:sid="model-38d7b95a"/>
+    <cl:appspec dev-comment="&lt;p>SYSTEM: 시스템 &#xD;&#xA;&lt;p>SUB-SYSTEM: 서브시스템&#xD;&#xA;&lt;p>RUN_TYPE: 처리유형&#xD;&#xA;&lt;p>UI-ID: 화면ID&#xD;&#xA;&lt;p>UI-NAME: 화면명&#xD;&#xA;&lt;p>CRUD: CRUD&#xD;&#xA;&lt;p>UI-COMMENT: 설명 &#xD;&#xA;&lt;p>UI-REMARK: 비고 &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;p>SYSTEM-CODE: &#xD;&#xA;&lt;p>UI-PID: &#xD;&#xA;&lt;p>UI-WORKFLOW:" title="eXDevice MCI PUSH"/>
+  </head>
+  <body std:sid="body-14ee1698" style="top:0px; left:0px; width:800px; height:600px;" class="grid-window-body">
+    <cl:group std:sid="group-3aaa9529" id="grpBody" class="grid-content-body">
+      <cl:verticaldata std:sid="v-data-c2b5961b" width="650px" height="1296px" autosize="height"/>
+      <cl:group comment="공통_템플릿_입력폼(버튼영역포함)" std:sid="group-51d1233a" id="grp5">
+        <cl:verticaldata std:sid="v-data-57641fdd" width="1027px" height="433px" autosize="height"/>
+        <cl:group std:sid="group-99f106b0" id="grp10" class="info-title-box">
+          <cl:verticaldata std:sid="v-data-fdf900f6" width="800px" height="25px" autosize="height"/>
+          <cl:output std:sid="output-a12a59a1" id="opt6" class="info-title" value="Push 테스트">
+            <cl:verticaldata std:sid="v-data-0da334f4" width="800px" height="25px" autosize="height"/>
+          </cl:output>
+          <cl:verticallayout std:sid="v-layout-9b734c47"/>
+        </cl:group>
+        <cl:grid std:sid="grid-f02328dd" id="grid2" class="list-normal" autofit="1, 2" columnResizable="true" columnMovable="true">
+          <cl:verticaldata std:sid="v-data-f7ab79b6" width="1560px" height="280px" autosize="none"/>
+          <cl:gridcolumn std:sid="g-column-90e02e3f" width="50px"/>
+          <cl:gridcolumn std:sid="g-column-2576e52b" width="80px"/>
+          <cl:gridcolumn std:sid="g-column-9a2167f4"/>
+          <cl:gridheader std:sid="gh-band-8b38bbb3">
+            <cl:gridrow std:sid="g-row-e2a3a71f" height="31px"/>
+            <cl:gridcell std:sid="gh-cell-131ecc26" rowindex="0" colindex="0" text="NO"/>
+            <cl:gridcell std:sid="gh-cell-6f51c5d9" rowindex="0" colindex="1" sortable="true" filterable="true" text="Push 제목"/>
+            <cl:gridcell std:sid="gh-cell-c53f8af1" rowindex="0" colindex="2" sortable="true" filterable="true" text="Push 내용"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-4dae1192">
+            <cl:gridrow std:sid="g-row-a928b131" height="31px"/>
+            <cl:gridcell std:sid="gd-cell-42f52763" rowindex="0" colindex="0" columntype="rowindex"/>
+            <cl:gridcell std:sid="gd-cell-1a991076" rowindex="0" colindex="1"/>
+            <cl:gridcell std:sid="gd-cell-06b4fed1" rowindex="0" colindex="2"/>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:group std:sid="group-f6e5e5c8" id="grp13" class="button-table-area">
+          <cl:verticaldata std:sid="v-data-a131fc1a" width="1560px" height="30px" autosize="none"/>
+          <cl:group std:sid="group-5ccd8254" id="grp14" class="button-table-bottom-left-area">
+            <cl:formdata std:sid="f-data-d0df42ff" row="0" col="0"/>
+            <cl:button std:sid="button-3a9f0fe2" id="btn2" class="btn-primary02" value="푸쉬 알림&lt;A>">
+              <cl:listener std:sid="listener-4eaad794" name="click" handler="onBtn2Click"/>
+              <cl:flowlayoutdata std:sid="f-data-66dfcf40" width="97px" height="30px" autosize="none"/>
+            </cl:button>
+            <cl:button std:sid="button-41aad4dd" id="btn3" class="btn-primary02" value="푸쉬 알림&lt;B>">
+              <cl:listener std:sid="listener-f72320da" name="click" handler="onBtn3Click"/>
+              <cl:flowlayoutdata std:sid="f-data-b297d7db" width="97px" height="30px" autosize="none"/>
+            </cl:button>
+            <cl:flowlayout std:sid="f-layout-b9715809" scrollable="false" spacing="5" linewrap="false"/>
+          </cl:group>
+          <cl:group std:sid="group-cf360fbc" id="grp15" class="button-table-bottom-right-area">
+            <cl:formdata std:sid="f-data-94e023e4" row="0" col="2"/>
+            <cl:flowlayout std:sid="f-layout-72c20955" scrollable="false" spacing="5" halign="right" linewrap="false"/>
+          </cl:group>
+          <cl:group std:sid="group-8ca4c67b" id="grp16" class="button-table-bottom-center-area">
+            <cl:formdata std:sid="f-data-8cee629e" row="0" col="1"/>
+            <cl:flowlayout std:sid="f-layout-6625bbeb" scrollable="false" spacing="5" halign="center" linewrap="false"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-700e39a3" scrollable="false" hspace="0px" vspace="0px">
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+            <cl:columns length="500" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-a98f5344" spacing="10"/>
+      </cl:group>
+      <cl:notifier std:sid="notifier-51361167" id="noti1" delay="5000000">
+        <cl:listener std:sid="listener-23da8d93" name="item-click" handler="onNoti1ItemClick"/>
+        <cl:verticaldata std:sid="v-data-6120a5f9" width="100px" height="142px"/>
+      </cl:notifier>
+      <cl:verticallayout std:sid="v-layout-185a2cc8" spacing="10"/>
+    </cl:group>
+    <cl:group comment="화면설계서 이벤트 작성영역" std:sid="group-bceb871a" id="grpUiDescription" removeOnBuild="true" visible="false">
+      <cl:verticaldata std:sid="v-data-42ece2d2" width="650px" height="200px" autosize="height"/>
+      <cl:output comment="&lt;row>&#xD;&#xA;&lt;r>E-NAME: &#xD;&#xA;&lt;r>E-DOC:  &#xD;&#xA;&lt;r>E-PARAM: &#xD;&#xA;&lt;r>E-RR-UI-NAME: &#xD;&#xA;&lt;r>E-CALL-SRV-NAME: &#xD;&#xA;&lt;r>E-REP: &#xD;&#xA;&lt;r>E-REMARK: &#xD;&#xA;&#xD;&#xA;&lt;r>E-RR-UI-PID: &#xD;&#xA;&lt;r>E-CALL-SRV-ID: " std:sid="output-5887b1f5" id="opt1" removeOnBuild="true" value="화면로드">
+        <cl:verticaldata std:sid="v-data-1046799c" width="100px" height="43px"/>
+      </cl:output>
+      <cl:output comment="&lt;row>&#xD;&#xA;&lt;r>E-NAME: &#xD;&#xA;&lt;r>E-DOC:  &#xD;&#xA;&lt;r>E-PARAM: &#xD;&#xA;&lt;r>E-RR-UI-NAME: &#xD;&#xA;&lt;r>E-CALL-SRV-NAME: &#xD;&#xA;&lt;r>E-REP: &#xD;&#xA;&lt;r>E-REMARK: &#xD;&#xA;&#xD;&#xA;&lt;r>E-RR-UI-PID: &#xD;&#xA;&lt;r>E-CALL-SRV-ID: " std:sid="output-6fd9a084" id="opt2" removeOnBuild="true" value="화면언로드">
+        <cl:verticaldata std:sid="v-data-4f818fff" width="100px" height="43px"/>
+      </cl:output>
+      <cl:verticallayout std:sid="v-layout-b7ccd2f4"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-082dd230" spacing="0"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

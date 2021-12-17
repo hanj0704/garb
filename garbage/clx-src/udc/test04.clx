@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-3167f6b2" version="1.0.0.0">
+  <head std:sid="head-a697d2a7">
+    <title>test04</title>
+    <screen std:sid="screen-ab1afbc4" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-7f00dddc" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-e4ae7069" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-22fbc0f3"/>
+    <cl:appspec>
+      <cl:property bindable="true" name="newProperty1" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-a59d28fb" style="top:0px; left:0px; width:300px; height:300px;">
+    <cl:inputbox std:sid="i-box-b6e19b64" id="ipb1">
+      <cl:apppropbind property="value" app-property="newProperty1"/>
+      <cl:xylayoutdata std:sid="xyl-data-9d57b6cf" height="32px" horizontalAnchor="LEFT" left="20px" top="20px" verticalAnchor="TOP" width="260px"/>
+    </cl:inputbox>
+    <cl:button std:sid="button-1e28c39d" id="btn1" value="Button">
+      <cl:listener std:sid="listener-209ca623" handler="onBtn1Click" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-7c52f2fb" height="20px" horizontalAnchor="LEFT" left="20px" top="172px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-b3a5733a"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

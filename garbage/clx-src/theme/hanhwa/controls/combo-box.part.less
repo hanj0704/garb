@@ -1,0 +1,482 @@
+@import "../settings.part.less";
+@import "../custom-settings.part.less";
+
+
+ 
+
+
+
+ /* 콤보 박스 루트 */
+.cl-combobox {
+	font-size: @font-select-box;
+	color: @color-text-black-03;
+	border: 1px solid @color-selectbox-default-border-light;
+	border-radius: 3px;
+	background-color: @color-selectbox-bg-light;
+
+	.cl-text {
+		padding : 0px 0px 0px 10px;
+		
+		/* preventInput속성일때 스타일*/
+		&.cl-preventinput {
+			
+		}
+	}
+	
+	/* 콤보 박스 펼침 버튼 */
+	.cl-combobox-button {
+		 background-image: url(images/icon/img_selectbox_close_light.png);
+		 background-size : 8px 5px;
+		 width : 24px;
+	}
+
+	/* 포커스 상태 */
+	&.cl-focus {
+		border-color : @color-selectbox-focus-border-light;
+		
+		.cl-text {
+			color: @color-selectbox-focus-text-light;
+		}
+	}
+	
+	&:hover, &.cl-hover {
+		border-color : @color-selectbox-hover-border-light;
+	}
+
+	/* 콤보 박스 disabled 상태 */
+	&.cl-disabled {
+		border-color: @color-selectbox-disable-border-light;
+		background-color: @color-selectbox-disable-bg-light;
+		color: @disabled-text-color;
+		border-radius : 3px;
+		
+		.cl-combobox-button {
+			 background-image: url(images/icon/img_selectbox_close_light.png);
+			 background-size : 8px 5px;
+			 width : 24px;
+		}
+	}
+}
+
+/* 콤보 박스 리스트 박스 */
+.cl-combobox-list {
+	font: @default-font;
+	font-size: @font-select-box;
+	color: @color-text-black-03;
+	border : none;
+	background-color: @color-selectbox-bg-light;
+
+	/*리스트박스의 쉐도우*/
+	&.cl-popup {
+		 box-shadow: none;
+	}
+	/* 리스박스의 최대 높이*/
+	.cl-viewport{
+		// max-height:150px;
+	}
+	
+	/* 콤보 박스 리스트 아이템 */
+	.cl-combobox-item {
+		padding : 7px 10px;
+		//min-height: 30px;
+		// combobox 기본 높이 설정 (데이터가 안보이는 현상이 나타나지 않도록 2019.10.24)
+		height : 25px;
+		
+		&:first-child {
+			border : solid @color-selectbox-default-border-light;
+			border-width : 1px 1px 0px 1px !important;
+		}
+		
+		+ .cl-combobox-item {
+			border : solid @color-selectbox-default-border-light;
+			border-width : 1px;
+		}
+		
+		&:last-child {
+			border : solid @color-selectbox-default-border-light;
+			border-width : 0px 1px 1px 1px;
+			border-radius : 0px 0px 3px 3px;
+		}
+		
+		/* 콤보 박스 리스트 아이템 체크박스 */
+		.cl-checkbox{
+			 background-image : url(images/icon/checkbox_default_light.png);
+			 background-size : 12px;
+			 
+			 width : 12px;
+		 	 min-width : 12px;
+			 
+			 &.cl-checked {
+			 	background-image: url(images/icon/checkbox_active_light.png);
+			 }
+		}
+
+		/* 콤보 박스 리스트 아이템 텍스트 */
+		.cl-text {
+//			color: @color-selectbox-list-text-darkblue;
+			padding-left : 0px;
+		}
+
+		/* 콤보 박스 리스트 아이템 - 선택 됨 */
+		&.cl-selected { 
+			background-color: @color-selectbox-bg-light;
+			color: @color-selectbox-focus-text-light;
+		}
+
+		/* disabled 상태 콤보 박스 리스트 아이템 */
+		&.cl-disabled {
+			color: @disabled-text-color;
+	
+			/* disabled 상태에서 선택된 콤보 박스 리스트 아이템 */
+			&.cl-selected {
+				color: @disabled-selection-foreground;
+				background-color:  @disabled-selection-background;
+			}
+		}
+
+		&:not(.cl-disabled) {
+			/* 콤보 박스 리스트 아이템 - 호버 */
+			&:not(.cl-selected):hover, &:not(.cl-selected).cl-hover{
+				color: @color-selectbox-hover-text-light;
+				background-color: @color-selectbox-bg-light;
+				border-color: @color-selectbox-hover-border-light;
+			}
+		}
+	}
+}
+
+
+.cl-grid-row.cl-editing{
+	.dark{
+			backrgound-color :  @color-selectbox-bg-dark;
+	}
+	backrgound-color :  @color-selectbox-bg-dark;
+}
+
+
+
+//dark
+.cl-combobox.dark {
+	font : @default-font;
+	font-size: @font-select-box;
+	color: @color-selectbox-text-dark !important;
+	background-color: @color-selectbox-bg-dark !important;
+	border: 1px solid @color-selectbox-bg-dark;
+	border-radius: 3px;
+
+	.cl-text {
+		padding : 0px 0px 0px 10px;
+		
+		/* preventInput속성일때 스타일*/
+		&.cl-preventinput {
+			
+		}
+	}
+	
+	
+	
+
+	/* 콤보 박스 펼침 버튼 */
+	.cl-combobox-button {
+		 background-image: url(images/icon/img_selectbox_close_dark.png);
+		 background-size : 8px 5px;
+		 width : 24px;
+	}
+
+	/* 포커스 상태 */
+	&.cl-focus {
+		//border-color: @focus-border-color;
+		border: 1px solid @color-selectbox-focus-border-dark;
+		background-color: @color-selectbox-bg-dark;
+		
+		.cl-text {
+			color: @color-selectbox-focus-text-dark;
+		}
+	}
+	
+	&:hover, &.cl-hover {
+		border : 1px solid @color-selectbox-hover-border-dark;
+	}
+
+	/* 콤보 박스 disabled 상태 */
+	&.cl-disabled {
+		border-color: @color-selectbox-disable-border-dark;
+		background-color: @color-selectbox-disable-bg-dark;
+		color: @disabled-text-color;
+		
+		.cl-combobox-button {
+			background-image : url(images/icon/img_selectbox_close_light.png);
+			background-size : 8px 5px;
+		}
+	}
+}
+
+/* 콤보 박스 리스트 박스 */
+.cl-combobox-list.dark {
+	font : @default-font;
+	font-size: @font-select-box;
+	color: @color-selectbox-text-dark;
+	background-color: @color-selectbox-bg-dark;
+	border : none;
+	border-radius : 0px 0px 3px 3px;
+	
+	/*리스트박스의 쉐도우*/
+	&.cl-popup {
+		 box-shadow: none;
+	}
+	/* 리스박스의 최대 높이*/
+	.cl-viewport{
+		//max-height:150px;
+	}
+	
+	/* 콤보 박스 리스트 아이템 */
+	.cl-combobox-item {
+		border : 1px solid @color-selectbox-bg-dark;
+		background-color: @color-selectbox-bg-dark;
+		//min-height: 30px;
+		
+		&:first-child {
+			border : solid @color-selectbox-bg-dark;
+			border-width : 1px 1px 0px 1px !important;
+		}
+		
+		+ .cl-combobox-item {
+			border : solid @color-selectbox-bg-dark;
+			border-width : 1px;
+		}
+		
+		&:last-child {
+			border : solid @color-selectbox-bg-dark;
+			border-width : 0px 1px 1px 1px;
+			border-radius : 0px 0px 3px 3px;
+		}
+		
+		/* 콤보 박스 리스트 아이템 체크박스 */
+		.cl-checkbox{
+			 background-image: url(images/icon/checkbox_default_dark.png);
+			 height : 17px;
+			 
+			 &.cl-checked {
+			 	ackground-image: url(images/icon/checkbox_active_dark.png);
+			 }
+		}
+	
+		/* 콤보 박스 리스트 아이템 텍스트 */
+		.cl-text {
+			color: @color-selectbox-text-dark;
+		}
+	
+		/* 콤보 박스 리스트 아이템 - 선택 됨 */
+		&.cl-selected { 
+			background-color: @color-selectbox-bg-dark;
+			color: @color-selectbox-focus-text-dark;
+			//background-color: @light-selection-background;
+			//color: @light-selection-foreground;
+		}
+	
+		/* disabled 상태 콤보 박스 리스트 아이템 */
+		&.cl-disabled {
+			//color: @disabled-text-color;
+	
+			/* disabled 상태에서 선택된 콤보 박스 리스트 아이템 */
+			&.cl-selected {
+				//color: @disabled-selection-foreground;
+				//background-color:  @disabled-selection-background;
+			}
+		}
+	
+		&:not(.cl-disabled) {
+			/* 콤보 박스 리스트 아이템 - 호버 */
+			&:not(.cl-selected):hover, &:not(.cl-selected).cl-hover{
+				color: @color-selectbox-hover-text-dark;
+				background-color: @color-selectbox-bg-dark;
+			}
+			
+			&:first-child:not(.cl-selected):hover, &:not(.cl-selected).cl-hover{
+				border : solid @color-selectbox-hover-border-dark;
+				border-width : 1px 1px 0px 1px !important;
+			}
+			
+			+ .cl-combobox-item:not(.cl-selected):hover, &:not(.cl-selected).cl-hover {
+				border : solid @color-selectbox-hover-border-dark;
+				border-width : 1px;
+			}
+			
+			&:last-child:not(.cl-selected):hover, &:not(.cl-selected).cl-hover {
+				border : solid @color-selectbox-hover-border-dark;
+				border-width : 0px 1px 1px 1px;
+			}
+		}
+	}
+}
+
+
+//darkblue
+.cl-combobox.darkblue {
+	font : @default-font;
+	font-size: @font-select-box;
+	color: @color-selectbox-text-darkblue !important;
+	background-color: @color-selectbox-bg-darkblue !important;
+	border: 1px solid @color-selectbox-bg-darkblue ;
+	border-radius: 3px;
+
+	.cl-text {
+		padding : 0px 0px 0px 10px;
+		
+		/* preventInput속성일때 스타일*/
+		&.cl-preventinput {
+			
+		}
+	}
+
+	/* 콤보 박스 펼침 버튼 */
+	.cl-combobox-button {
+		background-color : @color-selectbox-icon-bg-darkblue;
+		background-image: url(images/icon/img_selectbox_close_dark.png);
+		background-size : 8px 5px;
+		width : 24px;
+	}
+
+	/* 포커스 상태 */
+	&.cl-focus {
+		border: 1px solid @color-selectbox-focus-border-darkblue;
+		background-color: @color-selectbox-bg-darkblue;
+		
+		.cl-text {
+			color: @color-selectbox-focus-text-dark;
+		}
+	}
+	
+	&:hover, &.cl-hover {
+		border : 1px solid @color-selectbox-hover-border-darkblue;
+	}
+
+	/* 콤보 박스 disabled 상태 */
+	&.cl-disabled {
+		border-color: @color-selectbox-disable-border-darkblue;
+		background-color: @color-selectbox-disable-bg-darkblue;
+		color: @disabled-text-color;
+		
+		.cl-combobox-button {
+			background-image : url(images/icon/img_selectbox_close_light.png);
+			background-size : 8px 5px;
+			border-radius : 3px;
+		}
+	}
+}
+
+/* 콤보 박스 리스트 박스 */
+.cl-combobox-list.darkblue {
+	font : @default-font;
+	font-size: @font-select-box;
+	color: @color-selectbox-text-dark;
+	background-color: @color-selectbox-bg-dark;
+	border : 1px solid @color-selectbox-list-border-darkblue;
+	border-radius : 0px 0px 3px 3px;
+	
+	/*리스트박스의 쉐도우*/
+	&.cl-popup {
+		 box-shadow: none;
+	}
+	/* 리스박스의 최대 높이*/
+	.cl-viewport{
+		//max-height:150px;
+	}
+	
+	/* 콤보 박스 리스트 아이템 */
+	.cl-combobox-item {
+		border : 1px solid @color-selectbox-bg-darkblue;
+		background-color: @color-selectbox-bg-darkblue;
+		color : @color-selectbox-list-text-darkblue;
+		//min-height: 30px;
+		
+		&:last-child {
+			border-radius : 0px 0px 3px 3px;
+		}
+		
+		/* 콤보 박스 리스트 아이템 체크박스 */
+		.cl-checkbox{
+			 background-image: url(images/checkbox_default.png);
+			 height : 17px;
+			 
+			 &.cl-checked {
+			 	background-image: url(images/checkbox_checked.png);
+			 }
+		}
+	
+		/* 콤보 박스 리스트 아이템 텍스트 */
+		.cl-text {
+			color: @color-selectbox-text-dark;
+		}
+	
+		/* 콤보 박스 리스트 아이템 - 선택 됨 */
+		&.cl-selected { 
+			background-color: @color-selectbox-focus-bg-darkblue;
+			color: @color-selectbox-focus-text-darkblue;
+		}
+	
+		/* disabled 상태 콤보 박스 리스트 아이템 */
+		&.cl-disabled {
+			//color: @disabled-text-color;
+	
+			/* disabled 상태에서 선택된 콤보 박스 리스트 아이템 */
+			&.cl-selected {
+				//color: @disabled-selection-foreground;
+				//background-color:  @disabled-selection-background;
+			}
+		}
+	
+		&:not(.cl-disabled) {
+			/* 콤보 박스 리스트 아이템 - 호버 */
+			&:not(.cl-selected):hover, &:not(.cl-selected).cl-hover{
+				color: @color-selectbox-hover-text-darkblue;
+				background-color: @color-selectbox-hover-bg-darkblue;
+			}
+		}
+	}
+}
+
+
+/** (20190923) 콤보박스 placeholder 스타일 - 류다은 추가 */
+
+.cl-combobox ::-webkit-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-text-black-03 !important;
+}
+
+.cl-combobox :-ms-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-text-black-03 !important;
+}
+
+.cl-combobox :-mos-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-text-black-03 !important;
+}
+
+.cl-combobox ::-mos-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-text-black-03 !important;
+}
+
+/** (20190923) 콤보박스 placeholder 스타일 - 류다은 추가 */
+
+.cl-combobox.dark ::-webkit-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-selectbox-text-dark !important;
+}
+
+.cl-combobox.dark :-ms-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-selectbox-text-dark !important;
+}
+
+.cl-combobox.dark :-mos-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-selectbox-text-dark !important;
+}
+
+.cl-combobox.dark ::-mos-input-placeholder {
+	font-size : @font-small-text-r !important;
+	color : @color-selectbox-text-dark !important;
+}

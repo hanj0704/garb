@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-4f968e80" version="1.0.0.0">
+  <head std:sid="head-79869488">
+    <title>Paging</title>
+    <screen std:sid="screen-ae2030a5" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-30c5f6a4" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-70db143b" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-f5d0be8a">
+      <cl:dataset std:sid="d-set-9efed043" id="ds1">
+        <cl:listener std:sid="listener-f7c22599" handler="onDs1Sort" name="sort"/>
+        <cl:datacolumnlist>
+          <cl:datacolumn datatype="number" name="board_no"/>
+          <cl:datacolumn name="title"/>
+          <cl:datacolumn name="content"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-fbbbd0f5" id="subList" action="./paging/list.do">
+        <cl:listener std:sid="listener-a5d6eb77" handler="onSubListSubmitSuccess" name="submit-success"/>
+        <cl:requestparam name="a"/>
+        <cl:requestdata dataid="dmPage"/>
+        <cl:responsedata dataid="ds1"/>
+        <cl:responsedata dataid="dmPage"/>
+      </cl:submission>
+      <cl:datamap std:sid="d-map-0337de12" id="dmPage">
+        <cl:datacolumnlist>
+          <cl:datacolumn defaultvalue="0" name="totCnt"/>
+          <cl:datacolumn defaultvalue="10" name="rowSize"/>
+          <cl:datacolumn defaultvalue="1" name="pageIdx"/>
+          <cl:datacolumn defaultvalue="asc" name="sortCondition"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-ae13f5f1" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-c4529122" handler="onBodyLoad" name="load"/>
+    <cl:output std:sid="output-331b0f90" id="opt1" style="font-weight:bold; font-size:14pt;" value="페이지 인덱싱">
+      <cl:verticaldata std:sid="v-data-5d705049" height="46px" width="100px"/>
+    </cl:output>
+    <cl:output std:sid="output-8e5daba4" id="opt2" style="border-top-width:1px; border-top-color:black; border-top-style:solid;" value=" 해당 화면은 데이터베이스에 접근하여 가져온 데이터를 바탕으로, 페이지 인덱서 컨트롤을 활용한 인덱싱 예제입니다.&#xD;&#xA;데이터 맵에 인덱싱에 필요한[전체 데이터량, 한 페이지에 보여질 행의 수 , 현재 사용자가 선택한 인덱스]를 서버로 보내서, &#xD;&#xA;쿼리를 통해 특정 위치부터 지정한 갯수만큼의 데이터를 보여주는 예제입니다.&#xD;&#xA; 또한 그리드 상단에 있는 단일 정렬 조건을 클릭할 경우, 정렬 조건을 데이터맵에 담아 조건으로 보내서 , 쿼리를 통해 가져올 &#xD;&#xA;데이터의 정렬조건을 변환하여 오름차순, 내림차순으로 정렬된 데이터에서 인덱싱을 하는 기능을 구현하였습니다.&#xD;&#xA; 스크립트에 대한 해설을 참조하였으니, 스크립트 편집기를 확인하시기 바랍니다.&#xD;&#xA;예제를 받아보셔서 확인하실 경우, db 통신을 전제하고 있기 때문에 , context.xml에서 dataSource항목과, mybatis부분을 확인해주시기 바랍니다.&#xD;&#xA;쿼리는 mariadb기준으로 작성되었습니다.">
+      <cl:verticaldata std:sid="v-data-bdb17009" height="189px" width="100px"/>
+    </cl:output>
+    <cl:grid std:sid="grid-f400edc2" id="grd1" columnMovable="false" columnResizable="false" datasetid="ds1" readonly="false">
+      <cl:verticaldata std:sid="v-data-31d6e755" autosize="height" height="446px" width="984px"/>
+      <cl:gridcolumn std:sid="g-column-5684b09c"/>
+      <cl:gridcolumn std:sid="g-column-3fac0823"/>
+      <cl:gridcolumn std:sid="g-column-9b2ca070"/>
+      <cl:gridheader std:sid="gh-band-c60e3510">
+        <cl:gridrow std:sid="g-row-073141ce"/>
+        <cl:gridcell std:sid="gh-cell-155a5f36" colindex="0" rowindex="0" filterable="false" sortable="false" sortcolumnname="board_no" targetcolumnname="board_no" text="board_no"/>
+        <cl:gridcell std:sid="gh-cell-18006175" colindex="1" rowindex="0" filterable="false" sortable="false" targetcolumnname="title" text="title"/>
+        <cl:gridcell std:sid="gh-cell-fb11c34a" colindex="2" rowindex="0" filterable="false" sortable="false" targetcolumnname="content" text="content"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-b33fd121">
+        <cl:gridrow std:sid="g-row-13ad4151"/>
+        <cl:gridcell std:sid="gd-cell-951441ce" colindex="0" rowindex="0" columnname="board_no"/>
+        <cl:gridcell std:sid="gd-cell-fc1ed3ef" colindex="1" rowindex="0" columnname="title"/>
+        <cl:gridcell std:sid="gd-cell-3d8eb5ae" colindex="2" rowindex="0" columnname="content"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:pageindexer std:sid="p-indexer-4171095d" id="pageIndex">
+      <cl:listener std:sid="listener-8b86f98e" handler="onPageIndexSelectionChange" name="selection-change"/>
+      <cl:datamapbind category="PROPERTY" property="totalRowCount" columnname="totCnt" datacontrolid="dmPage"/>
+      <cl:datamapbind category="PROPERTY" property="pageRowCount" columnname="rowSize" datacontrolid="dmPage"/>
+      <cl:verticaldata std:sid="v-data-2507aaab" height="40px" width="984px"/>
+    </cl:pageindexer>
+    <cl:verticallayout std:sid="v-layout-ce9fea5b" bottommargin="20" leftmargin="20" rightmargin="20" topmargin="20"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

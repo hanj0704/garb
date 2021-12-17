@@ -1,0 +1,40 @@
+@import "../settings.part.less";
+@import "../custom-settings.part.less";
+
+.tooltiptext {
+    background-color: #3a3a3a;
+    border-radius: 3px;
+    padding: 5px 5px 5px 5px;
+	
+   	.cl-text{
+   		font-size:12px;
+   		color:#ffffff;
+   	} 
+   		
+   .tooltiptext-content{
+   		font-size:12px;
+   		color:#ffffff;
+   		line-height:1.5;
+   }
+}
+
+.tooltiptext.udc-top .after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    border:5px solid transparent;
+    border-top-color:#eee;
+    bottom:0px;
+}
+
+.tooltiptext.udc-bottom .after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    border:5px solid transparent;
+    border-bottom-color:#eee;
+    top:0px;
+}
+

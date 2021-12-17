@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ec34f111" version="1.0.0.0">
+  <head std:sid="head-1b19020a">
+    <title>youTest</title>
+    <screen std:sid="screen-cc80aa2f" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-d8a1ad55" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-e33889bd" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-4e2ee08b">
+      <cl:dataset std:sid="d-set-d349a6cf" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-deee768e" name="label"/>
+          <cl:datacolumn std:sid="d-column-996e6874" name="value"/>
+          <cl:datacolumn std:sid="d-column-9404ebe4" name="parent"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label1</cl:datavalue>
+            <cl:datavalue columnname="value">value1</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label2</cl:datavalue>
+            <cl:datavalue columnname="value">value2</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label3</cl:datavalue>
+            <cl:datavalue columnname="value">value3</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label4</cl:datavalue>
+            <cl:datavalue columnname="value">value4</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label5</cl:datavalue>
+            <cl:datavalue columnname="value">value5</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label6</cl:datavalue>
+            <cl:datavalue columnname="value">value6</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label7</cl:datavalue>
+            <cl:datavalue columnname="value">value7</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label8</cl:datavalue>
+            <cl:datavalue columnname="value">value8</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-73f4b845" style="top:0px; left:0px; width:800px; height:600px;" class="cl-form-group">
+    <cl:listener std:sid="listener-afec32c4" name="load" handler="onBodyLoad"/>
+    <cl:output std:sid="output-2a5824fc" id="opts" value="Output">
+      <cl:xylayoutdata std:sid="xyl-data-5a9dd91c" top="20px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:button std:sid="button-b138829b" id="btn1" value="Button">
+      <cl:listener std:sid="listener-93285e49" name="click" handler="onBtn1Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-f3fd6e37" top="65px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:group std:sid="group-872ce2d7" id="grp1">
+      <cl:xylayoutdata std:sid="xyl-data-78548076" top="20px" left="151px" width="386px" height="140px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:menu std:sid="menu-0971e446">
+        <cl:verticaldata std:sid="v-data-a07a63a0" width="130px" height="99px" autosize="none"/>
+        <cl:menuitem std:sid="m-item-680b16ca" label="label1" value="value1"/>
+        <cl:menuitem std:sid="m-item-b2ad8e3a" label="label2" value="value2"/>
+        <cl:menuitem std:sid="m-item-316b7453" label="label3" value="value3"/>
+        <cl:menuitem std:sid="m-item-18c8c915" label="label4" value="value4"/>
+        <cl:menuitem std:sid="m-item-a02f3bcd" label="label5" value="value5"/>
+        <cl:menuitem std:sid="m-item-7ee55b5c" label="label6" value="value6"/>
+        <cl:menuitem std:sid="m-item-989a69f9" label="label7" value="value7"/>
+        <cl:menuitem std:sid="m-item-0f0f1b7e" label="label8" value="value8"/>
+        <cl:menuitem std:sid="m-item-3ea9a4eb" label="label9" value="value9"/>
+        <cl:menuitem std:sid="m-item-0402f43a" label="label10" value="value10"/>
+        <cl:menuitem std:sid="m-item-cfd1bacf" label="label11" value="value11"/>
+      </cl:menu>
+      <cl:verticallayout std:sid="v-layout-a979d2f2"/>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-27044646"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

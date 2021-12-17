@@ -1,0 +1,103 @@
+@import "../settings.part.less";
+@import "../custom-settings.part.less";
+
+/* 노티파이어 아이템 */
+.cl-notifier-item {
+	border : none;
+	border-radius : 5px;
+	font: @default-font;
+	padding : 0 15px;
+
+	/* 노티파이어 아이템 텍스트 */
+	.cl-text {
+		padding : 0 10px;
+	}
+
+	/* 노티파이어 아이템 아이콘 */
+	.cl-notifier-icon {
+		width : 25px;
+		height : 25px;
+		background-size : 24px 25px;
+	}
+
+	/* 노티파이어 아이템 닫기 버튼 */
+	.cl-notifier-closebutton {  
+		 background-image: url(images/noti_close.png);
+		 background-size : 14px 13px;
+	}
+
+	/* 노티파이어 아이템 기본 스타일 */
+	&.cl-notifier-default {
+		background-color : #5b6879;
+		color : @white;
+		
+		/* 노티파이어 아이템 기본 아이콘 */
+		.cl-notifier-default-icon {
+			 background-image: url(images/noti01.png);
+		}
+	}
+
+	/* 노티파이어 아이템 success 스타일 */
+	 //20191014 가이드 
+	&.cl-notifier-success {	
+		background-color : #daf4e9;
+		color : #3db27f;
+		font-size : 14px;
+		font-weight : bold;
+		border : 1px solid #3db27f;
+//		border-raidus : 0px 0px 6px;
+
+		/* 노티파이어 아이템 success 아이콘 */
+		.cl-notifier-success-icon {
+			 background-image: url(images/noti03.png);
+		}
+	}
+
+	/* 노티파이어 아이템 info 스타일 */
+	 //20191014 가이드 
+	&.cl-notifier-info {	
+		background-color : #e2f2ff;
+		color : #6ea9db;
+		font-size : 14px;
+		font-weight : bold;
+		border : 1px solid #6ea9db;
+//		border-raidus : 0px 0px 6px;
+
+		/* 노티파이어 아이템 info 아이콘 */
+		.cl-notifier-info-icon {
+			 background-image: url(images/noti02.png);
+		}
+	}
+	
+	/* 노티파이어 아이템 warning 스타일 */
+	 //20191014 가이드 
+	&.cl-notifier-warning {		
+		background-color : #fff0d9;
+		color : #ffa518;
+		font-size : 14px;
+		font-weight : bold;
+		border : 1px solid #ffa518;
+//		border-raidus : 0px 0px 6px;
+
+		/* 노티파이어 아이템 warning 아이콘 */
+		.cl-notifier-warning-icon {
+			 background-image: url(images/noti04.png);
+		}
+	}
+	
+	/* 노티파이어 아이템 danger 스타일 */
+	 //20191014 가이드 
+	&.cl-notifier-danger {
+		background-color : #fce3d9;
+		color : #ee5a60;
+		font-size : 14px;
+		font-weight : bold;
+		border : 1px solid #ee5a60;
+//		border-raidus : 0px 0px 6px;
+
+		/* 노티파이어 아이템 danger 아이콘 */
+		.cl-notifier-danger-icon {
+			 background-image: url(images/noti05.png);
+		}
+	}
+}

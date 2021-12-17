@@ -1,0 +1,47 @@
+@import "../settings.part.less";
+@import "../custom-settings.part.less";
+
+
+/* 버튼 */
+.cl-button {
+	font: @default-font;
+	color: @color-text-white-01;
+	background-image: none;
+	background-color : @color-primary-01;
+	border-radius: 3px;
+	border: none;
+	text-shadow: none;
+	
+	/* 텍스트 스타일 */
+	.cl-text {
+		// text-overflow:ellipsis;
+		// overflow:hidden;
+	}
+
+	/* 버튼위에 마우스를 올렸을 때의 스타일 */
+	&:not(.cl-disabled):hover{
+		color: @white;		
+		border : none;
+		opacity : 0.8;
+	}
+	/* 버튼이 포커스를 가졌을 때의 스타일 */
+	&:focus, &.cl-focus{
+		color: @white;		
+		border : none;
+	}
+
+	/* 버튼을 클릭했을 때의 스타일 */
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-image : none;
+		color: @white;		
+		border : none;
+		opacity : 0.9;
+	}
+}
+
+/* Disable 상태의 버튼 */
+.cl-button.cl-disabled{
+	background-color : @color-bg-disabled;
+	color: @color-disabled;
+	border : none;
+}

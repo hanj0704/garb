@@ -1,0 +1,260 @@
+@import "../settings.part.less";
+@import "../custom-settings.part.less";
+
+.cl-output.main-title {
+	background : url(images/icon_title.png) no-repeat left 3px;
+	font-size : 18px;
+	padding-left: 25px;
+}
+
+.cl-output.sub-title {
+	background : url(images/icon_bullet.png) no-repeat left center;
+	font-size : @font-title;
+	font-weight : @cl-font-bold;
+	padding-left : 20px;
+}
+
+.cl-output.pop-sub-title {
+	background : url(images/icon_bullet2.png) no-repeat left center;
+	font-size : 14px;
+	font-weight : @cl-font-bold;
+	padding-left : 10px;
+}
+
+.cl-output.tab-sub-title {
+	background : url(images/icon_bullet2.png) no-repeat left center;
+	font-size : @font-title;
+	font-weight : @cl-font-bold;
+	padding-left : 5px;
+}
+
+.cl-output.sub-title {
+	background : url(images/icon_bullet.png) no-repeat left center;
+	font-size : @font-title;
+	font-weight : @cl-font-bold;
+	padding-left : 20px;
+}
+
+/** 일반 화면내의 타이틀 정보  */
+.icon-label-title-area{
+	.icon-label-title{
+		background : url(images/icon_bullet.png) no-repeat left center;
+		font : @font-title;		
+		padding-left : 20px;
+	}
+}
+
+.icon-label-title{
+	background : url(images/icon_bullet.png) no-repeat left center;
+	font : @font-title;		
+	padding-left : 20px;
+}
+
+
+.table-title-box{
+	.table-title {
+		font : @font-title;	
+		padding-left : 20px;
+	}
+}
+
+.grid-title-box{
+	.grid-title {
+		font-size : @font-title;
+		font-weight: bold;	
+		color : @color-text-black-01;
+		//padding-left : 20px;
+		
+		// 조사보고서의 타이틀 정의 
+		&.normal {
+			font-weight : normal;
+		}
+	}
+}
+
+.title-box{
+	.title {
+		font-size : @font-title;
+		font-weight: bold;	
+		color : @color-text-black-01;
+		//padding-left : 20px;
+		
+		// 조사보고서의 타이틀 정의 
+		&.normal {
+			font-weight : normal;
+		}
+	}
+}
+
+
+.form-title-box{
+	
+	.form-title {
+		font-size : @font-title;
+		font-weight: bold;
+		color : @color-black-01;
+		padding-left : 20px;
+		
+		// 조사보고서의 타이틀 정의 
+		&.normal {
+			font-weight : normal;
+		}
+	}
+}
+
+// 폼 박스안에 타이틀 영역만 추가 한경우 사용 (2019.10.02)
+.form-box{
+	
+	.form-title {
+		font-size : @font-title;
+		font-weight: bold;
+		color : @color-text-black-01;
+		
+		// 조사보고서의 타이틀 정의 
+		&.normal {
+			font-weight : normal;
+		}
+	}
+}
+
+
+.info-title-box{
+	
+	.info-title {
+		font-size : @font-title;
+		font-weight: bold;
+		color : @color-black-01;
+		padding-left : 20px;
+		
+		&.right{
+			padding-right: 20px;
+			text-align: right;
+		}
+		
+		// 조사보고서의 타이틀 정의 
+		&.normal {
+			font-weight : normal;
+		}
+	}
+}
+
+.chart-title-box{
+	
+	.chart-title {
+		font-size : @font-title;
+		font-weight: bold;	
+		color : @color-black-01;
+		padding-left : 20px;
+	}
+}
+
+.editor-title-box{
+	
+	.editor-title {
+		font-size : @font-title;
+		font-weight: bold;	
+		color : @color-black-01;
+		padding-left : 20px;
+	}
+}
+
+
+/** 팝업 화면내의 타이틀 정보  */
+.pop-icon-label-title-area{
+	.pop-icon-label-title{
+		background : url(images/icon_bullet2.png) no-repeat left center;
+		font : @font-regular;
+		font-size : @font-title;
+		font-weight : @font-bold;		
+		padding-left : 5px;
+	}
+}
+
+
+.pop-icon-label-title{
+	background : url(images/icon_bullet2.png) no-repeat left center;
+	font : @font-regular;
+	font-weight : @font-bold;		
+	padding-left : 5px;
+}
+
+
+/** 커스텀 테이블 적용 타이틀 정보  */
+.custom-title-box1{	
+	.title-bar{
+		background-color : @color-title-status-01;		
+	}
+	.title-area {
+		font : @font-headline-02;	
+		background-color : @color-title-bg-status-01;
+		
+		.title-id {			
+			color : @color-text-black-01;
+		}
+		.title-name {
+			color : @color-title-status-01;			
+		}
+	}
+}
+
+.custom-title-box2{	
+	.title-bar{
+		background-color : @color-title-status-02;		
+	}
+
+	.title-area {
+		font : @font-headline-02;	
+		background-color : @color-title-bg-status-02;
+		border-bottom : @color-table-border-bottom;
+		.title-id {			
+			color : @color-text-black-01;
+		}
+		.title-name {
+			color : @color-title-status-02;			
+		}
+	}
+	
+}
+.custom-title-box3{	
+	.title-bar{
+		background-color : @color-title-status-03;		
+	}
+
+	.title-area {
+		font : @font-headline-02;	
+		background-color : @color-title-bg-status-03;
+		border-bottom : @color-table-border-bottom;
+		.title-id {			
+			color : @color-text-black-01;
+		}
+		.title-name {
+			color : @color-title-status-03;			
+		}
+	}
+}
+
+.custom-title-box4{	
+	.title-bar{
+		background-color : @color-title-status-04;		
+	}
+	
+	.title-area {
+		font : @font-headline-02;	
+		background-color : @color-title-bg-status-04;
+		border-bottom : @color-table-border-bottom;
+		.title-id {			
+			color : @color-text-black-01;
+		}
+		.title-name {
+			color : @color-title-status-04;			
+		}
+	}
+}
+
+//81page 메인 타이틀 
+.window-title {
+	font-color : @white;
+	text-align : center;
+	font-size  : 14px;
+	font-weight : bold;
+}

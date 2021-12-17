@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ec46fcb1" version="1.0.3167">
+  <head std:sid="head-dbeaa8c1">
+    <screen std:sid="screen-1ab385e3" id="default" name="default" width="1920px" height="1280px"/>
+    <cl:model std:sid="model-8db2c1fc"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-0716dbf2">
+    <cl:output std:sid="output-6c23d669" class="bg-primary text-white h3 pl-3 ff-num" value="Typography">
+      <cl:verticaldata std:sid="v-data-94408047" width="100px" height="60px"/>
+    </cl:output>
+    <cl:group std:sid="group-0718e117">
+      <cl:verticaldata std:sid="v-data-3503cae8" width="380px" height="1160px" autosize="height"/>
+      <cl:group std:sid="group-a6574295">
+        <cl:verticaldata std:sid="v-data-fe3e9013" width="1720px" height="113px" autosize="height"/>
+        <cl:output std:sid="output-0924cac3" class="h4" value="폰트 사용 정책">
+          <cl:verticaldata std:sid="v-data-076f3c2c" width="95px" height="39px" autosize="height"/>
+        </cl:output>
+        <cl:output std:sid="output-c7846c8a" value="환경의 가독성과 속도를 고려하여 사용자의 디바이스에서 제공되는 기본 시스템 폰트를 사용한다. 웹에서 테스트 시에는 프로젝트 내 fonts.part.less 파일을 이용하거나 custom-theme.less의 CDN을 이용하며, 실제 앱으로 구성하는 경우 해당 파일 또는 CDN을 주석한다.">
+          <cl:verticaldata std:sid="v-data-f645a8a1" width="95px" height="51px" autosize="height"/>
+        </cl:output>
+        <cl:verticallayout std:sid="v-layout-c4474c5c" spacing="24"/>
+      </cl:group>
+      <cl:group std:sid="group-ac091338" class="cl-form-group">
+        <cl:verticaldata std:sid="v-data-9f3af975" width="380px" height="578px"/>
+        <cl:output std:sid="output-53fee6fd" value="NotoSansCJK KR">
+          <cl:formdata std:sid="f-data-dd352629" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-66a24abd" class="ff-num" value="Montserrat">
+          <cl:formdata std:sid="f-data-7185fa9c" row="0" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-10ea92d6" class="fw-light" value="Light&#xD;&#xA;&#xD;&#xA;더 나은 금융을 향한 동반자 현대차 증권입니다.">
+          <cl:formdata std:sid="f-data-a0e57cc4" row="1" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-b4edf553" class="ff-num fw-light" value="Light&#xD;&#xA;&#xD;&#xA;ABCDEFGHIJKLMNOPQRSTUVWXYZ&#xD;&#xA;0123456789">
+          <cl:formdata std:sid="f-data-a3689088" row="1" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-3a3c79fe" class="fw-normal" value="Regular&#xD;&#xA;&#xD;&#xA;더 나은 금융을 향한 동반자 현대차 증권입니다.">
+          <cl:formdata std:sid="f-data-a2e232ea" row="2" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-07f0d24b" class="ff-num fw-normal" value="Regular&#xD;&#xA;&#xD;&#xA;ABCDEFGHIJKLMNOPQRSTUVWXYZ&#xD;&#xA;0123456789">
+          <cl:formdata std:sid="f-data-a6c81944" row="2" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-010c46af" class="fw-medium" value="Medium&#xD;&#xA;&#xD;&#xA;더 나은 금융을 향한 동반자 현대차 증권입니다.">
+          <cl:formdata std:sid="f-data-ea92e647" row="3" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-54fb09f8" class="ff-num fw-medium" value="Medium&#xD;&#xA;&#xD;&#xA;ABCDEFGHIJKLMNOPQRSTUVWXYZ&#xD;&#xA;0123456789">
+          <cl:formdata std:sid="f-data-59855d0a" row="3" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-f38be007" class="fw-bold" value="Bold&#xD;&#xA;&#xD;&#xA;더 나은 금융을 향한 동반자 현대차 증권입니다.">
+          <cl:formdata std:sid="f-data-6e20c97e" row="4" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-9aa2996c" class="ff-num fw-bold" value="Bold&#xD;&#xA;&#xD;&#xA;ABCDEFGHIJKLMNOPQRSTUVWXYZ&#xD;&#xA;0123456789">
+          <cl:formdata std:sid="f-data-edad72ce" row="4" col="1"/>
+        </cl:output>
+        <cl:formlayout std:sid="f-layout-d5c4cadf" hspace="24px" vspace="24px" top-margin="12px" right-margin="12px" bottom-margin="12px" left-margin="12px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="56" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="100" unit="PIXEL"/>
+          <cl:rows length="100" unit="PIXEL"/>
+          <cl:rows length="100" unit="PIXEL"/>
+          <cl:rows length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-a31fce61" spacing="40" leftmargin="100" rightmargin="100" topmargin="80" bottommargin="80"/>
+    </cl:group>
+    <cl:group std:sid="group-57a7c5d7">
+      <cl:verticaldata std:sid="v-data-ae4d931e" width="380px" height="944px" autosize="height"/>
+      <cl:group std:sid="group-a29cd9dd">
+        <cl:verticaldata std:sid="v-data-84bf23a9" width="1720px" height="113px" autosize="height"/>
+        <cl:output std:sid="output-24b8894f" class="h4" value="폰트 사이즈">
+          <cl:verticaldata std:sid="v-data-fb3bc558" width="95px" height="39px" autosize="height"/>
+        </cl:output>
+        <cl:output std:sid="output-47ff3d8c" value="짝수 단위로 사용 가능하며, 행간은 폰트 사이즈 * 1.5로 통일한다.">
+          <cl:verticaldata std:sid="v-data-7cc9f906" width="95px" height="51px" autosize="height"/>
+        </cl:output>
+        <cl:verticallayout std:sid="v-layout-5836603f" spacing="24"/>
+      </cl:group>
+      <cl:group std:sid="group-7329a0e6">
+        <cl:verticaldata std:sid="v-data-01e404b3" width="380px" height="658px" autosize="height"/>
+        <cl:output std:sid="output-6039c090" class="h1" value="H1 / NOTOSANS / 40px / line-height60">
+          <cl:verticaldata std:sid="v-data-39c2466c" width="95px" height="60px" autosize="none"/>
+        </cl:output>
+        <cl:output std:sid="output-5d4aaf0f" class="h2" value="H2 / NOTOSANS / 32px / line-height48">
+          <cl:verticaldata std:sid="v-data-aa7821d9" width="95px" height="48px" autosize="none"/>
+        </cl:output>
+        <cl:output std:sid="output-da351dc1" class="h3" value="H3 / NOTOSANS / 24px / line-height36">
+          <cl:verticaldata std:sid="v-data-2ded7186" width="95px" height="36px" autosize="none"/>
+        </cl:output>
+        <cl:output std:sid="output-16ebedf2" class="h4" value="Subtitle 1 / NOTOSANS / 22px / line-height33">
+          <cl:verticaldata std:sid="v-data-ac1714b4" width="95px" height="33px" autosize="none"/>
+        </cl:output>
+        <cl:output std:sid="output-97ad7f86" class="h5" value="Subtitle 2 / NOTOSANS / 20px / line-height30">
+          <cl:verticaldata std:sid="v-data-d28d4819" width="95px" height="30px" autosize="none"/>
+        </cl:output>
+        <cl:output std:sid="output-49b27a11" class="h6" value="Body 1 / NOTOSANS / 18px / line-height27">
+          <cl:verticaldata std:sid="v-data-7803cb8d" width="95px" height="30px" autosize="none"/>
+        </cl:output>
+        <cl:output std:sid="output-d0d54898" value="Body 2 / NOTOSANS / 16px / line-height24">
+          <cl:verticaldata std:sid="v-data-23f5efa9" width="95px" height="24px" autosize="none"/>
+        </cl:output>
+        <cl:output std:sid="output-2d9576a6" class="fs-sm" value="Body 3 / NOTOSANS / 14px / line-height21">
+          <cl:verticaldata std:sid="v-data-b68c58dc" width="95px" height="21px" autosize="none"/>
+        </cl:output>
+        <cl:output std:sid="output-a9f7a19a" class="fs-sm" value="Caption / NOTOSANS / 12px / line-height18">
+          <cl:verticaldata std:sid="v-data-7c2514d2" width="95px" height="21px" autosize="none"/>
+        </cl:output>
+        <cl:verticallayout std:sid="v-layout-b4663f7c" spacing="38"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-565d9517" spacing="40" leftmargin="100" rightmargin="100" topmargin="80" bottommargin="80"/>
+    </cl:group>
+    <cl:output std:sid="output-1e086f50" class="bg-primary text-white h3 pl-3 ff-num" value="Color">
+      <cl:verticaldata std:sid="v-data-1b86201e" width="1920px" height="60px" autosize="none"/>
+    </cl:output>
+    <cl:group std:sid="group-bcd2839e">
+      <cl:verticaldata std:sid="v-data-1d3afd7c" width="1920px" height="985px" autosize="height"/>
+      <cl:group std:sid="group-35d2d037">
+        <cl:verticaldata std:sid="v-data-502c5530" width="1720px" height="113px" autosize="height"/>
+        <cl:output std:sid="output-cc2866ed" class="h4" value="컬러 사용 정책">
+          <cl:verticaldata std:sid="v-data-9e360a4d" width="95px" height="39px" autosize="height"/>
+        </cl:output>
+        <cl:output std:sid="output-00243c73" value="60:30:10 비율로 사용한다. (60% Background-color / 30% second color / 10% accent color) 폰트컬러는 웹접근성에 맞춰 시각적으로 조정하여 사용한다.">
+          <cl:verticaldata std:sid="v-data-fa969ce1" width="95px" height="51px" autosize="height"/>
+        </cl:output>
+        <cl:verticallayout std:sid="v-layout-e5f79a07" spacing="24"/>
+      </cl:group>
+      <cl:group std:sid="group-e4605b5f">
+        <cl:verticaldata std:sid="v-data-1c2d66ae" width="380px" height="673px" autosize="height"/>
+        <cl:group std:sid="group-ce985f65" class="card">
+          <cl:flowlayoutdata std:sid="f-data-cb8729f9" width="260px" height="150px" autosize="height"/>
+          <cl:output std:sid="output-de561648" class="bg-primary" value="">
+            <cl:formdata std:sid="f-data-f3f666c2" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-3f3ce2bd" class="text-primary pl-1" value="(Positive color) #7512CE">
+            <cl:formdata std:sid="f-data-d20ddacc" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-620ef366" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-f1aebd3f" class="card">
+          <cl:flowlayoutdata std:sid="f-data-5f6d0986" width="260px" height="150px" autosize="height"/>
+          <cl:output std:sid="output-09a3f2be" class="bg-info" value="">
+            <cl:formdata std:sid="f-data-67a61095" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-f88a63b8" class="text-info pl-1" value="(Neutral Color) #0EDB70">
+            <cl:formdata std:sid="f-data-76d9b577" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-72ae7cdd" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-d03d91c8" class="card">
+          <cl:flowlayoutdata std:sid="f-data-539bab41" width="260px" height="150px" autosize="height"/>
+          <cl:output std:sid="output-fd4aeedd" class="bg-danger" value="">
+            <cl:formdata std:sid="f-data-6831d5b8" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-14d6dd3a" class="text-danger pl-1" value="(Negative color) #0EDB70">
+            <cl:formdata std:sid="f-data-e88de14e" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-640a7bad" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-0b50bd07" class="card">
+          <cl:flowlayoutdata std:sid="f-data-e00b3b1d" width="260px" height="150px" autosize="height"/>
+          <cl:output std:sid="output-1e54713a" class="bg-cyan" value="">
+            <cl:formdata std:sid="f-data-2c908740" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-d9054949" class="text-cyan pl-1" value="(Graph Color #1) #00C9D8">
+            <cl:formdata std:sid="f-data-1da969dc" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-8e70f28b" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-72d8cd46" class="card">
+          <cl:flowlayoutdata std:sid="f-data-45eb699f" width="260px" height="150px" autosize="height"/>
+          <cl:output std:sid="output-b6d1c42b" class="bg-blue" value="">
+            <cl:formdata std:sid="f-data-d995577a" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-85eafff9" class="text-blue pl-1" value="(Graph Color #2) #3462F1">
+            <cl:formdata std:sid="f-data-8c1721f6" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-59663459" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-505bffb1" class="card">
+          <cl:flowlayoutdata std:sid="f-data-63c6dd95" width="260px" height="150px" autosize="height"/>
+          <cl:output std:sid="output-e8cfe56c" class="bg-red" value="">
+            <cl:formdata std:sid="f-data-203588e8" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-cc27b356" class="text-red pl-1" value="(Graph Color #3) #FA4348">
+            <cl:formdata std:sid="f-data-2bf7a906" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-41bcb2ec" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-27aefe5f" class="card">
+          <cl:flowlayoutdata std:sid="f-data-34d9ca48" width="260px" height="150px" autosize="height"/>
+          <cl:output std:sid="output-e019f9e3" class="bg-pink" value="">
+            <cl:formdata std:sid="f-data-a3a2d81a" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-4a64125d" class="text-pink pl-1" value="(Graph Color #4) #FA4348">
+            <cl:formdata std:sid="f-data-562d03a7" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-feda179b" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-f2937e76" class="card">
+          <cl:flowlayoutdata std:sid="f-data-666bf3f1" width="260px" height="150px" autosize="height"/>
+          <cl:output std:sid="output-2767d19a" class="bg-teal" value="">
+            <cl:formdata std:sid="f-data-0ba053ed" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-828266bb" class="text-teal pl-1" value="(Highlighter pen) #FA4348">
+            <cl:formdata std:sid="f-data-3a1d2529" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-da011d4b" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-fe84189d" class="card">
+          <cl:flowlayoutdata std:sid="f-data-da027688" width="260px" height="150px" autosize="height"/>
+          <cl:output std:sid="output-80c721e8" class="bg-black" value="">
+            <cl:formdata std:sid="f-data-83fec736" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-ec759c64" class="text-black pl-1" value="(Black Text Color #1) #000000">
+            <cl:formdata std:sid="f-data-2d8afc42" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-f85f1ffc" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-298567a3" class="card">
+          <cl:flowlayoutdata std:sid="f-data-32197327" width="260px" height="150px" autosize="height"/>
+          <cl:output std:sid="output-ea72cd37" class="bg-gray-900" value="">
+            <cl:formdata std:sid="f-data-2cb03c6f" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-2a851370" class="text-gray-900 pl-1" value="(Black Text Color #2) #333333">
+            <cl:formdata std:sid="f-data-bbd06d6c" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-0bfca207" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-acd0aa1d" class="card">
+          <cl:flowlayoutdata std:sid="f-data-95e72914" width="260px" height="150px" autosize="height"/>
+          <cl:output std:sid="output-0e197b09" class="bg-gray-800" value="">
+            <cl:formdata std:sid="f-data-b4a2553f" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-e1a2b587" class="text-gray-800 pl-1" value="(Black Text Color #3) #666666">
+            <cl:formdata std:sid="f-data-c75d69e0" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-ca22851d" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-4882e846" class="card">
+          <cl:flowlayoutdata std:sid="f-data-6141b1e5" width="260px" height="150px" autosize="height"/>
+          <cl:output std:sid="output-b032e386" class="bg-gray-700" value="">
+            <cl:formdata std:sid="f-data-1e387344" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-d5b1727c" class="text-gray-700 pl-1" value="(Black Text Color #4) #707070">
+            <cl:formdata std:sid="f-data-f0a82381" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-b2836ddf" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-e015d005" class="card">
+          <cl:flowlayoutdata std:sid="f-data-22615e9f" width="260px" height="150px" autosize="height"/>
+          <cl:output std:sid="output-9bddbb42" class="bg-gray-500" value="">
+            <cl:formdata std:sid="f-data-8146c0e8" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-ab12c08f" class="text-gray-500 pl-1" value="(Black Text Color #5) #999999">
+            <cl:formdata std:sid="f-data-11ce9a71" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-6ad0f786" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-c2e8670d" class="card">
+          <cl:flowlayoutdata std:sid="f-data-ed3043a5" width="260px" height="150px" autosize="height"/>
+          <cl:output std:sid="output-ed869c97" class="bg-gray-100" value="">
+            <cl:formdata std:sid="f-data-56e97e35" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-7ff60faa" class="text-gray-100 pl-1" value="(Line Color #1) #F5F5F5">
+            <cl:formdata std:sid="f-data-2f23ebd5" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-5ba164c4" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-2ad72bbf" class="card">
+          <cl:flowlayoutdata std:sid="f-data-9a115375" width="260px" height="150px" autosize="height"/>
+          <cl:output std:sid="output-67bd37c7" class="bg-gray" value="">
+            <cl:formdata std:sid="f-data-dc3576cf" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-dfc717e8" class="text-gray pl-1" value="(Line Color #2) #E9E9E9">
+            <cl:formdata std:sid="f-data-4331fc49" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-883a4ca6" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-9bcdd958" class="card">
+          <cl:flowlayoutdata std:sid="f-data-94ac16d0" width="260px" height="150px" autosize="height"/>
+          <cl:output std:sid="output-8ef3883e" class="bg-gray-200" value="">
+            <cl:formdata std:sid="f-data-f15f0822" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-a93b134c" class="text-gray-200 pl-1" value="(Line Color #3) #EBEBEB">
+            <cl:formdata std:sid="f-data-e94fb841" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-0c77d5de" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-c48848c3" class="card">
+          <cl:flowlayoutdata std:sid="f-data-a62ac278" width="260px" height="150px" autosize="height"/>
+          <cl:output std:sid="output-36ec8e26" class="bg-gray-300" value="">
+            <cl:formdata std:sid="f-data-24e0fa6d" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-e77b5565" class="text-gray-300 pl-1" value="(Line Color #4) #DDDDDD">
+            <cl:formdata std:sid="f-data-cf084f67" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-97b797b6" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-f9a3cf82" class="card">
+          <cl:flowlayoutdata std:sid="f-data-22a07417" width="260px" height="150px" autosize="height"/>
+          <cl:output std:sid="output-bcae50e2" class="bg-gray-400" value="">
+            <cl:formdata std:sid="f-data-83d1a54e" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-a1357fe8" class="text-gray-400 pl-1" value="(Line Color #5) #CCCCCC">
+            <cl:formdata std:sid="f-data-01fc3c82" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-219ccb71" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-2420fba5" class="card">
+          <cl:flowlayoutdata std:sid="f-data-8246bcc5" width="260px" height="150px" autosize="height"/>
+          <cl:output std:sid="output-1453903a" class="bg-gray-600" value="">
+            <cl:formdata std:sid="f-data-c2d56521" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-cf457643" class="text-gray-600 pl-1" value="(Line Color #6) #888888">
+            <cl:formdata std:sid="f-data-399aa0fe" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-30264457" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-b7609187" class="card">
+          <cl:flowlayoutdata std:sid="f-data-c687dd33" width="260px" height="150px" autosize="height"/>
+          <cl:output std:sid="output-2cdde6da" class="bg-black" value="">
+            <cl:formdata std:sid="f-data-feb25044" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-782afa05" class="text-black pl-1" value="(Line Color #7) #000000">
+            <cl:formdata std:sid="f-data-f97c61f7" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-9c0953e5" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:flowlayout std:sid="f-layout-495a28d9" scrollable="false" hspacing="24" vspacing="24"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-8e8eac26" spacing="40" leftmargin="100" rightmargin="100" topmargin="80" bottommargin="80"/>
+    </cl:group>
+    <cl:output std:sid="output-fdfa95d6" class="bg-primary text-white h3 pl-3 ff-num" value="Button">
+      <cl:verticaldata std:sid="v-data-9f1aa64b" width="1920px" height="60px" autosize="none"/>
+    </cl:output>
+    <cl:group std:sid="group-361b77bb">
+      <cl:verticaldata std:sid="v-data-d6247f16" width="1920px" height="1160px" autosize="height"/>
+      <cl:group std:sid="group-d6e9969f">
+        <cl:verticaldata std:sid="v-data-c42fa920" width="1720px" height="113px" autosize="height"/>
+        <cl:output std:sid="output-e7937acd" class="h4" value="버튼 사용 정책">
+          <cl:verticaldata std:sid="v-data-cbec5533" width="95px" height="39px" autosize="height"/>
+        </cl:output>
+        <cl:output std:sid="output-2d59aa84" value="버튼은 종류에 따라 primary button(+floating button)/secondary button/radio/check-box/toggle button/text button/popup button/input bnutton/icon button으로 나뉘어 사용한다. 디바이스 해상도에 따라 가로비율은 가변되어 노출된다. secondary 버튼은 BG컬러에 따라 유동적으로 사용될 수 있다.">
+          <cl:verticaldata std:sid="v-data-1a7c5562" width="95px" height="51px" autosize="height"/>
+        </cl:output>
+        <cl:verticallayout std:sid="v-layout-4348db4d" spacing="24"/>
+      </cl:group>
+      <cl:group std:sid="group-ddc0e392">
+        <cl:verticaldata std:sid="v-data-1afed2f6" width="280px" height="354px" autosize="height"/>
+        <cl:group std:sid="group-640514e7">
+          <cl:flowlayoutdata std:sid="f-data-31ca37cc" width="328px" height="168px" autosize="height"/>
+          <cl:output std:sid="output-60279bdb" class="fw-medium" value="Primary Button">
+            <cl:verticaldata std:sid="v-data-a365cc7b" width="75px" height="24px"/>
+          </cl:output>
+          <cl:button std:sid="button-a210199b" value="긍정버튼">
+            <cl:verticaldata std:sid="v-data-91ff6c09" width="328px" height="56px" autosize="none"/>
+          </cl:button>
+          <cl:button std:sid="button-a4a99938" value="부정버튼">
+            <cl:verticaldata std:sid="v-data-8709f734" width="328px" height="56px" autosize="none"/>
+          </cl:button>
+          <cl:verticallayout std:sid="v-layout-33bdd631" spacing="16"/>
+        </cl:group>
+        <cl:group std:sid="group-066138d2">
+          <cl:flowlayoutdata std:sid="f-data-f9743c39" width="160px" height="150px" autosize="height"/>
+          <cl:output std:sid="output-d1b0135a" class="fw-medium" value="Secondary Button">
+            <cl:verticaldata std:sid="v-data-da33b2ee" width="75px" height="24px"/>
+          </cl:output>
+          <cl:button std:sid="button-bda6839d" value="목표 설정">
+            <cl:verticaldata std:sid="v-data-6964432b" width="160px" height="40px" autosize="none"/>
+          </cl:button>
+          <cl:verticallayout std:sid="v-layout-ae0e450c" spacing="16"/>
+        </cl:group>
+        <cl:group std:sid="group-8243ac5f">
+          <cl:flowlayoutdata std:sid="f-data-e1d453d9" width="328px" height="150px" autosize="height"/>
+          <cl:output std:sid="output-7de9e452" class="fw-medium" value="Radio / check-box">
+            <cl:verticaldata std:sid="v-data-0c8064d9" width="75px" height="24px"/>
+          </cl:output>
+          <cl:group std:sid="group-2b410002">
+            <cl:verticaldata std:sid="v-data-c202847e" width="328px" height="40px" autosize="none"/>
+            <cl:checkboxgroup std:sid="cb-group-f8d67ddd" id="cbg1" fixedwidth="false" itemspacing="8" enableditemexp="value != &quot;value3&quot;">
+              <cl:flowlayoutdata std:sid="f-data-0663e5d9" width="328px" height="40px" autosize="width"/>
+              <cl:item std:sid="item-89f5972e" label="수입" value="value1"/>
+              <cl:item std:sid="item-4dfc75d2" label="지출" value="value2"/>
+              <cl:item std:sid="item-835ee127" label="비활성화" value="value3"/>
+            </cl:checkboxgroup>
+            <cl:flowlayout std:sid="f-layout-9d5ff1b6" scrollable="false" hspacing="0" vspacing="0"/>
+          </cl:group>
+          <cl:group std:sid="group-d988abdb">
+            <cl:verticaldata std:sid="v-data-e71d7317" width="328px" height="40px" autosize="none"/>
+            <cl:radiobutton std:sid="r-button-7fa7f402" id="rdb1" fixedwidth="false" itemspacing="8" enableditemexp="value != &quot;value3&quot;">
+              <cl:flowlayoutdata std:sid="f-data-2a5f409f" width="328px" height="40px" autosize="width"/>
+              <cl:item std:sid="item-cc7cfb23" label="남자" value="value1"/>
+              <cl:item std:sid="item-efe81279" label="여자" value="value2"/>
+              <cl:item std:sid="item-abf5edb8" label="비활성화" value="value3"/>
+            </cl:radiobutton>
+            <cl:flowlayout std:sid="f-layout-b2b2c9dc" scrollable="false" hspacing="0" vspacing="0"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-6390f329" spacing="16"/>
+        </cl:group>
+        <cl:group std:sid="group-45e75f77">
+          <cl:flowlayoutdata std:sid="f-data-ce860056" width="328px" height="150px" autosize="height"/>
+          <cl:output std:sid="output-3f76bb73" class="fw-medium" value="Toggle Button">
+            <cl:verticaldata std:sid="v-data-220eb77b" width="75px" height="24px"/>
+          </cl:output>
+          <cl:group std:sid="group-63a5c88c">
+            <cl:verticaldata std:sid="v-data-c17b0c8b" width="328px" height="40px" autosize="none"/>
+            <cl:flowlayout std:sid="f-layout-1ee4a64f" scrollable="false" hspacing="0" vspacing="0"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-073b3f51" spacing="16"/>
+        </cl:group>
+        <cl:group std:sid="group-375327b9">
+          <cl:flowlayoutdata std:sid="f-data-c937a22c" width="160px" height="150px" autosize="height"/>
+          <cl:output std:sid="output-4f808d22" class="fw-medium" value="Toggle Button">
+            <cl:verticaldata std:sid="v-data-5f5a2415" width="75px" height="24px"/>
+          </cl:output>
+          <cl:group std:sid="group-48717e91">
+            <cl:verticaldata std:sid="v-data-e2a243f0" width="328px" height="40px" autosize="height"/>
+            <cl:button std:sid="button-daf268b3" value="텍스트버튼">
+              <cl:flowlayoutdata std:sid="f-data-ee9eb98e" width="120px" height="20px" autosize="width"/>
+            </cl:button>
+            <cl:flowlayout std:sid="f-layout-dd3a8e3a" scrollable="false" hspacing="0" vspacing="0"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-c9d58321" spacing="16"/>
+        </cl:group>
+        <cl:group std:sid="group-e2391e07">
+          <cl:flowlayoutdata std:sid="f-data-138d692a" width="328px" height="168px" autosize="height"/>
+          <cl:output std:sid="output-97ece6ea" class="fw-medium" value="Popup Button">
+            <cl:verticaldata std:sid="v-data-b5561c47" width="75px" height="24px"/>
+          </cl:output>
+          <cl:button std:sid="button-000855c8" value="긍정버튼">
+            <cl:verticaldata std:sid="v-data-12f587b8" width="328px" height="40px" autosize="none"/>
+          </cl:button>
+          <cl:button std:sid="button-4ad2abae" value="부정버튼">
+            <cl:verticaldata std:sid="v-data-3363d154" width="328px" height="40px" autosize="none"/>
+          </cl:button>
+          <cl:verticallayout std:sid="v-layout-1e21de9a" spacing="16"/>
+        </cl:group>
+        <cl:group std:sid="group-c8f64583">
+          <cl:flowlayoutdata std:sid="f-data-b5fd9e8f" width="160px" height="150px" autosize="height"/>
+          <cl:output std:sid="output-19d41dc2" class="fw-medium" value="Input Button">
+            <cl:verticaldata std:sid="v-data-240df3f6" width="75px" height="24px"/>
+          </cl:output>
+          <cl:group std:sid="group-fb34aa0b">
+            <cl:verticaldata std:sid="v-data-36c33c28" width="328px" height="40px" autosize="height"/>
+            <cl:button std:sid="button-02e6b246" value="다시요청">
+              <cl:flowlayoutdata std:sid="f-data-3b136f5d" width="76px" height="32px" autosize="width"/>
+            </cl:button>
+            <cl:flowlayout std:sid="f-layout-09566fbe" scrollable="false" hspacing="0" vspacing="0"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-3810fdca" spacing="16"/>
+        </cl:group>
+        <cl:flowlayout std:sid="f-layout-5d0fb9c0" scrollable="false" hspacing="24" vspacing="16"/>
+      </cl:group>
+      <cl:group std:sid="group-8eb4f6be">
+        <cl:verticaldata std:sid="v-data-b3663e62" width="280px" height="354px" autosize="height"/>
+        <cl:group std:sid="group-35b0f96c">
+          <cl:flowlayoutdata std:sid="f-data-8341505e" width="328px" height="246px" autosize="height"/>
+          <cl:output std:sid="output-4113b94c" class="fw-medium" value="Normal">
+            <cl:flowlayoutdata std:sid="f-data-9d2b403c" width="328px" height="24px" autosize="none"/>
+          </cl:output>
+          <cl:group std:sid="group-e5d0c3df">
+            <cl:flowlayoutdata std:sid="f-data-119e7dc4" width="328px" height="56px"/>
+            <cl:button std:sid="button-e4d56056" value="아니오">
+              <cl:formdata std:sid="f-data-962ff22e" row="0" col="0"/>
+            </cl:button>
+            <cl:button std:sid="button-ec24c10f" value="예, 맞습니다">
+              <cl:formdata std:sid="f-data-d7f6798b" row="0" col="1"/>
+            </cl:button>
+            <cl:formlayout std:sid="f-layout-a255d673" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="56" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-3aba6ea3">
+            <cl:flowlayoutdata std:sid="f-data-c2c0aa33" width="328px" height="56px" autosize="none"/>
+            <cl:button std:sid="button-8e30262d" value="아니오">
+              <cl:formdata std:sid="f-data-83141dc9" row="0" col="0"/>
+            </cl:button>
+            <cl:button std:sid="button-78cf04c9" value="예, 맞습니다">
+              <cl:formdata std:sid="f-data-1db5e841" row="0" col="1"/>
+            </cl:button>
+            <cl:formlayout std:sid="f-layout-186828e8" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="56" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="3" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="7" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-61a537f0">
+            <cl:flowlayoutdata std:sid="f-data-2fb3dcc9" width="328px" height="56px" autosize="none"/>
+            <cl:button std:sid="button-9cc51323" value="인증하기">
+              <cl:formdata std:sid="f-data-734f0473" row="0" col="0"/>
+            </cl:button>
+            <cl:formlayout std:sid="f-layout-b3c20bc7" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="56" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:flowlayout std:sid="f-layout-8009a6f4" scrollable="false" hspacing="24" vspacing="16"/>
+        </cl:group>
+        <cl:group std:sid="group-3ae540e6">
+          <cl:flowlayoutdata std:sid="f-data-82862bd1" width="328px" height="246px" autosize="height"/>
+          <cl:output std:sid="output-ae5919f5" class="fw-medium" value="Disabled">
+            <cl:flowlayoutdata std:sid="f-data-8ae5ff31" width="328px" height="24px" autosize="none"/>
+          </cl:output>
+          <cl:group std:sid="group-24d43c28">
+            <cl:flowlayoutdata std:sid="f-data-53e0e509" width="328px" height="56px"/>
+            <cl:button std:sid="button-59e66991" value="아니오">
+              <cl:formdata std:sid="f-data-e775e66b" row="0" col="0"/>
+            </cl:button>
+            <cl:button std:sid="button-3e80c6e8" value="예, 맞습니다">
+              <cl:formdata std:sid="f-data-ee78898d" row="0" col="1"/>
+            </cl:button>
+            <cl:formlayout std:sid="f-layout-cf162040" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="56" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-7d6a86c1">
+            <cl:flowlayoutdata std:sid="f-data-e4f351cb" width="328px" height="56px" autosize="none"/>
+            <cl:button std:sid="button-ebe96ace" value="아니오">
+              <cl:formdata std:sid="f-data-4d34a0bf" row="0" col="0"/>
+            </cl:button>
+            <cl:button std:sid="button-24f8f17d" value="예, 맞습니다">
+              <cl:formdata std:sid="f-data-a4dbe0dd" row="0" col="1"/>
+            </cl:button>
+            <cl:formlayout std:sid="f-layout-8f578d77" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="56" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="3" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="7" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-8db978a0">
+            <cl:flowlayoutdata std:sid="f-data-1ea52d5b" width="328px" height="56px" autosize="none"/>
+            <cl:button std:sid="button-9be4ac24" value="인증하기">
+              <cl:formdata std:sid="f-data-4b0886f1" row="0" col="0"/>
+            </cl:button>
+            <cl:formlayout std:sid="f-layout-cb1b773b" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="56" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:flowlayout std:sid="f-layout-78d72cda" scrollable="false" hspacing="24" vspacing="16" linewrap="false"/>
+        </cl:group>
+        <cl:group std:sid="group-8f79eb85">
+          <cl:flowlayoutdata std:sid="f-data-e2d89202" width="328px" height="246px" autosize="height"/>
+          <cl:output std:sid="output-ece4f8c5" class="fw-medium" value="Floating Button">
+            <cl:flowlayoutdata std:sid="f-data-1df09c80" width="328px" height="24px" autosize="none"/>
+          </cl:output>
+          <cl:group std:sid="group-b0740a06" class="bg-white border-top">
+            <cl:flowlayoutdata std:sid="f-data-765aae2c" width="328px" height="104px" autosize="height"/>
+            <cl:group std:sid="group-89e8adac">
+              <cl:verticaldata std:sid="v-data-1d9c29a8" width="328px" height="56px"/>
+              <cl:button std:sid="button-844df6f4" value="아니오">
+                <cl:formdata std:sid="f-data-dbfac147" row="0" col="0"/>
+              </cl:button>
+              <cl:button std:sid="button-5e559aa8" value="예, 맞습니다">
+                <cl:formdata std:sid="f-data-74ad8928" row="0" col="1"/>
+              </cl:button>
+              <cl:formlayout std:sid="f-layout-98333c23" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                <cl:rows length="56" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-bff9ae72" leftmargin="16" rightmargin="16" topmargin="24" bottommargin="24"/>
+          </cl:group>
+          <cl:flowlayout std:sid="f-layout-054fd48a" scrollable="false" hspacing="24" vspacing="16" linewrap="false"/>
+        </cl:group>
+        <cl:flowlayout std:sid="f-layout-053fe113" scrollable="false" hspacing="24" vspacing="16"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-9304e4de" spacing="40" leftmargin="100" rightmargin="100" topmargin="80" bottommargin="80"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-1df8cb4d" spacing="0"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

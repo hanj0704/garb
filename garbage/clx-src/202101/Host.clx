@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-8b6f4f91" version="1.0.0.0">
+  <head std:sid="head-871e7da3">
+    <title>dialog</title>
+    <screen std:sid="screen-d487aafa" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-63fb13a1" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-66ef116b" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-0b8dbcad" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-2719740b">
+      <cl:dataset std:sid="d-set-1a5be5dc" id="dsHost">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-fbf8687d" name="column1"/>
+          <cl:datacolumn std:sid="d-column-5a93fe70" name="column2"/>
+          <cl:datacolumn std:sid="d-column-fb119be4" name="column3"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column11</cl:datavalue>
+            <cl:datavalue columnname="column2">column21</cl:datavalue>
+            <cl:datavalue columnname="column3">column31</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column12</cl:datavalue>
+            <cl:datavalue columnname="column2">column22</cl:datavalue>
+            <cl:datavalue columnname="column3">column32</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column13</cl:datavalue>
+            <cl:datavalue columnname="column2">column23</cl:datavalue>
+            <cl:datavalue columnname="column3">column33</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-91c28ed0" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:output std:sid="output-bb159e2a" value="버튼을 누르면 다이얼로그를 띄웁니다. 다이얼로그를 띄우는 방식은 이벤트를 확인하십시오.">
+      <cl:xylayoutdata std:sid="xyl-data-ed655ee9" top="20px" right="20px" left="20px" height="30px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:button std:sid="button-3888d8de" id="btnDefault" value="eXbuilder6 API">
+      <cl:listener std:sid="listener-9b96e583" name="click" handler="onBtnDefaultClick"/>
+      <cl:xylayoutdata std:sid="xyl-data-a9a0c003" top="60px" left="20px" width="120px" height="30px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:output std:sid="output-dcfd3bbe" value="returnValue는 아래의 텍스트에리어에서 확인하십시오.">
+      <cl:xylayoutdata std:sid="xyl-data-07e0378e" top="140px" right="20px" left="20px" height="30px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:textarea std:sid="t-area-fef308cd" id="txa1" readonly="true">
+      <cl:xylayoutdata std:sid="xyl-data-a043e668" top="180px" right="20px" bottom="20px" left="20px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+    </cl:textarea>
+    <cl:xylayout std:sid="xylayout-11e0681c"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

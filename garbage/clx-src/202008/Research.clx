@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-64e7cc31" version="1.0.0.0">
+  <head std:sid="head-23a961ba">
+    <title>Research</title>
+    <screen std:sid="screen-ae430d50" id="default" name="default" minwidth="1024px" width="1024px" height="768px" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-b5f03cfa" id="tablet" name="tablet" minwidth="800px" maxwidth="1023px" width="800px" height="768px"/>
+    <screen std:sid="screen-721c41ea" id="mobile" name="mobile" maxwidth="799px" width="550px" height="768px"/>
+    <cl:model std:sid="model-ae9a3166">
+      <cl:dataset std:sid="d-set-3080b096" id="dsRsrch">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-37028b13" info="연구책임자" name="RSRCH_RSPNBER"/>
+          <cl:datacolumn std:sid="d-column-42252590" info="연구책임자 번호" name="RSRCH_RSPNBER_NO"/>
+          <cl:datacolumn std:sid="d-column-e59ed9d3" info="직급" name="CLSF"/>
+          <cl:datacolumn std:sid="d-column-29a69be2" info="소속캠퍼스" name="PSITN_CAMPUS"/>
+          <cl:datacolumn std:sid="d-column-acebe460" info="소속학과" name="PSITN_SUBJCT"/>
+          <cl:datacolumn std:sid="d-column-e14d28d8" info="연구과제" name="RSRCH_TASK"/>
+          <cl:datacolumn std:sid="d-column-84568b8d" info="연구과제번호" name="RSRCH_TASK_NO"/>
+          <cl:datacolumn std:sid="d-column-3d9236ed" info="과제기간시작" name="TASK_PD_BEGIN"/>
+          <cl:datacolumn std:sid="d-column-b07834a5" info="과제기간끝" name="TASK_PD_END"/>
+          <cl:datacolumn std:sid="d-column-23798e8a" info="과제년도" name="TASK_YEAR"/>
+          <cl:datacolumn std:sid="d-column-c45acf8a" info="지원기관번호" name="SPORT_INSTT_NO"/>
+          <cl:datacolumn std:sid="d-column-a4160e58" info="지원기관" name="SPORT_INSTT"/>
+          <cl:datacolumn std:sid="d-column-ee38811b" info="지원사업번호" name="SPORT_BSNS_NO"/>
+          <cl:datacolumn std:sid="d-column-1298ecbb" info="지원사업" name="SPORT_BSNS"/>
+          <cl:datacolumn std:sid="d-column-fdbc898a" info="승인상태" name="CONFM_STTUS"/>
+          <cl:datacolumn std:sid="d-column-726e04dd" info="보관철번호" name="CSTDY_FILE_NO"/>
+          <cl:datacolumn std:sid="d-column-7afd2a90" info="총연구비" name="TOT_RSRCCT" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-44060921" info="미사용잔액" name="UN_USE_BLCE" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-58b4f79a" info="이자수익금액" name="INTR_ERN_AMOUNT" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-fbc9be07" info="기타수익금액" name="ETC_ERN_AMOUNT" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-4202aa6a" info="입금총금액" name="RCPMNY_TOT_AMOUNT" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-ab15ebc2" info="집행금액" name="EXCUT_AMOUNT" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-6ee160bb" info="집행대기금액" name="EXCUT_WAIT_AMOUNT" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-4dcd5208" info="부가세금" name="ADI_TAX" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-48be9bec" info="잔액" name="BLCE" datatype="expression" expression="UN_USE_BLCE + INTR_ERN_AMOUNT + ETC_ERN_AMOUNT + RCPMNY_TOT_AMOUNT - EXCUT_AMOUNT - EXCUT_WAIT_AMOUNT - ADI_TAX"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="RSRCH_RSPNBER"><![CDATA[홍길동]]></cl:datavalue>
+            <cl:datavalue columnname="CLSF"><![CDATA[교수]]></cl:datavalue>
+            <cl:datavalue columnname="PSITN_CAMPUS"><![CDATA[서울캠퍼스]]></cl:datavalue>
+            <cl:datavalue columnname="RSRCH_TASK"><![CDATA[의료기관 간 의료정보 전송 보안체계 개선방안에 대한 연구]]></cl:datavalue>
+            <cl:datavalue columnname="TASK_PD_BEGIN"><![CDATA[20180201]]></cl:datavalue>
+            <cl:datavalue columnname="TASK_PD_END"><![CDATA[20181205]]></cl:datavalue>
+            <cl:datavalue columnname="TASK_YEAR"><![CDATA[2018]]></cl:datavalue>
+            <cl:datavalue columnname="SPORT_INSTT"><![CDATA[토마토대학병원]]></cl:datavalue>
+            <cl:datavalue columnname="SPORT_BSNS"><![CDATA[연구용역]]></cl:datavalue>
+            <cl:datavalue columnname="CONFM_STTUS"><![CDATA[Y]]></cl:datavalue>
+            <cl:datavalue columnname="CSTDY_FILE_NO"><![CDATA[2017-1225-11]]></cl:datavalue>
+            <cl:datavalue columnname="TOT_RSRCCT"><![CDATA[100000000]]></cl:datavalue>
+            <cl:datavalue columnname="UN_USE_BLCE"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="INTR_ERN_AMOUNT"><![CDATA[17058]]></cl:datavalue>
+            <cl:datavalue columnname="ETC_ERN_AMOUNT"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="RCPMNY_TOT_AMOUNT"><![CDATA[100000000]]></cl:datavalue>
+            <cl:datavalue columnname="EXCUT_AMOUNT"><![CDATA[91305163]]></cl:datavalue>
+            <cl:datavalue columnname="EXCUT_WAIT_AMOUNT"><![CDATA[-479880]]></cl:datavalue>
+            <cl:datavalue columnname="ADI_TAX"><![CDATA[9191775]]></cl:datavalue>
+            <cl:datavalue columnname="BLCE">BLCE1</cl:datavalue>
+            <cl:datavalue columnname="RSRCH_RSPNBER_NO"><![CDATA[20090901]]></cl:datavalue>
+            <cl:datavalue columnname="PSITN_SUBJCT"><![CDATA[정보보호학과]]></cl:datavalue>
+            <cl:datavalue columnname="RSRCH_TASK_NO"><![CDATA[A-2019-S0568-00018]]></cl:datavalue>
+            <cl:datavalue columnname="SPORT_INSTT_NO"><![CDATA[B59865]]></cl:datavalue>
+            <cl:datavalue columnname="SPORT_BSNS_NO"><![CDATA[00125]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-c148613f" id="confirm">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-3067e8ee" name="column1"/>
+          <cl:datacolumn std:sid="d-column-663889c2" name="column2"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[승인]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[Y]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[미승인]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[N]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec dev-comment="1. 폼 컬랩싱 (가로 방향, 세로 방향)&#xA;2. 아이폰으로 데이트 및 콤&#xA;3. 탭 폴더가 아코디언화&#xA;4. 코딩 없음" title="1. 연구 신청 정보(반응형)"/>
+  </head>
+  <body std:sid="body-bbc71f63" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-799d95b7" name="keydown" handler="onBodyKeydown"/>
+    <cl:group std:sid="group-3291d80f" class="cl-form-group">
+      <cl:attribute name="mobile-column-count" value="1"/>
+      <cl:attribute name="tablet-column-count" value="2"/>
+      <cl:datarowcontext datacontrolid="dsRsrch"/>
+      <cl:verticaldata std:sid="v-data-2469ab1f" width="400px" height="230px" autosize="height"/>
+      <cl:output std:sid="output-ebddb2aa" class="formlayout-label" value="연구책임자">
+        <cl:formdata std:sid="f-data-8f446c84" row="0" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-409d316f" class="formlayout-label" value="연구 과제">
+        <cl:formdata std:sid="f-data-e49e3b8a" row="2" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-ee76098d" value="과제년도">
+        <cl:formdata std:sid="f-data-c162354e" row="3" col="2"/>
+      </cl:output>
+      <cl:output std:sid="output-d580d4f9" class="formlayout-label" value="직급">
+        <cl:formdata std:sid="f-data-bc4db0cb" row="1" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-7baccaed" value="소속">
+        <cl:formdata std:sid="f-data-4a63130a" row="1" col="2"/>
+      </cl:output>
+      <cl:output std:sid="output-9a962035" value="지원기관">
+        <cl:formdata std:sid="f-data-7f4f5154" row="3" col="4"/>
+      </cl:output>
+      <cl:output std:sid="output-97d466e2" class="formlayout-label" value="과제기간">
+        <cl:formdata std:sid="f-data-5cf9e1d1" row="3" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-aa5a6bdc" class="formlayout-label" value="지원 사업">
+        <cl:formdata std:sid="f-data-924ccdca" row="4" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-1c7598cc" value="승인상태">
+        <cl:formdata std:sid="f-data-b606bc63" row="4" col="2"/>
+      </cl:output>
+      <cl:output std:sid="output-6e2f0145" value="보관철번호">
+        <cl:formdata std:sid="f-data-54c98411" row="4" col="4"/>
+      </cl:output>
+      <cl:button std:sid="button-3d9d4f48" class="secondary" value="상세검색">
+        <cl:listener std:sid="listener-719d7cf0" name="click" handler="onButtonClick"/>
+        <cl:formdata std:sid="f-data-421a1c26" halign="RIGHT" width="70" row="5" col="0" rowspan="1" colspan="6"/>
+      </cl:button>
+      <cl:group std:sid="group-de33c38c">
+        <cl:formdata std:sid="f-data-d2cd43bf" row="0" col="1" rowspan="1" colspan="5"/>
+        <cl:inputbox std:sid="i-box-dd57ec3a" id="ipb1">
+          <cl:relativebind property="value" columnname="RSRCH_RSPNBER"/>
+          <cl:formdata std:sid="f-data-af47b512" row="0" col="0"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-58bf68d5" id="ipb2">
+          <cl:relativebind property="value" columnname="RSRCH_RSPNBER_NO"/>
+          <cl:formdata std:sid="f-data-d6fc9d2d" row="0" col="2"/>
+        </cl:inputbox>
+        <cl:button std:sid="button-c5a96f54" class="btn-search no-txt" value="">
+          <cl:formdata std:sid="f-data-707eac9c" row="0" col="1"/>
+        </cl:button>
+        <cl:button std:sid="button-83786d08" value="초기화">
+          <cl:formdata std:sid="f-data-7daa96f7" row="0" col="3"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-77c62ea0">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000"/>
+          <cl:columns length="28" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000"/>
+          <cl:columns length="70" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:inputbox std:sid="i-box-19ee291f" id="ipb3">
+        <cl:relativebind property="value" columnname="CLSF"/>
+        <cl:formdata std:sid="f-data-a9cde944" row="1" col="1"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-0e5a4c9c" id="ipb4" inputfilter="[0-9]">
+        <cl:relativebind property="value" columnname="TASK_YEAR"/>
+        <cl:formdata std:sid="f-data-bef72837" row="3" col="3"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-014bed2c" id="ipb5">
+        <cl:relativebind property="value" columnname="CSTDY_FILE_NO"/>
+        <cl:formdata std:sid="f-data-f95cb488" row="4" col="5"/>
+      </cl:inputbox>
+      <cl:group std:sid="group-1efbe6a4">
+        <cl:formdata std:sid="f-data-2179dd89" row="1" col="3" rowspan="1" colspan="3"/>
+        <cl:inputbox std:sid="i-box-eef2aa90" id="ipb6">
+          <cl:relativebind property="value" columnname="PSITN_CAMPUS"/>
+          <cl:formdata std:sid="f-data-21157555" row="0" col="0"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-1cd6ed32" id="ipb7">
+          <cl:relativebind property="value" columnname="PSITN_SUBJCT"/>
+          <cl:formdata std:sid="f-data-7f9708c2" row="0" col="1"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-cf54546d" id="ipb8">
+          <cl:formdata std:sid="f-data-563754fa" row="0" col="2"/>
+        </cl:inputbox>
+        <cl:formlayout std:sid="f-layout-3c814eeb">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+          <cl:columns length="2" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000"/>
+          <cl:columns length="2" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-d0d4aca5">
+        <cl:formdata std:sid="f-data-9b821a22" row="2" col="1" rowspan="1" colspan="5"/>
+        <cl:inputbox std:sid="i-box-2d983ff3" id="ipb9">
+          <cl:relativebind property="value" columnname="RSRCH_TASK_NO"/>
+          <cl:formdata std:sid="f-data-74156297" row="0" col="0"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-618f19ba" id="ipb10">
+          <cl:relativebind property="value" columnname="RSRCH_TASK"/>
+          <cl:formdata std:sid="f-data-5ef8b82b" row="0" col="2"/>
+        </cl:inputbox>
+        <cl:button std:sid="button-c04eb787" class="btn-search no-txt" value="">
+          <cl:formdata std:sid="f-data-321808db" row="0" col="1"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-6deb8ed1">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="28" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000"/>
+          <cl:columns length="3" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-3c7eb851">
+        <cl:formdata std:sid="f-data-8cd6543a" row="3" col="5"/>
+        <cl:inputbox std:sid="i-box-7e50e6ca" id="ipb11">
+          <cl:relativebind property="value" columnname="SPORT_INSTT_NO"/>
+          <cl:formdata std:sid="f-data-448d148f" row="0" col="0"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-084dd92a" id="ipb12">
+          <cl:relativebind property="value" columnname="SPORT_INSTT"/>
+          <cl:formdata std:sid="f-data-af1d1b8e" row="0" col="1"/>
+        </cl:inputbox>
+        <cl:formlayout std:sid="f-layout-caf687ee">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-d01f7ee3">
+        <cl:formdata std:sid="f-data-2fd15599" row="4" col="1"/>
+        <cl:inputbox std:sid="i-box-26179c8c" id="ipb13">
+          <cl:relativebind property="value" columnname="SPORT_BSNS_NO"/>
+          <cl:formdata std:sid="f-data-1291a53f" row="0" col="0"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-3e00ee72" id="ipb14">
+          <cl:relativebind property="value" columnname="SPORT_BSNS"/>
+          <cl:formdata std:sid="f-data-108b3739" row="0" col="1"/>
+        </cl:inputbox>
+        <cl:formlayout std:sid="f-layout-91fbb414">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-1c296fff" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+        <cl:rows length="28" unit="PIXEL"/>
+        <cl:rows length="28" unit="PIXEL"/>
+        <cl:rows length="28" unit="PIXEL"/>
+        <cl:rows length="28" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000"/>
+        <cl:rows length="28" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000"/>
+        <cl:rows length="28" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000"/>
+        <cl:columns length="100" unit="PIXEL" shadetype="BY_CLASS"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="100" unit="PIXEL" shadetype="BY_CLASS"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-078ef551" class="cl-form-group">
+      <cl:attribute name="mobile-column-count" value="1"/>
+      <cl:attribute name="tablet-column-count" value="2"/>
+      <cl:attribute name="collapse-direction" value="vertical"/>
+      <cl:datarowcontext datacontrolid="dsRsrch"/>
+      <cl:verticaldata std:sid="v-data-7def48c1" width="400px" height="77px" autosize="height"/>
+      <cl:output std:sid="output-382b7aac" value="총연구비(현금)">
+        <cl:formdata std:sid="f-data-1a3c3a88" row="0" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-8899488e" value="미사용잔액①">
+        <cl:formdata std:sid="f-data-22a86e14" row="0" col="1"/>
+      </cl:output>
+      <cl:output std:sid="output-85f8542c" value="이자수입액②">
+        <cl:formdata std:sid="f-data-b5f409b9" row="0" col="2"/>
+      </cl:output>
+      <cl:output std:sid="output-80a33cc0" value="기타수입액③">
+        <cl:formdata std:sid="f-data-84bd4969" row="0" col="3"/>
+      </cl:output>
+      <cl:output std:sid="output-63af86cf" value="입금총액④">
+        <cl:formdata std:sid="f-data-26a572ce" row="0" col="4"/>
+      </cl:output>
+      <cl:output std:sid="output-917928f9" value="집행액⑤">
+        <cl:formdata std:sid="f-data-da196d26" row="0" col="5"/>
+      </cl:output>
+      <cl:output std:sid="output-683b930e" value="집행대기액⑥">
+        <cl:formdata std:sid="f-data-0832995d" row="0" col="6"/>
+      </cl:output>
+      <cl:output std:sid="output-6ca86f55" value="부가세⑦">
+        <cl:formdata std:sid="f-data-7fadb1c3" row="0" col="7"/>
+      </cl:output>
+      <cl:output std:sid="output-37e9b867" value="잔액(①+②+③+④-⑤-⑥-⑦)">
+        <cl:formdata std:sid="f-data-49fdde91" row="0" col="8"/>
+      </cl:output>
+      <cl:numbereditor std:sid="n-editor-cc0a0ec5" id="nbe1" spinbutton="false" format="s#,##9">
+        <cl:relativebind property="value" columnname="TOT_RSRCCT"/>
+        <cl:formdata std:sid="f-data-c2447aa0" row="1" col="0"/>
+      </cl:numbereditor>
+      <cl:numbereditor std:sid="n-editor-f095968b" id="nbe2" spinbutton="false" format="s#,##9">
+        <cl:relativebind property="value" columnname="UN_USE_BLCE"/>
+        <cl:formdata std:sid="f-data-617dbeda" row="1" col="1"/>
+      </cl:numbereditor>
+      <cl:numbereditor std:sid="n-editor-737e1036" id="nbe3" spinbutton="false" format="s#,##9">
+        <cl:relativebind property="value" columnname="INTR_ERN_AMOUNT"/>
+        <cl:formdata std:sid="f-data-38e55985" row="1" col="2"/>
+      </cl:numbereditor>
+      <cl:numbereditor std:sid="n-editor-ab87c1a0" id="nbe4" spinbutton="false" format="s#,##9">
+        <cl:relativebind property="value" columnname="ETC_ERN_AMOUNT"/>
+        <cl:formdata std:sid="f-data-705f3327" row="1" col="3"/>
+      </cl:numbereditor>
+      <cl:numbereditor std:sid="n-editor-82ead97a" id="nbe5" style="color:royalblue;" spinbutton="false" format="s#,##9">
+        <cl:relativebind property="value" columnname="RCPMNY_TOT_AMOUNT"/>
+        <cl:formdata std:sid="f-data-becd0eec" row="1" col="4"/>
+      </cl:numbereditor>
+      <cl:numbereditor std:sid="n-editor-6da3c85d" id="nbe6" style="color:#fc6e60;" spinbutton="false" format="s#,##9">
+        <cl:relativebind property="value" columnname="EXCUT_AMOUNT"/>
+        <cl:formdata std:sid="f-data-7afd669c" row="1" col="5"/>
+      </cl:numbereditor>
+      <cl:numbereditor std:sid="n-editor-307ea2e8" id="nbe7" style="color:#fc6e60;" spinbutton="false" format="s#,##9">
+        <cl:relativebind property="value" columnname="EXCUT_WAIT_AMOUNT"/>
+        <cl:formdata std:sid="f-data-b8a73568" row="1" col="6"/>
+      </cl:numbereditor>
+      <cl:numbereditor std:sid="n-editor-4a939294" id="nbe8" style="color:#fc6e60;" spinbutton="false" format="s#,##9">
+        <cl:relativebind property="value" columnname="ADI_TAX"/>
+        <cl:formdata std:sid="f-data-2be80a0b" row="1" col="7"/>
+      </cl:numbereditor>
+      <cl:numbereditor std:sid="n-editor-60153718" id="nbe9" style="color:#00a5f1;" spinbutton="false" format="s#,##9">
+        <cl:relativebind property="value" columnname="BLCE"/>
+        <cl:formdata std:sid="f-data-b5db001d" row="1" col="8"/>
+      </cl:numbereditor>
+      <cl:formlayout std:sid="f-layout-26e3223f" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+        <cl:rows length="28" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000"/>
+        <cl:rows length="28"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="2" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:tabfolder std:sid="t-folder-413889b3" id="tf1">
+      <cl:verticaldata std:sid="v-data-c7214d99" width="320px" height="312px"/>
+      <cl:tabitem std:sid="t-item-992c1227" selected="true" text="tab1">
+        <std:metadata>
+          <std:property key="is-active-item" value="true"/>
+        </std:metadata>
+        <cl:group std:sid="group-483ccde7">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:inputbox std:sid="i-box-0bf99fe0" id="ipb15">
+            <cl:xylayoutdata std:sid="xyl-data-f646e0c6" top="20px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:inputbox>
+          <cl:xylayout std:sid="xylayout-bc983778"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-228ab633" text="tab 2">
+        <cl:group std:sid="group-0dfdbaad">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:inputbox std:sid="i-box-a8e4d0a0" id="ipb16">
+            <cl:xylayoutdata std:sid="xyl-data-05923fcc" top="20px" left="73px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:inputbox>
+          <cl:xylayout std:sid="xylayout-8355e970"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-b775d4c9" text="tab 3">
+        <cl:group std:sid="group-d8ee478b">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:inputbox std:sid="i-box-ec318f3d" id="ipb17">
+            <cl:xylayoutdata std:sid="xyl-data-5fd0876b" top="20px" left="130px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:inputbox>
+          <cl:xylayout std:sid="xylayout-40aa2e56"/>
+        </cl:group>
+      </cl:tabitem>
+    </cl:tabfolder>
+    <cl:verticallayout std:sid="v-layout-9a282b4a" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

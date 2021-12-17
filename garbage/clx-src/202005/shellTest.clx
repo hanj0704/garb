@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-7099ecff" version="1.0.0.0">
+  <head std:sid="head-03930584">
+    <title>shellTest</title>
+    <screen std:sid="screen-32eef9ed" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-20b00981" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-8b1c2993" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-aa513c39"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-a45c68e0" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-d7775893" id="grp1">
+      <cl:xylayoutdata std:sid="xyl-data-2d519053" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+      <cl:uicontrolshell std:sid="uic-shell-0e1d1a63" id="shl1">
+        <cl:listener std:sid="listener-4ad7b97d" handler="onShl1Load" name="load"/>
+        <cl:formdata col="1" row="0"/>
+      </cl:uicontrolshell>
+      <cl:formlayout user-resizing-mode="standard">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="100" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-ce3dc4d7"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

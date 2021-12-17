@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-0a77c64f" version="1.0.0.0">
+  <head std:sid="head-4e4597fd">
+    <title>tester</title>
+    <screen std:sid="screen-a04378cc" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-a7670e21" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-ab3a220b" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-433edc25">
+      <cl:dataset std:sid="d-set-4397863d" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-30372792" name="filter"/>
+          <cl:datacolumn std:sid="d-column-6a936fec" name="value"/>
+          <cl:datacolumn std:sid="d-column-1b3efc77" name="label"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="filter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="label">name1</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="filter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="label">name2</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="filter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="label">name3</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="filter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="label">name4</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="filter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[6]]></cl:datavalue>
+            <cl:datavalue columnname="label">name5</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="filter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[7]]></cl:datavalue>
+            <cl:datavalue columnname="label"><![CDATA[name6]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="filter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[8]]></cl:datavalue>
+            <cl:datavalue columnname="label"><![CDATA[name7]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="filter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[9]]></cl:datavalue>
+            <cl:datavalue columnname="label"><![CDATA[name8]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="filter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="label"><![CDATA[name1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="filter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="label"><![CDATA[name2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="filter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="label"><![CDATA[name3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="filter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="label"><![CDATA[name4]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="filter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[6]]></cl:datavalue>
+            <cl:datavalue columnname="label"><![CDATA[name5]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="filter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[7]]></cl:datavalue>
+            <cl:datavalue columnname="label"><![CDATA[name6]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="filter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[8]]></cl:datavalue>
+            <cl:datavalue columnname="label"><![CDATA[name7]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="filter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[9]]></cl:datavalue>
+            <cl:datavalue columnname="label"><![CDATA[name8]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-72bb928c" id="sms1" action="data/FXFIG3.json">
+        <cl:listener std:sid="listener-6198d6a5" name="submit-done" handler="onSms1SubmitDone"/>
+        <cl:responsedata dataid="cmbOutGrid"/>
+      </cl:submission>
+      <cl:dataset std:sid="d-set-7d619ea5" id="cmbOutGrid">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-32f3c875" name="filter"/>
+          <cl:datacolumn std:sid="d-column-0e5e2671" name="label"/>
+          <cl:datacolumn std:sid="d-column-f74a82ed" name="value"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-96b7ba86" id="sms2" action="data/FXFIG4.json">
+        <cl:responsedata dataid="dsMan"/>
+      </cl:submission>
+      <cl:dataset std:sid="d-set-a47e1024" id="dsMan">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-6b5f21eb" name="label"/>
+          <cl:datacolumn std:sid="d-column-10a88d22" name="value"/>
+          <cl:datacolumn std:sid="d-column-061a0b57" name="filter"/>
+          <cl:datacolumn std:sid="d-column-b3254267" name="column1" datatype="expression" expression="label +&quot;, &quot;+ value"/>
+          <cl:datacolumn std:sid="d-column-b183beba" name="column2"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label1</cl:datavalue>
+            <cl:datavalue columnname="value">value1</cl:datavalue>
+            <cl:datavalue columnname="filter">filter1</cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[dk1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label2</cl:datavalue>
+            <cl:datavalue columnname="value">value2</cl:datavalue>
+            <cl:datavalue columnname="filter">filter2</cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[sl2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label3</cl:datavalue>
+            <cl:datavalue columnname="value">value3</cl:datavalue>
+            <cl:datavalue columnname="filter">filter3</cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[z3]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-52ce7b2e" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-47d20261" name="column1" defaultvalue="답변사항&#x9;담당자&#x9;샘플화"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:dataset std:sid="d-set-c76577d1" id="ds2">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-9a1175bd" name="column1"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column11</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column12</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column13</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column14</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-5b513da0" id="ds3">
+        <cl:listener std:sid="listener-4e0c1b1e" name="update" handler="onDs3Update"/>
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-4c25554c" name="column1" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-1fa41efb" name="label"/>
+          <cl:datacolumn std:sid="d-column-13fc4c17" name="value"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">1</cl:datavalue>
+            <cl:datavalue columnname="label"><![CDATA[l1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[v1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">2</cl:datavalue>
+            <cl:datavalue columnname="label"><![CDATA[l2]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[v2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">3</cl:datavalue>
+            <cl:datavalue columnname="label"><![CDATA[l3]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[v3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">4</cl:datavalue>
+            <cl:datavalue columnname="label"><![CDATA[l4]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[v4]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">5</cl:datavalue>
+            <cl:datavalue columnname="label"><![CDATA[l5]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[v5]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">6</cl:datavalue>
+            <cl:datavalue columnname="label"><![CDATA[l6]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[v6]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">7</cl:datavalue>
+            <cl:datavalue columnname="label"><![CDATA[l7]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[v7v]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">8</cl:datavalue>
+            <cl:datavalue columnname="label"><![CDATA[l8]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[v8]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">9</cl:datavalue>
+            <cl:datavalue columnname="label"><![CDATA[l9]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[v9]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-c09b93d4" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-c7ac2e62" name="load" handler="onBodyLoad"/>
+    <cl:button std:sid="button-b11e56d9" id="btn1" value="Button">
+      <cl:listener std:sid="listener-2f06e222" name="click" handler="onBtn1Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-21537bc8" top="20px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-0ec5e98e" id="btn2" readonly="true" value="Button">
+      <cl:listener std:sid="listener-595679a8" name="click" handler="onBtn2Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-e9d61800" top="377px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-290d7a38" id="btn3" value="Button">
+      <cl:listener std:sid="listener-c8c460b9" name="click" handler="onBtn3Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-72138527" top="347px" left="548px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:combobox std:sid="c-box-9d01e5ca" id="cmb1">
+      <cl:xylayoutdata std:sid="xyl-data-0a5d6799" top="438px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:itemset datasetid="dsMan" label="label" value="value"/>
+    </cl:combobox>
+    <cl:combobox std:sid="c-box-8fdbf5e5" id="cmb2">
+      <cl:attribute name="filt" value="XPNT_CD:2"/>
+      <cl:xylayoutdata std:sid="xyl-data-dc2a8f41" top="468px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:combobox>
+    <cl:combobox std:sid="c-box-e2567567" id="cmb3">
+      <cl:xylayoutdata std:sid="xyl-data-9899715d" top="498px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:itemset datasetid="ds1" label="label" value="value"/>
+    </cl:combobox>
+    <cl:button std:sid="button-51d14ee5" id="btn4" readonly="true" value="Button">
+      <cl:listener std:sid="listener-66036821" name="click" handler="onBtn4Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-108a7c5c" top="407px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-be952cd3" id="btn5" value="Button">
+      <cl:listener std:sid="listener-b52ba95b" name="click" handler="onBtn5Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-f645456e" top="50px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-c05a8d2a" id="btn6" value="Button">
+      <cl:listener std:sid="listener-a034f762" name="click" handler="onBtn6Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-59b2a73a" top="80px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:mdifolder std:sid="mdifolder-c58f8982" id="mdi1">
+      <cl:xylayoutdata std:sid="xyl-data-f9ccd338" top="99px" left="20px" width="628px" height="240px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:tabitem std:sid="t-item-6ca4f393" selected="true" text="tab 1">
+        <std:metadata>
+          <std:property key="is-active-item" value="true"/>
+        </std:metadata>
+        <cl:group std:sid="group-823ea0ab">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:inputbox std:sid="i-box-8fc9bb49" id="ipb1">
+            <cl:xylayoutdata std:sid="xyl-data-3c09a96b" top="20px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:inputbox>
+          <cl:inputbox std:sid="i-box-1a97ea8c" id="ipb2">
+            <cl:xylayoutdata std:sid="xyl-data-876c627c" top="50px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:inputbox>
+          <cl:inputbox std:sid="i-box-1b7feaba" id="ipb3">
+            <cl:xylayoutdata std:sid="xyl-data-77449aa3" top="80px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:inputbox>
+          <cl:inputbox std:sid="i-box-567466e6" id="ipb4">
+            <cl:xylayoutdata std:sid="xyl-data-cbd81ca0" top="110px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:inputbox>
+          <cl:xylayout std:sid="xylayout-d9378ec6"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-d9f879d4" text="testerMan">
+        <cl:embeddedapp std:sid="e-app-8042f325" id="ea1" src="testerMan.clx">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+        </cl:embeddedapp>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-8efd74c9" text="tab 3">
+        <cl:group std:sid="group-8f0e72a5">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:inputbox std:sid="i-box-9f0227af" id="ipb5" value="">
+            <cl:xylayoutdata std:sid="xyl-data-690b5a4e" top="20px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:inputbox>
+          <cl:inputbox std:sid="i-box-dd012ebe" id="ipb6" value="">
+            <cl:xylayoutdata std:sid="xyl-data-eb4464a1" top="71px" left="79px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:inputbox>
+          <cl:inputbox std:sid="i-box-6d7d88b4" id="ipb7" value="">
+            <cl:xylayoutdata std:sid="xyl-data-5d75a7a3" top="115px" left="140px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:inputbox>
+          <cl:xylayout std:sid="xylayout-7d899694"/>
+        </cl:group>
+      </cl:tabitem>
+    </cl:mdifolder>
+    <cl:grid std:sid="grid-b68ceca3" id="grd1" datasetid="ds2">
+      <cl:xylayoutdata std:sid="xyl-data-14ed1fca" top="360px" left="130px" width="374px" height="175px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:gridcolumn std:sid="g-column-ffab5505"/>
+      <cl:gridcolumn std:sid="g-column-a4e176c7"/>
+      <cl:gridheader std:sid="gh-band-2410b56f">
+        <cl:gridrow std:sid="g-row-546c65bc"/>
+        <cl:gridcell std:sid="gh-cell-06f1d50a" rowindex="0" colindex="0" targetcolumnname="column1" sortable="false" filterable="false" text="column1"/>
+        <cl:gridcell std:sid="gh-cell-edb11a99" rowindex="0" colindex="1"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-7c7433f7">
+        <cl:gridrow std:sid="g-row-e03f8c3c"/>
+        <cl:gridcell std:sid="gd-cell-63b993d1" rowindex="0" colindex="0" columnname="column1"/>
+        <cl:gridcell std:sid="gd-cell-405d0268" rowindex="0" colindex="1">
+          <cl:button std:sid="button-f89f1dd8" id="btn7" value="Button"/>
+        </cl:gridcell>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:inputbox std:sid="i-box-6b0b60f5" id="ipb8">
+      <cl:relativebind property="value" columnname="column1"/>
+      <cl:selectioncontext selectionProvider="#grid-b68ceca3"/>
+      <cl:xylayoutdata std:sid="xyl-data-ff254192" top="545px" left="130px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:inputbox>
+    <cl:udc std:sid="ud-control-8dd018e1" type="udc.test">
+      <cl:xylayoutdata std:sid="xyl-data-79fd6c6d" top="377px" left="514px" width="300px" height="30px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:property name="btn1Value" value="1234" type="string"/>
+    </cl:udc>
+    <cl:combobox std:sid="c-box-27d29a63" id="cmb4" displayexp="value">
+      <cl:xylayoutdata std:sid="xyl-data-8a505ed4" top="110px" left="658px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:itemset datasetid="dsMan" label="label" value="value"/>
+    </cl:combobox>
+    <cl:button std:sid="button-edb2992c" id="btn8" value="Button">
+      <cl:listener std:sid="listener-1ef0fa6e" name="click" handler="onBtn8Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-14674a88" top="110px" left="768px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-4b48ab85" id="btn9" value="Button">
+      <cl:listener std:sid="listener-f9ec8bb2" name="click" handler="onBtn9Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-2d3ddfa7" top="140px" left="768px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-6e0a4ba2" id="btn10" readonly="true" value="서브미션동적생성">
+      <cl:listener std:sid="listener-52e09f85" name="click" handler="onBtn10Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-ffde3050" top="631px" left="20px" width="128px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-0118ab90" id="btn11" readonly="true" value="서브미션경찰">
+      <cl:listener std:sid="listener-d31acdc1" name="click" handler="onBtn11Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-2d0a6243" top="661px" left="20px" width="128px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-e2426928" id="btn12" readonly="true" value="데이터뷰 생성">
+      <cl:listener std:sid="listener-6f9c040c" name="click" handler="onBtn12Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-7ae3c1be" top="631px" left="158px" width="128px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-76064868" id="btn13" readonly="true" value="데이터뷰 경찰">
+      <cl:listener std:sid="listener-cf4b1c2d" name="click" handler="onBtn13Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-137edc54" top="661px" left="158px" width="128px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:combobox std:sid="c-box-9d2d268c" id="cmb5">
+      <cl:xylayoutdata std:sid="xyl-data-475791a9" top="631px" left="296px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:combobox>
+    <cl:combobox std:sid="c-box-47f2c6c7" id="cmb6">
+      <cl:xylayoutdata std:sid="xyl-data-09d764dd" top="631px" left="404px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:itemset datasetid="ds3" label="label" value="value"/>
+    </cl:combobox>
+    <cl:button std:sid="button-5cb364e0" id="btn14" readonly="true" value="경찰2">
+      <cl:listener std:sid="listener-9062417e" name="click" handler="onBtn14Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-857bf9d4" top="661px" left="296px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:dateinput std:sid="d-input-010ef139" id="dti1">
+      <cl:xylayoutdata std:sid="xyl-data-eb3189ed" top="498px" left="514px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:dateinput>
+    <cl:numbereditor std:sid="n-editor-553153dc" id="nbe1" spinbutton="false">
+      <cl:xylayoutdata std:sid="xyl-data-438a4cf2" top="661px" left="404px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:numbereditor>
+    <cl:inputbox std:sid="i-box-1da2f4fe" id="ipb9">
+      <cl:xylayoutdata std:sid="xyl-data-1445d3fa" top="575px" left="503px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:inputbox>
+    <cl:button std:sid="button-40174816" id="btn15" readonly="true" value="upp">
+      <cl:listener std:sid="listener-4d390837" name="click" handler="onBtn15Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-694bd619" top="575px" left="614px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:listbox std:sid="l-box-2f36cd72" id="lbx2" displayexp="label + &quot;[&quot;+column2+&quot;]&quot;">
+      <cl:xylayoutdata std:sid="xyl-data-4ba94b55" top="170px" left="779px" width="159px" height="150px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:itemset datasetid="dsMan" label="label" value="value"/>
+    </cl:listbox>
+    <cl:listbox std:sid="l-box-f6950deb" id="lbx1">
+      <cl:xylayoutdata std:sid="xyl-data-c8672825" top="170px" left="669px" width="100px" height="150px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:listbox>
+    <cl:inputbox std:sid="i-box-7e4251b9" id="ipb10">
+      <cl:xylayoutdata std:sid="xyl-data-339edcbb" top="31px" left="693px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:inputbox>
+    <cl:calendar std:sid="calendar-8fed8b7c" showanniversary="true">
+      <cl:xylayoutdata std:sid="xyl-data-6f000447" top="438px" left="724px" width="240px" height="270px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:calendar>
+    <cl:xylayout std:sid="xylayout-5157406e"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

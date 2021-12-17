@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-7a559d03" version="1.0.0.0">
+  <head std:sid="head-e2b5b791">
+    <title>InitTestUDC</title>
+    <screen std:sid="screen-d4b90c20" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-3020eb39" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-1f15fbea" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-777812ad"/>
+    <cl:appspec>
+      <cl:event name="customInit" type="cpr.events.CUIEvent"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-c2c6c1c7" style="top:0px; left:0px; width:300px; height:300px;">
+    <cl:listener std:sid="listener-ab0559c2" handler="onBodyInit" name="init"/>
+    <cl:xylayout std:sid="xylayout-1cafc83a"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

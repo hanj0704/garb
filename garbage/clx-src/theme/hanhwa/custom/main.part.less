@@ -1,0 +1,1611 @@
+@import "../settings.part.less";
+@import "../custom-settings.part.less";
+
+
+/***********************************
+ * Top Header 영역 정의 
+ ***********************************/
+.header-title {	
+	background-color : @color-black-01;
+	color : @color-text-black-01;
+	
+	.cl-text {
+//		color : @color-text-white-01;
+	}
+	.cl-checkbox {
+		color : @color-text-white-01;
+	}
+	.cl-button{
+//		background-color : @color-primary-01;
+	}
+	
+	.cl-output {
+		&.login-time {
+			color : @white;
+			font-size : 16px;
+		}
+		
+		&.login-user {
+			color : @white;
+			font-size : 16px;
+		}
+	}
+}
+
+.cl-checkboxgroup.header-link-area {	
+	background-color : transparent;
+	
+	.cl-checkbox.cl-first-column {
+		.cl-checkbox-icon {
+			background-image : url(images/main/header/btn_header_relatedwork_default.png);
+			background-color : transparent;
+			background-size : 30px;
+			margin-right : 0px;
+			width : 30px;
+			height : 30px;
+			
+		}
+	
+		&.cl-checked {
+			.cl-checkbox-icon {
+//					background-image : url(images/main/header/btn_header_relatedwork_default.png);
+				background-color : @color-primary-01;
+				background-size : 30px;
+			}
+		}
+
+		&:not(.cl-disabled) {
+			&:not(.cl-checked):not(.cl-partialchecked):hover,
+			&:not(.cl-checked):not(.cl-partialchecked).cl-hover,
+			&:not(.cl-checked):hover,
+			&:not(.cl-checked).cl-hover,
+			&.cl-checked:hover,
+			&.cl-checked.cl-hover {
+//					background-image : url(images/main/header/btn_header_relatedwork_default.png);
+			}
+		}
+	}
+	
+	.cl-checkbox.cl-last-column {
+		.cl-checkbox-icon {
+			background-image : url(images/main/header/btn_header_workflow_default.png);
+			background-color : transparent;
+			background-size : 30px;
+			margin-right : 0px;
+			width : 30px;
+			height : 30px;
+			
+		}
+		
+		&.cl-checked {
+			.cl-checkbox-icon {
+//					background-image : url(images/main/header/btn_header_workflow_default.png);
+				background-color : @color-primary-01;
+				background-size : 30px;
+			}
+		}
+		
+		&:not(.cl-disabled) {
+			&:not(.cl-checked):not(.cl-partialchecked):hover,
+			&:not(.cl-checked):not(.cl-partialchecked).cl-hover,
+			&:not(.cl-checked):hover,
+			&:not(.cl-checked).cl-hover,
+			&.cl-checked:hover,
+			&.cl-checked.cl-hover {
+//					background-image : url(images/main/header/btn_header_workflow_default.png);
+			}
+		}
+	}
+	
+	&:not(.cl-disabled) .cl-checkbox.cl-first-column:not(.cl-checked):hover .cl-checkbox-icon,
+	&:not(.cl-disabled) .cl-checkbox.cl-first-column:not(.cl-checked).cl-hover .cl-checkbox-icon {
+		background-image : url(images/main/header/btn_header_relatedwork_default.png);
+	}
+
+	&:not(.cl-disabled) .cl-checkbox.cl-last-column:not(.cl-checked):hover .cl-checkbox-icon,
+	&:not(.cl-disabled) .cl-checkbox.cl-last-column:not(.cl-checked).cl-hover .cl-checkbox-icon {
+		background-image : url(images/main/header/btn_header_workflow_default.png);
+	}
+}
+
+
+.header-system-name {	
+	background-color : @color-black-01;
+	background-image : url(images/main/header/icon_logo.png);
+	background-repeat : no-repeat;
+	background-position : left center;
+	background-size : 26px 24px;
+	color : @color-text-black-01;
+	
+	.cl-text{
+		color : @color-text-white-01;
+		padding-left : 35px;
+		font-size : 16px;
+	}
+}
+
+/***********************************
+ * Left Menu 영역 정의 
+ ***********************************/
+ 
+.menu-area{
+	background-color : @color-black-01;
+	.cl-button{
+		background-color : @color-primary-01;
+	}
+	.cl-output{
+		.cl-text {
+			color : @color-text-white-01;
+		}	
+	}
+}
+
+.left-sidenav {
+	.main-icon-menu {
+		background-color: @color-black-01;
+		.line {
+			background-color: #444444;
+		}
+
+		.cl-button.menu-item-back {
+			background-image: url(images/main/btn_menu_back_default.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-color: transparent;
+			border: none;
+			border-radius: 0;
+			&:not(.cl-disabled).cl-activated , &:not(.cl-disabled):active {
+				background-image: url(images/main/btn_menu_back_default.png);
+				background-color: transparent;
+			}
+		}
+
+		.cl-button.menu-item-customer {
+			background-image: url(images/main/btn_menu_customer_default.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-color: transparent;
+			border: none;
+			border-radius: 0;
+			&:not(.cl-disabled).cl-activated , &:not(.cl-disabled):active {
+				background-image: url(images/main/btn_menu_customer_default.png);
+				background-color: transparent;
+			}
+		}
+
+		.cl-button.menu-item-view {
+			background-image: url(images/main/btn_menu_view_default.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-color: transparent;
+			border: none;
+			border-radius: 0;
+			
+			&:not(.cl-disabled):hover {
+				
+			}
+			
+			&:not(.cl-disabled).cl-activated , &:not(.cl-disabled):active {
+				background-image: url(images/main/btn_menu_view_default.png);
+				background-color: transparent;
+			}
+			
+			&.on {
+				background-image : url(images/main/btn_menu_view_default.png); // TODO 아이콘 전달되면 변경할 것
+				background-color : @color-primary-01;
+			}
+		}
+
+		.cl-button.menu-item-print {
+			background-image: url(images/main/btn_menu_print_default.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-color: transparent;
+			border: none;
+			border-radius: 0;
+			&:not(.cl-disabled).cl-activated , &:not(.cl-disabled):active {
+				background-image: url(images/main/btn_menu_print_default.png);
+				background-color: transparent;
+			}
+		}
+
+		.cl-button.menu-item-help {
+			background-image: url(images/main/btn_menu_help_default.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-color: transparent;
+			border: none;
+			border-radius: 0;
+			&:not(.cl-disabled).cl-activated , &:not(.cl-disabled):active {
+				background-image: url(images/main/btn_menu_help_default.png);
+				background-color: transparent;
+			}
+		}
+
+		.cl-button.menu-item-all {
+			background-image: url(images/main/btn_menu_all_default.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-color: transparent;
+			border: none;
+			border-radius: 0;
+			&:not(.cl-disabled).cl-activated , &:not(.cl-disabled):active {
+				background-image: url(images/main/btn_menu_all_default.png);
+				background-color: transparent;
+			}
+		}
+	}
+
+	.main-icon-menu.large {
+		.cl-button.menu-item-all {
+			background-image: url(images/main/btn_menu_all_large_default.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-color: transparent;
+			border: none;
+			border-radius: 0;
+			&:not(.cl-disabled).cl-activated , &:not(.cl-disabled):active {
+				background-image: url(images/main/btn_menu_all_large_default.png);
+				background-color: transparent;
+			}
+		}
+
+		.cl-button.menu-item-print {
+			background-image: url(images/main/btn_menu_print_large_default.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-color: transparent;
+			border: none;
+			border-radius: 0;
+			&:not(.cl-disabled).cl-activated , &:not(.cl-disabled):active {
+				background-image: url(images/main/btn_menu_print_large_default.png);
+				background-color: transparent;
+			}
+		}
+
+		.cl-button.menu-item-help {
+			background-image: url(images/main/btn_menu_help_large_default.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-color: transparent;
+			border: none;
+			border-radius: 0;
+			&:not(.cl-disabled).cl-activated , &:not(.cl-disabled):active {
+				background-image: url(images/main/btn_menu_help_large_default.png);
+				background-color: transparent;
+			}
+		}
+	}
+
+	.main-menu-inner {
+		.cl-tree.menu {
+			background-color: @color-black-01;
+			border: none;
+			color: @color-text-white-04;
+			
+			.cl-tree-item {
+				.cl-tree-checkbox {
+					width : 0px;	
+				}
+			}
+			
+			.cl-tree-item[aria-level='1'] {
+				background-color : @color-black-01;
+//				padding: 15px 20px 15px 20px ! important;
+				height : 60px;
+				padding : 0px 20px 0px 5px;
+				
+				.cl-tree-iconline {
+					background-image : none;
+				}
+				
+				.cl-tree-itemicon {
+					background-image: url(images/main/icon_level_0.png);
+					background-size: 30px;
+					width: 30px;
+					height: 30px;
+				}
+
+				.cl-tree-treeicon {
+					background-image: none;
+					width: 0px;
+				}
+
+				.cl-text {
+					font-size: 18px;
+					color : #D5D5D5;
+					background: url(images/main/btn_menu_arrow_right_default.png) no-repeat right center;
+				}
+
+				.cl-badge {
+				}
+
+				&.cl-folder {
+					.cl-tree-itemicon {
+					}
+
+					&.cl-expanded > .cl-tree-treeicon {
+					}
+
+					&.cl-collapsed > .cl-tree-treeicon {
+					}
+				}
+
+				&.cl-selected {
+					background-color: @color-black-02;
+					&.cl-folder {
+						&.cl-expanded > .cl-tree-treeicon {
+						}
+
+						&.cl-collapsed > .cl-tree-treeicon {
+						}
+					}
+				}
+			}
+
+			&:not(.cl-disabled) {
+				.cl-tree-item:not(.cl-disabled) {
+					&:not(.cl-selected).cl-hover , &:not(.cl-selected):hover {
+						background-color: @color-black-02;
+						color: @white ;
+						font-weight: @font-bold; // 가이드 누락분 추가 (2019.09.30 ) 
+					}
+				}
+			}
+		}
+
+		.cl-tree.menu.active {
+			background-color: #444444;
+			
+			/* Line */
+			&.cl-tree-lines{
+				
+				.cl-tree-item{
+					// padding: 0px 10px 0px 0px;
+					
+					.cl-tree-line {
+						 background-image: url(images/main/line.png);
+						 background-repeat : repeat-y;
+						 padding : 5px 0px 6px 0px;
+						 
+						 // 첫 라인은 보이지 않게 하기 위해
+						 &:nth-child(-n+2) {
+						 	background-image : none;
+						 }
+					}
+					
+					.cl-tree-treeicon {
+						padding : 5px 0px 6px 0px;
+						 background-image: url(images/main/btn_menu_tree_link.png);
+						 background-size : auto;
+						 background-repeat : repeat-y;
+					}
+					&.cl-first{
+						.cl-tree-treeicon {
+						// background-image: url('icons/tree-line-first.png');
+							background-image : none;
+						}
+						.cl-tree-line {
+							background-image : none;
+						}
+					}
+					&.cl-last{
+						.cl-tree-treeicon {
+							 background-image: url(images/main/end.png);
+							 background-repeat : no-repeat;
+							 max-height : 30px; 
+						}
+						.cl-tree-iconline {
+							background-image : none;	
+						}
+					}
+				
+					&.cl-expanded{
+						> .cl-tree-treeicon{
+							background-image : url(images/main/btn_menu_tree_active_both.png);
+						}
+					}
+					&.cl-expanded.cl-first{
+						> .cl-tree-treeicon{
+							// background-image: url('icons/expanded-line-first.png');
+						}
+					}
+					&.cl-expanded.cl-last{
+						> .cl-tree-treeicon{
+							 background-image: url(images/main/btn_menu_tree_expand_last.png);
+						}
+					}
+		
+					&.cl-expanded.cl-selected{
+						>.cl-tree-treeicon{
+							// background-image: url('icons/expanded-selected-line-child.png');
+						}
+					}
+		
+					&.cl-expanded.cl-selected.cl-last{
+						>.cl-tree-treeicon{
+							// background-image: url('icons/expanded-selected-line-child-last.png');
+						}
+					}
+		
+					&.cl-collapsed{
+						>.cl-tree-treeicon{
+							 background-image: url(images/main/btn_menu_tree_collapse.png);
+							 background-size : 30px;
+						}
+					}
+		
+					&.cl-collapsed.cl-first{
+						>.cl-tree-treeicon{
+							// background-image: url('icons/collapsed-line-first.png');
+						}
+					}
+		
+					&.cl-collapsed.cl-last{
+						>.cl-tree-treeicon{
+							 background-image: url(images/main/btn_menu_tree_collapse_last.png);
+							 background-size : 30px;
+						}
+					}
+		
+					&.cl-collapsed.cl-selected{
+						>.cl-tree-treeicon{
+							// background-image: url('icons/collapsed-selected-line-child.png');
+						}
+					}
+		
+					&.cl-collapsed.cl-selected.cl-last{
+						>.cl-tree-treeicon{
+							// background-image: url('icons/collapsed-selected-line-child-last.png');
+						}
+					}
+		
+					.cl-text {
+						// padding: 3px 0px 3px 4px;
+						//TODO
+					}
+					.cl-tree-line,.cl-tree-treeicon {
+						// padding: 3px 0px 3px 0px;
+					}
+				}//.cl-tree-item
+			}//&.cl-tree-lines
+
+			.cl-tree-item[aria-level='1'] {
+//				padding: 14px 20px 14px 5px ! important;
+				height : 60px !important;
+				
+				.cl-tree-iconline {
+					background-image : none;
+					width : 20px;	
+				}
+				
+				.cl-tree-itemicon {
+					background-image: url(images/main/icon_level_0.png);
+					background-size: 30px;
+					width: 30px;
+					height: 30px;
+				}
+
+				.cl-tree-treeicon {
+					background-image: none;
+					width: 0px;
+				}
+
+				.cl-text {
+					font-size: 18px;
+					background: url(images/main/btn_menu_arrow_right_default.png) no-repeat right center;
+				}
+
+				.cl-badge {
+				}
+
+				&.cl-folder {
+					.cl-tree-itemicon {
+					}
+
+					&.cl-expanded > .cl-tree-treeicon {
+					}
+
+					&.cl-collapsed > .cl-tree-treeicon {
+					}
+				}
+
+				&.cl-selected {
+					background-color: @color-black-02;
+					color: @white;
+					font-weight: @font-bold;
+					&.cl-folder {
+						&.cl-expanded > .cl-tree-treeicon {
+						}
+
+						&.cl-collapsed > .cl-tree-treeicon {
+						}
+					}
+				}
+			}
+
+			&:not(.cl-disabled) {
+				.cl-tree-item:not(.cl-disabled) {
+					&:not(.cl-selected).cl-hover , &:not(.cl-selected):hover {
+						background-color: @color-black-03;
+						color: @white;
+					}
+				}
+			}
+		}
+
+		.cl-tree-item[aria-level='2'] {
+			background-color: @color-black-03;
+			border-bottom: 1px solid #555555;
+//			padding : 9px 20px 10px 0px !important;
+			height : 54px !important;
+			
+			.cl-tree-iconline {
+				background-image : none;	
+			}
+			
+			.cl-tree-itemicon {
+				background-image: none;
+				width: 0px;
+			}
+
+			.cl-tree-treeicon {
+				background-image: none;
+				width: 0px;
+			}
+
+			.cl-text {
+				color: @white;
+				font-size: 16px; // 2019.9.27 가이드 수정 사항 반영 (2019.09.30) 
+				font-weight: @font-regular;
+			//	background: url(images/main/btn_menu_arrow_default.png) no-repeat right center;
+				padding-left : 0px;
+			}
+
+			&.cl-folder {
+				.cl-tree-itemicon {
+				}
+
+				.cl-text {
+					background: url(images/main/btn_menu_arrow_active_none.png) no-repeat right center;
+				}
+
+				&.cl-expanded {
+					> .cl-tree-treeicon {
+					}
+
+					.cl-text {
+						background: url(images/main/btn_menu_arrow_active_open.png) no-repeat right center;
+						color: @white;
+						font-weight: @font-bold;
+					}
+				}
+
+				&.cl-collapsed {
+					> .cl-tree-treeicon {
+					}
+
+					.cl-text {
+						background: url(images/main/btn_menu_arrow_right_default.png) no-repeat right center;
+						
+						color: @white;
+						font-weight: @font-regular;
+					}
+				}
+			}
+
+			&.cl-selected {
+				background-color: @color-black-03;
+				color: @white;
+				&.cl-folder {
+					&.cl-expanded {
+						> .cl-tree-treeicon {
+						}
+
+						.cl-text {
+							background: url(images/main/btn_menu_arrow_active_open.png) no-repeat right center;
+						}
+					}
+
+					&.cl-collapsed {
+						> .cl-tree-treeicon {
+						}
+
+						.cl-text {
+							background: url(images/main/btn_menu_arrow_active_none.png) no-repeat right center;
+						}
+					}
+				}
+			}
+
+			&:not(.cl-disabled) {
+				.cl-tree-item:not(.cl-disabled) {
+					&:not(.cl-selected).cl-hover , &:not(.cl-selected):hover {
+						background-color: @color-black-04;
+						color: @white;
+					}
+				}
+			}
+		}
+
+		/* level >= 3 */
+		.cl-tree-item {
+			background-color: @color-black-02;
+			padding: 0 20px 0 0;
+//			height : 30px;
+			min-height : 30px;
+			overflow : hidden;
+			
+			.cl-tree-itemicon {
+				background-image: none;
+				width: 0px;
+				padding : 5px 0;
+			}
+
+			.cl-tree-treeicon {
+				background-image: none;
+				width: 14px;
+			}
+
+			.cl-text {
+				color: #B5B5B5;
+				font-size: 14px;
+				padding: 0px 0px 0px 6px;
+				
+				/* 2줄 ellipsis */
+				white-space: pre-wrap;
+				max-height : 48px;
+				line-height : 1.6;
+			}
+
+			.cl-badge {
+				background-color: @white;
+				font-size: 14px;
+				color: @color-primary-01;
+				border-radius: 8px;
+				padding: 0px 5px;
+			}
+
+			&.cl-leaf {
+				.cl-tree-line {
+					background-image: none;
+				}
+
+				&.cl-last {
+					.cl-tree-line {
+//						background-image: url(images/end.png);
+						background-repeat : no-repeat;
+					}
+				}
+			}
+
+			&.cl-folder {
+				.cl-tree-itemicon {
+				}
+
+				&.cl-expanded {
+					> .cl-tree-treeicon {
+						background-image: url(images/main/btn_menu_tree_active_down.png);
+						background-size: 30px;
+					}
+
+					.cl-text {
+						color: @white;
+						font-weight: @font-bold;
+					}
+				}
+
+				&.cl-collapsed {
+					> .cl-tree-treeicon {
+						background-image: url(images/main/btn_menu_tree_default.png);
+						background-size: 14px;
+					}
+				}
+			}
+
+			&.cl-selected {
+				background-color: @color-black-02;
+				color: @white;
+				&.cl-folder {
+					&.cl-expanded {
+						> .cl-tree-treeicon {
+						}
+					}
+
+					&.cl-collapsed {
+						> .cl-tree-treeicon {
+						}
+					}
+				}
+			}
+
+			&:not(.cl-disabled) {
+				.cl-tree-item:not(.cl-disabled) {
+					&:not(.cl-selected).cl-hover , &:not(.cl-selected):hover {
+						background-color: @color-black-01;
+						color: #B5B5B5;
+						font-weight: @font-regular;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/***********************************
+ * 창별 윈도우 UDC 관련 정보
+ ***********************************/
+.window-title-area {
+	background-color: @color-black-03;
+	.cl-output .cl-text{
+		color : @color-text-white-03;
+	}
+	&.on{
+		font-weight : bold;
+		background-color : @color-black-01;
+		.cl-output .cl-text{
+			color : @color-text-white-01;
+		}
+	}
+} 
+
+.window-content{	
+	.main-title {
+		.cl-text{			
+			font : @font-headline-01;
+			color :@color-primary-01 !important;	
+		}
+	}
+	.sub-title {
+		.cl-text{			
+			font : @font-headline-02;
+			color :@color-primary-02 !important;	
+		}
+	}
+}
+
+
+
+/***********************************
+ * 헤더
+ ***********************************/
+.cl-container.header {
+	background-image : linear-gradient(to right, @cl-shape-bg-color-1, @cl-shape-bg-color-2);
+	
+	.cl-output {
+		color : @white;
+		
+		&.login-time {
+			background : url(images/icon_time.png) no-repeat left center;
+			padding-left : 20px;
+		}
+		
+		&.login-user {
+			background : url(images/icon_user.png) no-repeat left center;
+			padding-left : 20px;
+			cursor : pointer;
+		}
+	}
+}
+
+.cl-container.menu-title-wrap {
+	background-color : @cl-bg-color-1;
+	border-bottom : 1px solid #405566;
+	
+	.cl-output.logo {
+		color : @white;
+		font-size : 12pt;
+		font-weight : @cl-font-medium;
+		padding-left : 20px;
+	}
+}
+
+/***********************************
+ * 메뉴
+ ***********************************/
+
+
+
+/***********************************
+ * 미니 메뉴
+ ***********************************/
+.cl-container.mini-menu{
+	background-color : @cl-bg-color-1;
+	
+	.cl-menu {
+		.cl-menu-list {
+			border : none;
+			background : transparent;
+			
+			.cl-menu-item {
+				height : 40px;
+				
+				.cl-menu-icon {
+					background-size : auto;
+					
+					height : 100%;
+					width : 100%;
+				}
+				
+				.cl-text {
+					font-size : 0;
+				}
+				
+				.cl-menu-arrow {
+					&.cl-menu-arrow-image {
+						 background-image: none;
+					}
+				}
+				
+				&.cl-hover {
+					background-color: @cl-selection-bg-color-2;
+					color: @white;
+				}
+				
+				&.cl-selected{
+					background-color: @cl-selection-bg-color-2;
+					color: @white;
+	
+					>.cl-menu-arrow-image,
+					>.cl-menu-arrow-wrapper>.cl-menu-arrow-image{
+						 background-image: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+.cl-tree.left-menu .cl-tree-item.menu-icon-type-1{
+	.cl-tree-itemicon{
+		background-image : url(images/icon_left01.png);
+		background-repeat : no-repeat;
+		background-position : left-center;
+			
+		&.cl-hover, &:hover {
+			background-image : url(images/icon_left01_on.png);
+			background-repeat : no-repeat;
+			background-position : left-center;
+		}
+	}
+	
+	&.cl-selected {
+		.cl-tree-itemicon{
+			background-image : url(images/icon_left01_on.png) !important;
+			background-repeat : no-repeat;
+			background-position : left-center;
+		}
+	}
+} 
+
+.cl-tree.left-menu .cl-tree-item.menu-icon-type-2{
+	.cl-tree-itemicon{
+		background-image : url(images/icon_left02.png);
+		background-repeat : no-repeat;
+		background-position : left-center;
+			
+		&.cl-hover, &:hover {
+			background-image : url(images/icon_left02_on.png) !important;
+			background-repeat : no-repeat;
+			background-position : left-center;
+		}
+	}
+	
+	&.cl-selected {
+		.cl-tree-itemicon{
+			background-image : url(images/icon_left02_on.png);
+			background-repeat : no-repeat;
+			background-position : left-center;
+		}
+	}
+} 
+
+.cl-tree.left-menu .cl-tree-item.menu-icon-type-3{
+	.cl-tree-itemicon{
+		background-image : url(images/icon_left03.png);
+		background-repeat : no-repeat;
+		background-position : left-center;
+			
+		&.cl-hover, &:hover {
+			background-image : url(images/icon_left03_on.png) !important;
+			background-repeat : no-repeat;
+			background-position : left-center;
+		}
+	}
+	
+	&.cl-selected {
+		.cl-tree-itemicon{
+			background-image : url(images/icon_left03_on.png);
+			background-repeat : no-repeat;
+			background-position : left-center;
+		}
+	}
+} 
+
+.cl-tree.left-menu .cl-tree-item.menu-icon-type-4{
+	.cl-tree-itemicon{
+		background-image : url(images/icon_left04.png);
+		background-repeat : no-repeat;
+		background-position : left-center;
+			
+		&.cl-hover, &:hover {
+			background-image : url(images/icon_left04_on.png) !important;
+			background-repeat : no-repeat;
+			background-position : left-center;
+		}
+	}
+	
+	&.cl-selected {
+		.cl-tree-itemicon{
+			background-image : url(images/icon_left04_on.png);
+			background-repeat : no-repeat;
+			background-position : left-center;
+		}
+	}
+} 
+
+.cl-tree.left-menu .cl-tree-item.menu-icon-type-5{
+	.cl-tree-itemicon{
+		background-image : url(images/icon_left05.png);
+		background-repeat : no-repeat;
+		background-position : left-center;
+			
+		&.cl-hover, &:hover {
+			background-image : url(images/icon_left05_on.png) !important;
+			background-repeat : no-repeat;
+			background-position : left-center;
+		}
+	}
+	
+	&.cl-selected {
+		.cl-tree-itemicon{
+			background-image : url(images/icon_left05_on.png);
+			background-repeat : no-repeat;
+			background-position : left-center;
+		}
+	}
+}
+
+.cl-container.mini-menu .cl-menu .cl-menu-list .cl-menu-item.menu-icon-type-1 {
+	.cl-menu-icon {
+		background-image : url(images/icon_left01.png);
+		background-repeat : no-repeat;
+		background-position : left-center;
+	} 
+	
+	&.cl-selected {
+		.cl-menu-icon{
+			background-image : url(images/icon_left01_on.png);
+			background-repeat : no-repeat;
+			background-position : left-center;
+		}
+	}
+}
+
+.cl-container.mini-menu .cl-menu .cl-menu-list .cl-menu-item.menu-icon-type-2 {
+	.cl-menu-icon {
+		background-image : url(images/icon_left02.png);
+		background-repeat : no-repeat;
+		background-position : left-center;
+	} 
+	
+	&.cl-selected {
+		.cl-menu-icon{
+			background-image : url(images/icon_left02_on.png);
+			background-repeat : no-repeat;
+			background-position : left-center;
+		}
+	}
+}
+
+.cl-container.mini-menu .cl-menu .cl-menu-list .cl-menu-item.menu-icon-type-3 {
+	.cl-menu-icon {
+		background-image : url(images/icon_left03.png);
+		background-repeat : no-repeat;
+		background-position : left-center;
+	} 
+	
+	&.cl-selected {
+		.cl-menu-icon{
+			background-image : url(images/icon_left03_on.png);
+			background-repeat : no-repeat;
+			background-position : left-center;
+		}
+	}
+}
+
+.cl-container.mini-menu .cl-menu .cl-menu-list .cl-menu-item.menu-icon-type-4 {
+	.cl-menu-icon {
+		background-image : url(images/icon_left04.png);
+		background-repeat : no-repeat;
+		background-position : left-center;
+	} 
+	
+	&.cl-selected {
+		.cl-menu-icon{
+			background-image : url(images/icon_left04_on.png);
+			background-repeat : no-repeat;
+			background-position : left-center;
+		}
+	}
+}
+
+.cl-container.mini-menu .cl-menu .cl-menu-list .cl-menu-item.menu-icon-type-5 {
+	.cl-menu-icon {
+		background-image : url(images/icon_left05.png);
+		background-repeat : no-repeat;
+		background-position : left-center;
+	} 
+	
+	&.cl-selected {
+		.cl-menu-icon{
+			background-image : url(images/icon_left05_on.png);
+			background-repeat : no-repeat;
+			background-position : left-center;
+		}
+	}
+}
+
+/***********************************
+ * 모바일 메뉴
+ ***********************************/
+ .cl-container.user-info {
+ 	background-color : @cl-main-bg;
+ 	
+ 	.cl-output.user-name {
+ 		font-size : 13pt; 
+ 		font-weight : @cl-font-bold;
+ 	}
+ 	
+ 	.cl-output.login-time {
+ 		font-size : 11pt;
+ 	}
+ }
+
+/***********************************
+ * 컨텐트
+ ***********************************/
+ .cl-tabfolder.content {
+ 	> .main-content {
+	 	> .cl-tabfolder-header {
+	 		background-color : @white;
+	 		border-bottom : 1px solid #c0c1c3;
+	 		
+	 		.cl-tabfolder-prev {
+	 			background-color : @white;
+				border: solid 1px @default-border-color;
+				
+				margin : 15px 0;
+				width : 30px;
+	
+				&.cl-disabled {
+					background-color : @disabled-selection-background;
+				}
+			}
+	
+			/* 다음으로 스크롤 버튼 */
+			.cl-tabfolder-next {
+				background-color : @white;
+				// background-image: url("icons/next.png");
+				border: solid 1px @default-border-color;
+				
+				margin : 15px 0 15px 3px;
+				width : 30px;
+	
+				&.cl-disabled {
+					background-color : @disabled-selection-background;
+					// background-image: url("icons/next-selected.png");
+				}
+			}
+	 		
+	 		.cl-tabfolder-item {
+	 			border : none;
+	 			height : 60px;
+	 			padding : 0 20px;
+	 				
+	 			.cl-text {
+		 			font-size : 15px;
+		 			font-weight : @cl-font-bold;
+	 			}
+	 			
+	 			.cl-tabfolder-button {
+					 background-image: url(images/toggle_close.png);
+					 background-position : center;
+					 background-size : 5px;
+				}
+	 			
+	 			&.cl-selected{
+					background-color: @white;
+					box-shadow: inset 0px -3px 0px 0px rgba(0,174,250,1);
+					color: @cl-selection-bg-color-1;
+	
+					.cl-tabfolder-button {
+						 background-image: url(images/icon_close_on.png);
+						 background-position : center;
+						 background-size : 5px;
+					}
+				}
+		
+				&:not(.cl-selected):hover{
+					background-color: @white;
+					color : @cl-selection-bg-color-1;
+				}
+	 		}
+	 	}
+	 	
+	 	> .cl-tabfolder-body{
+	 		background-color : @cl-main-bg;
+	 		border : none;
+	 		box-shadow: inset 0px 1px 3px 0px rgba(204,205,207,1);
+	 	}
+ 	}
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+/***********************************
+ * 멀티윈도우 용 
+ ***********************************/
+ .cl-output{
+	&.symbolic{
+		
+		background-repeat: no-repeat;
+		background-size: 50px 50px;
+		background-position: center 2px;
+		cursor: pointer;
+		text-align: center;
+		vertical-align: bottom;
+		&:focus{
+			border: 1px dotted #000;
+		}
+		&:hover {
+			text-decoration:underline;
+		}
+	}
+	
+}
+
+.cl-container{
+	&.menubar{
+		background-image:linear-gradient(270deg, rgb(175, 176, 219) 0.00%, rgba(70,130,180,1) 99.89% );
+	}
+}
+
+.cl-container {
+	&.desktop{
+		background:rgba(180, 173, 209, 0.192);
+	}
+}
+
+.cl-button{
+	&.user-agent, &:hover.user-agent{
+		background-image: url("images/account.png");
+		background-repeat: no-repeat;
+		background-size: 32px 32px;
+		background-position: center 0px;
+		border : none;
+		background-color: initial;
+		border-radius : 0px;
+	}
+}
+
+.cl-button{
+	&.menu, &:hover.menu {
+		background-image: url("images/Hamburger_icon.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		border: none;
+		background-color: initial;
+		border-radius: 0px;
+	}
+}
+
+.cl-embeddedapp{
+	&.cl-window{
+		border: 1px solid #c5c5c5;
+		z-index : 9999999;
+	}
+}
+
+.cl-button{
+	&.cl-workitem{
+		background-repeat: no-repeat;
+		background-size: 25px 25px;
+		background-position: center;
+		border-radius:0px;
+		
+	}
+	&.cl-work-bgitem, &:hover.cl-work-bgitem{
+		background-repeat: no-repeat;
+		background-size: 25px 25px;
+		background-position: center;
+		border-radius:0px;
+		background-image: none;
+		
+	}
+}
+
+.cl-menu {
+	&.setting-context .cl-menu-list{
+		border: none;
+	}
+}
+
+//헤더 화면 검색
+.btn-header-search {
+	background-image : url(images/header/btn_header_search_default.png);
+	background-repeat : no-repeat;
+	background-position : center center;
+	background-color : @color-black-01 !important;
+}
+
+//헤더 레이아웃 저장
+.btn-header-layout-01 {
+	background-image : url(images/header/btn_header_layout_01_default.png);
+	background-repeat : no-repeat;
+	background-position : center center;
+	background-color : @color-black-01 !important;
+}
+
+//헤더 레이아웃 저장
+.btn-header-layout-empty {
+	background-image : url(images/header/btn_header_layout_empty_default.png);
+	background-repeat : no-repeat;
+	background-position : center center;
+	background-color : @color-black-01 !important;
+}
+
+//헤더 레이아웃 저장
+.btn-header-layout-plus {
+	background-image : url(images/header/btn_header_layout_plus_default.png);
+	background-repeat : no-repeat;
+	background-position : center center;
+	background-color : @color-black-01 !important;
+}
+
+//헤더 활성화면 선택 레이어 호출
+.btn-header-multitask {
+	background-image : url(images/header/btn_header_multitask_default.png);
+	background-repeat : no-repeat;
+	background-position : center center;
+	background-color : @color-black-01 !important;
+}
+
+//헤더 연관업무
+.btn-header-relatedwork {
+	background-image : url(images/header/btn_header_relatedwork_default.png);
+	background-repeat : no-repeat;
+	background-position : center center;
+	background-color : @color-black-01 !important;
+}
+
+//헤더 워크플로우
+.btn-header-workflow {
+	background-image : url(images/header/btn_header_workflow_default.png);
+	background-repeat : no-repeat;
+	background-position : center center;
+	background-color : @color-black-01 !important;
+}
+
+//현재 Level의 이전 단계 Level 메뉴로 이동 
+.btn-menu-back {
+	background-image : url(images/icon/btn_menu_back_default.png);
+	background-repeat : no-repeat;
+	background-position : center center;
+	background-color : @color-black-01 !important;
+}
+
+//고객 선택 및 고객정보 고정 버튼
+.btn-menu-customer {
+	background-image : url(images/icon/btn_menu_customer_default.png);
+	background-repeat : no-repeat;
+	background-position : center center;
+	background-color : @color-black-01 !important;
+}
+
+//Level 1~4 숨기기/고정 버튼
+.btn-menu-view {
+	background-image : url(images/icon/btn_menu_view_default.png);
+	background-repeat : no-repeat;
+	background-position : center center;
+	background-color : @color-black-01 !important;
+}
+
+//프린트
+.btn-menu-print {
+	background-image : url(images/icon/btn_menu_print_default.png);
+	background-repeat : no-repeat;
+	background-position : center center;
+	background-color : @color-black-01 !important;
+}
+
+//도움말
+.btn-menu-help {
+	background-image : url(images/icon/btn_menu_help_default.png);
+	background-repeat : no-repeat;
+	background-position : center center;
+	background-color : @color-black-01 !important;
+}
+
+//전체 메뉴
+.btn-menu-all {
+	background-image : url(images/icon/btn_menu_all_default.png);
+	background-repeat : no-repeat;
+	background-position : center center;
+	background-color : @color-black-01 !important;
+}
+
+.top-height-border {
+	border-right : solid 1px @color-text-white-01;
+	border-left : solid 1px @color-text-white-01;
+	opacity : 0.2;
+}
+
+
+
+
+/***********************************
+ * Top Header 영역 정의 
+ ***********************************/
+.vertical-button-a{
+	background-color : @color-secondary-01;
+	cursor : pointer;
+	.cl-text{
+		font-weight : @font-regular;	
+	}		
+	&.on{
+		.cl-text{
+			font-weight : @font-bold;
+		}
+	}
+	
+}
+
+.vertical-button-b{
+	background-color : @color-secondary-02;
+	cursor : pointer;
+	font-weight : @font-regular;
+	.cl-text{
+		font-weight : @font-regular;	
+	}		
+	&.on{
+		.cl-text{
+			font-weight : @font-bold;
+		}
+	}
+	
+}
+
+.vertical-expand-button{	
+	background-image : url(images/icon/btn_month_next.png);
+	background-repeat : no-repeat;
+	background-position : center center;
+	cursor : pointer;
+	&.on, &:not(.cl-disabled):hover, &:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		.cl-text{
+			color : @white;
+			font-weight : @font-bold;
+		}
+	
+		background-image : url(images/icon/btn_month_prev.png);
+	}
+}
+
+// Main - Header - Layer (레이어)
+.top-icon-multitask {
+	background-image : url(images/header/btn_header_multitask_default.png);
+	background-repeat : no-repeat;
+	background-position : center center;
+	background-color : transparent;
+	cursor : pointer;
+	
+	 &:not(.cl-disabled):hover, &:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-color : @color-primary-01;
+//		background-image : url(images/header/btn_header_multitask_default.png);
+	}
+}
+
+
+// Main - Header - Organize Window (윈도우 정리1)
+.top-icon-align-a{
+	background-image : url(images/header/icon_align_01.png);
+	background-repeat : no-repeat;
+	background-position : center center;
+	background-color : transparent;
+	
+	&.on, &:not(.cl-disabled):hover, &:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-color : @color-primary-01;
+//		background-image : url(images/header/icon_align_01.png);
+	}
+}
+
+
+// Main - Header - Organize Window (윈도우 정리2)
+.top-icon-align-b{
+	background-image : url(images/header/icon_align_02.png);
+	background-repeat : no-repeat;
+	background-position : center center;
+	background-color : transparent;
+	
+	&.on,&:not(.cl-disabled):hover, &:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-color : @color-primary-01;
+//		background-image : url(images/header/icon_align_02.png);
+	}
+
+}
+
+
+// Main - Header - Organize Window (윈도우 정리3)
+.top-icon-align-c{
+	background-image : url(images/header/icon_align_03.png);
+	background-repeat : no-repeat;
+	background-position : center center;
+	background-color : transparent;
+	
+	&.on,&:not(.cl-disabled):hover, &:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-color : @color-primary-01;
+//		background-image : url(images/header/icon_align_03.png);
+	}
+}
+
+// Main - Header - Search(검색)
+.top-icon-search{
+	background-color : transparent;
+	background-image : url(images/header/btn_header_search_default.png);
+	background-repeat : no-repeat;
+	background-position : center;
+	background-size : 30px;
+
+	&.on, &:not(.cl-disabled):hover, &:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-color : transparent;
+		background-image : url(images/header/btn_header_search_default.png);
+	}
+}
+
+.top-icon-seperator {
+	background-color : rgba(255, 255, 255, 0.8);
+}
+
+
+
+
+
+// 20191024 디자인가이드 --  285~287페이지
+.related-work-border {
+	border-bottom: 1px solid #666666 !important; 
+}
+
+.cl-button.related-write {
+	border : 1px solid @white;
+	background-image: url(images/related_work/icon_write_default.png);
+	background-color : transparent;
+	background-repeat : no-repeat;
+	background-position : center center;
+	
+	&:not(.cl-disabled):hover {
+		background-color : rgba(255, 255, 255, 0.05);
+		border : 1px solid @white;
+		color : @color-text-white-01;
+	}
+	
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {	
+		background-color : rgba(255, 255, 255, 0.03);
+		border : 1px solid @white;
+		color : @color-text-white-01;
+	}
+	
+	&.cl-disabled {
+		background : transparent;
+		border : 1px solid @color-bg-disabled;
+		color : @color-bg-disabled;
+	}
+}
+
+
+.cl-button.related-h-rass{
+	border : 1px solid @white;
+	background-image: url(images/related_work/언더라이팅_related_icon_03.png);
+	background-size : 30px 30px;
+	background-color : transparent;
+	background-repeat : no-repeat;
+	background-position : center 5px;
+	
+	.cl-text {
+		font-weight : @font-bold;
+		font-size : @font-button;
+		color : @white;
+		padding : 35px 0px 0px 0px;
+	}
+	
+	&:not(.cl-disabled):hover {
+		border : 1px solid @white;
+	}
+}
+
+
+.cl-button.related-mediinfo{
+	border : 1px solid @white;
+	background-image: url(images/related_work/related_icon_search.png);
+	background-size : 30px 30px;
+	background-color : transparent;
+	background-repeat : no-repeat;
+	background-position : center 5px;
+	
+	.cl-text {
+		font-weight : @font-bold;
+		font-size : @font-button;
+		color : @white;
+		padding : 35px 0px 0px 0px;
+	}
+	
+	&:not(.cl-disabled):hover {
+		border : 1px solid @white;
+	}
+}
+
+
+.cl-button.related-calt{
+	border : 1px solid @white;
+	background-image: url(images/related_work/언더라이팅_related_icon_01.png);
+	background-size : 30px 30px;
+	background-color : transparent;
+	background-repeat : no-repeat;
+	background-position : center 5px;
+	
+	.cl-text {
+		font-weight : @font-bold;
+		font-size : @font-button;
+		color : @white;
+		padding : 35px 0px 0px 0px;
+	}
+	
+	&:not(.cl-disabled):hover {
+		border : 1px solid @white;
+	}
+}
+
+
+.cl-button.related-asmnitm{
+	border : 1px solid @white;
+	background-image: url(images/related_work/언더라이팅_related_icon_02.png);
+	background-size : 30px 30px;
+	background-color : transparent;
+	background-repeat : no-repeat;
+	background-position : center 5px;
+	
+	.cl-text {
+		font-weight : @font-bold;
+		font-size : @font-button;
+		color : @white;
+		padding : 35px 0px 0px 0px;
+	}
+	
+	&:not(.cl-disabled):hover {
+		border : 1px solid @white;
+	}
+}
+
+
+.cl-button.related-grtebnet{
+	border : 1px solid @white;
+	background-image: url(images/related_work/언더라이팅_related_icon_03.png);
+	background-size : 30px 30px;
+	background-color : transparent;
+	background-repeat : no-repeat;
+	background-position : center 5px;
+	
+	.cl-text {
+		font-weight : @font-bold;
+		font-size : @font-button;
+		color : @white;
+		padding : 35px 0px 0px 0px;
+	}
+	
+	&:not(.cl-disabled):hover {
+		border : 1px solid @white;
+	}
+}

@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-40b5ae1a" version="1.0.0.0">
+  <head std:sid="head-c95ff35a">
+    <title>SALES_PLAN</title>
+    <screen std:sid="screen-e5754ea9" id="default" name="default" width="1920px" height="1080px" useCustomWidth="false" useCustomHeight="true" customHeight="768" customWidth="1024"/>
+    <cl:model std:sid="model-06ab9feb">
+      <cl:dataset std:sid="d-set-e27675d7" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="데모명" std:sid="d-column-88aa674d" name="DEMO_NAME"/>
+          <cl:datacolumn comment="데모 기간" std:sid="d-column-070440fa" name="DEMO_TERM"/>
+          <cl:datacolumn comment="가능 횟수" std:sid="d-column-43129f31" name="POSBL_CO" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-c139d307" name="ID"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[122 Taper KIT]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[4일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[0회]]></cl:datavalue>
+            <cl:datavalue columnname="SN">SN1</cl:datavalue>
+            <cl:datavalue columnname="DEMO_DLIVY">DEMO_DLIVY1</cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN">DEMO_RTURN1</cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[ESR FULL KIT]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[7일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[0회]]></cl:datavalue>
+            <cl:datavalue columnname="SN">SN2</cl:datavalue>
+            <cl:datavalue columnname="DEMO_DLIVY">DEMO_DLIVY2</cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN">DEMO_RTURN2</cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[EFR FULL KIT]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[7일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[2회]]></cl:datavalue>
+            <cl:datavalue columnname="SN">SN3</cl:datavalue>
+            <cl:datavalue columnname="DEMO_DLIVY">DEMO_DLIVY3</cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN">DEMO_RTURN3</cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[CAS KIT]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[7일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[2회]]></cl:datavalue>
+            <cl:datavalue columnname="SN">SN4</cl:datavalue>
+            <cl:datavalue columnname="DEMO_DLIVY">DEMO_DLIVY4</cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN">DEMO_RTURN4</cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[4]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[엔진 (카보)]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[10일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[1회]]></cl:datavalue>
+            <cl:datavalue columnname="SN">SN5</cl:datavalue>
+            <cl:datavalue columnname="DEMO_DLIVY">DEMO_DLIVY5</cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN">DEMO_RTURN5</cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[5]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[파워프랩]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[7일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[1회]]></cl:datavalue>
+            <cl:datavalue columnname="SN">SN6</cl:datavalue>
+            <cl:datavalue columnname="DEMO_DLIVY">DEMO_DLIVY6</cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN">DEMO_RTURN6</cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[6]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[구강카메라]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[12일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[0회]]></cl:datavalue>
+            <cl:datavalue columnname="SN">SN7</cl:datavalue>
+            <cl:datavalue columnname="DEMO_DLIVY">DEMO_DLIVY7</cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN">DEMO_RTURN7</cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[7]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[OneGuide KIT]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[14일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[0회]]></cl:datavalue>
+            <cl:datavalue columnname="SN">SN8</cl:datavalue>
+            <cl:datavalue columnname="DEMO_DLIVY">DEMO_DLIVY8</cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN">DEMO_RTURN8</cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[8]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-5284cbf6" id="ds2">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="데모명" std:sid="d-column-78b90936" name="DEMO_NAME"/>
+          <cl:datacolumn comment="데모 기간" std:sid="d-column-095e93fc" name="DEMO_TERM"/>
+          <cl:datacolumn comment="가능 횟수" std:sid="d-column-602d7640" name="POSBL_CO" datatype="string"/>
+          <cl:datacolumn comment="순번" std:sid="d-column-0d306298" name="SN"/>
+          <cl:datacolumn comment="데모 출고" std:sid="d-column-05907611" name="DEMO_DVILY"/>
+          <cl:datacolumn comment="데모 반납" std:sid="d-column-c328f5d4" name="DEMO_RTURN"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[122 Taper KIT]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[4일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[0회]]></cl:datavalue>
+            <cl:datavalue columnname="SN"><![CDATA[001]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_DVILY"><![CDATA[8/15]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN"><![CDATA[8/21]]></cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[122 Taper KIT]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[4일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[0회]]></cl:datavalue>
+            <cl:datavalue columnname="SN"><![CDATA[002]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_DVILY"><![CDATA[8/9]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN"><![CDATA[8/18]]></cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[122 Taper KIT]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[4일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[0회]]></cl:datavalue>
+            <cl:datavalue columnname="SN"><![CDATA[003]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_DLIVY">DEMO_DLIVY1</cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_DVILY"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[ESR FULL KIT]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[7일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[0회]]></cl:datavalue>
+            <cl:datavalue columnname="SN"><![CDATA[001]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_DVILY"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[ESR FULL KIT]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[7일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[0회]]></cl:datavalue>
+            <cl:datavalue columnname="SN"><![CDATA[002]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_DLIVY">DEMO_DLIVY2</cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_DVILY"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[EFR FULL KIT]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[7일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[2회]]></cl:datavalue>
+            <cl:datavalue columnname="SN"><![CDATA[001]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_DVILY"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[EFR FULL KIT]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[7일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[2회]]></cl:datavalue>
+            <cl:datavalue columnname="SN"><![CDATA[002]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_DVILY"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[EFR FULL KIT]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[7일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[2회]]></cl:datavalue>
+            <cl:datavalue columnname="SN"><![CDATA[003]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_DLIVY">DEMO_DLIVY3</cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_DVILY"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[CAS KIT]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[7일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[2회]]></cl:datavalue>
+            <cl:datavalue columnname="SN"><![CDATA[001]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_DVILY"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[4]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[CAS KIT]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[7일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[2회]]></cl:datavalue>
+            <cl:datavalue columnname="SN"><![CDATA[002]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_DLIVY">DEMO_DLIVY4</cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_DVILY"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[엔진 (카보)]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[10일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[1회]]></cl:datavalue>
+            <cl:datavalue columnname="SN"><![CDATA[001]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_DVILY"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[5]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[엔진 (카보)]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[10일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[1회]]></cl:datavalue>
+            <cl:datavalue columnname="SN"><![CDATA[002]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_DVILY"><![CDATA[8/15]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN"><![CDATA[8/25]]></cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[5]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[엔진 (카보)]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[10일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[1회]]></cl:datavalue>
+            <cl:datavalue columnname="SN"><![CDATA[003]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_DLIVY">DEMO_DLIVY5</cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_DVILY"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[파워프랩]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[7일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[1회]]></cl:datavalue>
+            <cl:datavalue columnname="SN"><![CDATA[001]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_DVILY"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[6]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[파워프랩]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[7일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[1회]]></cl:datavalue>
+            <cl:datavalue columnname="SN"><![CDATA[002]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_DVILY"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[6]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[파워프랩]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[7일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[1회]]></cl:datavalue>
+            <cl:datavalue columnname="SN"><![CDATA[003]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_DLIVY">DEMO_DLIVY6</cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[6]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[구강카메라]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[12일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[0회]]></cl:datavalue>
+            <cl:datavalue columnname="SN"><![CDATA[001]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_DVILY"><![CDATA[8/14]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN"><![CDATA[8/27]]></cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[7]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[구강카메라]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[12일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[0회]]></cl:datavalue>
+            <cl:datavalue columnname="SN"><![CDATA[002]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_DLIVY">DEMO_DLIVY7</cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[7]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[OneGuide KIT]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[14일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[0회]]></cl:datavalue>
+            <cl:datavalue columnname="SN"><![CDATA[001]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_DVILY"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[8]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[OneGuide KIT]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[14일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[0회]]></cl:datavalue>
+            <cl:datavalue columnname="SN"><![CDATA[002]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_DVILY"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[8]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[OneGuide KIT]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_TERM"><![CDATA[14일]]></cl:datavalue>
+            <cl:datavalue columnname="POSBL_CO"><![CDATA[0회]]></cl:datavalue>
+            <cl:datavalue columnname="SN"><![CDATA[003]]></cl:datavalue>
+            <cl:datavalue columnname="DEMO_DLIVY">DEMO_DLIVY8</cl:datavalue>
+            <cl:datavalue columnname="DEMO_RTURN"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[8]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-529b7675" id="dsUser">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="데모명" std:sid="d-column-b0f58048" name="DEMO_NAME"/>
+          <cl:datacolumn comment="순번" std:sid="d-column-47f7a81b" name="SN"/>
+          <cl:datacolumn comment="" std:sid="d-column-2ff16409" name="NAME"/>
+          <cl:datacolumn std:sid="d-column-e44d329b" name="FROM"/>
+          <cl:datacolumn std:sid="d-column-f244fc77" name="TO"/>
+          <cl:datacolumn std:sid="d-column-ce42dac7" name="ID"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[122 Taper KIT]]></cl:datavalue>
+            <cl:datavalue columnname="SN"><![CDATA[001]]></cl:datavalue>
+            <cl:datavalue columnname="NAME"><![CDATA[8굿윌]]></cl:datavalue>
+            <cl:datavalue columnname="FROM"><![CDATA[20200730]]></cl:datavalue>
+            <cl:datavalue columnname="TO"><![CDATA[20200803]]></cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[122 Taper KIT]]></cl:datavalue>
+            <cl:datavalue columnname="SN"><![CDATA[001]]></cl:datavalue>
+            <cl:datavalue columnname="NAME"><![CDATA[8조재민]]></cl:datavalue>
+            <cl:datavalue columnname="FROM"><![CDATA[20200814]]></cl:datavalue>
+            <cl:datavalue columnname="TO"><![CDATA[20200820]]></cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[122 Taper KIT]]></cl:datavalue>
+            <cl:datavalue columnname="SN"><![CDATA[002]]></cl:datavalue>
+            <cl:datavalue columnname="NAME"><![CDATA[8신일]]></cl:datavalue>
+            <cl:datavalue columnname="FROM"><![CDATA[20200730]]></cl:datavalue>
+            <cl:datavalue columnname="TO"><![CDATA[20200803]]></cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[122 Taper KIT]]></cl:datavalue>
+            <cl:datavalue columnname="SN"><![CDATA[002]]></cl:datavalue>
+            <cl:datavalue columnname="NAME"><![CDATA[8하하하]]></cl:datavalue>
+            <cl:datavalue columnname="FROM"><![CDATA[20200810]]></cl:datavalue>
+            <cl:datavalue columnname="TO"><![CDATA[20200818]]></cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEMO_NAME"><![CDATA[122 Taper KIT]]></cl:datavalue>
+            <cl:datavalue columnname="SN"><![CDATA[003]]></cl:datavalue>
+            <cl:datavalue columnname="NAME"><![CDATA[8반석]]></cl:datavalue>
+            <cl:datavalue columnname="FROM"><![CDATA[20200730]]></cl:datavalue>
+            <cl:datavalue columnname="TO"><![CDATA[20200807]]></cl:datavalue>
+            <cl:datavalue columnname="ID"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="영업사원 개인 데모계획"/>
+  </head>
+  <body std:sid="body-85f4ae7c" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-c7bd2fe3" id="grp3">
+      <cl:xylayoutdata std:sid="xyl-data-fbc9fb42" top="19px" right="20px" bottom="21px" left="20px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+      <cl:group std:sid="group-5d0abcda" id="grp4">
+        <cl:formdata std:sid="f-data-e47b1860" row="0" col="0"/>
+        <cl:group std:sid="group-f97f5af7" id="grp5">
+          <cl:verticaldata std:sid="v-data-c8de1023" width="937px" height="30px" autosize="none"/>
+          <cl:dateinput std:sid="d-input-62f2735b" id="dti1" calendartype="yearmonthdate">
+            <cl:flowlayoutdata std:sid="f-data-8433df36" width="174px" height="25px"/>
+          </cl:dateinput>
+          <cl:flowlayout std:sid="f-layout-2f1f44ac"/>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-087bce8b"/>
+      </cl:group>
+      <cl:group std:sid="group-783341ce" id="grpG">
+        <cl:formdata std:sid="f-data-8b2edefa" row="1" col="0" rowspan="2" colspan="1"/>
+        <cl:grid std:sid="grid-f2e6bab8" id="grd1" class="hans" datasetid="ds2" autofit="7, 8, 9, 10, 11" suppressedcelltype="merged">
+          <cl:listener std:sid="listener-cd2e3fd9" name="before-selection-change" handler="onGrd1BeforeSelectionChange"/>
+          <cl:verticaldata std:sid="v-data-fa30e678" width="400px" height="200px" autosize="height"/>
+          <cl:gridcolumn std:sid="g-column-ba3912e0"/>
+          <cl:gridcolumn std:sid="g-column-ef966773" width="60px"/>
+          <cl:gridcolumn std:sid="g-column-6b8f6939" width="60px"/>
+          <cl:gridcolumn std:sid="g-column-d310d26d" width="70px"/>
+          <cl:gridcolumn std:sid="g-column-e61d0dda" width="70px"/>
+          <cl:gridcolumn std:sid="g-column-ab007ce1" width="70px"/>
+          <cl:gridcolumn std:sid="g-column-cb2a6ddc" width="20px"/>
+          <cl:gridcolumn std:sid="g-column-b1ea6978" width="80px"/>
+          <cl:gridcolumn std:sid="g-column-698782fe"/>
+          <cl:gridcolumn std:sid="g-column-d20241b2"/>
+          <cl:gridcolumn std:sid="g-column-f7a8a821"/>
+          <cl:gridcolumn std:sid="g-column-4f0d1ea0" width="20px"/>
+          <cl:gridcolumn std:sid="g-column-ef219b9c" width="20px"/>
+          <cl:gridheader std:sid="gh-band-4488fffd">
+            <cl:gridrow std:sid="g-row-1ac9ea49" height="30px"/>
+            <cl:gridrow std:sid="g-row-72d9cb03" height="30px"/>
+            <cl:gridcell std:sid="gh-cell-0ab7aee2" rowindex="0" colindex="0" rowspan="2" colspan="1" targetcolumnname="DEMO_NAME" sortable="false" filterable="false" text="데모명"/>
+            <cl:gridcell std:sid="gh-cell-5fa23944" rowindex="0" colindex="1" rowspan="2" colspan="1" targetcolumnname="DEMO_TERM" sortable="false" filterable="false" text="데모&#xD;&#xA;기간"/>
+            <cl:gridcell std:sid="gh-cell-a4ba2f18" rowindex="0" colindex="2" rowspan="2" colspan="1" targetcolumnname="POSBL_CO" sortable="false" filterable="false" text="가능&#xD;&#xA;횟수"/>
+            <cl:gridcell std:sid="gh-cell-296e432c" rowindex="0" colindex="3" rowspan="2" colspan="1" targetcolumnname="SN" sortable="false" filterable="false" text="순번"/>
+            <cl:gridcell std:sid="gh-cell-a5614c93" rowindex="1" colindex="4" targetcolumnname="DEMO_DVILY" sortable="false" filterable="false" text="데모 출고"/>
+            <cl:gridcell std:sid="gh-cell-0043e08c" rowindex="1" colindex="5" targetcolumnname="DEMO_RTURN" sortable="false" filterable="false" text="데모 반납"/>
+            <cl:gridcell std:sid="gh-cell-d3ece983" rowindex="0" colindex="4" rowspan="1" colspan="2" text="데모"/>
+            <cl:gridcell std:sid="gh-cell-49952ce4" rowindex="0" colindex="7" rowspan="1" colspan="5">
+              <cl:output std:sid="output-23498333" id="month" style="text-align:center;" value="8" datatype="date" dateValueFormat="MM" format="M" displayexp="value + &quot;월&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-bb1cf5c5" rowindex="1" colindex="8" text="2주">
+              <cl:output std:sid="output-2b5799bc" id="week2" style="text-align:center;" value="Output"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-f598d7ab" rowindex="1" colindex="9" text="3주">
+              <cl:output std:sid="output-3cc49a72" id="week3" style="text-align:center;" value="Output"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-1ce0a8dc" rowindex="1" colindex="10" text="4주">
+              <cl:output std:sid="output-0bacac54" id="week4" style="text-align:center;" value="Output"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-e1c3b7c2" rowindex="1" colindex="11" rowspan="1" colspan="2" text="5주">
+              <cl:output std:sid="output-23faf1c8" id="week5" style="text-align:center;" value="Output"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-e690c2ef" rowindex="0" colindex="6" text="&lt;">
+              <cl:button std:sid="button-04b5e71b" id="btnLeft" value="Button">
+                <cl:listener std:sid="listener-972b38f7" name="click" handler="onBtnLeftClick"/>
+              </cl:button>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-a9e2127e" rowindex="1" colindex="6" rowspan="1" colspan="2" text="1주">
+              <cl:output std:sid="output-48e5c9b6" id="week1" style="text-align:center;" value="Output"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-583ba9a8" rowindex="0" colindex="12" text=">">
+              <cl:button std:sid="button-3afc0557" id="btnRIght" value="Button">
+                <cl:listener std:sid="listener-cda58cfc" name="click" handler="onBtnRIghtClick"/>
+              </cl:button>
+            </cl:gridcell>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-47dfe80e">
+            <cl:gridrow std:sid="g-row-24163671" height="35px"/>
+            <cl:gridcell std:sid="gd-cell-7b93309e" rowindex="0" colindex="0" columnname="DEMO_NAME" suppressible="true"/>
+            <cl:gridcell std:sid="gd-cell-3c469173" rowindex="0" colindex="1" columnname="DEMO_TERM" suppressible="true" suppressref="0"/>
+            <cl:gridcell std:sid="gd-cell-83cf5b1e" rowindex="0" colindex="2" columnname="POSBL_CO" suppressible="true" suppressref="0"/>
+            <cl:gridcell std:sid="gd-cell-c2f1c997" rowindex="0" colindex="3" columnname="SN"/>
+            <cl:gridcell std:sid="gd-cell-853aa388" rowindex="0" colindex="4" columnname="DEMO_DVILY"/>
+            <cl:gridcell std:sid="gd-cell-252d2617" rowindex="0" colindex="5" columnname="DEMO_RTURN"/>
+            <cl:gridcell std:sid="gd-cell-d838dea3" rowindex="0" colindex="6" rowspan="1" colspan="2"/>
+            <cl:gridcell std:sid="gd-cell-59b107b6" rowindex="0" colindex="8"/>
+            <cl:gridcell std:sid="gd-cell-d647a496" rowindex="0" colindex="9"/>
+            <cl:gridcell std:sid="gd-cell-d15db157" rowindex="0" colindex="10"/>
+            <cl:gridcell std:sid="gd-cell-44bb7293" rowindex="0" colindex="11" rowspan="1" colspan="2"/>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:verticallayout std:sid="v-layout-b0b29972"/>
+      </cl:group>
+      <cl:group std:sid="group-70b8a852" id="grp1">
+        <cl:formdata std:sid="f-data-b0767777" row="1" col="1" rowspan="2" colspan="1"/>
+        <cl:output std:sid="output-6ea6cb46" id="opt1" style="text-align:center;" value="데모명">
+          <cl:formdata std:sid="f-data-9c46c909" row="0" col="0" rowspan="2" colspan="1"/>
+        </cl:output>
+        <cl:output std:sid="output-b75328ac" id="opt2" style="text-align:center;" value="데모&#xD;&#xA;기간">
+          <cl:formdata std:sid="f-data-90e4313d" row="0" col="1" rowspan="2" colspan="1"/>
+        </cl:output>
+        <cl:output std:sid="output-35d1481a" id="opt3" style="text-align:center;" value="가능&#xD;&#xA;횟수">
+          <cl:formdata std:sid="f-data-af16cf6b" row="0" col="2" rowspan="2" colspan="1"/>
+        </cl:output>
+        <cl:output std:sid="output-0a8fd651" id="opt4" style="text-align:center;" value="순번">
+          <cl:formdata std:sid="f-data-eb46aa55" row="0" col="3" rowspan="2" colspan="1"/>
+        </cl:output>
+        <cl:output std:sid="output-a35d99c5" id="opt5" style="text-align:center;" value="데모">
+          <cl:formdata std:sid="f-data-2adc825d" row="0" col="4" rowspan="1" colspan="2"/>
+        </cl:output>
+        <cl:output std:sid="output-21128209" id="opt6" style="text-align:center;" value="출고">
+          <cl:formdata std:sid="f-data-14ffd647" row="1" col="4"/>
+        </cl:output>
+        <cl:output std:sid="output-937cfb24" id="opt7" style="text-align:center;" value="출납">
+          <cl:formdata std:sid="f-data-86f10470" row="1" col="5"/>
+        </cl:output>
+        <cl:output std:sid="output-b05688c2" id="optWeek1" style="text-align:center;" value="1주">
+          <cl:formdata std:sid="f-data-73005d6e" row="1" col="6"/>
+        </cl:output>
+        <cl:output std:sid="output-ce635366" id="optWeek2" style="text-align:center;" value="2주">
+          <cl:formdata std:sid="f-data-480b1745" row="1" col="7"/>
+        </cl:output>
+        <cl:output std:sid="output-f8030203" id="optWeek3" style="text-align:center;" value="3주">
+          <cl:formdata std:sid="f-data-bf1fb14b" row="1" col="8"/>
+        </cl:output>
+        <cl:output std:sid="output-839604aa" id="optWeek4" style="text-align:center;" value="4주">
+          <cl:formdata std:sid="f-data-b8643a63" row="1" col="9"/>
+        </cl:output>
+        <cl:output std:sid="output-36cfe92d" id="optWeek5" style="text-align:center;" value="5주">
+          <cl:formdata std:sid="f-data-431cd3cd" row="1" col="10"/>
+        </cl:output>
+        <cl:group std:sid="group-790680e5" id="grp2">
+          <cl:formdata std:sid="f-data-416bb21b" row="0" col="6" rowspan="1" colspan="5"/>
+          <cl:button std:sid="button-2aafe775" id="btn1" value="&lt;">
+            <cl:formdata std:sid="f-data-352230b3" row="0" col="0"/>
+          </cl:button>
+          <cl:button std:sid="button-84d74e44" id="btn2" value=">">
+            <cl:formdata std:sid="f-data-8a5e3cde" row="0" col="2"/>
+          </cl:button>
+          <cl:output std:sid="output-453dc79c" id="opt13" style="text-align:center;" value="8월">
+            <cl:formdata std:sid="f-data-a3b90109" row="0" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-e2974699" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="20"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="20"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-846055d7" id="grp6" style="border-bottom-color:black; border-bottom-width:1px; border-bottom-style:solid;">
+          <cl:formdata std:sid="f-data-4da9bf7a" height="105" row="2" col="0" rowspan="1" colspan="11"/>
+          <cl:output std:sid="output-6a308e92" id="opt14" value="122 Taper KIT">
+            <cl:formdata std:sid="f-data-666a4548" row="0" col="0" rowspan="3" colspan="1"/>
+          </cl:output>
+          <cl:output std:sid="output-a5b4cabb" id="opt15" value="4일">
+            <cl:formdata std:sid="f-data-f5855f96" row="0" col="1" rowspan="3" colspan="1"/>
+          </cl:output>
+          <cl:output std:sid="output-ab0d0d19" id="opt16" value="0회">
+            <cl:formdata std:sid="f-data-9c3d7fd5" row="0" col="2" rowspan="3" colspan="1"/>
+          </cl:output>
+          <cl:output std:sid="output-f2ea66c3" id="opt17" value="001">
+            <cl:formdata std:sid="f-data-61458919" row="0" col="3"/>
+          </cl:output>
+          <cl:output std:sid="output-be8a3e15" id="opt18" value="003">
+            <cl:formdata std:sid="f-data-29b514d2" row="2" col="3"/>
+          </cl:output>
+          <cl:output std:sid="output-6eeb1bc7" id="opt19" value="002">
+            <cl:formdata std:sid="f-data-1a61992b" row="1" col="3"/>
+          </cl:output>
+          <cl:output std:sid="output-2a73ab73" id="opt20" value="8/15">
+            <cl:formdata std:sid="f-data-643afc8e" row="0" col="4"/>
+          </cl:output>
+          <cl:output std:sid="output-e3d33f75" id="opt21" value="8/21">
+            <cl:formdata std:sid="f-data-66330c04" row="0" col="5"/>
+          </cl:output>
+          <cl:output std:sid="output-55faae4e" id="opt22" value="8/9">
+            <cl:formdata std:sid="f-data-6bd8f38b" row="1" col="4"/>
+          </cl:output>
+          <cl:output std:sid="output-bef0efef" id="opt23" value="8/18">
+            <cl:formdata std:sid="f-data-16bcc294" row="1" col="5"/>
+          </cl:output>
+          <cl:output std:sid="output-43a88b94" id="opt24" value="">
+            <cl:formdata std:sid="f-data-7c3a044f" row="2" col="4"/>
+          </cl:output>
+          <cl:output std:sid="output-d7b03b17" id="opt25" value="">
+            <cl:formdata std:sid="f-data-932ed26f" row="2" col="5"/>
+          </cl:output>
+          <cl:group std:sid="group-eb4336e9" id="grp7">
+            <cl:formdata std:sid="f-data-c9088997" row="0" col="6" rowspan="1" colspan="5"/>
+            <cl:output std:sid="output-3ee14a08" id="opt26" style="border-right-style:solid; border-top-width:1px; border-bottom-color:lightgray; border-right-width:1px; border-left-color:lightgray; border-right-color:lightgray; border-left-width:1px; border-top-style:solid; background-color:chartreuse; border-radius:3px; border-left-style:solid; border-bottom-width:1px; border-top-color:lightgray; border-bottom-style:solid; text-align:center;" value="조재민">
+              <cl:xylayoutdata std:sid="xyl-data-d34505d1" bottom="0px" left="186px" width="137px" height="20px" horizontalAnchor="LEFT" verticalAnchor="BOTTOM"/>
+            </cl:output>
+            <cl:output std:sid="output-2b4a8a9d" id="opt27" style="border-right-style:solid; border-top-width:1px; border-bottom-color:lightgray; border-right-width:1px; border-left-color:lightgray; border-right-color:lightgray; border-left-width:1px; border-top-style:solid; background-color:chartreuse; border-radius:3px; border-left-style:solid; border-bottom-width:1px; border-top-color:lightgray; border-bottom-style:solid; text-align:right;" value="굿윌">
+              <cl:xylayoutdata std:sid="xyl-data-e1d32fa8" bottom="0px" left="-93px" width="137px" height="20px" horizontalAnchor="LEFT" verticalAnchor="BOTTOM"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-a38bf60d"/>
+          </cl:group>
+          <cl:group std:sid="group-7cc2e104" id="grp8">
+            <cl:formdata std:sid="f-data-9180dfca" row="1" col="6" rowspan="1" colspan="5"/>
+            <cl:output std:sid="output-b7842b68" id="opt28" style="border-right-style:solid; border-top-width:1px; border-bottom-color:lightgray; border-right-width:1px; border-left-color:lightgray; border-right-color:lightgray; border-left-width:1px; border-top-style:solid; background-color:chartreuse; border-radius:3px; border-left-style:solid; border-bottom-width:1px; border-top-color:lightgray; border-bottom-style:solid; text-align:center;" value="하하하">
+              <cl:xylayoutdata std:sid="xyl-data-36752d93" bottom="0px" left="119px" width="146px" height="20px" horizontalAnchor="LEFT" verticalAnchor="BOTTOM"/>
+            </cl:output>
+            <cl:output std:sid="output-9db6ac64" id="opt30" style="border-right-style:solid; border-top-width:1px; border-bottom-color:lightgray; border-right-width:1px; border-left-color:lightgray; border-right-color:lightgray; border-left-width:1px; border-top-style:solid; background-color:chartreuse; border-radius:3px; border-left-style:solid; border-bottom-width:1px; border-top-color:lightgray; border-bottom-style:solid; text-align:right;" value="신일">
+              <cl:xylayoutdata std:sid="xyl-data-9340a094" bottom="0px" left="-94px" width="137px" height="20px" horizontalAnchor="LEFT" verticalAnchor="BOTTOM"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-1bf8b31e"/>
+          </cl:group>
+          <cl:group std:sid="group-6fb608f5" id="grp9">
+            <cl:formdata std:sid="f-data-40267e15" row="2" col="6" rowspan="1" colspan="5"/>
+            <cl:output std:sid="output-26753e21" id="opt29" style="border-right-style:solid; border-top-width:1px; border-bottom-color:lightgray; border-right-width:1px; border-left-color:lightgray; border-right-color:lightgray; border-left-width:1px; border-top-style:solid; background-color:chartreuse; border-radius:3px; border-left-style:solid; border-bottom-width:1px; border-top-color:lightgray; border-bottom-style:solid; text-align:center;" value="반석">
+              <cl:xylayoutdata std:sid="xyl-data-b3c0eac9" bottom="0px" left="-61px" width="137px" height="20px" horizontalAnchor="LEFT" verticalAnchor="BOTTOM"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-3a84acf5"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-c7bf8c65" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="35" unit="PIXEL"/>
+            <cl:rows length="35" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="35"/>
+            <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="60"/>
+            <cl:columns length="60"/>
+            <cl:columns length="70"/>
+            <cl:columns length="70"/>
+            <cl:columns length="70"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-efe57372" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px" hseparatorwidth="1" hseparatortype="BY_CLASS">
+          <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="105" unit="PIXEL" autoSizing="true" hidden="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="60" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="60" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="70" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="70" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="70" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-353997b8" user-resizing-mode="standard" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:button std:sid="button-2bcf11c0" id="btn7" value="cont">
+      <cl:listener std:sid="listener-db07bb73" name="click" handler="onBtn7Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-0dde5ca9" top="0px" left="100px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-1bfb0188" id="btn8" value="Button">
+      <cl:listener std:sid="listener-3f906b99" name="click" handler="onBtn8Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-f7edd4a3" top="0px" right="0px" width="100px" height="20px" horizontalAnchor="RIGHT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-a697c176" id="btn3" value="막대">
+      <cl:listener std:sid="listener-0be1176d" name="click" handler="onBtn3Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-2dc6b71c" top="0px" left="0px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-d51c5fee"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

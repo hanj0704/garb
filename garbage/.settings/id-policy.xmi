@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:settings="kr.co.tomatosystem.exbuilder.model.ui.settings">
+  <settings:IDPolicy type="Accordion" pattern="accordion"/>
+  <settings:IDPolicy type="Audio" pattern="audio"/>
+  <settings:IDPolicy type="Button" pattern="button" use="true"/>
+  <settings:IDPolicy type="Calendar" pattern="calendar"/>
+  <settings:IDPolicy type="CheckBox" pattern="checkbox"/>
+  <settings:IDPolicy type="CheckBoxGroup" pattern="checkboxgroup"/>
+  <settings:IDPolicy type="ComboBox" pattern="combobox"/>
+  <settings:IDPolicy type="DataMap" pattern="datamap" use="true"/>
+  <settings:IDPolicy type="DataSet" pattern="dataset" use="true"/>
+  <settings:IDPolicy type="DataView" pattern="dataview" use="true"/>
+  <settings:IDPolicy type="DateInput" pattern="dateinput"/>
+  <settings:IDPolicy type="EmbeddedApp" pattern="embeddedapp"/>
+  <settings:IDPolicy type="EmbeddedPage" pattern="embeddedpage"/>
+  <settings:IDPolicy type="FileInput" pattern="fileinput"/>
+  <settings:IDPolicy type="FileUpload" pattern="fileupload"/>
+  <settings:IDPolicy type="Grid" pattern="grid" use="true"/>
+  <settings:IDPolicy type="Group" pattern="group"/>
+  <settings:IDPolicy type="HTMLObject" pattern="htmlobject"/>
+  <settings:IDPolicy type="HTMLSnippet" pattern="htmlsnippet"/>
+  <settings:IDPolicy type="Image" pattern="image"/>
+  <settings:IDPolicy type="InputBox" pattern="inputbox"/>
+  <settings:IDPolicy type="LinkedComboBox" pattern="linkedcombobox"/>
+  <settings:IDPolicy type="LinkedListBox" pattern="linkedlistbox"/>
+  <settings:IDPolicy type="ListBox" pattern="listbox"/>
+  <settings:IDPolicy type="MaskEditor" pattern="maskeditor"/>
+  <settings:IDPolicy type="MatrixSubmission" pattern="matrixsubmission" use="true"/>
+  <settings:IDPolicy type="MDIFolder" pattern="mdifolder"/>
+  <settings:IDPolicy type="Menu" pattern="menu"/>
+  <settings:IDPolicy type="NavigationBar" pattern="navigationbar"/>
+  <settings:IDPolicy type="Notifier" pattern="notifier" use="true"/>
+  <settings:IDPolicy type="NumberEditor" pattern="numbereditor"/>
+  <settings:IDPolicy type="Output" pattern="output"/>
+  <settings:IDPolicy type="PageIndexer" pattern="pageindexer"/>
+  <settings:IDPolicy type="Progress" pattern="progress"/>
+  <settings:IDPolicy type="RadioButton" pattern="radiobutton"/>
+  <settings:IDPolicy type="SearchInput" pattern="searchinput"/>
+  <settings:IDPolicy type="Slider" pattern="slider"/>
+  <settings:IDPolicy type="Submission" pattern="submission" use="true"/>
+  <settings:IDPolicy type="TabFolder" pattern="tabfolder"/>
+  <settings:IDPolicy type="TextArea" pattern="textarea"/>
+  <settings:IDPolicy type="Tree" pattern="tree"/>
+  <settings:IDPolicy type="UIControlShell" pattern="uicontrolshell"/>
+  <settings:IDPolicy type="Video" pattern="video"/>
+  <settings:IDPolicy type="udc.abcc" pattern="abcc" use="true"/>
+  <settings:IDPolicy type="udc.InitLoadTestUDC" pattern="initloadtestudc" use="true"/>
+  <settings:IDPolicy type="udc.SideMenu" pattern="sidemenu" use="true"/>
+  <settings:IDPolicy type="udc.test" pattern="test" use="true"/>
+  <settings:IDPolicy type="udc.ChartShell" pattern="chartshell" use="true"/>
+  <settings:IDPolicy type="udc.HintCheckBox" pattern="hintcheckbox" use="true"/>
+  <settings:IDPolicy type="udc.hycu3" pattern="hycu3" use="true"/>
+  <settings:IDPolicy type="udc.aaa.AppStack" pattern="appstack" use="true"/>
+  <settings:IDPolicy type="udc.tests.Untitled" pattern="untitled" use="true"/>
+  <settings:IDPolicy type="udc.hycuMenu" pattern="hycumenu" use="true"/>
+  <settings:IDPolicy type="udc.loadmask" pattern="loadmask" use="true"/>
+  <settings:IDPolicy type="udc.hycu2" pattern="hycu2" use="true"/>
+  <settings:IDPolicy type="udc.MinimizeButton" pattern="minimizebutton" use="true"/>
+  <settings:IDPolicy type="udc.hycu" pattern="hycu" use="true"/>
+  <settings:IDPolicy type="udc.ipbs" pattern="ipbs" use="true"/>
+  <settings:IDPolicy type="udc.AppStack" pattern="appstack" use="true"/>
+  <settings:IDPolicy type="udc.Horizontal" pattern="horizontal" use="true"/>
+  <settings:IDPolicy type="udc.InitTestUDC" pattern="inittestudc" use="true"/>
+  <settings:IDPolicy type="udc.Vertical" pattern="vertical" use="true"/>
+  <settings:IDPolicy type="udc.loadmask_1" pattern="loadmask_1" use="true"/>
+</xmi:XMI>

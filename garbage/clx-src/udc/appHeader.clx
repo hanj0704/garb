@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-be8884fc" version="1.0.0.0">
+  <head std:sid="head-02264a81">
+    <title>pagetitle</title>
+    <screen std:sid="screen-a0fa4c1c" id="smuis" height="680px" minwidth="1320px" name="smuis" width="1320px"/>
+    <screen std:sid="screen-ad4431ff" id="default" height="540px" maxwidth="1319px" minwidth="1020px" name="default" width="1020px"/>
+    <screen std:sid="screen-5f350e4d" id="tablet" height="820px" maxwidth="1019px" minwidth="760px" name="tablet" width="760px"/>
+    <screen std:sid="screen-c449543b" id="mobile" height="340px" maxwidth="759px" name="mobile" width="320px"/>
+    <cl:model std:sid="model-397e38d2"/>
+    <cl:appspec dev-description="어플리케이션 헤더(Header) 컨트롤">
+      <cl:property bindable="true" default="grpSearch" std:desc="조회조건 그룹 ID (default:grpSearch)" name="searchBoxId" type="string"/>
+      <cl:property bindable="true" std:desc="그리드 ID" name="gridIds" type="string"/>
+      <cl:property bindable="true" default="grpData" std:desc="작업영역 그룹/탭 ID (default:grpData)" name="groupBoxIds" type="string"/>
+      <cl:property bindable="true" std:desc="트리 ID" name="treeIds" type="string"/>
+      <cl:property bindable="true" std:desc="프리폼 ID" name="freeformIds" type="string"/>
+      <cl:property bindable="true" std:desc="조회조건 접기시, 확대될 그룹 컨트롤ID (필요한 경우한하여 지정)" name="expandCtrlIds" type="string"/>
+      <cl:property std:desc="그리드 또는 프리폼 객체" name="grid" type="control"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-60e5a2e8" style="top:0px; left:0px; width:500px; height:30px;">
+    <cl:listener std:sid="listener-1eaecabf" handler="onBodyLoad" name="load"/>
+    <cl:listener std:sid="listener-0210a786" handler="onBodyScreenChange" name="screen-change"/>
+    <cl:listener std:sid="listener-6c2479b3" handler="onBodyPropertyChange" name="property-change"/>
+    <cl:notifier std:sid="notifier-33adf8d1" id="notiInfo" style="text-align:right;" infodelay="3000" maxnotifycount="1">
+      <cl:xylayoutdata std:sid="xyl-data-8c36e83a" height="20px" horizontalAnchor="RIGHT" right="35px" verticalAnchor="CENTER" width="252px"/>
+    </cl:notifier>
+    <cl:output std:sid="output-909cedbd" id="optAppMsg" style="color:#0000FF; text-align:right;">
+      <cl:listener std:sid="listener-9dcb64ef" handler="onOptAppMsgDblclick" name="dblclick"/>
+      <cl:xylayoutdata std:sid="xyl-data-a1fc0b36" height="28px" horizontalAnchor="RIGHT" right="35px" verticalAnchor="CENTER" width="115px"/>
+    </cl:output>
+    <cl:inputbox std:sid="i-box-5bf48393" id="ipbPgmId" style="border-right-style:none; background-color:transparent; color:#F3F7F9; border-left-style:none; border-bottom-style:none; border-top-style:none;" readonly="true" visible="false">
+      <cl:xylayoutdata std:sid="xyl-data-32db4411" height="28px" horizontalAnchor="CENTER" verticalAnchor="CENTER" width="150px"/>
+    </cl:inputbox>
+    <cl:button std:sid="button-4ff6d24c" id="btnCollapse" class="btn-header-minus">
+      <cl:listener std:sid="listener-17b49a62" handler="onBtnCollapseClick" name="click"/>
+      <cl:listener std:sid="listener-ef1e0a10" handler="onBtnCollapseAnimationend" name="animationend"/>
+      <cl:xylayoutdata std:sid="xyl-data-f0addd4c" height="28px" horizontalAnchor="RIGHT" right="5px" verticalAnchor="CENTER" width="30px"/>
+    </cl:button>
+    <cl:group std:sid="group-7b4e9f20" id="grpMenuPath">
+      <cl:xylayoutdata std:sid="xyl-data-144e00ce" height="29px" horizontalAnchor="BOTH" left="0px" right="34px" top="1px" verticalAnchor="TOP"/>
+      <cl:output std:sid="output-0e808380" id="optUnitTestPopup" style="background-repeat:no-repeat; background-image:url('../../theme/blue/images/button/icon_home.png'); background-position:center; text-align:center;" visible="false">
+        <cl:listener std:sid="listener-04232a1f" handler="onOutputDblclick" name="dblclick"/>
+        <cl:formdata std:sid="f-data-1cf5bbcb" col="1" row="0"/>
+      </cl:output>
+      <cl:formlayout std:sid="f-layout-2e2dcaa1" scrollable="false">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns autoSizing="true" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns autoSizing="false" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns autoSizing="true" length="10" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns autoSizing="true" length="10" minlength="0" unit="PIXEL"/>
+        <cl:columns autoSizing="true" length="10" minlength="0" unit="PIXEL"/>
+        <cl:columns autoSizing="true" length="10" minlength="0" unit="PIXEL"/>
+        <cl:columns autoSizing="false" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-19b89ec4" scrollable="false"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

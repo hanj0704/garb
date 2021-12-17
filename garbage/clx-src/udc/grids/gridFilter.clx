@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-d81eef72" version="1.0.0.0">
+  <head std:sid="head-c2d93430">
+    <title>gridFilter</title>
+    <screen std:sid="screen-53b93387" id="default" name="default" minwidth="1024px" width="1024px" height="768px" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-884d6635" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-e1492406" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-4cafa325">
+      <cl:dataset std:sid="d-set-b7466145" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-b0689ea6" name="headerNm"/>
+          <cl:datacolumn std:sid="d-column-98ce32ba" name="columnWidth"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec>
+      <cl:property name="grid" type="control"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-afaa6ebc" style="border-right-style:solid; border-top-width:1px; border-bottom-color:black; border-right-width:1px; border-left-color:black; border-right-color:black; border-left-width:1px; border-top-style:solid; background-color:white; top:0px; left:0px; border-left-style:solid; width:300px; border-bottom-width:1px; border-top-color:black; border-bottom-style:solid; height:490px;">
+    <cl:listener std:sid="listener-2b12472c" name="load" handler="onBodyLoad"/>
+    <cl:output std:sid="output-f2c10782" id="opt1" value="컬럼 설정">
+      <cl:formdata std:sid="f-data-2f034eff" row="0" col="0" rowspan="1" colspan="4"/>
+    </cl:output>
+    <cl:grid std:sid="grid-c695bb23" id="grd1" datasetid="ds1" autofit="1, 2">
+      <cl:formdata std:sid="f-data-7c6a4a2b" row="1" col="0" rowspan="1" colspan="4"/>
+      <cl:gridcolumn std:sid="g-column-fefb0f1c" width="25px"/>
+      <cl:gridcolumn std:sid="g-column-aad58942"/>
+      <cl:gridcolumn std:sid="g-column-33a2b991"/>
+      <cl:gridheader std:sid="gh-band-d14fe6df">
+        <cl:gridrow std:sid="g-row-65520c2e"/>
+        <cl:gridcell std:sid="gh-cell-4c3af8dd" rowindex="0" colindex="0" sortable="false" filterable="false" columntype="checkbox"/>
+        <cl:gridcell std:sid="gh-cell-60cf37e4" rowindex="0" colindex="1" targetcolumnname="headerNm" sortable="false" filterable="false" text="컬럼명"/>
+        <cl:gridcell std:sid="gh-cell-110c6289" rowindex="0" colindex="2" targetcolumnname="columnWidth" sortable="false" filterable="false" text="너비(px)"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-a68cba93">
+        <cl:gridrow std:sid="g-row-2cd15cd9"/>
+        <cl:gridcell std:sid="gd-cell-ba9b4ca3" rowindex="0" colindex="0" columntype="checkbox"/>
+        <cl:gridcell std:sid="gd-cell-836f99ff" rowindex="0" colindex="1" style="cursor:pointer; text-align:left;" columnname="headerNm"/>
+        <cl:gridcell std:sid="gd-cell-2348a898" rowindex="0" colindex="2" columnname="columnWidth">
+          <cl:inputbox std:sid="i-box-34b72ec4" id="ipb1"/>
+        </cl:gridcell>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:button std:sid="button-5886cd24" id="btn1" value="확인">
+      <cl:listener std:sid="listener-fd1b02a7" name="click" handler="onBtn1Click"/>
+      <cl:formdata std:sid="f-data-36625a00" row="2" col="1"/>
+    </cl:button>
+    <cl:button std:sid="button-d704f7af" value="취소">
+      <cl:listener std:sid="listener-f0bf0697" name="click" handler="onButtonClick"/>
+      <cl:formdata std:sid="f-data-195d7edf" row="2" col="2"/>
+    </cl:button>
+    <cl:formlayout std:sid="f-layout-a375ef54" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+      <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:columns length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

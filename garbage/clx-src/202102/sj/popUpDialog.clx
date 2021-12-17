@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-12ec79ef" version="1.0.0.0">
+  <head std:sid="head-055389bf">
+    <title>popUpDialog</title>
+    <screen std:sid="screen-4087220f" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-c82f6804" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-e5fae300" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-1c33d58d"/>
+    <cl:appspec>
+      <cl:property name="appId" type="string"/>
+      <cl:property name="data" type="object"/>
+      <cl:property name="_app" type="object"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-f916b96a" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-2667b1d1" name="load" handler="onBodyLoad"/>
+    <cl:listener std:sid="listener-6abe2ef6" name="property-change" handler="onBodyPropertyChange"/>
+    <cl:button std:sid="button-b41d7f4b" value="Button">
+      <cl:listener std:sid="listener-e867ef26" name="click" handler="onButtonClick"/>
+      <cl:xylayoutdata std:sid="xyl-data-31914084" top="20px" left="20px" width="180px" height="48px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-6c857c32" id="btn1" value="Button">
+      <cl:listener std:sid="listener-a22df02d" name="click" handler="onBtn1Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-9e9e5593" top="20px" left="210px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:embeddedapp std:sid="e-app-c5a9bf90" id="ea1" src="../../tester.clx">
+      <cl:xylayoutdata std:sid="xyl-data-9746c4fb" top="78px" left="20px" width="364px" height="367px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:embeddedapp>
+    <cl:xylayout std:sid="xylayout-9b1926e8"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-4db5e25a" version="1.0.0.0">
+  <head std:sid="head-bc26d264">
+    <title>TextAreaTest</title>
+    <screen std:sid="screen-7373d504" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-75191295" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-683f59ce" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-336e4c26">
+      <cl:datamap std:sid="d-map-fe60941d" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-0887c6ae" defaultvalue="가나다라마바사\n아자차카" name="column1"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-bef1047a" id="sms1" action="datas/dataDm.json">
+        <cl:listener std:sid="listener-25154eff" handler="onSms1SubmitDone" name="submit-done"/>
+        <cl:listener std:sid="listener-5597c3d4" handler="onSms1SubmitProgress" name="submit-progress"/>
+        <cl:listener std:sid="listener-2c1e48bf" handler="onSms1SubmitLoadProgress" name="submit-load-progress"/>
+        <cl:responsedata dataid="dm1"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-e70d6252" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:textarea std:sid="t-area-855647d6" id="txa1">
+      <cl:datamapbind property="value" columnname="column1" datacontrolid="dm1"/>
+      <cl:xylayoutdata std:sid="xyl-data-f7d0b9ef" height="239px" horizontalAnchor="LEFT" left="20px" top="20px" verticalAnchor="TOP" width="588px"/>
+    </cl:textarea>
+    <cl:button std:sid="button-fb489f53" id="btn1" value="Button">
+      <cl:listener std:sid="listener-1cbdca6e" handler="onBtn1Click" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-533406a2" height="20px" horizontalAnchor="LEFT" left="20px" top="269px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-c38e3381"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

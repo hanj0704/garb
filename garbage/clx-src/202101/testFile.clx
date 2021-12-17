@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-f4daaccc" version="1.0.0.0">
+  <head std:sid="head-95ae13de">
+    <title>testFile</title>
+    <screen std:sid="screen-72a0b863" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-6a737ed1" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-23ccaecc" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-156824a4">
+      <cl:dataset std:sid="d-set-2999f764" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-70fe2298" name="column1"/>
+          <cl:datacolumn std:sid="d-column-cca6e0aa" name="column2"/>
+          <cl:datacolumn std:sid="d-column-d60bf4c9" name="column3"/>
+          <cl:datacolumn std:sid="d-column-56d9f673" name="column4"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column11</cl:datavalue>
+            <cl:datavalue columnname="column2">column21</cl:datavalue>
+            <cl:datavalue columnname="column3">column31</cl:datavalue>
+            <cl:datavalue columnname="column4">column41</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column12</cl:datavalue>
+            <cl:datavalue columnname="column2">column22</cl:datavalue>
+            <cl:datavalue columnname="column3">column32</cl:datavalue>
+            <cl:datavalue columnname="column4">column42</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column13</cl:datavalue>
+            <cl:datavalue columnname="column2">column23</cl:datavalue>
+            <cl:datavalue columnname="column3">column33</cl:datavalue>
+            <cl:datavalue columnname="column4">column43</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column14</cl:datavalue>
+            <cl:datavalue columnname="column2">column24</cl:datavalue>
+            <cl:datavalue columnname="column3">column34</cl:datavalue>
+            <cl:datavalue columnname="column4">column44</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-68dcf0e5" id="ds2">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-ba1907c4" name="label"/>
+          <cl:datacolumn std:sid="d-column-ee861c00" name="value"/>
+          <cl:datacolumn std:sid="d-column-9a11d9e1" name="parent" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-2c0dfd10" name="icon" datatype="expression" expression="switch(value){&#xD;&#xA;&#x9;when  value *= &quot;q&quot;: &quot;theme/image/mail-send-line.svg&quot;&#xD;&#xA;&#x9;default : &quot;&quot;&#xD;&#xA;}"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[label]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[val]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label2</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[qwe]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label3</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[qw]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label4</cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[qr]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-038bc047" id="ds3">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-c1391f7d" name="column1" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-e4ab4651" name="column2"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[123.12612]]></cl:datavalue>
+            <cl:datavalue columnname="column2">column21</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-d82480a5" id="ds4"/>
+      <cl:dataset std:sid="d-set-b54554c8" id="dsList">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-808fecd3" name="column1"/>
+          <cl:datacolumn std:sid="d-column-d26de9ed" name="column2"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-f970c4ac" id="dmSearch">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-5ef52bbc" name="cnt" datatype="number"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-41b867e2" id="sms1" method="get" action="data/datas.json" mediatype="application/json">
+        <cl:listener std:sid="listener-29e6c0f9" name="submit-done" handler="onSms1SubmitDone"/>
+        <cl:requestdata dataid="ds2"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-5fd079d1" id="sms2" action="/simples/realMass.do" mediatype="application/json;massdata">
+        <cl:listener std:sid="listener-b7ba1f25" name="before-submit" handler="onSms2BeforeSubmit"/>
+        <cl:requestdata dataid="dmSearch"/>
+        <cl:responsedata dataid="dsList"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec>
+      <cl:property name="newProperty1" type="string" default="zz"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-d50ce289" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:button std:sid="button-7d93ff6c" id="btn1" value="Button">
+      <cl:listener std:sid="listener-72962e87" name="click" handler="onBtn1Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-1f2419c6" top="20px" left="208px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:grid std:sid="grid-da7ee031" id="grd1" datasetid="dsList" autofit="none">
+      <cl:xylayoutdata std:sid="xyl-data-1ba75532" top="50px" right="20px" left="20px" height="270px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+      <cl:gridcolumn std:sid="g-column-520985aa" width="50px"/>
+      <cl:gridcolumn std:sid="g-column-396c0a9d"/>
+      <cl:gridcolumn std:sid="g-column-560d0099"/>
+      <cl:gridheader std:sid="gh-band-db98221c">
+        <cl:gridrow std:sid="g-row-90599885"/>
+        <cl:gridcell std:sid="gh-cell-636e638b" rowindex="0" colindex="0" sortable="false" filterable="false"/>
+        <cl:gridcell std:sid="gh-cell-5b487fb7" rowindex="0" colindex="1" targetcolumnname="column1" sortable="false" filterable="false" text="column1"/>
+        <cl:gridcell std:sid="gh-cell-cb17469c" rowindex="0" colindex="2" targetcolumnname="column2" sortable="false" filterable="false" text="column2"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-c210916b">
+        <cl:gridrow std:sid="g-row-6b0a8827"/>
+        <cl:gridcell std:sid="gd-cell-f10a133c" rowindex="0" colindex="0" columntype="rowindex"/>
+        <cl:gridcell std:sid="gd-cell-1006369a" rowindex="0" colindex="1" columnname="column1"/>
+        <cl:gridcell std:sid="gd-cell-96030a7a" rowindex="0" colindex="2" columnname="column2"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:numbereditor std:sid="n-editor-805d73a1" id="nbe1">
+      <cl:datamapbind property="value" datacontrolid="dmSearch" columnname="cnt"/>
+      <cl:xylayoutdata std:sid="xyl-data-a8ddb79b" top="20px" left="20px" width="178px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:numbereditor>
+    <cl:output std:sid="output-8d2b420b" id="opt1" value="2">
+      <cl:xylayoutdata std:sid="xyl-data-4b87a957" top="20px" left="318px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:grid std:sid="grid-75caa9a2" id="grd2" datasetid="dsList">
+      <cl:xylayoutdata std:sid="xyl-data-07b2becc" top="349px" right="20px" left="20px" height="270px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+      <cl:gridcolumn std:sid="g-column-8477d7b2" width="50px"/>
+      <cl:gridcolumn std:sid="g-column-04c9d5b9"/>
+      <cl:gridcolumn std:sid="g-column-6fddb9fe"/>
+      <cl:gridheader std:sid="gh-band-58c6c840">
+        <cl:gridrow std:sid="g-row-1a9362e4"/>
+        <cl:gridcell std:sid="gh-cell-9d363e80" rowindex="0" colindex="0" sortable="false" filterable="false"/>
+        <cl:gridcell std:sid="gh-cell-f444cde8" rowindex="0" colindex="1" targetcolumnname="column1" sortable="false" filterable="false" text="column1"/>
+        <cl:gridcell std:sid="gh-cell-9b7e6bb3" rowindex="0" colindex="2" targetcolumnname="column2" sortable="false" filterable="false" text="column2"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-2b3c6ce9">
+        <cl:gridrow std:sid="g-row-32a7e8a3"/>
+        <cl:gridcell std:sid="gd-cell-319e5a38" rowindex="0" colindex="0" columntype="rowindex"/>
+        <cl:gridcell std:sid="gd-cell-1ba44e4c" rowindex="0" colindex="1" columnname="column1"/>
+        <cl:gridcell std:sid="gd-cell-bdd0cb59" rowindex="0" colindex="2" columnname="column2"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:button std:sid="button-9e96497a" id="btn2" value="Button">
+      <cl:listener std:sid="listener-b8a250fc" name="click" handler="onBtn2Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-ec3f0a16" top="20px" left="428px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-74ec36ef"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

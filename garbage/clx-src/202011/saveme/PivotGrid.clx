@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-f783eca5" version="1.0.0.0">
+  <head std:sid="head-e015598d">
+    <title>PivotGrid</title>
+    <screen std:sid="screen-bcfbbab9" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-d4a73d11" id="tablet" name="tablet" minwidth="800px" maxwidth="1023px" width="800px" height="768px"/>
+    <screen std:sid="screen-1339e536" id="mobile" name="mobile" maxwidth="799px" width="550px" height="768px"/>
+    <cl:model std:sid="model-551c4bf3">
+      <cl:dataset std:sid="d-set-f0944106" id="dsList">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="자재 전표" std:sid="d-column-2c87817c" info="자재 전표" name="column1"/>
+          <cl:datacolumn comment="품목" std:sid="d-column-df069757" info="품목" name="column2"/>
+          <cl:datacolumn comment="전기일" std:sid="d-column-8d01c7a3" info="전기일" name="column3"/>
+          <cl:datacolumn comment="이동유형" std:sid="d-column-175d75f5" info="이동유형" name="column4"/>
+          <cl:datacolumn comment="이동유형명" std:sid="d-column-e9c192e2" info="이동유형명" name="column5"/>
+          <cl:datacolumn comment="자재" std:sid="d-column-0b7bbf57" info="자재" name="column6"/>
+          <cl:datacolumn comment="자재내역" std:sid="d-column-d096363f" info="자재내역" name="column7"/>
+          <cl:datacolumn comment="플랜트" std:sid="d-column-b25120b1" info="플랜트" name="column8"/>
+          <cl:datacolumn comment="저장위치" std:sid="d-column-1168410d" info="저장위치" name="column9"/>
+          <cl:datacolumn comment="공사번호" std:sid="d-column-cd7e614f" info="공사번호" name="column10" datatype="string" displayonly="false"/>
+          <cl:datacolumn comment="수량" std:sid="d-column-a67ef7a4" info="수량" name="column11" datatype="number"/>
+          <cl:datacolumn comment="EUn" std:sid="d-column-548ffae8" info="EUn" name="column12"/>
+          <cl:datacolumn comment="금액(LC)" std:sid="d-column-5283c235" info="금액(LC)" name="column13" datatype="number"/>
+          <cl:datacolumn comment="배치" std:sid="d-column-ed853aa2" info="배치" name="column14"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist/>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-d9cd9558" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-cdab43f5" name="CODE_YEAR"/>
+          <cl:datacolumn std:sid="d-column-8b7b70db" name="DIV_NM"/>
+          <cl:datacolumn std:sid="d-column-7696cb6e" name="CODE_NAME"/>
+          <cl:datacolumn std:sid="d-column-7e60a79b" name="CNT" datatype="number"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="CODE_YEAR"><![CDATA[2020]]></cl:datavalue>
+            <cl:datavalue columnname="DIV_NM"><![CDATA[점검지적건수]]></cl:datavalue>
+            <cl:datavalue columnname="CODE_NAME"><![CDATA[개소]]></cl:datavalue>
+            <cl:datavalue columnname="CNT"><![CDATA[2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CODE_YEAR"><![CDATA[2020]]></cl:datavalue>
+            <cl:datavalue columnname="DIV_NM"><![CDATA[점검지적건수]]></cl:datavalue>
+            <cl:datavalue columnname="CODE_NAME"><![CDATA[건]]></cl:datavalue>
+            <cl:datavalue columnname="CNT"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CODE_YEAR"><![CDATA[2020]]></cl:datavalue>
+            <cl:datavalue columnname="DIV_NM"><![CDATA[분야별점검지적건수]]></cl:datavalue>
+            <cl:datavalue columnname="CODE_NAME"><![CDATA[안전]]></cl:datavalue>
+            <cl:datavalue columnname="CNT"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CODE_YEAR"><![CDATA[2020]]></cl:datavalue>
+            <cl:datavalue columnname="DIV_NM"><![CDATA[분야별점검지적건수]]></cl:datavalue>
+            <cl:datavalue columnname="CODE_NAME"><![CDATA[시설]]></cl:datavalue>
+            <cl:datavalue columnname="CNT"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CODE_YEAR"><![CDATA[2020]]></cl:datavalue>
+            <cl:datavalue columnname="DIV_NM"><![CDATA[분야별점검지적건수]]></cl:datavalue>
+            <cl:datavalue columnname="CODE_NAME"><![CDATA[화재]]></cl:datavalue>
+            <cl:datavalue columnname="CNT"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CODE_YEAR"><![CDATA[2020]]></cl:datavalue>
+            <cl:datavalue columnname="DIV_NM"><![CDATA[분야별점검지적건수]]></cl:datavalue>
+            <cl:datavalue columnname="CODE_NAME"><![CDATA[기타]]></cl:datavalue>
+            <cl:datavalue columnname="CNT"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CODE_YEAR"><![CDATA[2019]]></cl:datavalue>
+            <cl:datavalue columnname="DIV_NM"><![CDATA[점검지적건수]]></cl:datavalue>
+            <cl:datavalue columnname="CODE_NAME"><![CDATA[개소]]></cl:datavalue>
+            <cl:datavalue columnname="CNT"><![CDATA[2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CODE_YEAR"><![CDATA[2019]]></cl:datavalue>
+            <cl:datavalue columnname="DIV_NM"><![CDATA[점검지적건수]]></cl:datavalue>
+            <cl:datavalue columnname="CODE_NAME"><![CDATA[개소]]></cl:datavalue>
+            <cl:datavalue columnname="CNT"><![CDATA[5]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CODE_YEAR"><![CDATA[2019]]></cl:datavalue>
+            <cl:datavalue columnname="DIV_NM"><![CDATA[점검지적건수]]></cl:datavalue>
+            <cl:datavalue columnname="CODE_NAME"><![CDATA[건]]></cl:datavalue>
+            <cl:datavalue columnname="CNT"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CODE_YEAR"><![CDATA[2019]]></cl:datavalue>
+            <cl:datavalue columnname="DIV_NM"><![CDATA[분야별점검지적건수]]></cl:datavalue>
+            <cl:datavalue columnname="CODE_NAME"><![CDATA[안전]]></cl:datavalue>
+            <cl:datavalue columnname="CNT"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CODE_YEAR"><![CDATA[2019]]></cl:datavalue>
+            <cl:datavalue columnname="DIV_NM"><![CDATA[분야별점검지적건수]]></cl:datavalue>
+            <cl:datavalue columnname="CODE_NAME"><![CDATA[시설]]></cl:datavalue>
+            <cl:datavalue columnname="CNT"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CODE_YEAR"><![CDATA[2019]]></cl:datavalue>
+            <cl:datavalue columnname="DIV_NM"><![CDATA[분야별점검지적건수]]></cl:datavalue>
+            <cl:datavalue columnname="CODE_NAME"><![CDATA[화재]]></cl:datavalue>
+            <cl:datavalue columnname="CNT"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CODE_YEAR"><![CDATA[2019]]></cl:datavalue>
+            <cl:datavalue columnname="DIV_NM"><![CDATA[분야별점검지적건수]]></cl:datavalue>
+            <cl:datavalue columnname="CODE_NAME"><![CDATA[기타]]></cl:datavalue>
+            <cl:datavalue columnname="CNT"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CODE_YEAR"><![CDATA[2018]]></cl:datavalue>
+            <cl:datavalue columnname="DIV_NM"><![CDATA[점검지적건수]]></cl:datavalue>
+            <cl:datavalue columnname="CODE_NAME"><![CDATA[개소]]></cl:datavalue>
+            <cl:datavalue columnname="CNT"><![CDATA[2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CODE_YEAR"><![CDATA[2018]]></cl:datavalue>
+            <cl:datavalue columnname="DIV_NM"><![CDATA[점검지적건수]]></cl:datavalue>
+            <cl:datavalue columnname="CODE_NAME"><![CDATA[건]]></cl:datavalue>
+            <cl:datavalue columnname="CNT"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CODE_YEAR"><![CDATA[2018]]></cl:datavalue>
+            <cl:datavalue columnname="DIV_NM"><![CDATA[분야별점검지적건수]]></cl:datavalue>
+            <cl:datavalue columnname="CODE_NAME"><![CDATA[안전]]></cl:datavalue>
+            <cl:datavalue columnname="CNT"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CODE_YEAR"><![CDATA[2018]]></cl:datavalue>
+            <cl:datavalue columnname="DIV_NM"><![CDATA[분야별점검지적건수]]></cl:datavalue>
+            <cl:datavalue columnname="CODE_NAME"><![CDATA[시설]]></cl:datavalue>
+            <cl:datavalue columnname="CNT"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CODE_YEAR"><![CDATA[2018]]></cl:datavalue>
+            <cl:datavalue columnname="DIV_NM"><![CDATA[분야별점검지적건수]]></cl:datavalue>
+            <cl:datavalue columnname="CODE_NAME"><![CDATA[화재]]></cl:datavalue>
+            <cl:datavalue columnname="CNT"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CODE_YEAR"><![CDATA[2018]]></cl:datavalue>
+            <cl:datavalue columnname="DIV_NM"><![CDATA[분야별점검지적건수]]></cl:datavalue>
+            <cl:datavalue columnname="CODE_NAME"><![CDATA[기타]]></cl:datavalue>
+            <cl:datavalue columnname="CNT"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CODE_YEAR"><![CDATA[2017]]></cl:datavalue>
+            <cl:datavalue columnname="DIV_NM"><![CDATA[점검지적건수]]></cl:datavalue>
+            <cl:datavalue columnname="CODE_NAME"><![CDATA[개소]]></cl:datavalue>
+            <cl:datavalue columnname="CNT"><![CDATA[2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CODE_YEAR"><![CDATA[2017]]></cl:datavalue>
+            <cl:datavalue columnname="DIV_NM"><![CDATA[점검지적건수]]></cl:datavalue>
+            <cl:datavalue columnname="CODE_NAME"><![CDATA[건]]></cl:datavalue>
+            <cl:datavalue columnname="CNT"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CODE_YEAR"><![CDATA[2017]]></cl:datavalue>
+            <cl:datavalue columnname="DIV_NM"><![CDATA[분야별점검지적건수]]></cl:datavalue>
+            <cl:datavalue columnname="CODE_NAME"><![CDATA[안전]]></cl:datavalue>
+            <cl:datavalue columnname="CNT"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CODE_YEAR"><![CDATA[2017]]></cl:datavalue>
+            <cl:datavalue columnname="DIV_NM"><![CDATA[분야별점검지적건수]]></cl:datavalue>
+            <cl:datavalue columnname="CODE_NAME"><![CDATA[시설]]></cl:datavalue>
+            <cl:datavalue columnname="CNT"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CODE_YEAR"><![CDATA[2017]]></cl:datavalue>
+            <cl:datavalue columnname="DIV_NM"><![CDATA[분야별점검지적건수]]></cl:datavalue>
+            <cl:datavalue columnname="CODE_NAME"><![CDATA[화재]]></cl:datavalue>
+            <cl:datavalue columnname="CNT"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CODE_YEAR"><![CDATA[2017]]></cl:datavalue>
+            <cl:datavalue columnname="DIV_NM"><![CDATA[분야별점검지적건수]]></cl:datavalue>
+            <cl:datavalue columnname="CODE_NAME"><![CDATA[기타]]></cl:datavalue>
+            <cl:datavalue columnname="CNT"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-9ce57bb4" id="subList" action="./data/scr/user/PIVOT.json"/>
+      <cl:submission std:sid="submission-1b6a360b" id="subList2" action="data/scr/grid/gridData1k.json">
+        <cl:responsedata dataid="dsList"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec title="피벗그리드"/>
+  </head>
+  <body std:sid="body-d2e54b19" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-962305fc" name="load" handler="onBodyLoad"/>
+    <cl:udc std:sid="ud-control-65454876" type="udc.com.AppTitle">
+      <cl:xylayoutdata std:sid="xyl-data-611826f0" top="20px" right="20px" left="20px" height="28px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+      <cl:property name="tooltips" value="기능 평가 항목&#xD;&#xA;그리드 기능 - 피벗팅&#xD;&#xA;기본 피벗팅 기준&#xD;&#xA;행-이동유형명, 열-플랜트, 값-자재전표(개수),금액(합계)" type="string"/>
+    </cl:udc>
+    <cl:fileinput std:sid="f-input-d5007952" id="fi1" visible="false">
+      <cl:listener std:sid="listener-3e3cac83" name="value-change" handler="onFi1ValueChange"/>
+      <cl:xylayoutdata std:sid="xyl-data-19ba643d" top="1px" right="1px" width="0px" height="0px" horizontalAnchor="RIGHT" verticalAnchor="TOP"/>
+    </cl:fileinput>
+    <cl:tabfolder std:sid="t-folder-6af57f7e">
+      <cl:xylayoutdata std:sid="xyl-data-b8603436" top="53px" right="20px" bottom="20px" left="20px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+      <cl:tabitem std:sid="t-item-4a46a84e" selected="true" text="피벗 그리드">
+        <std:metadata>
+          <std:property key="is-active-item" value="true"/>
+        </std:metadata>
+        <cl:group std:sid="group-62129004">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-51e82d31" class="card card-bordered">
+            <cl:xylayoutdata std:sid="xyl-data-e636b513" top="10px" right="10px" bottom="10px" left="10px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+            <cl:output std:sid="output-ac4ec87b" class="card-title" value="피벗 그리드">
+              <cl:xylayoutdata std:sid="xyl-data-b9e8a631" top="20px" left="20px" width="606px" height="25px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+            </cl:output>
+            <cl:udc std:sid="ud-control-c0801aca" id="piHelper" type="udc.scr.PivotHelperH">
+              <cl:listener std:sid="listener-a894952d" name="execute" handler="onPivotHelperHExecute"/>
+              <cl:listener std:sid="listener-6024d5d8" name="toggle" handler="onPivotHelperHToggle"/>
+              <cl:xylayoutdata std:sid="xyl-data-eb910fab" top="95px" right="20px" left="20px" height="220px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+              <cl:property name="dataset" value="ds1" type="control"/>
+            </cl:udc>
+            <cl:udc std:sid="ud-control-01f613fd" id="pivotGrid" type="udc.scr.PivotGrid">
+              <cl:xylayoutdata std:sid="xyl-data-3bbe620e" top="325px" right="20px" bottom="10px" left="20px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+            </cl:udc>
+            <cl:output std:sid="output-e6cadd3d" id="optColCount" value="총 컬럼 개수 : 0 개">
+              <cl:xylayoutdata std:sid="xyl-data-5cbea252" top="55px" left="20px" width="164px" height="30px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+            </cl:output>
+            <cl:button std:sid="button-a70cda92" removeOnBuild="true" value="엑셀 임포트">
+              <cl:listener std:sid="listener-9f11c24f" name="click" handler="onButtonClick"/>
+              <cl:xylayoutdata std:sid="xyl-data-9c2f6f28" top="20px" right="20px" width="120px" height="25px" horizontalAnchor="RIGHT" verticalAnchor="TOP"/>
+            </cl:button>
+            <cl:output std:sid="output-592caea8" id="optRowCnt" value="총 행 개수 : 0 개">
+              <cl:xylayoutdata std:sid="xyl-data-f95f3256" top="55px" left="189px" width="164px" height="30px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+            </cl:output>
+            <cl:button std:sid="button-a5bffc9f" value="피벗그리기">
+              <cl:listener std:sid="listener-5a555679" name="click" handler="onButtonClick2"/>
+              <cl:xylayoutdata std:sid="xyl-data-6964e6df" top="20px" right="145px" width="120px" height="25px" horizontalAnchor="RIGHT" verticalAnchor="TOP"/>
+            </cl:button>
+            <cl:button std:sid="button-f9c2831b" value="피벗그리기">
+              <cl:listener std:sid="listener-a30515a2" name="click" handler="onButtonClick3"/>
+              <cl:xylayoutdata std:sid="xyl-data-420ab822" top="55px" right="145px" width="120px" height="25px" horizontalAnchor="RIGHT" verticalAnchor="TOP"/>
+            </cl:button>
+            <cl:xylayout std:sid="xylayout-0f2d68c4"/>
+          </cl:group>
+          <cl:xylayout std:sid="xylayout-e1f339dd"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-c65544f6" text="데이터 그리드">
+        <cl:group std:sid="group-f7505a7e">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:grid std:sid="grid-74a6cdf5" id="grd1" datasetid="dsList">
+            <cl:xylayoutdata std:sid="xyl-data-44660418" top="10px" right="10px" bottom="10px" left="10px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+            <cl:gridcolumn std:sid="g-column-e31bf955"/>
+            <cl:gridcolumn std:sid="g-column-99e4cde7"/>
+            <cl:gridcolumn std:sid="g-column-da9755c3"/>
+            <cl:gridcolumn std:sid="g-column-eeddbea6"/>
+            <cl:gridcolumn std:sid="g-column-e2f0a055"/>
+            <cl:gridcolumn std:sid="g-column-bb007c4d"/>
+            <cl:gridcolumn std:sid="g-column-7b63efb1"/>
+            <cl:gridcolumn std:sid="g-column-b7f79b70"/>
+            <cl:gridcolumn std:sid="g-column-adcae5e8"/>
+            <cl:gridcolumn std:sid="g-column-bc1043b9"/>
+            <cl:gridcolumn std:sid="g-column-34754d04"/>
+            <cl:gridcolumn std:sid="g-column-49d25384"/>
+            <cl:gridcolumn std:sid="g-column-5738aba4"/>
+            <cl:gridcolumn std:sid="g-column-7947048b"/>
+            <cl:gridcolumn std:sid="g-column-796e13ca"/>
+            <cl:gridheader std:sid="gh-band-d53d2a87">
+              <cl:gridrow std:sid="g-row-42cc36b8" height="38px"/>
+              <cl:gridcell std:sid="gh-cell-04f552f9" rowindex="0" colindex="1" targetcolumnname="column1" sortable="false" filterable="false" text="자재 전표"/>
+              <cl:gridcell std:sid="gh-cell-4d2bf9d0" rowindex="0" colindex="2" targetcolumnname="column2" sortable="false" filterable="false" text="품목"/>
+              <cl:gridcell std:sid="gh-cell-fb948579" rowindex="0" colindex="3" targetcolumnname="column3" sortable="false" filterable="false" text="전기일"/>
+              <cl:gridcell std:sid="gh-cell-08667bd0" rowindex="0" colindex="4" targetcolumnname="column4" sortable="false" filterable="false" text="이동유형"/>
+              <cl:gridcell std:sid="gh-cell-4fb43633" rowindex="0" colindex="5" targetcolumnname="column5" sortable="false" filterable="false" text="이동유형명"/>
+              <cl:gridcell std:sid="gh-cell-b0e57eeb" rowindex="0" colindex="6" targetcolumnname="column6" sortable="false" filterable="false" text="자재"/>
+              <cl:gridcell std:sid="gh-cell-7141b881" rowindex="0" colindex="7" targetcolumnname="column7" sortable="false" filterable="false" text="자재내역"/>
+              <cl:gridcell std:sid="gh-cell-202fd384" rowindex="0" colindex="8" targetcolumnname="column8" sortable="false" filterable="false" text="플랜트"/>
+              <cl:gridcell std:sid="gh-cell-c65a35c7" rowindex="0" colindex="9" targetcolumnname="column9" sortable="false" filterable="false" text="저장위치"/>
+              <cl:gridcell std:sid="gh-cell-1fb87895" rowindex="0" colindex="10" targetcolumnname="column10" sortable="false" filterable="false" text="공사번호"/>
+              <cl:gridcell std:sid="gh-cell-af436cf0" rowindex="0" colindex="11" targetcolumnname="column11" sortable="false" filterable="false" text="수량"/>
+              <cl:gridcell std:sid="gh-cell-89030210" rowindex="0" colindex="12" targetcolumnname="column12" sortable="false" filterable="false" text="EUn"/>
+              <cl:gridcell std:sid="gh-cell-88695946" rowindex="0" colindex="13" targetcolumnname="column13" sortable="false" filterable="false" text="금액(LC)"/>
+              <cl:gridcell std:sid="gh-cell-725d42bb" rowindex="0" colindex="14" targetcolumnname="column14" sortable="false" filterable="false" text="배치"/>
+              <cl:gridcell std:sid="gh-cell-463fa18e" rowindex="0" colindex="0" text="#"/>
+            </cl:gridheader>
+            <cl:griddetail std:sid="gd-band-bfc7e37f">
+              <cl:gridrow std:sid="g-row-8c54864a" height="36px"/>
+              <cl:gridcell std:sid="gd-cell-036afe28" rowindex="0" colindex="1" columnname="column1"/>
+              <cl:gridcell std:sid="gd-cell-6d9ba9d4" rowindex="0" colindex="2" columnname="column2"/>
+              <cl:gridcell std:sid="gd-cell-12b296db" rowindex="0" colindex="3" columnname="column3"/>
+              <cl:gridcell std:sid="gd-cell-94cb63d0" rowindex="0" colindex="4" columnname="column4"/>
+              <cl:gridcell std:sid="gd-cell-1798a7ec" rowindex="0" colindex="5" columnname="column5"/>
+              <cl:gridcell std:sid="gd-cell-225be235" rowindex="0" colindex="6" columnname="column6"/>
+              <cl:gridcell std:sid="gd-cell-7c7b0263" rowindex="0" colindex="7" columnname="column7"/>
+              <cl:gridcell std:sid="gd-cell-0e5fdc80" rowindex="0" colindex="8" columnname="column8"/>
+              <cl:gridcell std:sid="gd-cell-ae7f2e83" rowindex="0" colindex="9" columnname="column9"/>
+              <cl:gridcell std:sid="gd-cell-28ff20a3" rowindex="0" colindex="10" columnname="column10"/>
+              <cl:gridcell std:sid="gd-cell-146a9130" rowindex="0" colindex="11" columnname="column11"/>
+              <cl:gridcell std:sid="gd-cell-7b27cd2c" rowindex="0" colindex="12" columnname="column12"/>
+              <cl:gridcell std:sid="gd-cell-bf3beeee" rowindex="0" colindex="13" columnname="column13"/>
+              <cl:gridcell std:sid="gd-cell-7850a829" rowindex="0" colindex="14" columnname="column14"/>
+              <cl:gridcell std:sid="gd-cell-e3c9e225" rowindex="0" colindex="0" columntype="rowindex"/>
+            </cl:griddetail>
+          </cl:grid>
+          <cl:xylayout std:sid="xylayout-aaea921d"/>
+        </cl:group>
+      </cl:tabitem>
+    </cl:tabfolder>
+    <cl:xylayout std:sid="xylayout-05dbe095"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

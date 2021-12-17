@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-1edebff4" version="1.0.0.0">
+  <head std:sid="head-89b811a4">
+    <title>newTest</title>
+    <screen std:sid="screen-5940fc64" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-6779802d" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-a6526beb" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-930b620a"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-8f2482d4" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:combobox std:sid="c-box-b4bbced7" id="cmb1">
+      <cl:xylayoutdata std:sid="xyl-data-fa3192d2" height="20px" horizontalAnchor="LEFT" left="904px" top="728px" verticalAnchor="TOP" width="100px"/>
+      <cl:item std:sid="item-5b72a23f" label="1231231123123" value="value1"/>
+      <cl:item std:sid="item-f7effdf5" label="ㄴㄹㄴㅁㄹㄴㅁㅇㄹㄴㅁㅇㄹㄴㅁㅇㄹㄴㄹ" value="value2"/>
+      <cl:item std:sid="item-e025f74c" label="ㅁㄴㄻㄴㅇㄹㅇㄴㄹㄴㄻ" value="value3"/>
+      <cl:item std:sid="item-d7cdd904" label="label4" value="value4"/>
+      <cl:item std:sid="item-4b87a62c" label="label5" value="value5"/>
+    </cl:combobox>
+    <cl:mdifolder std:sid="mdifolder-a2dd549b" id="mdi1" hideHeader="true">
+      <cl:xylayoutdata std:sid="xyl-data-ad410bc1" height="484px" horizontalAnchor="BOTH" left="20px" right="20px" top="51px" verticalAnchor="TOP"/>
+      <cl:tabitem std:sid="t-item-b8bcaf45" text="ep">
+        <std:metadata>
+          <std:property key="is-active-item" value="true"/>
+        </std:metadata>
+        <cl:embeddedapp std:sid="e-app-b26236eb" id="ea1" src="../201909/ep.clx">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+        </cl:embeddedapp>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-96e1ad9e" selected="true" text="tab 1">
+        <cl:group std:sid="group-537987ed" id="grp1">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:embeddedpage std:sid="e-page-5acb3edb" id="ep1" src="../index.html">
+            <cl:xylayoutdata std:sid="xyl-data-0428b285" height="410px" horizontalAnchor="LEFT" left="6px" top="8px" verticalAnchor="TOP" width="927px"/>
+          </cl:embeddedpage>
+          <cl:xylayout std:sid="xylayout-c2826528"/>
+        </cl:group>
+      </cl:tabitem>
+    </cl:mdifolder>
+    <cl:button std:sid="button-036f0c5d" id="btn1" value="Button">
+      <cl:listener std:sid="listener-0cef0035" handler="onBtn1Click" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-6cd2f338" height="20px" horizontalAnchor="LEFT" left="794px" top="20px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:button std:sid="button-126150e1" id="btn2" value="Button">
+      <cl:listener std:sid="listener-6a4a1edd" handler="onBtn2Click" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-a799d055" height="20px" horizontalAnchor="LEFT" left="904px" top="20px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:xylayout/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

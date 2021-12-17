@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-5ab36b73" version="1.0.0.0">
+  <head std:sid="head-998a3e4e">
+    <title>Animation2</title>
+    <screen std:sid="screen-03d020bb" id="default" name="default" minwidth="1024px" width="1024px" height="768px" useCustomWidth="true" useCustomHeight="true" customHeight="858" customWidth="1680"/>
+    <screen std:sid="screen-829a4c52" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-ca1a24f6" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-f7d05b74">
+      <cl:dataset std:sid="d-set-6cd454d7" id="dsMain">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-481e280e" name="label"/>
+          <cl:datacolumn std:sid="d-column-18e032af" name="value"/>
+          <cl:datacolumn std:sid="d-column-9502095a" name="shape"/>
+          <cl:datacolumn std:sid="d-column-2425163f" name="coord"/>
+          <cl:datacolumn std:sid="d-column-e13a4490" name="factory"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label">후판</cl:datavalue>
+            <cl:datavalue columnname="value">1</cl:datavalue>
+            <cl:datavalue columnname="shape">poly</cl:datavalue>
+            <cl:datavalue columnname="coord">434,92,471,90,473,138,474,216,454,216,456,324,438,326</cl:datavalue>
+            <cl:datavalue columnname="factory">당진</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">C열연</cl:datavalue>
+            <cl:datavalue columnname="value">2</cl:datavalue>
+            <cl:datavalue columnname="shape">shape2</cl:datavalue>
+            <cl:datavalue columnname="coord">coord2</cl:datavalue>
+            <cl:datavalue columnname="factory">factory2</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-aad3485d" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-7f49755a" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-74df5382" class="card-title">
+      <cl:xylayoutdata std:sid="xyl-data-e6fe1043" top="20px" right="20px" left="20px" height="30px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+      <cl:output std:sid="output-7befeb54" class="h3" value="애니메이션 표출">
+        <cl:formdata std:sid="f-data-ca42ca06" row="0" col="0"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-341c33fc" type="udc.cmn.Breadcrumb">
+        <cl:formdata std:sid="f-data-be3400dc" row="0" col="1"/>
+      </cl:udc>
+      <cl:formlayout std:sid="f-layout-990be31b" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="50" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-41162e3e" class="card card-bordered">
+      <cl:xylayoutdata std:sid="xyl-data-a64270b5" top="60px" right="20px" bottom="20px" left="20px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+      <cl:group std:sid="group-112000ba" class="cl-form-group">
+        <cl:xylayoutdata std:sid="xyl-data-7edf5c0f" top="20px" right="20px" left="20px" height="127px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+        <cl:output std:sid="output-d65ee2fd" class="label fw-medium text-center" value="구분">
+          <cl:formdata std:sid="f-data-d00be289" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-ee559da4" class="label fw-medium text-center" value="요구사항">
+          <cl:formdata std:sid="f-data-d04435e3" row="0" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-bbe814f2" class="label fw-medium text-center" value="기능">
+          <cl:formdata std:sid="f-data-c3ff31a4" row="0" col="2"/>
+        </cl:output>
+        <cl:output std:sid="output-c8f0f069" class="label fw-medium text-center" value="기능설명">
+          <cl:formdata std:sid="f-data-a461bb69" row="0" col="3"/>
+        </cl:output>
+        <cl:output std:sid="output-8b7936f2" class="text-center" value="애니메이션">
+          <cl:formdata std:sid="f-data-b15e5204" row="1" col="0" rowspan="1" colspan="1"/>
+        </cl:output>
+        <cl:output std:sid="output-d0ac41ce" class="text-center" value="UI-HDS-01">
+          <cl:formdata std:sid="f-data-7bfabaf1" row="1" col="1" rowspan="1" colspan="1"/>
+        </cl:output>
+        <cl:output std:sid="output-b19646d5" class="text-center" value="애니메이션 표출">
+          <cl:formdata std:sid="f-data-3a6d9a64" row="1" col="2"/>
+        </cl:output>
+        <cl:output std:sid="output-252dd9c3" value="샘플 시나리오:&#xD;&#xA;1. 공장 설비 가동 상태를 보기 위한 소재들이 공정 진행중인 애니메이션 표출&#xD;&#xA;2. 작업대기시간 지연 차량번호 블링크(깜빡깜빡) 표시&#xD;&#xA;3. 공장 레이아웃 표시 및 개소별 점유 차량번호 표시">
+          <cl:formdata std:sid="f-data-8e263aec" row="1" col="3"/>
+        </cl:output>
+        <cl:output std:sid="output-58e755db" class="label fw-medium text-center" value="비고">
+          <cl:formdata std:sid="f-data-6f5a0f45" row="0" col="4"/>
+        </cl:output>
+        <cl:output std:sid="output-975f844c" value="샘플 시나리오:&#xD;&#xA;1. 후판, 열연, 연주 공장에 대한 진행을 색상으로 표시&#xD;&#xA;2. 후판, 열연, 연주 공장에 대한 애니메이션을 깜빡이는 애니메이션으로 처리&#xD;&#xA;3. 공장을 클릭하면 해당 레이아웃을 확인할 수 있으며, 차량번호를 표시">
+          <cl:formdata std:sid="f-data-68ec313b" row="1" col="4"/>
+        </cl:output>
+        <cl:formlayout std:sid="f-layout-f0b800bb" hspace="10px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="90" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="140" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:img std:sid="image-9215ff6b" id="imgMain" src="../../../theme/images/icons/main.png">
+        <cl:xylayoutdata std:sid="xyl-data-daf2074e" top="156px" left="19px" width="624px" height="610px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        <cl:area std:sid="a-item-4e6436ca" label="label1" value="value1" shape="circle" coords="507,452,26"/>
+        <cl:area std:sid="a-item-22ae8d08" label="포항" value="value2" tooltip="포항" shape="circle" coords="515,374,24"/>
+        <cl:area std:sid="a-item-006fc9ac" label="label3" value="value3" shape="circle" coords="246,260,25"/>
+        <cl:area std:sid="a-item-6f17f333" label="label4" value="value4" shape="circle" coords="224,178,24"/>
+      </cl:img>
+      <cl:group std:sid="group-00935430" class="area-item">
+        <cl:listener std:sid="listener-3cc18871" name="click" handler="onGroupClick"/>
+        <cl:listener std:sid="listener-e5568014" name="mouseenter" handler="onGroupMouseenter"/>
+        <cl:attribute name="image" value="./theme/images/icons/incheon.PNG"/>
+        <cl:attribute name="filtOption" value="인천"/>
+        <cl:attribute name="areaName" value="인천공장"/>
+        <cl:attribute name="statusConverter" value="complete"/>
+        <cl:attribute name="statusScouring" value="complete"/>
+        <cl:attribute name="statusMold" value="proceed"/>
+        <cl:attribute name="statusRolling" value="complete"/>
+        <cl:xylayoutdata std:sid="xyl-data-e16b6c58" top="311px" left="221px" width="49px" height="49px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        <cl:output std:sid="output-5f303ca3" class="rounded-circle">
+          <cl:xylayoutdata std:sid="xyl-data-93080cd9" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+        </cl:output>
+        <cl:xylayout std:sid="xylayout-2d6beb85"/>
+      </cl:group>
+      <cl:group std:sid="group-381d92c3" class="area-item">
+        <cl:listener std:sid="listener-c3baec62" name="click" handler="onGroupClick"/>
+        <cl:listener std:sid="listener-047489e8" name="mouseenter" handler="onGroupMouseenter"/>
+        <cl:attribute name="image" value="./theme/images/icons/dangjin.png"/>
+        <cl:attribute name="filtOption" value="당진"/>
+        <cl:attribute name="areaName" value="당진제철소"/>
+        <cl:attribute name="statusConverter" value="complete"/>
+        <cl:attribute name="statusScouring" value="complete"/>
+        <cl:attribute name="statusMold" value="complete"/>
+        <cl:attribute name="statusRolling" value="complete"/>
+        <cl:xylayoutdata std:sid="xyl-data-957bf5d2" top="393px" left="243px" width="49px" height="49px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        <cl:output std:sid="output-cfaf5d41" class="rounded-circle blue">
+          <cl:xylayoutdata std:sid="xyl-data-3a75f059" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+        </cl:output>
+        <cl:xylayout std:sid="xylayout-fabf26a9"/>
+      </cl:group>
+      <cl:group std:sid="group-43abd2f4" class="area-item">
+        <cl:listener std:sid="listener-b4dc89fe" name="click" handler="onGroupClick"/>
+        <cl:listener std:sid="listener-d1d20aab" name="mouseenter" handler="onGroupMouseenter"/>
+        <cl:attribute name="image" value="./theme/images/icons/pohang.PNG"/>
+        <cl:attribute name="filtOption" value="포항"/>
+        <cl:attribute name="areaName" value="포항공장"/>
+        <cl:attribute name="statusConverter" value="complete"/>
+        <cl:attribute name="statusScouring" value="complete"/>
+        <cl:attribute name="statusMold" value="proceed"/>
+        <cl:attribute name="statusRolling" value="proceed"/>
+        <cl:xylayoutdata std:sid="xyl-data-86c696cd" top="505px" left="509px" width="50px" height="50px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        <cl:output std:sid="output-8f85770e" class="rounded-circle yellow" tooltip="포항">
+          <cl:xylayoutdata std:sid="xyl-data-f210a502" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+        </cl:output>
+        <cl:xylayout std:sid="xylayout-f65c51c4"/>
+      </cl:group>
+      <cl:group std:sid="group-f5b8d1a6" class="area-item">
+        <cl:listener std:sid="listener-783ee1bc" name="click" handler="onGroupClick"/>
+        <cl:listener std:sid="listener-287d4d86" name="mouseenter" handler="onGroupMouseenter"/>
+        <cl:attribute name="image" value="./theme/images/icons/ulsan.PNG"/>
+        <cl:attribute name="filtOption" value="울산"/>
+        <cl:attribute name="areaName" value="울산공장"/>
+        <cl:attribute name="statusConverter" value="complete"/>
+        <cl:attribute name="statusScouring" value="complete"/>
+        <cl:attribute name="statusMold" value="complete"/>
+        <cl:attribute name="statusRolling" value="pause"/>
+        <cl:xylayoutdata std:sid="xyl-data-8df44aad" top="583px" left="503px" width="50px" height="50px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        <cl:output std:sid="output-9fa35e1d" class="rounded-circle purple" value="">
+          <cl:xylayoutdata std:sid="xyl-data-28e3e5a9" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+        </cl:output>
+        <cl:xylayout std:sid="xylayout-918fafa1"/>
+      </cl:group>
+      <cl:img std:sid="image-4a7c9169" id="imgSub">
+        <cl:xylayoutdata std:sid="xyl-data-b4d12ac4" top="156px" left="652px" width="956px" height="610px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        <cl:area-itemset datasetid="dsMain" label="label" value="value" shape="shape" coords="coord"/>
+      </cl:img>
+      <cl:group std:sid="group-5d8f5cdc" class="area-item" tooltip="제압" visible="false">
+        <std:metadata>
+          <std:property key="hidden" value="true"/>
+        </std:metadata>
+        <cl:listener std:sid="listener-b3cbfa5b" name="click" handler="onGroupClick2"/>
+        <cl:attribute name="areaitem" value="Y"/>
+        <cl:attribute name="filter" value="당진"/>
+        <cl:attribute name="appID" value="app/scr/hds/PF1"/>
+        <cl:xylayoutdata std:sid="xyl-data-1b4e8cf4" top="247px" left="1080px" width="37px" height="227px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        <cl:output std:sid="output-68faea3a" value="">
+          <cl:xylayoutdata std:sid="xyl-data-1e612f7c" top="0px" right="0px" left="0px" height="120px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+        </cl:output>
+        <cl:output std:sid="output-f31e763e" value="">
+          <cl:xylayoutdata std:sid="xyl-data-b6028e48" top="120px" bottom="0px" left="0px" width="20px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+        </cl:output>
+        <cl:xylayout std:sid="xylayout-bfd315ec"/>
+      </cl:group>
+      <cl:group std:sid="group-1aa51aed" class="area-item" tooltip="연주" visible="false">
+        <std:metadata>
+          <std:property key="hidden" value="true"/>
+        </std:metadata>
+        <cl:listener std:sid="listener-373a6d78" name="click" handler="onGroupClick2"/>
+        <cl:attribute name="areaitem" value="Y"/>
+        <cl:attribute name="filter" value="당진"/>
+        <cl:attribute name="appID" value="app/scr/hds/PF2"/>
+        <cl:xylayoutdata std:sid="xyl-data-d0525643" top="277px" left="1149px" width="23px" height="187px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        <cl:output std:sid="output-d7692ce0" value="">
+          <cl:xylayoutdata std:sid="xyl-data-8b6549ce" top="0px" right="0px" left="0px" height="103px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+        </cl:output>
+        <cl:output std:sid="output-208e5e57" value="">
+          <cl:xylayoutdata std:sid="xyl-data-ef21f988" top="103px" bottom="0px" left="0px" width="15px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+        </cl:output>
+        <cl:xylayout std:sid="xylayout-64dc36f9"/>
+      </cl:group>
+      <cl:group std:sid="group-3490d50e" class="area-item" tooltip="압연" visible="false">
+        <std:metadata>
+          <std:property key="hidden" value="true"/>
+        </std:metadata>
+        <cl:listener std:sid="listener-187bcdbf" name="click" handler="onGroupClick2"/>
+        <cl:attribute name="areaitem" value="Y"/>
+        <cl:attribute name="filter" value="당진"/>
+        <cl:attribute name="appID" value="app/scr/hds/PF3"/>
+        <cl:xylayoutdata std:sid="xyl-data-a6ca36fb" top="499px" left="1047px" width="124px" height="62px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        <cl:output std:sid="output-74553709" value="">
+          <cl:xylayoutdata std:sid="xyl-data-3a6f2b66" top="0px" right="0px" left="0px" height="34px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+        </cl:output>
+        <cl:output std:sid="output-67113dde" value="">
+          <cl:xylayoutdata std:sid="xyl-data-aa52a4e8" top="35px" bottom="0px" left="0px" width="103px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+        </cl:output>
+        <cl:xylayout std:sid="xylayout-308a8a80"/>
+      </cl:group>
+      <cl:group std:sid="group-b6b8b5cc" class="area-item" tooltip="제압" visible="false">
+        <std:metadata>
+          <std:property key="hidden" value="true"/>
+        </std:metadata>
+        <cl:listener std:sid="listener-019c6e3d" name="click" handler="onGroupClick3"/>
+        <cl:attribute name="areaitem" value="Y"/>
+        <cl:attribute name="filter" value="인천"/>
+        <cl:attribute name="tooltip" value="제압, 점유 차량번호 : 384번"/>
+        <cl:xylayoutdata std:sid="xyl-data-79eba81b" top="474px" left="806px" width="232px" height="52px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        <cl:output std:sid="output-ef3df5f3" value="">
+          <cl:xylayoutdata std:sid="xyl-data-7de4a31f" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+        </cl:output>
+        <cl:xylayout std:sid="xylayout-e874df58"/>
+      </cl:group>
+      <cl:group std:sid="group-b9398cb2" class="area-item" tooltip="연주" visible="false">
+        <std:metadata>
+          <std:property key="hidden" value="true"/>
+        </std:metadata>
+        <cl:listener std:sid="listener-645eb115" name="click" handler="onGroupClick3"/>
+        <cl:attribute name="areaitem" value="Y"/>
+        <cl:attribute name="filter" value="인천"/>
+        <cl:attribute name="tooltip" value="연주, 점유 차량번호 : 1105번"/>
+        <cl:xylayoutdata std:sid="xyl-data-4f12d646" top="536px" left="851px" width="239px" height="74px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        <cl:output std:sid="output-ecbf34db" value="">
+          <cl:xylayoutdata std:sid="xyl-data-6bd19203" right="0px" left="0px" height="34px" horizontalAnchor="BOTH" verticalAnchor="CENTER"/>
+        </cl:output>
+        <cl:output std:sid="output-c632e9e3" value="">
+          <cl:xylayoutdata std:sid="xyl-data-d5efb433" bottom="0px" left="0px" width="67px" height="20px" horizontalAnchor="LEFT" verticalAnchor="BOTTOM"/>
+        </cl:output>
+        <cl:output std:sid="output-c2d8bb8c" value="">
+          <cl:xylayoutdata std:sid="xyl-data-69fc65ae" top="0px" left="0px" width="67px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        </cl:output>
+        <cl:xylayout std:sid="xylayout-eca5281a"/>
+      </cl:group>
+      <cl:group std:sid="group-5edd262f" class="area-item" tooltip="압연" visible="false">
+        <std:metadata>
+          <std:property key="hidden" value="true"/>
+        </std:metadata>
+        <cl:listener std:sid="listener-125733b4" name="click" handler="onGroupClick3"/>
+        <cl:attribute name="areaitem" value="Y"/>
+        <cl:attribute name="filter" value="인천"/>
+        <cl:attribute name="tooltip" value="압연, 점유 차량번호 : 669번"/>
+        <cl:xylayoutdata std:sid="xyl-data-3b48ad01" top="525px" left="1099px" width="122px" height="147px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        <cl:output std:sid="output-88b76d32" value="">
+          <cl:xylayoutdata std:sid="xyl-data-58ff4d05" top="0px" right="2px" bottom="0px" width="66px" horizontalAnchor="RIGHT" verticalAnchor="BOTH"/>
+        </cl:output>
+        <cl:output std:sid="output-354275aa" value="">
+          <cl:xylayoutdata std:sid="xyl-data-71ebf0cd" top="52px" left="0px" width="54px" height="35px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        </cl:output>
+        <cl:xylayout std:sid="xylayout-57c3950c"/>
+      </cl:group>
+      <cl:group std:sid="group-0b6aa4b0" class="area-item" tooltip="제압" visible="false">
+        <std:metadata>
+          <std:property key="hidden" value="true"/>
+        </std:metadata>
+        <cl:listener std:sid="listener-9b735a4f" name="click" handler="onGroupClick3"/>
+        <cl:attribute name="areaitem" value="Y"/>
+        <cl:attribute name="filter" value="울산"/>
+        <cl:attribute name="tooltip" value="제압, 점유 차량번호 : 501번"/>
+        <cl:xylayoutdata std:sid="xyl-data-9a56c1b3" top="242px" left="1047px" width="297px" height="116px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        <cl:output std:sid="output-3153f7cc" value="">
+          <cl:xylayoutdata std:sid="xyl-data-7c166737" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+        </cl:output>
+        <cl:xylayout std:sid="xylayout-83d8f425"/>
+      </cl:group>
+      <cl:group std:sid="group-497550ee" class="area-item" tooltip="연주" visible="false">
+        <std:metadata>
+          <std:property key="hidden" value="true"/>
+        </std:metadata>
+        <cl:listener std:sid="listener-a22a1b75" name="click" handler="onGroupClick3"/>
+        <cl:attribute name="areaitem" value="Y"/>
+        <cl:attribute name="filter" value="울산"/>
+        <cl:attribute name="tooltip" value="연주, 점유 차량번호 : 713번"/>
+        <cl:xylayoutdata std:sid="xyl-data-3f6c4776" top="591px" left="976px" width="213px" height="56px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        <cl:output std:sid="output-429a6abe" value="">
+          <cl:xylayoutdata std:sid="xyl-data-65cc0f9a" top="0px" right="0px" left="0px" height="36px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+        </cl:output>
+        <cl:output std:sid="output-9a5a5c31" value="">
+          <cl:xylayoutdata std:sid="xyl-data-945f3512" right="56px" bottom="0px" left="0px" height="20px" horizontalAnchor="BOTH" verticalAnchor="BOTTOM"/>
+        </cl:output>
+        <cl:xylayout std:sid="xylayout-074b73db"/>
+      </cl:group>
+      <cl:group std:sid="group-640c1027" class="area-item" tooltip="압연" visible="false">
+        <std:metadata>
+          <std:property key="hidden" value="true"/>
+        </std:metadata>
+        <cl:listener std:sid="listener-b1245e30" name="click" handler="onGroupClick3"/>
+        <cl:attribute name="areaitem" value="Y"/>
+        <cl:attribute name="filter" value="울산"/>
+        <cl:attribute name="tooltip" value="압연, 점유 차량번호 : 765번"/>
+        <cl:xylayoutdata std:sid="xyl-data-4f335167" top="473px" left="1231px" width="88px" height="157px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        <cl:output std:sid="output-9facde37" value="">
+          <cl:xylayoutdata std:sid="xyl-data-b53ef4b9" top="0px" right="0px" left="0px" height="131px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+        </cl:output>
+        <cl:output std:sid="output-eca62a83" value="">
+          <cl:xylayoutdata std:sid="xyl-data-ee6f0f42" right="30px" bottom="0px" left="0px" height="26px" horizontalAnchor="BOTH" verticalAnchor="BOTTOM"/>
+        </cl:output>
+        <cl:xylayout std:sid="xylayout-c14c329c"/>
+      </cl:group>
+      <cl:group std:sid="group-26758168" class="area-item" tooltip="제압" visible="false">
+        <std:metadata>
+          <std:property key="hidden" value="true"/>
+        </std:metadata>
+        <cl:listener std:sid="listener-251a17e3" name="click" handler="onGroupClick3"/>
+        <cl:attribute name="areaitem" value="Y"/>
+        <cl:attribute name="filter" value="포항"/>
+        <cl:attribute name="tooltip" value="제압, 점유 차량번호 : 110번"/>
+        <cl:xylayoutdata std:sid="xyl-data-003a713c" top="331px" left="1189px" width="116px" height="194px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        <cl:output std:sid="output-9512e04d" value="">
+          <cl:xylayoutdata std:sid="xyl-data-21a1266b" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+        </cl:output>
+        <cl:xylayout std:sid="xylayout-5841991e"/>
+      </cl:group>
+      <cl:group std:sid="group-839630ea" class="area-item" tooltip="연주" visible="false">
+        <std:metadata>
+          <std:property key="hidden" value="true"/>
+        </std:metadata>
+        <cl:listener std:sid="listener-c148b430" name="click" handler="onGroupClick3"/>
+        <cl:attribute name="areaitem" value="Y"/>
+        <cl:attribute name="filter" value="포항"/>
+        <cl:attribute name="tooltip" value="연주, 점유 차량번호 : 893번"/>
+        <cl:xylayoutdata std:sid="xyl-data-7a994ea8" top="321px" left="1092px" width="48px" height="336px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        <cl:output std:sid="output-9fcc219c" value="">
+          <cl:xylayoutdata std:sid="xyl-data-a2f32331" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+        </cl:output>
+        <cl:xylayout std:sid="xylayout-10a66f23"/>
+      </cl:group>
+      <cl:group std:sid="group-2ac18633" class="area-item" tooltip="압연" visible="false">
+        <std:metadata>
+          <std:property key="hidden" value="true"/>
+        </std:metadata>
+        <cl:listener std:sid="listener-bf853c24" name="click" handler="onGroupClick3"/>
+        <cl:attribute name="areaitem" value="Y"/>
+        <cl:attribute name="filter" value="포항"/>
+        <cl:attribute name="tooltip" value="압연, 점유 차량번호 : 990번"/>
+        <cl:xylayoutdata std:sid="xyl-data-e46cccef" top="619px" left="1189px" width="292px" height="50px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        <cl:output std:sid="output-a49a7878" value="">
+          <cl:xylayoutdata std:sid="xyl-data-212e3aba" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+        </cl:output>
+        <cl:xylayout std:sid="xylayout-6f592afe"/>
+      </cl:group>
+      <cl:xylayout std:sid="xylayout-3f37315c"/>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-6f3c7f92"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

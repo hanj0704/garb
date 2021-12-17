@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-6c7ae5e6" version="1.0.0.0">
+  <head std:sid="head-b97c7078">
+    <title>hexTest</title>
+    <screen std:sid="screen-8dadc766" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-b5b20865" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-3bf3fb8d" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-8b8635e7">
+      <cl:dataset std:sid="d-set-f0bc438d" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-4122e168" name="column1"/>
+          <cl:datacolumn std:sid="d-column-aa1cc971" name="column2"/>
+          <cl:datacolumn std:sid="d-column-b4e4e196" name="column3"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column11</cl:datavalue>
+            <cl:datavalue columnname="column2">column21</cl:datavalue>
+            <cl:datavalue columnname="column3">column31</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column12</cl:datavalue>
+            <cl:datavalue columnname="column2">column22</cl:datavalue>
+            <cl:datavalue columnname="column3">column32</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column13</cl:datavalue>
+            <cl:datavalue columnname="column2">column23</cl:datavalue>
+            <cl:datavalue columnname="column3">column33</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column14</cl:datavalue>
+            <cl:datavalue columnname="column2">column24</cl:datavalue>
+            <cl:datavalue columnname="column3">column34</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column15</cl:datavalue>
+            <cl:datavalue columnname="column2">column25</cl:datavalue>
+            <cl:datavalue columnname="column3">column35</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column16</cl:datavalue>
+            <cl:datavalue columnname="column2">column26</cl:datavalue>
+            <cl:datavalue columnname="column3">column36</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column17</cl:datavalue>
+            <cl:datavalue columnname="column2">column27</cl:datavalue>
+            <cl:datavalue columnname="column3">column37</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column18</cl:datavalue>
+            <cl:datavalue columnname="column2">column28</cl:datavalue>
+            <cl:datavalue columnname="column3">column38</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column19</cl:datavalue>
+            <cl:datavalue columnname="column2">column29</cl:datavalue>
+            <cl:datavalue columnname="column3">column39</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column110</cl:datavalue>
+            <cl:datavalue columnname="column2">column210</cl:datavalue>
+            <cl:datavalue columnname="column3">column310</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-1dae983e" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-260e545c" id="grp1" class="cl-form-group">
+      <cl:xylayoutdata std:sid="xyl-data-48c11cdb" height="208px" horizontalAnchor="BOTH" left="130px" right="20px" top="30px" verticalAnchor="TOP"/>
+      <cl:formlayout std:sid="f-layout-3bc5e39a" hmargin="5px" hseparatortype="BY_CLASS" hseparatorwidth="1" hspace="10px" vmargin="5px" vseparatortype="BY_CLASS" vseparatorwidth="1" vspace="10px">
+        <cl:rows autoSizing="false" length="25" minlength="0" shadecolor="#000000" shadetype="BY_CLASS" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="100" shadetype="BY_CLASS" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:button std:sid="button-d7cd8b47" id="btn1" value="Button">
+      <cl:listener std:sid="listener-f710753c" handler="onBtn1Click" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-023e5b82" height="20px" horizontalAnchor="LEFT" left="20px" top="20px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:output std:sid="output-c5eba9ba" id="opt1" class="bot2" value="Output">
+      <cl:xylayoutdata std:sid="xyl-data-4bca38d2" height="73px" horizontalAnchor="LEFT" left="143px" top="284px" verticalAnchor="TOP" width="179px"/>
+    </cl:output>
+    <cl:xylayout std:sid="xylayout-54063f42"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

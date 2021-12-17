@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-c9e6c63b" version="1.0.0.0">
+  <head std:sid="head-3dd71a34">
+    <title>MinimizeButton</title>
+    <screen std:sid="screen-0f2af081" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-0f34218d" id="tablet" height="768px" maxwidth="1023px" minwidth="800px" name="tablet" width="800px"/>
+    <screen std:sid="screen-13afaa5f" id="mobile" height="768px" maxwidth="799px" name="mobile" width="500px"/>
+    <cl:model std:sid="model-70053ea2"/>
+    <cl:appspec>
+      <cl:property bindable="true" std:desc="최소화되는 타겟" name="target" type="control"/>
+      <cl:property default="false" std:desc="최소화 여부" name="minimize" type="boolean"/>
+      <cl:property bindable="true" default="1" name="minimizeIndex" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-d48684ca" style="top:0px; left:0px; width:25px; height:25px;">
+    <cl:listener std:sid="listener-3c6b90e3" handler="onBodyPropertyChange" name="property-change"/>
+    <cl:button std:sid="button-7e5df29b" id="btn">
+      <cl:listener std:sid="listener-df1d7bdc" handler="onButtonClick" name="click"/>
+      <cl:expbind category="PROPERTY" property="value" expression="@minimize == true ? &quot;+&quot; : &quot;-&quot;"/>
+      <cl:xylayoutdata std:sid="xyl-data-b0f49053" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-f36d7537"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

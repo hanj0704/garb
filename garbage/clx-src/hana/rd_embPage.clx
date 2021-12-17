@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ab76b31d" version="1.0.0.0">
+  <head std:sid="head-dca70f59">
+    <title>rd_embPage</title>
+    <screen std:sid="screen-0e4f2eb6" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-edbd55f1" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-ad5502f9" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-6d2b1697">
+      <cl:datamap std:sid="d-map-943cdc61" id="dmParam">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-52fddc77" name="strParam1"/>
+          <cl:datacolumn std:sid="d-column-c7096333" name="strParam2"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-d1eae340" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:output std:sid="output-cd1f9eb5" style="border-right-style:solid; border-top-width:1px; border-bottom-color:gray; border-right-width:1px; border-left-style:solid; border-bottom-width:1px; border-left-color:gray; border-top-color:gray; border-bottom-style:solid; border-right-color:gray; border-left-width:1px; border-top-style:solid;" value="임베디드페이지를 이용한 Clip 레포트 연동 예제입니다.&#xD;&#xA;본 예제의 연동방법을 사용할 경우, 레포트의 파라미터 및 옵션을 POST 방식으로 전달가능합니다.&#xD;&#xA;해당 연동 방식을 사용할 경우, 레포트를 연동하는 jsp 파일이 필요합니다.&#xD;&#xA;&#xD;&#xA;[조회]버튼을 누르면 조회조건의 파라미터(데이터맵 바인딩)가 레포트로 전달됩니다.&#xD;&#xA;&#xD;&#xA;※ 주의사항&#xD;&#xA;- 연동에 실패했을 경우, 레포트서버 url이 틀렸는지 확인하십시오.">
+      <cl:xylayoutdata std:sid="xyl-data-8a1126be" height="200px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:group std:sid="group-1abef0fe" class="cl-form-group">
+      <cl:datamapcontext datacontrolid="dmParam"/>
+      <cl:xylayoutdata std:sid="xyl-data-a6234ae9" height="50px" horizontalAnchor="BOTH" left="20px" right="20px" top="230px" verticalAnchor="TOP"/>
+      <cl:output std:sid="output-06a02582" value="param1">
+        <cl:formdata std:sid="f-data-c7e5246d" col="0" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-bb24cb67" value="param2">
+        <cl:formdata std:sid="f-data-3fc19428" col="2" row="0"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-1f2577b2" id="ipb1">
+        <cl:relativebind property="value" columnname="strParam1"/>
+        <cl:formdata std:sid="f-data-b84630db" col="1" row="0"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-2a1ccf9f" id="ipb2">
+        <cl:relativebind property="value" columnname="strParam2"/>
+        <cl:formdata std:sid="f-data-134c522b" col="3" row="0"/>
+      </cl:inputbox>
+      <cl:button std:sid="button-5071f277" value="조회">
+        <cl:listener std:sid="listener-bf0df612" handler="onButtonClick" name="click"/>
+        <cl:formdata std:sid="f-data-2e3f8261" col="5" row="0"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-f580db34" bottom-margin="1fr" hspace="10px" left-margin="5px" right-margin="5px" top-margin="1fr" vspace="10px">
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="100" shadetype="BY_CLASS" unit="PIXEL"/>
+        <cl:columns length="200"/>
+        <cl:columns length="100" shadetype="BY_CLASS" unit="PIXEL"/>
+        <cl:columns length="200"/>
+        <cl:columns autoSizing="false" length="1" minlength="0" shadecolor="#000000" unit="FRACTION"/>
+        <cl:columns autoSizing="false" length="70" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:embeddedpage std:sid="e-page-74afec90" id="ep1" src="blankReport.jsp">
+      <cl:xylayoutdata std:sid="xyl-data-72000590" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="290px" verticalAnchor="BOTH"/>
+    </cl:embeddedpage>
+    <cl:xylayout std:sid="xylayout-0158697f"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

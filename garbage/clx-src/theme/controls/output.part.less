@@ -1,0 +1,177 @@
+@import "../settings.part.less";
+
+/* 아웃풋 */	
+.cl-output {
+	font: @default-font;
+	color: @default-text-color;
+
+	&.cl-disabled{
+		color: @disabled-text-color;
+	}
+}
+
+
+.cl-output.vertical {
+	
+	background-image :	url(image/vertical.svg);
+	max-width:100%;
+	max-height:100%;
+	height : auto;
+}
+
+
+.cl-output.horizontal {
+	
+	background-image : url(image/horizontal.png);
+	background-position : 50% 50%;
+	background-size : cover;
+	background-repeat : no-repeat;
+	
+}
+
+.bubble{
+    float:left;
+    max-width: 75%;
+    width: auto;    
+    height: auto;
+    display: block;
+    background: #ebebeb;
+    border-radius: 5px;
+    position: relative;
+    margin: 10px 0 3px 25px;   
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+    
+    &.alt{
+      margin: 10px 25px 3px 0px;
+      background:#DCF8C6;
+      float:right;
+    }
+    &.follow{
+      margin: 2px 0 3px 25px;
+    }
+    
+    &.altfollow{
+      margin: 2px 25px 3px 0px;
+      background:#DCF8C6;
+      float:right;   
+    }
+    .txt{
+      padding: 8px 0 8px 0;
+      width:100%;
+      .name{
+        font-weight: 600;
+        font-size: 14px;
+        display: inline-table;
+        padding: 0 0 0 15px;
+        margin: 0 0 4px 0;
+        color: #3498db;
+        span{
+          font-weight: normal;
+          color: #b3b3b3;
+          overflow: hidden;
+        }
+        &.alt{
+          color: #2ecc51;
+        }        
+      }
+      .message{
+        font-size: 14px;
+        font-weight:500;
+        padding: 0 15px 0 15px;
+        margin: auto;
+        color: #2b2b2b;
+        display: table;
+      }
+      .timestamp{
+        font-size: 11px;
+        margin: auto;
+        padding: 0 15px 0 0;
+        display: table;
+        float:right;
+        position: relative;
+        text-transform: uppercase; 
+        color: #999
+      }
+    }
+    .bubble-arrow {
+      position: absolute;
+      float:left;
+      left: -11px;
+      top: 0px;
+      &.alt{
+        bottom: 20px;
+        left: auto;
+        right: 4px;
+        float:right;
+      }
+    }
+    .bubble-arrow:after {
+      content: "";
+      position: absolute;
+      border-top: 15px solid #ebebeb;
+      border-left: 15px solid transparent;           
+      border-radius: 4px 0 0 0px;
+      width: 0;
+      height: 0;
+      //box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); 
+      //looks like I can't give a shadow to the arrows
+    }
+    .bubble-arrow.alt:after {
+      border-top: 15px solid #DCF8C6;
+      transform: scaleX(-1);
+    }
+  }
+  
+  .cl-output.bot2 {
+			background-color: rgba(255, 230, 179,0.3);
+			border-radius: 5px;
+			padding: 4px 10px;
+			text-align: center;
+			box-shadow: 5px 5px 12px 0px rgba(240,240,240,1);
+			overflow: visible !important;
+			
+			&:before {
+			    content: "";
+			    position: absolute;
+			    display: block;
+			    z-index: 2;
+			    top: 0px;
+			    left: -7px;
+			    height: 10px;
+			    border-left: 10px solid rgba(255, 230, 179,0.3);
+			    border-bottom-left-radius: 20px 20px;
+			    color: #CFEFFE;
+			  }
+			&:not(.cl-disabled):hover{
+			background-color:  rgba(255, 230, 179,1);
+			&:before {
+				border-left : 10px solid rgba(255,230,179,1);
+			}
+			}
+		}
+  
+  
+  .cl-output.bot {
+			background-color: #CFEFFF;
+			//border: 1px solid #BFBFBF;
+			border-radius: 5px;
+			padding: 4px 10px;
+			text-align: left;
+			overflow: visible !important;
+			box-shadow: 0px 5px 10px 0px rgba(221,221,221,1);
+			
+			&:before {
+			    content: "";
+			    position: absolute;
+			    display: block;
+			    z-index: 2;
+			    top: 0px;
+			    left: -7px;
+			    height: 10px;
+			    border-left: 10px solid #CFEFFE;
+			    border-bottom-left-radius: 20px 20px;
+//			    transform: translate(0, -2px);
+//			    -webkit-transform: translate(0, -2px);
+			    color: #CFEFFE;
+			  }
+		}

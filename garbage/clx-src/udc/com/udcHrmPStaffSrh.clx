@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-5df16f26" version="1.0.0.0">
+  <head std:sid="head-d96bf7c3">
+    <title>cmnPCodeSch</title>
+    <screen std:sid="screen-e1aa072f" id="default" name="default" minwidth="1024px" width="1024px" height="768px" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-661325a0" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-2487aa82" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-c4cd88f6">
+      <cl:datamap std:sid="d-map-c8faeab9" id="dmParam">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-970dce4b" name="strStaffNo"/>
+          <cl:datacolumn std:sid="d-column-e05c3f01" name="strStaffNm"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:dataset std:sid="d-set-cc8672fa" id="dsStaff">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-a9cd27cd" name="PARTY_ID"/>
+          <cl:datacolumn std:sid="d-column-d600d8f4" name="STAFF_NO"/>
+          <cl:datacolumn std:sid="d-column-36ad9ce4" name="SSN"/>
+          <cl:datacolumn std:sid="d-column-9d8ac336" name="STAFF_NM"/>
+          <cl:datacolumn std:sid="d-column-ac445910" name="STAFF_ENG_NM"/>
+          <cl:datacolumn std:sid="d-column-661eaa31" name="BIRTHDAY"/>
+          <cl:datacolumn std:sid="d-column-44654cb7" name="LNR_SLR_DIV_RCD"/>
+          <cl:datacolumn std:sid="d-column-83ac4e05" name="GENDER_RCD"/>
+          <cl:datacolumn std:sid="d-column-293a8c44" name="NAT_RCD"/>
+          <cl:datacolumn std:sid="d-column-b3d25347" name="ONOFFI_STAT_RCD"/>
+          <cl:datacolumn std:sid="d-column-51f88b9e" name="WKGRD_RCD"/>
+          <cl:datacolumn std:sid="d-column-4fd741f9" name="DEPT_CD"/>
+          <cl:datacolumn std:sid="d-column-99994db5" name="DEPT_NM"/>
+          <cl:datacolumn std:sid="d-column-308bb5c0" name="CIR_ST_DT"/>
+          <cl:datacolumn std:sid="d-column-625a5907" name="ENTCO_DT"/>
+          <cl:datacolumn std:sid="d-column-019e221a" name="RETI_DT"/>
+          <cl:datacolumn std:sid="d-column-822f3044" name="FINAL_SCL"/>
+          <cl:datacolumn std:sid="d-column-c02c7ea3" name="ACCR_DIV_RCD"/>
+          <cl:datacolumn std:sid="d-column-69074680" name="EMAIL"/>
+          <cl:datacolumn std:sid="d-column-89aaa2b0" name="ADDR"/>
+          <cl:datacolumn std:sid="d-column-e904f88f" name="CLP_NO"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="사원검색">
+      <cl:property name="value" type="string" bindable="true" std:desc="검색인풋 바인딩 컬럼"/>
+      <cl:property name="required" type="string" bindable="true" std:desc="입력값 필수입력 체크여부(Y/공백)"/>
+      <cl:property name="iPartyDiv" type="string" bindable="true" std:desc="[검색] 구성원 구분값 (사용자구분코드)"/>
+      <cl:property name="iHostDiv" type="string" bindable="true" std:desc="[필터] 부모 화면 구분값 (구성원 구분 필터처리)"/>
+      <cl:property name="oStaffNo" type="string" bindable="true" std:desc="사원번호"/>
+      <cl:property name="oNmKor" type="string" bindable="true" std:desc="한글성명"/>
+      <cl:property name="oNmEng" type="string" bindable="true" std:desc="영문성명"/>
+      <cl:property name="oOnffiStatRcd" type="string" bindable="true" std:desc="재직상태"/>
+      <cl:property name="oGenderRcd" type="string" bindable="true" std:desc="성별코드"/>
+      <cl:property name="oBrtdy" type="string" bindable="true" std:desc="생년월일"/>
+      <cl:property name="oDeptCd" type="string" bindable="true" std:desc="부서코드"/>
+      <cl:property name="oDeptNm" type="string" bindable="true" std:desc="부서명"/>
+      <cl:property name="oWkgrdRcd" type="string" bindable="true" std:desc="직급코드"/>
+      <cl:property name="oCirStDt" type="string" bindable="true" std:desc="경력시작일자"/>
+      <cl:property name="oNatRcd" type="string" bindable="true" std:desc="국가코드"/>
+      <cl:property name="oLnrSlrDivRcd" type="string" bindable="true" std:desc="음양력코드"/>
+      <cl:property name="iName" type="string" bindable="true" std:desc="[검색] 사용자명 (LIKE 조회)"/>
+      <cl:property name="oEntcoDt" type="string" bindable="true" translatable="false" std:desc="입사일자"/>
+      <cl:property name="oRetiDt" type="string" bindable="true" translatable="false" std:desc="퇴직일자"/>
+      <cl:property name="oFinalScl" type="string" bindable="true" std:desc="최종학교"/>
+      <cl:property name="oAccrDivRcd" type="string" bindable="true" std:desc="학력구분코드"/>
+      <cl:property name="oEmail" type="string" bindable="true" std:desc="이메일"/>
+      <cl:property name="oAddr" type="string" bindable="true" std:desc="주소"/>
+      <cl:property name="oClpNo" type="string" bindable="true" std:desc="휴대폰번호"/>
+      <cl:property name="oSsn" type="string" bindable="true" std:desc="주민등록번호"/>
+      <cl:event name="search" type="cpr.events.CUIEvent"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-2f3be71e" style="top:0px; left:0px; width:120px; height:20px;">
+    <cl:listener std:sid="listener-b09abb46" name="property-change" handler="onBodyPropertyChange"/>
+    <cl:button std:sid="button-9449e9a7" id="btnPopParty" class="btn-pop-search">
+      <cl:listener std:sid="listener-73ec09cb" name="click" handler="onBtnPopPartyClick"/>
+      <cl:xylayoutdata std:sid="xyl-data-a00c30a0" top="0px" right="1px" bottom="0px" width="20px" horizontalAnchor="RIGHT" verticalAnchor="BOTH"/>
+    </cl:button>
+    <cl:inputbox std:sid="i-box-c23449cc" id="ipbStaffNo" style="text-align:center;" lengthunit="utf8" maxlength="15">
+      <cl:listener std:sid="listener-4293f0db" name="value-change" handler="onIpbPartyIdValueChange"/>
+      <cl:listener std:sid="listener-a96b3cf9" name="keydown" handler="onIpbPartyIdKeydown"/>
+      <cl:apppropbind property="value" category="PROPERTY" app-property="value"/>
+      <cl:xylayoutdata std:sid="xyl-data-b4444272" top="0px" right="20px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+    </cl:inputbox>
+    <cl:xylayout std:sid="xylayout-d62f6419" scrollable="false"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

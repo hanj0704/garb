@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-444162f1" version="1.0.0.0">
+  <head std:sid="head-0cbdfdbe">
+    <title>containerChanger</title>
+    <screen std:sid="screen-7c372fde" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-cb3ddc4e" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-b7dfc5f6" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-4047f322"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-997e640f" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-a1d71439" id="grp1">
+      <cl:xylayoutdata std:sid="xyl-data-e39b8ff0" top="20px" left="20px" width="401px" height="479px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:button std:sid="button-a122c564" value="Button">
+        <cl:verticaldata std:sid="v-data-3abdf2ae" width="400px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-2336d838" value="Button">
+        <cl:verticaldata std:sid="v-data-494d9a89" width="400px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-af9c27ec" value="Button">
+        <cl:verticaldata std:sid="v-data-fcf973ad" width="400px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-a53a1717" value="Button">
+        <cl:verticaldata std:sid="v-data-7dc94bd5" width="400px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-14336663" value="Button">
+        <cl:verticaldata std:sid="v-data-1e168141" width="400px" height="20px" autosize="none"/>
+      </cl:button>
+      <cl:verticallayout std:sid="v-layout-57619bd9"/>
+    </cl:group>
+    <cl:button std:sid="button-ce027bcc" value="Button">
+      <cl:listener std:sid="listener-2da6b8c1" name="click" handler="onButtonClick"/>
+      <cl:xylayoutdata std:sid="xyl-data-0c411696" top="20px" left="431px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-15b5eac7"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

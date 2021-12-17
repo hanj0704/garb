@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-59a23eb3" version="1.0.0.0">
+  <head std:sid="head-5ce5a423">
+    <title>fileTester</title>
+    <screen std:sid="screen-c62fc5e8" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-c14ea4e6" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-4e71e809" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-7de7ef36"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-22b007f1" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:fileupload std:sid="f-upload-033833ca" id="fud1">
+      <cl:xylayoutdata std:sid="xyl-data-6b0d217e" top="47px" left="34px" width="608px" height="271px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:fileupload>
+    <cl:fileinput std:sid="f-input-622f36a9" id="fi1">
+      <cl:xylayoutdata std:sid="xyl-data-ab5c49ca" top="301px" left="34px" width="663px" height="82px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:fileinput>
+    <cl:output std:sid="output-0c7438f4" value="1050" datatype="number" format="s#,##0.000">
+      <std:metadata>
+        <std:property key="template-uuid" value="bad9c794-c683-4626-a427-05c2f443796f"/>
+        <std:property key="template-rev" value="3"/>
+      </std:metadata>
+      <cl:xylayoutdata std:sid="xyl-data-b38c3fe8" top="393px" left="34px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:output std:sid="output-19ec0e78" value="1050" datatype="number" format="s#,##0.00">
+      <std:metadata>
+        <std:property key="template-uuid" value="bad9c794-c683-4626-a427-05c2f443796f"/>
+        <std:property key="template-rev" value="2"/>
+      </std:metadata>
+      <cl:xylayoutdata std:sid="xyl-data-590dd2c5" top="436px" left="171px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:xylayout std:sid="xylayout-c108ea2f"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

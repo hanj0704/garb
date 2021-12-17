@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-6f7e4ebe" version="1.0.0.0">
+  <head std:sid="head-bdfea306">
+    <title>floatControl</title>
+    <screen std:sid="screen-7db110ed" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-b5326bf1" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-8e4d0b60" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-9936ba79"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-52a9fa6c" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-a023691e" handler="onBodyMouseleave" name="mouseleave"/>
+    <cl:button std:sid="button-bd592558" id="btn1" value="floatcontrol">
+      <cl:listener std:sid="listener-d1053f4d" handler="onBtn4Click" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-94e753e9" height="20px" horizontalAnchor="LEFT" left="14px" top="20px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:button std:sid="button-c4e3df3d" id="btn3" value="floatControl+redraw">
+      <cl:listener std:sid="listener-d647bdf3" handler="onBtn3Click" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-c1b72693" height="20px" horizontalAnchor="LEFT" left="124px" top="20px" verticalAnchor="TOP" width="184px"/>
+    </cl:button>
+    <cl:button std:sid="button-4688bb0e" id="btn2" value="Button">
+      <cl:xylayoutdata std:sid="xyl-data-672fdd2c" height="20px" horizontalAnchor="LEFT" left="72px" top="76px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:embeddedapp std:sid="e-app-cca884d4" id="ea1">
+      <cl:xylayoutdata std:sid="xyl-data-bd412a9f" height="240px" horizontalAnchor="LEFT" left="20px" top="106px" verticalAnchor="TOP" width="320px"/>
+    </cl:embeddedapp>
+    <cl:xylayout std:sid="xylayout-1e02fdda"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

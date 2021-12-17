@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9f8372d8" version="1.0.0.0">
+  <head std:sid="head-b0da7968">
+    <title>dialogs</title>
+    <screen std:sid="screen-a95c6663" id="default" name="default" minwidth="1024px" width="1024px" height="768px" useCustomWidth="true" useCustomHeight="true" customHeight="70" customWidth="200"/>
+    <screen std:sid="screen-09ef26be" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-e3881fe6" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-57063e78"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-1559b10d" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-6ac5b621" name="load" handler="onBodyLoad"/>
+    <cl:listener std:sid="listener-a43a4d88" name="init" handler="onBodyInit"/>
+    <cl:button std:sid="button-3e6a7888" id="btn1" value="Button">
+      <cl:listener std:sid="listener-d0a0acd5" name="click" handler="onBtn1Click"/>
+      <cl:verticaldata std:sid="v-data-ddbc988d" width="100px" height="141px"/>
+    </cl:button>
+    <cl:embeddedapp std:sid="e-app-100ba361" id="ea1" src="../202005/DragMoveTest.clx">
+      <cl:verticaldata std:sid="v-data-5b62c278" width="320px" height="400px" autosize="both"/>
+    </cl:embeddedapp>
+    <cl:verticallayout std:sid="v-layout-373ead4f"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

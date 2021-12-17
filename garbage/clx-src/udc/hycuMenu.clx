@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-7fc532d8" version="1.0.0.0">
+  <head std:sid="head-0f353db6">
+    <title>hycuMenu</title>
+    <screen std:sid="screen-206fbd44" id="default" customHeight="600" customWidth="800" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-8138e404" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-dcb29221" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-be0a633d"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-63ea5c2e" style="top:0px; left:0px; width:150px; height:300px;">
+    <cl:listener std:sid="listener-3d588607" handler="onBodyLoad" name="load"/>
+    <cl:output std:sid="output-6728f20c" id="optParent" style="border-bottom-color:lightgray; font-weight:bold; border-bottom-width:2px; font-size:12pt; border-bottom-style:solid; text-align:center;">
+      <cl:verticaldata std:sid="v-data-73055584" height="44px" width="100px"/>
+    </cl:output>
+    <cl:output std:sid="output-7b8c76d7" id="opt1" value="">
+      <cl:verticaldata std:sid="v-data-e8092189" height="5px" width="100px"/>
+    </cl:output>
+    <cl:verticallayout bottommargin="10" leftmargin="10" rightmargin="10" topmargin="10"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>
