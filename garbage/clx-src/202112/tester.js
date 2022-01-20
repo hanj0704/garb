@@ -593,3 +593,280 @@ function onSms1SubmitUploadProgress(/* cpr.events.CSubmissionEvent */ e){
 	console.log(e.loaded);
 	console.log(e.total);
 }
+
+cpr.core.NotificationCenter.INSTANCE.subscribe("app-msg", this, function(poMsgInfo){
+	
+	console.log(poMsgInfo);
+	var a= ValueUtil.isNull(poMsgInfo["DELAY"]);
+	console.log(a);
+	var vcs = app.lookup("noti");
+	var vnDe = poMsgInfo["DELAY"];
+	var vsMsg = poMsgInfo["MSG"];
+	console.log(vnDe);
+	console.log(typeof vnDe);
+	vcs.infoDelay = vnDe;
+	vcs.delay = vnDe;
+	vcs.info(poMsgInfo["MSG"]);
+	vcs.notify(vsMsg);
+});
+
+/*
+ * "delayTest" 버튼(btn26)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn26Click(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var btn26 = e.control;
+	var voTest  = {};
+	voTest.DELAY = 1000;
+	voTest.TYPE = "뮤";
+	voTest.MSG = "쿄쿄쿄쿄쿄";
+	cpr.core.NotificationCenter.INSTANCE.post("app-msg", voTest);
+}
+
+
+var mcBtn = null;
+/*
+ * "float1" 버튼(btn27)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn27Click(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var btn27 = e.control;
+	if(!(mcBtn instanceof cpr.controls.Button))
+	mcBtn = new cpr.controls.Button();
+	
+	app.floatControl(mcBtn,{
+		"left" : "500px",
+		"top" : "500px",
+		"width" : "100px",
+		"height" : "30px"
+	});
+}
+/*
+ * "float2" 버튼(btn28)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn28Click(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var btn28 = e.control;
+	app.floatControl(mcBtn,{
+		"left" : "700px",
+		"top" : "500px",
+		"width" : "100px",
+		"height" : "30px"
+	});
+	
+	app.getContainer().redraw();
+}
+
+
+/*
+ * "Button" 버튼(btn29)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn29Click(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var btn29 = e.control;
+	
+	
+	var ds = app.lookup("ds1");
+	var a = ds.getRow(1);
+}
+
+
+/*
+ * "null병합" 버튼(btn30)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn30Click(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var btn30 = e.control;
+	
+	var a = 1;
+	var b = 2;
+	
+}
+
+
+/*
+ * "Button" 버튼(btn31)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn31Click(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var btn31 = e.control;
+	
+	var grp = app.lookup("grp3");
+	
+	console.log(grp.getActualRect());
+	console.log(grp.getContentPaneRect());
+	
+}
+
+
+/*
+ * "Button" 버튼(btn33)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn33Click(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var btn33 = e.control;
+	
+	app.lookup("sms2").send();
+	
+//	app.lookup("sms2").parameter
+}
+
+
+/*
+ * "Button" 버튼(btn34)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn34Click(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var btn34 = e.control;
+	
+	var ha = app.lookup("ha");
+	
+	
+	console.log(ha instanceof cpr.controls.UDCBase);
+}
+
+
+/*
+ * "Button" 버튼(btn35)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn35Click(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var btn35 = e.control;
+	
+	console.log(isNaN(1));
+}
+
+
+/*
+ * 그리드에서 selection-change 이벤트 발생 시 호출.
+ * detail의 cell 클릭하여 설정된 selectionunit에 해당되는 단위가 선택될 때 발생하는 이벤트.
+ */
+function onGrd2SelectionChange(/* cpr.events.CSelectionEvent */ e){
+	/** 
+	 * @type cpr.controls.Grid
+	 */
+	var grd2 = e.control;
+	
+}
+
+
+/*
+ * "float and openDLaig" 버튼(btn36)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn36Click(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var btn36 = e.control;
+	
+	
+}
+
+
+/*
+ * "Button" 버튼(btn37)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn37Click(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var btn37 = e.control;
+	
+	var grd = app.lookup("grd2");
+	grd.getExportData({
+		exceptStyle : true,
+		applyFormat : true,
+		excludeCols : [cellIndex]
+	})
+//	var a = grd.getFilter();
+//	grd.filter(a + "&& getIndex() != 2");
+}
+
+
+/*
+ * "Button" 버튼(btn38)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn38Click(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var btn38 = e.control;
+	var grd = app.lookup("grd2");
+	grd.filter("column1 > 4");
+	grd.redraw();
+}
+
+
+/*
+ * 캘린더에서 value-change 이벤트 발생 시 호출.
+ * Calendar의 value를 변경하여 변경된 값이 저장된 후에 발생하는 이벤트.
+ */
+function onCal1ValueChange(/* cpr.events.CValueChangeEvent */ e){
+	/** 
+	 * @type cpr.controls.Calendar
+	 */
+	var cal1 = e.control;
+	var va = e.newValue;
+	var a = moment(va,"YYYYMMDD");
+//	console.log(a.week());
+//	console.log(a.week() - a.startOf("month").week() + 1);
+//	console.log(moment().startOf('month').week());
+	var df = a.week() - a.startOf("month").week()+1;
+	df = df == -47 ? 5 : df;
+	console.log(df);
+	console.log(e.newValue);
+//	var vara = moment.duration(a.diff(moment("20210101","YYYYMMDD"))).asDays();
+//	console.log(moment.duration(a.diff(moment("20210101","YYYYMMDD"))).asDays());
+////	console.log(a.weekday());
+////	console.log(a.weeks()%7);
+//	var b = moment("20200101","YYYYMMDD");
+////	console.log(b);
+//	console.log(b.add(vara, "day").format("YYYYMMDD"));
+}
+
+
+/*
+ * "Button" 버튼(btn39)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn39Click(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var btn39 = e.control;
+	
+	var a = moment("20200608","YYYYMMDD");
+	var b = moment("20190610","YYYYMMDD");
+	
+	console.log(moment.duration(a.diff(b)).asDays())
+}

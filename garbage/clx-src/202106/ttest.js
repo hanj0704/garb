@@ -76,14 +76,14 @@ function onBtn6Click(/* cpr.events.CMouseEvent */ e) {
 	
 		var copyedObject = obj.constructor();
 		
-//		for(var key in obj) {
-//			if(obj.hasOwnProperty(key)) {
-//				if(key != "_id" && key != "_uuid"){
-//					console.log(key);
-//					copyedObject[key] = obj[key];
-//				}
-//			}
-//		}
+		for(var key in obj) {
+			if(obj.hasOwnProperty(key)) {
+				if(key != "_id" && key != "_uuid"){
+					console.log(key);
+					copyedObject[key] = obj[key];
+				}
+			}
+		}
 		return copyedObject;
 		
 	}

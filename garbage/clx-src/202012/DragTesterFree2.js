@@ -66,8 +66,9 @@ function setDragSource(control) {
 		},
 		onDragMove: function(context) {
 			context.cursor = "grabbing";
-			var newRect = actualRect.getTranslatedByDimension(context.dragDelta);
+			var newRect = actualRect.getTranslated(context.dragDelta);
 			app.floatControl(feedback, newRect);
+			app.getContainer().redraw();
 		},
 		onDragEnd: function(context) {
 			context.cursor = "";

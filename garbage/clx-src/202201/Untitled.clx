@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ca97fc90" version="1.0.3519">
+  <head std:sid="head-946d7916">
+    <screen std:sid="screen-abe201da" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-24c10f90" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-9ca386a8" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-d3bd7be6">
+      <cl:dataset std:sid="d-set-317f4d9e" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-bfa11876" name="column1"/>
+          <cl:datacolumn std:sid="d-column-3730f145" name="column2"/>
+          <cl:datacolumn std:sid="d-column-429246e4" name="column3"/>
+          <cl:datacolumn std:sid="d-column-ab571212" name="column4"/>
+          <cl:datacolumn std:sid="d-column-2a7fcec3" name="column5"/>
+          <cl:datacolumn std:sid="d-column-9e80acc7" name="column6"/>
+          <cl:datacolumn std:sid="d-column-991baf7a" name="column7"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-388336df">
+    <cl:listener std:sid="listener-0cc69bcd" name="load" handler="onBodyLoad"/>
+    <cl:grid std:sid="grid-e65dd946" id="grd1" datasetid="ds1" autofit="1" columnMovable="true">
+      <cl:xylayoutdata std:sid="xyl-data-9566ad3f" top="20px" left="20px" width="396px" height="348px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:gridcolumn std:sid="g-column-90f6200c" width="24px"/>
+      <cl:gridcolumn std:sid="g-column-2cb73792"/>
+      <cl:gridheader std:sid="gh-band-456c04c3">
+        <cl:gridrow std:sid="g-row-9f2a9c32"/>
+        <cl:gridcell std:sid="gh-cell-317cac0e" rowindex="0" colindex="0" sortable="false" filterable="false" columntype="checkbox"/>
+        <cl:gridcell std:sid="gh-cell-d0ef3b73" rowindex="0" colindex="1" targetcolumnname="column1" sortable="true" filterable="true" text="코드명"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-f27c993f">
+        <cl:gridrow std:sid="g-row-25a1a11e"/>
+        <cl:gridcell std:sid="gd-cell-b361c2bb" rowindex="0" colindex="0" columntype="checkbox"/>
+        <cl:gridcell std:sid="gd-cell-9b0fb45c" rowindex="0" colindex="1" columnname="column1"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:listbox std:sid="l-box-47516d5e" id="lbx1">
+      <cl:xylayoutdata std:sid="xyl-data-32c406ec" top="20px" left="426px" width="100px" height="150px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:item std:sid="item-1a76a560" label="label1" value="value1"/>
+      <cl:item std:sid="item-15403cf6" label="label2" value="value2"/>
+      <cl:item std:sid="item-df193e09" label="label3" value="value3"/>
+    </cl:listbox>
+    <cl:accordion std:sid="accordion-d95dc3c2">
+      <cl:xylayoutdata std:sid="xyl-data-8fe5ce36" top="52px" left="575px" width="272px" height="456px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:sectionitem std:sid="s-item-7bcc4d60" title="item 1">
+        <cl:group std:sid="group-6e5411f3" id="grp1">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:xylayout std:sid="xylayout-8f95ff9e"/>
+        </cl:group>
+      </cl:sectionitem>
+      <cl:sectionitem std:sid="s-item-e6445078" title="item 2">
+        <cl:group std:sid="group-57ca5020" id="grp2">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:xylayout std:sid="xylayout-51d1b00b"/>
+        </cl:group>
+      </cl:sectionitem>
+    </cl:accordion>
+    <cl:xylayout std:sid="xylayout-8958b73b" animationduration="0.5"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

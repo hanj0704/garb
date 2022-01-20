@@ -9,6 +9,7 @@
     <cl:appspec>
       <cl:property name="value" type="string" bindable="true"/>
       <cl:event name="search" type="cpr.events.CUIEvent"/>
+      <cl:event name="value-change" type="cpr.events.CValueChangeEvent"/>
     </cl:appspec>
   </head>
   <body std:sid="body-8ea0527e" style="top:0px; left:0px; width:300px; height:30px;">
@@ -16,6 +17,7 @@
     <cl:group std:sid="group-2183204d">
       <cl:xylayoutdata std:sid="xyl-data-bd51781e" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
       <cl:inputbox std:sid="i-box-aa2044fd" id="ipbCntyNm">
+        <cl:listener std:sid="listener-c974f0b2" name="value-change" handler="onIpbCntyNmValueChange"/>
         <cl:formdata std:sid="f-data-a86252ad" row="0" col="1"/>
       </cl:inputbox>
       <cl:searchinput std:sid="s-input-997f58b4" id="ipbCntyCd">

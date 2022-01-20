@@ -68,6 +68,14 @@
       <cl:listener std:sid="listener-c84c4e12" name="click" handler="onBtn3Click"/>
       <cl:flowlayoutdata std:sid="f-data-08eb775a" width="200px" height="40px" autosize="none"/>
     </cl:button>
+    <cl:button std:sid="button-8d41e9d6" id="btn4" value="embeddedPage src">
+      <cl:listener std:sid="listener-c7d78cb0" name="click" handler="onBtn4Click"/>
+      <cl:flowlayoutdata std:sid="f-data-2b259ea3" width="200px" height="40px" autosize="none"/>
+    </cl:button>
+    <cl:button std:sid="button-33754f16" id="btn5" value="데이터셋 export">
+      <cl:listener std:sid="listener-0db92dd6" name="click" handler="onBtn5Click"/>
+      <cl:flowlayoutdata std:sid="f-data-575a541e" width="200px" height="40px" autosize="none"/>
+    </cl:button>
     <cl:flowlayout std:sid="f-layout-adff95ee" hspacing="20" vspacing="20" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
   </body>
   <std:studiosetting>

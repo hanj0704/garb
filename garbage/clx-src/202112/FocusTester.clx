@@ -20,6 +20,9 @@
     <cl:numbereditor std:sid="n-editor-6d7c9cda" id="nbe1">
       <cl:xylayoutdata std:sid="xyl-data-6d612542" top="80px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:numbereditor>
+    <cl:inputbox std:sid="i-box-35e1b5fe" id="ipb2">
+      <cl:xylayoutdata std:sid="xyl-data-8b0b2e5b" top="50px" left="130px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:inputbox>
     <cl:xylayout std:sid="xylayout-3833e380"/>
   </body>
   <std:studiosetting>

@@ -23,7 +23,7 @@ function onButtonClick(/* cpr.events.CMouseEvent */ e){
 	//export할 데이터셋
 	var voDsSub2 = app.lookup("dsGrid3");
 	var voDsSub3 = app.lookup("dsGrid4");
-	
+//	vcGrdMain.export
 	//2. 데이터를 json 형식으로 전환
 	var data1 = vcGrdMain.getExportData(false);
 	var data2 = vcGrdSub1.getExportData(false);

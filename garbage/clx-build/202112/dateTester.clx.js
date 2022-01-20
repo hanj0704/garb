@@ -36,6 +36,67 @@
 				
 				console.log(cal.selectItem(0));
 				console.log(cal.getSelectedItems())
+			}
+			
+			cpr.events.EventBus.INSTANCE.addFilter("selection-change", function(/*cpr.events.CSelectionEvent*/e){
+				
+				var control = e.control;
+				
+				if(control instanceof cpr.controls.Grid) {
+					
+					if(control.selectionMulti == "multi" && control.selectionUnit == "cell") {
+						/** @type Array */
+						var vaNewSelection = e.newSelection;
+						
+						if(vaNewSelection.length > 0) {
+							var vnResult = 0;
+							vaNewSelection.forEach(function(/*{rowIndex :Number,cellIndex:Number}*/each){
+								
+								var vAnyValue = control.getCellValue(each.rowIndex, each.cellIndex);
+								if(!isNaN(vAnyValue)) {
+									vnResult += Number(vAnyValue);
+								}
+							});
+							console.log(vnResult);
+						}
+					} else {
+						return;
+					}
+				}
+			});
+			
+			
+			
+			
+			/*
+			 * 데이트 인풋에서 click 이벤트 발생 시 호출.
+			 * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+			 */
+			function onDti1Click(/* cpr.events.CMouseEvent */ e){
+				/** 
+				 * @type cpr.controls.DateInput
+				 */
+				var dti1 = e.control;
+				
+			}
+			
+			
+			/*
+			 * 데이트 인풋에서 mousedown 이벤트 발생 시 호출.
+			 * 사용자가 컨트롤 위에 포인터를 위치한 상태로 마우스 버튼을 누를 때 발생하는 이벤트.
+			 */
+			function onDti1Mousedown(/* cpr.events.CMouseEvent */ e){
+				/** 
+				 * @type cpr.controls.DateInput
+				 */
+				var dti1 = e.control;
+				
+				console.log(e.target.className.indexOf("cl-dateinput-button"));
+				if(e.target.className.indexOf("cl-dateinput-button") != -1) {
+					
+					e.preventDefault();
+					e.stopPropagation();
+				}
 			};
 			// End - User Script
 			
@@ -55,6 +116,45 @@
 				]
 			});
 			app.register(dataSet_1);
+			
+			var dataSet_2 = new cpr.data.DataSet("ds2");
+			dataSet_2.parseData({
+				"columns": [
+					{"name": "column1"},
+					{
+						"name": "column2",
+						"dataType": "number"
+					},
+					{
+						"name": "column3",
+						"dataType": "number"
+					},
+					{
+						"name": "column4",
+						"dataType": "number"
+					},
+					{
+						"name": "column5",
+						"dataType": "string"
+					}
+				],
+				"rows": [
+					{"column1": "column11", "column2": "1", "column3": "1", "column4": "1", "column5": "column51"},
+					{"column1": "column12", "column2": "2", "column3": "2", "column4": "2", "column5": "column52"},
+					{"column1": "column13", "column2": "3", "column3": "3", "column4": "3", "column5": "column53"},
+					{"column1": "column14", "column2": "4", "column3": "4", "column4": "4", "column5": "column54"},
+					{"column1": "column15", "column2": "5", "column3": "5", "column4": "5", "column5": "column55"},
+					{"column1": "column16", "column2": "6", "column3": "6", "column4": "6", "column5": "column56"},
+					{"column1": "column17", "column2": "7", "column3": "7", "column4": "7", "column5": "column57"},
+					{"column1": "column18", "column2": "8", "column3": "8", "column4": "8", "column5": "column58"},
+					{"column1": "column19", "column2": "9", "column3": "9", "column4": "9", "column5": "column59"},
+					{"column1": "column110", "column2": "10", "column3": "10", "column4": "10", "column5": "column510"},
+					{"column1": "column111", "column2": "11", "column3": "11", "column4": "11", "column5": "column511"},
+					{"column1": "column112", "column2": "12", "column3": "12", "column4": "12", "column5": "column512"},
+					{"column1": "column113", "column2": "13", "column3": "13", "column4": "13", "column5": "column513"}
+				]
+			});
+			app.register(dataSet_2);
 			
 			app.supportMedia("all and (min-width: 1024px)", "default");
 			app.supportMedia("all and (min-width: 500px) and (max-width: 1023px)", "tablet");
@@ -99,6 +199,154 @@
 				"left": "305px",
 				"width": "100px",
 				"height": "20px"
+			});
+			
+			var grid_1 = new cpr.controls.Grid("grd1");
+			grid_1.init({
+				"dataSet": app.lookup("ds2"),
+				"selectionUnit": "cell",
+				"selectionMulti": "multi",
+				"columns": [
+					{"width": "40px"},
+					{"width": "50px"},
+					{"width": "100px"},
+					{"width": "100px"},
+					{"width": "100px"},
+					{"width": "100px"},
+					{"width": "100px"}
+				],
+				"header": {
+					"rows": [{"height": "24px"}],
+					"cells": [
+						{
+							"constraint": {"rowIndex": 0, "colIndex": 0},
+							"configurator": function(cell){
+								cell.filterable = false;
+								cell.sortable = false;
+								cell.columnType = "checkbox";
+							}
+						},
+						{
+							"constraint": {"rowIndex": 0, "colIndex": 1},
+							"configurator": function(cell){
+								cell.filterable = false;
+								cell.sortable = false;
+							}
+						},
+						{
+							"constraint": {"rowIndex": 0, "colIndex": 2},
+							"configurator": function(cell){
+								cell.targetColumnName = "column1";
+								cell.filterable = false;
+								cell.sortable = false;
+								cell.text = "column1";
+							}
+						},
+						{
+							"constraint": {"rowIndex": 0, "colIndex": 3},
+							"configurator": function(cell){
+								cell.targetColumnName = "column2";
+								cell.filterable = false;
+								cell.sortable = false;
+								cell.text = "column2";
+							}
+						},
+						{
+							"constraint": {"rowIndex": 0, "colIndex": 4},
+							"configurator": function(cell){
+								cell.targetColumnName = "column3";
+								cell.filterable = false;
+								cell.sortable = false;
+								cell.text = "column3";
+							}
+						},
+						{
+							"constraint": {"rowIndex": 0, "colIndex": 5},
+							"configurator": function(cell){
+								cell.targetColumnName = "column4";
+								cell.filterable = false;
+								cell.sortable = false;
+								cell.text = "column4";
+							}
+						},
+						{
+							"constraint": {"rowIndex": 0, "colIndex": 6},
+							"configurator": function(cell){
+								cell.targetColumnName = "column5";
+								cell.filterable = false;
+								cell.sortable = false;
+								cell.text = "column5";
+							}
+						}
+					]
+				},
+				"detail": {
+					"rows": [{"height": "24px"}],
+					"cells": [
+						{
+							"constraint": {"rowIndex": 0, "colIndex": 0},
+							"configurator": function(cell){
+								cell.columnType = "checkbox";
+							}
+						},
+						{
+							"constraint": {"rowIndex": 0, "colIndex": 1},
+							"configurator": function(cell){
+								cell.columnType = "rowindex";
+							}
+						},
+						{
+							"constraint": {"rowIndex": 0, "colIndex": 2},
+							"configurator": function(cell){
+								cell.columnName = "column1";
+							}
+						},
+						{
+							"constraint": {"rowIndex": 0, "colIndex": 3},
+							"configurator": function(cell){
+								cell.columnName = "column2";
+							}
+						},
+						{
+							"constraint": {"rowIndex": 0, "colIndex": 4},
+							"configurator": function(cell){
+								cell.columnName = "column3";
+							}
+						},
+						{
+							"constraint": {"rowIndex": 0, "colIndex": 5},
+							"configurator": function(cell){
+								cell.columnName = "column4";
+							}
+						},
+						{
+							"constraint": {"rowIndex": 0, "colIndex": 6},
+							"configurator": function(cell){
+								cell.columnName = "column5";
+							}
+						}
+					]
+				}
+			});
+			container.addChild(grid_1, {
+				"top": "317px",
+				"left": "66px",
+				"width": "659px",
+				"height": "288px"
+			});
+			
+			var dateInput_1 = new cpr.controls.DateInput("dti1");
+			if(typeof onDti1Click == "function") {
+				dateInput_1.addEventListener("click", onDti1Click);
+			}
+			if(typeof onDti1Mousedown == "function") {
+				dateInput_1.addEventListener("mousedown", onDti1Mousedown);
+			}
+			container.addChild(dateInput_1, {
+				"top": "47px",
+				"left": "433px",
+				"width": "148px",
+				"height": "37px"
 			});
 		}
 	});

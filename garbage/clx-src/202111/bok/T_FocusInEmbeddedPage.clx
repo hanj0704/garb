@@ -141,7 +141,7 @@
         <cl:columns length="1" unit="FRACTION"/>
       </cl:formlayout>
     </cl:group>
-    <cl:embeddedpage std:sid="e-page-1806e597" id="ep2" style="border-right-style:solid; border-top-width:1px; border-bottom-color:gray; border-right-width:1px; border-left-style:solid; border-bottom-width:1px; border-left-color:gray; border-top-color:gray; border-bottom-style:solid; border-right-color:gray; border-left-width:1px; border-top-style:solid;" src="index.html">
+    <cl:embeddedpage std:sid="e-page-1806e597" id="ep2" style="border-right-style:solid; border-top-width:1px; border-bottom-color:gray; border-right-width:1px; border-left-style:solid; border-bottom-width:1px; border-left-color:gray; border-top-color:gray; border-bottom-style:solid; border-right-color:gray; border-left-width:1px; border-top-style:solid;" src="http://localhost:8080/202111/bok/NewFile.html">
       <cl:xylayoutdata std:sid="xyl-data-2d135ba4" top="768px" left="20px" width="984px" height="289px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:embeddedpage>
     <cl:group std:sid="group-dfb16e2e" id="grp1" class="cl-form-group">

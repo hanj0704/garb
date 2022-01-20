@@ -65,6 +65,7 @@
 				
 				var a = app.getFirstFocusTraversableControl();
 				console.log(a);
+				app.getFirstFocusTraversableControl();
 			}
 			
 			

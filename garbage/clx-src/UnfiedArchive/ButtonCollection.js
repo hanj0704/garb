@@ -86,3 +86,78 @@ function onBtn3Click(/* cpr.events.CMouseEvent */ e){
 	 */
 	app.lookup("sms1").send();
 }
+
+
+/*
+ * "embeddedPage src" 버튼(btn4)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn4Click(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var btn4 = e.control;
+	/**
+	 * 임베디드 페이지의 src를 바꾸는것도 히스토리에 관리된다.
+	 */
+}
+
+
+/*
+ * "데이터셋 export" 버튼(btn5)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn5Click(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var btn5 = e.control;
+	
+	var ds = app.lookup("ds1");
+	
+	var grd = new cpr.controls.Grid();
+/** @type cpr.controls.gridpart.GridConfig */
+	var voInitConfig = {
+		columns : [],
+		header : {
+			rows : [{"height" : "24px"}]
+		},
+		detail : {
+			rows : [{"height" : "24px"}]
+		},
+		dataSet : ds
+	}
+	var columns = [];
+	var headcells = [];
+	var detailcells = [];
+	ds.getHeaders().forEach(function(each,idx){
+		
+		voInitConfig.columns.push({"width": "100px"});
+		
+		headcells.push({
+			
+			"constraint" : {"rowIndex" : 0,"colIndex" : idx},
+			"configurator" : function(cell) {
+				cell.filterable = false;
+				cell.sortable = false;
+				cell.sortable = false;
+				cell.text = ValueUtil.fixNull(each.getInfo()) != "" ? each.getInfo() : each.getName();
+			}
+		});
+		
+		detailcells.push({
+			"constraint": {"rowIndex": 0, "colIndex": idx},
+			"configurator": function(cell){
+				cell.columnName = each.getName();
+			}
+		});
+	});
+	
+	voInitConfig.detail.cells = detailcells;
+	voInitConfig.header.cells = headcells;
+	
+	console.log(voInitConfig);
+	grd.init(voInitConfig);
+	console.log(grd.getExportData());
+	
+}

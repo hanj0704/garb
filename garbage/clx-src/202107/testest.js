@@ -299,13 +299,27 @@ function onBtn13Click(/* cpr.events.CMouseEvent */ e){
 //	var a = btn13.constructor.bind(null);
 	
 //	console.log(a);
+	var nav =  app.lookup("nav1");
+	var a = Object.create(nav);
 	
-	console.log(Object.getOwnPropertyNames(btn13.valueOf()));
-	var a = Object.create(btn13);
-	console.log(btn13.propertyIsEnumerable("value"));
-	
-	app.getContainer().addChild(a, {
-		width: "100px",
-		height :"100px"
+	app.floatControl(a, {
+		width: "400px",
+		height :"100px",
+		top : "0px",
+		left: "0px"
 	});
+	console.log(nav.getActualRect());
+}
+
+
+/*
+ * 네비게이션 바에서 selection-change 이벤트 발생 시 호출.
+ * 선택된 Item 값이 저장된 후에 발생하는 이벤트.
+ */
+function onNav1SelectionChange(/* cpr.events.CSelectionEvent */ e){
+	/** 
+	 * @type cpr.controls.NavigationBar
+	 */
+	var nav1 = e.control;
+	console.log(e);
 }

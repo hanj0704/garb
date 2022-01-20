@@ -68,3 +68,21 @@ function onBodyPropertyChange(/* cpr.events.CPropertyChangeEvent */ e){
 	
 	console.log("PROPERTY_CHANGE");
 }
+
+
+/*
+ * 인풋 박스에서 value-change 이벤트 발생 시 호출.
+ * 변경된 value가 저장된 후에 발생하는 이벤트.
+ */
+function onIpbCntyNmValueChange(/* cpr.events.CValueChangeEvent */ e){
+	/** 
+	 * @type cpr.controls.InputBox
+	 */
+	var ipbCntyNm = e.control;
+	
+	console.log("뭐지요");
+	console.log(e);
+	var evts = new cpr.events.CValueChangeEvent("value-change");
+	console.log(evts);
+	app.dispatchEvent(e);
+}

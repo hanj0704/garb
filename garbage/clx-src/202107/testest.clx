@@ -160,6 +160,14 @@
       <cl:listener std:sid="listener-c70fdf91" name="click" handler="onBtn13Click"/>
       <cl:xylayoutdata std:sid="xyl-data-d5250522" top="483px" left="694px" width="190px" height="31px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
+    <cl:navigationbar std:sid="n-bar-6a8bc715" id="nav1">
+      <cl:listener std:sid="listener-9953cb4c" name="selection-change" handler="onNav1SelectionChange"/>
+      <cl:xylayoutdata std:sid="xyl-data-ec05cd7e" top="269px" left="416px" width="499px" height="31px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:menuitem std:sid="m-item-43972393" label="label1" value="value1"/>
+      <cl:menuitem std:sid="m-item-d16fe08a" label="label2" value="value2"/>
+      <cl:menuitem std:sid="m-item-ee085d01" label="label3" value="value3"/>
+      <cl:menuitem std:sid="m-item-6efb4c09" label="label4" value="value4"/>
+    </cl:navigationbar>
     <cl:xylayout std:sid="xylayout-6a75de2e"/>
   </body>
   <std:studiosetting>

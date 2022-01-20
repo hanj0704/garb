@@ -78,8 +78,11 @@
     <cl:embeddedpage std:sid="e-page-8e7b8a59" id="ep1" style="border-right-style:solid; border-top-width:1px; border-bottom-color:gray; border-right-width:1px; border-left-style:solid; border-bottom-width:1px; border-left-color:gray; border-top-color:gray; border-bottom-style:solid; border-right-color:gray; border-left-width:1px; border-top-style:solid;" removeOnBuild="true" src="index.html">
       <cl:xylayoutdata std:sid="xyl-data-bfffdfeb" top="524px" left="20px" width="984px" height="190px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:embeddedpage>
+    <cl:embeddedpage std:sid="e-page-9c1c6d65" id="ep2" src="NewFile.html">
+      <cl:xylayoutdata std:sid="xyl-data-0d6fd738" top="724px" left="20px" width="954px" height="172px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:embeddedpage>
     <cl:group std:sid="group-00aed879" class="cl-form-group">
-      <cl:xylayoutdata std:sid="xyl-data-d752b913" top="724px" left="20px" width="616px" height="309px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:xylayoutdata std:sid="xyl-data-d752b913" top="906px" left="20px" width="616px" height="309px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
       <cl:output std:sid="output-e422f28e" value="인풋박스">
         <cl:formdata std:sid="f-data-d40e29da" row="0" col="0"/>
       </cl:output>
@@ -137,9 +140,6 @@
         <cl:columns length="1" unit="FRACTION"/>
       </cl:formlayout>
     </cl:group>
-    <cl:embeddedpage std:sid="e-page-9c1c6d65" id="ep2" src="NewFile.html">
-      <cl:xylayoutdata std:sid="xyl-data-0d6fd738" top="1043px" left="20px" width="954px" height="172px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
-    </cl:embeddedpage>
     <cl:xylayout std:sid="xylayout-617361a7"/>
   </body>
   <std:studiosetting>

@@ -11,9 +11,6 @@
     <cl:listener std:sid="listener-f26c5c0f" name="init" handler="onBodyInit"/>
     <cl:group std:sid="group-0f12929d" id="header" style="background-color:#ffffff; border-bottom-color:#cccccc; border-bottom-width:1px; border-bottom-style:solid;">
       <cl:verticaldata std:sid="v-data-881c091b" width="400px" height="100px"/>
-      <cl:img std:sid="image-f1899949" tabindex="0" src="../theme/image/btn_sch_ico.png">
-        <cl:xylayoutdata std:sid="xyl-data-d1794fe1" top="34px" left="20px" width="100px" height="50px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
-      </cl:img>
       <cl:group std:sid="group-44a9b7e6">
         <cl:xylayoutdata std:sid="xyl-data-386e2d0e" top="9px" right="20px" left="20px" height="20px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
         <cl:output std:sid="output-6512b90f" tabindex="0" value="로그인">
