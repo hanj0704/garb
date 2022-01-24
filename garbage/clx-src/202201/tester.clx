@@ -241,6 +241,10 @@
       <cl:listener std:sid="listener-87b0281d" name="click" handler="onBtn4Click"/>
       <cl:xylayoutdata std:sid="xyl-data-98394825" top="97px" left="822px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
+    <cl:combobox std:sid="c-box-60b131e3" id="cmb2">
+      <cl:listener std:sid="listener-7f468861" name="selection-change" handler="onCmb2SelectionChange"/>
+      <cl:xylayoutdata std:sid="xyl-data-15088ecb" top="628px" left="660px" width="173px" height="32px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:combobox>
     <cl:xylayout std:sid="xylayout-a4c5249b"/>
   </body>
   <std:studiosetting>

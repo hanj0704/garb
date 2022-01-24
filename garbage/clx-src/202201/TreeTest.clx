@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9fbc960c" version="1.0.3519">
+  <head std:sid="head-6915e7db">
+    <screen std:sid="screen-934666e1" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-f2818081" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-c7d051a2" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-49050d48">
+      <cl:dataset std:sid="d-set-317f4d9e" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-bfa11876" name="label"/>
+          <cl:datacolumn std:sid="d-column-3730f145" name="value"/>
+          <cl:datacolumn std:sid="d-column-429246e4" name="parent"/>
+          <cl:datacolumn std:sid="d-column-02799a86" name="LEVEL" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-78365fdf" name="LEVEL_SORT_COL" datatype="number"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-cf01c289" id="subList" action="data/com/JsonFile10000.json">
+        <cl:responsedata dataid="ds1"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-e4cbc5f1">
+    <cl:listener std:sid="listener-4e192214" name="load" handler="onBodyLoad"/>
+    <cl:grid std:sid="grid-d4b7704d" id="grd1" datasetid="ds1" columnMovable="true" collapsible="true">
+      <cl:xylayoutdata std:sid="xyl-data-83b9deb1" top="10px" left="10px" width="862px" height="667px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:gridcolumn std:sid="g-column-fb06a10a"/>
+      <cl:gridcolumn std:sid="g-column-3449a3a2"/>
+      <cl:gridcolumn std:sid="g-column-81b3dfc5"/>
+      <cl:gridcolumn std:sid="g-column-a26fe226"/>
+      <cl:gridcolumn std:sid="g-column-160d1faf"/>
+      <cl:gridheader std:sid="gh-band-c8e39a1c">
+        <cl:gridrow std:sid="g-row-75c4836e"/>
+        <cl:gridcell std:sid="gh-cell-c4f5e731" rowindex="0" colindex="0" targetcolumnname="label" sortable="false" filterable="false" text="label"/>
+        <cl:gridcell std:sid="gh-cell-06591889" rowindex="0" colindex="1" targetcolumnname="value" sortable="false" filterable="false" text="value"/>
+        <cl:gridcell std:sid="gh-cell-67539d5a" rowindex="0" colindex="2" targetcolumnname="parent" sortable="false" filterable="false" text="parent"/>
+        <cl:gridcell std:sid="gh-cell-a630a84d" rowindex="0" colindex="3" targetcolumnname="LEVEL" sortable="false" filterable="false" text="LEVEL"/>
+        <cl:gridcell std:sid="gh-cell-a55a550b" rowindex="0" colindex="4" targetcolumnname="LEVEL_SORT_COL" sortable="false" filterable="false" text="LEVEL_SORT_COL"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-1fd33f03">
+        <cl:gridrow std:sid="g-row-ad40ddf8"/>
+        <cl:gridcell std:sid="gd-cell-c079a459" rowindex="0" colindex="0" columnname="label">
+          <cl:treecell std:sid="t-cell-3923d232">
+            <cl:relativebind property="level" columnname="LEVEL"/>
+            <cl:celldata std:sid="c-data-1f25a4f0"/>
+          </cl:treecell>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-57d59d12" rowindex="0" colindex="1" columnname="value"/>
+        <cl:gridcell std:sid="gd-cell-326cfe31" rowindex="0" colindex="2" columnname="parent"/>
+        <cl:gridcell std:sid="gd-cell-95cb1bd7" rowindex="0" colindex="3" columnname="LEVEL"/>
+        <cl:gridcell std:sid="gd-cell-6c389f39" rowindex="0" colindex="4" columnname="LEVEL_SORT_COL"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:xylayout std:sid="xylayout-9bdd79a4"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

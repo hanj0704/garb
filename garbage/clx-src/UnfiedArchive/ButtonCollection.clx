@@ -76,6 +76,14 @@
       <cl:listener std:sid="listener-0db92dd6" name="click" handler="onBtn5Click"/>
       <cl:flowlayoutdata std:sid="f-data-575a541e" width="200px" height="40px" autosize="none"/>
     </cl:button>
+    <cl:button std:sid="button-c311566b" id="btn6" value="fragment 프로젝트에 관하여">
+      <cl:listener std:sid="listener-45d2738b" name="click" handler="onBtn6Click"/>
+      <cl:flowlayoutdata std:sid="f-data-7c99690f" width="200px" height="40px" autosize="none"/>
+    </cl:button>
+    <cl:button std:sid="button-9ffc4c27" id="btn7" value="escape,unescape,encodeUri">
+      <cl:listener std:sid="listener-e4a168f2" name="click" handler="onBtn7Click"/>
+      <cl:flowlayoutdata std:sid="f-data-fcc0db23" width="200px" height="40px" autosize="none"/>
+    </cl:button>
     <cl:flowlayout std:sid="f-layout-adff95ee" hspacing="20" vspacing="20" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
   </body>
   <std:studiosetting>

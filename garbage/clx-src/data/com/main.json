@@ -1,0 +1,489 @@
+{"dsMenu" :[
+    {
+        "MN_LABEL": "오늘의 할일",
+        "MN_VALUE": "m000",
+        "PARENT": "",
+        "APP_ID": "",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "지급",
+        "MN_VALUE": "m00001",
+        "PARENT": "m000",
+        "APP_ID": "",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "배정",
+        "MN_VALUE": "m00002",
+        "PARENT": "m000",
+        "APP_ID": "",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "채권",
+        "MN_VALUE": "m00003",
+        "PARENT": "m000",
+        "APP_ID": "",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "결산",
+        "MN_VALUE": "m00004",
+        "PARENT": "m000",
+        "APP_ID": "",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "공사대금 지급",
+        "MN_VALUE": "m00005",
+        "PARENT": "m00001",
+        "APP_ID": "",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "기업 대금 지급",
+        "MN_VALUE": "m00006",
+        "PARENT": "m00001",
+        "APP_ID": "",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "카드 대금 지급",
+        "MN_VALUE": "m00007",
+        "PARENT": "m00001",
+        "APP_ID": "",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "월별 자금 배정",
+        "MN_VALUE": "m00008",
+        "PARENT": "m00002",
+        "APP_ID": "",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "특수 자금 배정",
+        "MN_VALUE": "m00009",
+        "PARENT": "m00002",
+        "APP_ID": "",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "채권 회수",
+        "MN_VALUE": "m00010",
+        "PARENT": "m00003",
+        "APP_ID": "",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "채권 발급",
+        "MN_VALUE": "m00011",
+        "PARENT": "m00003",
+        "APP_ID": "",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "자산 결산",
+        "MN_VALUE": "m00012",
+        "PARENT": "m00004",
+        "APP_ID": "",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "출자배당 결산",
+        "MN_VALUE": "m00013",
+        "PARENT": "m00004",
+        "APP_ID": "",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "조합원 결산",
+        "MN_VALUE": "m00014",
+        "PARENT": "m00004",
+        "APP_ID": "",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "사업준비금 배정",
+        "MN_VALUE": "m00015",
+        "PARENT": "m00002",
+        "APP_ID": "",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "기능",
+        "MN_VALUE": "m001",
+        "PARENT": "m100",
+        "APP_ID": "",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "달력 컴포넌트 생성",
+        "MN_VALUE": "m00101",
+        "PARENT": "m001",
+        "APP_ID": "app/scr/funcs/PAGE-01",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "표준 컴포넌트 생성",
+        "MN_VALUE": "m00102",
+        "PARENT": "m001",
+        "APP_ID": "app/scr/funcs/PAGE-02",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "트리 컴포넌트 기능",
+        "MN_VALUE": "m00103",
+        "PARENT": "m001",
+        "APP_ID": "app/scr/funcs/PAGE-03",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "메인화면 구성",
+        "MN_VALUE": "m00104",
+        "PARENT": "m001",
+        "APP_ID": "app/scr/funcs/PAGE-04",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "게시판 기능",
+        "MN_VALUE": "m00105",
+        "PARENT": "m001",
+        "APP_ID": "app/scr/funcs/PAGE-05",
+        "HASH_CODE": "#공지사항#업무공지",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "화면 설계 편의성",
+        "MN_VALUE": "m00106",
+        "PARENT": "m001",
+        "APP_ID": "app/scr/funcs/PAGE-06",
+        "HASH_CODE": "#화면배치#그룹정렬",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "책임자 승인 요청1",
+        "MN_VALUE": "m001071",
+        "PARENT": "m001",
+        "APP_ID": "app/scr/funcs/PAGE-07-01",
+        "HASH_CODE": "#화면확장",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "책임자 승인 요청2",
+        "MN_VALUE": "m001072",
+        "PARENT": "m001",
+        "APP_ID": "app/scr/funcs/PAGE-07-02",
+        "HASH_CODE": "#승인요청",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "책임자 승인",
+        "MN_VALUE": "m00108",
+        "PARENT": "m001",
+        "APP_ID": "app/scr/funcs/PAGE-08",
+        "HASH_CODE": "#공통화면",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "그리드 및 차트",
+        "MN_VALUE": "m00109",
+        "PARENT": "m001",
+        "APP_ID": "app/scr/funcs/PAGE-09",
+        "HASH_CODE": "#화면개인화#셀병합#부분합",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "디버깅",
+        "MN_VALUE": "m00110",
+        "PARENT": "m001",
+        "APP_ID": "app/scr/funcs/PAGE-10",
+        "HASH_CODE": "#벌레잡기",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "업무흐름도 작성",
+        "MN_VALUE": "m00112",
+        "PARENT": "m001",
+        "APP_ID": "app/scr/funcs/PAGE-12",
+        "HASH_CODE": "#업무흐름",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "성능",
+        "MN_VALUE": "m002",
+        "PARENT": "m100",
+        "APP_ID": "",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "그리드 데이터 업로드",
+        "MN_VALUE": "m00201",
+        "PARENT": "m002",
+        "APP_ID": "app/scr/funcs/PAGE-14",
+        "HASH_CODE": "#UpLoad",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "그리드 데이터 다운로드",
+        "MN_VALUE": "m00202",
+        "PARENT": "m002",
+        "APP_ID": "app/scr/funcs/PAGE-15",
+        "HASH_CODE": "#DownLoad",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "그리드 데이터 정렬",
+        "MN_VALUE": "m00203",
+        "PARENT": "m002",
+        "APP_ID": "app/scr/funcs/PAGE-16",
+        "HASH_CODE": "#Sort",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "화면 렌더링(단건)",
+        "MN_VALUE": "m00204",
+        "PARENT": "m002",
+        "APP_ID": "app/scr/funcs/PAGE-17-01",
+        "HASH_CODE": "#단건랜더링",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "화면 렌더링(2배)",
+        "MN_VALUE": "m00205",
+        "PARENT": "m002",
+        "APP_ID": "app/scr/funcs/PAGE-17-02",
+        "HASH_CODE": "#복수랜더링",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "화면 렌더링(3배)",
+        "MN_VALUE": "m00206",
+        "PARENT": "m002",
+        "APP_ID": "app/scr/funcs/PAGE-17-03",
+        "HASH_CODE": "#다건랜더링",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "HTML 수행",
+        "MN_VALUE": "m003",
+        "PARENT": "m100",
+        "APP_ID": "",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "HTML5 화면 구현",
+        "MN_VALUE": "m00301",
+        "PARENT": "m003",
+        "APP_ID": "app/scr/funcs/PAGE-11",
+        "HASH_CODE": "#웹표준화",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "특장점",
+        "MN_VALUE": "m004",
+        "PARENT": "m100",
+        "APP_ID": "",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "RPA",
+        "MN_VALUE": "m00405",
+        "PARENT": "m004",
+        "APP_ID": "app/scr/funcs/PAGE-13-01",
+        "HASH_CODE": "#특5",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "자동화 테스트",
+        "MN_VALUE": "m00404",
+        "PARENT": "m004",
+        "APP_ID": "app/scr/funcs/PAGE-13-02",
+        "HASH_CODE": "#특4",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "레이아웃",
+        "MN_VALUE": "m00401",
+        "PARENT": "m004",
+        "APP_ID": "app/scr/funcs/PAGE-13-03",
+        "HASH_CODE": "#특1",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "컨텐트 어시스트",
+        "MN_VALUE": "m00402",
+        "PARENT": "m004",
+        "APP_ID": "app/scr/funcs/PAGE-13-04",
+        "HASH_CODE": "#특2",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "설계서 자동생성",
+        "MN_VALUE": "m00403",
+        "PARENT": "m004",
+        "APP_ID": "app/scr/funcs/PAGE-13-05",
+        "HASH_CODE": "#특3",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "메뉴",
+        "MN_VALUE": "m100",
+        "PARENT": "",
+        "APP_ID": "",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false"
+    },
+    {
+        "MN_LABEL": "현장과제",
+        "MN_VALUE": "m005",
+        "PARENT": "m100",
+        "APP_ID": "",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false" 
+    },
+    {
+        "MN_LABEL": "현장과제-과제1",
+        "MN_VALUE": "m0051",
+        "PARENT": "m005",
+        "APP_ID": "app/scr/funcs/PAGE-20-01",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false" 
+    },
+    {
+        "MN_LABEL": "현장과제-과제2",
+        "MN_VALUE": "m0052",
+        "PARENT": "m005",
+        "APP_ID": "app/scr/funcs/PAGE-20-02",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false" 
+    },
+    {
+        "MN_LABEL": "현장과제-과제3",
+        "MN_VALUE": "m0053",
+        "PARENT": "m005",
+        "APP_ID": "app/scr/funcs/PAGE-20-03",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false" 
+    },
+    {
+        "MN_LABEL": "현장과제-과제4",
+        "MN_VALUE": "m0054",
+        "PARENT": "m005",
+        "APP_ID": "app/scr/funcs/PAGE-20-04",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false" 
+    },
+    {
+        "MN_LABEL": "현장과제-과제5",
+        "MN_VALUE": "m0055",
+        "PARENT": "m005",
+        "APP_ID": "app/scr/funcs/PAGE-20-05",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false" 
+    },
+    {
+        "MN_LABEL": "현장과제-과제6",
+        "MN_VALUE": "m0056",
+        "PARENT": "m005",
+        "APP_ID": "app/scr/funcs/PAGE-20-06",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false" 
+    },
+    {
+        "MN_LABEL": "현장과제-과제7",
+        "MN_VALUE": "m0057",
+        "PARENT": "m005",
+        "APP_ID": "app/scr/funcs/PAGE-20-07",
+        "HASH_CODE": "",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false" 
+    },
+    {
+        "MN_LABEL": "현장과제-upload",
+        "MN_VALUE": "m00510",
+        "PARENT": "m005",
+        "APP_ID": "app/scr/funcs/PAGE-UPLOAD",
+        "HASH_CODE": "#upload",
+        "FAVORITE": "",
+        "IS_FAVORITE": "false" 
+    }
+]
+}

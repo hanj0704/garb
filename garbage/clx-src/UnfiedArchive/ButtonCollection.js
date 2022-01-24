@@ -161,3 +161,53 @@ function onBtn5Click(/* cpr.events.CMouseEvent */ e){
 	console.log(grd.getExportData());
 	
 }
+
+
+/*
+ * "fragment 프로젝트에 관하여" 버튼(btn6)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn6Click(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var btn6 = e.control;
+	/**
+	 * 프래그먼트 프로젝트는 하나의 프로젝트에 너무 많은 (부서별?업무별?) 기능이 들어가서
+	 * 기능 분류별로 프로젝트를 나누어 하나의 프로젝트의 크기부담등을 줄이기 위해 사용하기 좋은 기법으로
+	 * 호스트가 되는 프로젝트 하나를 생성하고, 그곳에서 공통적으로 사용하는 모듈, udc등을  선언하고, 
+	 * 새eXbuilder6 프래그먼트 프로젝트를 생성하여 호스트 프로젝트를 지정하면, 해당 프로젝트명으로  패키지가 생성되면서,
+	 * 호스트가 가지고있는 리소스들을 모두 활용할 수 있게 됩니다.
+	 * 호스트에게 연결되어있는 다른 프로젝트의 리소스도 활용하고 싶은 경우는 프로젝트 프래그먼트 설정에서 다른 프로젝트도 체크하고 
+	 * 호스트 리소스 갱신을 누르면 다른 프로젝트에있는 리소스들도 활용할 수 있게 됩니다.
+	 * 비슷한 동작에서, 호스트를 연결했는데, 코드가 자동완성되지않거나 하는 경우에는 호스트 리소스 갱신 버튼을 한번 눌러보면 유효할 수 있습니다.
+	 */
+	
+}
+
+
+/*
+ * "escape,unescape,encodeUri" 버튼(btn7)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn7Click(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var btn7 = e.control;
+	/**
+	 * escape는 아스키문자에 해당하지 않는 문자들을 모두 유니코드 형식(16진수 형태)으로 변환하는 함수이고
+	 * 1바이트는 %XX, 2바이트는%uXXXX로 생긴게 다릅니다.
+	 * 그리고 이를 디코딩 하는것이 unescape입니다.
+	 * encodeURI는 escape와 비슷하지만, url에  쓰는 특수문자들은 인코딩하지않습니다.:;/=?&등
+	 * 보통은 파라미터를 전달하는 인터넷주소 전체를 인코딩 할떄 사용합니다.
+	 * encodeURIComponent는 특문을 포함하여 인코딩하게됩니다.
+	 */
+	var vsTemp = "안녕친구!";
+	var vsTemp16 = escape(vsTemp);
+	console.log(vsTemp16);
+	console.log(unescape(vsTemp16));
+	var vsEncode = "안녕친구http:!qqewe";
+	var vsEncoded = encodeURI(vsEncode);
+	console.log(vsEncoded);
+}
