@@ -99,6 +99,6 @@ GridTreeCellTuner.prototype.getDepthNLevel = function(/*cpr.controls.TreeItem[]*
  */
 globals.createTreecellTuner = function(pcDataSet,psLabelCol,psValueCol,psParentCol,psLevelCol,psSortCol){
 	
-	var tuner =  new GridTreeCellTuner(pcDataSet, psLabelCol, psValueCol, psParentCol,psLevelCol,psSortCol);
+	var tuner =  new GridTreeCellTuner(pcDataSet, psLabelCol, psValueCol, psParentCol,psLevelCol,psSortCol); 
 	tuner.getTreeData();
 }

@@ -52,18 +52,36 @@ BootStrapMover.prototype.start = function(){
 	} else {
 //		this._onScreenChange.call(this);
 	}
-	this._shapeMemory();
-	this._aps.addEventListener("screen-change",this._onScreenChange.bind(this));
+	var that = this;
+	new Promise(function(resolve,reject){
+		
+		var returnMan = that._shapeMemory();
+		if(returnMan) {
+			resolve();
+		}
+	}).then(function(input){
+		
+		that._aps.addEventListener("screen-change",that._onScreenChange.bind(that));
+		that._onScreenChange.call(that);
+	});
 }
 
 BootStrapMover.prototype._shapeMemory = function(){
-	this._order = this._Cont.getParent().getChildren().indexOf(this._Cont);
-	this._constraint = this._Cont.getParent().getConstraint(this._Cont);
-	this._parentHeight = this._Cont.getParent().getViewPortRect().height;
+	var returner = true;
+	try{
+		
+		this._order = this._Cont.getParent().getChildren().indexOf(this._Cont);
+		this._constraint = this._Cont.getParent().getConstraint(this._Cont);
+		this._parentHeight = this._Cont.getParent().getViewPortRect().height;
+	} catch(e){
+		returner = false;
+		throw e;
+	}
+	return returner;
 }
 
 BootStrapMover.prototype._onScreenChange = function(/*cpr.events.CScreenChangeEvent*/e){
-	var vsScreenNm = e.screen.name;
+	var vsScreenNm = this._aps.targetScreen.name;
 	if(vsScreenNm.indexOf(msDetectMobScreen) != -1) {
 		this._isChanged = true;
 		this._mobTransfrom();
@@ -93,15 +111,11 @@ BootStrapMover.prototype._mobTransfrom = function(){
 			"height" : vnHeight + "px"
 		});
 	} else {
-//		console.log("zz");
 		var vaUptown = vcCont.getParent().getChildren().filter(function(each){
 			return Number(each.userAttr(msMobRowIdx)) < Number(vsMobRowIdx);
 		});
 		var vnUptownLength = vaUptown.length;
 		
-//		console.log(this._parentHeight);
-//		console.log(vcCont.getParent().getViewPortRect());
-		console.log(vcCont);
 		vaNeighbor.sort(function(a,b){
 			return Number(a.userAttr(msMobColIdx)) - Number(b.userAttr(msMobColIdx));
 		});
@@ -126,7 +140,6 @@ BootStrapMover.prototype._mobTransfrom = function(){
 					"height": "calc("+vnHeight+"% - 20px)"
 				});
 			}
-			console.log(vnHeight);
 			
 		});
 	}

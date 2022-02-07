@@ -15,4 +15,7 @@ function onBodyLoad(/* cpr.events.CEvent */ e){
 		
 		createTreecellTuner(app.lookup("ds1"), "label", "value", "parent", "LEVEL", 'LEVEL_SORT_COL');
 	});
+	
+	
+	app.lookup("grd1").setWholeRenderingMode(true);
 }

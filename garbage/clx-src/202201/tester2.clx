@@ -242,7 +242,7 @@
       <cl:attribute name="mob-colSpan" value="6"/>
       <cl:attribute name="mob-rowIndex" value="2"/>
       <cl:attribute name="mob-rowSpan" value="6"/>
-      <cl:flowlayoutdata std:sid="f-data-7391d3c7" width="calc(100% - 20px)" height="364px"/>
+      <cl:flowlayoutdata std:sid="f-data-7391d3c7" width="calc(100% - 15px)" height="364px"/>
       <cl:button std:sid="button-b97767fe" id="btn6" value="Button6">
         <cl:attribute name="mob-colIndex" value="1"/>
         <cl:attribute name="mob-colSpan" value="6"/>
