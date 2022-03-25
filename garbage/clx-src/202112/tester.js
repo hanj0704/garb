@@ -870,3 +870,16 @@ function onBtn39Click(/* cpr.events.CMouseEvent */ e){
 	
 	console.log(moment.duration(a.diff(b)).asDays())
 }
+
+
+/*
+ * "send" 버튼(btn40)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn40Click(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var btn40 = e.control;
+	app.lookup("sms3").send();
+}

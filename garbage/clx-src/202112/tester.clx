@@ -192,6 +192,7 @@
       <cl:submission std:sid="submission-e9c83308" id="sms2" action="data/PIVOT.json">
         <cl:responsedata dataid="ds1"/>
       </cl:submission>
+      <cl:submission std:sid="submission-f650771d" id="sms3" action="/tes/list.do"/>
     </cl:model>
     <cl:appspec title="뭉치"/>
   </head>
@@ -473,6 +474,10 @@
     <cl:button std:sid="button-3b93c997" id="btn38" value="Button">
       <cl:listener std:sid="listener-80e3ef43" name="click" handler="onBtn38Click"/>
       <cl:xylayoutdata std:sid="xyl-data-0f26a182" top="699px" left="381px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-abb6c363" id="btn40" value="send">
+      <cl:listener std:sid="listener-80806e4e" name="click" handler="onBtn40Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-75724e22" top="20px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
     <cl:xylayout std:sid="xylayout-aa6aaa3b"/>
   </body>

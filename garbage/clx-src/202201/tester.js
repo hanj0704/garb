@@ -19,7 +19,6 @@ function onBtn1Click(/* cpr.events.CMouseEvent */ e){
 //	app.lookup("sms1").send();
 
 	var vcGrd = app.lookup("grd1");
-	
 }
 
 

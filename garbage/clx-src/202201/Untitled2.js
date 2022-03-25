@@ -316,3 +316,18 @@ function onBtn1Click(/* cpr.events.CMouseEvent */ e){
 	
 	console.log(grd.detail.getColumn(0));
 }
+
+
+/*
+ * 서브미션에서 submit-upload-progress 이벤트 발생 시 호출.
+ * multipart/form-data 일 때 서버로 일정 크기의 데이터를 전송했을 때 발생합니다. 하나의 요청에 대해 여러 번 발생할 수 있습니다.
+ */
+function onSms6SubmitUploadProgress(/* cpr.events.CSubmissionEvent */ e){
+	/** 
+	 * @type cpr.protocols.Submission
+	 */
+	var sms6 = e.control;
+	console.log(e.total);
+	console.log(e.loaded);
+	
+}

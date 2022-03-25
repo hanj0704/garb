@@ -5,7 +5,7 @@
     <screen std:sid="screen-6616eb1d" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
     <screen std:sid="screen-3c3c7822" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
     <cl:model std:sid="model-9d28c6d1">
-      <cl:dataset std:sid="d-set-98494e32" id="ds1">
+      <cl:dataset std:sid="d-set-98494e32" id="dsList">
         <cl:datacolumnlist>
           <cl:datacolumn std:sid="d-column-367b2aa5" name="column1"/>
           <cl:datacolumn std:sid="d-column-a3b39f3f" name="column2"/>
@@ -49,9 +49,32 @@
           </cl:datarow>
         </cl:datarowlist>
       </cl:dataset>
-      <cl:submission std:sid="submission-1c419481" id="sms1" action="test/tes.do">
-        <cl:requestdata dataid="ds1" payload="all"/>
+      <cl:datamap std:sid="d-map-74934e27" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-1ef840bd" name="child3" defaultvalue="a"/>
+          <cl:datacolumn std:sid="d-column-eddbba8f" name="child2" defaultvalue="b"/>
+          <cl:datacolumn std:sid="d-column-56b666fd" name="child1" defaultvalue="c"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-1c419481" id="sms1" action="test/tes.do" mediatype="application/json">
+        <cl:requestdata dataid="dsList" payload="all"/>
       </cl:submission>
+      <cl:matrix-submission std:sid="m-submission-e6be4117" id="msm1" async="true" withCredentials="false" method="put" action="aa.json">
+        <cl:matrix>
+          <cl:request dataControl="dm1" type="object">
+            <cl:data key="child3">
+              <cl:pathref columnName="child3"/>
+            </cl:data>
+            <cl:data key="child2">
+              <cl:pathref columnName="child2"/>
+            </cl:data>
+            <cl:data key="child1">
+              <cl:pathref columnName="child1"/>
+            </cl:data>
+          </cl:request>
+          <cl:response type="object"/>
+        </cl:matrix>
+      </cl:matrix-submission>
     </cl:model>
     <cl:appspec/>
   </head>
@@ -83,6 +106,18 @@
     <cl:button std:sid="button-9ffc4c27" id="btn7" value="escape,unescape,encodeUri">
       <cl:listener std:sid="listener-e4a168f2" name="click" handler="onBtn7Click"/>
       <cl:flowlayoutdata std:sid="f-data-fcc0db23" width="200px" height="40px" autosize="none"/>
+    </cl:button>
+    <cl:button std:sid="button-7168356e" id="btn8" value="프래그먼트 프로젝트와 젠킨스빌드">
+      <cl:listener std:sid="listener-1b2455a0" name="click" handler="onBtn8Click"/>
+      <cl:flowlayoutdata std:sid="f-data-bb3ed44f" width="200px" height="40px" autosize="none"/>
+    </cl:button>
+    <cl:button std:sid="button-7a048413" id="btn9" value="http caching과 통신에 관하여">
+      <cl:listener std:sid="listener-a0b563f4" name="click" handler="onBtn9Click"/>
+      <cl:flowlayoutdata std:sid="f-data-be9c588a" width="200px" height="40px" autosize="none"/>
+    </cl:button>
+    <cl:button std:sid="button-61295ae0" id="btn10" value="Button">
+      <cl:listener std:sid="listener-657ebe6b" name="click" handler="onBtn10Click"/>
+      <cl:flowlayoutdata std:sid="f-data-f7df75e0" width="100px" height="20px"/>
     </cl:button>
     <cl:flowlayout std:sid="f-layout-adff95ee" hspacing="20" vspacing="20" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
   </body>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-7ce62171" version="1.0.3564">
+  <head std:sid="head-47366a61">
+    <screen std:sid="screen-d3495572" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-eadd792b" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-cc19a08f" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-c28dc505">
+      <cl:dataset std:sid="d-set-d15f7e47" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-fb16fe23" name="check"/>
+          <cl:datacolumn std:sid="d-column-94b50b56" name="date"/>
+          <cl:datacolumn std:sid="d-column-21c18bdc" name="column1"/>
+          <cl:datacolumn std:sid="d-column-d062857a" name="column2"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="date"><![CDATA[20220210]]></cl:datavalue>
+            <cl:datavalue columnname="column1">column11</cl:datavalue>
+            <cl:datavalue columnname="column2">column21</cl:datavalue>
+            <cl:datavalue columnname="check"><![CDATA[N]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="date"><![CDATA[20220210]]></cl:datavalue>
+            <cl:datavalue columnname="column1">column12</cl:datavalue>
+            <cl:datavalue columnname="column2">column22</cl:datavalue>
+            <cl:datavalue columnname="check"><![CDATA[N]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="date"><![CDATA[20211231]]></cl:datavalue>
+            <cl:datavalue columnname="column1">column13</cl:datavalue>
+            <cl:datavalue columnname="column2">column23</cl:datavalue>
+            <cl:datavalue columnname="check"><![CDATA[N]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="date"><![CDATA[20220210]]></cl:datavalue>
+            <cl:datavalue columnname="column1">column14</cl:datavalue>
+            <cl:datavalue columnname="column2">column24</cl:datavalue>
+            <cl:datavalue columnname="check"><![CDATA[N]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="date"><![CDATA[20220101]]></cl:datavalue>
+            <cl:datavalue columnname="column1">column15</cl:datavalue>
+            <cl:datavalue columnname="column2">column25</cl:datavalue>
+            <cl:datavalue columnname="check"><![CDATA[N]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-d73e4c16">
+    <cl:grid std:sid="grid-bed46f89" id="grd1" datasetid="ds1">
+      <cl:xylayoutdata std:sid="xyl-data-b3298254" top="20px" left="20px" width="400px" height="200px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:gridcolumn std:sid="g-column-91b72abb" width="60px"/>
+      <cl:gridcolumn std:sid="g-column-2f747589"/>
+      <cl:gridcolumn std:sid="g-column-17272d9c"/>
+      <cl:gridcolumn std:sid="g-column-1cd7a6a2"/>
+      <cl:gridheader std:sid="gh-band-913df5ac">
+        <cl:gridrow std:sid="g-row-fa256eb3"/>
+        <cl:gridcell std:sid="gh-cell-a3021814" rowindex="0" colindex="0" targetcolumnname="check" sortable="false" filterable="false" text="check"/>
+        <cl:gridcell std:sid="gh-cell-7658e77d" rowindex="0" colindex="1" targetcolumnname="date" sortable="false" filterable="false" text="date"/>
+        <cl:gridcell std:sid="gh-cell-9a5d20ad" rowindex="0" colindex="2" targetcolumnname="column1" sortable="false" filterable="false" text="column1"/>
+        <cl:gridcell std:sid="gh-cell-cf96226c" rowindex="0" colindex="3" targetcolumnname="column2" sortable="false" filterable="false" text="column2"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-6cea0b15">
+        <cl:gridrow std:sid="g-row-25dce49a" height="30px"/>
+        <cl:gridcell std:sid="gd-cell-d8ebded2" rowindex="0" colindex="0" columnname="check">
+          <cl:checkbox std:sid="c-box-9c8fb9b9" id="cbx1" style="text-align:center;" truevalue="Y" falsevalue="N">
+            <cl:expbind property="enabled" category="PROPERTY" expression="Number(date) > 20220110"/>
+            <cl:celldata std:sid="c-data-65212ddc"/>
+          </cl:checkbox>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-d84bfd60" rowindex="0" colindex="1" columnname="date"/>
+        <cl:gridcell std:sid="gd-cell-34f92dd1" rowindex="0" colindex="2" columnname="column1"/>
+        <cl:gridcell std:sid="gd-cell-251d5912" rowindex="0" colindex="3" columnname="column2"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:xylayout std:sid="xylayout-651fced0"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -14,7 +14,7 @@
       <cl:xylayoutdata std:sid="xyl-data-c8933ef9" top="20px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
     <cl:group std:sid="group-a659417a" id="grp1">
-      <cl:xylayoutdata std:sid="xyl-data-f5c07835" top="68px" left="216px" width="311px" height="309px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:xylayoutdata std:sid="xyl-data-f5c07835" top="72px" left="194px" width="311px" height="309px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
       <cl:button std:sid="button-c28995ed" id="btn2" value="Button">
         <cl:xylayoutdata std:sid="xyl-data-16070469" top="36px" left="58px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
       </cl:button>
@@ -33,7 +33,7 @@
       <cl:xylayout std:sid="xylayout-d2260e2d" scrollable="false"/>
     </cl:group>
     <cl:button std:sid="button-4d9ff4af" id="btn7" value="Button">
-      <cl:xylayoutdata std:sid="xyl-data-7245a94a" top="158px" left="178px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:xylayoutdata std:sid="xyl-data-7245a94a" top="144px" left="84px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
     <cl:xylayout std:sid="xylayout-97af010a"/>
   </body>

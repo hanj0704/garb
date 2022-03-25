@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-980becca" version="1.0.3556">
+  <head std:sid="head-db5b0e51">
+    <screen std:sid="screen-02c70685" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-1159de72" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-8546a396" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-c4238874"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-d261b2fc">
+    <cl:fileupload std:sid="f-upload-347ef17e" id="fud1">
+      <cl:listener std:sid="listener-1f94953d" name="item-click" handler="onFud1ItemClick"/>
+      <cl:xylayoutdata std:sid="xyl-data-eb54c623" top="20px" left="20px" width="450px" height="100px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:fileupload>
+    <cl:button std:sid="button-e59ec88f" id="btn1" value="Button">
+      <cl:listener std:sid="listener-870de0f9" name="click" handler="onBtn1Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-360bea68" top="130px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-c39e56bf"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

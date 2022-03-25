@@ -32,7 +32,7 @@ function onBtn2Click(/* cpr.events.CMouseEvent */ e){
 	var btn2 = e.control;
 	
 	var sms2 = app.lookup("sms2");
-	sms2.action = app.lookup("ipb6").value;
+//	sms2.action = app.lookup("ipb6").value;
 	sms2.send();
 }
 

@@ -100,7 +100,7 @@
     </cl:group>
     <cl:button std:sid="button-9fa099f3" id="btn5">
       <cl:datasetbind property="value" category="PROPERTY" datacontrolid="ds1" columnname="column1" rowindex="1"/>
-      <cl:xylayoutdata std:sid="xyl-data-b09f443c" top="360px" left="612px" width="91px" height="26px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:xylayoutdata std:sid="xyl-data-b09f443c" top="360px" left="606px" width="91px" height="26px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
     <cl:xylayout std:sid="xylayout-e0d8e898"/>
   </body>

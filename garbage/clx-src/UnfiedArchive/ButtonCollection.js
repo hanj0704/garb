@@ -113,7 +113,7 @@ function onBtn5Click(/* cpr.events.CMouseEvent */ e){
 	 */
 	var btn5 = e.control;
 	
-	var ds = app.lookup("ds1");
+	var ds = app.lookup("dsList");
 	
 	var grd = new cpr.controls.Grid();
 /** @type cpr.controls.gridpart.GridConfig */
@@ -160,6 +160,7 @@ function onBtn5Click(/* cpr.events.CMouseEvent */ e){
 	grd.init(voInitConfig);
 	console.log(grd.getExportData());
 	
+	console.log(cpr.utils.ExportUtil.getExportData(ds));
 }
 
 
@@ -210,4 +211,67 @@ function onBtn7Click(/* cpr.events.CMouseEvent */ e){
 	var vsEncode = "안녕친구http:!qqewe";
 	var vsEncoded = encodeURI(vsEncode);
 	console.log(vsEncoded);
+}
+
+
+/*
+ * "프래그먼트 프로젝트와 젠킨스빌드" 버튼(btn8)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn8Click(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var btn8 = e.control;
+	/**
+	 * 호스트 프로젝트와 프래그먼트 프로젝트는 설정정보를 .settings폴더내 xml,xmi파일과 루트 경로의 .project파일에 저장하며
+	 * CI컴파일시에는 이클립스에서 빌드하는 방식 그대로 빌드하는 라이브러리를 제공하기 때문에, .project파일과 xmli 파일들이 그대로 형상관리 되어야 한다
+	 * 호스트 프로젝트와 프래그먼트 프로젝트로 분리한 파일들은 빌드시에 동일한 디렉토리에 존재해여 정상적으로 빌드처리될 수 있으며, 프래그먼트 프로젝트의 경우에도 
+	 * 단독으로 빌드하여 결과물을 만들 수 있다. 
+	 * <?xml version="1.0" encoding="UTF-8"?>
+	 * <project name="include-example" default="deploy" basedir="./">
+  	 * <property name="build-lib.dir" location="./"></property>
+	 * <taskdef name="clxcompile" classname="kr.co.tomatosystem.exbuilder.cikit.build.ant.Compile" classpath="${build-lib.dir}/e6-compiler.jar" />
+	 * <target name="deploy">
+   	 * <clxcompile src="./hanwha-p1" out="./ui"/>
+	 * <clxcompile src="./hanwha-base" out="./ui2"/>
+ 	 * </target>
+	 * </project>
+	 * 빌드 스크립트는 대강 이렇게만 써도 돌아가며 두번쨰 clxcompile은 프래그먼트 프로젝트를 단독빌드를 하는 요청으로 딱히 필요없는 코드이다.
+	 * 
+	 */
+}
+
+
+/*
+ * "http caching과 통신에 관하여" 버튼(btn9)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn9Click(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var btn9 = e.control;
+	/**
+	 * 캐싱은 주어진 리소스의 복사본을 저장하고 있다가 요청시에 그것을 제공하는 기술로, 웹 캐시가 자신의 저장소 내에 요청된 리소스를 가지고있다면,
+	 * 요청을 가로채 원래의 서버로부터 리소스를 다시 다운로드 하는 대신 리소스의 복사본을 반환한다.
+	 * 이 http 캐싱은 선택적이지만 캐시된 리소스를 재사용하는것은 보통 바람직한 일이다.
+	 * 다만 http 캐시들은 일반적으로 GET에 대한 응답만을 캐싱하며, 다른 메서드들은 제외된다.
+	 * 그래서 서브미션을 통해서 데이터를 요청하는 경우, get method로 데이터를 요청하면, 사용자가 원치 않는 캐싱을 허용하게 될 수 있어서 
+	 * 요청한 파라미터가 같아도 요청이 가로챔당해 이전에 조회한 데이터가 기존과 같은 데이터가 내려받아질 수도 있다.
+	 * 그래서 데이터를 요청하는경우에는 post를 사용하는것이 바람직하다.
+	 */
+}
+
+
+/*
+ * "Button" 버튼(btn10)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn10Click(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var btn10 = e.control;
+	app.lookup("msm1").send();
 }

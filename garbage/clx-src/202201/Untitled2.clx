@@ -132,7 +132,9 @@
         <cl:requestdata dataid="dmPageInfo"/>
         <cl:responsedata dataid="mainDS"/>
       </cl:submission>
-      <cl:submission std:sid="submission-ed8ae235" id="sms6" action="cisweb/upload.do" mediatype="multipart/form-data" responsetype="blob"/>
+      <cl:submission std:sid="submission-ed8ae235" id="sms6" action="cisweb/upload.do" mediatype="multipart/form-data" responsetype="blob">
+        <cl:listener std:sid="listener-f46dff0e" name="submit-upload-progress" handler="onSms6SubmitUploadProgress"/>
+      </cl:submission>
       <cl:submission std:sid="submission-94d1f815" id="sms7" action="/simples/realMass.do">
         <cl:requestdata dataid="dmSearch"/>
         <cl:responsedata dataid="dsList"/>
@@ -178,7 +180,7 @@
       <cl:listener std:sid="listener-4d02077b" name="click" handler="onBtn9Click"/>
       <cl:xylayoutdata std:sid="xyl-data-facaf7e3" top="110px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
-    <cl:button std:sid="button-c3242492" id="btn12" value="Button">
+    <cl:button std:sid="button-c3242492" id="btn12" value="fileSend">
       <cl:listener std:sid="listener-11a8a8d8" name="click" handler="onBtn12Click"/>
       <cl:xylayoutdata std:sid="xyl-data-0c5b35d6" top="314px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
