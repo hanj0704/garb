@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-55323813" version="1.0.0.0">
+  <head std:sid="head-d7c81b75">
+    <title>Title2</title>
+    <screen std:sid="screen-6cc9b9c3" id="default" name="default" width="965px" height="1024px" customHeight="600" customWidth="800"/>
+    <cl:model std:sid="model-6d7cc3ff"/>
+    <cl:appspec dev-description="그리드 타이틀(Title)">
+      <cl:property name="ctrl" type="control" bindable="false" std:desc="그리드 컨트롤 객체"/>
+      <cl:property name="rowCount" type="string" default="0" bindable="true" std:desc=""/>
+      <cl:property name="title" type="string" default="제목없음" bindable="true"/>
+      <cl:property name="subTitle" type="string" bindable="true" std:desc="그리드의 서브타이틀"/>
+      <cl:property name="unit" type="string" default="천원" bindable="true"/>
+      <cl:property name="showSubTitle" type="boolean" default="false" bindable="true" std:desc="서브타이틀의 표시 여부"/>
+      <cl:property name="showUnit" type="boolean" default="false" bindable="true" std:desc="단위 텍스트 표시 여부"/>
+      <cl:property name="showGrdCount" type="boolean" default="true" bindable="true" std:desc="그리드의 총 count를 보이기"/>
+      <cl:property name="showExportExcel" type="boolean" default="true" bindable="true" std:desc="엑셀 파일 Export 버튼을 보여줄지 여부"/>
+      <cl:property name="showCloseBtn" type="boolean" default="false" bindable="true" std:desc="해당 그룹의 펄치고 닫기 ( 같은 그룹을 기준으로 한다. )"/>
+      <cl:property name="exportExcelTitle" type="string" bindable="true" std:desc="출력 엑셀파일명(디폴트는 그리드 명칭임)"/>
+      <cl:property name="exportHiddenColumns" type="boolean" default="false" bindable="true" std:desc="숨긴 컬럼도 엑셀 출력에 포함할 경우에 true로 지정(디폴트: false임)"/>
+      <cl:property name="exportExcludePart" type="string" bindable="true" std:desc="엑셀 파일 Export시 출력제외 영역(footer, gfooter 등)"/>
+      <cl:event name="closeClick" type="cpr.events.CAppEvent"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-87eeef7c" style="top:0px; left:0px; width:500px; height:20px;" class="grp-title">
+    <cl:listener std:sid="listener-7c142040" name="load" handler="onBodyLoad"/>
+    <cl:listener std:sid="listener-a24244a9" name="property-change" handler="onBodyPropertyChange"/>
+    <cl:group std:sid="group-1a65a2e0" id="grpTitle1">
+      <cl:formdata std:sid="f-data-a478ef9c" row="0" col="0"/>
+      <cl:output std:sid="output-582fb466" id="optTilte" class="section-tit" ellipsis="true">
+        <cl:apppropbind property="value" category="PROPERTY" app-property="title"/>
+        <cl:flowlayoutdata std:sid="f-data-0fac6b66" width="200px" height="100%" autosize="width"/>
+      </cl:output>
+      <cl:output std:sid="output-678f0385" class="caption">
+        <cl:apppropbind property="visible" category="PROPERTY" app-property="showSubTitle"/>
+        <cl:apppropbind property="value" category="PROPERTY" app-property="subTitle"/>
+        <cl:flowlayoutdata std:sid="f-data-8dcfc8cf" width="100px" height="20px" autosize="width"/>
+      </cl:output>
+      <cl:group std:sid="group-63764e60" id="grpGrdCnt">
+        <cl:flowlayoutdata std:sid="f-data-9c24e907" width="50px" height="100%" autosize="width"/>
+        <cl:output std:sid="output-7be46a5b" id="optCountText" class="text-gray-700" value="총">
+          <cl:flowlayoutdata std:sid="f-data-2a7fd8e7" width="15px" height="100%" autosize="width"/>
+        </cl:output>
+        <cl:output std:sid="output-ace14b8a" id="optRowCount" class="text-gray-700 fw-bold">
+          <cl:apppropbind property="value" category="PROPERTY" app-property="rowCount"/>
+          <cl:flowlayoutdata std:sid="f-data-99b08a66" width="10px" height="100%" autosize="width"/>
+        </cl:output>
+        <cl:output std:sid="output-4407a070" id="optCountText2" class="text-gray-700" value="건">
+          <cl:flowlayoutdata std:sid="f-data-26401152" width="15px" height="100%" autosize="width"/>
+        </cl:output>
+        <cl:flowlayout std:sid="f-layout-8787942b" scrollable="false" hspacing="4" vspacing="0" linewrap="false"/>
+      </cl:group>
+      <cl:output std:sid="output-b3c1887a" class="caption" value="천원" displayexp="&quot;(단위 : &quot; + text + &quot;)&quot;">
+        <cl:apppropbind property="value" app-property="unit"/>
+        <cl:apppropbind property="visible" app-property="showUnit"/>
+        <cl:flowlayoutdata std:sid="f-data-8cc82308" width="40px" height="100%" autosize="width"/>
+      </cl:output>
+      <cl:flowlayout std:sid="f-layout-58e0c22a" scrollable="false" hspacing="8" vspacing="0" valign="middle" linewrap="false"/>
+    </cl:group>
+    <cl:button std:sid="button-e6ea7d4c" id="btnTools" class="btn-transparent btn-i-list" tooltip="필터/찾기 등" icon="../../theme/images/controls/button/ico_btn.png">
+      <cl:listener std:sid="listener-aeaa8f75" name="click" handler="onBtnToolsClick"/>
+      <cl:formdata std:sid="f-data-6e49c801" row="0" col="1"/>
+    </cl:button>
+    <cl:button std:sid="button-923e8267" id="btnExcelExport" class="btn-transparent btn-i-export" tooltip="엑셀 내려받기" value="" icon="../../theme/images/controls/button/ico_btn.png">
+      <cl:listener std:sid="listener-cadcc619" name="click" handler="onBtnExcelExportClick"/>
+      <cl:apppropbind property="visible" category="PROPERTY" app-property="showExportExcel"/>
+      <cl:formdata std:sid="f-data-80cf329a" row="0" col="2"/>
+    </cl:button>
+    <cl:formlayout std:sid="f-layout-0a1950b3" scrollable="false" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+      <cl:columns length="20"/>
+      <cl:columns length="20"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

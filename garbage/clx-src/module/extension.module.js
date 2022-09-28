@@ -4664,7 +4664,7 @@ SubmissionKit.prototype.send = function(app, psSvcId, paParams, successCallback,
 	});
 	
 	this._appKit._activeSubmission[this._appKit._activeSubmission.length] = submission;
-	submission.send();
+	return submission.send();
 };
 
 

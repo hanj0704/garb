@@ -123,3 +123,17 @@ function onButtonClick(/* cpr.events.CMouseEvent */ e){
 	var button = e.control;
 	
 }
+
+
+/*
+ * 서브미션에서 before-submit 이벤트 발생 시 호출.
+ * 통신을 시작하기전에 발생합니다.
+ */
+function onSms1BeforeSubmit(/* cpr.events.CSubmissionEvent */ e){
+	/** 
+	 * @type cpr.protocols.Submission
+	 */
+	var sms1 = e.control;
+	
+	sms1.action = "aaa" + sms1.action;
+}

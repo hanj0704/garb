@@ -275,3 +275,50 @@ function onBtn10Click(/* cpr.events.CMouseEvent */ e){
 	var btn10 = e.control;
 	app.lookup("msm1").send();
 }
+
+
+/*
+ * "http method타입과 content-type" 버튼(btn11)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn11Click(/* cpr.events.CMouseEvent */ e){
+	/** 
+	 * @type cpr.controls.Button
+	 */
+	var btn11 = e.control;
+	/**
+	 * method type이 get인 경우에는 파라미터 내용이 텍스트이기 때문에 content-type이 날아가지 않음.
+	 * post이고, response가 text인 경우에 대해서 content-type이 날아갈 수 있음.
+	 * responseType이 filedownload인 경우에도 content-type이 고정되어 날아감 -> 이유는 아직 모름
+	 */
+}
+
+/*
+ * "window와 open" 버튼(btn12)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn12Click(e){
+	var btn12 = e.control;
+	
+	/**
+	 * 사파리에서는 ajax call 하는 동안에 window.open 하는 동작에 대해서 onchange에 대한 새창열기를 자동으로 열리는 팝업으로 인식하여 
+	 * 동작을 막아버린다고한다. 
+	 * 우회하는 방안으로는 ajax call을 타기 전에 팝업을 띄워두고 이 팝업에 대한 경로를 바꿔주거나 post method를 보내는 방식으로 움직여야할 것 같음
+	 */
+}
+
+/*
+ * "그리드내에 컨트롤의 enable" 버튼(btn13)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn13Click(e){
+	var btn13 = e.control;
+	/**
+	 * 그리드 내에 컨트롤에 대해 enable에 바인딩을 걸어 행별로 enable 값이 다를 때, 기본적으로 enable 속성값에을 app.lookup("btn").enabled를 
+	 * 찍어보면 아마 false로 나롤것임. 다만 이게 에디트 모드로 들어가면 달라지게 되는데, 이전에 선택한 행의 enable 속성이 나오게됨.
+	 * false인곳에서 true의 셀을 클릭하면 false가 한번 나오고 이후로 true가 나오고, true인곳에서 false 로 바꾸면 true 한번 나오고
+	 * false가 계속 나오는 형식으로 출력됨. 콘솔의 타이밍이 한박자씩 늦는 느낌으로 enabled속성이 관리됨. 
+	 * 현재 선택한 셀의 컨트롤의  속성값을 체크하고싶으면 forEachOfGridCells를 돌려서 특정 행의 특정셀의 ctrl을 찾고, 그 즉시 enabled값 같은걸
+	 * 리턴해야 정상적인 값을 얻을 수 있음.
+	 */
+}

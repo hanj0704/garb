@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-039f7089" version="1.0.3738">
+  <head std:sid="head-dde3d24f">
+    <screen std:sid="screen-3feaac95" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-13077b74" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-1e66ff93" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-b9e6667c">
+      <cl:dataset std:sid="d-set-2af61d1f" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-fa10e7a6" name="column1"/>
+          <cl:datacolumn std:sid="d-column-89613533" name="column2"/>
+          <cl:datacolumn std:sid="d-column-e9629d6a" name="column3"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column11</cl:datavalue>
+            <cl:datavalue columnname="column2">column21</cl:datavalue>
+            <cl:datavalue columnname="column3">column31</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column12</cl:datavalue>
+            <cl:datavalue columnname="column2">column22</cl:datavalue>
+            <cl:datavalue columnname="column3">column32</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-e680620a" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-e72f1240" name="column1"/>
+          <cl:datacolumn std:sid="d-column-53000719" name="column2"/>
+          <cl:datacolumn std:sid="d-column-12a99e7c" name="column3"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-874e6e44" id="sms1" action="aa.do">
+        <cl:listener std:sid="listener-5fe50466" name="before-submit" handler="onSms1BeforeSubmit"/>
+        <cl:requestdata dataid="dm1"/>
+        <cl:requestdata dataid="ds1" payload="all"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-bd8422c1">
+    <cl:listener std:sid="listener-4fcc1675" name="load" handler="onBodyLoad"/>
+    <cl:button std:sid="button-861176be" id="btn1" value="Button">
+      <cl:listener std:sid="listener-03fd35ad" name="click" handler="onBtn1Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-bc6da527" top="20px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-d6b4797c" id="btn2" value="Button">
+      <cl:listener std:sid="listener-81f4123d" name="click" handler="onBtn2Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-f01191ba" top="50px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:uicontrolshell std:sid="uic-shell-72733e19" id="shl1">
+      <cl:listener std:sid="listener-defdb0f0" name="load" handler="onShl1Load"/>
+      <cl:xylayoutdata std:sid="xyl-data-e0a6f267" top="92px" left="20px" width="425px" height="389px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:uicontrolshell>
+    <cl:output std:sid="output-f99b100a" id="opt1" value="Output">
+      <cl:xylayoutdata std:sid="xyl-data-61685d10" top="92px" left="455px" width="526px" height="404px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:button std:sid="button-eff33bab" id="btn3" value="Button">
+      <cl:listener std:sid="listener-02a3ed55" name="click" handler="onBtn3Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-0f0ea5d7" top="20px" left="145px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-704af648"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-3b5fd9f0" version="1.0.3557">
+  <head std:sid="head-ed7ed1e5">
+    <screen std:sid="screen-f205cebc" id="default" name="default" width="1024px" height="768px"/>
+    <screen std:sid="screen-c36f3412" id="tablet" name="tablet" width="500px" height="667px"/>
+    <screen std:sid="screen-f8b2a2fa" id="mobile" name="mobile" width="350px" height="525px"/>
+    <cl:model std:sid="model-4bd5dc99"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-be75caaf">
+    <cl:mdifolder std:sid="mdifolder-211ca996">
+      <cl:xylayoutdata std:sid="xyl-data-08ff5303" top="60px" right="0px" bottom="0px" left="250px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+      <cl:tabitem std:sid="t-item-a8190246" selected="true" text="T006.clx">
+        <cl:embeddedapp std:sid="e-app-b2057b61" src="T006.clx">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+        </cl:embeddedapp>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-8a07c5f9" text="T006-B.clx">
+        <cl:embeddedapp std:sid="e-app-4fffd7d0" src="T006-B.clx">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+        </cl:embeddedapp>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-7332f09e" text="T006-C.clx">
+        <cl:embeddedapp std:sid="e-app-653040f9" src="T006-C.clx">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+        </cl:embeddedapp>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-d4ed680d" text="T006-D.clx">
+        <std:metadata>
+          <std:property key="is-active-item" value="true"/>
+        </std:metadata>
+        <cl:embeddedapp std:sid="e-app-f27cdbbc" src="T006-D.clx">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+        </cl:embeddedapp>
+      </cl:tabitem>
+    </cl:mdifolder>
+    <cl:button std:sid="button-1190bb89" value="Button">
+      <cl:xylayoutdata std:sid="xyl-data-6695e524" top="0px" right="0px" left="0px" height="60px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-96cd6496" value="Button">
+      <cl:xylayoutdata std:sid="xyl-data-b76c4e12" top="59px" bottom="0px" left="0px" width="250px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-88a87401"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

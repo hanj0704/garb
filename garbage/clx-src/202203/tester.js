@@ -292,14 +292,15 @@ function onBtn2Click2(/* cpr.events.CMouseEvent */ e){
 	 */
 	var btn2 = e.control;
 	debugger;
-	var a = new udc.com.Untitled();
-//	cpr.core.Platform.INSTANCE.get
-	app.floatControl(a,{
-		left :"0px",
-		top : "0px",
-		width:"100px",
-		height:"10px"
-	});
+//	var a = new udc.com.Untitled();
+////	cpr.core.Platform.INSTANCE.get
+//	app.floatControl(a,{
+//		left :"0px",
+//		top : "0px",
+//		width:"100px",
+//		height:"10px"
+//	});
+	app.lookup("sms4").send();
 }
 
 
@@ -316,4 +317,19 @@ function onBtn3Click2(/* cpr.events.CMouseEvent */ e){
 	console.log(navigator.platform);
 	btn3.value = navigator.userAgent;
 	
+}
+
+
+/*
+ * 서브미션에서 submit-done 이벤트 발생 시 호출.
+ * 응답처리가 모두 종료되면 발생합니다.
+ */
+function onSms4SubmitDone(/* cpr.events.CSubmissionEvent */ e){
+	/** 
+	 * @type cpr.protocols.Submission
+	 */
+	var sms4 = e.control;
+	
+	console.log(sms4.xhr);
+	console.log(sms4.xhr.responseText);
 }

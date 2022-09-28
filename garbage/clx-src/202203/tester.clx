@@ -95,6 +95,9 @@
         <cl:requestdata dataid="dm1"/>
         <cl:requestdata dataid="ds2" payload="all"/>
       </cl:submission>
+      <cl:submission std:sid="submission-e9186cfb" id="sms4" action="aa.json">
+        <cl:listener std:sid="listener-8430a225" name="submit-done" handler="onSms4SubmitDone"/>
+      </cl:submission>
     </cl:model>
     <cl:appspec/>
   </head>
@@ -123,6 +126,9 @@
       <cl:listener std:sid="listener-b0cc506e" name="click" handler="onBtn3Click2"/>
       <cl:xylayoutdata std:sid="xyl-data-3c8a5fa4" top="1px" left="66px" width="1163px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
+    <cl:combobox std:sid="c-box-92e6e5c6" id="cmb1" value="_all_">
+      <cl:xylayoutdata std:sid="xyl-data-5e32f0ff" top="564px" left="528px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:combobox>
     <cl:xylayout std:sid="xylayout-9d7a6997"/>
   </body>
   <std:studiosetting>

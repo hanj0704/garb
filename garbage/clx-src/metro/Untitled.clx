@@ -182,6 +182,9 @@
           </cl:datarow>
         </cl:datarowlist>
       </cl:dataset>
+      <cl:submission std:sid="submission-07a201a1" id="sms1" action="aaa/v/crud">
+        <cl:listener std:sid="listener-d90e594a" name="before-submit" handler="onSms1BeforeSubmit"/>
+      </cl:submission>
     </cl:model>
     <cl:appspec/>
   </head>

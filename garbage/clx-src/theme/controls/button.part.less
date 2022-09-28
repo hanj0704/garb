@@ -27,11 +27,18 @@
 
 	/* 버튼을 클릭했을 때의 스타일 */
 	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
-		background-image: linear-gradient(#ddd, #eee 5px, #ddd);
+		box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.5);
+//		background-image: linear-gradient(#ddd, #eee 5px, #ddd);
 	}
 }
 
 /* Disable 상태의 버튼 */
 .cl-button.cl-disabled{
 	color: @disabled-text-color;
+}
+
+.cl-container.root-div {
+	min-width : 1440px;
+	max-width : 1920px;
+	min-height : 700px;
 }

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-4153280a" version="1.0.3738">
+  <head std:sid="head-32126b24">
+    <screen std:sid="screen-6fdee3ef" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-b032f899" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-d4b6084a" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-31b10922"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-cd1b8f19">
+    <cl:button std:sid="button-87c3dfea" id="btn1" value="Button">
+      <cl:listener std:sid="listener-0e4c2d64" name="click" handler="onBtn1Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-82cd3965" top="20px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:mdifolder std:sid="mdifolder-e94a7a54" id="mdi1">
+      <cl:xylayoutdata std:sid="xyl-data-999cab9b" top="20px" left="130px" width="638px" height="393px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:mdifolder>
+    <cl:button std:sid="button-e2798d49" id="btn2" value="Button">
+      <cl:listener std:sid="listener-7bcd8af0" name="click" handler="onBtn2Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-d9f631a3" top="50px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-75f1cd0e" id="btn3" value="Button">
+      <cl:listener std:sid="listener-c4953c14" name="click" handler="onBtn3Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-02080214" top="80px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-aa44648e"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

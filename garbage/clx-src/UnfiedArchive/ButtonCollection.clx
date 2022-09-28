@@ -117,7 +117,19 @@
     </cl:button>
     <cl:button std:sid="button-61295ae0" id="btn10" value="Button">
       <cl:listener std:sid="listener-657ebe6b" name="click" handler="onBtn10Click"/>
-      <cl:flowlayoutdata std:sid="f-data-f7df75e0" width="100px" height="20px"/>
+      <cl:flowlayoutdata std:sid="f-data-f7df75e0" width="200px" height="40px"/>
+    </cl:button>
+    <cl:button std:sid="button-9ebfae11" id="btn11" value="http method타입과 content-type">
+      <cl:listener std:sid="listener-ab41d0d7" name="click" handler="onBtn11Click"/>
+      <cl:flowlayoutdata std:sid="f-data-599f3829" width="200px" height="40px" autosize="none"/>
+    </cl:button>
+    <cl:button std:sid="button-421cd26c" id="btn12" value="window와 open">
+      <cl:listener std:sid="listener-8e2f123d" name="click" handler="onBtn12Click"/>
+      <cl:flowlayoutdata std:sid="f-data-c7d51f5e" width="200px" height="40px"/>
+    </cl:button>
+    <cl:button std:sid="button-8ecb0f42" id="btn13" value="그리드내에 컨트롤의 enable">
+      <cl:listener std:sid="listener-c33c3993" name="click" handler="onBtn13Click"/>
+      <cl:flowlayoutdata std:sid="f-data-37d2c00e" width="200px" height="40px" autosize="none"/>
     </cl:button>
     <cl:flowlayout std:sid="f-layout-adff95ee" hspacing="20" vspacing="20" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
   </body>

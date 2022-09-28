@@ -198,10 +198,7 @@ function onBtn6Click(/* cpr.events.CMouseEvent */ e){
 	
 	var a=  [1];
 	
-	console.log(a.splice(0,1));
-	console.log(a);
-	console.log(a.indexOf(2));
-	app.lookup("btn4").focus();
+	cpr.utils.Util.detectBrowser().mobile
 }
 
 
