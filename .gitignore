@@ -26,5 +26,3 @@ hs_err_pid*
 # builder
 /clx-build/*
 *.clx.js
-/build/*
-*.class
