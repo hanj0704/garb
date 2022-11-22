@@ -51,6 +51,12 @@
           </cl:datarow>
         </cl:datarowlist>
       </cl:dataset>
+      <cl:datamap std:sid="d-map-22875dce" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-b01f0bed" name="column1"/>
+          <cl:datacolumn std:sid="d-column-7c33cd4f" name="column2"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
     </cl:model>
     <cl:appspec/>
   </head>
@@ -69,7 +75,8 @@
       <cl:xylayoutdata std:sid="xyl-data-bdd80d79" top="83px" left="439px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
     <cl:button std:sid="button-74370af4" id="btn4" value="Button">
-      <cl:xylayoutdata std:sid="xyl-data-a5e0f876" top="196px" left="429px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:listener std:sid="listener-8349d780" name="click" handler="onBtn4Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-a5e0f876" top="113px" left="340px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
     <cl:grid std:sid="grid-0adc4836" id="grd1" datasetid="ds1" columnMovable="true">
       <cl:xylayoutdata std:sid="xyl-data-c110b5c8" top="267px" left="20px" width="588px" height="299px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
@@ -77,14 +84,12 @@
       <cl:gridcolumn std:sid="g-column-c2561b1d"/>
       <cl:gridcolumn std:sid="g-column-9c95abe3"/>
       <cl:gridcolumn std:sid="g-column-c30a634f"/>
-      <cl:gridcolumn std:sid="g-column-06880053"/>
       <cl:gridheader std:sid="gh-band-de9ee0a6">
         <cl:gridrow std:sid="g-row-af626fcc"/>
         <cl:gridcell std:sid="gh-cell-58905b8b" rowindex="0" colindex="0" targetcolumnname="column1" sortable="false" filterable="false" text="column1"/>
         <cl:gridcell std:sid="gh-cell-35a6c936" rowindex="0" colindex="1" targetcolumnname="column2" sortable="false" filterable="false" text="column2"/>
         <cl:gridcell std:sid="gh-cell-55feff43" rowindex="0" colindex="2" targetcolumnname="column3" sortable="false" filterable="false" text="column3"/>
         <cl:gridcell std:sid="gh-cell-2c073ba5" rowindex="0" colindex="3" targetcolumnname="column4" sortable="false" filterable="false" text="column4"/>
-        <cl:gridcell std:sid="gh-cell-7974bd51" rowindex="0" colindex="4" targetcolumnname="column5" sortable="false" filterable="false" text="column5"/>
       </cl:gridheader>
       <cl:griddetail std:sid="gd-band-d75a7614">
         <cl:gridrow std:sid="g-row-3601a244"/>
@@ -100,11 +105,11 @@
         <cl:gridcell std:sid="gd-cell-1e34cf6e" rowindex="0" colindex="3" columnname="column4">
           <cl:inputbox std:sid="i-box-c5c4c5ba" id="ipb4"/>
         </cl:gridcell>
-        <cl:gridcell std:sid="gd-cell-fc645e45" rowindex="0" colindex="4" columnname="column5">
-          <cl:inputbox std:sid="i-box-851c6f4c" id="ipb5"/>
-        </cl:gridcell>
       </cl:griddetail>
     </cl:grid>
+    <cl:inputbox std:sid="i-box-6cb12470" id="ipb5">
+      <cl:xylayoutdata std:sid="xyl-data-00d9ad74" top="226px" left="549px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:inputbox>
     <cl:xylayout std:sid="xylayout-cbd1d402"/>
   </body>
   <std:studiosetting>

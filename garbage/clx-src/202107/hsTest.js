@@ -67,9 +67,9 @@ function onBtnOpenClick(/* cpr.events.CMouseEvent */ e){
 //		vcGrpMenu.visible = true;
 //		animator.addTask(function() {
 //			vcGrpCont.updateConstraint(vcGrpMenuWrap, {width: "401px"});
-			app.lookup("grpMenu").getParent().updateConstraint(app.lookup("grpMenu"), {
-				"width" : "380px"
-			});
+//			app.lookup("grpMenu").getParent().updateConstraint(app.lookup("grpMenu"), {
+//				"width" : "380px"
+//			});
 			app.lookup("grpMenu").style.animateTo({
 				"width" : "100px"
 			}, 0.35, cpr.animation.TimingFunction.EASE_OUT_CUBIC);

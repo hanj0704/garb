@@ -56,6 +56,13 @@
           <cl:datacolumn std:sid="d-column-56b666fd" name="child1" defaultvalue="c"/>
         </cl:datacolumnlist>
       </cl:datamap>
+      <cl:datamap std:sid="d-map-8725a265" id="dm2">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-6d4b5a49" name="column1"/>
+          <cl:datacolumn std:sid="d-column-5e57b0f3" name="column2"/>
+          <cl:datacolumn std:sid="d-column-a6a0e673" name="column3"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
       <cl:submission std:sid="submission-1c419481" id="sms1" action="test/tes.do" mediatype="application/json">
         <cl:requestdata dataid="dsList" payload="all"/>
       </cl:submission>
@@ -75,6 +82,11 @@
           <cl:response type="object"/>
         </cl:matrix>
       </cl:matrix-submission>
+      <cl:submission std:sid="submission-73316a72" id="sms2" action="/test/tes2.do" mediatype="application/json">
+        <cl:listener std:sid="listener-5b50f4db" name="before-submit" handler="onSms2BeforeSubmit"/>
+        <cl:requestdata dataid="dsList" alias="list" payload="all"/>
+        <cl:requestdata dataid="dm2" alias="param"/>
+      </cl:submission>
     </cl:model>
     <cl:appspec/>
   </head>
@@ -90,6 +102,10 @@
     <cl:button std:sid="button-6482a3a9" id="btn3" value="voDataSend">
       <cl:listener std:sid="listener-c84c4e12" name="click" handler="onBtn3Click"/>
       <cl:flowlayoutdata std:sid="f-data-08eb775a" width="200px" height="40px" autosize="none"/>
+    </cl:button>
+    <cl:button std:sid="button-ba9ee6a1" id="btn16" value="voDataSend2">
+      <cl:listener std:sid="listener-ff097e74" name="click" handler="onBtn16Click"/>
+      <cl:flowlayoutdata std:sid="f-data-7c1ca31b" width="200px" height="40px" autosize="none"/>
     </cl:button>
     <cl:button std:sid="button-8d41e9d6" id="btn4" value="embeddedPage src">
       <cl:listener std:sid="listener-c7d78cb0" name="click" handler="onBtn4Click"/>
@@ -131,6 +147,50 @@
       <cl:listener std:sid="listener-c33c3993" name="click" handler="onBtn13Click"/>
       <cl:flowlayoutdata std:sid="f-data-37d2c00e" width="200px" height="40px" autosize="none"/>
     </cl:button>
+    <cl:button std:sid="button-47ac6c05" id="btn14" value="dto와 entity">
+      <cl:listener std:sid="listener-cf183185" name="click" handler="onBtn14Click"/>
+      <cl:flowlayoutdata std:sid="f-data-333d823b" width="200px" height="40px" autosize="none"/>
+    </cl:button>
+    <cl:button std:sid="button-e39547c7" id="btn15" value="브라우저와 autofill">
+      <cl:listener std:sid="listener-12c56ba0" name="click" handler="onBtn15Click"/>
+      <cl:flowlayoutdata std:sid="f-data-7167ca63" width="200px" height="40px" autosize="none"/>
+    </cl:button>
+    <cl:button std:sid="button-187b4cb9" id="btn17" value="JSON, stringify, toJSON에 대해">
+      <cl:listener std:sid="listener-2700f641" name="click" handler="onBtn17Click"/>
+      <cl:flowlayoutdata std:sid="f-data-310b44b7" width="200px" height="40px" autosize="none"/>
+    </cl:button>
+    <cl:group std:sid="group-e7771c21" id="grp1">
+      <cl:flowlayoutdata std:sid="f-data-ca6ff7a7" width="486px" height="219px" autosize="none"/>
+      <cl:output std:sid="output-e97f457b" id="opt1" value="이름">
+        <cl:formdata std:sid="f-data-5d3c527e" row="0" col="0"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-6f6fc68d" id="ipb1">
+        <cl:datamapbind property="value" datacontrolid="dm2" columnname="column1"/>
+        <cl:formdata std:sid="f-data-98dca60c" row="0" col="1"/>
+      </cl:inputbox>
+      <cl:output std:sid="output-12ab0277" id="opt2" value="성">
+        <cl:formdata std:sid="f-data-eaaca8ca" row="1" col="0"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-7415b216" id="ipb2">
+        <cl:datamapbind property="value" datacontrolid="dm2" columnname="column2"/>
+        <cl:formdata std:sid="f-data-cf64e07d" row="1" col="1"/>
+      </cl:inputbox>
+      <cl:output std:sid="output-9ce1aea0" id="opt3" value="휴대폰번호">
+        <cl:formdata std:sid="f-data-e694f3ae" row="2" col="0"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-cb792be2" id="ipb3">
+        <cl:datamapbind property="value" datacontrolid="dm2" columnname="column3"/>
+        <cl:formdata std:sid="f-data-1d378d92" row="2" col="1"/>
+      </cl:inputbox>
+      <cl:formlayout std:sid="f-layout-30d8b63a" scrollable="false" hspace="10px" vspace="10px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="32"/>
+        <cl:rows length="32"/>
+        <cl:rows length="32"/>
+        <cl:rows length="32" shadetype="NONE" shadecolor="transparent"/>
+        <cl:columns length="100" unit="PIXEL" shadetype="BY_CLASS" shadecolor="#000000"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
     <cl:flowlayout std:sid="f-layout-adff95ee" hspacing="20" vspacing="20" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
   </body>
   <std:studiosetting>

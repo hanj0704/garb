@@ -9,6 +9,7 @@
     <cl:appspec>
       <cl:property name="enabled" type="boolean"/>
       <cl:property name="ipbValue" type="object"/>
+      <cl:property name="newProperty1" type="string" default="요호호" bindable="true" translatable="true" std:desc="호호호"/>
     </cl:appspec>
   </head>
   <body std:sid="body-04a439c7" style="top:0px; left:0px; width:300px; height:300px;">

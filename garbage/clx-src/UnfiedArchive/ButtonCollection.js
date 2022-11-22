@@ -322,3 +322,117 @@ function onBtn13Click(e){
 	 * 리턴해야 정상적인 값을 얻을 수 있음.
 	 */
 }
+
+/*
+ * "dto와 entity" 버튼(btn14)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn14Click(e){
+	var btn14 = e.control;
+	/**
+	 * Entity클래스란 JPA(JAVA Persistence API)에서 실제 db테이블과 매칭되는 클래스임. JPA를 사용하면서 Entity클래스를 작성했고, 이걸로 
+	 * Repository뿐만아닌 Service, Controller 영역까지 사용하는게 가능했음.
+	 * 근데 Entity를 화면에 띄우는데까지 사용하다보니 양방향으로 연결된 엔테테는 순환 참조 문제가 발생했고, 다른 Entity를 참조하고 있는 경우 현재 Entity뿐만
+	 * 아니라 다른 Entity에도 원치 않는 변경이 일어나거나, 무거운 양의 데이터를 들고 여러 영역을 오가는 것이 성능상에도 좋지 않을것으로 생각됨.
+	 * 따라서 DB Layer에는 Entity, View Layer에는 DTO를 사용하여 역할을 분리해 Entity와 DTO가 각자만의 역할을 충실히 수행할 수 있게 했음. 
+	 * client controller service간에는 dto, service repository db간에는 Entity
+	 * 원격 응용 프로그램에서 가장 비용이 많이 드는 작업중 하나는 클라이언트와 서버간의 왕복시간이므로, 모든것을 요약한 DTO를 반환하는게 성능을 크게 향상시킬 수 있음.
+	 * 
+	 */
+}
+
+/*
+ * "브라우저와 autofill" 버튼(btn15)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn15Click(e){
+	var btn15 = e.control;
+	/**
+	 * 브라우저에서는 미리 입력해놓은 사용자 개인 정보가 있을 경우, aria-label 혹은 placeholder, 자신과 가장 가까운 <label>의 value,name 혹은
+	 *  <div>여기 텍스트</div> 값을 가져와서 브라우저에서 개인 데이터 자동 채우기에 사용되는 필드 이름 양식을 충족할 경우, 자동으로 값이 완성되서 들어가게 됩니다.
+	 * html 속성을 통해서 이 동작을 막거나 제어할 수 없는 것으로 테스트 되었고,자동완성 발동 조건은 div 내에 이름, 성, 이메일과 같은 자동입력 필드 양식을 만족하는 아이템이
+	 * 3개 이상 존재할 때 부터 자동완성이 제안되는것으로 관찰되었음.
+	 * 해결 방법은 브라우저에서 옵션을 꺼버리는게 가장 좋다고 생각되나, 개발자가 아닌 사용자에게는 해당 내용이 익숙치 않기 때문에, 개발 시점에서도 자동완성을 끄는 방법이
+	 * 필요할 수 있음. 방안은 autocomplete 속성에 new-password 를 집어넣거나, 자동완성 필드중에 포함되지 않는 값을 집어넣는 것인데, 예를들어 nope 같은 값은
+	 * 어느 필드로도 유추되지 않는 값이기 때문에, nope라는 이름으로 데이터가 저장되어있지 않는한 자동완성 제안을 받을 일이 없다는것
+	 * 
+	 */
+}
+
+/*
+ * "voDataSend2" 버튼(btn16)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn16Click(e){
+	var btn16 = e.control;
+	app.lookup("sms2").send();
+}
+
+function _requestEncoder(sub,data){
+	var res= {};
+	var voData = data;
+	
+	for(var item in voData) {
+		res = voData[item];
+	}
+	console.log(res);
+	return {
+		"content" : res
+	}
+}
+
+/*
+ * 서브미션에서 before-submit 이벤트 발생 시 호출.
+ * 통신을 시작하기전에 발생합니다.
+ */
+function onSms2BeforeSubmit(e){
+	var sms2 = e.control;
+	
+	app.lookup("sms2").setRequestEncoder(_requestEncoder);
+}
+
+
+cpr.data.IDataRow.prototype.toJSON = function(){
+	return this.getRowData();
+}
+/*
+ * "JSON, stringify, toJSON에 대해" 버튼(btn17)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn17Click(e){
+	var btn17 = e.control;
+	/**
+	 * 커스텀 toJSON이라는 기능이 있는데, 이건 toString을 사용해 객체르 문자열로 바꾸는거 처럼
+	 * 객제에 toJSON이라는 이름으로 메서드가 구현되어있으면 객체를 JSON으로 바꿀 수 있음.
+	 * JSON.stringify는 이런 경우를 감지하고 toJSON을 자동으로 호출해줌
+	 * 어디까지나 편의성에 대한 영역이기 때문에 뭐가 더 좋고 나쁘다는 없으나, 아직 생각을 다 못하긴 했는데 이 내용으로
+	 * 객체 복사에 대한 작업을 해볼수도 있겠다 싶음.
+	 * 
+	 * JSON.parse에는 reviver이라는 두 번쨰 인수가 있는데, 이건 parse 시키는 문자열 안에 특정 키의 데이터가
+	 * 날짜형식의 데이터다 근데 이게 날짜가 아니라 문자열로 들어가서 사용에 불편이 있다 싶으면 형변환같은걸 시켜줄 수 있는 코드임
+	 */
+	var ds = app.lookup("dsList");
+	var a = {
+		"A" : 1,
+		"B" : 2,
+		"rows" : ds.getRow(0)
+	};
+	console.log(JSON.stringify(a));
+	
+	
+	var schedule = {
+		"meeting" : [
+			{"title" : "A", "date" : "2017-11-30T12:00:00.000Z"},
+			{"title" : "B", "date" : "2018-11-30T12:00:00.000Z"}
+		]
+	};
+	var str = JSON.stringify(schedule);
+//	var jsonMan = JSON.parse(str);
+	var jsonMan  = JSON.parse(str,function(key,value){
+		if(key == "date") return new Date(value);
+		return value;
+	});
+	console.log(jsonMan["meeting"][0].date.getDate());
+	
+}
+

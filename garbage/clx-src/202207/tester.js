@@ -44,23 +44,24 @@ function onShl1Load(e){
 	script.type = "text/javascript";
 	script.src = "//dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=c76aa2d7841fc6da581fb51bb3e6b40e&libraries=services";
 	document.head.appendChild(script);
+	console.log("zz");
 	script.addEventListener("load", function(){
 		// 지도 API 로드
 		kakao.maps.load(function(){
 			
-		var geocoder = new kakao.maps.services.Geocoder();
-		geocoder.addressSearch("제주특별자치도 제주시 첨단로 242",function(result,status){
-			console.log(result);
-		});
+//		var geocoder = new kakao.maps.services.Geocoder();
+//		geocoder.addressSearch("제주특별자치도 제주시 첨단로 242",function(result,status){
+//			console.log(result);
+//		});
 			// 컨텐츠를 가져옵니다.
-//			var content = voContent;
-//			
-//			// 지도를 생성합니다.
-//			var options = {
-//				center: new kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
-//				level: 3 
-//			};
-//			var map =  new kakao.maps.Map(content, options);
+			var content = voContent;
+			
+			// 지도를 생성합니다.
+			var options = {
+				center: new kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
+				level: 3 
+			};
+			var map =  new kakao.maps.Map(content, options);
 		});
 //		var div = app.lookup("shl1").getComponent("div");
 //		var mapOption = {
@@ -138,3 +139,90 @@ function onSms1BeforeSubmit(e){
 	},true);
 }
 
+/*
+ * "Button" 버튼(btn4)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn4Click(e){
+	var btn4 = e.control;
+	var scriptTag = document.createElement("script");
+	scriptTag.src = "https://t1.kakaocdn.net/kakao_js_sdk/2.0.0/kakao.min.js";
+	scriptTag.setAttribute("integrity", "sha384-PFHeU/4gvSH8kpvhrigAPfZGBDPs372JceJq3jAXce11bVA6rMvGWzvP4fMQuBGL");
+	scriptTag.setAttribute("crossorigin", "anonynmous");
+//	scriptTag.integrity = "sha384-PFHeU/4gvSH8kpvhrigAPfZGBDPs372JceJq3jAXce11bVA6rMvGWzvP4fMQuBGL";
+//	scriptTag.crossorigin = "anonymous";
+	scriptTag.addEventListener("load", function(ev){
+		Kakao.init("c76aa2d7841fc6da581fb51bb3e6b40e");
+		
+	
+	
+//	<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.0.0/kakao.min.js"
+//  integrity="sha384-PFHeU/4gvSH8kpvhrigAPfZGBDPs372JceJq3jAXce11bVA6rMvGWzvP4fMQuBGL" crossorigin="anonymous"></script>
+//<script>
+//  Kakao.init('c089c8172def97eb00c07217cae17495'); // 사용하려는 앱의 JavaScript 키 입력
+//</script>
+//
+//<a id="kakaotalk-sharing-btn" href="javascript:;">
+//  <img src="https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png"
+//    alt="카카오톡 공유 보내기 버튼" />
+//</a>
+//
+  Kakao.Share.createDefaultButton({
+    container: '#kakaotalk-sharing-btn',
+    objectType: 'feed',
+    content: {
+      title: '딸기 치즈 케익',
+      description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
+      imageUrl:
+        'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+      link: {
+        mobileWebUrl: 'https://developers.kakao.com',
+        webUrl: 'https://developers.kakao.com',
+      },
+    },
+    social: {
+      likeCount: 286,
+      commentCount: 45,
+      sharedCount: 845,
+    },
+    buttons: [
+      {
+        title: '웹으로 보기',
+        link: {
+          mobileWebUrl: 'https://developers.kakao.com',
+          webUrl: 'https://developers.kakao.com',
+        },
+      },
+      {
+        title: '앱으로 보기',
+        link: {
+          mobileWebUrl: 'https://developers.kakao.com',
+          webUrl: 'https://developers.kakao.com',
+        },
+      },
+    ],
+  });
+  console.log("힝힝");
+});
+document.head.appendChild(scriptTag);
+}
+
+/*
+ * 쉘에서 load 이벤트 발생 시 호출.
+ */
+function onShl2Load(e){
+	var shl2 = e.control;
+	
+	var content = e.content;
+//<a id="kakaotalk-sharing-btn" href="javascript:;">
+//  <img src="https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png"
+//    alt="카카오톡 공유 보내기 버튼" />
+//</a>
+	var aTag = document.createElement("a");
+	aTag.id = "kakaotalk-sharing-btn";
+	aTag.href = "javascript:;";
+	var img = document.createElement("img");
+	img.src  = "https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png";
+	aTag.appendChild(img);
+	content.appendChild(aTag);
+}

@@ -60,6 +60,14 @@
       <cl:listener std:sid="listener-02a3ed55" name="click" handler="onBtn3Click"/>
       <cl:xylayoutdata std:sid="xyl-data-0f0ea5d7" top="20px" left="145px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
+    <cl:button std:sid="button-f6da4447" id="btn4" value="Button">
+      <cl:listener std:sid="listener-11d6b6ce" name="click" handler="onBtn4Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-b2162cdd" top="50px" left="145px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:uicontrolshell std:sid="uic-shell-3ab7d747" id="shl2">
+      <cl:listener std:sid="listener-04d83c9c" name="load" handler="onShl2Load"/>
+      <cl:xylayoutdata std:sid="xyl-data-23280883" top="20px" left="283px" width="63px" height="50px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:uicontrolshell>
     <cl:xylayout std:sid="xylayout-704af648"/>
   </body>
   <std:studiosetting>
