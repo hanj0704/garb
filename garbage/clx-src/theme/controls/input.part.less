@@ -1,5 +1,17 @@
 @import "../settings.part.less";
 
+.testH {
+	overscroll-behavior : none;
+	overscroll-behavior-y : none;
+	
+}
+body {
+//	overflow-y : hidden;
+//	overflow : hidden;
+//	overscroll-behavior : contain;
+//	-webkit-overflow-behavior : contain;
+//	overscrill-behavior-y : none;
+}
  /* 인풋 박스 루트 */
 .cl-inputbox {
 	font: @default-font;
@@ -18,15 +30,27 @@
 
 	/* 인풋 박스 - disabled 상태 */
 	&.cl-disabled {
-		border-color: @disabled-border-color;
-		background-image: none;
-		background-color: @disabled-selection-background;
+		border-color: #dddddd;
+		background-color: #eeeeee;
 		//color: @default-text-color;
-		-webkit-text-fill-color : @default-text-color;
+		color : #bdbdbd;
 		//opacity : 1;
-		.cl-text {
-			
-			opacity : 1;
-		}
 	}
+	&.cl-readonly {
+		background : none;
+		border-color: #dddddd;
+		background-color: #eeeeee;
+		//color: @default-text-color;
+		color : #bdbdbd;
+		
+	}
+}
+
+
+.cl-disabled {
+//	-webkit-text-fill-color : #bdbdbd;
+		//opacity : 1;
+//		.cl-text {
+//			opacity : 1;
+//		}
 }

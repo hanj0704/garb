@@ -150,3 +150,37 @@
 //		}
 //	}
 //});
+//cpr.core.AppConfig.INSTANCE.setEnvValue("useCustomScrollbar", "true");
+
+//cpr.events.EventBus.INSTANCE.addFilter("init", function(e){
+//	var control = e.control;
+//	if(control instanceof cpr.core.AppInstance) {
+//		if(!control.isUDCInstance()) {
+//			if(control.app.id.indexOf("parent") != -1) {
+////				alert("끼얏호");
+////				control.getContainer().overscrollBehavior = "none";
+//			}
+//		}
+//	}
+//});
+document.addEventListener("error", function(evt){
+//	console.log(evt);
+//	console.log(evt.path);
+
+	if(evt.target.tagName.toLowerCase() == "img") {
+		/** @type HTMLElement[] */
+	var vaPaths = evt.path;
+//	var q = vaPaths[2];
+//	console.log(q);
+	var w = vaPaths.some(function(each){
+		var vaClassList = each.classList;
+		if(vaClassList && vaClassList.length > 0 && vaClassList.contains("cl-grid-cell")) {
+			return true;
+		}
+	});
+	if(w) {
+		evt.target.src = "";
+	}
+	
+	}
+},true);

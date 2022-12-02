@@ -9,6 +9,13 @@
 
 //catName("클로이");
 
+/**
+ * 
+ * @param {Function} func
+ */
+function aqaq(func){
+	func();
+}
 var catName = function(name) {
 	console.log("제 고양이 이름은 " + name + "입니다");
 }
@@ -19,8 +26,9 @@ console.log(window.hans);
  * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
  */
 function onBtn1Click2(e){
-	var btn1 = e.control;
-	console.log(window.hans);
+	aqaq();
+//	var btn1 = e.control;
+//	console.log(window.hans);
 //	alert(navigator.userAgent);
 //	alert(isMobile());
 }
@@ -226,4 +234,70 @@ function onBtn19Click(e){
 	}
 	
 	console.log(JSON.stringify(a));
+}
+
+/*
+ * "Button" 버튼(btn12)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn12Click(e){
+	var btn12 = e.control;
+//	app.lookup()
+//	var tre = new cpr.controls.TreeItem(label, value, parentValue);
+//	tre.hasAncestor(value)
+}
+
+/*
+ * "Button" 버튼(btn20)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn20Click(e){
+	var btn20 = e.control;
+	
+	
+	var side = new cpr.controls.SideNavigation();
+	side.setItemSet(app.lookup("ds2"), {
+		label: "label",
+		value: "value",
+		parentValue: "parent"
+	});
+	side.setFilter("hasAncestor('value1')");
+	console.log(side.getItems());
+}
+
+/*
+ * "Button" 버튼(btn21)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn21Click(e){
+	var btn21 = e.control;
+	app.lookup("pgi").currentPageIndex = 1;
+	
+	
+}
+
+/*
+ * 페이지 인덱서에서 selection-change 이벤트 발생 시 호출.
+ * Page index를 선택하여 선택된 페이지가 변경된 후에 발생하는 이벤트.
+ */
+function onPgiSelectionChange(e){
+	var pgi = e.control;
+	console.log("머고");
+}
+
+/*
+ * "map" 버튼(btn22)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn22Click2(e){
+	var btn22 = e.control;
+	
+	var objectMap = new cpr.utils.ObjectMap();
+	objectMap.put("a", 1);
+	objectMap.put("b", 2);	
+	console.log(objectMap);
+	var q = objectMap.toArray();
+	console.log(q);
+	
+	console.log(objectMap.getEntry(0));
 }

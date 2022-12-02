@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-32125644" version="1.0.4110">
+  <head std:sid="head-8517b662">
+    <screen std:sid="screen-165b1058" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-0502b295" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-3a5a1b1c" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-15f24781"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-304c7e0d">
+    <cl:button std:sid="button-b50c0c9f" id="btn1" value="Button">
+      <cl:listener std:sid="listener-33eb7d90" name="click" handler="onBtn1Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-a766de3d" top="20px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:embeddedpage std:sid="e-page-2767be8f" id="ep1" src="index.html">
+      <cl:xylayoutdata std:sid="xyl-data-d305b4a4" top="50px" right="20px" bottom="20px" left="20px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+    </cl:embeddedpage>
+    <cl:htmlsnippet std:sid="htmlsnippet-84aade35" removeOnBuild="true" value="&lt;style>&#xD;&#xA;/* CSS files add styling rules to your content */&#xD;&#xA;body {&#xD;&#xA;  background: #212121;&#xD;&#xA;  color: #fff;&#xD;&#xA;  font-family: helvetica, arial, sans-serif;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;header {&#xD;&#xA;  background: linear-gradient(0deg, rgba(7,7,7,1) 0%, rgba(7,7,7,1) 85%, rgba(55,52,54,1) 100%);&#xD;&#xA;  min-height: 30px;&#xD;&#xA;  overflow: hidden;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;h1 {&#xD;&#xA;  color: #f0821b;&#xD;&#xA;  font-size: 24pt;&#xD;&#xA;  padding: 15px 25px;&#xD;&#xA;  display: inline-block;&#xD;&#xA;  float: left;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;h2, p, section, iframe {&#xD;&#xA;  background: #212121;&#xD;&#xA;  padding: 10px 25px;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;h2 {&#xD;&#xA;  font-size: 16pt;&#xD;&#xA;  padding-top: 25px;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;p {&#xD;&#xA;  color: #cdcdcd;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;iframe {&#xD;&#xA;  display: block;&#xD;&#xA;  padding: 15px 0;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;header a, button {&#xD;&#xA;  color: #222;&#xD;&#xA;  padding: 7px;&#xD;&#xA;  min-width: 100px;&#xD;&#xA;  background: rgb(240, 130, 30);&#xD;&#xA;  border-radius: 3px;&#xD;&#xA;  border: 1px solid #3d3d3d;&#xD;&#xA;  text-transform: uppercase;&#xD;&#xA;  font-weight: bold;&#xD;&#xA;  cursor: pointer;&#xD;&#xA;  transition: background 300ms ease-in-out;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;header a {&#xD;&#xA;  background: #efefef;&#xD;&#xA;  float: right;&#xD;&#xA;  margin: 15px 25px;&#xD;&#xA;  text-decoration: none;&#xD;&#xA;  text-align: center;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;button:focus, button:hover, header a:hover {&#xD;&#xA;  background: rgb(260, 150, 50);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;.comment {&#xD;&#xA;  background: #212121;&#xD;&#xA;  border: none;&#xD;&#xA;  border-bottom: 1px solid #888;&#xD;&#xA;  color: #fff;&#xD;&#xA;  min-height: 25px;&#xD;&#xA;  display: block;&#xD;&#xA;  padding: 5px;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;.comments button {&#xD;&#xA;  float: right;&#xD;&#xA;  margin: 5px 0;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;.comments button, .comment {&#xD;&#xA;  transition: opacity 500ms ease-in-out;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;.comments ul {&#xD;&#xA;  clear: both;&#xD;&#xA;  margin-top: 60px;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;.comments ul li {&#xD;&#xA;  margin-top: 5px;&#xD;&#xA;  padding: 10px;&#xD;&#xA;  transition: background 500ms ease-in-out;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;.comments ul li * {&#xD;&#xA;  background: transparent;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;.comments ul li:nth-child(1) {&#xD;&#xA;  background: #313131;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;.comments ul li:hover {&#xD;&#xA;  background: rgb(70, 60, 10);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;.username, .timestamp {&#xD;&#xA;  font-size: 80%;&#xD;&#xA;  margin-right: 5px;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;.username {&#xD;&#xA;  font-weight: bold;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;.processing {&#xD;&#xA;  opacity: 0.3;&#xD;&#xA;  filter: grayscale(1);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;.comments ul li.spam {&#xD;&#xA;  background-color: #d32f2f;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;.comments ul li.spam::after {&#xD;&#xA;  content: &quot;⚠&quot;;&#xD;&#xA;  margin: -17px 2px;&#xD;&#xA;  zoom: 3;&#xD;&#xA;  float: right;&#xD;&#xA;}&#xD;&#xA;&lt;/style>">
+      <cl:xylayoutdata std:sid="xyl-data-106d0c87" top="20px" left="149px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:htmlsnippet>
+    <cl:xylayout std:sid="xylayout-a2454d2c"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

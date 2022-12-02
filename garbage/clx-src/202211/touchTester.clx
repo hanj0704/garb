@@ -10,6 +10,7 @@
   <body std:sid="body-ba684e48">
     <cl:group std:sid="group-360bb7c8" id="grp1">
       <cl:listener std:sid="listener-764fc07d" name="mousedown" handler="onGrp1Mousedown"/>
+      <cl:listener std:sid="listener-cf8d8b95" name="scroll" handler="onGrp1Scroll"/>
       <cl:xylayoutdata std:sid="xyl-data-b0995f05" top="39px" left="66px" width="584px" height="386px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
       <cl:button std:sid="button-8853703d" id="btn1" value="Button">
         <cl:flowlayoutdata std:sid="f-data-75f92e6f" width="100px" height="344px"/>

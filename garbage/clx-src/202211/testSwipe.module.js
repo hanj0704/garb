@@ -4,7 +4,7 @@
  *
  * @author HANS
  ************************************************/
-
+//cpr.core.AppConfig.INSTANCE.setEnvValue("useCustomScrollbar", true);
 /**
  *
  * @param {Event} e

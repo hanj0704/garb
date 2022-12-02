@@ -1,0 +1,464 @@
+@import "../custom-settings.part.less";
+
+/************************************************
+ * 헤더
+ ************************************************/
+ 
+.cl-container.index-header {
+	
+		.cl-searchinput.global-search {
+		font-size: @font-size-lg;
+		
+		.cl-text {
+			padding: 0px 20px;
+		}
+		
+		.cl-searchinput-search {
+			background-image: url("../images/com/ic_btn_search.png");
+			background-position: center;
+			background-color: @primary-dim;
+			border-left: @component-border-base;
+			width: 50px;
+		}
+		
+		&.cl-focus {
+			.cl-searchinput-search {
+				border-left-color: @input-focus-border-color;
+			}
+		}
+	}
+//	background-color: @white;
+	.cl-button.btn-nav-menu {
+		background-image: url("../images/com/ic_menu.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+		&.on {
+			background-image: url("../images/com/ic_menu_on.png");
+		}
+	}
+	
+	.cl-button.btn-nav-download {
+		background-image: url("../images/com/ic_download.png");
+	}
+	
+	.cl-button.btn-nav-plugin {
+		background-image: url("../images/com/ic_plug.png");
+	}
+	
+	.cl-button.btn-nav-dark {
+		background-image: url("../images/com/ic_moon.png");
+		
+		&.on {
+			background-image: url("../images/ic_sun.png");
+		}
+	}
+	
+	.cl-button.btn-nav-alarm {
+		background-image: url("../images/com/ic_bell.png");
+	}
+	
+	.cl-button.btn-nav-logout {
+		background-image: url("../images/com/ic_logout.png");
+	}
+	.cl-output.opt-search {
+		background-image: url("../images/com/ic_global-search.svg");
+		background-size: 24px 24px;
+		background-repeat: no-repeat;
+		
+		.cl-text {
+			padding-left: 36px;
+		}
+	}
+	
+}
+
+/************************************************
+ * 대시보드
+ ************************************************/
+.cl-container.dashboard {
+	
+	.cl-container.link-area {
+		background-color : @primary-dim;
+		border-radius: 10px;
+		&.cl-focus,
+		&:focus,
+		&:not(.cl-disabled):hover,
+		&:not(.cl-disabled).cl-activated,
+		&:not(.cl-disabled):active {
+//			color: #3e61d7;
+			cursor: pointer;
+		}
+	}
+	.cl-button.btn-application {
+		border: none;
+		background-color: @transparent;
+		color: @component-text-color;
+		font-size: @font-size-base;
+		text-align: center;
+		overflow: hidden;
+		&.cl-icon-align-top {
+			.cl-icon {
+				margin-bottom: 8px;
+			}
+		}
+		
+		.cl-icon {
+
+			background-color: #ffffff;
+			background-size: 48px 48px;
+			border: 1px solid @transparent;
+			border-radius: 10px;
+			width: 60px;
+			height: 60px;
+		}
+		
+		.cl-text {
+			line-height: 4px;
+		}
+		
+		&.cl-focus,
+		&:focus,
+		&:not(.cl-disabled):hover,
+		&:not(.cl-disabled).cl-activated,
+		&:not(.cl-disabled):active {
+			color: #3e61d7;
+			
+			.cl-icon {
+				border: 1px solid #3E61D7;
+				box-shadow: 0px 5px 15px 0px rgba(42, 55, 98, 0.15);
+			}
+		}
+	}
+}
+
+/*추천 검색어 아코디언*/
+.cl-accordion.acc-recommend {
+	font: @font-base;
+	background-color: @list-background-color;
+	border: @component-border-base; //@list-border-base;
+	border-radius: @border-radius;
+	color: @list-text-color;
+	padding: 0px;
+
+	/** 아코디언의 각 헤더 */
+	.cl-accordion-header {
+		background-color: @component-background-color;
+		border : none;
+		border-radius: @border-radius;
+		color: @component-text-color;
+		font-size: @font-size-base;
+		padding: 10px;
+		z-index: 0;
+		
+		/** 아코디언 펼침 버튼 */
+		.cl-accordion-expander {
+			background-image: url("../images/controls/accordion/ic_btn_down.png");
+			background-size: auto;
+			width: 24px;
+		}
+
+		/* 아코디언 헤더에 마우스가 호버되었을 떄의 스타일 */
+		&:hover:not(.cl-disabled):not(.cl-activated) {			
+			background-color: @transparent;
+			color: @component-text-color;
+		}
+		
+		&.cl-title-collapse:focus {
+			text-decoration: none;
+		}
+
+		&.cl-disabled {
+			background-color: @component-disabled-background-color;
+			border-color: @component-disabled-border-color;
+			color: @component-disabled-text-color;
+		}
+		
+		/* 아코디언 헤더를 클릭했을 때의 스타일 */
+		&.cl-activated {
+			background-color: @component-background-color;
+//			border-color: @primary;
+			color: @component-text-color; //@component-text-color;
+			font-weight: @font-weight-medium;
+//			border-bottom : none;
+			/* 클릭된 헤더의 펼침 버튼 아이콘 */
+			.cl-accordion-expander {
+				background-image: url("../images/controls/accordion/ic_btn_up_on.png");
+			}
+		}
+	}
+
+	.cl-accordion-section {
+		/* 아코디언 컨텐츠 */
+		border-bottom : @component-border-base;
+		.cl-accordion-content {
+			background-color: @component-background-color;
+		}
+		
+		&.cl-last {
+			border-bottom : none;
+			border-radius : 0px 0px @border-radius @border-radius;
+			.cl-accordion-content {
+			}
+		}
+	}
+	.cl-accordion-section+.cl-accordion-header{
+		/* 아코디언 섹션간의 간격 */
+		margin : 0px;
+		&.cl-first{
+			// margin-top: 0px;
+		}
+	}	
+	.cl-accordion-placeholder {
+		border : none;
+	}
+
+}
+/* 메가 메뉴 스타일 */
+.cl-navigationbar.mega-menu {
+	background-color: @transparent;
+	border: none;
+	border-radius: @border-radius-0;
+	
+	.cl-navigationbar-bar {
+		.cl-navigationbar-item {
+			border-radius: @border-radius-lg;
+			color: @component-text-color;
+			transition: background-color 0.2s ease-in-out;
+			
+			.cl-navigationbar-icon {
+				width: 0px;
+			}
+			
+			.cl-navigationbar-arrow {
+				background-image: url(../images/com/main/icon-chevron-down.svg);
+				background-size: 16px auto;
+			}
+			
+			.cl-text {
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+			
+			&:not(.cl-disabled):not(.cl-selected):hover,
+			&:not(.cl-disabled).cl-hover,
+			&.cl-hover {
+				.cl-navigationbar-arrow {
+					background-image: url(../images/com/main/icon-chevron-down.svg);
+					background-size: 16px auto;
+				}
+			}
+			
+			&.cl-selected {
+				.cl-navigationbar-arrow {
+					background-image: url(../images/com/main/icon-chevron-down.svg);
+					background-size: 16px auto;
+				}
+			}
+		}
+	}
+}
+.cl-navigationbar-list.mega-menu {
+	box-shadow: 0 3px 12px 1px rgba(44, 55, 130, 0.15);
+	margin-top: 14px !important;
+	
+	.cl-navigationbar-category {
+		padding: 0px 10px;
+		
+		.sub-items {
+		}
+	}
+	
+	.cl-navigationbar-listitem {
+		background-color: @transparent;
+		color: @component-text-color;
+		height: 32px;
+		margin: 1px;
+		
+		.cl-navigationbar-icon-wrapper {
+			.cl-navigationbar-icon {
+				width: 0px;
+			}
+		}
+		
+		.cl-navigationbar-accesskey-wrapper {
+			width: 0px;
+		}
+		
+		&:not(.cl-disabled):not(.cl-selected):hover,
+		&:not(.cl-disabled).cl-hover,
+		&.cl-hover {
+//			background-color: @megamenu-item-hover-background-color;
+//			color: @megamenu-item-hover-text-color;
+		}
+	}
+}
+.cl-navigationbar-list.mega-menu-left {
+	font: @font-base;
+	padding: 5px 0px !important;
+	width: calc(100% - 20px);
+	
+	@media (max-height:768px) {
+		height: 700px;
+		overflow-y: auto;
+	}
+	
+	.cl-navigationbar-category {
+		margin: 5px 10px;
+		
+		/* 서브 아이템 아이콘 이미지 추가 및 폰트 변경 */
+		.sub-items {
+			.cl-navigationbar-listitem {
+				&.cl-folder {
+					.cl-navigationbar-icon-wrapper {
+						width: 10px;
+					}
+				}
+			}
+			
+			.sub-items {
+				.cl-navigationbar-listitem {
+					&.cl-folder {
+						font-size: 13px;
+						font-weight: bold;
+						
+						.cl-navigationbar-icon-wrapper {
+							width: 16px;
+							background-image: url(../images/menu/left_bullet3-1.png);
+							background-repeat: no-repeat;
+							background-position: center left;
+							background-size: 11px 50%;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	.cl-navigationbar-listitem-wrapper {
+		/*  이전 메가메뉴 스타일 적용시, 주석 해제 해야함
+		 float: left;
+		 */
+	}
+	
+	/* 네비게이션 바 드랍다운 메뉴 아이템 */
+	.cl-navigationbar-listitem {
+		background-color: @transparent;
+		color: @component-text-color;
+		height: 32px;
+		
+		&.cl-leaf {
+			.cl-navigationbar-icon-wrapper {
+				background-image: url(../images/icon/ico-minus.png);
+				background-repeat: no-repeat;
+				background-position: center left;
+				background-size: 11px 50%;
+			}
+			padding-left: 8px;
+			font-size: 13px;
+			line-height: 24px;
+			vertical-align: middle;
+			
+			/* 네비게이션 바 드랍다운 메뉴 아이템 - 호버 */
+			&.cl-hover {
+				color: @secondary;
+			}
+			
+			&.cl-selected {
+				color: @secondary;
+			}
+		}
+		
+		.cl-navigationbar-icon-wrapper {
+			.cl-navigationbar-icon {
+				width: 0px;
+			}
+		}
+		
+		.cl-navigationbar-accesskey-wrapper {
+			width: 0px;
+		}
+		
+		&:not(.cl-disabled):not(.cl-selected):hover,
+		&:not(.cl-disabled).cl-hover,
+		&.cl-hover {
+//			background-color: @megamenu-item-hover-background-color;
+//			color: @megamenu-item-hover-text-color;
+		}
+	}
+}
+/************************************************
+ * 
+ ************************************************/
+
+/* 탭 폴더 */
+.cl-tabfolder.header-tab {
+	font: @font-base;
+	color: @tab-text-color;
+	/* 헤더 */
+	.cl-tabfolder-header {
+		height: 40px;
+		border-bottom : @tab-border-base;
+		.cl-empty-area {
+		}
+		
+		
+		/* 이전으로 스크롤 버튼 */
+	
+		/* 탭 헤더 아이템 */
+		.cl-tabfolder-item {
+			background-color: @transparent;
+			border: none;
+			box-shadow: inset 0px -1px 0px 0px @tab-item-border-color;
+			color: @tab-item-text-color;
+			padding: @tab-item-padding-y @tab-item-padding-x @tab-item-padding-y @tab-item-padding-x;
+			
+			/* 탭 아이템 체크 박스 */
+
+			.cl-text {
+				&:focus {
+					text-decoration: none;
+				}
+			}
+
+			/* 탭 헤더 아이템 - 선택됨 */
+			&.cl-selected {
+				background-color: @tab-item-selected-background-color;
+				box-shadow: inset 0px -3px 0px 0px @primary;
+				color: @tab-item-selected-text-color;
+
+				/* 탭 헤더 아이템 닫기 버튼 - 선택 됨 */
+				.cl-tabfolder-button {
+					background-image: url("../images/controls/tabfolder/ic_tab_close.png");
+				}
+			}
+	
+			/* 탭 헤더 아이템 - 호버 */
+			&:not(.cl-selected):hover {
+				background-color: @transparent;
+				border-color: @tab-item-hover-border-color;
+				color: @primary;
+			}
+
+			/* 비활성 탭 아이템 */
+			&.cl-disabled {
+				background-color: @tab-item-disabled-background-color;
+				border-color: @tab-item-disabled-border-color;
+				color: @tab-item-disabled-text-color;
+				text-shadow: none;
+				
+				&:hover {
+					background-color: @tab-item-disabled-background-color;
+					border-color: @tab-item-disabled-border-color;
+					color: @tab-item-disabled-text-color;
+				}
+			}
+		}
+	}
+	
+	/* 탭폴더 바디 */
+	.cl-tabfolder-body {
+		background-color: @tab-body-background-color;
+		border: none; //@tab-border-base;
+		color: @tab-text-color;
+	}
+}

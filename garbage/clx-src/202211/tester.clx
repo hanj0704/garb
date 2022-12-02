@@ -45,6 +45,60 @@
           </cl:datarow>
         </cl:datarowlist>
       </cl:dataset>
+      <cl:dataset std:sid="d-set-8e20ffdc" id="ds2">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-655d4421" name="label"/>
+          <cl:datacolumn std:sid="d-column-9f3e90d1" name="value"/>
+          <cl:datacolumn std:sid="d-column-65438878" name="parent"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label1</cl:datavalue>
+            <cl:datavalue columnname="value">value1</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label2</cl:datavalue>
+            <cl:datavalue columnname="value">value2</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label3</cl:datavalue>
+            <cl:datavalue columnname="value">value3</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label4</cl:datavalue>
+            <cl:datavalue columnname="value">value4</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label5</cl:datavalue>
+            <cl:datavalue columnname="value">value5</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value4]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label6</cl:datavalue>
+            <cl:datavalue columnname="value">value6</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label7</cl:datavalue>
+            <cl:datavalue columnname="value">value7</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value6]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label8</cl:datavalue>
+            <cl:datavalue columnname="value">value8</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value7]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label9</cl:datavalue>
+            <cl:datavalue columnname="value">value9</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value6]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
     </cl:model>
     <cl:appspec>
       <cl:property name="newProperty1" type="string" default="기본1" bindable="true" translatable="true" std:desc="번역"/>
@@ -113,23 +167,47 @@
     </cl:button>
     <cl:group std:sid="group-693d5dc0" id="grp1">
       <cl:xylayoutdata std:sid="xyl-data-e7355017" top="305px" left="732px" width="233px" height="230px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
-      <cl:button std:sid="button-75b53a41" id="btn8" value="Button">
-        <cl:verticaldata std:sid="v-data-499a7882" width="100px" height="20px"/>
-      </cl:button>
-      <cl:button std:sid="button-36131706" id="btn9" value="Button">
-        <cl:verticaldata std:sid="v-data-24943882" width="100px" height="20px"/>
-      </cl:button>
-      <cl:button std:sid="button-04d13e96" id="btn10" value="Button">
-        <cl:verticaldata std:sid="v-data-15afe3e9" width="100px" height="20px"/>
-      </cl:button>
-      <cl:button std:sid="button-81766924" id="btn11" value="Button">
-        <cl:listener std:sid="listener-14e0c3c9" name="click" handler="onBtn11Click"/>
-        <cl:verticaldata std:sid="v-data-f6b5f07d" width="100px" height="20px"/>
-      </cl:button>
-      <cl:button std:sid="button-b44ed6ab" id="btn12" value="Button">
-        <cl:verticaldata std:sid="v-data-d7db62f7" width="100px" height="20px"/>
-      </cl:button>
-      <cl:verticallayout std:sid="v-layout-c6daebda"/>
+      <cl:group std:sid="group-58c76ac1" id="grp5">
+        <cl:verticaldata std:sid="v-data-58ea5e0a" width="400px" height="40px"/>
+        <cl:button std:sid="button-2cd1d7c7" id="btn8" value="Button">
+          <cl:formdata std:sid="f-data-d4c828c3" topSpacing="8" row="0" col="0" ignore-layout-spacing="true"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-00dfd7c6" scrollable="false" hspace="2px" vspace="2px" top-margin="4px" right-margin="4px" bottom-margin="4px" left-margin="4px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-209baf2e" id="grp6">
+        <cl:verticaldata std:sid="v-data-38368ba3" width="223px" height="40px" autosize="none"/>
+        <cl:button std:sid="button-74c33b07" id="btn9" value="Button">
+          <cl:formdata std:sid="f-data-bd6bd501" row="0" col="0"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-c5625156" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-ed4feb3a" id="grp7">
+        <cl:verticaldata std:sid="v-data-7ab2d902" width="223px" height="40px" autosize="none"/>
+        <cl:button std:sid="button-bdfa314d" id="btn10" value="Button">
+          <cl:formdata std:sid="f-data-5c1ff498" row="0" col="0"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-8c5dcab6" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-8c98459b" id="grp8">
+        <cl:verticaldata std:sid="v-data-cf0467b1" width="223px" height="40px" autosize="none"/>
+        <cl:button std:sid="button-c4e89a03" id="btn11" value="Button">
+          <cl:formdata std:sid="f-data-24f24e4e" row="0" col="0"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-9a1011d8" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-c6daebda" leftmargin="5" rightmargin="5" topmargin="5" bottommargin="5"/>
     </cl:group>
     <cl:button std:sid="button-728a9b02" id="btn13" value="Button">
       <cl:listener std:sid="listener-fdbd7545" name="click" handler="onBtn13Click"/>
@@ -189,6 +267,39 @@
       <cl:listener std:sid="listener-8dcd8a67" name="click" handler="onBtn19Click"/>
       <cl:xylayoutdata std:sid="xyl-data-b80910fe" top="76px" left="810px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
+    <cl:inputbox std:sid="i-box-09198a41" id="ipb1">
+      <cl:xylayoutdata std:sid="xyl-data-9890800b" top="118px" left="799px" width="129px" height="33px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:inputbox>
+    <cl:searchinput std:sid="s-input-51da9388" style="border-radius:100px;" value="zzz" hidesearchbutton="true" preventinput="true">
+      <cl:xylayoutdata std:sid="xyl-data-659da0d5" top="161px" left="795px" width="129px" height="25px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:searchinput>
+    <cl:button std:sid="button-998798ce" id="btn12" value="Button">
+      <cl:listener std:sid="listener-ddb7ff04" name="click" handler="onBtn12Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-b7c0dcab" top="424px" left="32px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:tree std:sid="tree-46e635a9" id="tre1">
+      <cl:xylayoutdata std:sid="xyl-data-12b19ce5" top="424px" left="229px" width="200px" height="150px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:tree>
+    <cl:button std:sid="button-fbe64e5b" id="btn20" value="Button">
+      <cl:listener std:sid="listener-bdc63438" name="click" handler="onBtn20Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-425ec8e2" top="215px" left="781px" width="60px" height="60px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-ce6cf2f0" id="btn21" value="Button">
+      <cl:listener std:sid="listener-cbb7811b" name="click" handler="onBtn21Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-efa4a7a6" top="701px" left="476px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:pageindexer std:sid="p-indexer-1aeaf71e" id="pgi" totalrowcount="100">
+      <cl:listener std:sid="listener-a1b6e260" name="selection-change" handler="onPgiSelectionChange"/>
+      <cl:xylayoutdata std:sid="xyl-data-fbebfc03" top="632px" left="371px" width="518px" height="39px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:pageindexer>
+    <cl:button std:sid="button-db107b9f" id="btn22" value="map">
+      <cl:listener std:sid="listener-721a4a9c" name="click" handler="onBtn22Click"/>
+      <cl:listener std:sid="listener-7af5cb27" name="click" handler="onBtn22Click2"/>
+      <cl:xylayoutdata std:sid="xyl-data-23bbe754" top="560px" left="695px" width="166px" height="44px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:navigationbar std:sid="n-bar-3dd218e5">
+      <cl:xylayoutdata std:sid="xyl-data-b05e7784" top="521px" left="673px" width="300px" height="40px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:navigationbar>
     <cl:xylayout std:sid="xylayout-06855195"/>
   </body>
   <std:studiosetting>
