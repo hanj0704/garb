@@ -27,3 +27,4 @@ hs_err_pid*
 
 # builder
 /clx-build/
+garb/clx-build/
