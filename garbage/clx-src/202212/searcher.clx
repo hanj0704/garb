@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-1bda8fe6" version="1.0.4135">
+  <head std:sid="head-31d955eb">
+    <screen std:sid="screen-c12d3416" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-3fda1d72" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-d1ab180f" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-fe5804cf"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-ecfa73df">
+    <cl:inputbox std:sid="i-box-7234bd22" id="ipb1">
+      <cl:xylayoutdata std:sid="xyl-data-0f4a55bf" top="20px" left="20px" width="148px" height="44px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:inputbox>
+    <cl:button std:sid="button-72d8c716" id="btn1" value="찾기">
+      <cl:listener std:sid="listener-cfb6853f" name="click" handler="onBtn1Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-1abe29d9" top="20px" left="178px" width="135px" height="44px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-6d3404c7" id="btn2" value="tester">
+      <cl:listener std:sid="listener-95e0fc65" name="click" handler="onBtn2Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-daf878d5" top="20px" left="323px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-7863b150" id="btn3" value="test2">
+      <cl:listener std:sid="listener-2719c2d5" name="click" handler="onBtn3Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-ac80beb5" top="44px" left="323px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-3a7a909b"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

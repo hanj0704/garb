@@ -8,6 +8,7 @@ function abc(){
 	alert("안녕하세요");
 	return true;
 }
+cpr.core.AppConfig.INSTANCE.setEnvValue("appcache", true);
 
 
 //case1. exports 예약어 사용하기, -> 화면에서 require 예약어를 통해 모듈을 읽고, 해당 모듈 내에 exports로 선언된 함수들을 호출할 수 있음.
