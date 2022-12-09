@@ -80,3 +80,187 @@ function onBtn1Click2(e){
 	var btn1 = e.control;
 	
 }
+
+/*
+ * "replace" 버튼(btn2)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn2Click(e){
+	var btn2 = e.control;
+	
+	var a = "abcd".replace(/[a-b]/g, function(match,a,b,c){
+		console.log(match);
+		console.log(a);
+		console.log(b);
+		return "";
+	})
+}
+
+/*
+ * "Button" 버튼(btn3)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn3Click2(e){
+	var btn3 = e.control;
+	
+	app.getContainer().redraw();
+}
+
+/*
+ * 데이터맵에서 update 이벤트 발생 시 호출.
+ * 데이터가 수정되는 경우 발생하는 이벤트. 발생 메소드 : setValue
+ */
+function onDm1Update(e){
+	var dm1 = e.control;
+	
+	console.log("데이터맵이 선언된 영역에서 업데이트 발생");
+}
+
+/*
+ * "Button" 버튼(btn4)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn4Click2(e){
+	var btn4 = e.control;
+	app.lookup("dm1").build({
+		"column1" : "간다ㅏㄹ마ㅏ잡디"
+	});
+}
+
+/*
+ * 데이터맵에서 load 이벤트 발생 시 호출.
+ * build 메소드에 의해 데이터 구조가 재구성될 때 발생하는 이벤트. 초기 생성시에도 발생합니다.
+ */
+function onDm1Load(e){
+	var dm1 = e.control;
+	console.log("데이터맵이 선언된 영역에서 빌드 발생");
+}
+
+/*
+ * "Button" 버튼(btn5)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn5Click2(e){
+	var btn5 = e.control;
+	
+	var a = 7/3;
+	console.log(a);
+	console.log(Math.ceil(a));
+}
+
+/*
+ * 데이터맵에서 before-update 이벤트 발생 시 호출.
+ * 데이터가 수정되기 전에 발생하는 이벤트. 발생 메소드 : setValue
+ */
+function onDm1BeforeUpdate(e){
+	var dm1 = e.control;
+	console.log("데이터맵이 선언된 영역에서 비포업데이트 발생");
+}
+
+/*
+ * "Button" 버튼(btn6)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn6Click(e){
+//	console.log(e);
+//	var btn6 = e.control;
+	window.open("https://www.naver.com");
+	
+}
+/*
+ * 루트 컨테이너에서 load 이벤트 발생 시 호출.
+ * 앱이 최초 구성된후 최초 랜더링 직후에 발생하는 이벤트 입니다.
+ */
+function onBodyLoad(e){
+	
+}
+
+//window.document.body.addEventListener("click", function(ev){
+//	console.log(ev);
+//});
+
+/*
+ * "Button" 버튼(btn6)에서 mousedown 이벤트 발생 시 호출.
+ * 사용자가 컨트롤 위에 포인터를 위치한 상태로 마우스 버튼을 누를 때 발생하는 이벤트.
+ */
+function onBtn6Mousedown(e){
+	var btn6 = e.control;
+	if(e.which == 2) {
+		btn6.click();
+	}
+}
+
+/*
+ * "Button" 버튼(btn7)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn7Click(e){
+	var btn7 = e.control;
+//	app.lookup("btn6").style.removeStyle("opacity");
+//	app.lookup("btn11").style.removeStyle("opacity");
+//	app.lookup("btn12").style.removeStyle("opacity");
+	app.lookup("btn6").style.css({
+		"animation" : "txt_bot 5s 0s ease-in-out both",
+		"opacity" : "1"
+	});
+	app.lookup("btn11").style.css({
+		"animation" : "txt_bot 5s 0.3s ease-in-out both",
+		"opacity" : "1"
+	});
+	app.lookup("btn12").style.css({
+		"animation" : "txt_left 5s 0.6s ease-in-out both",
+		"opacity" : "1"
+	});
+}
+
+/*
+ * 루트 컨테이너에서 init 이벤트 발생 시 호출.
+ * 앱이 최초 구성될 때 발생하는 이벤트 입니다.
+ */
+function onBodyInit(e){
+	app.lookup("btn6").style.css("opacity", "0");
+	app.lookup("btn11").style.css("opacity", "0");
+	app.lookup("btn12").style.css("opacity", "0");
+	app.lookup("btn8").style.css("opacity", "0");
+}
+/*
+ * 루트 컨테이너에서 scroll 이벤트 발생 시 호출.
+ * 그룹 컨텐츠가 스크롤될 때 발생하는 이벤트.
+ */
+function onBodyScroll(e){
+//	var group = e.control;
+//	var q = e.scrollTop + window.innerHeight
+//	deboun();
+}
+var deboun = _.throttle(func, 300);
+
+function func(e){
+//	console.log(e);
+	console.log("하하");
+//	console.log(window.innerHeight);
+//	console.log( document.body.getClientRects());
+//	console.log(document.body.getBoundingClientRect());
+//	console.log(app.lookup("btn8").getActualRect().top);
+//	console.log(window.innerHeight > app.lookup("btn8").getActualRect().bottom);
+	if(window.innerHeight > app.lookup("btn8").getActualRect().bottom) {
+		app.lookup("btn8").style.css({
+			"animation" : "txt_bot 5s 0s ease-in-out both",
+			"opacity" : "1"
+		})
+	}
+}
+window.addEventListener("mousewheel", function(){
+	deboun();
+});
+/*
+ * "Button" 버튼(btn13)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn13Click(e){
+	var btn13 = e.control;
+	
+//	console.log(app.lookup("btn8").getActualRect());
+//	console.log(app.lookup("btn8").getOffsetRect(true));
+//	console.log(app.lookup("btn8").getOffsetRect(false));
+	console.log(app.lookup("grp1").getOffsetRect());
+}
