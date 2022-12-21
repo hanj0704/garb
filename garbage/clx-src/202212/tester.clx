@@ -29,6 +29,11 @@
           </cl:datarow>
         </cl:datarowlist>
       </cl:dataset>
+      <cl:dataset std:sid="d-set-802970c4" id="ds2">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-828376f3" name="column1"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
       <cl:datamap std:sid="d-map-e024f3a7" id="dm1">
         <cl:listener std:sid="listener-166e1f8c" name="update" handler="onDm1Update"/>
         <cl:listener std:sid="listener-e1d95a8f" name="load" handler="onDm1Load"/>
@@ -120,6 +125,51 @@
     <cl:button std:sid="button-49ab8ab1" id="btn13" value="Button">
       <cl:listener std:sid="listener-19c919b8" name="click" handler="onBtn13Click"/>
       <cl:xylayoutdata std:sid="xyl-data-5e50174a" top="241px" left="20px" width="171px" height="31px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:grid std:sid="grid-10625dc6" id="grd1">
+      <cl:xylayoutdata std:sid="xyl-data-35d43874" top="51px" left="683px" width="400px" height="200px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:gridcolumn std:sid="g-column-c42669bc"/>
+      <cl:gridcolumn std:sid="g-column-e21303d8"/>
+      <cl:gridcolumn std:sid="g-column-cd3d3486"/>
+      <cl:gridcolumn std:sid="g-column-e38c9009"/>
+      <cl:gridcolumn std:sid="g-column-757e5937"/>
+      <cl:gridheader std:sid="gh-band-14274cd3">
+        <cl:gridrow std:sid="g-row-5d223823"/>
+        <cl:gridcell std:sid="gh-cell-f8fd4029" rowindex="0" colindex="0"/>
+        <cl:gridcell std:sid="gh-cell-0317ef5e" rowindex="0" colindex="1"/>
+        <cl:gridcell std:sid="gh-cell-a3e1fe7a" rowindex="0" colindex="2"/>
+        <cl:gridcell std:sid="gh-cell-0419ab7a" rowindex="0" colindex="3"/>
+        <cl:gridcell std:sid="gh-cell-3af50284" rowindex="0" colindex="4"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-a0a4bb01">
+        <cl:gridrow std:sid="g-row-26e1be1e"/>
+        <cl:gridcell std:sid="gd-cell-3e58b3b5" rowindex="0" colindex="0"/>
+        <cl:gridcell std:sid="gd-cell-aa7a6cc6" rowindex="0" colindex="1"/>
+        <cl:gridcell std:sid="gd-cell-c6ae16b3" rowindex="0" colindex="2"/>
+        <cl:gridcell std:sid="gd-cell-69fe11ff" rowindex="0" colindex="3"/>
+        <cl:gridcell std:sid="gd-cell-01e4c8ce" rowindex="0" colindex="4"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:mdifolder std:sid="mdifolder-c0f0d6b0" id="mdi1">
+      <cl:xylayoutdata std:sid="xyl-data-0d2dec1e" top="468px" left="20px" width="857px" height="343px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:tabitem std:sid="t-item-b4c6c86d" selected="true" text="son.clx">
+        <std:metadata>
+          <std:property key="is-active-item" value="true"/>
+        </std:metadata>
+        <cl:embeddedapp std:sid="e-app-e82b34bd" id="ea1" src="son.clx">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+        </cl:embeddedapp>
+      </cl:tabitem>
+    </cl:mdifolder>
+    <cl:button std:sid="button-9d3136d1" id="btn14" value="Button">
+      <cl:listener std:sid="listener-2b782171" name="click" handler="onBtn14Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-e488856c" top="438px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-fb59bed1" id="btn15" value="Button">
+      <cl:listener std:sid="listener-fe7f7cfe" name="click" handler="onBtn15Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-dab6916a" top="438px" left="129px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
     <cl:xylayout std:sid="xylayout-a2454d2c"/>
   </body>

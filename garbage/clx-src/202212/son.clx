@@ -15,13 +15,40 @@
   </head>
   <body std:sid="body-17cb0547">
     <cl:listener std:sid="listener-ad26b389" name="load" handler="onBodyLoad"/>
-    <cl:output std:sid="output-0491ffd4" id="opt1" value="im son">
-      <cl:xylayoutdata std:sid="xyl-data-412fa222" top="20px" left="77px" width="318px" height="249px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
-    </cl:output>
-    <cl:output std:sid="output-2a1792e8" id="opt2" value="12312313123" unselectable="false">
-      <cl:xylayoutdata std:sid="xyl-data-5d0ecddd" top="62px" left="470px" width="186px" height="107px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
-    </cl:output>
-    <cl:xylayout std:sid="xylayout-a3087a29"/>
+    <cl:button std:sid="button-8e9c8130" id="btn1" value="Button">
+      <cl:flowlayoutdata std:sid="f-data-659bf36b" width="120px" height="20px"/>
+    </cl:button>
+    <cl:button std:sid="button-1aad6aec" id="btn2" value="Button">
+      <cl:flowlayoutdata std:sid="f-data-d9610d8b" width="120px" height="20px"/>
+    </cl:button>
+    <cl:button std:sid="button-5a745f88" id="btn3" value="Button">
+      <cl:flowlayoutdata std:sid="f-data-2b670a42" width="120px" height="20px"/>
+    </cl:button>
+    <cl:button std:sid="button-0f71e1d9" id="btn4" value="Button">
+      <cl:flowlayoutdata std:sid="f-data-79b2e5ec" width="120px" height="20px"/>
+    </cl:button>
+    <cl:button std:sid="button-5ae22275" id="btn5" value="Button">
+      <cl:flowlayoutdata std:sid="f-data-00821cdd" width="120px" height="20px"/>
+    </cl:button>
+    <cl:button std:sid="button-45821729" id="btn10" value="Button">
+      <cl:flowlayoutdata std:sid="f-data-2ddf4699" width="120px" height="20px"/>
+    </cl:button>
+    <cl:button std:sid="button-df92bef6" id="btn9" value="Button">
+      <cl:flowlayoutdata std:sid="f-data-82fb1e8b" width="120px" height="20px"/>
+    </cl:button>
+    <cl:button std:sid="button-77c8a23a" id="btn6" value="Button">
+      <cl:flowlayoutdata std:sid="f-data-a9bbf8d6" width="120px" height="20px"/>
+    </cl:button>
+    <cl:button std:sid="button-fd77f10b" id="btn8" value="Button">
+      <cl:flowlayoutdata std:sid="f-data-036ae2c4" width="120px" height="20px"/>
+    </cl:button>
+    <cl:button std:sid="button-0a7b0e25" id="btn7" value="Button">
+      <cl:flowlayoutdata std:sid="f-data-216ca59f" width="120px" height="20px"/>
+    </cl:button>
+    <cl:button std:sid="button-89b93527" id="btn11" value="Button">
+      <cl:flowlayoutdata std:sid="f-data-2175b4e5" width="120px" height="20px"/>
+    </cl:button>
+    <cl:flowlayout std:sid="f-layout-5ab3df9d" hspacing="40" linewrap="false" rightmargin="100"/>
   </body>
   <std:studiosetting>
     <std:hruler/>

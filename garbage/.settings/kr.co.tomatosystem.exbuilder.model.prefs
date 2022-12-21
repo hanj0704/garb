@@ -1,2 +1,6 @@
 custom-properties.custom=true
+default-js-path=platform\:/resource/garbage-webs/exbuilder/runtime/conf/defaults.js
 eclipse.preferences.version=1
+standard.issue-link-pattern=
+use-default-js-path=true
+use-standard.issue-link-pattern=

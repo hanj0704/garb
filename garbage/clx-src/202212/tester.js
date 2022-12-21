@@ -6,7 +6,6 @@
  ************************************************/
 
 var mod = cpr.core.Module.require("202212/moduleName");
-cpr.core.App.load
 exports.heyFunc = function(){
 	
 	alert("HELLo");
@@ -230,7 +229,7 @@ function onBodyInit(e){
 function onBodyScroll(e){
 //	var group = e.control;
 //	var q = e.scrollTop + window.innerHeight
-//	deboun();
+	deboun();
 }
 var deboun = _.throttle(func, 300);
 
@@ -244,14 +243,17 @@ function func(e){
 //	console.log(window.innerHeight > app.lookup("btn8").getActualRect().bottom);
 	if(window.innerHeight > app.lookup("btn8").getActualRect().bottom) {
 		app.lookup("btn8").style.css({
-			"animation" : "txt_bot 5s 0s ease-in-out both",
+			"animation" : "txt_top 5s 0s ease-in-out both",
 			"opacity" : "1"
 		})
 	}
 }
-window.addEventListener("mousewheel", function(){
-	deboun();
-});
+//window.addEventListener("scroll", function(ev){
+//	console.log(ev);
+//	console.log("힝행홍");
+//},{
+//	capture : true
+//});
 /*
  * "Button" 버튼(btn13)에서 click 이벤트 발생 시 호출.
  * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
@@ -263,4 +265,40 @@ function onBtn13Click(e){
 //	console.log(app.lookup("btn8").getOffsetRect(true));
 //	console.log(app.lookup("btn8").getOffsetRect(false));
 	console.log(app.lookup("grp1").getOffsetRect());
+}
+
+/*
+ * "Button" 버튼(btn14)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn14Click(e){
+	var btn14 = e.control;
+	var mdi = app.lookup("mdi1");
+	/** @type cpr.controls.EmbeddedApp */
+	var tabs = mdi.getTabItems()[0].content;
+	tabs.app = null;
+	cpr.core.App.load("202212/son", function(loadedApp){
+		tabs.app = loadedApp;
+		tabs.redraw(); 
+	});
+	
+}
+
+/*
+ * "Button" 버튼(btn15)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn15Click(e){
+	var btn15 = e.control;
+	
+	var all = cpr.core.Platform.INSTANCE.getAllRunningAppInstances();
+	var q = all.filter(function(each){
+		return each.app.id == "202212/son";
+	});
+	console.log(q);
+	q.forEach(function(each){
+		console.log(each.id);
+	});
+	console.log(cpr.core.AppConfig.INSTANCE.getEnvConfig("appcache"));
+	console.log(cpr.core.AppConfig.INSTANCE.toJSON());
 }

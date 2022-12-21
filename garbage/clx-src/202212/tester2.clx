@@ -9,9 +9,81 @@
   </head>
   <body std:sid="body-12a53b0c">
     <cl:button std:sid="button-27182355" id="btn1" value="Button">
-      <cl:xylayoutdata std:sid="xyl-data-e22ce1ec" top="20px" left="20px" width="168px" height="30px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:verticaldata std:sid="v-data-99e3a752" width="168px" height="30px"/>
     </cl:button>
-    <cl:xylayout std:sid="xylayout-5226c275"/>
+    <cl:group std:sid="group-120f891c" id="grp1">
+      <cl:verticaldata std:sid="v-data-354e80ae" width="329px" height="364px"/>
+      <cl:output std:sid="output-079eadad" id="opt1" value="Output">
+        <cl:formdata std:sid="f-data-ace95478" row="0" col="0" rowspan="1" colspan="1"/>
+      </cl:output>
+      <cl:group std:sid="group-010de440" id="grp2">
+        <cl:formdata std:sid="f-data-91fb1c5d" row="1" col="0"/>
+        <cl:button std:sid="button-8ae04405" id="btn2" value="Button">
+          <cl:xylayoutdata std:sid="xyl-data-1a90987a" top="60px" left="31px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        </cl:button>
+        <cl:grid std:sid="grid-703c2ff6" id="grd1">
+          <cl:xylayoutdata std:sid="xyl-data-02cc827d" top="31px" left="336px" width="400px" height="200px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          <cl:gridcolumn std:sid="g-column-743358a7"/>
+          <cl:gridcolumn std:sid="g-column-cff35617"/>
+          <cl:gridcolumn std:sid="g-column-8c186edd"/>
+          <cl:gridcolumn std:sid="g-column-00107efc"/>
+          <cl:gridcolumn std:sid="g-column-8d7e1a1d"/>
+          <cl:gridheader std:sid="gh-band-f9f244a1">
+            <cl:gridrow std:sid="g-row-93e62c86"/>
+            <cl:gridcell std:sid="gh-cell-1c27ce7c" rowindex="0" colindex="0"/>
+            <cl:gridcell std:sid="gh-cell-0d6e7d59" rowindex="0" colindex="1"/>
+            <cl:gridcell std:sid="gh-cell-a0b7897e" rowindex="0" colindex="2"/>
+            <cl:gridcell std:sid="gh-cell-fd9bd6dc" rowindex="0" colindex="3"/>
+            <cl:gridcell std:sid="gh-cell-9511c079" rowindex="0" colindex="4"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-749c4db7">
+            <cl:gridrow std:sid="g-row-92910670"/>
+            <cl:gridcell std:sid="gd-cell-7a02e842" rowindex="0" colindex="0"/>
+            <cl:gridcell std:sid="gd-cell-5838fd20" rowindex="0" colindex="1"/>
+            <cl:gridcell std:sid="gd-cell-dcc42663" rowindex="0" colindex="2"/>
+            <cl:gridcell std:sid="gd-cell-0e82ff3e" rowindex="0" colindex="3"/>
+            <cl:gridcell std:sid="gd-cell-bdf44edb" rowindex="0" colindex="4"/>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:xylayout std:sid="xylayout-81295991"/>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-63948c7b" scrollable="false" hspace="16px" vspace="16px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:tabfolder std:sid="t-folder-34e2fadd">
+      <cl:verticaldata std:sid="v-data-ccbaf3b2" width="320px" height="240px"/>
+      <cl:tabitem std:sid="t-item-d4989ffb" name="qdqdqdqdqd" selected="true" text="tab1">
+        <std:metadata>
+          <std:property key="is-active-item" value="true"/>
+        </std:metadata>
+        <cl:group std:sid="group-7e269789" id="grp3">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:xylayout std:sid="xylayout-d881c531"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-daddd9b7" name="cqcqcqcqqcqcqcqc" text="tab 2">
+        <cl:group std:sid="group-14678c5b" id="grp4">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:xylayout std:sid="xylayout-29c8e3dc"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-bc706f6c" name="zzzzzzzzzz" text="tab 3">
+        <cl:group std:sid="group-2f4e8842" id="grp5">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:xylayout std:sid="xylayout-d7199358"/>
+        </cl:group>
+      </cl:tabitem>
+    </cl:tabfolder>
+    <cl:verticallayout std:sid="v-layout-b658ce89"/>
   </body>
   <std:studiosetting>
     <std:hruler/>

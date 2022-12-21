@@ -8,9 +8,7 @@
   <settings:CustomProperties type="CheckBox"/>
   <settings:CustomProperties type="CheckBoxGroup"/>
   <settings:CustomProperties type="ComboBox"/>
-  <settings:CustomProperties type="ComplexMatrixNode"/>
   <settings:CustomProperties type="DataColumn"/>
-  <settings:CustomProperties type="DataControlContextMatrixNode"/>
   <settings:CustomProperties type="DataMap"/>
   <settings:CustomProperties type="DataSet"/>
   <settings:CustomProperties type="DataView"/>
@@ -29,14 +27,12 @@
   <settings:CustomProperties type="LinkedListBox"/>
   <settings:CustomProperties type="ListBox"/>
   <settings:CustomProperties type="MaskEditor"/>
-  <settings:CustomProperties type="MatrixNode"/>
   <settings:CustomProperties type="MatrixSubmission"/>
   <settings:CustomProperties type="MDIFolder"/>
   <settings:CustomProperties type="Menu"/>
   <settings:CustomProperties type="NavigationBar"/>
   <settings:CustomProperties type="Notifier"/>
   <settings:CustomProperties type="NumberEditor"/>
-  <settings:CustomProperties type="NumberLiteralMatrixNode"/>
   <settings:CustomProperties type="Output"/>
   <settings:CustomProperties type="PageIndexer"/>
   <settings:CustomProperties type="PathMatrixNode"/>
@@ -45,7 +41,6 @@
   <settings:CustomProperties type="SearchInput"/>
   <settings:CustomProperties type="SectionItem"/>
   <settings:CustomProperties type="Slider"/>
-  <settings:CustomProperties type="StringLiteralMatrixNode"/>
   <settings:CustomProperties type="Submission"/>
   <settings:CustomProperties type="TabFolder"/>
   <settings:CustomProperties type="TabItem"/>
@@ -54,4 +49,6 @@
   <settings:CustomProperties type="TreeCell"/>
   <settings:CustomProperties type="UIControlShell"/>
   <settings:CustomProperties type="Video"/>
+  <settings:CustomProperties type="DataWindow"/>
+  <settings:CustomProperties type="SideNavigation"/>
 </xmi:XMI>

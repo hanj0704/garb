@@ -17,6 +17,10 @@
 					<value>clx-build</value>
 				</dictionary>
 				<dictionary>
+					<key>input-language</key>
+					<value>es5</value>
+				</dictionary>
+				<dictionary>
 					<key>lib-path</key>
 					<value>cpr-lib</value>
 				</dictionary>
@@ -30,6 +34,10 @@
 				</dictionary>
 				<dictionary>
 					<key>rasterize-vector-images</key>
+					<value>false</value>
+				</dictionary>
+				<dictionary>
+					<key>relativize-less-url</key>
 					<value>false</value>
 				</dictionary>
 				<dictionary>
