@@ -4,7 +4,16 @@
  *
  * @author HANS
  ************************************************/
-
+cpr.expression.ExpressionEngine.INSTANCE.registerFunction("testman", function(ctrl,a){
+	console.log(a);
+	console.log(ctrl);
+	if(!ctrl) {
+		console.log("헉스");
+		return true;
+	}
+	return true;
+		
+});
 var Anime = {
 	/** @type cpr.core.AppInstance */
 	ins : null,

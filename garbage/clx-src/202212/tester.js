@@ -302,3 +302,103 @@ function onBtn15Click(e){
 	console.log(cpr.core.AppConfig.INSTANCE.getEnvConfig("appcache"));
 	console.log(cpr.core.AppConfig.INSTANCE.toJSON());
 }
+
+/*
+ * "Button" 버튼(btn16)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn16Click(e){
+	var btn16 = e.control;
+	app.lookup("mdi1").addItemWithApp("202212/son");
+}
+
+/*
+ * "delete" 버튼(btn17)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn17Click(e){
+	var btn17 = e.control;
+	
+	app.lookup("mdi1").closeAll();
+}
+
+/*
+ * "Button" 버튼(btn18)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn18Click(e){
+	var btn18 = e.control;
+	
+	var tre = app.lookup("tre");
+	var grd = app.lookup("grd1");
+	
+	grd.setTreeCheckIndex(1, true);
+
+}
+
+/*
+ * "Button" 버튼(btn19)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn19Click(e){
+	var btn19 = e.control;
+	
+	var objMap = new cpr.utils.ObjectMap();
+	var data = {};
+	objMap.put({"column1" : "광","column2":"공"}, data);
+	
+	var parents = data;
+	console.log(parents);
+	parents["영업1팀"] = "가가";
+	
+	var valueCol = parents["크크"];
+	if (valueCol == null) {
+		valueCol = {};
+		parents["크크"] = valueCol;
+	}
+	parents = valueCol;
+	console.log(parents);
+	console.log(objMap);
+	parents["가가"] = "호호";
+	console.log(parents);
+	console.log(objMap);
+}
+
+/*
+ * "Button" 버튼(btn20)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn20Click(e){
+	var btn20 = e.control;
+	var a = decodeURI("%E2%80%8B");
+	console.log(a);
+	console.log(encodeURI("https://edu.tomatosystem.co.kr/eXCFrame-v2 EDU-sample"))
+	console.log(decodeURI("https://edu.tomatosystem.co.kr/eXCFrame-v2%E2%80%8BEDU-sample"));
+}
+/*
+ * "send" 버튼(btn21)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn21Click(e){
+	var btn21 = e.control;
+	app.lookup("sms1").setResponseDecoder(function(sub,res){
+		console.log(res);
+		var resMan = JSON.parse(res);
+		resMan["dm1"]["column3"] = "5";
+		
+		return {
+			contentType : "application/json",
+			content : resMan
+		}
+	});
+	app.lookup("sms1").send();
+}
+
+/*
+ * "getDatas" 버튼(btn22)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn22Click(e){
+	var btn22 = e.control;
+	console.log(app.lookup("dm1").getDatas());
+}

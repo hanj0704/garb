@@ -191,6 +191,10 @@
         <cl:columns length="1" unit="FRACTION"/>
       </cl:formlayout>
     </cl:group>
+    <cl:button std:sid="button-63916b0f" id="btn18" value="객체복사">
+      <cl:listener std:sid="listener-926be9bd" name="click" handler="onBtn18Click"/>
+      <cl:flowlayoutdata std:sid="f-data-7d15d149" width="200px" height="40px" autosize="none"/>
+    </cl:button>
     <cl:flowlayout std:sid="f-layout-adff95ee" hspacing="20" vspacing="20" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
   </body>
   <std:studiosetting>

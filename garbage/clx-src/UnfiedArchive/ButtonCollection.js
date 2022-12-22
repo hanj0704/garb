@@ -436,3 +436,26 @@ function onBtn17Click(e){
 	
 }
 
+/*
+ * "객체복사" 버튼(btn18)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn18Click(e){
+	var btn18 = e.control;
+	/*
+	 * 객체를 다른 변수에 할당하는것은 해당 객체를 복사하여 별도로 저장하는게 아니라 객체가 저장되어있는 메모리 주소인 객체에 대한 참조값을 저장하게됨.
+	 * 객체와 원시타입의 근본적인 차이는 참조에 의해 저장되고 복사되는것임.
+	 */
+	var objMap = new cpr.utils.ObjectMap();
+	var data = {};
+	objMap.put({"column1" : "광","column2":"공"}, data);
+	
+	var parents = data; // parents == data 객체 복사가 아닌 참조가 일어나서, 한쪽에서 값을 바꾸면 다른곳에 영향을 미침
+	parents["영업1팀"] = "가가";
+	
+	console.log(objMap);
+	/*
+	 * 객체 복사를 하고싶으면  assign을 하거나 새 빈 객체를 만들고 프로퍼티를 전부 복사하는 방식으로 해야함 
+	 */
+	//객체에 대한 참조를 통해 컨트롤을 복사하는 방법은 없을런지?
+}
