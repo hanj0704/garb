@@ -97,7 +97,7 @@ function onBtn1Click(e) {
 	var btn1 = e.control;
 //	var q = {
 //		"mainDS": [{
-//			"column1": "대구분-0",
+//			"packageUrl": "대구분-0",
 //			"column12": "15:55:01",
 //			"column11": "20221227",
 //			"column10": -1313297142,
@@ -458,3 +458,12 @@ function ev(name,data,pBool){
 //	}
 //	return fResult;
 //}
+
+/*
+ * "Button" 버튼(btn2)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn2Click(e){
+	var btn2 = e.control;
+//	app.lookup("sms2").send();
+}

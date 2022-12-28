@@ -68,6 +68,11 @@
           <cl:datacolumn std:sid="d-column-85b58cd4" name="column6" datatype="decimal"/>
         </cl:datacolumnlist>
       </cl:dataset>
+      <cl:datamap std:sid="d-map-f85bad2c" id="packageUrl">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-2e51374e" name="packageUrl" defaultvalue="qqq"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
       <cl:submission std:sid="submission-723cf763" id="sms1"/>
       <cl:matrix-submission std:sid="m-submission-3561b1da" id="msm1" async="true" withCredentials="false" method="post" action="">
         <cl:matrix>
@@ -119,6 +124,9 @@
           </cl:response>
         </cl:matrix>
       </cl:matrix-submission>
+      <cl:submission std:sid="submission-b77b0d28" id="sms2" action="/tes/mci.do" mediatype="application/json">
+        <cl:requestdata dataid="packageUrl" alias="packageUrl"/>
+      </cl:submission>
     </cl:model>
     <cl:appspec/>
   </head>
@@ -150,6 +158,10 @@
     <cl:button std:sid="button-e12227f4" id="btn1" value="Button">
       <cl:listener std:sid="listener-ae37b06b" name="click" handler="onBtn1Click"/>
       <cl:xylayoutdata std:sid="xyl-data-6b266d2c" top="382px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-092629ba" id="btn2" value="Button">
+      <cl:listener std:sid="listener-bb7cd90d" name="click" handler="onBtn2Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-4b348632" top="382px" left="169px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
     <cl:xylayout std:sid="xylayout-a754e9d1"/>
   </body>

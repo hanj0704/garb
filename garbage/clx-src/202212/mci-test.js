@@ -5,9 +5,7 @@ var URL_PREFIX = "http://localhost:8080";
  */
 function getSearchFields(){
 	return {
-		"서비스 명" :  "interfacename",
-		"클래스 URL" : "classUrl",
-		"서비스 URL" : "mappingUrl"
+		"패키지+클래스 경로" :  "packageUrl",
 	}
 }
 
@@ -26,7 +24,7 @@ function getLookupInfo(query) {
 		method : "post",
 		
 //		// 리퀘스트 바디 또는 파라미터로 전달할 데이터
-//		request : {"hello" : "world"}
+		request : query
 	};
 }
 
@@ -36,7 +34,6 @@ function getLookupInfo(query) {
  * @return {{interfaces:any[], columns:string[]}[]}
  */
 function convertSearchResult(response){
-	console.log(response);
 	return {
 		// 인터페이스 목록
 		interfaces : response.list,
