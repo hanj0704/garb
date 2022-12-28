@@ -465,5 +465,5 @@ function ev(name,data,pBool){
  */
 function onBtn2Click(e){
 	var btn2 = e.control;
-//	app.lookup("sms2").send();
+	
 }

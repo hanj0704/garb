@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-79768367" version="1.0.0.0">
+  <head std:sid="head-d59848f4">
+    <title>LinkedDataSet</title>
+    <screen std:sid="screen-aa727612" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-8bdb6740" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-9478df4b" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-bd843692">
+      <cl:dataset std:sid="d-set-4d9083c7" id="ds_parent">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-a5b1d8a3" name="column1"/>
+          <cl:datacolumn std:sid="d-column-df5ed6dc" name="column2"/>
+          <cl:datacolumn std:sid="d-column-a36ad858" name="column3"/>
+          <cl:datacolumn std:sid="d-column-8d16c61c" name="column4" datatype="number"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-16749454" id="ds_child">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-b1ed361c" name="column1"/>
+          <cl:datacolumn std:sid="d-column-c49732f2" name="column2"/>
+          <cl:datacolumn std:sid="d-column-2fbf72b1" name="column3"/>
+          <cl:datacolumn std:sid="d-column-c2881061" name="column4" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-f49e93da" name="column5" datatype="expression" expression="column4 * 2"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist/>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-84e3e42d" id="ds_test">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-097727b7" name="column1"/>
+          <cl:datacolumn std:sid="d-column-3c0dcc66" name="column2"/>
+          <cl:datacolumn std:sid="d-column-e53770bb" name="column3"/>
+          <cl:datacolumn std:sid="d-column-305eb8c4" name="column4" datatype="string"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">A1</cl:datavalue>
+            <cl:datavalue columnname="column2">B1</cl:datavalue>
+            <cl:datavalue columnname="column3">C1</cl:datavalue>
+            <cl:datavalue columnname="column4">D1</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">A2</cl:datavalue>
+            <cl:datavalue columnname="column2">B2</cl:datavalue>
+            <cl:datavalue columnname="column3">C2</cl:datavalue>
+            <cl:datavalue columnname="column4">D2</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">A3</cl:datavalue>
+            <cl:datavalue columnname="column2">B3</cl:datavalue>
+            <cl:datavalue columnname="column3">C3</cl:datavalue>
+            <cl:datavalue columnname="column4">D3</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">A4</cl:datavalue>
+            <cl:datavalue columnname="column2">B4</cl:datavalue>
+            <cl:datavalue columnname="column3">C4</cl:datavalue>
+            <cl:datavalue columnname="column4">D4</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">A5</cl:datavalue>
+            <cl:datavalue columnname="column2">B5</cl:datavalue>
+            <cl:datavalue columnname="column3">C5</cl:datavalue>
+            <cl:datavalue columnname="column4">D5</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-2c5a25c3" id="ds_child2">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-cf0a57f4" name="column1"/>
+          <cl:datacolumn std:sid="d-column-d5dc0b6e" name="column2"/>
+          <cl:datacolumn std:sid="d-column-7f480091" name="column3"/>
+          <cl:datacolumn std:sid="d-column-705269b0" name="column4" datatype="number"/>
+        </cl:datacolumnlist>
+        <cl:dataview std:sid="d-view-8ade6835" id="dv_ds_child"/>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-299ce412" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-f451abf6" name="column1"/>
+          <cl:datacolumn std:sid="d-column-4dfec092" name="column2"/>
+          <cl:datacolumn std:sid="d-column-a7c58706" name="column3"/>
+          <cl:datacolumn std:sid="d-column-31ac52f4" name="column4"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:matrix-submission std:sid="m-submission-f7db9dd4" id="msm1" async="true" withCredentials="false" method="post" action="test.do">
+        <cl:matrix>
+          <cl:request type="object">
+            <cl:data key="ds_parent">
+              <cl:complex dataControl="ds_parent" payload="all" type="array">
+                <cl:data key="column1">
+                  <cl:pathref columnName="column1"/>
+                </cl:data>
+                <cl:data key="column2">
+                  <cl:pathref columnName="column2"/>
+                </cl:data>
+                <cl:data key="column3">
+                  <cl:pathref columnName="column3"/>
+                </cl:data>
+                <cl:data key="column4">
+                  <cl:pathref columnName="column4"/>
+                </cl:data>
+                <cl:data key="ds_child">
+                  <cl:complex dataControl="ds_child" payload="all" type="array" linked="true">
+                    <cl:data key="column1">
+                      <cl:pathref columnName="column1"/>
+                    </cl:data>
+                    <cl:data key="column2">
+                      <cl:pathref columnName="column2"/>
+                    </cl:data>
+                    <cl:data key="column3">
+                      <cl:pathref columnName="column3"/>
+                    </cl:data>
+                    <cl:data key="column4">
+                      <cl:pathref columnName="column4"/>
+                    </cl:data>
+                    <cl:data key="column5">
+                      <cl:pathref columnName="column5"/>
+                    </cl:data>
+                  </cl:complex>
+                </cl:data>
+              </cl:complex>
+            </cl:data>
+          </cl:request>
+          <cl:response type="object"/>
+        </cl:matrix>
+      </cl:matrix-submission>
+      <cl:matrix-submission std:sid="m-submission-fc99f0fa" id="msm2" async="true" withCredentials="false" method="post" action="202212/matrix.json">
+        <cl:matrix>
+          <cl:request type="object"/>
+          <cl:response type="object">
+            <cl:data key="ds_parent">
+              <cl:complex dataControl="ds_parent" type="array">
+                <cl:data key="column1">
+                  <cl:pathref columnName="column1"/>
+                </cl:data>
+                <cl:data key="column2">
+                  <cl:pathref columnName="column2"/>
+                </cl:data>
+                <cl:data key="column3">
+                  <cl:pathref columnName="column3"/>
+                </cl:data>
+                <cl:data key="ds_child">
+                  <cl:complex dataControl="ds_child" type="array" linked="true">
+                    <cl:data key="column1">
+                      <cl:pathref columnName="column1"/>
+                    </cl:data>
+                    <cl:data key="column2">
+                      <cl:pathref columnName="column2"/>
+                    </cl:data>
+                    <cl:data key="column3">
+                      <cl:pathref columnName="column3"/>
+                    </cl:data>
+                    <cl:data key="column4">
+                      <cl:pathref columnName="column4"/>
+                    </cl:data>
+                    <cl:data key="column5">
+                      <cl:pathref columnName="column5"/>
+                    </cl:data>
+                  </cl:complex>
+                </cl:data>
+              </cl:complex>
+            </cl:data>
+          </cl:response>
+        </cl:matrix>
+      </cl:matrix-submission>
+    </cl:model>
+    <cl:appspec dev-comment="https://gitlab.exbuilder.co.kr/cleopatra-dev-team/release-test-project/issues/3023" title="LinkedDataSet"/>
+  </head>
+  <body std:sid="body-1622cc49" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-41db561b" name="load" handler="onBodyLoad"/>
+    <cl:grid std:sid="grid-d291bd67" id="grd1" readonly="false" datasetid="ds_parent" resizablecolumns="none" columnMovable="false">
+      <cl:listener std:sid="listener-1d9d2d2d" name="selection-change" handler="onGrd1SelectionChange"/>
+      <cl:xylayoutdata std:sid="xyl-data-1e61d817" top="30px" left="20px" width="450px" height="250px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:gridcolumn std:sid="g-column-b7d69fdb" width="50px"/>
+      <cl:gridcolumn std:sid="g-column-ba3b26da"/>
+      <cl:gridcolumn std:sid="g-column-67c0c81d"/>
+      <cl:gridcolumn std:sid="g-column-2f95842d"/>
+      <cl:gridcolumn std:sid="g-column-7d7485f6" width="100px"/>
+      <cl:gridheader std:sid="gh-band-1bf17ea0">
+        <cl:gridrow std:sid="g-row-6a4067d4" height="25px"/>
+        <cl:gridcell std:sid="gh-cell-6e31b2b6" rowindex="0" colindex="0" sortable="false" filterable="false"/>
+        <cl:gridcell std:sid="gh-cell-b993ad29" rowindex="0" colindex="1" targetcolumnname="column1" sortable="false" filterable="false" text="column1"/>
+        <cl:gridcell std:sid="gh-cell-5d0f8eec" rowindex="0" colindex="2" targetcolumnname="column2" sortable="false" filterable="false" text="column2"/>
+        <cl:gridcell std:sid="gh-cell-bae4f946" rowindex="0" colindex="3" targetcolumnname="column3" sortable="false" filterable="false" text="column3"/>
+        <cl:gridcell std:sid="gh-cell-baf08d84" rowindex="0" colindex="4" targetcolumnname="column4" sortable="false" filterable="false" text="column4"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-e721f246">
+        <cl:gridrow std:sid="g-row-c66ebaf1" height="25px"/>
+        <cl:gridcell std:sid="gd-cell-a14c09aa" rowindex="0" colindex="0" columntype="rowindex"/>
+        <cl:gridcell std:sid="gd-cell-eaba514d" rowindex="0" colindex="1" columnname="column1"/>
+        <cl:gridcell std:sid="gd-cell-43407c81" rowindex="0" colindex="2" columnname="column2"/>
+        <cl:gridcell std:sid="gd-cell-8938cb56" rowindex="0" colindex="3" columnname="column3"/>
+        <cl:gridcell std:sid="gd-cell-7fc0f02e" rowindex="0" colindex="4" columnname="column4">
+          <cl:inputbox std:sid="i-box-529afdf5" id="ipb9">
+            <cl:celldata std:sid="c-data-26debd93"/>
+          </cl:inputbox>
+        </cl:gridcell>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:grid std:sid="grid-ece31257" id="grd2" readonly="false" datasetid="ds_child" resizablecolumns="none" columnMovable="false">
+      <cl:xylayoutdata std:sid="xyl-data-4c82284d" top="30px" left="480px" width="450px" height="250px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:gridcolumn std:sid="g-column-51d05573" width="50px"/>
+      <cl:gridcolumn std:sid="g-column-67b36fce"/>
+      <cl:gridcolumn std:sid="g-column-cb71dfa7"/>
+      <cl:gridcolumn std:sid="g-column-8a28a049"/>
+      <cl:gridcolumn std:sid="g-column-a6241e21"/>
+      <cl:gridcolumn std:sid="g-column-87c0bcdb"/>
+      <cl:gridheader std:sid="gh-band-14beaf55">
+        <cl:gridrow std:sid="g-row-61dd941f" height="25px"/>
+        <cl:gridcell std:sid="gh-cell-2d988f42" rowindex="0" colindex="0" sortable="false" filterable="false"/>
+        <cl:gridcell std:sid="gh-cell-24dddca5" rowindex="0" colindex="1" targetcolumnname="column1" sortable="false" filterable="true" text="column1"/>
+        <cl:gridcell std:sid="gh-cell-2572fd51" rowindex="0" colindex="2" targetcolumnname="column2" sortable="false" filterable="false" text="column2"/>
+        <cl:gridcell std:sid="gh-cell-f124e555" rowindex="0" colindex="3" targetcolumnname="column3" sortable="false" filterable="false" text="column3"/>
+        <cl:gridcell std:sid="gh-cell-a07acf6d" rowindex="0" colindex="4" targetcolumnname="column4" sortable="false" filterable="false" text="column4"/>
+        <cl:gridcell std:sid="gh-cell-c782371b" rowindex="0" colindex="5" text="column5"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-5b9dd318">
+        <cl:gridrow std:sid="g-row-d1395a0a" height="25px"/>
+        <cl:gridcell std:sid="gd-cell-7eaabc87" rowindex="0" colindex="0" columntype="rowindex"/>
+        <cl:gridcell std:sid="gd-cell-4c24c76c" rowindex="0" colindex="1" columnname="column1">
+          <cl:inputbox std:sid="i-box-91a0c12a" id="ipb1">
+            <cl:celldata std:sid="c-data-f9817d1b"/>
+          </cl:inputbox>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-522ae466" rowindex="0" colindex="2" columnname="column2">
+          <cl:inputbox std:sid="i-box-fdab5b5f" id="ipb2">
+            <cl:celldata std:sid="c-data-361beea2"/>
+          </cl:inputbox>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-b8e45cdc" rowindex="0" colindex="3" columnname="column3">
+          <cl:inputbox std:sid="i-box-c2ccd1f5" id="ipb4">
+            <cl:celldata std:sid="c-data-4c6b773c"/>
+          </cl:inputbox>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-0b4b4601" rowindex="0" colindex="4" columnname="column4">
+          <cl:inputbox std:sid="i-box-1cb1df36" id="ipb3">
+            <cl:celldata std:sid="c-data-16eb806b"/>
+          </cl:inputbox>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-dc716f5e" rowindex="0" colindex="5" columnname="column5"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:group std:sid="group-99f58343">
+      <cl:xylayoutdata std:sid="xyl-data-239cb249" top="290px" left="20px" width="810px" height="800px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:button std:sid="button-6137c996" value="DS.build()">
+        <cl:listener std:sid="listener-05792ae8" name="click" handler="onButtonClick"/>
+        <cl:formdata std:sid="f-data-f79c645f" row="0" col="0"/>
+      </cl:button>
+      <cl:group std:sid="group-2e19df1d">
+        <cl:formdata std:sid="f-data-25e999cb" row="2" col="0" rowspan="1" colspan="6"/>
+        <cl:button std:sid="button-5d77c330" value="addRow">
+          <cl:listener std:sid="listener-50a27b8c" name="click" handler="onButtonClick3"/>
+          <cl:flowlayoutdata std:sid="f-data-4ad26e9c" width="100px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-9e05cca6" value="addRowData">
+          <cl:listener std:sid="listener-f9c69ad7" name="click" handler="onButtonClick4"/>
+          <cl:flowlayoutdata std:sid="f-data-fb6ff33c" width="100px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-f689ed88" value="pushRowData">
+          <cl:listener std:sid="listener-3ae66e29" name="click" handler="onButtonClick5"/>
+          <cl:flowlayoutdata std:sid="f-data-a49189ec" width="110px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-30a8aeb0" value="insertRow">
+          <cl:listener std:sid="listener-477b0823" name="click" handler="onButtonClick6"/>
+          <cl:flowlayoutdata std:sid="f-data-87bee0bd" width="100px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-0496646a" value="insertRowData">
+          <cl:listener std:sid="listener-7c6e341a" name="click" handler="onButtonClick7"/>
+          <cl:flowlayoutdata std:sid="f-data-1148f9b1" width="120px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-7533c6f9" value="deleteRow">
+          <cl:listener std:sid="listener-cfa4948d" name="click" handler="onButtonClick8"/>
+          <cl:flowlayoutdata std:sid="f-data-4ce51c92" width="100px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-3689bedb" value="realDeleteRow">
+          <cl:listener std:sid="listener-814c1025" name="click" handler="onButtonClick9"/>
+          <cl:flowlayoutdata std:sid="f-data-e5889e4b" width="110px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-5836cb94" value="getRowCount">
+          <cl:listener std:sid="listener-aefd9d4d" name="click" handler="onButtonClick10"/>
+          <cl:flowlayoutdata std:sid="f-data-ec92f0dd" width="100px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-b3ddfcfc" value="changeRowIndex">
+          <cl:listener std:sid="listener-9eafeea5" name="click" handler="onButtonClick11"/>
+          <cl:flowlayoutdata std:sid="f-data-df49c75b" width="130px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-e8d48a72" value="moveRowIndex">
+          <cl:listener std:sid="listener-906393f0" name="click" handler="onButtonClick12"/>
+          <cl:flowlayoutdata std:sid="f-data-4827cb9d" width="120px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-ac88785b" value="copyToDataSet">
+          <cl:listener std:sid="listener-53ab68d3" name="click" handler="onButtonClick13"/>
+          <cl:flowlayoutdata std:sid="f-data-9999ff86" width="120px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-dc3dc3d3" value="copyToDataMap">
+          <cl:listener std:sid="listener-164441e4" name="click" handler="onButtonClick14"/>
+          <cl:flowlayoutdata std:sid="f-data-d7357a0f" width="120px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-8e660585" value="getValue">
+          <cl:listener std:sid="listener-8e58db40" name="click" handler="onButtonClick15"/>
+          <cl:flowlayoutdata std:sid="f-data-be405078" width="100px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-57dab7f9" value="setValue">
+          <cl:listener std:sid="listener-315dd618" name="click" handler="onButtonClick16"/>
+          <cl:flowlayoutdata std:sid="f-data-ca713650" width="100px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-434f1adf" value="putValue">
+          <cl:listener std:sid="listener-7b29d249" name="click" handler="onButtonClick17"/>
+          <cl:flowlayoutdata std:sid="f-data-32a4432c" width="100px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-d0935c1f" value="updateRow">
+          <cl:listener std:sid="listener-7cb8b118" name="click" handler="onButtonClick18"/>
+          <cl:flowlayoutdata std:sid="f-data-65f56b46" width="100px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-034710b5" value="getOriginalValue">
+          <cl:listener std:sid="listener-0921d198" name="click" handler="onButtonClick19"/>
+          <cl:flowlayoutdata std:sid="f-data-73ee2069" width="150px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-30316aa9" value="getColumnData">
+          <cl:listener std:sid="listener-a4f0b610" name="click" handler="onButtonClick20"/>
+          <cl:flowlayoutdata std:sid="f-data-0e8152c1" width="150px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-2dd479d3" value="getRowDataRanged">
+          <cl:listener std:sid="listener-8866bc00" name="click" handler="onButtonClick21"/>
+          <cl:flowlayoutdata std:sid="f-data-2bc12193" width="150px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-1735ca4f" value="getRowData">
+          <cl:listener std:sid="listener-bfd97418" name="click" handler="onButtonClick22"/>
+          <cl:flowlayoutdata std:sid="f-data-300137a9" width="100px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-b8e0c962" value="getString">
+          <cl:listener std:sid="listener-43d43480" name="click" handler="onButtonClick23"/>
+          <cl:flowlayoutdata std:sid="f-data-1991c20c" width="100px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-f4def977" value="getNumber">
+          <cl:listener std:sid="listener-93b9e96f" name="click" handler="onButtonClick24"/>
+          <cl:flowlayoutdata std:sid="f-data-b89b6e47" width="100px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-c8ed6338" value="getBoolean">
+          <cl:listener std:sid="listener-11f70304" name="click" handler="onButtonClick25"/>
+          <cl:flowlayoutdata std:sid="f-data-72f6f9de" width="100px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-4fe06def" value="setRowState / getRowState / getRowStateString">
+          <cl:listener std:sid="listener-bfbd0384" name="click" handler="onButtonClick26"/>
+          <cl:flowlayoutdata std:sid="f-data-a7a10ce7" width="340px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-63bfa5df" value="setRowStateAll">
+          <cl:listener std:sid="listener-02b1e068" name="click" handler="onButtonClick27"/>
+          <cl:flowlayoutdata std:sid="f-data-80acf4af" width="120px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-bd10f0ff" value="setRowStateRanged">
+          <cl:listener std:sid="listener-a1db54d7" name="click" handler="onButtonClick28"/>
+          <cl:flowlayoutdata std:sid="f-data-7e80cf77" width="140px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-22ff04d2" value="getRowIndicesByState">
+          <cl:listener std:sid="listener-a29f6111" name="click" handler="onButtonClick29"/>
+          <cl:flowlayoutdata std:sid="f-data-8e1f7739" width="160px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-56c88e3f" value="getRowStatedIndices">
+          <cl:listener std:sid="listener-118a77b1" name="click" handler="onButtonClick30"/>
+          <cl:flowlayoutdata std:sid="f-data-25d38bfd" width="160px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-1db238f1" value="getRowStatedIndex">
+          <cl:listener std:sid="listener-2eea1052" name="click" handler="onButtonClick31"/>
+          <cl:flowlayoutdata std:sid="f-data-6199f467" width="140px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-9e4142f3" value="getRowCountByState">
+          <cl:listener std:sid="listener-b2a3793d" name="click" handler="onButtonClick32"/>
+          <cl:flowlayoutdata std:sid="f-data-e91215a0" width="160px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-d9924aa2" value="getRowStatedCount">
+          <cl:listener std:sid="listener-d8ed767f" name="click" handler="onButtonClick33"/>
+          <cl:flowlayoutdata std:sid="f-data-aed00c14" width="160px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-c76b082b" value="getRowDatasByState">
+          <cl:listener std:sid="listener-d88fd1b0" name="click" handler="onButtonClick34"/>
+          <cl:flowlayoutdata std:sid="f-data-4c491091" width="160px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-9a0a792a" value="isModified">
+          <cl:listener std:sid="listener-a44a7540" name="click" handler="onButtonClick35"/>
+          <cl:flowlayoutdata std:sid="f-data-bd1881d0" width="100px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-0a4607a7" value="setRowsAttr / getRowsAttr">
+          <cl:listener std:sid="listener-3248e273" name="click" handler="onButtonClick36"/>
+          <cl:flowlayoutdata std:sid="f-data-881d84b2" width="200px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-bb19e4d9" value="findFirstRow / findFirstRowExpr">
+          <cl:listener std:sid="listener-5a8864ec" name="click" handler="onButtonClick37"/>
+          <cl:flowlayoutdata std:sid="f-data-c57e6e93" width="220px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-e15f2f4f" value="findAllRow / findAllRowExpr">
+          <cl:listener std:sid="listener-5f4c2166" name="click" handler="onButtonClick38"/>
+          <cl:flowlayoutdata std:sid="f-data-e88c38ee" width="220px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-647ec33e" value="setFilter / getFilter">
+          <cl:listener std:sid="listener-badb8eeb" name="click" handler="onButtonClick39"/>
+          <cl:flowlayoutdata std:sid="f-data-d89a5be4" width="200px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-ee6afc33" value="setFilterExpr / getFilterExpr">
+          <cl:listener std:sid="listener-c00d90ac" name="click" handler="onButtonClick40"/>
+          <cl:flowlayoutdata std:sid="f-data-e16bd070" width="200px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-6f637080" value="clearFilter">
+          <cl:listener std:sid="listener-d3c15473" name="click" handler="onButtonClick41"/>
+          <cl:flowlayoutdata std:sid="f-data-7c621680" width="100px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-8f6d48ac" value="setSort / getSort ">
+          <cl:listener std:sid="listener-a394f4b2" name="click" handler="onButtonClick42"/>
+          <cl:flowlayoutdata std:sid="f-data-2c82b898" width="180px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-a7117b15" value="clearSort">
+          <cl:listener std:sid="listener-a28a981d" name="click" handler="onButtonClick43"/>
+          <cl:flowlayoutdata std:sid="f-data-6b1c6a4c" width="100px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-656bc444" value="setSortExpr / getSortExpr">
+          <cl:listener std:sid="listener-5f8114d4" name="click" handler="onButtonClick44"/>
+          <cl:flowlayoutdata std:sid="f-data-12cfee5c" width="180px" height="25px"/>
+        </cl:button>
+        <cl:flowlayout std:sid="f-layout-6d44ead8"/>
+      </cl:group>
+      <cl:button std:sid="button-21d6ce93" value="Grid.redraw()">
+        <cl:listener std:sid="listener-227262c2" name="click" handler="redrawGrid"/>
+        <cl:formdata std:sid="f-data-7153cc89" row="0" col="1"/>
+      </cl:button>
+      <cl:radiobutton std:sid="r-button-a9d6c29b" id="rdb1" value="ds_child">
+        <cl:listener std:sid="listener-1d70f63f" name="selection-change" handler="onRdb1SelectionChange"/>
+        <cl:formdata std:sid="f-data-8428de97" row="0" col="2" rowspan="1" colspan="3"/>
+        <cl:item std:sid="item-b7968fcc" label="ds_parent" value="ds_parent"/>
+        <cl:item std:sid="item-f5ddf131" label="ds_child" value="ds_child"/>
+        <cl:item std:sid="item-ab91379d" label="dv_ds_child" value="dv_ds_child"/>
+      </cl:radiobutton>
+      <cl:group std:sid="group-43579f21">
+        <cl:formdata std:sid="f-data-e8fa71e7" row="3" col="0" rowspan="1" colspan="6"/>
+        <cl:button std:sid="button-7eced877" value="getSum">
+          <cl:listener std:sid="listener-8207b839" name="click" handler="onButtonClick45"/>
+          <cl:formdata std:sid="f-data-2b79a9cd" row="0" col="0"/>
+        </cl:button>
+        <cl:button std:sid="button-79ef8757" value="getAvg">
+          <cl:listener std:sid="listener-575d8dab" name="click" handler="onButtonClick46"/>
+          <cl:formdata std:sid="f-data-e992d526" row="0" col="1"/>
+        </cl:button>
+        <cl:button std:sid="button-c93ee66f" value="getMax">
+          <cl:listener std:sid="listener-17582597" name="click" handler="onButtonClick47"/>
+          <cl:formdata std:sid="f-data-d11562df" row="0" col="2"/>
+        </cl:button>
+        <cl:button std:sid="button-9f3d9771" value="getMin">
+          <cl:listener std:sid="listener-c677360c" name="click" handler="onButtonClick48"/>
+          <cl:formdata std:sid="f-data-a9154499" row="0" col="3"/>
+        </cl:button>
+        <cl:button std:sid="button-a121c610" value="getOriginalSum">
+          <cl:listener std:sid="listener-11dcb822" name="click" handler="onButtonClick49"/>
+          <cl:formdata std:sid="f-data-9c042ea6" row="1" col="0"/>
+        </cl:button>
+        <cl:button std:sid="button-438cccf9" value="getOriginalAvg">
+          <cl:listener std:sid="listener-118b4bdb" name="click" handler="onButtonClick50"/>
+          <cl:formdata std:sid="f-data-a54e9758" row="1" col="1"/>
+        </cl:button>
+        <cl:button std:sid="button-a36ce574" value="getOriginalMax">
+          <cl:listener std:sid="listener-4f635425" name="click" handler="onButtonClick51"/>
+          <cl:formdata std:sid="f-data-e758d5c7" row="1" col="2"/>
+        </cl:button>
+        <cl:button std:sid="button-4b99a07b" value="getOriginalMin">
+          <cl:listener std:sid="listener-f2857d81" name="click" handler="onButtonClick52"/>
+          <cl:formdata std:sid="f-data-4b24de86" row="1" col="3"/>
+        </cl:button>
+        <cl:button std:sid="button-120fdf81" value="getOriginalRowCount">
+          <cl:listener std:sid="listener-2c53483d" name="click" handler="onButtonClick53"/>
+          <cl:formdata std:sid="f-data-889653a0" row="1" col="4"/>
+        </cl:button>
+        <cl:button std:sid="button-e2c5df8b" value="getConditionalSum">
+          <cl:listener std:sid="listener-502072aa" name="click" handler="onButtonClick54"/>
+          <cl:formdata std:sid="f-data-cc6cf25c" row="2" col="0"/>
+        </cl:button>
+        <cl:button std:sid="button-e7042420" value="getConditionalAvg">
+          <cl:listener std:sid="listener-14f716d6" name="click" handler="onButtonClick55"/>
+          <cl:formdata std:sid="f-data-35f3091c" row="2" col="1"/>
+        </cl:button>
+        <cl:button std:sid="button-fcdc3f35" value="getConditionalMax">
+          <cl:listener std:sid="listener-a1110164" name="click" handler="onButtonClick56"/>
+          <cl:formdata std:sid="f-data-d41fab5b" row="2" col="2"/>
+        </cl:button>
+        <cl:button std:sid="button-dff5a14d" value="getConditionalMin">
+          <cl:listener std:sid="listener-0deb31cf" name="click" handler="onButtonClick57"/>
+          <cl:formdata std:sid="f-data-d3d11301" row="2" col="3"/>
+        </cl:button>
+        <cl:button std:sid="button-bc12f015" value="getConditionalRowCount">
+          <cl:listener std:sid="listener-142e87a8" name="click" handler="onButtonClick58"/>
+          <cl:formdata std:sid="f-data-fcd431b8" row="2" col="4"/>
+        </cl:button>
+        <cl:button std:sid="button-9c40def3" value="getConditionalSumExpr">
+          <cl:listener std:sid="listener-3b0925f9" name="click" handler="onButtonClick59"/>
+          <cl:formdata std:sid="f-data-c3da76ed" row="3" col="0"/>
+        </cl:button>
+        <cl:button std:sid="button-85fe6a20" value="getConditionalAvgExpr">
+          <cl:listener std:sid="listener-9d3aa755" name="click" handler="onButtonClick60"/>
+          <cl:formdata std:sid="f-data-b8dd6791" row="3" col="1"/>
+        </cl:button>
+        <cl:button std:sid="button-c5e8293b" value="getConditionalMaxExpr">
+          <cl:listener std:sid="listener-9d9b9d8d" name="click" handler="onButtonClick61"/>
+          <cl:formdata std:sid="f-data-7a7d8836" row="3" col="2"/>
+        </cl:button>
+        <cl:button std:sid="button-8b72fc82" value="getConditionalMinExpr">
+          <cl:listener std:sid="listener-a541731e" name="click" handler="onButtonClick62"/>
+          <cl:formdata std:sid="f-data-78c4a6b1" row="3" col="3"/>
+        </cl:button>
+        <cl:button std:sid="button-bbdd300e" value="getConditionalRowCountExpr">
+          <cl:listener std:sid="listener-94b7cbcf" name="click" handler="onButtonClick63"/>
+          <cl:formdata std:sid="f-data-57f79f7d" row="3" col="4"/>
+        </cl:button>
+        <cl:button std:sid="button-3dae0ba6" value="getUnfilteredDistinctValues">
+          <cl:listener std:sid="listener-ba78bcf1" name="click" handler="onButtonClick65"/>
+          <cl:formdata std:sid="f-data-bd03f427" row="4" col="0" rowspan="1" colspan="2"/>
+        </cl:button>
+        <cl:button std:sid="button-61b42c0d" value="getUnfilteredRowDatasByState">
+          <cl:listener std:sid="listener-9f394ebd" name="click" handler="onButtonClick66"/>
+          <cl:formdata std:sid="f-data-5ed12c3a" row="4" col="2" rowspan="1" colspan="2"/>
+        </cl:button>
+        <cl:button std:sid="button-2097edca" value="getUnfilteredRowDatas">
+          <cl:listener std:sid="listener-1a9a1439" name="click" handler="onButtonClick71"/>
+          <cl:formdata std:sid="f-data-fd128b72" row="5" col="0" rowspan="1" colspan="2"/>
+        </cl:button>
+        <cl:button std:sid="button-74f8cbb0" value="getUnfilteredRowCount">
+          <cl:listener std:sid="listener-fd413417" name="click" handler="onButtonClick67"/>
+          <cl:formdata std:sid="f-data-c2814da3" row="5" col="2" rowspan="1" colspan="2"/>
+        </cl:button>
+        <cl:output std:sid="output-5ea6cb37" style="text-align:right;" value="신규 API : ">
+          <cl:formdata std:sid="f-data-0d4c64b0" row="6" col="0"/>
+        </cl:output>
+        <cl:button std:sid="button-2392e6f0" value="ds_child.pushRow();">
+          <cl:listener std:sid="listener-b7c0f446" name="click" handler="onButtonClick68"/>
+          <cl:formdata std:sid="f-data-0f8d0daf" row="6" col="1"/>
+        </cl:button>
+        <cl:button std:sid="button-7751cc6d" value="dv_ds_child.pushRow();">
+          <cl:listener std:sid="listener-2284c914" name="click" handler="onButtonClick69"/>
+          <cl:formdata std:sid="f-data-655ea18c" row="6" col="2"/>
+        </cl:button>
+        <cl:button std:sid="button-111a9aa0" value="_getUnfilteredRowDatas">
+          <cl:listener std:sid="listener-ceaca24b" name="click" handler="onButtonClick72"/>
+          <cl:formdata std:sid="f-data-cf108b49" row="7" col="0" rowspan="1" colspan="2"/>
+        </cl:button>
+        <cl:button std:sid="button-e9b8f535" value="isModified">
+          <cl:listener std:sid="listener-86a451e7" name="click" handler="onButtonClick73"/>
+          <cl:formdata std:sid="f-data-491f134c" row="7" col="2"/>
+        </cl:button>
+        <cl:button std:sid="button-10d8a2b0" value="setUnfilteredRowStateAll">
+          <cl:listener std:sid="listener-783da776" name="click" handler="onButtonClick74"/>
+          <cl:formdata std:sid="f-data-3c0daa6f" row="8" col="0" rowspan="1" colspan="2"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-8fe6524f">
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-40225d8c">
+        <cl:formdata std:sid="f-data-38c57866" row="1" col="0" rowspan="1" colspan="5"/>
+        <cl:button std:sid="button-a1d7d99a" value="getBindedParentRowId">
+          <cl:listener std:sid="listener-8316aee2" name="click" handler="onButtonClick2"/>
+          <cl:flowlayoutdata std:sid="f-data-f2c427f9" width="180px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-11510c45" value="findParentRow">
+          <cl:listener std:sid="listener-204b811a" name="click" handler="onButtonClick64"/>
+          <cl:flowlayoutdata std:sid="f-data-d0cee76f" width="130px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-14a2193e" value="bindParentRow(null)">
+          <cl:listener std:sid="listener-7d9f5358" name="click" handler="onButtonClick70"/>
+          <cl:flowlayoutdata std:sid="f-data-9377bcef" width="180px" height="25px"/>
+        </cl:button>
+        <cl:flowlayout std:sid="f-layout-64c369b5"/>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-3a44bd40">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="250" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="120" unit="PIXEL"/>
+        <cl:columns length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="120" unit="PIXEL" autoSizing="false" minlength="0"/>
+        <cl:columns length="120" unit="PIXEL" autoSizing="false" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-f4490505" value="ds_parent">
+      <cl:xylayoutdata std:sid="xyl-data-2ceb1172" top="10px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:grid std:sid="grid-c1130b4f" id="grd3" readonly="false" datasetid="dv_ds_child" resizablecolumns="none" columnMovable="false">
+      <cl:xylayoutdata std:sid="xyl-data-ee8b4881" top="30px" left="940px" width="450px" height="250px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:gridcolumn std:sid="g-column-933d271c" width="50px"/>
+      <cl:gridcolumn std:sid="g-column-4d28f7d2"/>
+      <cl:gridcolumn std:sid="g-column-f2d59000"/>
+      <cl:gridcolumn std:sid="g-column-79d50154"/>
+      <cl:gridcolumn std:sid="g-column-1eb2625c"/>
+      <cl:gridheader std:sid="gh-band-d4d003af">
+        <cl:gridrow std:sid="g-row-99abda3b" height="25px"/>
+        <cl:gridcell std:sid="gh-cell-8975ef1a" rowindex="0" colindex="0" sortable="false" filterable="false"/>
+        <cl:gridcell std:sid="gh-cell-05879305" rowindex="0" colindex="1" targetcolumnname="column1" sortable="false" filterable="true" text="column1"/>
+        <cl:gridcell std:sid="gh-cell-08ba064b" rowindex="0" colindex="2" targetcolumnname="column2" sortable="false" filterable="false" text="column2"/>
+        <cl:gridcell std:sid="gh-cell-420e444f" rowindex="0" colindex="3" targetcolumnname="column3" sortable="false" filterable="false" text="column3"/>
+        <cl:gridcell std:sid="gh-cell-a5f8ffeb" rowindex="0" colindex="4" targetcolumnname="column4" sortable="false" filterable="false" text="column4"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-edd26e7b">
+        <cl:gridrow std:sid="g-row-164309fe" height="25px"/>
+        <cl:gridcell std:sid="gd-cell-c4478e1a" rowindex="0" colindex="0" columntype="rowindex"/>
+        <cl:gridcell std:sid="gd-cell-24856015" rowindex="0" colindex="1" columnname="column1">
+          <cl:inputbox std:sid="i-box-ceb8b1b1" id="ipb5">
+            <cl:celldata std:sid="c-data-b3911d12"/>
+          </cl:inputbox>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-8083cb26" rowindex="0" colindex="2" columnname="column2">
+          <cl:inputbox std:sid="i-box-3d533c36" id="ipb6">
+            <cl:celldata std:sid="c-data-57f01deb"/>
+          </cl:inputbox>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-5f02c649" rowindex="0" colindex="3" columnname="column3">
+          <cl:inputbox std:sid="i-box-e59f93f1" id="ipb7">
+            <cl:celldata std:sid="c-data-452748ea"/>
+          </cl:inputbox>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-7b254189" rowindex="0" colindex="4" columnname="column4">
+          <cl:inputbox std:sid="i-box-de805c8f" id="ipb8">
+            <cl:celldata std:sid="c-data-cb99a0a7"/>
+          </cl:inputbox>
+        </cl:gridcell>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:output std:sid="output-9c2334d0" value="ds_child">
+      <cl:xylayoutdata std:sid="xyl-data-a0863d7d" top="10px" left="480px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:output std:sid="output-0d23c85e" value="dv_ds_child">
+      <cl:xylayoutdata std:sid="xyl-data-0b87db70" top="10px" left="940px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:button std:sid="button-ff1f2a46" id="btn1" value="msm">
+      <cl:listener std:sid="listener-cc935562" name="click" handler="onBtn1Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-98c0ec2f" top="297px" left="840px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-3cb47b82" id="btn2" value="load">
+      <cl:listener std:sid="listener-53846a6c" name="click" handler="onBtn2Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-3dcd1cf3" top="327px" left="840px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-f8c07d88" id="btn3" value="rowInfo">
+      <cl:listener std:sid="listener-417a074e" name="click" handler="onBtn3Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-4ad333fa" top="357px" left="840px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-00f0e930" id="btn4" value="add">
+      <cl:listener std:sid="listener-6e719797" name="click" handler="onBtn4Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-f6416e00" top="327px" left="950px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-e72074c7"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>
