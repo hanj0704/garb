@@ -63,8 +63,9 @@
           <cl:datacolumn std:sid="d-column-a6a0e673" name="column3"/>
         </cl:datacolumnlist>
       </cl:datamap>
-      <cl:submission std:sid="submission-1c419481" id="sms1" action="test/tes.do" mediatype="application/json">
-        <cl:requestdata dataid="dsList" payload="all"/>
+      <cl:submission std:sid="submission-1c419481" id="sms1" action="/test/tes.do" mediatype="application/json">
+        <cl:listener std:sid="listener-654308ef" name="before-submit" handler="onSms1BeforeSubmit"/>
+        <cl:requestdata dataid="dsList" alias="list" payload="all"/>
       </cl:submission>
       <cl:matrix-submission std:sid="m-submission-e6be4117" id="msm1" async="true" withCredentials="false" method="put" action="aa.json">
         <cl:matrix>

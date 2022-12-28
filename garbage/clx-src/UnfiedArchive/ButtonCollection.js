@@ -83,6 +83,13 @@ function onBtn3Click(/* cpr.events.CMouseEvent */ e){
 	 * garbage-webs에서 vo를 설정할때는 lombok의 getter,setter annotation을 사용하여 함수를 따로 선언해서 사용하지 않아도 된다.
 	 * jackson버전을 맞추는것에 대해서 에러가 발생할 수 있으며, 동일한 라이브러리가 충돌할때도 에러가 발생할 수 있음.
 	 * 서브미션에서 addParameter로 파라미터를 추가시키는 경우는 json데이터가 array로 한번 감싸져서 데이터가 보내짐
+	 * 2022/12/27 추가
+	 * 서비스쪽 파라미터에서 List<VO>와 같은 형태로 받고싶으면 위에 작성한것 처럼 encoder를 지정해줘야 하는데,array데이터를 보낼 떄 해당 데이터를 
+	 * 감싸고있는 키값도 존재해서는 안된다. 롬복에서 json 정보를 읽어들일때 타입에 선언된 정보를 토대로 jsonarray 정보를 읽어들이려 할 텐데 앞에 별도의 키값이
+	 * 선언되어 있으면 해당 정보를 읽으면서 jsonarrar가 아니게 되어서 이상한 타입의 데이터가 들어왔다고 에러를 발생시키게 됨.
+	 * 결과적으로 리스트데이터를 그대로 reqbody로 받고싶으면 데이터셋에서는 하나의 데이터셋에 대한 정보만 올리고, 인코더에서는 데이터를 제외한 모든 키값을 지워야함
+	 * 키값을 유지한채로 읽어야 한다면 해당 키를 자신의 프로퍼티로 가지는 vo로 한번 더 감싸서 vo를 2개 만들면 됨.
+	 * requestBody는 post로 넘어온 formdata requestParam은 get으로 넘어온 querystring에서 정보를 가져오게됨.
 	 */
 	app.lookup("sms1").send();
 }
@@ -380,6 +387,21 @@ function _requestEncoder(sub,data){
 		"content" : res
 	}
 }
+function _requestEncoder2(sub,data){
+	var res= {};
+	var voData = data;
+	
+	for(var item in voData) {
+		res = voData[item];
+	}
+	console.log(res);
+	res = res["list"];
+	console.log(res);
+	
+	return {
+		"content" : res
+	}
+}
 
 /*
  * 서브미션에서 before-submit 이벤트 발생 시 호출.
@@ -391,6 +413,14 @@ function onSms2BeforeSubmit(e){
 	app.lookup("sms2").setRequestEncoder(_requestEncoder);
 }
 
+/*
+ * 서브미션에서 before-submit 이벤트 발생 시 호출.
+ * 통신을 시작하기전에 발생합니다.
+ */
+function onSms1BeforeSubmit(e){
+	var sms1 = e.control;
+	app.lookup("sms1").setRequestEncoder(_requestEncoder2);
+}
 
 cpr.data.IDataRow.prototype.toJSON = function(){
 	return this.getRowData();
@@ -473,3 +503,5 @@ function onBtn19Click(e){
 	 * Object.prototype.toString.call() : [object 타입] 을 반환받기 떄문에 직관적인 타입을 반환받고 싶을떄 좋은 내용으로 보임.
 	 */
 }
+
+
