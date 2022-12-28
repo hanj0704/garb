@@ -17,7 +17,7 @@
         <cl:formdata std:sid="f-data-ace95478" row="0" col="0" rowspan="1" colspan="1"/>
       </cl:output>
       <cl:group std:sid="group-010de440" id="grp2">
-        <cl:formdata std:sid="f-data-91fb1c5d" row="1" col="0"/>
+        <cl:formdata std:sid="f-data-bffb645e" row="1" col="0"/>
         <cl:button std:sid="button-8ae04405" id="btn2" value="Button">
           <cl:xylayoutdata std:sid="xyl-data-1a90987a" top="60px" left="31px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
         </cl:button>
@@ -45,6 +45,14 @@
             <cl:gridcell std:sid="gd-cell-bdf44edb" rowindex="0" colindex="4"/>
           </cl:griddetail>
         </cl:grid>
+        <cl:button std:sid="button-2e36100f" id="btn3" value="Button">
+          <cl:listener std:sid="listener-aa9baadb" name="click" handler="onBtn3Click"/>
+          <cl:xylayoutdata std:sid="xyl-data-12da28bf" top="90px" left="31px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        </cl:button>
+        <cl:button std:sid="button-602ce658" id="btn4" value="Button">
+          <cl:listener std:sid="listener-0b01ce46" name="click" handler="onBtn4Click"/>
+          <cl:xylayoutdata std:sid="xyl-data-d30f716a" top="120px" left="31px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        </cl:button>
         <cl:xylayout std:sid="xylayout-81295991"/>
       </cl:group>
       <cl:formlayout std:sid="f-layout-63948c7b" scrollable="false" hspace="16px" vspace="16px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">

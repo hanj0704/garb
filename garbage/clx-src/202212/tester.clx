@@ -40,7 +40,7 @@
           <cl:datacolumn std:sid="d-column-06e43ade" name="column2"/>
           <cl:datacolumn std:sid="d-column-d4ba5672" name="column3"/>
           <cl:datacolumn std:sid="d-column-20953318" name="column4"/>
-          <cl:datacolumn std:sid="d-column-82375aa0" name="level" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-82375aa0" name="level" datatype="number"/>
         </cl:datacolumnlist>
         <cl:datarowlist>
           <cl:datarow>
@@ -101,6 +101,7 @@
           </cl:datarow>
         </cl:datarowlist>
       </cl:dataset>
+      <cl:dataset std:sid="d-set-f2100c41" id="ds4"/>
       <cl:datamap std:sid="d-map-e024f3a7" id="dm1">
         <cl:listener std:sid="listener-166e1f8c" name="update" handler="onDm1Update"/>
         <cl:listener std:sid="listener-e1d95a8f" name="load" handler="onDm1Load"/>
@@ -214,13 +215,13 @@
       </cl:gridheader>
       <cl:griddetail std:sid="gd-band-fbf86933">
         <cl:gridrow std:sid="g-row-c8b6118d"/>
-        <cl:gridcell std:sid="gd-cell-9ddb64b7" rowindex="0" colindex="0" columnname="column1" suppressible="true" suppressibleexpr="true">
+        <cl:gridcell std:sid="gd-cell-9ddb64b7" rowindex="0" colindex="0" columnname="column1" suppressible="true">
           <cl:treecell std:sid="t-cell-390e0154" indent="0" useicon="false">
             <cl:relativebind property="level" category="PROPERTY" columnname="level"/>
             <cl:celldata std:sid="c-data-b775510a"/>
           </cl:treecell>
         </cl:gridcell>
-        <cl:gridcell std:sid="gd-cell-d485399a" rowindex="0" colindex="1" columnname="column2" suppressible="true" suppressref="0"/>
+        <cl:gridcell std:sid="gd-cell-d485399a" rowindex="0" colindex="1" columnname="column2" suppressref="0"/>
         <cl:gridcell std:sid="gd-cell-164e5c92" rowindex="0" colindex="2" columnname="column3"/>
         <cl:gridcell std:sid="gd-cell-2dff7d98" rowindex="0" colindex="3" columnname="column4"/>
         <cl:gridcell std:sid="gd-cell-10f7501e" rowindex="0" colindex="4" columnname="level"/>
@@ -275,6 +276,17 @@
       <cl:listener std:sid="listener-2d2d88b3" name="click" handler="onBtn22Click"/>
       <cl:xylayoutdata std:sid="xyl-data-f253e40a" top="43px" left="749px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
+    <cl:menu std:sid="menu-8f23f69b">
+      <cl:xylayoutdata std:sid="xyl-data-3916f463" top="468px" left="1047px" width="311px" height="226px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:menuitem std:sid="m-item-08814c67" label="label1" value="value1"/>
+      <cl:menuitem std:sid="m-item-929b011b" label="label2" value="value2"/>
+      <cl:menuitem std:sid="m-item-0d52c680" label="label3" value="value3"/>
+      <cl:menuitem std:sid="m-item-9edbb749" label="label4" value="value4"/>
+      <cl:menuitem std:sid="m-item-229ce496" label="label5" value="value5"/>
+      <cl:itemstyle>
+        <cl:expbind property="class" category="CLASS" expression="label == &quot;label2&quot; ? &quot;border-bottom&quot; : &quot;&quot;"/>
+      </cl:itemstyle>
+    </cl:menu>
     <cl:xylayout std:sid="xylayout-a2454d2c"/>
   </body>
   <std:studiosetting>

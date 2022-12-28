@@ -459,3 +459,17 @@ function onBtn18Click(e){
 	 */
 	//객체에 대한 참조를 통해 컨트롤을 복사하는 방법은 없을런지?
 }
+
+/*
+ * "타입체크" 버튼(btn19)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn19Click(e){
+	var btn19 = e.control;
+	/*
+	 * 자바스크립트에서 타입을 체크하는 방법은 여러가지 있는데, typeof 혹은 instanceof 를 주로 사용한다고 볼 수 있다.
+	 * instanceof : 이 연사자는 보통 프로토타입 체인을 거슬러 올라가며 인스턴스 여부나 상속 여부를 체크한다. 계층 구조를 가진 클래스를 다룰떄, 클래스의 상속여부등을 따질때 효과가 좋음
+	 * obj1.isPrototypeOf(obj2) : obj1이 obj2의 프로토타입 체인 상 어딘가에 존재하면 true를 반환
+	 * Object.prototype.toString.call() : [object 타입] 을 반환받기 떄문에 직관적인 타입을 반환받고 싶을떄 좋은 내용으로 보임.
+	 */
+}

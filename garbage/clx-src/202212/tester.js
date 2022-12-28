@@ -229,7 +229,7 @@ function onBodyInit(e){
 function onBodyScroll(e){
 //	var group = e.control;
 //	var q = e.scrollTop + window.innerHeight
-	deboun();
+//	deboun();
 }
 var deboun = _.throttle(func, 300);
 
@@ -401,4 +401,5 @@ function onBtn21Click(e){
 function onBtn22Click(e){
 	var btn22 = e.control;
 	console.log(app.lookup("dm1").getDatas());
+
 }

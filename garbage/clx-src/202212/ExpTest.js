@@ -6,6 +6,7 @@
  ************************************************/
 cpr.expression.ExpressionEngine.INSTANCE.registerFunction("testFunc", function(ctrl,a){
 	console.log(ctrl);
+	console.log(a);
 	if(ctrl) {
 		return true;
 	}
@@ -49,7 +50,8 @@ function onBtn1Click(e){
  */
 function onBtn4Click(e){
 	var btn4 = e.control;
-	app.lookup("si2").filterExp = "testFunc(#btn1, label)";
+	//app.lookup("si2").filterExp = "testFunc(#btn1, label)";
+	app.lookup("si2").setFilter("testFunc(#btn1,label)");
 	app.getContainer().redraw();
 }
 

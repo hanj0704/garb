@@ -10,6 +10,22 @@
 	
 	background-color : blue;
 }
+.border-bottom {
+//	border-bottom: solid 1px black;
+//	text-align: left;
+//	.cl-text {
+//		text-align: left;
+//	}
+	margin-bottom: 10px;
+	&:after {
+		content : "";
+		position : absolute;
+		border-bottom : solid 1px black;
+		left : 20px;
+		right : 20px;
+		bottom : -5px;
+	}
+}
 .cl-button.hanCont {
 	
 	background-color : rgba(0,0,0,0.7);

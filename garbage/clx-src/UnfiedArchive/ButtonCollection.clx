@@ -195,6 +195,10 @@
       <cl:listener std:sid="listener-926be9bd" name="click" handler="onBtn18Click"/>
       <cl:flowlayoutdata std:sid="f-data-7d15d149" width="200px" height="40px" autosize="none"/>
     </cl:button>
+    <cl:button std:sid="button-c71a0f09" id="btn19" value="타입체크">
+      <cl:listener std:sid="listener-264e6214" name="click" handler="onBtn19Click"/>
+      <cl:flowlayoutdata std:sid="f-data-c342d62b" width="200px" height="40px" autosize="none"/>
+    </cl:button>
     <cl:flowlayout std:sid="f-layout-adff95ee" hspacing="20" vspacing="20" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
   </body>
   <std:studiosetting>

@@ -4,23 +4,16 @@
  *
  * @author HANS
  ************************************************/
-cpr.expression.ExpressionEngine.INSTANCE.registerFunction("testman", function(ctrl,a){
-	console.log(a);
-	console.log(ctrl);
-	if(!ctrl) {
-		console.log("헉스");
-		return true;
-	}
-	return true;
-		
-});
 var Anime = {
+	objs : new cpr.utils.ObjectMap(),
 	/** @type cpr.core.AppInstance */
 	ins : null,
+	children : [],
 	prop : {
 		"propNm" : "test"
 	},
 	init : function(){
+		console.log("히히힝");
 		var that = this;
 		cpr.events.EventBus.INSTANCE.addFilter("init", function(e){
 			var control = e.control;
@@ -33,16 +26,29 @@ var Anime = {
 				that.ins = control;
 				var vcContainer = control.getContainer();
 				var vaChildren = vcContainer.getAllRecursiveChildren().filter(function(each){
-					if(each.userAttr("use-animate") == "true") {
+					if(each.userAttr("use-animate") != "") {
 //						each.visible = false;
 						each.style.css("opacity", "0");
 						return each;
 					}
 //					return each.userAttr("use-animate") == "true";
 				});
-				that.animate(vaChildren);
+//				that.objs.
+//				cpr.utils.ObjectMap.
+				
+//				that.animate(vaChildren);
 			}
 		});
+		var scroller = _.debounce(this.scroll.bind(this),100);
+		window.addEventListener("scroll", scroller,{
+			capture : true
+		});
+	},
+	scroll : function(ev){
+		console.log(this);
+		var _app = this.ins;
+//		_app.getContainer().
+//		this.children.
 	},
 	animate : function(/*cpr.controls.UIControl[]*/controls){
 		

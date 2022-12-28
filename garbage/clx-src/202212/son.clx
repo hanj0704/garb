@@ -9,6 +9,32 @@
         <cl:datacolumnlist>
           <cl:datacolumn std:sid="d-column-f084e8f6" name="column1"/>
         </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column11</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[column11]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[column11]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[column11]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column15</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[column15]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[column15]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[column15]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
       </cl:dataset>
     </cl:model>
     <cl:appspec/>
@@ -48,7 +74,30 @@
     <cl:button std:sid="button-89b93527" id="btn11" value="Button">
       <cl:flowlayoutdata std:sid="f-data-2175b4e5" width="120px" height="20px"/>
     </cl:button>
-    <cl:flowlayout std:sid="f-layout-5ab3df9d" hspacing="40" linewrap="false" rightmargin="100"/>
+    <cl:embeddedapp std:sid="e-app-e7eb13b0" id="ea1" src="tester.clx">
+      <cl:flowlayoutdata std:sid="f-data-5c319083" width="667px" height="392px"/>
+    </cl:embeddedapp>
+    <cl:grid std:sid="grid-dd676178" id="grd1" datasetid="ds1" collapsible="true">
+      <cl:flowlayoutdata std:sid="f-data-d8d686ea" width="712px" height="339px"/>
+      <cl:gridcolumn std:sid="g-column-ca75b6d6"/>
+      <cl:gridheader std:sid="gh-band-b59b5448">
+        <cl:gridrow std:sid="g-row-d8c171ab"/>
+        <cl:gridcell std:sid="gh-cell-cb401e4e" rowindex="0" colindex="0" targetcolumnname="column1" sortable="false" filterable="false" text="column1"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-113e0cac">
+        <cl:gridrow std:sid="g-row-bf3f468d"/>
+        <cl:gridcell std:sid="gd-cell-cbfc4014" rowindex="0" colindex="0" columnname="column1" suppressible="true"/>
+      </cl:griddetail>
+      <cl:gridrowgrouplist std:sid="grg-list-ec947f72">
+        <cl:gridrowgroup std:sid="gr-group-3e152d4c" groupcondition="column1">
+          <cl:gridgroupheader std:sid="ggh-band-603e2db7">
+            <cl:gridrow std:sid="g-row-526135f1"/>
+            <cl:gridcell std:sid="ggh-cell-417d3b3f" rowindex="0" colindex="0" expr="column1"/>
+          </cl:gridgroupheader>
+        </cl:gridrowgroup>
+      </cl:gridrowgrouplist>
+    </cl:grid>
+    <cl:flowlayout std:sid="f-layout-5ab3df9d" hspacing="40" rightmargin="100"/>
   </body>
   <std:studiosetting>
     <std:hruler/>
