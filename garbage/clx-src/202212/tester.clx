@@ -287,6 +287,10 @@
         <cl:expbind property="class" category="CLASS" expression="label == &quot;label2&quot; ? &quot;border-bottom&quot; : &quot;&quot;"/>
       </cl:itemstyle>
     </cl:menu>
+    <cl:button std:sid="button-8419e4a9" id="btn23" value="Button">
+      <cl:listener std:sid="listener-afbf981b" name="click" handler="onBtn23Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-34521375" top="20px" left="683px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
     <cl:xylayout std:sid="xylayout-a2454d2c"/>
   </body>
   <std:studiosetting>

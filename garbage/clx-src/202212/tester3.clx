@@ -127,6 +127,12 @@
       <cl:submission std:sid="submission-b77b0d28" id="sms2" action="/tes/mci.do" mediatype="application/json">
         <cl:requestdata dataid="packageUrl" alias="packageUrl"/>
       </cl:submission>
+      <cl:matrix-submission std:sid="m-submission-188fdeb4" id="msm2">
+        <cl:matrix>
+          <cl:request type="object"/>
+          <cl:response type="object"/>
+        </cl:matrix>
+      </cl:matrix-submission>
     </cl:model>
     <cl:appspec/>
   </head>
@@ -162,6 +168,10 @@
     <cl:button std:sid="button-092629ba" id="btn2" value="Button">
       <cl:listener std:sid="listener-bb7cd90d" name="click" handler="onBtn2Click"/>
       <cl:xylayoutdata std:sid="xyl-data-4b348632" top="382px" left="169px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-f27e3e26" id="btn3" value="Button">
+      <cl:listener std:sid="listener-09d97213" name="click" handler="onBtn3Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-8bc9e63f" top="412px" left="169px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
     <cl:xylayout std:sid="xylayout-a754e9d1"/>
   </body>

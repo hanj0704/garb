@@ -1349,3 +1349,15 @@ function onBtn4Click(e){
 	
 	app.lookup("ds_child").pushRowData({});
 }
+
+/*
+ * "setBindRow" 버튼(btn5)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn5Click(e){
+	var btn5 = e.control;
+	var dsp = app.lookup("ds_parent");
+	var q = dsp.getRow(0);	
+	var dsc = app.lookup("ds_child");
+	dsc.bindParentRow(q);
+}

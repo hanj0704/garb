@@ -217,10 +217,12 @@ function onBtn7Click(e){
  * 앱이 최초 구성될 때 발생하는 이벤트 입니다.
  */
 function onBodyInit(e){
-	app.lookup("btn6").style.css("opacity", "0");
-	app.lookup("btn11").style.css("opacity", "0");
-	app.lookup("btn12").style.css("opacity", "0");
-	app.lookup("btn8").style.css("opacity", "0");
+//	app.lookup("btn6").style.css("opacity", "0");
+//	app.lookup("btn11").style.css("opacity", "0");
+//	app.lookup("btn12").style.css("opacity", "0");
+//	app.lookup("btn8").style.css("opacity", "0");
+	var q = app.getContainer().getAllRecursiveChildren();
+	console.log(q);
 }
 /*
  * 루트 컨테이너에서 scroll 이벤트 발생 시 호출.
@@ -402,4 +404,27 @@ function onBtn22Click(e){
 	var btn22 = e.control;
 	console.log(app.lookup("dm1").getDatas());
 
+}
+
+/*
+ * "Button" 버튼(btn23)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn23Click(e){
+	var btn23 = e.control;
+	app.close();
+	cpr.core.App.load("202212/tester4", function(loadedApp){
+		var voAppIns = loadedApp.createNewInstance();
+		voAppIns.addEventListener("init", function(ev){
+			var vcCtrl = ev.control;
+			var vaCtrls = vcCtrl.getContainer().getAllRecursiveChildren(true).forEach(function(each){
+				if(each.style.hasClass("test")) {
+					each.getLayout().leftMargin = 5;
+					each.getLayout().rightMargin =5;
+				}
+			});
+		});
+		voAppIns.run();
+		
+	});
 }

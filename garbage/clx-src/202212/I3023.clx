@@ -657,6 +657,10 @@
       <cl:listener std:sid="listener-6e719797" name="click" handler="onBtn4Click"/>
       <cl:xylayoutdata std:sid="xyl-data-f6416e00" top="327px" left="950px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
+    <cl:button std:sid="button-ca29cd27" id="btn5" value="setBindRow">
+      <cl:listener std:sid="listener-a5d03646" name="click" handler="onBtn5Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-58239465" top="357px" left="950px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
     <cl:xylayout std:sid="xylayout-e72074c7"/>
   </body>
   <std:studiosetting>
