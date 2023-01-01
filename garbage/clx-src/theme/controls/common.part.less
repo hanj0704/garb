@@ -289,3 +289,17 @@
 	animation : txt_ani 8.0s 0.3s ease-in-out both;
 	opacity:1;
 }
+
+@numInserts : 10;
+.loopingClass(@index) when(@index <= @numInserts) {
+	
+	.cl-sub-test@{index} {
+		
+		> .cl-sub {
+			top : -30 * @index + px !important;
+		}
+	}
+	.loopingClass(@index + 1);
+}
+
+.loopingClass(1);

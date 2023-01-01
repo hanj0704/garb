@@ -8,29 +8,36 @@
     <cl:appspec/>
   </head>
   <body std:sid="body-4ab4ab14" class="test">
-    <cl:listener std:sid="listener-eca30300" name="load" handler="onBodyLoad"/>
-    <cl:button std:sid="button-3e116b81" id="btn1" value="Button">
-      <cl:verticaldata std:sid="v-data-02658173" width="100px" height="20px"/>
-    </cl:button>
-    <cl:button std:sid="button-3a87fdb0" id="btn2" value="Button">
-      <cl:verticaldata std:sid="v-data-45edb153" width="100px" height="20px"/>
-    </cl:button>
-    <cl:button std:sid="button-ab6e0172" id="btn3" value="Button">
-      <cl:verticaldata std:sid="v-data-12ff99a1" width="100px" height="20px"/>
-    </cl:button>
-    <cl:button std:sid="button-d88cb970" id="btn4" value="Button">
-      <cl:verticaldata std:sid="v-data-e175758e" width="100px" height="20px"/>
-    </cl:button>
-    <cl:button std:sid="button-199541cb" id="btn5" value="Button">
-      <cl:verticaldata std:sid="v-data-d717eda0" width="100px" height="20px"/>
-    </cl:button>
-    <cl:button std:sid="button-a0d32564" id="btn6" value="Button">
-      <cl:verticaldata std:sid="v-data-b53d40dc" width="100px" height="20px"/>
-    </cl:button>
-    <cl:button std:sid="button-2cac4a73" id="btn7" value="Button">
-      <cl:verticaldata std:sid="v-data-c0a8fb2b" width="100px" height="20px"/>
-    </cl:button>
-    <cl:verticallayout std:sid="v-layout-54c1d67c" leftmargin="30" rightmargin="30" topmargin="30" bottommargin="30"/>
+    <cl:navigationbar std:sid="n-bar-95ce6ad1">
+      <cl:listener std:sid="listener-38643b0e" name="item-mouseover" handler="onNavigationBarItemMouseover"/>
+      <cl:listener std:sid="listener-d9f71d73" name="item-click" handler="onNavigationBarItemClick"/>
+      <cl:verticaldata std:sid="v-data-3eed843b" width="300px" height="40px"/>
+      <cl:menuitem std:sid="m-item-1ce89f04" label="label1" value="value1"/>
+      <cl:menuitem std:sid="m-item-8e827dd7" label="label4" value="value22" parent="value1"/>
+      <cl:menuitem std:sid="m-item-8334f29f" label="label5" value="value23" parent="value1"/>
+      <cl:menuitem std:sid="m-item-c3162be0" label="label6" value="value3" parent="value2"/>
+      <cl:menuitem std:sid="m-item-936e539b" label="label2" value="value2" parent="value1"/>
+      <cl:menuitem std:sid="m-item-93fc2af4" label="label7" value="value4" parent="value3"/>
+      <cl:menuitem std:sid="m-item-edb12426" label="label8" value="value24" parent="value21"/>
+      <cl:menuitem std:sid="m-item-736d99c7" label="label3" value="value21" parent="value1"/>
+      <cl:menuitem std:sid="m-item-f5909d5d" label="label9" value="value25" parent="value24"/>
+      <cl:listitemstyle>
+        <cl:expbind property="class" category="CLASS" expression="&quot;cl-sub-test&quot;+parentItem.children.indexOf(getItemByValue(this.value))"/>
+      </cl:listitemstyle>
+    </cl:navigationbar>
+    <cl:navigationbar std:sid="n-bar-9e0c6f88">
+      <cl:verticaldata std:sid="v-data-77340c66" width="964px" height="40px" autosize="none"/>
+      <cl:menuitem std:sid="m-item-1e236670" label="label1" value="value1"/>
+      <cl:menuitem std:sid="m-item-0044f0e9" label="label4" value="value22" parent="value1"/>
+      <cl:menuitem std:sid="m-item-0ff5d490" label="label5" value="value23" parent="value1"/>
+      <cl:menuitem std:sid="m-item-2de746bf" label="label6" value="value3" parent="value2"/>
+      <cl:menuitem std:sid="m-item-56305654" label="label2" value="value2" parent="value1"/>
+      <cl:menuitem std:sid="m-item-0d4a05b0" label="label7" value="value4" parent="value3"/>
+      <cl:menuitem std:sid="m-item-d0b32996" label="label8" value="value24" parent="value21"/>
+      <cl:menuitem std:sid="m-item-4f8fe2a2" label="label3" value="value21" parent="value1"/>
+      <cl:menuitem std:sid="m-item-91f3ab19" label="label9" value="value25" parent="value24"/>
+    </cl:navigationbar>
+    <cl:verticallayout std:sid="v-layout-54c1d67c" spacing="200" leftmargin="30" rightmargin="30" topmargin="30" bottommargin="30"/>
   </body>
   <std:studiosetting>
     <std:hruler/>

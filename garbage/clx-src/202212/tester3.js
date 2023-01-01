@@ -476,3 +476,26 @@ function onBtn3Click(e){
 	var btn3 = e.control;
 	app.lookup("")
 }
+
+/*
+ * "Button" 버튼(btn4)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn4Click(e){
+	var btn4 = e.control;
+	
+	cpr.core.NotificationCenter.INSTANCE.post("test", {
+		"data" : "zz",
+		"user" : app
+	});
+}
+
+/*
+ * "Button" 버튼(btn5)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn5Click(e){
+	var btn5 = e.control;
+	
+	
+}

@@ -173,6 +173,14 @@
       <cl:listener std:sid="listener-09d97213" name="click" handler="onBtn3Click"/>
       <cl:xylayoutdata std:sid="xyl-data-8bc9e63f" top="412px" left="169px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
+    <cl:button std:sid="button-8f5264c5" id="btn4" value="Button">
+      <cl:listener std:sid="listener-3840c2e8" name="click" handler="onBtn4Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-41085966" top="412px" left="279px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-2dc19b6d" id="btn5" value="Button">
+      <cl:listener std:sid="listener-ffdb930c" name="click" handler="onBtn5Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-85b90c43" top="44px" left="664px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
     <cl:xylayout std:sid="xylayout-a754e9d1"/>
   </body>
   <std:studiosetting>

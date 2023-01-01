@@ -4,24 +4,78 @@
  *
  * @author HANS
  ************************************************/
+var vnItemSize = 30;
 
-/*
- * 루트 컨테이너에서 load 이벤트 발생 시 호출.
- * 앱이 최초 구성된후 최초 랜더링 직후에 발생하는 이벤트 입니다.
+
+/**
+ * 마우스 포인터가 위치한 곳 밑에 있는 모든 요소를 가져오는 함수입니다.
+ * @param {Number} x
+ * @param {Number} y
+ * @return {HTMLElement}
  */
-function onBodyLoad(e){
-	var elements = document.querySelectorAll(".test");
-var vnLength = elements.length;
-
-for(var i = 0 ; i < vnLength ; i++) {
-	var item = elements.item(i);
-	var element = item.querySelector(".cl-layout-content");
-	if(element) {
-		console.log(element);
-//		element.style.padding = 5;
-//		element.setAttribute("padding", "5px");
-		element.style.paddingLeft = "5px";
-		element.style.paddingRight = "5px";
+function elementsFromPoint(x, y) {
+	if (document["msElementsFromPoint"]) {
+		var nodeList = document["msElementsFromPoint"](x, y);
+		if (!nodeList) {
+			return [];
+		} else {
+			return Array.prototype.slice.call(nodeList);
+		}
+	} else {
+		return (document["elementsFromPoint"](x, y) || []);
 	}
 }
+
+/*
+ * 내비게이션 바에서 item-mouseover 이벤트 발생 시 호출.
+ * 아이템에 마우스오버 했을때 발생하는 이벤트.
+ */
+function onNavigationBarItemMouseover(e){
+	var navigationBar = e.control;
+//	if(e.item.depth == 1) {
+////		debugger;
+//	/** @type HTMLElement[] */
+//		var elements = elementsFromPoint(e.clientX, e.clientY);
+//		
+//		var folderItem = elements.find(function(ele){
+//			return ele.classList.contains("cl-navigationbar-listitem")
+//		});
+//		var parent = folderItem.parentNode.childNodes;
+//		var children = [];
+//		for(var i = 0 ; i <parent.length ; i++) {
+//			if(parent.item(i).classList.contains("cl-navigationbar-listitem")) {
+//				children.push(parent.item(i));
+//			}
+//		}
+//		
+//		if(folderItem.classList.contains("cl-folder")) {
+//				var vnIndex = children.indexOf(folderItem);
+//			console.log("헤이");
+//			folderItem.classList.add("cl-sub-test"+vnIndex);
+//				console.log(folderItem);
+//				cpr.core.DeferredUpdateManager.INSTANCE.update();
+////			debugger;
+////			setTimeout(function(){
+////				
+////				console.log(vnIndex);
+////				var subItems = folderItem.querySelector(".cl-sub");
+////				console.log(subItems);
+////			subItems.style.top = "-"+vnIndex*vnItemSize+"px";
+////			}, 10);
+//		}
+//		
+//	}
 }
+
+
+
+
+/*
+ * 내비게이션 바에서 item-click 이벤트 발생 시 호출.
+ * 아이템 클릭시 발생하는 이벤트.
+ */
+function onNavigationBarItemClick(e){
+	var navigationBar = e.control;
+	debugger;
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
