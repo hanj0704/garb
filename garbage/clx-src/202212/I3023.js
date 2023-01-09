@@ -1334,10 +1334,22 @@ function onBtn3Click(e){
 	var idx = sel.getIndex();
 	var row = dsp.getRow(idx);
 	
+	
 	console.log(sel);
 	console.log(row);
-	
-	
+//	dsp.forEachOfUnfilteredRows(function(dataRow){
+//		console.log(dataRow);
+//		console.log(dataRow._rowdata);
+////		console.log(dataRow.)
+//	});
+//	dsc.forEachOfUnfilteredRows(function(dataRow){
+//		console.log(dataRow);
+//		console.log(dataRow.getRowData());
+//		console.log(dataRow._rowdata);
+//	});
+//	debugger
+	var parentRow = dsp.findParentRow(dsc.getBindedParentRowId());
+	console.log(parentRow);
 }
 
 /*

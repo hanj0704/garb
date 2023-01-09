@@ -260,8 +260,10 @@ function onBtn14Click(/* cpr.events.CMouseEvent */ e){
 	 * @type cpr.controls.Button
 	 */
 	var btn14 = e.control;
-	
+	if( i == 0) {
+		
 	app.lookup("msm1").addRequestData("header"+i, {
+//	app.lookup("msm1").addRequestData(null, {
 		"data" : 1,
 		"bb" : "222",
 		"cc" : [
@@ -282,6 +284,8 @@ function onBtn14Click(/* cpr.events.CMouseEvent */ e){
 			}
 		]
 	});
+	}
+//	app.lookup("msm1").addRequestData("rowSize", 1);
 	i++;
 	var msm = app.lookup("msm1");
 	

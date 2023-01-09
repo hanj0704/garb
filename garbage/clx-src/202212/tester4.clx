@@ -4,8 +4,26 @@
     <screen std:sid="screen-63375518" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
     <screen std:sid="screen-2e1f55ae" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
     <screen std:sid="screen-2a29db7b" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
-    <cl:model std:sid="model-9a9eed4d"/>
-    <cl:appspec/>
+    <cl:model std:sid="model-9a9eed4d">
+      <cl:dataset comment="SampleDefaultVO" std:sid="d-set-d4ae1800" id="SampleDefaultVO">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="id" std:sid="d-column-89741990" name="id" datatype="string"/>
+          <cl:datacolumn comment="name" std:sid="d-column-54de9cd5" name="name" datatype="string"/>
+          <cl:datacolumn comment="검색조건" std:sid="d-column-692f10c9" name="searchCondition" datatype="string"/>
+          <cl:datacolumn comment="검색Keyword" std:sid="d-column-b4ac89ce" name="searchKeyword" datatype="string"/>
+          <cl:datacolumn comment="검색사용여부" std:sid="d-column-8f6c471b" name="searchUseYn" datatype="string"/>
+          <cl:datacolumn comment="현재페이지" std:sid="d-column-fbfc6fd5" name="pageIndex" datatype="number"/>
+          <cl:datacolumn comment="페이지갯수" std:sid="d-column-348b6f9d" name="pageUnit" datatype="number"/>
+          <cl:datacolumn comment="페이지사이즈" std:sid="d-column-60e9d835" name="pageSize" datatype="number"/>
+          <cl:datacolumn comment="firstIndex" std:sid="d-column-339c2509" name="firstIndex" datatype="number"/>
+          <cl:datacolumn comment="lastIndex" std:sid="d-column-f1e156eb" name="lastIndex" datatype="number"/>
+          <cl:datacolumn comment="recordCountPerPage" std:sid="d-column-a753bf9f" name="recordCountPerPage" datatype="number"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec>
+      <cl:event name="evt1" type="cpr.events.CAppEvent"/>
+    </cl:appspec>
   </head>
   <body std:sid="body-4ab4ab14" class="test">
     <cl:navigationbar std:sid="n-bar-95ce6ad1">
@@ -37,6 +55,10 @@
       <cl:menuitem std:sid="m-item-4f8fe2a2" label="label3" value="value21" parent="value1"/>
       <cl:menuitem std:sid="m-item-91f3ab19" label="label9" value="value25" parent="value24"/>
     </cl:navigationbar>
+    <cl:button std:sid="button-8ed389e2" id="btn1" value="Button">
+      <cl:listener std:sid="listener-33cf7b62" name="click" handler="onBtn1Click"/>
+      <cl:verticaldata std:sid="v-data-5a2965b9" width="100px" height="20px"/>
+    </cl:button>
     <cl:verticallayout std:sid="v-layout-54c1d67c" spacing="200" leftmargin="30" rightmargin="30" topmargin="30" bottommargin="30"/>
   </body>
   <std:studiosetting>

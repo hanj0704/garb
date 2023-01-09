@@ -73,11 +73,13 @@
           </cl:datarow>
         </cl:datarowlist>
       </cl:dataset>
+      <cl:dataset std:sid="d-set-45adffb4" id="dsTest"/>
     </cl:model>
     <cl:appspec/>
   </head>
   <body std:sid="body-73893bbd">
     <cl:grid std:sid="grid-bf3b7ff9" id="grd1" datasetid="ds1" columnMovable="true">
+      <cl:listener std:sid="listener-c6f8bd83" name="selection-change" handler="onGrd1SelectionChange"/>
       <cl:xylayoutdata std:sid="xyl-data-b7f3b76d" top="20px" left="20px" width="453px" height="283px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
       <cl:gridcolumn std:sid="g-column-dc28de27"/>
       <cl:gridcolumn std:sid="g-column-6617fcc5"/>
@@ -122,6 +124,26 @@
     <cl:button std:sid="button-d84dfbcd" id="btn1" value="Button">
       <cl:listener std:sid="listener-25dd498d" name="click" handler="onBtn1Click"/>
       <cl:xylayoutdata std:sid="xyl-data-a7d0426a" top="313px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-9637a8d6" id="btn2" value="add">
+      <cl:listener std:sid="listener-4e11fdec" name="click" handler="onBtn2Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-afb67657" top="313px" left="142px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-adea9ae3" id="btn3" value="clear">
+      <cl:listener std:sid="listener-691f5475" name="click" handler="onBtn3Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-c34f7f89" top="343px" left="142px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-c5761cc3" id="btn4" value="clear">
+      <cl:listener std:sid="listener-ab14b260" name="click" handler="onBtn4Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-7b0d5213" top="373px" left="142px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-79ca1b65" id="btn5" value="test">
+      <cl:listener std:sid="listener-926f5a6d" name="click" handler="onBtn5Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-c243bdcb" top="313px" left="252px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-0846a079" id="btn6" value="dataRow">
+      <cl:listener std:sid="listener-0f6db551" name="click" handler="onBtn6Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-8d8f042b" top="343px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
     <cl:xylayout std:sid="xylayout-6ba7d384"/>
   </body>
