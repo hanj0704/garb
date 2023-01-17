@@ -10,6 +10,9 @@
           <cl:datacolumn comment="No" std:sid="d-column-46be8e6a" name="NO"/>
           <cl:datacolumn comment="업무" std:sid="d-column-eb1e0048" name="KIND"/>
           <cl:datacolumn comment="화면 ID" std:sid="d-column-0e65b5f6" name="PAGE"/>
+          <cl:datacolumn std:sid="d-column-105cea41" name="column1"/>
+          <cl:datacolumn std:sid="d-column-673afcb7" name="column2"/>
+          <cl:datacolumn comment="사이즈" std:sid="d-column-d4335e7a" name="SIZE"/>
         </cl:datacolumnlist>
       </cl:dataset>
     </cl:model>
@@ -21,17 +24,26 @@
       <cl:gridcolumn std:sid="g-column-89aadb5d"/>
       <cl:gridcolumn std:sid="g-column-757331d3"/>
       <cl:gridcolumn std:sid="g-column-210ac825"/>
+      <cl:gridcolumn std:sid="g-column-4a945c63"/>
+      <cl:gridcolumn std:sid="g-column-ff31b347" visible="true"/>
+      <cl:gridcolumn std:sid="g-column-1cf57851"/>
       <cl:gridheader std:sid="gh-band-7ffebb1e">
         <cl:gridrow std:sid="g-row-c821ca76"/>
         <cl:gridcell std:sid="gh-cell-cd0a594a" rowindex="0" colindex="0" targetcolumnname="NO" sortable="false" filterable="false" text="column1"/>
         <cl:gridcell std:sid="gh-cell-424f0d66" rowindex="0" colindex="1" targetcolumnname="KIND" sortable="false" filterable="false" text="column2"/>
         <cl:gridcell std:sid="gh-cell-89d7aa8e" rowindex="0" colindex="2" targetcolumnname="PAGE" sortable="false" filterable="false" text="column3"/>
+        <cl:gridcell std:sid="gh-cell-8f699de3" rowindex="0" colindex="5" targetcolumnname="SIZE" text="SIZE"/>
+        <cl:gridcell std:sid="gh-cell-fd1e0cac" rowindex="0" colindex="3" targetcolumnname="column1" text="column1"/>
+        <cl:gridcell std:sid="gh-cell-501fa969" rowindex="0" colindex="4" targetcolumnname="column2" text="column2"/>
       </cl:gridheader>
       <cl:griddetail std:sid="gd-band-d007086e">
         <cl:gridrow std:sid="g-row-9490ec18"/>
         <cl:gridcell std:sid="gd-cell-f297eb00" rowindex="0" colindex="0" columnname="NO"/>
         <cl:gridcell std:sid="gd-cell-5e42b683" rowindex="0" colindex="1" columnname="KIND"/>
         <cl:gridcell std:sid="gd-cell-f0899527" rowindex="0" colindex="2" columnname="PAGE"/>
+        <cl:gridcell std:sid="gd-cell-268b3a24" rowindex="0" colindex="5" columnname="SIZE"/>
+        <cl:gridcell std:sid="gd-cell-61f21a16" rowindex="0" colindex="3" columnname="column1"/>
+        <cl:gridcell std:sid="gd-cell-9f1d1436" rowindex="0" colindex="4" columnname="column2"/>
       </cl:griddetail>
     </cl:grid>
     <cl:inputbox std:sid="i-box-6212dd20" id="ipb1">

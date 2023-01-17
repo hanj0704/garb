@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+// function getOutputText(){
+	
+	window.addEventListener("message",function(data){
+	console.log(data);
+	});
+function getSecondEmbMethod(){
+	window.opener.postMessage('test',"*");
+}
+</script>
+</head>
+<body>
+<input></input>
+<button onClick="getHostAppMethod()">메인 페이지 함수 호출버튼 </button>
+<button onClick="getSecondEmbMethod()">다른 임베디드앱 함수 가져오는 버튼 </button>
+
+</body>
+</html>

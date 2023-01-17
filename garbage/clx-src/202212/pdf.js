@@ -33,8 +33,8 @@ function onBtn2Click(e){
  */
 function onBtn3Click(e){
 	var btn3 = e.control;
-	var sms = app.lookup("sms2");
-	sms.removeAllFileParameters();
-	sms.addFileParameter("file1", app.lookup("fi1").files[0]);
+	var sms = app.lookup("msm1");
+//	sms.removeAllFileParameters();
+//	sms.addFileParameter("file1", app.lookup("fi1").files[0]);
 	sms.send();	
 }

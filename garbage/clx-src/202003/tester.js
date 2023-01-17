@@ -261,3 +261,22 @@ function onIpb3ValueChange(/* cpr.events.CValueChangeEvent */ e){
 	
 	app.lookup("ds1").setValue(0, "column1", "가가가");
 }
+
+/*
+ * "sms2" 버튼(btn9)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn9Click(e){
+	var btn9 = e.control;
+	app.lookup("sms2").send();
+}
+
+/*
+ * "msm1" 버튼(btn10)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn10Click(e){
+	var btn10 = e.control;
+	
+	app.lookup("msm1").send();
+}
