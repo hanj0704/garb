@@ -14,6 +14,9 @@
       <cl:dataset std:sid="d-set-2cdce360" id="ds2">
         <cl:datacolumnlist>
           <cl:datacolumn std:sid="d-column-47fba12f" name="column3"/>
+          <cl:datacolumn std:sid="d-column-87f4b338" name="child1" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-aac4c670" name="child2" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-acbd5af6" name="child3" datatype="string"/>
         </cl:datacolumnlist>
       </cl:dataset>
       <cl:dataset std:sid="d-set-e31970f3" id="ds3">
@@ -21,6 +24,22 @@
           <cl:datacolumn std:sid="d-column-8ee86ab0" name="column1"/>
         </cl:datacolumnlist>
       </cl:dataset>
+      <cl:dataset comment="list" std:sid="d-set-fb684d7d" id="list">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-98585f22" name="child1" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-a00e1414" name="child2" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-6a105b50" name="child3" datatype="string"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-3c811622" id="dm1"/>
+      <cl:datamap comment="data" std:sid="d-map-a8224a0e" id="data">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-075ee194" name="param4" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-20f051b7" name="param1" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-e9f6c9ec" name="param2" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-f26ff9d8" name="param3" datatype="string"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
     </cl:model>
     <cl:appspec/>
   </head>

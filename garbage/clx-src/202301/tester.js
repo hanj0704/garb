@@ -4,7 +4,21 @@
  *
  * @author HANS
  ************************************************/
-
+var a = [1,2,3,4];
+for(var test of a){
+	console.log(test);
+};
+var q = 
+{
+	"header" : {
+		"comAnsErr" : "String"//...
+	},
+	"data" : {
+		/*
+		 * data key 내에는 단일 List 혹은 복수의 키를 포함한 Object가 포함될 수 있습니다.
+		 */
+	}
+}
 exports.callerMan = function(){
 	console.log("하하");
 }
@@ -185,3 +199,15 @@ function onBtn10Click(e){
 	var btn10 = e.control;
 		q.postMessage("zz", "*");
 }
+
+/*
+ * "Button" 버튼(btn11)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn11Click(e){
+	var btn11 = e.control;
+	var msm = app.lookup("msm2");
+	msm.addRequestData("child1.q", "1qweqwe");
+	msm.send();
+}
+

@@ -4,7 +4,7 @@
  *
  * @author HANS
  ************************************************/
-
+var util = createCommonUtil();
 var objs ={
 	"공통" : "cmn",
 	"변액" : "var",
@@ -26,6 +26,7 @@ var sizes = {
 function rev(str){
 	return str.replace(/[\s\)\(\[\]\/\,\_]/g, "");
 }
+var index =0;
 //검진일/스캔일기준조회	nbs40	nbs	app/nbs/검진일스캔일기준조회	20220104	1200
 /*
  * "Button" 버튼(btn1)에서 click 이벤트 발생 시 호출.
@@ -34,14 +35,36 @@ function rev(str){
 function onBtn1Click(e){
 	var btn1 = e.control;
 	var result = [];
+	var v2result = [];
 	var data = app.lookup("ipb1").value;
 	var time = moment().format("DD");
+	var dsMn = app.lookup("dsMn");
 	console.log(time);
 	app.lookup("ds1").getRowDataRanged().forEach(function(each){
-		result.push(each.PAGE+"	"+objs[each.KIND]+time+each.NO+"	"+objs[each.KIND]+"	"+"app/"+objs[each.KIND]+"/"+rev(each.PAGE)+"	"+data+"	"+hasKeys(each.SIZE)+"	"+objs[each.KIND]);
+		if(each.PAGE.indexOf("_V2") == -1) {
+			//일반 페이지
+			var no = each.NO;
+			if(no == ""){
+				no = ++index;
+			}
+			result.push(each.PAGE+"	"+objs[each.KIND]+time+no+"	"+objs[each.KIND]+"	"+"app/"+objs[each.KIND]+"/"+rev(each.PAGE)+"	"+data+"	"+hasKeys(each.SIZE)+"	"+objs[each.KIND]);
+		} else {
+			console.log(each.PAGE);
+			var vsPage = each.PAGE.replace("_V2", "");
+			var row = dsMn.findFirstRow("label =='"+vsPage+"'");
+			if(ValueUtil.fixNull(row)==""){
+				console.log("문제 발생");
+			} else {
+				
+				v2result.push("(V2)"+vsPage+"	"+row.getValue("value") +"	"+objs[each.KIND]+"	"+row.getValue("appId")+"_V2"+"	"+data + "	"+hasKeys(each.SIZE)+"	"+ " "+"	"+row.getValue("value")+"	"+ "1");
+				v2result.push("(V1)"+vsPage+"	"+row.getValue("value") +"	"+objs[each.KIND]+"	"+row.getValue("appId")+"	"+data + "	"+hasKeys(each.SIZE)+"	"+ " "+"	"+row.getValue("value")+"	"+ "2");
+			}
+		}
 	});
 	
 	console.log(result.join("\n"));
+	console.log("\n");
+	console.log(v2result.join("\n"));
 	function hasKeys (psParam){
 		var vaKeys = Object.keys(sizes);
 		if(vaKeys.indexOf(psParam) != -1){
