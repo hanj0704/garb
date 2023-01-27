@@ -1,0 +1,34 @@
+{
+	"header": {
+		"comTranSeq": "string",
+		"comTranCode": "string",
+		"comTranType": "string",
+		"comTranUpd": "string",
+		"comTranDate": "string",
+		"comReqSysId": "string",
+		"comReqDate": "string"
+	},
+	"data": [
+		{
+			"employeeId": "7",
+			"firstName": "밥",
+			"lastName": "김",
+			"email": "chunsam.kim@naver.com",
+			"phoneNumber": "01011111111",
+			"hireDate": "2022-01-01",
+			"departmentId": "1",
+			"salary": "25000",
+			"sts": "I"
+		}
+	],
+	"commonMessages": [
+		{
+			"comErrMsg": "string",
+			"comErrCategory": "string",
+			"comErrComp": "string",
+			"comErrLoc": "string",
+			"comErrResp1": "string",
+			"comErrResp2": "string"
+		}
+	]
+}
