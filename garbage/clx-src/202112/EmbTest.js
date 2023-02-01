@@ -22,3 +22,11 @@ function onBtn1Click(/* cpr.events.CMouseEvent */ e){
 	var vcEmb = app.isEmbeddedAppInstance();
 	
 }
+
+/*
+ * 루트 컨테이너에서 init 이벤트 발생 시 호출.
+ * 앱이 최초 구성될 때 발생하는 이벤트 입니다.
+ */
+function onBodyInit(e){
+	console.log("홀리~");
+}

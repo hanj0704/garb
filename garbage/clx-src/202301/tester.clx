@@ -151,37 +151,6 @@
       <cl:listener std:sid="listener-9673b821" name="click" handler="onBtn4Click"/>
       <cl:xylayoutdata std:sid="xyl-data-8ff56d26" top="20px" left="130px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
-    <cl:grid std:sid="grid-c45e5dd3" id="grd1" columnMovable="true">
-      <cl:xylayoutdata std:sid="xyl-data-e52d2958" top="127px" left="183px" width="716px" height="342px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
-      <cl:gridcolumn std:sid="g-column-ca9a7da5" width="40px"/>
-      <cl:gridcolumn std:sid="g-column-25955ba8" width="50px"/>
-      <cl:gridcolumn std:sid="g-column-f368bec4"/>
-      <cl:gridcolumn std:sid="g-column-a29a824d"/>
-      <cl:gridcolumn std:sid="g-column-84a1327e"/>
-      <cl:gridcolumn std:sid="g-column-3e87ccf3"/>
-      <cl:gridheader std:sid="gh-band-bd30bc1e">
-        <cl:gridrow std:sid="g-row-74cbb201"/>
-        <cl:gridcell std:sid="gh-cell-97a9fcc8" rowindex="0" colindex="0" sortable="false" filterable="false" columntype="checkbox"/>
-        <cl:gridcell std:sid="gh-cell-e70c839d" rowindex="0" colindex="1" sortable="false" filterable="false"/>
-        <cl:gridcell std:sid="gh-cell-1ad25510" rowindex="0" colindex="2" sortable="false" filterable="false" text="zzz">
-          <cl:button std:sid="button-929bd1eb" id="btn5" value="+">
-            <cl:celldata std:sid="c-data-f716893c" halign="RIGHT" width="25"/>
-          </cl:button>
-        </cl:gridcell>
-        <cl:gridcell std:sid="gh-cell-09ee8a3b" rowindex="0" colindex="3" sortable="false" filterable="false" text="column2"/>
-        <cl:gridcell std:sid="gh-cell-380397a5" rowindex="0" colindex="4" sortable="false" filterable="false" text="column3"/>
-        <cl:gridcell std:sid="gh-cell-462ac977" rowindex="0" colindex="5" sortable="false" filterable="false" text="column4"/>
-      </cl:gridheader>
-      <cl:griddetail std:sid="gd-band-7f1505fb">
-        <cl:gridrow std:sid="g-row-b041f9e9"/>
-        <cl:gridcell std:sid="gd-cell-81055e0a" rowindex="0" colindex="0" columntype="checkbox"/>
-        <cl:gridcell std:sid="gd-cell-0633740c" rowindex="0" colindex="1" columntype="rowindex"/>
-        <cl:gridcell std:sid="gd-cell-0ae038a1" rowindex="0" colindex="2"/>
-        <cl:gridcell std:sid="gd-cell-151c7b77" rowindex="0" colindex="3"/>
-        <cl:gridcell std:sid="gd-cell-e97cc9e6" rowindex="0" colindex="4"/>
-        <cl:gridcell std:sid="gd-cell-b4ca5ef3" rowindex="0" colindex="5"/>
-      </cl:griddetail>
-    </cl:grid>
     <cl:button std:sid="button-f794805a" id="btn6" value="Button">
       <cl:listener std:sid="listener-cd3a254c" name="click" handler="onBtn6Click"/>
       <cl:xylayoutdata std:sid="xyl-data-be6e839f" top="20px" left="518px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
@@ -202,28 +171,102 @@
       <cl:listener std:sid="listener-3513f7ad" name="click" handler="onBtn10Click"/>
       <cl:xylayoutdata std:sid="xyl-data-7f40b1b1" top="69px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
-    <cl:grid std:sid="grid-6ac4a71c" id="grd2" datasetid="ds1" columnMovable="true">
-      <cl:xylayoutdata std:sid="xyl-data-b3be02b6" top="490px" left="130px" width="562px" height="240px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
-      <cl:gridcolumn std:sid="g-column-ceedb4bb"/>
-      <cl:gridcolumn std:sid="g-column-17233e6d"/>
-      <cl:gridheader std:sid="gh-band-a41ad0ab">
-        <cl:gridrow std:sid="g-row-c697d606"/>
-        <cl:gridcell std:sid="gh-cell-041b234f" rowindex="0" colindex="0" targetcolumnname="column1" sortable="false" filterable="false" text="column1"/>
-        <cl:gridcell std:sid="gh-cell-4e4debef" rowindex="0" colindex="1" targetcolumnname="column2" sortable="false" filterable="false" text="column2"/>
-      </cl:gridheader>
-      <cl:griddetail std:sid="gd-band-64087742">
-        <cl:gridrow std:sid="g-row-a3a861cd"/>
-        <cl:gridcell std:sid="gd-cell-cb66a39e" rowindex="0" colindex="0" columnname="column1"/>
-        <cl:gridcell std:sid="gd-cell-cd922760" rowindex="0" colindex="1" columnname="column2">
-          <cl:inputbox std:sid="i-box-dee5236a" id="ipb1">
-            <cl:celldata std:sid="c-data-a48a8b75"/>
-          </cl:inputbox>
-        </cl:gridcell>
-      </cl:griddetail>
-    </cl:grid>
     <cl:button std:sid="button-79f0afe5" id="btn11" value="Button">
       <cl:listener std:sid="listener-c60b1e2f" name="click" handler="onBtn11Click"/>
       <cl:xylayoutdata std:sid="xyl-data-4c47e6c3" top="51px" left="130px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:tabfolder std:sid="t-folder-cd1db694" removeOnBuild="true">
+      <cl:xylayoutdata std:sid="xyl-data-81628b59" top="204px" left="264px" width="564px" height="328px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:tabitem std:sid="t-item-b1e8fa1a" selected="true" text="tab1">
+        <std:metadata>
+          <std:property key="is-active-item" value="true"/>
+        </std:metadata>
+        <cl:group std:sid="group-7ec15057" id="grp1">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:button std:sid="button-76b3952a" id="btn5" value="Button">
+            <cl:xylayoutdata std:sid="xyl-data-0467bf47" top="44px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-6506fc06"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-9a9e64b3" text="tab 2">
+        <cl:group std:sid="group-b774209b" id="grp2">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:embeddedapp std:sid="e-app-52e19f7c" id="ea1" src="../202112/EmbTest.clx">
+            <cl:xylayoutdata std:sid="xyl-data-289f52a9" top="35px" left="48px" width="320px" height="240px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:embeddedapp>
+          <cl:xylayout std:sid="xylayout-a9f4133b"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-6c9d1f31" text="tab 3">
+        <cl:group std:sid="group-bca93ea3" id="grp3">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:embeddedapp std:sid="e-app-f3bec0fc" id="ea2" src="../202210/drag.clx">
+            <cl:xylayoutdata std:sid="xyl-data-8c96b434" top="20px" left="63px" width="320px" height="240px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:embeddedapp>
+          <cl:xylayout std:sid="xylayout-7b610549"/>
+        </cl:group>
+      </cl:tabitem>
+    </cl:tabfolder>
+    <cl:mdifolder std:sid="mdifolder-6bc1c022" id="mdi1">
+      <cl:xylayoutdata std:sid="xyl-data-b3c1e5ee" top="114px" left="298px" width="610px" height="174px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:tabitem std:sid="t-item-049a7398" selected="true" text="tab 1">
+        <std:metadata>
+          <std:property key="is-active-item" value="true"/>
+        </std:metadata>
+        <cl:group std:sid="group-4a793c2c" id="grp4">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:xylayout std:sid="xylayout-73972ebc"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-0025a129" text="tab 2">
+        <cl:group std:sid="group-ff0bc42d" id="grp5">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:embeddedapp std:sid="e-app-2a5ee490" id="ea3" src="../202112/EmbTest.clx">
+            <cl:xylayoutdata std:sid="xyl-data-b18eed2d" top="8px" left="34px" width="350px" height="88px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:embeddedapp>
+          <cl:xylayout std:sid="xylayout-79e20305"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-acd1f6a7" text="tab 3">
+        <cl:group std:sid="group-11a1d29e" id="grp6">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:embeddedapp std:sid="e-app-8cb0ff30" id="ea4" src="../202210/drag.clx">
+            <cl:xylayoutdata std:sid="xyl-data-5349d992" top="20px" left="33px" width="416px" height="101px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+          </cl:embeddedapp>
+          <cl:xylayout std:sid="xylayout-ab379e7c"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-632fd010" text="initTest.clx">
+        <cl:embeddedapp std:sid="e-app-4f9d7fb2" id="ea5" src="initTest.clx">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+        </cl:embeddedapp>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-f039b84b" text="menuMaker.clx">
+        <cl:embeddedapp std:sid="e-app-cc7efbab" id="ea6" src="menuMaker.clx">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+        </cl:embeddedapp>
+      </cl:tabitem>
+    </cl:mdifolder>
+    <cl:button std:sid="button-a5dec15e" id="btn12" value="Button">
+      <cl:listener std:sid="listener-4d8c7451" name="click" handler="onBtn12Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-dc9f5676" top="287px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
     <cl:xylayout std:sid="xylayout-864fe544"/>
   </body>

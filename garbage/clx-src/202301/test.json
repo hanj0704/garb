@@ -10,15 +10,17 @@
 	},
 	"data": [
 		{
-			"employeeId": "7",
-			"firstName": "밥",
-			"lastName": "김",
-			"email": "chunsam.kim@naver.com",
-			"phoneNumber": "01011111111",
-			"hireDate": "2022-01-01",
-			"departmentId": "1",
-			"salary": "25000",
-			"sts": "I"
+			"editDate": "7",
+			"logKind": "밥",
+			"logDetail": "김",
+			"dataProcess": "chunsam.kim@naver.com",
+			"targetCode": "01011111111",
+			"codeVal1": "2022-01-01",
+			"cndeNm1": "1",
+			"codeVal2": "25000",
+			"codeNm2": "I",
+			"workerNm":"",
+			"workerIp" : ""
 		}
 	],
 	"commonMessages": [

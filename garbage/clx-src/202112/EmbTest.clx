@@ -8,6 +8,7 @@
     <cl:appspec/>
   </head>
   <body std:sid="body-13e07b3c">
+    <cl:listener std:sid="listener-a79d5c8e" name="init" handler="onBodyInit"/>
     <cl:button std:sid="button-94d30f7c" id="btn1" value="Button">
       <cl:listener std:sid="listener-57ccb895" name="click" handler="onBtn1Click"/>
       <cl:xylayoutdata std:sid="xyl-data-f6ca6edf" top="20px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>

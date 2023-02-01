@@ -211,3 +211,15 @@ function onBtn11Click(e){
 	msm.send();
 }
 
+/*
+ * "Button" 버튼(btn12)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn12Click(e){
+	var btn12 = e.control;
+	
+	var date1 = moment("20230330","YYYYMMDD");
+	var date2 = moment("20230430","YYYYMMDD");
+	
+	console.log(moment.duration(date2.diff(date1)).asDays());
+}
