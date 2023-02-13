@@ -35,18 +35,6 @@
           </cl:datarow>
         </cl:datarowlist>
       </cl:dataset>
-      <cl:datamap std:sid="d-map-d989bbbd" id="dm1">
-        <cl:datacolumnlist>
-          <cl:datacolumn std:sid="d-column-afa0b30e" name="column1" defaultvalue="ㅋ"/>
-          <cl:datacolumn std:sid="d-column-5f3c61e1" name="column2" defaultvalue="ㅋ"/>
-          <cl:datacolumn std:sid="d-column-882ca5e7" name="column3" defaultvalue="ㅋ"/>
-        </cl:datacolumnlist>
-      </cl:datamap>
-      <cl:submission std:sid="submission-0077c496" id="sms1" action="cisweb/getList.do">
-        <cl:listener std:sid="listener-b9871049" name="submit-error" handler="onSms1SubmitError"/>
-        <cl:listener std:sid="listener-ab7fd395" name="before-submit" handler="onSms1BeforeSubmit"/>
-        <cl:listener std:sid="listener-4f68d00f" name="submit-done" handler="onSms1SubmitDone"/>
-      </cl:submission>
       <cl:dataset std:sid="d-set-a0b06cdd" id="ds2">
         <cl:datacolumnlist>
           <cl:datacolumn std:sid="d-column-0e35f622" name="column1"/>
@@ -87,6 +75,19 @@
           </cl:datarow>
         </cl:datarowlist>
       </cl:dataset>
+      <cl:datamap std:sid="d-map-d989bbbd" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-afa0b30e" name="column1" defaultvalue="ㅋ"/>
+          <cl:datacolumn std:sid="d-column-5f3c61e1" name="column2" defaultvalue="ㅋ"/>
+          <cl:datacolumn std:sid="d-column-882ca5e7" name="column3" defaultvalue="ㅋ"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-0077c496" id="sms1" action="cisweb/getList.do">
+        <cl:listener std:sid="listener-b9871049" name="submit-error" handler="onSms1SubmitError"/>
+        <cl:listener std:sid="listener-ab7fd395" name="before-submit" handler="onSms1BeforeSubmit"/>
+        <cl:listener std:sid="listener-4f68d00f" name="submit-done" handler="onSms1SubmitDone"/>
+        <cl:requestdata dataid="ds1" payload="all"/>
+      </cl:submission>
     </cl:model>
     <cl:appspec/>
   </head>

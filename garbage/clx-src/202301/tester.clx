@@ -107,8 +107,6 @@
       </cl:matrix-submission>
       <cl:submission std:sid="submission-abca903b" id="sms1" action="//naver.com"/>
       <cl:matrix-submission std:sid="m-submission-e1538caf" id="msm2" async="true" withCredentials="false" method="get" action="a.do">
-        <cl:listener std:sid="listener-0540c454" name="before-submit" handler="onMsm2BeforeSubmit"/>
-        <cl:listener std:sid="listener-5075dd07" name="before-send" handler="onMsm2BeforeSend"/>
         <cl:matrix>
           <cl:request type="object">
             <cl:data key="child1">
@@ -125,6 +123,9 @@
           <cl:response type="object"/>
         </cl:matrix>
       </cl:matrix-submission>
+      <cl:submission std:sid="submission-e4e2f527" id="sms2" action="202301/test.json">
+        <cl:listener std:sid="listener-ade38377" name="submit-done" handler="onSms2SubmitDone"/>
+      </cl:submission>
     </cl:model>
     <cl:appspec/>
   </head>
@@ -267,6 +268,10 @@
     <cl:button std:sid="button-a5dec15e" id="btn12" value="Button">
       <cl:listener std:sid="listener-4d8c7451" name="click" handler="onBtn12Click"/>
       <cl:xylayoutdata std:sid="xyl-data-dc9f5676" top="287px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-e24a36ee" id="btn13" value="Button">
+      <cl:listener std:sid="listener-b23d1f97" name="click" handler="onBtn13Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-b74d6ab1" top="149px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
     <cl:xylayout std:sid="xylayout-864fe544"/>
   </body>

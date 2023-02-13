@@ -99,27 +99,29 @@ function onFi1Clear(e){
  */
 function onBtn2Click(e){
 	var btn2 = e.control;
-	var ea = app.lookup("ea1");
-	cpr.core.App.load("202301/initTest", function(loadedApp){
-		
-		ea.app = loadedApp;
-		ea.initValue = {
-			"zz" : "zzz"
-		}
-//		ea.heyMan = false;
-		ea.setAppProperty("heyMan", false);
-		ea.ready(function(apps){
-			console.log("임베디드앱의 ready 함수입니다.");
-			var q = apps.hasAppMethod("init");
-			if(q){
-				apps.callAppMethod("init");
-			}
-		});
-		ea.addEventListener("app-ready", function(e){
-			console.log("앱레디함수가 수행됩니다");
-		});
-		
-	});
+	console.log(cpr.I18N.INSTANCE.message("qwe"));
+	
+//	var ea = app.lookup("ea1");
+//	cpr.core.App.load("202301/initTest", function(loadedApp){
+//		
+//		ea.app = loadedApp;
+//		ea.initValue = {
+//			"zz" : "zzz"
+//		}
+////		ea.heyMan = false;
+//		ea.setAppProperty("heyMan", false);
+//		ea.ready(function(apps){
+//			console.log("임베디드앱의 ready 함수입니다.");
+//			var q = apps.hasAppMethod("init");
+//			if(q){
+//				apps.callAppMethod("init");
+//			}
+//		});
+//		ea.addEventListener("app-ready", function(e){
+//			console.log("앱레디함수가 수행됩니다");
+//		});
+//		
+//	});
 }
 
 /*
@@ -222,4 +224,26 @@ function onBtn12Click(e){
 	var date2 = moment("20230430","YYYYMMDD");
 	
 	console.log(moment.duration(date2.diff(date1)).asDays());
+}
+
+/*
+ * "Button" 버튼(btn13)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn13Click(e){
+	var btn13 = e.control;
+	
+//	app.lookup("sms2").send();
+	cpr.I18N.INSTANCE.setLocaleData("ko", {
+		"qwe" : "zzz"
+	});
+}
+
+/*
+ * 서브미션에서 submit-done 이벤트 발생 시 호출.
+ * 응답처리가 모두 종료되면 발생합니다.
+ */
+function onSms2SubmitDone(e){
+	var sms2 = e.control;
+	console.log(e);
 }
