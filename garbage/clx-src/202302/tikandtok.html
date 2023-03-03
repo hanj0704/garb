@@ -1,0 +1,27 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-eqiv="X-UA-Compatible" content="IE=edge">
+	<title>Dooms Day</title>
+</head>
+<body>
+	<h2 id="doom">이것은 우리의 텍사스데 브라질에 대한 이야기이다.</h2>
+	<script>
+	
+		const dday = new Date("2023-02-28 19:30:00").valueOf();
+		var h2 = document.getElementById("doom");
+		setInterval(function(){
+			
+			var nows = new Date().valueOf();
+			var remain = dday - nows;
+			
+			const day = Math.floor(remain/(1000*60*60*24));
+			const hour = Math.floor(remain/(1000*60*60)%24);
+			const min = Math.floor(remain/(1000*60)%60);
+			const sec = Math.floor(remain/(1000)%60);
+			h2.innerHTML = day+"일 "+hour+"시 "+min+"분 "+sec+"초 남았습니다.<br>공복에 대비하세요."
+		},1000)
+		
+	</script>
+</body>
+</html>

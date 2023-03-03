@@ -19,8 +19,8 @@ function onBtn1Click(/* cpr.events.CMouseEvent */ e){
 	
 	var btn2 = app.lookup("btn2");
 	
-	var newer = new btn2.constructor("Aaa");
-	
+	var newer = new btn2.constructor();
+	newer.value = "aqwe";
 	console.log(newer);
 	app.getContainer().addChild(newer, {
 		"left" : "30px",

@@ -13,7 +13,7 @@ function onBtn2Click(e){
 	var btn2 = e.control;
 	app.lookup("sms1").removeAllFileParameters();
 	app.lookup("sms1").addFileParameter("file1", app.lookup("fi1").files[0]);
-	app.lookup("sms1").addFileParameter("file2", app.lookup("fi1").files[1]);
+//	app.lookup("sms1").addFileParameter("file2", app.lookup("fi1").files[1]);
 	app.lookup("sms1").send();
 //	var file = app.lookup("fi1").file;
 //	
@@ -33,8 +33,8 @@ function onBtn2Click(e){
  */
 function onBtn3Click(e){
 	var btn3 = e.control;
-	var sms = app.lookup("msm1");
+	var sms = app.lookup("sms2");
 //	sms.removeAllFileParameters();
-//	sms.addFileParameter("file1", app.lookup("fi1").files[0]);
+	sms.addFileParameter("file1", app.lookup("fi1").files[0]);
 	sms.send();	
 }

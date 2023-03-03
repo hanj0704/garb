@@ -14,7 +14,7 @@
           <cl:datacolumn comment="파일크기" std:sid="d-column-f6e716d6" name="column5"/>
         </cl:datacolumnlist>
       </cl:dataset>
-      <cl:submission std:sid="submission-14f5a083" id="sms1" mediatype="multipart/form-data;encoding=json">
+      <cl:submission std:sid="submission-14f5a083" id="sms1" action="te.do" mediatype="multipart/form-data;encoding=json">
         <cl:requestdata dataid="ds1"/>
       </cl:submission>
     </cl:model>

@@ -46,7 +46,19 @@ function onBtn1Click(e){
  */
 function onBtn2Click(e){
 	var btn2 = e.control;
-	var manage = app.getRootAppInstance().dialogManager;
-	console.log(manage.getDialogNames());
-	console.log(manage.getActiveDialogName())
+//	var manage = app.getRootAppInstance().dialogManager;
+//	console.log(manage.getDialogNames());
+//	console.log(manage.getActiveDialogName())
+//	app.getHostAppInstance().callAppMethod("func1", 1,2,3,4,5);
+	qv(1,2,3,4,5);
+}
+
+function qv(argu){
+//	var argus = arguments;
+//	console.log(arguments.shift());
+	app.getHostAppInstance().callAppMethod("func1", [[1,2,3,4,5]]);
+//	app.getHostAppInstance().callAppMethod("func1", 1,2,3,4);
+	var util = createCommonUtil();
+	
+//	util.EmbApp.callA
 }

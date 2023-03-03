@@ -247,3 +247,13 @@ function onSms2SubmitDone(e){
 	var sms2 = e.control;
 	console.log(e);
 }
+
+/*
+ * "Button" 버튼(btn14)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn14Click(e){
+	var btn14 = e.control;
+	
+	app.lookup("grd1").columnVisible(1, false);
+}

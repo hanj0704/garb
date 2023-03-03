@@ -399,7 +399,7 @@ function onBtn13Click(/* cpr.events.CMouseEvent */ e){
 	var btn13 = e.control;
 	console.log(app.lookup("ds3").getRowDataRanged());
 	var opts = _.clone(app.lookup("btn14"));
-	app.getContainer().addChild(b, {
+	app.getContainer().addChild(opts, {
 		top : "800px",
 		left: "20px",
 		width: "100px",

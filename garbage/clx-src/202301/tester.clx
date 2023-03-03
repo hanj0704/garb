@@ -273,12 +273,62 @@
       <cl:listener std:sid="listener-b23d1f97" name="click" handler="onBtn13Click"/>
       <cl:xylayoutdata std:sid="xyl-data-b74d6ab1" top="149px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
+    <cl:inputbox std:sid="i-box-ceef6d10" id="ipb1" secret="true">
+      <cl:xylayoutdata std:sid="xyl-data-c332244b" top="8px" left="787px" width="196px" height="44px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:inputbox>
+    <cl:grid std:sid="grid-7a10bb83" id="grd1" datasetid="SampleDefaultVO" columnMovable="true">
+      <cl:xylayoutdata std:sid="xyl-data-128e5762" top="531px" left="20px" width="488px" height="235px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:gridcolumn std:sid="g-column-7f04a93e" width="25px"/>
+      <cl:gridcolumn std:sid="g-column-27f7603c"/>
+      <cl:gridcolumn std:sid="g-column-ea1d17c7"/>
+      <cl:gridcolumn std:sid="g-column-1cb9cf39"/>
+      <cl:gridcolumn std:sid="g-column-b9c0fcdf"/>
+      <cl:gridcolumn std:sid="g-column-9b79b78b"/>
+      <cl:gridcolumn std:sid="g-column-14e57c29"/>
+      <cl:gridcolumn std:sid="g-column-c058bad5"/>
+      <cl:gridcolumn std:sid="g-column-b8c4bc51"/>
+      <cl:gridcolumn std:sid="g-column-6f28fa5f"/>
+      <cl:gridcolumn std:sid="g-column-d308fed0"/>
+      <cl:gridcolumn std:sid="g-column-6a9ad0c0"/>
+      <cl:gridheader std:sid="gh-band-b0d3130a">
+        <cl:gridrow std:sid="g-row-093accc4"/>
+        <cl:gridcell std:sid="gh-cell-512a9140" rowindex="0" colindex="0" sortable="false" filterable="false"/>
+        <cl:gridcell std:sid="gh-cell-adc6535e" rowindex="0" colindex="1" targetcolumnname="id" sortable="false" filterable="false" text="id"/>
+        <cl:gridcell std:sid="gh-cell-b67fb130" rowindex="0" colindex="2" targetcolumnname="name" sortable="false" filterable="false" text="name"/>
+        <cl:gridcell std:sid="gh-cell-fdf1c4e6" rowindex="0" colindex="3" targetcolumnname="searchCondition" sortable="false" filterable="false" text="검색조건"/>
+        <cl:gridcell std:sid="gh-cell-a85a695d" rowindex="0" colindex="4" targetcolumnname="searchKeyword" sortable="false" filterable="false" text="검색Keyword"/>
+        <cl:gridcell std:sid="gh-cell-913e01fa" rowindex="0" colindex="5" targetcolumnname="searchUseYn" sortable="false" filterable="false" text="검색사용여부"/>
+        <cl:gridcell std:sid="gh-cell-21531f4c" rowindex="0" colindex="6" targetcolumnname="pageIndex" sortable="false" filterable="false" text="현재페이지"/>
+        <cl:gridcell std:sid="gh-cell-2b38c6b1" rowindex="0" colindex="7" targetcolumnname="pageUnit" sortable="false" filterable="false" text="페이지갯수"/>
+        <cl:gridcell std:sid="gh-cell-e6c15e41" rowindex="0" colindex="8" targetcolumnname="pageSize" sortable="false" filterable="false" text="페이지사이즈"/>
+        <cl:gridcell std:sid="gh-cell-a34e170a" rowindex="0" colindex="9" targetcolumnname="firstIndex" sortable="false" filterable="false" text="firstIndex"/>
+        <cl:gridcell std:sid="gh-cell-ab34193e" rowindex="0" colindex="10" targetcolumnname="lastIndex" sortable="false" filterable="false" text="lastIndex"/>
+        <cl:gridcell std:sid="gh-cell-3125f5b7" rowindex="0" colindex="11" targetcolumnname="recordCountPerPage" sortable="false" filterable="false" text="recordCountPerPage"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-bae4be4f">
+        <cl:gridrow std:sid="g-row-89d466b6"/>
+        <cl:gridcell std:sid="gd-cell-ad172470" rowindex="0" colindex="0" columntype="radio"/>
+        <cl:gridcell std:sid="gd-cell-99a06157" rowindex="0" colindex="1" columnname="id"/>
+        <cl:gridcell std:sid="gd-cell-1708f288" rowindex="0" colindex="2" columnname="name"/>
+        <cl:gridcell std:sid="gd-cell-9b6d619b" rowindex="0" colindex="3" columnname="searchCondition"/>
+        <cl:gridcell std:sid="gd-cell-4c54d54e" rowindex="0" colindex="4" columnname="searchKeyword"/>
+        <cl:gridcell std:sid="gd-cell-4771cf1a" rowindex="0" colindex="5" columnname="searchUseYn"/>
+        <cl:gridcell std:sid="gd-cell-c3ca831d" rowindex="0" colindex="6" columnname="pageIndex"/>
+        <cl:gridcell std:sid="gd-cell-5527ffcb" rowindex="0" colindex="7" columnname="pageUnit"/>
+        <cl:gridcell std:sid="gd-cell-5d1a77f5" rowindex="0" colindex="8" columnname="pageSize"/>
+        <cl:gridcell std:sid="gd-cell-b5c04760" rowindex="0" colindex="9" columnname="firstIndex"/>
+        <cl:gridcell std:sid="gd-cell-7a6a5144" rowindex="0" colindex="10" columnname="lastIndex"/>
+        <cl:gridcell std:sid="gd-cell-305ed818" rowindex="0" colindex="11" columnname="recordCountPerPage"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:button std:sid="button-e570102a" id="btn14" value="Button">
+      <cl:listener std:sid="listener-69c31a4e" name="click" handler="onBtn14Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-b281483b" top="501px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
     <cl:xylayout std:sid="xylayout-864fe544"/>
   </body>
   <std:studiosetting>
-    <std:hruler>
-      <std:guide position="844"/>
-    </std:hruler>
+    <std:hruler/>
     <std:vruler/>
   </std:studiosetting>
 </html>
