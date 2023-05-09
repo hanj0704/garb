@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function onloadH(){
+	
+	
+
+	let json = 
+		     [
+		        {
+					"MyID": "A1",
+					"MySOC": "40",
+					"CHs": "2",
+		            "CH_info":[
+						{
+							"CH_Number": "1",
+							"OP_ID": "A17_1",
+							"Role": "M",
+							"OP_SOC": "30",
+							"ER_ON": "T",
+							"Voltage": "26",
+							"Current": "2",
+							"Power": "52"
+						},
+						{
+							"CH_Number": "2",
+							"OP_ID": "A3_1",
+							"Role": "S",
+							"OP_SOC": "90",
+							"ER_ON": "F",
+							"Voltage": "0",
+							"Current": "0",
+							"Power": "0"
+						}
+					]
+		        },
+		        {
+		            "MyID": "A17",
+					"MySOC": "30",
+					"CHs": "1",
+		            "CH_info":[
+						{
+							"CH_Number": "1",
+							"OP_ID": "A1_1",
+							"Role": "S",
+							"OP_SOC": "40",
+							"ER_ON": "F",
+							"Voltage": "0",
+							"Current": "0",
+							"Power": "0"
+						}
+					]
+		        },
+		        {
+		            "MyID": "A3",
+					"MySOC": "90",
+					"CHs": "1",
+		            "CH_info":[
+						{
+							"CH_Number": "1",
+							"OP_ID": "A1_2",
+							"Role": "M",
+							"OP_SOC": "40",
+							"ER_ON": "T",
+							"Voltage": "26",
+							"Current": "3",
+							"Power": "78"
+						}
+					]
+		        }
+		    ]
+		
+	const xhr = new XMLHttpRequest();
+	xhr.open("POST","http://192.9.85.250:8080/Energy_Router",true);
+	xhr.onreadystatechange = function(){};
+	
+	xhr.send(JSON.stringify(json));
+}
+</script>
+</head>
+<body onload="onloadH()">
+
+<script type="text/javascript">
+
+
+</script>
+</body>
+</html>

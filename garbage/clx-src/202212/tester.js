@@ -231,7 +231,7 @@ function onBodyInit(e){
 function onBodyScroll(e){
 //	var group = e.control;
 //	var q = e.scrollTop + window.innerHeight
-//	deboun();
+	deboun();
 }
 var deboun = _.throttle(func, 300);
 

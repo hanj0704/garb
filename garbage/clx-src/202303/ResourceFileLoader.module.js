@@ -1,21 +1,4 @@
 /************************************************
- * globModule.module.js
- * Created at 2023. 2. 7. 오후 4:30:28.
- *
- * @author HANS
- ************************************************/
-cpr.events.EventBus.INSTANCE.addFilter("cell-click", function(e){
-	var control = e.control;
-	console.log(e);
-});
-//cpr.protocols.MatrixSubmission.prototype._setProtocolDataModel = cpr.protocols.MatrixSubmission.prototype.setProtocolDataModel;
-////
-//cpr.protocols.MatrixSubmission.prototype.setProtocolDataModel = function(p){
-//	this._setProtocolDataModel(p);
-//	this.test = p;
-//}
-
-/************************************************
  * ResourceFileLoader.module.js
  * Created at 2022. 5. 31. 오후 2:53:59.
  *

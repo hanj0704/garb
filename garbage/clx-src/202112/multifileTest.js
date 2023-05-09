@@ -20,7 +20,7 @@ function onFi1ValueChange(/* cpr.events.CValueChangeEvent */ e){
 	console.log("FILECHANGE");
 	var sms = app.lookup("sms1");
 	fi1.files.forEach(function(each){
-		
+		sms.addFileParameter("file", each);
 		console.log(each);
 	});
 }

@@ -200,6 +200,10 @@
       <cl:listener std:sid="listener-264e6214" name="click" handler="onBtn19Click"/>
       <cl:flowlayoutdata std:sid="f-data-c342d62b" width="200px" height="40px" autosize="none"/>
     </cl:button>
+    <cl:button std:sid="button-c0985f05" id="btn20" value="임베디드페이지와 form 태그">
+      <cl:listener std:sid="listener-bc1d775f" name="click" handler="onBtn20Click"/>
+      <cl:flowlayoutdata std:sid="f-data-2af17953" width="200px" height="40px" autosize="none"/>
+    </cl:button>
     <cl:flowlayout std:sid="f-layout-adff95ee" hspacing="20" vspacing="20" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
   </body>
   <std:studiosetting>

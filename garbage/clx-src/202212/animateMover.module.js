@@ -33,6 +33,7 @@ var Anime = {
 					}
 //					return each.userAttr("use-animate") == "true";
 				});
+				that.children = vaChildren;
 //				that.objs.
 //				cpr.utils.ObjectMap.
 				
@@ -48,7 +49,9 @@ var Anime = {
 		console.log(this);
 		var _app = this.ins;
 //		_app.getContainer().
-//		this.children.
+//		this.children.forEach(function(each){
+//			if(each.)
+//		});
 	},
 	animate : function(/*cpr.controls.UIControl[]*/controls){
 		

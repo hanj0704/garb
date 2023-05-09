@@ -504,4 +504,14 @@ function onBtn19Click(e){
 	 */
 }
 
-
+/*
+ * "임베디드페이지와 form 태그" 버튼(btn20)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn20Click(e){
+	var btn20 = e.control;
+	/*
+	 * 임베디드 페이지에서 사용하는 getHostMethod나 new protocols.httppostmethod는 내부적으로 form 태그를 사용하여 메서드를 호출하는데,
+	 * form태그는 encType속성에 대해 application/x-form-urlencoded, multipart/form, text/plain만 지원하기 때문인데 
+	 */
+}

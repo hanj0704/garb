@@ -198,48 +198,6 @@
       <cl:listener std:sid="listener-19c919b8" name="click" handler="onBtn13Click"/>
       <cl:xylayoutdata std:sid="xyl-data-5e50174a" top="241px" left="20px" width="171px" height="31px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
-    <cl:grid std:sid="grid-10625dc6" id="grd1" datasetid="ds3" columnMovable="true" collapsible="true">
-      <cl:xylayoutdata std:sid="xyl-data-35d43874" top="162px" left="760px" width="675px" height="296px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
-      <cl:gridcolumn std:sid="g-column-e67eda89"/>
-      <cl:gridcolumn std:sid="g-column-95e0442a"/>
-      <cl:gridcolumn std:sid="g-column-59b4eb1d"/>
-      <cl:gridcolumn std:sid="g-column-4ccda9cc"/>
-      <cl:gridcolumn std:sid="g-column-761d4727"/>
-      <cl:gridheader std:sid="gh-band-2fadf9a9">
-        <cl:gridrow std:sid="g-row-fda0a275"/>
-        <cl:gridcell std:sid="gh-cell-dad47948" rowindex="0" colindex="0" targetcolumnname="column1" sortable="false" filterable="false" text="column1"/>
-        <cl:gridcell std:sid="gh-cell-01076b5b" rowindex="0" colindex="1" targetcolumnname="column2" sortable="false" filterable="false" text="column2"/>
-        <cl:gridcell std:sid="gh-cell-aa9ae5bc" rowindex="0" colindex="2" targetcolumnname="column3" sortable="false" filterable="false" text="column3"/>
-        <cl:gridcell std:sid="gh-cell-d7ce7267" rowindex="0" colindex="3" targetcolumnname="column4" sortable="false" filterable="false" text="column4"/>
-        <cl:gridcell std:sid="gh-cell-c5fefcad" rowindex="0" colindex="4" targetcolumnname="level" sortable="false" filterable="false" text="level"/>
-      </cl:gridheader>
-      <cl:griddetail std:sid="gd-band-fbf86933">
-        <cl:gridrow std:sid="g-row-c8b6118d"/>
-        <cl:gridcell std:sid="gd-cell-9ddb64b7" rowindex="0" colindex="0" columnname="column1" suppressible="true">
-          <cl:treecell std:sid="t-cell-390e0154" indent="0" useicon="false">
-            <cl:relativebind property="level" category="PROPERTY" columnname="level"/>
-            <cl:celldata std:sid="c-data-b775510a"/>
-          </cl:treecell>
-        </cl:gridcell>
-        <cl:gridcell std:sid="gd-cell-d485399a" rowindex="0" colindex="1" columnname="column2" suppressref="0"/>
-        <cl:gridcell std:sid="gd-cell-164e5c92" rowindex="0" colindex="2" columnname="column3"/>
-        <cl:gridcell std:sid="gd-cell-2dff7d98" rowindex="0" colindex="3" columnname="column4"/>
-        <cl:gridcell std:sid="gd-cell-10f7501e" rowindex="0" colindex="4" columnname="level"/>
-      </cl:griddetail>
-    </cl:grid>
-    <cl:mdifolder std:sid="mdifolder-c0f0d6b0" id="mdi1">
-      <cl:xylayoutdata std:sid="xyl-data-0d2dec1e" top="468px" left="20px" width="857px" height="343px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
-      <cl:tabitem std:sid="t-item-b4c6c86d" selected="true" text="son.clx">
-        <std:metadata>
-          <std:property key="is-active-item" value="true"/>
-        </std:metadata>
-        <cl:embeddedapp std:sid="e-app-e82b34bd" id="ea1" src="son.clx">
-          <std:metadata>
-            <std:property key="locked" value="true"/>
-          </std:metadata>
-        </cl:embeddedapp>
-      </cl:tabitem>
-    </cl:mdifolder>
     <cl:button std:sid="button-9d3136d1" id="btn14" value="Button">
       <cl:listener std:sid="listener-2b782171" name="click" handler="onBtn14Click"/>
       <cl:xylayoutdata std:sid="xyl-data-e488856c" top="438px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
@@ -276,17 +234,6 @@
       <cl:listener std:sid="listener-2d2d88b3" name="click" handler="onBtn22Click"/>
       <cl:xylayoutdata std:sid="xyl-data-f253e40a" top="43px" left="749px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
-    <cl:menu std:sid="menu-8f23f69b">
-      <cl:xylayoutdata std:sid="xyl-data-3916f463" top="468px" left="1047px" width="311px" height="226px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
-      <cl:menuitem std:sid="m-item-08814c67" label="label1" value="value1"/>
-      <cl:menuitem std:sid="m-item-929b011b" label="label2" value="value2"/>
-      <cl:menuitem std:sid="m-item-0d52c680" label="label3" value="value3"/>
-      <cl:menuitem std:sid="m-item-9edbb749" label="label4" value="value4"/>
-      <cl:menuitem std:sid="m-item-229ce496" label="label5" value="value5"/>
-      <cl:itemstyle>
-        <cl:expbind property="class" category="CLASS" expression="label == &quot;label2&quot; ? &quot;border-bottom&quot; : &quot;&quot;"/>
-      </cl:itemstyle>
-    </cl:menu>
     <cl:button std:sid="button-8419e4a9" id="btn23" value="Button">
       <cl:listener std:sid="listener-afbf981b" name="click" handler="onBtn23Click"/>
       <cl:xylayoutdata std:sid="xyl-data-34521375" top="20px" left="683px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>

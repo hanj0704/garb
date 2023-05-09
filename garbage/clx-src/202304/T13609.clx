@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-48fa2102" version="1.0.3684">
+  <head std:sid="head-e53b2017">
+    <screen std:sid="screen-1dfddb3f" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-b9dfbbc6" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-f3fb225e" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <link std:sid="link-6ef56fda" href="T13609.less" rel="stylesheet" type="text/css"/>
+    <cl:model std:sid="model-29452b87"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-d6323715">
+    <cl:combobox std:sid="c-box-68e6b6f8" id="cmb1" multiple="true">
+      <cl:listener std:sid="listener-5a19b958" name="before-selection-change" handler="onCmb1BeforeSelectionChange"/>
+      <cl:listener std:sid="listener-d51622b0" name="selection-change" handler="onCmb1SelectionChange"/>
+      <cl:listener std:sid="listener-1cf1081e" name="item-click" handler="onCmb1ItemClick"/>
+      <cl:xylayoutdata std:sid="xyl-data-590ed6d0" top="20px" left="20px" width="350px" height="30px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:item std:sid="t-item-cf878570" label="전체" value="all"/>
+      <cl:item std:sid="t-item-7eca18ef" label="label2" value="value2"/>
+      <cl:item std:sid="t-item-4a02dbe1" label="label3" value="value3"/>
+      <cl:item std:sid="t-item-48cb488a" label="label4" value="value4"/>
+      <cl:item std:sid="t-item-761eaa3d" label="label5" value="value5"/>
+      <cl:item std:sid="t-item-b9447181" label="label6" value="value6"/>
+    </cl:combobox>
+    <cl:xylayout std:sid="xylayout-1cab484f"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

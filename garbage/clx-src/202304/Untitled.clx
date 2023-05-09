@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-854d44cd" version="1.0.4283">
+  <head std:sid="head-7f2c8945">
+    <screen std:sid="screen-e2638cbe" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-892196b6" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-8c196190" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-a3f72296">
+      <cl:dataset std:sid="d-set-208ee55b" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-ae5eab3d" name="column1"/>
+          <cl:datacolumn std:sid="d-column-bca7f104" name="column2"/>
+          <cl:datacolumn std:sid="d-column-f26f6107" name="column3"/>
+          <cl:datacolumn std:sid="d-column-29e78d14" name="column4"/>
+          <cl:datacolumn std:sid="d-column-27fff3eb" name="column5"/>
+          <cl:datacolumn std:sid="d-column-d3fd59b7" name="column6"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column11</cl:datavalue>
+            <cl:datavalue columnname="column2">column21</cl:datavalue>
+            <cl:datavalue columnname="column3">column31</cl:datavalue>
+            <cl:datavalue columnname="column4">column41</cl:datavalue>
+            <cl:datavalue columnname="column5">column51</cl:datavalue>
+            <cl:datavalue columnname="column6">column61</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column12</cl:datavalue>
+            <cl:datavalue columnname="column2">column22</cl:datavalue>
+            <cl:datavalue columnname="column3">column32</cl:datavalue>
+            <cl:datavalue columnname="column4">column42</cl:datavalue>
+            <cl:datavalue columnname="column5">column52</cl:datavalue>
+            <cl:datavalue columnname="column6">column62</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column13</cl:datavalue>
+            <cl:datavalue columnname="column2">column23</cl:datavalue>
+            <cl:datavalue columnname="column3">column33</cl:datavalue>
+            <cl:datavalue columnname="column4">column43</cl:datavalue>
+            <cl:datavalue columnname="column5">column53</cl:datavalue>
+            <cl:datavalue columnname="column6">column63</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column14</cl:datavalue>
+            <cl:datavalue columnname="column2">column24</cl:datavalue>
+            <cl:datavalue columnname="column3">column34</cl:datavalue>
+            <cl:datavalue columnname="column4">column44</cl:datavalue>
+            <cl:datavalue columnname="column5">column54</cl:datavalue>
+            <cl:datavalue columnname="column6">column64</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column15</cl:datavalue>
+            <cl:datavalue columnname="column2">column25</cl:datavalue>
+            <cl:datavalue columnname="column3">column35</cl:datavalue>
+            <cl:datavalue columnname="column4">column45</cl:datavalue>
+            <cl:datavalue columnname="column5">column55</cl:datavalue>
+            <cl:datavalue columnname="column6">column65</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column16</cl:datavalue>
+            <cl:datavalue columnname="column2">column26</cl:datavalue>
+            <cl:datavalue columnname="column3">column36</cl:datavalue>
+            <cl:datavalue columnname="column4">column46</cl:datavalue>
+            <cl:datavalue columnname="column5">column56</cl:datavalue>
+            <cl:datavalue columnname="column6">column66</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column17</cl:datavalue>
+            <cl:datavalue columnname="column2">column27</cl:datavalue>
+            <cl:datavalue columnname="column3">column37</cl:datavalue>
+            <cl:datavalue columnname="column4">column47</cl:datavalue>
+            <cl:datavalue columnname="column5">column57</cl:datavalue>
+            <cl:datavalue columnname="column6">column67</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column18</cl:datavalue>
+            <cl:datavalue columnname="column2">column28</cl:datavalue>
+            <cl:datavalue columnname="column3">column38</cl:datavalue>
+            <cl:datavalue columnname="column4">column48</cl:datavalue>
+            <cl:datavalue columnname="column5">column58</cl:datavalue>
+            <cl:datavalue columnname="column6">column68</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column19</cl:datavalue>
+            <cl:datavalue columnname="column2">column29</cl:datavalue>
+            <cl:datavalue columnname="column3">column39</cl:datavalue>
+            <cl:datavalue columnname="column4">column49</cl:datavalue>
+            <cl:datavalue columnname="column5">column59</cl:datavalue>
+            <cl:datavalue columnname="column6">column69</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column110</cl:datavalue>
+            <cl:datavalue columnname="column2">column210</cl:datavalue>
+            <cl:datavalue columnname="column3">column310</cl:datavalue>
+            <cl:datavalue columnname="column4">column410</cl:datavalue>
+            <cl:datavalue columnname="column5">column510</cl:datavalue>
+            <cl:datavalue columnname="column6">column610</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column111</cl:datavalue>
+            <cl:datavalue columnname="column2">column211</cl:datavalue>
+            <cl:datavalue columnname="column3">column311</cl:datavalue>
+            <cl:datavalue columnname="column4">column411</cl:datavalue>
+            <cl:datavalue columnname="column5">column511</cl:datavalue>
+            <cl:datavalue columnname="column6">column611</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column112</cl:datavalue>
+            <cl:datavalue columnname="column2">column212</cl:datavalue>
+            <cl:datavalue columnname="column3">column312</cl:datavalue>
+            <cl:datavalue columnname="column4">column412</cl:datavalue>
+            <cl:datavalue columnname="column5">column512</cl:datavalue>
+            <cl:datavalue columnname="column6">column612</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column113</cl:datavalue>
+            <cl:datavalue columnname="column2">column213</cl:datavalue>
+            <cl:datavalue columnname="column3">column313</cl:datavalue>
+            <cl:datavalue columnname="column4">column413</cl:datavalue>
+            <cl:datavalue columnname="column5">column513</cl:datavalue>
+            <cl:datavalue columnname="column6">column613</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column114</cl:datavalue>
+            <cl:datavalue columnname="column2">column214</cl:datavalue>
+            <cl:datavalue columnname="column3">column314</cl:datavalue>
+            <cl:datavalue columnname="column4">column414</cl:datavalue>
+            <cl:datavalue columnname="column5">column514</cl:datavalue>
+            <cl:datavalue columnname="column6">column614</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-d2bdf5fd">
+    <cl:listener std:sid="listener-1aa835bf" name="init" handler="onBodyInit"/>
+    <cl:button std:sid="button-83a868af" id="btn2" value="Button">
+      <cl:listener std:sid="listener-760a00ec" name="click" handler="onBtn2Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-bf51d4e4" top="53px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:htmlsnippet std:sid="htmlsnippet-44947070" value="    &lt;lottie-player src=&quot;https://assets1.lottiefiles.com/packages/lf20_lD1yMK.json&quot; background=&quot;transparent&quot; style=&quot;width: 300px; height: 225px;&quot; speed=&quot;1&quot; loop autoplay>&#xD;&#xA;    &lt;/lottie-player>&#xD;&#xA;">
+      <cl:xylayoutdata std:sid="xyl-data-fb070f93" top="83px" left="20px" width="984px" height="314px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:htmlsnippet>
+    <cl:embeddedpage std:sid="e-page-2172e7f6" id="ep1" src="eXBuilder6_심화교육교재.pdf">
+      <cl:xylayoutdata std:sid="xyl-data-3b45537b" top="407px" left="20px" width="807px" height="620px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:embeddedpage>
+    <cl:xylayout std:sid="xylayout-9924e32b"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

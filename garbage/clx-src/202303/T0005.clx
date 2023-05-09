@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-aeef9523" version="1.0.4290">
+  <head std:sid="head-890ba608">
+    <screen std:sid="screen-9736369e" id="default" name="default" width="1024px" height="768px"/>
+    <screen std:sid="screen-5afbfbb3" id="tablet" name="tablet" width="500px" height="667px"/>
+    <screen std:sid="screen-0651d03f" id="mobile" name="mobile" width="350px" height="525px"/>
+    <cl:model std:sid="model-46dc3a55"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-58515c98">
+    <cl:inputbox std:sid="i-box-1c7c5891" id="ipbMask" inputfilter="[0-9^-]">
+      <cl:listener std:sid="listener-dd8fec5e" name="value-change" handler="onIpbMaskValueChange"/>
+      <cl:xylayoutdata std:sid="xyl-data-ca86e257" top="20px" left="20px" width="200px" height="30px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:inputbox>
+    <cl:output std:sid="output-594eac65" value="inputFilter : [0-9^-]">
+      <cl:xylayoutdata std:sid="xyl-data-4dd6b13e" top="20px" left="230px" width="150px" height="30px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:xylayout std:sid="xylayout-2cd2bf54"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>
