@@ -28,7 +28,7 @@ function onBodyLoad(/* cpr.events.CEvent */ e){
 		console.log(app.getHostAppInstance().dialogManager.getDialogNames());
 	});
 	
-//console.log(KDA);
+console.log(KDA);
 }
 
 

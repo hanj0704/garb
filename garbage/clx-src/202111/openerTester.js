@@ -18,4 +18,6 @@ function onBtn1Click(/* cpr.events.CMouseEvent */ e){
 	var btn1 = e.control;
 	console.log("하하하!");
 	console.log(window.opener);
+	console.log(window.opener.hanstest);
+	console.log(window.hanstest);
 }

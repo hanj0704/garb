@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html style="height:100%">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta charset="UTF-8" />
+<!--original source file path
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" type="text/css"/>
+<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+-->
+
+<script src="http://211.116.251.54/oz80/ozhviewer/jquery-2.0.3.min.js"></script>
+<link rel="stylesheet" href="http://211.116.251.54//oz80/ozhviewer/jquery-ui.css" type="text/css"/>
+<script src="http://211.116.251.54//oz80/ozhviewer/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" href="http://211.116.251.54//oz80/ozhviewer/ui.dynatree.css" type="text/css"/>
+<script type="text/javascript" src="http://211.116.251.54//oz80/ozhviewer/jquery.dynatree.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://211.116.251.54//oz80/ozhviewer/OZJSViewer.js" charset="utf-8"></script>
+<link rel="stylesheet" media="all" href="/resource/css/cleopatra.css?p=0.8738060788651377"/>
+        <link rel="stylesheet" media="all" href="/theme/cleopatra-theme.css?p=0.8738060788651377"/>
+        <script src="/resource/cleopatra.js?p=0.8738060788651377" defer></script>
+        <script src="/resource/conf/defaults.js?p=0.8738060788651377" defer></script>
+        <script src="/cpr-lib/language.js?p=0.8738060788651377" defer></script>
+        <script src="/cpr-lib/user-modules.js?p=0.8738060788651377" defer></script>
+        <script src="/cpr-lib/udc.js?p=0.8738060788651377" defer></script>
+<script type="text/javascript">
+function test(){
+	var obj = document.createElement("div");
+	obj.style.width = "100%";
+	obj.style.height = "100%";
+	obj.setAttribute("id", "OZViewer");
+	obj.style.position = "absolute";
+	document.body.appendChild(obj);
+}
+var json = {"Category":[{"CategoryID": 1,"CategoryName":"음료","Description": "청량음료, 커피, 홍차, 맥주"},{"CategoryID":2,"CategoryName":"조미료","Description":"감미료, 향신료, 양념, 스프레드"}], "Product":[{"ProductID":75,"ProductName":"알파인 맥주","CategoryID":1,"QuantityPerUnit":"24 - 0.5 l bottles","UnitPrice":24000.0000,"UnitsInStock":125},{"ProductID":39,"ProductName":"OK 바닐라 셰이크","CategoryID":1,"QuantityPerUnit":"750 cc per bottle","UnitPrice":28000.0000,"UnitsInStock":69},{"ProductID":34,"ProductName":"태일 라이트 맥주","CategoryID":1,"QuantityPerUnit": "24 - 12 oz bottles","UnitPrice":34000.0000,"UnitsInStock":111},{"ProductID":65,"ProductName":"루이지애나 특산 후추","CategoryID":2,"QuantityPerUnit":"32 - 8 oz bottles","UnitPrice":21000.0000,"UnitsInStock":76},{"ProductID":61,"ProductName":"사계절 핫 소스","CategoryID":2,"QuantityPerUnit":"24 - 500 ml bottles","UnitPrice":28000.0000,"UnitsInStock":92},{"ProductID":6,"ProductName":"대양 특선 블루베리 잼","CategoryID":2,"QuantityPerUnit": "12 - 8 oz jars","UnitPrice":25000.0000,"UnitsInStock":120}]};
+function SetOZParamters_OZViewer(){
+	var oz;
+	oz = document.getElementById("OZViewer");
+	oz.sendToActionScript("connection.servlet","http://211.116.251.54//oz80/server");
+	oz.sendToActionScript("connection.reportname","/jsonsample.ozr");
+	oz.sendToActionScript("connection.pcount","2");
+	oz.sendToActionScript("connection.args1","jsondata="+ JSON.stringify(json));
+	oz.sendToActionScript("connection.args2","viewerType=HTML5 Canvas Viewer");
+	oz.sendToActionScript("information.debug","true");
+	return true;
+}
+function start() {
+	console.log("히히");
+	start_ozjs("OZViewer","http://211.116.251.54//oz80/ozhviewer/");
+}
+console.log("하하");
+// start();
+</script>
+</head>
+<body style="width:98%;height:98%" onload="test()">
+<button id="glgl"></button>
+<script type="text/javascript">
+	
+window.document.getElementById("glgl").onclick = start;
+	
+</script>
+</body>
+</html>

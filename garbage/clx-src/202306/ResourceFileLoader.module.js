@@ -127,47 +127,47 @@ OzLoader = {
 		return this.loader;
 	},
 	_getReportActionUrl : function(){
-		var vsReportActionUrl = "https://oz-report.orange.hanwhalifefs.com/oz80/";
-		var vsDomain = document.domain;
-		var vsMsReportActionUrl = vsReportActionUrl;
-		if (vsDomain.indexOf("orange-dev") != -1 || vsDomain.indexOf("localhost") != -1) {
-
-			vsMsReportActionUrl = vsMsReportActionUrl.replace("orange", "orange-dev");
-		} else if (vsDomain.indexOf("orange-stg") != -1) {
-
-			vsMsReportActionUrl = vsMsReportActionUrl.replace("orange", "orange-stg");
-		}
-		return vsMsReportActionUrl;
+		var vsReportActionUrl = "http://211.116.251.54/oz80/ozhviewer/";
+//		var vsDomain = document.domain;
+//		var vsMsReportActionUrl = vsReportActionUrl;
+//		if (vsDomain.indexOf("orange-dev") != -1 || vsDomain.indexOf("localhost") != -1) {
+//
+//			vsMsReportActionUrl = vsMsReportActionUrl.replace("orange", "orange-dev");
+//		} else if (vsDomain.indexOf("orange-stg") != -1) {
+//
+//			vsMsReportActionUrl = vsMsReportActionUrl.replace("orange", "orange-stg");
+//		}
+		return vsReportActionUrl;
 	},
 	createJQJs  : function(){
 		var jsHead = document.createElement("script");
-		jsHead.src = this._getReportActionUrl()+"ozhviewer/jquery/jquery-2.0.3.min.js";
+		jsHead.src = this._getReportActionUrl()+"jquery-2.0.3.min.js";
 		jsHead.type = "text/javascript";
 		return jsHead;
 	},
 
 	createJQUiCss : function(){
 		var cssHead = document.createElement("link");
-		cssHead.href = this._getReportActionUrl()+"ozhviewer/jquery/jquery-ui.css";
+		cssHead.href = this._getReportActionUrl()+"jquery-ui.css";
 		cssHead.rel = "stylesheet";
 		cssHead.type = "text/css";
 		return cssHead;
 	},
 	createJQUiJs : function(){
 		var jsHead = document.createElement("script");
-		jsHead.src = this._getReportActionUrl()+"ozhviewer/jquery/jquery-ui.min.js";
+		jsHead.src = this._getReportActionUrl()+"jquery-ui.min.js";
 		jsHead.type = "text/javascript";
 		return jsHead;
 	},
 	createDynaJs : function(){
 		var jsHead = document.createElement("script");
-		jsHead.src = this._getReportActionUrl()+"ozhviewer/jquery.dynatree.js";
+		jsHead.src = this._getReportActionUrl()+"jquery.dynatree.js";
 		jsHead.type = "text/javascript";
 		return jsHead;
 	},
 	createDynaCss : function(){
 		var cssHead = document.createElement("link");
-		cssHead.href = this._getReportActionUrl()+"ozhviewer/ui.dynatree.css";
+		cssHead.href = this._getReportActionUrl()+"ui.dynatree.css";
 		cssHead.rel = "stylesheet";
 		cssHead.type = "text/css";
 		return cssHead;
@@ -175,7 +175,7 @@ OzLoader = {
 	createOzJs : function(){
 		var jsHead = document.createElement("script");
 		jsHead.id = "ozjs";
-		jsHead.src = this._getReportActionUrl()+"ozhviewer/OZJSViewer.js";
+		jsHead.src = this._getReportActionUrl()+"OZJSViewer.js";
 		jsHead.type = "text/javascript";
 		return jsHead;
 	},
