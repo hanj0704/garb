@@ -99,3 +99,48 @@ function onBtn1Click(e){
 	
 //	});
 }
+
+/*
+ * "Button" 버튼(btn2)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn2Click(e){
+	var btn2 = e.control;
+	for(var i = 0; i < 10; i++) {
+		
+		app.lookup("fud1").addUploadedFile({
+			"name" : "name"+i+".xlsx",
+			"size" : 1024,
+			"type" : "xlsx",
+			"properties" : {
+				"prop1" : "a",
+				"prop2" : "b"
+			}
+		});
+	}
+}
+
+/*
+ * "Button" 버튼(btn3)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn3Click(e){
+	var btn3 = e.control;
+	
+	console.log(app.lookup("fud1").getFiles());
+}
+
+/*
+ * 파일 업로드에서 remove-file 이벤트 발생 시 호출.
+ * 파일을 삭제 후 발생하는 이벤트입니다.
+ */
+function onFud1RemoveFile(e){
+	var fud1 = e.control;
+	console.log(e.files);
+	e.files.forEach(function(each){
+		if(each instanceof cpr.controls.UploadedFile) {
+			
+			each.
+		}
+	});
+}

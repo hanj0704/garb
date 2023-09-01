@@ -6,8 +6,13 @@
 </head>
 <body>
 	<h2 id="doom">이것은 우리의 텍사스데 브라질에 대한 이야기이다.</h2>
+	<input id="hh">
 	<script>
-	
+		document.getElementById("hh").addEventListener("keydown",function(e){
+		console.log(e);
+		e.preventDefault();
+		e.stopPropagation();
+		});
 		const dday = new Date("2023-02-28 19:30:00").valueOf();
 		var h2 = document.getElementById("doom");
 		setInterval(function(){

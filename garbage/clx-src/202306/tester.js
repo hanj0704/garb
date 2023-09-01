@@ -24,3 +24,14 @@ function onBtn1Click(e){
 		displayname : "gg"
 	});
 }
+
+/*
+ * "Button" 버튼(btn2)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn2Click(e){
+	var btn2 = e.control;
+	
+	app.lookup("msm1").addRequestData("qq", [1,2,3,4,5,6,7]);
+	app.lookup("msm1").send();
+}

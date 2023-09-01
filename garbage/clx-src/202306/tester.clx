@@ -59,6 +59,13 @@
           </cl:datarow>
         </cl:datarowlist>
       </cl:dataset>
+      <cl:submission std:sid="submission-178b04f2" id="sms1"/>
+      <cl:matrix-submission std:sid="m-submission-2e78b866" id="msm1" async="true" withCredentials="false" method="post" action="tt.do">
+        <cl:matrix>
+          <cl:request type="object"/>
+          <cl:response type="object"/>
+        </cl:matrix>
+      </cl:matrix-submission>
     </cl:model>
     <cl:appspec/>
   </head>
@@ -85,6 +92,10 @@
           <cl:expbind property="color" category="STYLER" expression="@testt(this.row)"/>
         </cl:itemstyle>
       </cl:menu>
+      <cl:button std:sid="button-e17cd86c" id="btn2" value="Button">
+        <cl:listener std:sid="listener-38c4b8dc" name="click" handler="onBtn2Click"/>
+        <cl:xylayoutdata std:sid="xyl-data-5e12e94b" top="34px" left="459px" width="243px" height="71px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      </cl:button>
       <cl:xylayout std:sid="xylayout-dff48eb9"/>
     </cl:group>
     <cl:verticallayout std:sid="v-layout-bcc74ba0"/>

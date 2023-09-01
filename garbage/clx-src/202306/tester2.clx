@@ -12,6 +12,18 @@
       <cl:listener std:sid="listener-80d6e295" name="click" handler="onBtn1Click"/>
       <cl:verticaldata std:sid="v-data-ffe3d46b" width="100px" height="20px"/>
     </cl:button>
+    <cl:button std:sid="button-d30f56ef" id="btn2" value="Button">
+      <cl:listener std:sid="listener-c3c733bc" name="click" handler="onBtn2Click"/>
+      <cl:verticaldata std:sid="v-data-a061a373" width="100px" height="20px"/>
+    </cl:button>
+    <cl:fileupload std:sid="f-upload-cfc60dd3" id="fud1">
+      <cl:listener std:sid="listener-25040f90" name="remove-file" handler="onFud1RemoveFile"/>
+      <cl:verticaldata std:sid="v-data-11be11c4" width="450px" height="100px"/>
+    </cl:fileupload>
+    <cl:button std:sid="button-19008daa" id="btn3" value="Button">
+      <cl:listener std:sid="listener-692330ef" name="click" handler="onBtn3Click"/>
+      <cl:verticaldata std:sid="v-data-ed770a3b" width="100px" height="20px"/>
+    </cl:button>
     <cl:verticallayout std:sid="v-layout-bcc74ba0"/>
   </body>
   <std:studiosetting>
