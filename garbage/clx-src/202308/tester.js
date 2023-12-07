@@ -25,6 +25,8 @@ function onBodyLoad(e){
 function onBtn2Click(e){
 	var btn2 = e.control;
 	console.log(app.lookup("ipb1").value);
+	console.log(app.getRootAppInstance().hasAppMethod("test"));
+	app.getRootAppInstance().callAppMethod("test");
 }
 
 /*
@@ -33,5 +35,5 @@ function onBtn2Click(e){
  */
 function onIpb1Focus(e){
 	var ipb1 = e.control;
-	console.log(app.lookup("btn2").focused);
+//	console.log(app.lookup("btn2").focused);
 }

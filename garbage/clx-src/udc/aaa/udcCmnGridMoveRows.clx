@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-7491fc14" version="1.0.3918">
+  <head std:sid="head-4398ecaa">
+    <screen std:sid="screen-9f001304" id="edufis[default]" name="edufis[default]" minwidth="1320px" width="1320px" height="720px" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-3f2e5f72" id="edufis[detail]" name="edufis[detail]" minwidth="985px" maxwidth="1319px" width="985px" height="768px"/>
+    <screen std:sid="screen-8fee9312" id="edufis-popup[960]" name="edufis-popup[960]" minwidth="960px" maxwidth="984px" width="960px" height="760px"/>
+    <screen std:sid="screen-708cf0ff" id="tablet" name="tablet" minwidth="850px" maxwidth="959px" width="850px" height="768px"/>
+    <screen std:sid="screen-62024f5c" id="edufis-popup[750]" name="edufis-popup[750]" minwidth="750px" maxwidth="849px" width="750px" height="600px"/>
+    <screen std:sid="screen-4f5da9ce" id="mobile" name="mobile" minwidth="550px" maxwidth="749px" width="550px" height="768px"/>
+    <screen std:sid="screen-417d4d09" id="edufis-popup[480]" name="edufis-popup[480]" maxwidth="549px" width="480px" height="540px"/>
+    <cl:model std:sid="model-6115b06d"/>
+    <cl:appspec title="그리드 행이동 컴포넌트">
+      <cl:property name="sourceGrid" type="control" std:desc="[Control] 소스 그리드(Left, Top)"/>
+      <cl:property name="targetGrid" type="control" std:desc="[Control] 타겟 그리드(Right, Bottom)"/>
+      <cl:property name="duplicateKeys" type="string" std:desc="[String] 로우 이동시 중복을 판단할 컬럼명(구분자 ,)"/>
+      <cl:property name="allowDuplicate" type="boolean" default="false" std:desc="[Boolean] 중복 허용 여부"/>
+      <cl:property name="isRemove" type="boolean" default="true" std:desc="[Boolean] 데이터 복사 후 From 그리드내 삭제 여부"/>
+      <cl:property name="isTargetDeletRow" type="boolean" default="false" std:desc="[Boolean] 타겟 그리드에서 소스 그리드 행 이동시 행 삭제 여부"/>
+      <cl:property name="isVerticalArrow" type="boolean" default="true" std:desc="[Boolean] 버튼 수직 여부(default : true)"/>
+      <cl:event name="right-bottom-arrow-click" type="cpr.events.CMouseEvent" std:desc="→,↓ 버튼 클릭시 행 이동 후 발생하는 이벤트"/>
+      <cl:event name="left-top-arrow-click" type="cpr.events.CMouseEvent" std:desc="←,↑ 버튼 클릭시 행 이동 후 발생하는 이벤트"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-52e17ebe" style="top:0px; left:0px; width:50px; height:200px;">
+    <cl:listener std:sid="listener-f84e6422" name="load" handler="onBodyLoad"/>
+    <cl:listener std:sid="listener-a2190a22" name="property-change" handler="onBodyPropertyChange"/>
+    <cl:group std:sid="group-05390737" id="grpArrow">
+      <cl:xylayoutdata std:sid="xyl-data-f0b6645c" right="0px" left="0px" height="76px" horizontalAnchor="BOTH" verticalAnchor="CENTER"/>
+      <cl:button std:sid="button-53afb2f3" id="btnMoveRight" fieldLabel="우측으로 행 이동" value="→">
+        <cl:listener std:sid="listener-5d6f9208" name="click" handler="onBtnMoveRightClick"/>
+        <cl:flowlayoutdata std:sid="f-data-760f2858" width="50px" height="30px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-40c27f2d" id="btnMoveLeft" fieldLabel="좌측으로 행 이동" value="←">
+        <cl:listener std:sid="listener-23e5ec5d" name="click" handler="onBtnMoveLeftClick"/>
+        <cl:flowlayoutdata std:sid="f-data-0abaf076" width="50px" height="30px" autosize="none"/>
+      </cl:button>
+      <cl:flowlayout std:sid="f-layout-9f4ab9fb" scrollable="false" hspacing="15" vspacing="15" halign="center" valign="middle"/>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-1c3fba8f" scrollable="false"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

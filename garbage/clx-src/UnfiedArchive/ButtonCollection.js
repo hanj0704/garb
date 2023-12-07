@@ -56,8 +56,8 @@ function onBtn2Click(/* cpr.events.CMouseEvent */ e){
 	 */
 	var sub = new cpr.protocols.Submission();
 	
-	sub.action  = "http://localhost:8090/test/testVo.do";
-	sub.withCredentials = true;
+	sub.action  = "http://localhost:8080/test/gaehang.do";
+//	sub.withCredentials = true;
 	
 	sub.send();
 }

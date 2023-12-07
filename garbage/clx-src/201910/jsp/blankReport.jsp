@@ -16,6 +16,7 @@ strReportServerUrl += strServerName + ":" + serverPort ;
 strReportServerUrl += "/ClipReport4";
 
 String strContextPath = "/ClipReport4";  
+response.setHeader("Access-Control-Allow-Origin", "*");
 %>
 
 <html>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-a11c7f41" version="1.0.3918">
+  <head std:sid="head-edd5b995">
+    <std:metadata>
+      <std:property key="template-file" value="templates/일반/기본/프레임/01_기본_빈페이지.clx"/>
+    </std:metadata>
+    <screen std:sid="screen-247a1e29" id="edufis[default]" name="edufis[default]" minwidth="1320px" width="1320px" height="720px" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-4d3076ca" id="tablet" name="tablet" minwidth="850px" maxwidth="1319px" width="850px" height="768px"/>
+    <screen std:sid="screen-8676c58c" id="mobile" name="mobile" maxwidth="849px" width="550px" height="768px"/>
+    <cl:model std:sid="model-bcdeef89">
+      <cl:dataset comment="상위권한그룹메뉴" std:sid="d-set-f44c8919" id="dsComAurth">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="권한그룹ID" std:sid="d-column-1d8f441b" name="AUTHRT_GROUP_ID"/>
+          <cl:datacolumn comment="권한그룹명" std:sid="d-column-6a797e0e" name="AUTHRT_GROUP_NM"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset comment="선택가능한권한그룹" std:sid="d-set-6353db8e" id="dsAuthrt">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="권한그룹ID" std:sid="d-column-ac94531a" name="AUTHRT_GROUP_ID"/>
+          <cl:datacolumn comment="상위권한그룹ID" std:sid="d-column-44613623" name="UP_AUTHRT_GROUP_ID"/>
+          <cl:datacolumn comment="권한그룹명" std:sid="d-column-bf066294" name="AUTHRT_GROUP_NM"/>
+          <cl:datacolumn comment="사용자유형코드" std:sid="d-column-ec422432" name="USER_TYPE_CD"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset comment="상위권한그룹메뉴 목록" std:sid="d-set-e86ea54e" id="dsAuthrtUp">
+        <cl:listener std:sid="listener-9186e7eb" name="insert" handler="onDsAuthrtUpInsert"/>
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="권한그룹ID" std:sid="d-column-92b0d813" name="AUTHRT_GROUP_ID"/>
+          <cl:datacolumn comment="상위권한그룹ID" std:sid="d-column-af9512e4" name="UP_AUTHRT_GROUP_ID"/>
+          <cl:datacolumn comment="권한그룹명" std:sid="d-column-c1f82704" name="AUTHRT_GROUP_NM"/>
+          <cl:datacolumn comment="사용자유형코드" std:sid="d-column-77fa9b21" name="USER_TYPE_CD"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-8290a67e" id="dsUserTypeCd">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="코드명" std:sid="d-column-2d49e14c" name="COM_CD_NM"/>
+          <cl:datacolumn comment="코드" std:sid="d-column-73298174" name="COM_CD"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-ed8fecdc" id="dsList">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-c9a30afc" name="column1"/>
+          <cl:datacolumn std:sid="d-column-d53aec08" name="column2"/>
+          <cl:datacolumn std:sid="d-column-81b030a6" name="column3"/>
+          <cl:datacolumn std:sid="d-column-25172527" name="column4"/>
+          <cl:datacolumn std:sid="d-column-a7b981a8" name="column5"/>
+          <cl:datacolumn std:sid="d-column-06a99f43" name="column6"/>
+          <cl:datacolumn std:sid="d-column-1ffbc247" name="column7"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-ec140a60" id="dsList2">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-7917ff66" name="column1"/>
+          <cl:datacolumn std:sid="d-column-97d16983" name="column2"/>
+          <cl:datacolumn std:sid="d-column-3958fb26" name="column3"/>
+          <cl:datacolumn std:sid="d-column-90b77711" name="column4"/>
+          <cl:datacolumn std:sid="d-column-517a9f98" name="column5"/>
+          <cl:datacolumn std:sid="d-column-6e07bceb" name="column6"/>
+          <cl:datacolumn std:sid="d-column-8f641063" name="column7"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:datamap comment="공통 파라미터" std:sid="d-map-94caa261" id="dmComParam">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="공통 Mapper 파일 경로" std:sid="d-column-95ff8607" name="COM_XML_ID" defaultvalue=""/>
+          <cl:datacolumn comment="공통 Query 아이디" std:sid="d-column-61fbfc8e" name="COM_SQL_ID" defaultvalue=""/>
+          <cl:datacolumn comment="공통코드(, 구분자)" std:sid="d-column-ba347b3a" info="" name="COM_ARY_CD" datatype="string"/>
+          <cl:datacolumn comment="권한그룹ID" std:sid="d-column-f2ccb5f1" name="AUTHRT_GROUP_ID"/>
+          <cl:datacolumn comment="권한그룹명" std:sid="d-column-a5cee4c8" name="AUTHRT_GROUP_NM"/>
+          <cl:datacolumn comment="상위권한ID" std:sid="d-column-3c565f47" name="UP_AUTHRT_GROUP_ID"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-9338853d" id="subOnload" action="202311/massive_7_20000.json">
+        <cl:requestdata dataid="dmComParam"/>
+        <cl:requestdata dataid="dsList"/>
+        <cl:responsedata dataid="dsComAurth"/>
+        <cl:responsedata dataid="dsUserTypeCd"/>
+        <cl:responsedata dataid="dsList"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-efa174ae" id="subList" action="../prj/cmd/CM010112/selectList3.do">
+        <cl:requestdata dataid="dmComParam"/>
+        <cl:responsedata dataid="dsAuthrt"/>
+        <cl:responsedata dataid="dsAuthrtUp"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-48f96fa6" id="subSave" action="../prj/cmd/CM010112/save.do" mediatype="application/json">
+        <cl:requestdata dataid="dmComParam"/>
+        <cl:requestdata dataid="dsAuthrtUp"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-82acf597" id="subOnload2" action="202311/massive_17_100.json">
+        <cl:requestdata dataid="dmComParam"/>
+        <cl:requestdata dataid="dsList"/>
+        <cl:responsedata dataid="dsComAurth"/>
+        <cl:responsedata dataid="dsUserTypeCd"/>
+        <cl:responsedata dataid="dsList"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec title="상위권한관리"/>
+  </head>
+  <body std:sid="body-a214da32">
+    <cl:listener std:sid="listener-c781a77e" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-7ab4c506" id="grpSearch" class="search-box">
+      <std:metadata>
+        <std:property key="template-uuid" value="e749972a-0466-4cb6-a636-d9516d829af8"/>
+        <std:property key="template-rev" value="3"/>
+      </std:metadata>
+      <cl:attribute name="mobile-column-count" value="2"/>
+      <cl:attribute name="tablet-column-count" value="4"/>
+      <cl:verticaldata std:sid="v-data-17f2de83" width="1280px" height="50px" autosize="height"/>
+      <cl:output std:sid="output-e9f87aec" id="opt1" class="label required" value="상위권한그룹">
+        <cl:formdata std:sid="f-data-1896c3fd" row="0" col="0"/>
+      </cl:output>
+      <cl:combobox std:sid="c-box-e187ea61" id="cmbAuthGrp" fieldLabel="상위권한그룹">
+        <cl:listener std:sid="listener-879295c5" name="selection-change" handler="onCmbAuthGrpSelectionChange"/>
+        <cl:attribute name="required" value="Y"/>
+        <cl:datamapbind property="value" datacontrolid="dmComParam" columnname="UP_AUTHRT_GROUP_ID"/>
+        <cl:formdata std:sid="f-data-7fad05cb" row="0" col="1"/>
+        <cl:itemset datasetid="dsComAurth" label="AUTHRT_GROUP_NM" value="AUTHRT_GROUP_ID"/>
+      </cl:combobox>
+      <cl:button std:sid="button-66844914" id="btn1" value="Button">
+        <cl:listener std:sid="listener-ddfe1da9" name="click" handler="onBtn1Click2"/>
+        <cl:formdata std:sid="f-data-0ec8ef47" row="0" col="2"/>
+      </cl:button>
+      <cl:button std:sid="button-54b3dc7f" id="btn2" value="Button">
+        <cl:listener std:sid="listener-6935c4a7" name="click" handler="onBtn2Click"/>
+        <cl:formdata std:sid="f-data-a752e21f" row="0" col="3"/>
+      </cl:button>
+      <cl:button std:sid="button-477eee08" id="btn3" value="Button">
+        <cl:listener std:sid="listener-7b7ff211" name="click" handler="onBtn3Click"/>
+        <cl:formdata std:sid="f-data-213f8030" row="0" col="4"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-cf127e01" hspace="25px" vspace="8px" top-margin="12px" right-margin="20px" bottom-margin="12px" left-margin="10px">
+        <cl:rows length="24" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="95" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="180" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="180" unit="PIXEL" autoSizing="false" hidden="false" minlength="0"/>
+        <cl:columns length="180" unit="PIXEL" autoSizing="false" hidden="false" minlength="0"/>
+        <cl:columns length="180" unit="PIXEL" autoSizing="false" hidden="false" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="100"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-32cfa1aa" id="grpData" class="content">
+      <std:metadata>
+        <std:property key="template-uuid" value="f6458767-4f22-4e49-8b7a-c17f720322d6"/>
+        <std:property key="template-rev" value="4"/>
+      </std:metadata>
+      <cl:verticaldata std:sid="v-data-5ebc69c3" width="1280px" height="494px" autosize="none"/>
+      <cl:group std:sid="group-e515bab7" id="grpTitleBtns">
+        <cl:formdata std:sid="f-data-87fc1b29" row="0" col="0" rowspan="1" colspan="3"/>
+        <cl:button std:sid="button-152aa0e4" id="btnSave" class="btn-save" value="저장">
+          <cl:listener std:sid="listener-1543ac8f" name="click" handler="onBtn1Click"/>
+          <cl:attribute name="authority" value="Y"/>
+          <cl:formdata std:sid="f-data-a1bb6707" row="0" col="1"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-fe798a8e" scrollable="false">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="50" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0" syncminlength="false"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-7bb60bdc" id="grpSource">
+        <cl:formdata std:sid="f-data-bf8b6893" row="1" col="0" rowspan="1" colspan="1"/>
+        <cl:grid std:sid="grid-8f3286d0" id="grdMst" fieldLabel="선택 가능한 권한그룹" datasetid="dsList" showdeletedrow="false" autofit="2">
+          <cl:formdata std:sid="f-data-bd2fd221" row="1" col="0"/>
+          <cl:gridcolumn std:sid="g-column-6492a9fb" width="50px"/>
+          <cl:gridcolumn std:sid="g-column-0bc92d1e" width="60px"/>
+          <cl:gridcolumn std:sid="g-column-67197b9d" width="200px"/>
+          <cl:gridcolumn std:sid="g-column-f6c41ca8" width="180px"/>
+          <cl:gridcolumn std:sid="g-column-4a30843a"/>
+          <cl:gridcolumn std:sid="g-column-e98e8eb9"/>
+          <cl:gridcolumn std:sid="g-column-60df4762"/>
+          <cl:gridheader std:sid="gh-band-d3863653">
+            <cl:gridrow std:sid="g-row-03222a91" height="37px"/>
+            <cl:gridcell std:sid="gh-cell-7ea7e137" rowindex="0" colindex="0" sortable="false" filterable="false" columntype="checkbox"/>
+            <cl:gridcell std:sid="gh-cell-e1c972cd" rowindex="0" colindex="1" sortable="false" filterable="false" text="번호"/>
+            <cl:gridcell std:sid="gh-cell-16a6e7ea" rowindex="0" colindex="2" sortable="false" filterable="false" text="권한그룹명"/>
+            <cl:gridcell std:sid="gh-cell-04844e5a" rowindex="0" colindex="3" text="사용자유형"/>
+            <cl:gridcell std:sid="gh-cell-92ef637b" rowindex="0" colindex="4"/>
+            <cl:gridcell std:sid="gh-cell-b33cc921" rowindex="0" colindex="5"/>
+            <cl:gridcell std:sid="gh-cell-a4d3451b" rowindex="0" colindex="6"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-b85e875d">
+            <cl:gridrow std:sid="g-row-ddd9c4c6" height="37px"/>
+            <cl:gridcell std:sid="gd-cell-81977b73" rowindex="0" colindex="0" columntype="checkbox"/>
+            <cl:gridcell std:sid="gd-cell-da535c85" rowindex="0" colindex="1" columntype="rowindex"/>
+            <cl:gridcell std:sid="gd-cell-2ed512d9" rowindex="0" colindex="2" style="text-align:left;" columnname="column1"/>
+            <cl:gridcell std:sid="gd-cell-4cedd7a5" rowindex="0" colindex="3" columnname="column2"/>
+            <cl:gridcell std:sid="gd-cell-86cf16d4" rowindex="0" colindex="4" columnname="column3">
+              <cl:output std:sid="output-19a104b7" id="opt2">
+                <cl:celldata std:sid="c-data-4b392d14"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-d00bb45e" rowindex="0" colindex="5" columnname="column4">
+              <cl:output std:sid="output-86945337" id="opt3">
+                <cl:celldata std:sid="c-data-1fb8f59e"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-3ceb83f9" rowindex="0" colindex="6" columnname="column5">
+              <cl:output std:sid="output-a1574131" id="opt4">
+                <cl:celldata std:sid="c-data-93d72c58"/>
+              </cl:output>
+            </cl:gridcell>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:formlayout std:sid="f-layout-598cb3d4" scrollable="false">
+          <cl:rows length="24" unit="PIXEL"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-256ada3c" id="grpTarget">
+        <cl:formdata std:sid="f-data-2da617d0" row="1" col="2" rowspan="1" colspan="1"/>
+        <cl:grid std:sid="grid-87908f9a" id="grdUpAuth" class="auto-height" fieldLabel="상위권한그룹" datasetid="dsList2" showdeletedrow="false" autofit="3">
+          <cl:formdata std:sid="f-data-27d1f83a" row="1" col="0"/>
+          <cl:gridcolumn std:sid="g-column-ee65e0a1" width="50px"/>
+          <cl:gridcolumn std:sid="g-column-4d714164" width="40px"/>
+          <cl:gridcolumn std:sid="g-column-02c32da5" width="60px"/>
+          <cl:gridcolumn std:sid="g-column-da6bb9be" width="200px"/>
+          <cl:gridcolumn std:sid="g-column-9c84b54f" width="180px"/>
+          <cl:gridcolumn std:sid="g-column-99b2671d"/>
+          <cl:gridcolumn std:sid="g-column-8331367d"/>
+          <cl:gridcolumn std:sid="g-column-4a9d0e2c"/>
+          <cl:gridheader std:sid="gh-band-c708fd3b">
+            <cl:gridrow std:sid="g-row-0883ba36" height="37px"/>
+            <cl:gridcell std:sid="gh-cell-aef5c2e3" rowindex="0" colindex="0" sortable="false" filterable="false" columntype="checkbox"/>
+            <cl:gridcell std:sid="gh-cell-42ec5cc8" rowindex="0" colindex="2" sortable="false" filterable="false" text="번호"/>
+            <cl:gridcell std:sid="gh-cell-aec6c582" rowindex="0" colindex="3" sortable="false" filterable="false" text="하위 권한그룹명"/>
+            <cl:gridcell std:sid="gh-cell-128cc762" rowindex="0" colindex="1" text="상태"/>
+            <cl:gridcell std:sid="gh-cell-a8c4ca4e" rowindex="0" colindex="4" sortable="false" filterable="false" columntype="normal" text="사용자유형" emptyvaluesort="emptyString"/>
+            <cl:gridcell std:sid="gh-cell-7112ef48" rowindex="0" colindex="5"/>
+            <cl:gridcell std:sid="gh-cell-e793c76f" rowindex="0" colindex="6"/>
+            <cl:gridcell std:sid="gh-cell-7b8848bb" rowindex="0" colindex="7"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-e2257e3e">
+            <cl:gridrow std:sid="g-row-22765ca3" height="37px"/>
+            <cl:gridcell std:sid="gd-cell-26a843c2" rowindex="0" colindex="0" columntype="checkbox"/>
+            <cl:gridcell std:sid="gd-cell-5a445455" rowindex="0" colindex="2" columntype="rowindex"/>
+            <cl:gridcell std:sid="gd-cell-a37f7286" rowindex="0" colindex="3" columnname="column1"/>
+            <cl:gridcell std:sid="gd-cell-74394935" rowindex="0" colindex="1">
+              <cl:output std:sid="output-05705aba" id="opt5">
+                <cl:celldata std:sid="c-data-53645c1b"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-0d29a882" rowindex="0" colindex="4" columnname="column2"/>
+            <cl:gridcell std:sid="gd-cell-e6d78fa6" rowindex="0" colindex="5" columnname="column3">
+              <cl:output std:sid="output-eabfd9bc" id="opt6">
+                <cl:celldata std:sid="c-data-5458fb46"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-ca629485" rowindex="0" colindex="6" columnname="column4">
+              <cl:output std:sid="output-1b3af646" id="opt7">
+                <cl:celldata std:sid="c-data-579ef828"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-dc78c995" rowindex="0" colindex="7" columnname="column5">
+              <cl:output std:sid="output-31f341cc" id="opt8">
+                <cl:celldata std:sid="c-data-8fd06360"/>
+              </cl:output>
+            </cl:gridcell>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:formlayout std:sid="f-layout-84cea98f" scrollable="false">
+          <cl:rows length="24" unit="PIXEL"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-bd2e9bb7" scrollable="false" hspace="30px" vspace="15px">
+        <cl:rows length="24" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+        <cl:columns length="50" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:button std:sid="button-1db293f4" id="btn4" value="Button">
+      <cl:listener std:sid="listener-c6495290" name="click" handler="onBtn4Click"/>
+      <cl:verticaldata std:sid="v-data-2d050ee9" width="100px" height="20px"/>
+    </cl:button>
+    <cl:button std:sid="button-924ad6bb" id="btn5" value="Button">
+      <cl:listener std:sid="listener-103d8ea1" name="click" handler="onBtn5Click2"/>
+      <cl:verticaldata std:sid="v-data-d28f0d63" width="100px" height="20px"/>
+    </cl:button>
+    <cl:button std:sid="button-d1b68272" id="btn6" value="Button">
+      <cl:listener std:sid="listener-fb03f771" name="click" handler="onBtn6Click"/>
+      <cl:verticaldata std:sid="v-data-460732b2" width="1280px" height="20px" autosize="none"/>
+    </cl:button>
+    <cl:verticallayout std:sid="v-layout-7052b5f0" spacing="15" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

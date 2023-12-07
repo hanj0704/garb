@@ -6,7 +6,7 @@
  ************************************************/
 
 
-var mnDelayTime = 0;
+var mnDelayTime = 2;
 /*
  * "Button" 버튼(btn1)에서 click 이벤트 발생 시 호출.
  * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
@@ -56,33 +56,33 @@ function onBtn1Click(/* cpr.events.CMouseEvent */ e){
 //	}).exec(function(value){
 		
 //	})
-	setTimeout(function(){
-		
-	app.lookup("btn2").style.css("transform","rotate(0deg)");
-	app.lookup("btn2").style.css("transform","rotate(180deg)");
-	app.lookup("btn2").style.css("transform","rotate(0deg)");
-	app.lookup("btn2").style.css("transform","rotate(-60deg)");
-	}, 5000);
 //	setTimeout(function(){
 //		
-//	
-//	app.lookup("btn2").style.animateTo({
-//			"transform" : "rotate(-90deg)"
-//	}, mnDelayTime, cpr.animation.TimingFunction.LINEAR);
-//	app.lookup("btn2").style.animateTo({
-//			"transform" : "rotate(90deg)"
-//	}, mnDelayTime, cpr.animation.TimingFunction.LINEAR);
-//	app.lookup("btn2").style.animateTo({
-//			"transform" : "rotate(0deg)"
-//	}, mnDelayTime, cpr.animation.TimingFunction.LINEAR);
-//	app.lookup("btn2").style.animateTo({
-//			"transform" : "rotate(180deg)"
-//	}, mnDelayTime, cpr.animation.TimingFunction.LINEAR);
-//	app.lookup("btn2").style.animateTo({
-//			"transform" : "rotate(0deg)"
-//	}, mnDelayTime, cpr.animation.TimingFunction.LINEAR);
-//	app.lookup("btn2").style.animateTo({
-//			"transform" : "rotate(-60deg)"
-//	}, mnDelayTime, cpr.animation.TimingFunction.LINEAR);
-//	}, 1000);
+//	app.lookup("btn2").style.css("transform","rotate(0deg)");
+//	app.lookup("btn2").style.css("transform","rotate(180deg)");
+//	app.lookup("btn2").style.css("transform","rotate(0deg)");
+//	app.lookup("btn2").style.css("transform","rotate(-60deg)");
+//	}, 5000);
+	setTimeout(function(){
+		
+	
+	app.lookup("btn2").style.animateTo({
+			"transform" : "rotate(-90deg)"
+	}, mnDelayTime, cpr.animation.TimingFunction.LINEAR);
+	app.lookup("btn2").style.animateTo({
+			"transform" : "rotate(90deg)"
+	}, mnDelayTime, cpr.animation.TimingFunction.LINEAR);
+	app.lookup("btn2").style.animateTo({
+			"transform" : "rotate(0deg)"
+	}, mnDelayTime, cpr.animation.TimingFunction.LINEAR);
+	app.lookup("btn2").style.animateTo({
+			"transform" : "rotate(180deg)"
+	}, mnDelayTime, cpr.animation.TimingFunction.LINEAR);
+	app.lookup("btn2").style.animateTo({
+			"transform" : "rotate(0deg)"
+	}, mnDelayTime, cpr.animation.TimingFunction.LINEAR);
+	app.lookup("btn2").style.animateTo({
+			"transform" : "rotate(-60deg)"
+	}, mnDelayTime, cpr.animation.TimingFunction.LINEAR);
+	}, 1000);
 }
