@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-fed2574d" version="1.0.4927">
+  <head std:sid="head-372e9db3">
+    <screen std:sid="screen-88b7749f" id="default" name="default" width="1024px" height="768px"/>
+    <screen std:sid="screen-41986d90" id="tablet" name="tablet" width="500px" height="667px"/>
+    <screen std:sid="screen-3963159d" id="mobile" name="mobile" width="350px" height="525px"/>
+    <cl:model std:sid="model-d1bc23d0"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-2a0a4496">
+    <cl:group std:sid="group-b3984c76" id="grp1">
+      <cl:listener std:sid="listener-ec46acdd" name="scroll" handler="onGrp1Scroll"/>
+      <cl:xylayoutdata std:sid="xyl-data-e06325e5" top="37px" left="71px" width="487px" height="328px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:button std:sid="button-55ec7ca7" id="btn1" value="Button">
+        <cl:xylayoutdata std:sid="xyl-data-43de4194" top="674px" left="208px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      </cl:button>
+      <cl:xylayout std:sid="xylayout-73d07b79"/>
+    </cl:group>
+    <cl:button std:sid="button-7fc30a2b" id="btn2" value="Button">
+      <cl:listener std:sid="listener-3def8984" name="click" handler="onBtn2Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-b81d8124" top="20px" left="71px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:embeddedapp std:sid="e-app-16cabf0b" id="ea1">
+      <cl:xylayoutdata std:sid="xyl-data-7350dcdb" top="375px" left="58px" width="551px" height="193px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:embeddedapp>
+    <cl:button std:sid="button-bfe0faaa" id="btn3" value="Button">
+      <cl:listener std:sid="listener-a761d976" name="click" handler="onBtn3Click2"/>
+      <cl:xylayoutdata std:sid="xyl-data-93e45a88" top="311px" left="568px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-cd85e4f5" id="btn4" value="Button">
+      <cl:listener std:sid="listener-4643607a" name="click" handler="onBtn4Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-0a2a7830" top="341px" left="568px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-3ae054c3"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

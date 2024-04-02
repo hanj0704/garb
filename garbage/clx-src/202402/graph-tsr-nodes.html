@@ -1,0 +1,3085 @@
+<!DOCTYPE html>
+
+<head>
+    <title>NodeJS</title>
+    <link rel="stylesheet" type="text/css" href="/mystyles.css">
+    <link rel="stylesheet" href="/ej.web.all.min.css" />
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/jsrender.min.js" type="text/javascript"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/ej.web.all.min.js" type="text/javascript"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/ej.widget.angular.min.js"></script>
+
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="/">Home</a>
+        <a href="/view">Data</a>
+        <a href="/view-tsr">TSR-Data</a>
+        <a href="/graph">Graph</a>
+        <a href="/graph-tsr">Graph-TSR</a>
+        <a href="/graph-tsr-nodes">Graph-TSR-51 Nodes</a>
+        <a href="/contact">Contact Us</a>
+    </div>
+    <div>
+        <h1>Energy Router</h1>
+    </div>
+    <div ng-app="syncApp" ng-controller="diagramCtrl">
+        <ej-diagram id="diagramCore" e-height="3000px" e-width="3000px" e-nodes="nodes"
+            e-defaultsettings="defaultSettings" e-connectors="connectors">
+        </ej-diagram>
+
+    </div>
+</body>
+
+</html>
+<script>
+    // THIS CODE IS FOR DISPLAYING 51 NODES
+    // COMPLEX ARCHITECTURE
+
+    var syncApp = angular.module('syncApp', ["ngRoute", "ejangular"]);
+
+    syncApp.controller('diagramCtrl', function ($scope, $http, $window, $compile) {
+        console.log("JS Starts");
+
+        var connectors = [];
+        var nodes = [];
+      
+        var sourceNodeCount = 0;
+        var targetNodeCount = 0; 
+        var sourceNodeCountPre = 0; 
+        var targetNodeCountPre = 0; 
+
+        console.log("sourceNode intial value: " + sourceNodeCount);
+        console.log("targetNode initial value: " + sourceNodeCountPre);
+
+        let c = 0; 
+        let f = 0; 
+        var checkNodes = 0;    
+        var sourceNode = {};
+        var targetNode = {};
+
+        var offsetXvals = 0;
+        var offsetYvals = 0;
+
+        var offsetXvals1 = 0;
+        var offsetYvals1 = 0;
+
+
+
+
+        var sub = 1;
+
+        ///////////////////////////////
+        ///////////////////////////////////////////
+        // COLLECTING JSON DATA FROM API
+
+
+        $http.post("/ER_data.json").then(function (success) {
+
+            console.log("full data");
+            console.log(JSON.stringify(success.data, null, '\t'));
+            console.log("counting nodes");
+            var nodeslen = success.data.posts.length;
+            console.log(nodeslen);
+            console.log("counting sub-nodes");
+            var subnodeslen = success.data.posts[0].sub1.length;
+            console.log(subnodeslen); 
+
+
+
+
+            angular.forEach(success.data, function (value, key) {
+
+                console.log("1st loop");
+                console.log("key: " + key);
+                console.log("value: " + JSON.stringify(value, null, '\t'));
+                console.log("length of value: " + value.length);
+
+                
+                console.log("sourceNode dictionary: " + sourceNode);
+                console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+
+
+               
+                offsetXvals = 100;
+                offsetYvals = 100;
+
+                
+                var offsetXvalsPS = 50;
+                var offsetYvalsPS = 300;
+
+                
+
+                
+                eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvalsPS + ', offsetY: ' + offsetYvalsPS + ', labels: [{text: "Power Supply", offset: {x: 0.5, y: 0.5}}], fillColor: "grey", height: 50, ports: [{name: "one", offset: {x: 0.5, y: 0}, shape: "circle", visibility: "visibile", fillColor: "black"},{name: "two", offset: {x: 1, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"},{name: "three", offset: {x: 0.5, y: 1}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                
+
+                console.log("sourceNode in PS Node: " + sourceNodeCount);
+                console.log("targetNode in PS Node: " + sourceNodeCountPre);
+
+               
+                sourceNodeCountPre++;
+                console.log("sourceNode after creating PS Node: " + sourceNodeCount);
+                console.log("targetNode after creating PS Node: " + sourceNodeCountPre);
+                f++;
+
+
+                nodes.push(sourceNode[c]);
+                console.log("Nodes")
+                console.log(JSON.stringify(nodes, null, '\t'));
+
+                offsetXvals = offsetXvals + 50;
+                offsetYvals = offsetYvals;
+                checkNodes++;
+                c++;
+                
+               
+
+                
+                eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals + ', offsetY: ' + offsetYvals + ', labels: [{text: "ID: ' + value[0].ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value[0].Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value[0].Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value[0].Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in49", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"},{name: "out49_1", offset: {x: 1, y: 0.25}, shape: "circle", visibility: "visibile", fillColor: "black"},{name: "out49_2", offset: {x: 1, y: 0.75}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+
+
+                eval('connectors.push({name: "flow1' + String(f) + '", targetPort: "in49", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                //sourceNodeCount++;
+                sourceNodeCountPre++;
+
+                console.log("sourceNode after creating 49 Node: " + sourceNodeCount);
+                console.log("targetNode after creating 49 Node: " + sourceNodeCountPre);
+                f++;
+
+                nodes.push(sourceNode[c]);
+                console.log("Nodes")
+                
+
+                offsetXvals = offsetXvals;
+                offsetYvals = offsetYvals + 500;
+                checkNodes++;
+                c++;
+
+                
+
+
+
+
+
+                eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals + ', offsetY: ' + offsetYvals + ', labels: [{text: "ID: ' + value[1].ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value[0].Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value[0].Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value[0].Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "two", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                eval('connectors.push({name: "flow1' + String(f) + '", sourcePort: "two", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                //sourceNodeCount++;
+                sourceNodeCountPre++;
+
+                console.log("sourceNode after creating 50 Node: " + sourceNodeCount);
+                console.log("targetNode after creating 50 Node: " + sourceNodeCountPre);
+                f++;
+
+                nodes.push(sourceNode[c]);
+                console.log("Nodes")
+                
+
+                offsetXvals = offsetXvals;
+                offsetYvals = offsetYvals + 800;
+                checkNodes++;
+                c++;
+
+               
+
+                eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals + ', offsetY: ' + offsetYvals + ', labels: [{text: "ID: ' + value[2].ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value[0].Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value[0].Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value[0].Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "three", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                eval('connectors.push({name: "flow1' + String(f) + '", sourcePort: "three", targetPort: "three", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                sourceNodeCount++;
+                sourceNodeCountPre++;
+
+                console.log("sourceNode after creating 51 Node: " + sourceNodeCount);
+                console.log("targetNode after creating 51 Node: " + sourceNodeCountPre);
+                f++;
+
+                nodes.push(sourceNode[c]);
+                console.log("Nodes")
+                console.log(JSON.stringify(nodes, null, '\t'));
+
+                offsetXvals = 300;
+                offsetYvals = 50;
+                checkNodes++;
+                c++;
+
+
+
+                
+
+                for (var i = 0; i < value.length; i++) {
+                    if (value[i].hasOwnProperty("sub" + sub)) {
+                        console.log("good");
+                        console.log("i value in loop: " + i);
+                        console.log("value in loop")
+                        console.log(JSON.stringify(value[i].sub1, null, '\t'));
+                        console.log("value of sub: " + sub);
+
+                        var s = value[i].sub1.length; 
+                        console.log("length of sub1: " + s);
+                       
+                        var j = 0
+                        
+
+
+                        angular.forEach(value[i].sub1, function (value, key) {
+                            j++;
+                           
+
+                            eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals + ', offsetY: ' + offsetYvals + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}, {name: "out' + String(value.ID) + '_1", offset: {x: 1, y: 0.25}, shape: "circle", visibility: "visibile", fillColor: "black"}, {name: "out' + String(value.ID) + '_2", offset: {x: 1, y: 0.75}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+
+
+                            eval('connectors.push({name: "flow1' + String(f) + '", sourcePort: "out49_' + String(j) + '", targetPort: "in_' + String(value.ID) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                            console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                            console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                            sourceNodeCountPre++;
+                            //sourceNodeCount++;
+
+                            console.log("2nd loop");
+                            console.log("key: " + key); 
+                            console.log("value: " + JSON.stringify(value, null, '\t'));
+                            console.log("length of value: " + value.length);
+                            console.log("checkNodes: " + checkNodes);
+
+                            console.log("main node counter c: " + c);
+
+                            console.log("value ID: " + value.ID)
+
+                            f++;
+                            console.log("sourceNode dictionary: ");
+                            console.log(sourceNode);
+                            console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+                            
+                            nodes.push(sourceNode[c]);
+
+                            console.log("Nodes")
+                            console.log(JSON.stringify(nodes, null, '\t'));
+                            console.log(nodes);
+                            offsetXvals = offsetXvals;
+                            offsetYvals = offsetYvals + 300;
+                            checkNodes++;
+                            c++;
+                            console.log("value of c after increment: " + c);
+
+                        })
+                        sub++
+                    }
+                    else {
+                        console.log("not")
+                    }
+                }
+
+                
+
+            })
+
+
+            console.log("counting sub2-nodes");
+            var sub2nodeslen = success.data.posts[0].sub1[0].sub2.length;
+            console.log(sub2nodeslen);
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+            sourceNodeCount = 3;
+
+            
+
+            offsetXvals = 400;
+            offsetYvals = 20;
+            var k = 0; 
+            var nextNode = 0; 
+            
+
+
+            for (var i = 0; i < 2; i++) {
+
+                sourceNodeCount++;
+                if (i == 1) {
+                    nextNode = 9
+                }
+                else {
+                    nextNode = 1;
+                }
+
+
+                angular.forEach(success.data.posts[0].sub1[i].sub2, function (value, key) {
+                    k++;
+
+                    console.log("3rd loop");
+                    console.log("key: " + key);
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+
+                    eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals + ', offsetY: ' + offsetYvals + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+
+                    eval('connectors.push({name: "flow1' + String(f) + '", sourcePort: "out' + String(nextNode) + '_' + String(k) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                    console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                    console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                    sourceNodeCountPre++;
+                    //sourceNodeCount++;
+
+                    console.log("3rd loop");
+                    console.log("key: " + key); 
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+                    console.log("checkNodes: " + checkNodes);
+
+                    console.log("main node counter c: " + c);
+
+                    console.log("value ID: " + value.ID)
+
+                    f++;
+                    console.log("sourceNode dictionary: ");
+                    console.log(sourceNode);
+                    console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+                    
+                    nodes.push(sourceNode[c]);
+
+                    
+                    if (k == 2) {
+                        k = 0; 
+                    }
+                    else {
+                        
+                    }
+
+                    console.log("Nodes")
+                    console.log(JSON.stringify(nodes, null, '\t'));
+                    console.log(nodes);
+                    offsetXvals = offsetXvals;
+                    offsetYvals = offsetYvals + 150;
+                    checkNodes++;
+                    c++;
+                    console.log("value of c after increment: " + c);
+
+
+                })
+
+            }
+
+           
+
+            offsetXvals = 500;
+            offsetYvals = 20;
+
+            console.log("counting sub3-nodes");
+            var sub3nodeslen = success.data.posts[0].sub1[0].sub2[0].sub3.length;
+            console.log(sub3nodeslen);
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+            sourceNodeCount = 5;
+            var g = 0;
+
+            for (var i = 0; i < 2; i++) {
+
+                sourceNodeCount++;
+                
+                if (g == 1) {
+                    offsetXvals = 500;
+                    offsetYvals = 120;
+                    
+                }
+
+                angular.forEach(success.data.posts[0].sub1[0].sub2[i].sub3, function (value, key) {
+
+
+                    console.log("4th loop: i : " + i);
+                    console.log("key: " + key);
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+
+                    eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals + ', offsetY: ' + offsetYvals + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                    eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                    console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                    console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                    sourceNodeCountPre++;
+                    
+                    console.log("SOURCE NODE");
+                    console.log(sourceNodeCount);
+
+                    console.log("TARGET NODE");
+                    console.log(sourceNodeCountPre);
+
+                    console.log("4th loop");
+                    console.log("key: " + key); 
+                    
+                    console.log("value");
+                    console.log(value);
+                    console.log("length of value: " + value.length);
+                    console.log("checkNodes: " + checkNodes);
+
+                    console.log("main node counter c: " + c);
+
+                    console.log("value ID: " + value.ID)
+
+                    f++;
+                    console.log("sourceNode dictionary: ");
+                    console.log(sourceNode);
+                    console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+                    
+                    nodes.push(sourceNode[c]);
+
+                    
+                    if (k == 2) {
+                        k = 0; 
+                    }
+                    else {
+                        
+                    }
+
+                    console.log("Nodes");
+                    console.log(nodes);
+                    
+                    console.log(nodes);
+                    offsetXvals = offsetXvals + 100;
+                    offsetYvals = offsetYvals;
+                    checkNodes++;
+                    c++;
+                    console.log("value of c after increment: " + c);
+
+
+                })
+                g++
+
+            }
+
+
+
+           
+            offsetXvals = 600;
+            offsetYvals = 20;
+
+            console.log("counting sub3-nodes");
+
+            
+            var sub4nodeslen = success.data.posts[0].sub1[0].sub2[0].sub3[0].sub4.length; // THIS
+            console.log(sub4nodeslen);
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+            sourceNodeCount = 9;
+            var g = 0;
+            
+            for (var i = 0; i < 1; i++) {
+
+                sourceNodeCount++;
+                
+                if (g == 1) {
+                    offsetXvals = 500;
+                    offsetYvals = 120;
+                    
+                }
+
+                angular.forEach(success.data.posts[0].sub1[0].sub2[0].sub3[i].sub4, function (value, key) {
+
+
+                    console.log("4th loop: i : " + i);
+                    console.log("key: " + key);
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+
+                    eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals + ', offsetY: ' + offsetYvals + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                    eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                    console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                    console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                    sourceNodeCountPre++;
+                    
+                    console.log("SOURCE NODE");
+                    console.log(sourceNodeCount);
+
+                    console.log("TARGET NODE");
+                    console.log(sourceNodeCountPre);
+
+                    console.log("4th loop");
+                    console.log("key: " + key); 
+                    
+                    console.log("value");
+                    console.log(value);
+                    console.log("length of value: " + value.length);
+                    console.log("checkNodes: " + checkNodes);
+
+                    console.log("main node counter c: " + c);
+
+                    console.log("value ID: " + value.ID)
+
+                    f++;
+                    console.log("sourceNode dictionary: ");
+                    console.log(sourceNode);
+                    console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+                   
+                    nodes.push(sourceNode[c]);
+
+                   
+                    if (k == 2) {
+                        k = 0; 
+                    }
+                    else {
+                       
+                    }
+
+                    console.log("Nodes");
+                    console.log(nodes);
+                    
+                    console.log(nodes);
+                    offsetXvals = offsetXvals + 100;
+                    offsetYvals = offsetYvals;
+                    checkNodes++;
+                    c++;
+                    console.log("value of c after increment: " + c);
+
+
+                })
+                g++
+
+            }
+
+           
+
+            offsetXvals = 600;
+            offsetYvals = 120;
+
+            console.log("counting sub3-nodes");
+
+           
+            var sub4nodeslen2 = success.data.posts[0].sub1[0].sub2[1].sub3[0].sub4.length; // THIS
+            console.log(sub4nodeslen2);
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+            sourceNodeCount = 10;
+            var g = 0;
+           
+            for (var i = 0; i < 1; i++) {
+
+                sourceNodeCount++;
+                
+                if (g == 1) {
+                    offsetXvals = 500;
+                    offsetYvals = 120;
+                    
+                }
+
+                angular.forEach(success.data.posts[0].sub1[0].sub2[1].sub3[i].sub4, function (value, key) {
+
+
+                    console.log("4th loop: i : " + i);
+                    console.log("key: " + key);
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+
+                    eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals + ', offsetY: ' + offsetYvals + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                    eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                    console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                    console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                    sourceNodeCountPre++;
+                    //sourceNodeCount++;
+                    console.log("SOURCE NODE");
+                    console.log(sourceNodeCount);
+
+                    console.log("TARGET NODE");
+                    console.log(sourceNodeCountPre);
+
+                    console.log("4th loop");
+                    console.log("key: " + key); 
+                   
+                    console.log("value");
+                    console.log(value);
+                    console.log("length of value: " + value.length);
+                    console.log("checkNodes: " + checkNodes);
+
+                    console.log("main node counter c: " + c);
+
+                    console.log("value ID: " + value.ID)
+
+                    f++;
+                    console.log("sourceNode dictionary: ");
+                    console.log(sourceNode);
+                    console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+                   
+                    nodes.push(sourceNode[c]);
+
+                    
+                    if (k == 2) {
+                        k = 0; 
+                    }
+                    else {
+                        // 
+                    }
+
+                    console.log("Nodes");
+                    console.log(nodes);
+                   
+                    console.log(nodes);
+                    offsetXvals = offsetXvals + 100;
+                    offsetYvals = offsetYvals;
+                    checkNodes++;
+                    c++;
+                    console.log("value of c after increment: " + c);
+
+
+                })
+                g++
+
+            }
+
+            
+
+            offsetXvals = 700;
+            offsetYvals = 20;
+
+            console.log("counting sub3-nodes");
+
+            
+            var sub5nodeslen = success.data.posts[0].sub1[0].sub2[0].sub3[0].sub4[0].sub5.length; // THIS
+            console.log(sub5nodeslen);
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+            sourceNodeCount = 11;
+            var g = 0;
+           
+            for (var i = 0; i < 1; i++) {
+
+                sourceNodeCount++;
+               
+                if (g == 1) {
+                    offsetXvals = 500;
+                    offsetYvals = 120;
+                    //sourceNodeCount = 6;
+                }
+
+                angular.forEach(success.data.posts[0].sub1[0].sub2[0].sub3[0].sub4[i].sub5, function (value, key) {
+
+
+                    console.log("4th loop: i : " + i);
+                    console.log("key: " + key);
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+
+                    eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals + ', offsetY: ' + offsetYvals + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                    eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                    console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                    console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                    sourceNodeCountPre++;
+                    //sourceNodeCount++;
+                    console.log("SOURCE NODE 5");
+                    console.log(sourceNodeCount);
+
+                    console.log("TARGET NODE");
+                    console.log(sourceNodeCountPre);
+
+                    console.log("4th loop");
+                    console.log("key: " + key); 
+                    
+                    console.log("value");
+                    console.log(value);
+                    console.log("length of value: " + value.length);
+                    console.log("checkNodes: " + checkNodes);
+
+                    console.log("main node counter c: " + c);
+
+                    console.log("value ID: " + value.ID)
+
+                    f++;
+                    console.log("sourceNode dictionary: ");
+                    console.log(sourceNode);
+                    console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+                    
+                    nodes.push(sourceNode[c]);
+
+                   
+                    if (k == 2) {
+                        k = 0; 
+                    }
+                    else {
+                        
+                    }
+
+                    console.log("Nodes");
+                    console.log(nodes);
+                    
+                    console.log(nodes);
+                    offsetXvals = offsetXvals + 100;
+                    offsetYvals = offsetYvals;
+                    checkNodes++;
+                    c++;
+                    console.log("value of c after increment: " + c);
+
+
+                })
+                g++
+
+            }
+
+
+
+            
+
+            offsetXvals = 500;
+            offsetYvals = 200;
+
+            console.log("counting sub3-nodes 11, 13, 15");
+            var sub3nodeslen = success.data.posts[0].sub1[0].sub2[1].sub3.length;
+            console.log(sub3nodeslen);
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+            sourceNodeCount = 7;
+            var h = 0;
+            var tk = 0;
+            for (var i = 0; i < 2; i++) {
+
+                sourceNodeCount++;
+               
+                if (tk == 1) {
+                    offsetXvals = 500;
+                    offsetYvals = 470;
+                    //sourceNodeCount = 6;
+                }
+
+                angular.forEach(success.data.posts[0].sub1[1].sub2[i].sub3, function (value, key) {
+
+
+                    console.log("4th loop: i : " + i);
+                    console.log("key: " + key);
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+
+                    eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals + ', offsetY: ' + offsetYvals + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                    eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                    console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                    console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                    sourceNodeCountPre++;
+                    //sourceNodeCount++;
+                    console.log("SOURCE NODE");
+                    console.log(sourceNodeCount);
+
+                    console.log("TARGET NODE");
+                    console.log(sourceNodeCountPre);
+
+                    console.log("4th loop");
+                    console.log("key: " + key); 
+                    console.log("value");
+                    console.log(value);
+                    console.log("length of value: " + value.length);
+                    console.log("checkNodes: " + checkNodes);
+
+                    console.log("main node counter c: " + c);
+
+                    console.log("value ID: " + value.ID)
+
+                    f++;
+                    console.log("sourceNode dictionary: ");
+                    console.log(sourceNode);
+                    console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+                   
+                    nodes.push(sourceNode[c]);
+
+                    
+                    if (k == 2) {
+                        k = 0; 
+                    }
+                    else {
+                        
+                    }
+
+                    console.log("Nodes");
+                    console.log(nodes);
+                    
+                    console.log(nodes);
+                    offsetXvals = offsetXvals;
+                    offsetYvals = offsetYvals + 100;
+                    checkNodes++;
+                    c++;
+                    console.log("value of c after increment: " + c);
+
+
+                })
+                tk++ 
+
+            }
+
+
+           
+
+            offsetXvals = 600;
+            offsetYvals = 200;
+
+            console.log("counting sub3-nodes 11, 13, 15");
+            var sub3nodeslen = success.data.posts[0].sub1[1].sub2[0].sub3[0].sub4.length;
+            console.log(sub3nodeslen);
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+            sourceNodeCount = 14; 
+            var h = 0;
+            var tk = 0; 
+
+            for (var i = 0; i < 1; i++) {
+
+                sourceNodeCount++;
+                
+                if (tk == 1) {
+                    offsetXvals = 500;
+                    offsetYvals = 470;
+                    //sourceNodeCount = 6;
+                }
+
+                angular.forEach(success.data.posts[0].sub1[1].sub2[0].sub3[0].sub4, function (value, key) {
+
+
+                    console.log("4th loop: i : " + i);
+                    console.log("key: " + key);
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+
+                    eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals + ', offsetY: ' + offsetYvals + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                    eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                    console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                    console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                    sourceNodeCountPre++;
+                    //sourceNodeCount++;
+                    console.log("SOURCE NODE");
+                    console.log(sourceNodeCount);
+
+                    console.log("TARGET NODE");
+                    console.log(sourceNodeCountPre);
+
+                    console.log("4th loop");
+                    console.log("key: " + key); 
+                    
+                    console.log("value");
+                    console.log(value);
+                    console.log("length of value: " + value.length);
+                    console.log("checkNodes: " + checkNodes);
+
+                    console.log("main node counter c: " + c);
+
+                    console.log("value ID: " + value.ID)
+
+                    f++;
+                    console.log("sourceNode dictionary: ");
+                    console.log(sourceNode);
+                    console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+                    
+                    nodes.push(sourceNode[c]);
+
+                   
+                    if (k == 2) {
+                        k = 0; 
+                    }
+                    else {
+                        
+                    }
+
+                    console.log("Nodes");
+                    console.log(nodes);
+                    
+                    console.log(nodes);
+                    offsetXvals = offsetXvals;
+                    offsetYvals = offsetYvals + 100;
+                    checkNodes++;
+                    c++;
+                    console.log("value of c after increment: " + c);
+
+
+                })
+                tk++ 
+
+            }
+
+
+            
+            offsetXvals = 600;
+            offsetYvals = 300;
+
+            console.log("counting sub3-nodes 11, 13, 15");
+            var sub3nodeslen = success.data.posts[0].sub1[1].sub2[0].sub3[1].sub4.length;
+            console.log(sub3nodeslen);
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+            sourceNodeCount = 15; 
+            var h = 0;
+            var tk = 0; 
+            for (var i = 0; i < 1; i++) {
+
+                sourceNodeCount++;
+                
+                if (tk == 1) {
+                    offsetXvals = 500;
+                    offsetYvals = 470;
+                    //sourceNodeCount = 6;
+                }
+
+                angular.forEach(success.data.posts[0].sub1[1].sub2[0].sub3[1].sub4, function (value, key) {
+
+
+                    console.log("4th loop: i : " + i);
+                    console.log("key: " + key);
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+
+                    eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals + ', offsetY: ' + offsetYvals + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                    eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                    console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                    console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                    sourceNodeCountPre++;
+                    //sourceNodeCount++;
+                    console.log("SOURCE NODE");
+                    console.log(sourceNodeCount);
+
+                    console.log("TARGET NODE");
+                    console.log(sourceNodeCountPre);
+
+                    console.log("4th loop");
+                    console.log("key: " + key); 
+                    console.log("value");
+                    console.log(value);
+                    console.log("length of value: " + value.length);
+                    console.log("checkNodes: " + checkNodes);
+
+                    console.log("main node counter c: " + c);
+
+                    console.log("value ID: " + value.ID)
+
+                    f++;
+                    console.log("sourceNode dictionary: ");
+                    console.log(sourceNode);
+                    console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+                    
+                    nodes.push(sourceNode[c]);
+
+                    
+                    if (k == 2) {
+                        k = 0; 
+                    }
+                    else {
+                       
+                    }
+
+                    console.log("Nodes");
+                    console.log(nodes);
+                    
+                    console.log(nodes);
+                    offsetXvals = offsetXvals;
+                    offsetYvals = offsetYvals + 100;
+                    checkNodes++;
+                    c++;
+                    console.log("value of c after increment: " + c);
+
+
+                })
+                tk++ 
+
+            }
+
+
+            
+
+            offsetXvalsLoad1 = 900;
+            offsetYvalsLoad1 = 200;
+
+            console.log("load 1");
+
+           
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+            sourceNodeCount = 13;
+            var g = 0;
+            
+            sourceNodeCount++;
+
+            
+
+            eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvalsLoad1 + ', offsetY: ' + offsetYvalsLoad1 + ', fillColor: "grey", labels: [{text: "LOAD 1", offset: {x: 0.5, y: 0.5}}]};');
+
+            
+            eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + 13 + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+            //sourceNodeCount++;
+            f++
+           
+            eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + 14 + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+            f++
+            
+            eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + 18 + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+            f++
+            
+            eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + 19 + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+            f++
+          
+            eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + 17 + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+            f++
+            console.log("sourceNode in 1 Node: " + sourceNodeCount);
+            console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+            sourceNodeCountPre++; 
+            console.log("LOAD 1");
+            console.log(sourceNodeCount);
+
+            console.log("TARGET NODE");
+            console.log(sourceNodeCountPre);
+
+            console.log("4th loop");
+            
+            console.log("checkNodes: " + checkNodes);
+
+            console.log("main node counter c: " + c);
+
+            
+
+            f++;
+            console.log("sourceNode dictionary: ");
+            console.log(sourceNode);
+            
+            nodes.push(sourceNode[c]);
+
+            console.log("Nodes");
+            console.log(nodes);
+           
+            console.log(nodes);
+            offsetXvals = offsetXvals + 100;
+            offsetYvals = offsetYvals;
+            checkNodes++;
+            c++;
+            console.log("value of c after increment: " + c);
+
+
+
+
+            
+
+
+            
+
+            offsetXvals1 = 300;
+            offsetYvals1 = 600;
+
+            console.log("counting sub1-nodes 17 and 25");
+            var sub1nodeslen2 = success.data.posts[1].sub1.length;
+            console.log(sub1nodeslen2);
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+
+
+            sourceNodeCount = 1;
+            var h = 0;
+            var tk = 0; 
+
+            for (var i = 1; i < 2; i++) {
+
+                sourceNodeCount++;
+                
+                if (tk == 1) {
+                    offsetXvals1 = 400;
+                    offsetYvals1 = 470;
+                    //sourceNodeCount = 6;
+                }
+
+
+                angular.forEach(success.data.posts[1].sub1, function (value, key) {
+
+
+                    console.log("4th loop: i : " + i);
+                    console.log("key: " + key);
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+
+                    eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals1 + ', offsetY: ' + offsetYvals1 + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                    eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                    console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                    console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                    sourceNodeCountPre++;
+                    //sourceNodeCount++;
+                    console.log("SOURCE NODE");
+                    console.log(sourceNodeCount);
+
+                    console.log("TARGET NODE");
+                    console.log(sourceNodeCountPre);
+
+                    console.log("4th loop");
+                    console.log("key: " + key); 
+                    console.log("value");
+                    console.log(value);
+                    console.log("length of value: " + value.length);
+                    console.log("checkNodes: " + checkNodes);
+
+                    console.log("main node counter c: " + c);
+
+                    console.log("value ID: " + value.ID)
+
+                    f++;
+                    console.log("sourceNode dictionary: ");
+                    console.log(sourceNode);
+                    console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+
+                    nodes.push(sourceNode[c]);
+
+
+                    if (k == 2) {
+                        k = 0;
+                    }
+                    else {
+                        
+                    }
+
+                    console.log("Nodes");
+                    console.log(nodes);
+                    
+                    console.log(nodes);
+                    offsetXvals1 = offsetXvals1;
+                    offsetYvals1 = offsetYvals1 + 300;
+                    checkNodes++;
+                    c++;
+                    console.log("value of c after increment: " + c);
+
+
+                })
+                tk++ 
+
+            }
+
+            
+            offsetXvals1 = 400;
+            offsetYvals1 = 600;
+
+            console.log("counting sub1-nodes 18");
+            var sub2nodeslen2 = success.data.posts[1].sub1[0].sub2.length;
+            console.log(sub2nodeslen2);
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+
+
+            sourceNodeCount = 20; 
+            var h = 0;
+            var tk = 0; 
+
+            for (var i = 1; i < 2; i++) {
+
+                sourceNodeCount++;
+                
+                if (tk == 1) {
+                    offsetXvals1 = 400;
+                    offsetYvals1 = 470;
+                    //sourceNodeCount = 6;
+                }
+
+                angular.forEach(success.data.posts[1].sub1[0].sub2, function (value, key) {
+
+
+                    console.log("4th loop: i : " + i);
+                    console.log("key: " + key);
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+
+                    eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals1 + ', offsetY: ' + offsetYvals1 + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                    eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                    console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                    console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                    sourceNodeCountPre++;
+                    //sourceNodeCount++;
+                    console.log("SOURCE NODE");
+                    console.log(sourceNodeCount);
+
+                    console.log("TARGET NODE");
+                    console.log(sourceNodeCountPre);
+
+                    console.log("4th loop");
+                    console.log("key: " + key); 
+                   
+                    console.log("value");
+                    console.log(value);
+                    console.log("length of value: " + value.length);
+                    console.log("checkNodes: " + checkNodes);
+
+                    console.log("main node counter c: " + c);
+
+                    console.log("value ID: " + value.ID)
+
+                    f++;
+                    console.log("sourceNode dictionary: ");
+                    console.log(sourceNode);
+                    console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+                   
+                    nodes.push(sourceNode[c]);
+
+                   
+                    if (k == 2) {
+                        k = 0; 
+                    }
+                    else {
+                        
+                    }
+
+                    console.log("Nodes");
+                    console.log(nodes);
+                    
+                    console.log(nodes);
+                    offsetXvals1 = offsetXvals1;
+                    offsetYvals1 = offsetYvals1 + 200;
+                    checkNodes++;
+                    c++;
+                    console.log("value of c after increment: " + c);
+
+
+                })
+                tk++ 
+
+            }
+
+           
+
+            offsetXvals1 = 400;
+            offsetYvals1 = 1000;
+
+            console.log("counting sub1-nodes 26");
+            var sub2nodeslen2 = success.data.posts[1].sub1[1].sub2.length;
+            console.log(sub2nodeslen2);
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+
+
+            sourceNodeCount = 21; 
+            var h = 0;
+            var tk = 0; 
+            for (var i = 0; i < 1; i++) {
+
+                sourceNodeCount++;
+               
+                if (tk == 1) {
+                    offsetXvals1 = 400;
+                    offsetYvals1 = 470;
+                    //sourceNodeCount = 6;
+                }
+
+                angular.forEach(success.data.posts[1].sub1[1].sub2, function (value, key) {
+
+
+                    console.log("4th loop: i : " + i);
+                    console.log("key: " + key);
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+
+                    eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals1 + ', offsetY: ' + offsetYvals1 + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                    eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                    console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                    console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                    sourceNodeCountPre++;
+                    //sourceNodeCount++;
+                    console.log("SOURCE NODE");
+                    console.log(sourceNodeCount);
+
+                    console.log("TARGET NODE");
+                    console.log(sourceNodeCountPre);
+
+                    console.log("4th loop");
+                    console.log("key: " + key); 
+                    console.log("value");
+                    console.log(value);
+                    console.log("length of value: " + value.length);
+                    console.log("checkNodes: " + checkNodes);
+
+                    console.log("main node counter c: " + c);
+
+                    console.log("value ID: " + value.ID)
+
+                    f++;
+                    console.log("sourceNode dictionary: ");
+                    console.log(sourceNode);
+                    console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+                    
+                    nodes.push(sourceNode[c]);
+
+                   
+                    if (k == 2) {
+                        k = 0; 
+                    }
+                    else {
+                        
+                    }
+
+                    console.log("Nodes");
+                    console.log(nodes);
+                    
+                    console.log(nodes);
+                    offsetXvals1 = offsetXvals1;
+                    offsetYvals1 = offsetYvals1 + 200;
+                    checkNodes++;
+                    c++;
+                    console.log("value of c after increment: " + c);
+
+
+                })
+                tk++ 
+
+            }
+
+            
+            offsetXvals1 = 500;
+            offsetYvals1 = 550;
+
+            console.log("counting sub1-nodes 19, 21, 23, 24");
+            var sub3nodeslen2 = success.data.posts[1].sub1[0].sub2[0].sub3.length;
+            console.log(sub3nodeslen2);
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+
+
+            sourceNodeCount = 22; 
+            var h = 0;
+            var tk = 0; 
+            for (var i = 0; i < 2; i++) {
+
+                sourceNodeCount++;
+                
+                if (tk == 1) {
+                    offsetXvals1 = 500;
+                    offsetYvals1 = 800;
+                    //sourceNodeCount = 6;
+                }
+
+                angular.forEach(success.data.posts[1].sub1[0].sub2[i].sub3, function (value, key) {
+
+
+                    console.log("4th loop: i : " + i);
+                    console.log("key: " + key);
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+
+                    eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals1 + ', offsetY: ' + offsetYvals1 + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                    eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                    console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                    console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                    sourceNodeCountPre++;
+                    //sourceNodeCount++;
+                    console.log("SOURCE NODE");
+                    console.log(sourceNodeCount);
+
+                    console.log("TARGET NODE");
+                    console.log(sourceNodeCountPre);
+
+                    console.log("4th loop");
+                    console.log("key: " + key); 
+                    console.log("value");
+                    console.log(value);
+                    console.log("length of value: " + value.length);
+                    console.log("checkNodes: " + checkNodes);
+
+                    console.log("main node counter c: " + c);
+
+                    console.log("value ID: " + value.ID)
+
+                    f++;
+                    console.log("sourceNode dictionary: ");
+                    console.log(sourceNode);
+                    console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+                    
+                    nodes.push(sourceNode[c]);
+
+                    
+                    if (k == 2) {
+                        k = 0;
+                    }
+                    else {
+                        
+                    }
+
+                    console.log("Nodes");
+                    console.log(nodes);
+                    
+                    console.log(nodes);
+                    offsetXvals1 = offsetXvals1;
+                    offsetYvals1 = offsetYvals1 + 100;
+                    checkNodes++;
+                    c++;
+                    console.log("value of c after increment: " + c);
+
+
+                })
+                tk++ 
+
+            }
+
+           
+            offsetXvals1 = 500;
+            offsetYvals1 = 1000;
+
+            console.log("counting sub1-nodes 27 and 29");
+            var sub3nodeslen2 = success.data.posts[1].sub1[0].sub2[0].sub3.length;
+            console.log(sub3nodeslen2);
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+
+
+            sourceNodeCount = 24; 
+            var h = 0;
+            var tk = 0; 
+            for (var i = 1; i < 2; i++) {
+
+                sourceNodeCount++;
+                
+                if (tk == 1) {
+                    offsetXvals1 = 500;
+                    offsetYvals1 = 800;
+                    //sourceNodeCount = 6;
+                }
+
+                angular.forEach(success.data.posts[1].sub1[1].sub2[0].sub3, function (value, key) {
+
+
+                    console.log("4th loop: i : " + i);
+                    console.log("key: " + key);
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+
+                    eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals1 + ', offsetY: ' + offsetYvals1 + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                    eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                    console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                    console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                    sourceNodeCountPre++;
+                    //sourceNodeCount++;
+                    console.log("SOURCE NODE");
+                    console.log(sourceNodeCount);
+
+                    console.log("TARGET NODE");
+                    console.log(sourceNodeCountPre);
+
+                    console.log("4th loop");
+                    console.log("key: " + key); 
+                    console.log("value");
+                    console.log(value);
+                    console.log("length of value: " + value.length);
+                    console.log("checkNodes: " + checkNodes);
+
+                    console.log("main node counter c: " + c);
+
+                    console.log("value ID: " + value.ID)
+
+                    f++;
+                    console.log("sourceNode dictionary: ");
+                    console.log(sourceNode);
+                    console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+                   
+                    nodes.push(sourceNode[c]);
+
+                   
+                    if (k == 2) {
+                        k = 0; 
+                    }
+                    else {
+                        
+                    }
+
+                    console.log("Nodes");
+                    console.log(nodes);
+                    
+                    console.log(nodes);
+                    offsetXvals1 = offsetXvals1;
+                    offsetYvals1 = offsetYvals1 + 100;
+                    checkNodes++;
+                    c++;
+                    console.log("value of c after increment: " + c);
+
+
+                })
+                tk++ 
+
+            }
+
+            
+
+            offsetXvals1 = 600;
+            offsetYvals1 = 550;
+
+            console.log("counting sub1-nodes 28");
+            var sub4nodeslen2 = success.data.posts[1].sub1[0].sub2[0].sub3[0].sub4.length;
+            console.log(sub4nodeslen2);
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+
+
+            sourceNodeCount = 25; 
+            var h = 0;
+            var tk = 0; 
+            for (var i = 1; i < 2; i++) {
+
+                sourceNodeCount++;
+               
+                if (tk == 1) {
+                    offsetXvals1 = 500;
+                    offsetYvals1 = 800;
+                    //sourceNodeCount = 6;
+                }
+
+                angular.forEach(success.data.posts[1].sub1[0].sub2[0].sub3[0].sub4, function (value, key) {
+
+
+                    console.log("4th loop: i : " + i);
+                    console.log("key: " + key);
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+
+                    eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals1 + ', offsetY: ' + offsetYvals1 + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                    eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                    console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                    console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                    sourceNodeCountPre++;
+                    //sourceNodeCount++;
+                    console.log("SOURCE NODE");
+                    console.log(sourceNodeCount);
+
+                    console.log("TARGET NODE");
+                    console.log(sourceNodeCountPre);
+
+                    console.log("4th loop");
+                    console.log("key: " + key); 
+                    console.log("value");
+                    console.log(value);
+                    console.log("length of value: " + value.length);
+                    console.log("checkNodes: " + checkNodes);
+
+                    console.log("main node counter c: " + c);
+
+                    console.log("value ID: " + value.ID)
+
+                    f++;
+                    console.log("sourceNode dictionary: ");
+                    console.log(sourceNode);
+                    console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+                    
+                    nodes.push(sourceNode[c]);
+
+                   
+                    if (k == 2) {
+                        k = 0; 
+                    }
+                    else {
+                        
+                    }
+
+                    console.log("Nodes");
+                    console.log(nodes);
+                   
+                    console.log(nodes);
+                    offsetXvals1 = offsetXvals1;
+                    offsetYvals1 = offsetYvals1 + 100;
+                    checkNodes++;
+                    c++;
+                    console.log("value of c after increment: " + c);
+
+
+                })
+                tk++ 
+
+            }
+
+           
+
+            offsetXvals1 = 600;
+            offsetYvals1 = 1000;
+
+            console.log("counting sub1-nodes 28");
+            var sub4nodeslen2 = success.data.posts[1].sub1[0].sub2[0].sub3[0].sub4.length;
+            console.log(sub4nodeslen2);
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+
+
+            sourceNodeCount = 29; 
+            var h = 0;
+            var tk = 0; 
+            for (var i = 1; i < 2; i++) {
+
+                sourceNodeCount++;
+                
+                if (tk == 1) {
+                    offsetXvals1 = 500;
+                    offsetYvals1 = 800;
+                    //sourceNodeCount = 6;
+                }
+
+                angular.forEach(success.data.posts[1].sub1[1].sub2[0].sub3[0].sub4, function (value, key) {
+
+
+                    console.log("4th loop: i : " + i);
+                    console.log("key: " + key);
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+
+                    eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals1 + ', offsetY: ' + offsetYvals1 + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                    eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                    console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                    console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                    sourceNodeCountPre++;
+                    //sourceNodeCount++;
+                    console.log("SOURCE NODE");
+                    console.log(sourceNodeCount);
+
+                    console.log("TARGET NODE");
+                    console.log(sourceNodeCountPre);
+
+                    console.log("4th loop");
+                    console.log("key: " + key); 
+                    console.log("value");
+                    console.log(value);
+                    console.log("length of value: " + value.length);
+                    console.log("checkNodes: " + checkNodes);
+
+                    console.log("main node counter c: " + c);
+
+                    console.log("value ID: " + value.ID)
+
+                    f++;
+                    console.log("sourceNode dictionary: ");
+                    console.log(sourceNode);
+                    console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+                    
+                    nodes.push(sourceNode[c]);
+
+                    
+                    if (k == 2) {
+                        k = 0; 
+                    }
+                    else {
+                        
+                    }
+
+                    console.log("Nodes");
+                    console.log(nodes);
+                    
+                    console.log(nodes);
+                    offsetXvals1 = offsetXvals1;
+                    offsetYvals1 = offsetYvals1 + 100;
+                    checkNodes++;
+                    c++;
+                    console.log("value of c after increment: " + c);
+
+
+                })
+                tk++ 
+
+            }
+
+           
+
+            offsetXvals1 = 700;
+            offsetYvals1 = 1100;
+
+            console.log("counting sub1-nodes 28");
+            var sub4nodeslen2 = success.data.posts[1].sub1[0].sub2[0].sub3[0].sub4.length;
+            console.log(sub4nodeslen2);
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+
+
+            sourceNodeCount = 30; 
+            var h = 0;
+            var tk = 0; 
+            for (var i = 1; i < 2; i++) {
+
+                sourceNodeCount++;
+                
+                if (tk == 1) {
+                    offsetXvals1 = 500;
+                    offsetYvals1 = 800;
+                    //sourceNodeCount = 6;
+                }
+
+                angular.forEach(success.data.posts[1].sub1[1].sub2[0].sub3[1].sub4, function (value, key) {
+
+
+                    console.log("4th loop: i : " + i);
+                    console.log("key: " + key);
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+
+                    eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals1 + ', offsetY: ' + offsetYvals1 + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                    eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                    console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                    console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                    sourceNodeCountPre++;
+                    //sourceNodeCount++;
+                    console.log("SOURCE NODE");
+                    console.log(sourceNodeCount);
+
+                    console.log("TARGET NODE");
+                    console.log(sourceNodeCountPre);
+
+                    console.log("4th loop");
+                    console.log("key: " + key); 
+                    console.log("value");
+                    console.log(value);
+                    console.log("length of value: " + value.length);
+                    console.log("checkNodes: " + checkNodes);
+
+                    console.log("main node counter c: " + c);
+
+                    console.log("value ID: " + value.ID)
+
+                    f++;
+                    console.log("sourceNode dictionary: ");
+                    console.log(sourceNode);
+                    console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+                   
+                    nodes.push(sourceNode[c]);
+
+                   
+                    if (k == 2) {
+                        k = 0; 
+                    }
+                    else {
+                        
+                    }
+
+                    console.log("Nodes");
+                    console.log(nodes);
+                    
+                    console.log(nodes);
+                    offsetXvals1 = offsetXvals1;
+                    offsetYvals1 = offsetYvals1 + 100;
+                    checkNodes++;
+                    c++;
+                    console.log("value of c after increment: " + c);
+
+
+                })
+                tk++ 
+
+            }
+
+           
+
+            offsetXvals1 = 800;
+            offsetYvals1 = 1200;
+
+            console.log("counting sub1-nodes 32");
+            var sub5nodeslen2 = success.data.posts[1].sub1[1].sub2[0].sub3[1].sub4[1].sub5.length;
+            console.log(sub5nodeslen2);
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+
+
+            sourceNodeCount = 34; 
+            var h = 0;
+            var tk = 0; 
+            for (var i = 1; i < 2; i++) {
+
+                sourceNodeCount++;
+                
+                if (tk == 1) {
+                    offsetXvals1 = 500;
+                    offsetYvals1 = 800;
+                    //sourceNodeCount = 6;
+                }
+
+                angular.forEach(success.data.posts[1].sub1[1].sub2[0].sub3[1].sub4[1].sub5, function (value, key) {
+
+
+                    console.log("4th loop: i : " + i);
+                    console.log("key: " + key);
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+
+                    eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals1 + ', offsetY: ' + offsetYvals1 + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                    eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                    console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                    console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                    sourceNodeCountPre++;
+                    //sourceNodeCount++;
+                    console.log("SOURCE NODE");
+                    console.log(sourceNodeCount);
+
+                    console.log("TARGET NODE");
+                    console.log(sourceNodeCountPre);
+
+                    console.log("4th loop");
+                    console.log("key: " + key); 
+                    console.log("value");
+                    console.log(value);
+                    console.log("length of value: " + value.length);
+                    console.log("checkNodes: " + checkNodes);
+
+                    console.log("main node counter c: " + c);
+
+                    console.log("value ID: " + value.ID)
+
+                    f++;
+                    console.log("sourceNode dictionary: ");
+                    console.log(sourceNode);
+                    console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+                    
+                    nodes.push(sourceNode[c]);
+
+                   
+                    if (k == 2) {
+                        k = 0; 
+                    }
+                    else {
+                       
+                    }
+
+                    console.log("Nodes");
+                    console.log(nodes);
+                    //console.log(JSON.stringify(nodes, null, '\t'));
+                    console.log(nodes);
+                    offsetXvals1 = offsetXvals1;
+                    offsetYvals1 = offsetYvals1 + 100;
+                    checkNodes++;
+                    c++;
+                    console.log("value of c after increment: " + c);
+
+
+                })
+                tk++ 
+
+            }
+
+            
+            offsetXvalsLoad2 = 900;
+            offsetYvalsLoad2 = 850;
+
+            console.log("load 2");
+
+            
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+            sourceNodeCount = 22;
+            var g = 0;
+            
+
+            sourceNodeCount++;
+
+           
+
+            eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvalsLoad2 + ', offsetY: ' + offsetYvalsLoad2 + ', fillColor: "grey", labels: [{text: "LOAD 2", offset: {x: 0.5, y: 0.5}}]};');
+
+           
+            eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + 32 + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+            //sourceNodeCount++;
+            f++
+
+            
+            eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + 27 + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+            f++
+
+          
+            eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + 28 + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+            f++
+            
+            eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + 29 + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+            f++
+
+            
+            eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + 33 + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+            f++
+
+           
+            eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + 34 + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+            f++
+
+           
+            eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + 36 + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+            f++
+
+
+            console.log("sourceNode in 1 Node: " + sourceNodeCount);
+            console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+            sourceNodeCountPre++; 
+            console.log("LOAD 1");
+            console.log(sourceNodeCount);
+
+            console.log("TARGET NODE");
+            console.log(sourceNodeCountPre);
+
+            console.log("4th loop");
+            
+            console.log("checkNodes: " + checkNodes);
+
+            console.log("main node counter c: " + c);
+
+           
+
+            f++;
+            console.log("sourceNode dictionary: ");
+            console.log(sourceNode);
+           
+            nodes.push(sourceNode[c]);
+
+            console.log("Nodes");
+            console.log(nodes);
+           
+            console.log(nodes);
+            offsetXvals = offsetXvals + 100;
+            offsetYvals = offsetYvals;
+            checkNodes++;
+            c++;
+            console.log("value of c after increment: " + c);
+
+
+
+
+           
+            offsetXvals2 = 300;
+            offsetYvals2 = 1400;
+
+            console.log("counting sub1-nodes 33 and 41");
+            var sub1nodeslen3 = success.data.posts[2].sub1.length;
+            console.log(sub1nodeslen3);
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+
+
+            sourceNodeCount = 2; 
+            var h = 0;
+            var tk = 0; 
+
+            for (var i = 1; i < 2; i++) {
+
+                sourceNodeCount++;
+                
+                if (tk == 1) {
+                    offsetXvals2 = 400;
+                    offsetYvals2 = 470;
+                    //sourceNodeCount = 6;
+                }
+
+                angular.forEach(success.data.posts[2].sub1, function (value, key) {
+
+
+                    console.log("4th loop: i : " + i);
+                    console.log("key: " + key);
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+
+                    eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals2 + ', offsetY: ' + offsetYvals2 + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                    eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                    console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                    console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                    sourceNodeCountPre++;
+                    
+                    console.log("SOURCE NODE");
+                    console.log(sourceNodeCount);
+
+                    console.log("TARGET NODE");
+                    console.log(sourceNodeCountPre);
+
+                    console.log("4th loop");
+                    console.log("key: " + key);
+                    console.log("value");
+                    console.log(value);
+                    console.log("length of value: " + value.length);
+                    console.log("checkNodes: " + checkNodes);
+
+                    console.log("main node counter c: " + c);
+
+                    console.log("value ID: " + value.ID)
+
+                    f++;
+                    console.log("sourceNode dictionary: ");
+                    console.log(sourceNode);
+                    console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+                    
+                    nodes.push(sourceNode[c]);
+
+                    
+                    if (k == 2) {
+                        k = 0; 
+                    }
+                    else {
+                        
+                    }
+
+                    console.log("Nodes");
+                    console.log(nodes);
+                    
+                    console.log(nodes);
+                    offsetXvals2 = offsetXvals2;
+                    offsetYvals2 = offsetYvals2 + 300;
+                    checkNodes++;
+                    c++;
+                    console.log("value of c after increment: " + c);
+
+
+                })
+                tk++ 
+            }
+
+         
+            offsetXvals2 = 400;
+            offsetYvals2 = 1400;
+
+            console.log("counting sub1-nodes 33 and 41");
+            var sub2nodeslen3 = success.data.posts[2].sub1[0].sub2.length;
+            console.log(sub2nodeslen3);
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+
+
+            sourceNodeCount = 37; 
+            var h = 0;
+            var tk = 0; 
+            for (var i = 1; i < 2; i++) {
+
+                sourceNodeCount++;
+               
+                if (tk == 1) {
+                    offsetXvals2 = 400;
+                    offsetYvals2 = 470;
+                    //sourceNodeCount = 6;
+                }
+
+                angular.forEach(success.data.posts[2].sub1[0].sub2, function (value, key) {
+
+
+                    console.log("4th loop: i : " + i);
+                    console.log("key: " + key);
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+
+                    eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals2 + ', offsetY: ' + offsetYvals2 + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                    eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                    console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                    console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                    sourceNodeCountPre++;
+                    //sourceNodeCount++;
+                    console.log("SOURCE NODE");
+                    console.log(sourceNodeCount);
+
+                    console.log("TARGET NODE");
+                    console.log(sourceNodeCountPre);
+
+                    console.log("4th loop");
+                    console.log("key: " + key); 
+                    console.log("value");
+                    console.log(value);
+                    console.log("length of value: " + value.length);
+                    console.log("checkNodes: " + checkNodes);
+
+                    console.log("main node counter c: " + c);
+
+                    console.log("value ID: " + value.ID)
+
+                    f++;
+                    console.log("sourceNode dictionary: ");
+                    console.log(sourceNode);
+                    console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+                    
+                    nodes.push(sourceNode[c]);
+
+                   
+                    if (k == 2) {
+                        k = 0; 
+                    }
+                    else {
+                        
+                    }
+
+                    console.log("Nodes");
+                    console.log(nodes);
+                  
+                    console.log(nodes);
+                    offsetXvals2 = offsetXvals2;
+                    offsetYvals2 = offsetYvals2 + 200;
+                    checkNodes++;
+                    c++;
+                    console.log("value of c after increment: " + c);
+
+
+                })
+                tk++
+            }
+
+           
+            offsetXvals2 = 400;
+            offsetYvals2 = 1700;
+
+            console.log("counting sub1-nodes 42 and 43");
+            var sub2nodeslen3 = success.data.posts[2].sub1[1].sub2.length;
+            console.log(sub2nodeslen3);
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+
+
+            sourceNodeCount = 38; 
+            var h = 0;
+            var tk = 0; 
+
+            for (var i = 1; i < 2; i++) {
+
+                sourceNodeCount++;
+                
+                if (tk == 1) {
+                    offsetXvals2 = 400;
+                    offsetYvals2 = 470;
+                    //sourceNodeCount = 6;
+                }
+
+                angular.forEach(success.data.posts[2].sub1[1].sub2, function (value, key) {
+
+
+                    console.log("4th loop: i : " + i);
+                    console.log("key: " + key);
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+
+                    eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals2 + ', offsetY: ' + offsetYvals2 + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                    eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                    console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                    console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                    sourceNodeCountPre++;
+                    //sourceNodeCount++;
+                    console.log("SOURCE NODE");
+                    console.log(sourceNodeCount);
+
+                    console.log("TARGET NODE");
+                    console.log(sourceNodeCountPre);
+
+                    console.log("4th loop");
+                    console.log("key: " + key); 
+                    console.log("value");
+                    console.log(value);
+                    console.log("length of value: " + value.length);
+                    console.log("checkNodes: " + checkNodes);
+
+                    console.log("main node counter c: " + c);
+
+                    console.log("value ID: " + value.ID)
+
+                    f++;
+                    console.log("sourceNode dictionary: ");
+                    console.log(sourceNode);
+                    console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+                    
+                    nodes.push(sourceNode[c]);
+
+                   
+                    if (k == 2) {
+                        k = 0;
+                    }
+                    else {
+                       
+                    }
+
+                    console.log("Nodes");
+                    console.log(nodes);
+                   
+                    console.log(nodes);
+                    offsetXvals2 = offsetXvals2;
+                    offsetYvals2 = offsetYvals2 + 150;
+                    checkNodes++;
+                    c++;
+                    console.log("value of c after increment: " + c);
+
+
+                })
+                tk++ 
+            }
+
+          
+
+            offsetXvals2 = 500;
+            offsetYvals2 = 1630;
+
+            console.log("counting sub1-nodes 42 and 43");
+            var sub2nodeslen3 = success.data.posts[2].sub1[1].sub2[0].sub3.length;
+            console.log(sub2nodeslen3);
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+
+
+            sourceNodeCount = 40; 
+            var h = 0;
+            var tk = 0;
+            for (var i = 1; i < 2; i++) {
+
+                sourceNodeCount++;
+                
+                if (tk == 1) {
+                    offsetXvals2 = 400;
+                    offsetYvals2 = 470;
+                    //sourceNodeCount = 6;
+                }
+
+                angular.forEach(success.data.posts[2].sub1[1].sub2[0].sub3, function (value, key) {
+
+
+                    console.log("4th loop: i : " + i);
+                    console.log("key: " + key);
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+
+                    eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals2 + ', offsetY: ' + offsetYvals2 + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                    eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                    console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                    console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                    sourceNodeCountPre++;
+                    //sourceNodeCount++;
+                    console.log("SOURCE NODE");
+                    console.log(sourceNodeCount);
+
+                    console.log("TARGET NODE");
+                    console.log(sourceNodeCountPre);
+
+                    console.log("4th loop");
+                    console.log("key: " + key); 
+                    console.log("value");
+                    console.log(value);
+                    console.log("length of value: " + value.length);
+                    console.log("checkNodes: " + checkNodes);
+
+                    console.log("main node counter c: " + c);
+
+                    console.log("value ID: " + value.ID)
+
+                    f++;
+                    console.log("sourceNode dictionary: ");
+                    console.log(sourceNode);
+                    console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+                    
+                    nodes.push(sourceNode[c]);
+
+                   
+                    if (k == 2) {
+                        k = 0; 
+                    }
+                    else {
+                       
+                    }
+
+                    console.log("Nodes");
+                    console.log(nodes);
+                    //console.log(JSON.stringify(nodes, null, '\t'));
+                    console.log(nodes);
+                    offsetXvals2 = offsetXvals2;
+                    offsetYvals2 = offsetYvals2 + 150;
+                    checkNodes++;
+                    c++;
+                    console.log("value of c after increment: " + c);
+
+
+                })
+                tk++ 
+            }
+
+           
+
+            offsetXvals2 = 500;
+            offsetYvals2 = 1400;
+
+            console.log("counting sub1-node 35");
+            var sub2nodeslen3 = success.data.posts[2].sub1[0].sub2[0].sub3.length;
+            console.log(sub2nodeslen3);
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+
+
+            sourceNodeCount = 39; 
+            var h = 0;
+            var tk = 0; 
+
+            for (var i = 1; i < 2; i++) {
+
+                sourceNodeCount++;
+                
+                if (tk == 1) {
+                    offsetXvals2 = 400;
+                    offsetYvals2 = 470;
+                    //sourceNodeCount = 6;
+                }
+
+                angular.forEach(success.data.posts[2].sub1[0].sub2[0].sub3, function (value, key) {
+
+
+                    console.log("4th loop: i : " + i);
+                    console.log("key: " + key);
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+
+                    eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals2 + ', offsetY: ' + offsetYvals2 + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                    eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                    console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                    console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                    sourceNodeCountPre++;
+                    //sourceNodeCount++;
+                    console.log("SOURCE NODE");
+                    console.log(sourceNodeCount);
+
+                    console.log("TARGET NODE");
+                    console.log(sourceNodeCountPre);
+
+                    console.log("4th loop");
+                    console.log("key: " + key); 
+                    console.log("value");
+                    console.log(value);
+                    console.log("length of value: " + value.length);
+                    console.log("checkNodes: " + checkNodes);
+
+                    console.log("main node counter c: " + c);
+
+                    console.log("value ID: " + value.ID)
+
+                    f++;
+                    console.log("sourceNode dictionary: ");
+                    console.log(sourceNode);
+                    console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+                    
+                    nodes.push(sourceNode[c]);
+
+                   
+                    if (k == 2) {
+                        k = 0; 
+                    }
+                    else {
+                       
+                    }
+
+                    console.log("Nodes");
+                    console.log(nodes);
+                    
+                    console.log(nodes);
+                    offsetXvals2 = offsetXvals2;
+                    offsetYvals2 = offsetYvals2 + 200;
+                    checkNodes++;
+                    c++;
+                    console.log("value of c after increment: " + c);
+
+
+                })
+                tk++ 
+            }
+
+           
+
+            offsetXvals2 = 600;
+            offsetYvals2 = 1300;
+
+            console.log("counting sub1-node 35");
+            var sub2nodeslen3 = success.data.posts[2].sub1[0].sub2[0].sub3.length;
+            console.log(sub2nodeslen3);
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+
+
+            sourceNodeCount = 43; 
+            var h = 0;
+            var tk = 0; 
+
+            for (var i = 1; i < 2; i++) {
+
+                sourceNodeCount++;
+                
+                if (tk == 1) {
+                    offsetXvals2 = 400;
+                    offsetYvals2 = 470;
+                    //sourceNodeCount = 6;
+                }
+
+                angular.forEach(success.data.posts[2].sub1[0].sub2[0].sub3[0].sub4, function (value, key) {
+
+
+                    console.log("4th loop: i : " + i);
+                    console.log("key: " + key);
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+
+                    eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals2 + ', offsetY: ' + offsetYvals2 + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                    eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                    console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                    console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                    sourceNodeCountPre++;
+                    //sourceNodeCount++;
+                    console.log("SOURCE NODE");
+                    console.log(sourceNodeCount);
+
+                    console.log("TARGET NODE");
+                    console.log(sourceNodeCountPre);
+
+                    console.log("4th loop");
+                    console.log("key: " + key); 
+                    console.log("value");
+                    console.log(value);
+                    console.log("length of value: " + value.length);
+                    console.log("checkNodes: " + checkNodes);
+
+                    console.log("main node counter c: " + c);
+
+                    console.log("value ID: " + value.ID)
+
+                    f++;
+                    console.log("sourceNode dictionary: ");
+                    console.log(sourceNode);
+                    console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+                    
+                    nodes.push(sourceNode[c]);
+
+                    
+                    if (k == 2) {
+                        k = 0; 
+                    }
+                    else {
+                        
+                    }
+
+                    console.log("Nodes");
+                    console.log(nodes);
+                    
+                    console.log(nodes);
+                    offsetXvals2 = offsetXvals2;
+                    offsetYvals2 = offsetYvals2 + 200;
+                    checkNodes++;
+                    c++;
+                    console.log("value of c after increment: " + c);
+
+
+                })
+                tk++ 
+            }
+
+            
+
+            offsetXvals2 = 700;
+            offsetYvals2 = 1300;
+
+            console.log("counting sub1-node 37");
+            var sub2nodeslen3 = success.data.posts[2].sub1[0].sub2[0].sub3.length;
+            console.log(sub2nodeslen3);
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+
+
+            sourceNodeCount = 44; 
+            var h = 0;
+            var tk = 0; 
+            for (var i = 1; i < 2; i++) {
+
+                sourceNodeCount++;
+                
+                if (tk == 1) {
+                    offsetXvals2 = 400;
+                    offsetYvals2 = 470;
+                    //sourceNodeCount = 6;
+                }
+
+                angular.forEach(success.data.posts[2].sub1[0].sub2[0].sub3[0].sub4[0].sub5, function (value, key) {
+
+
+                    console.log("4th loop: i : " + i);
+                    console.log("key: " + key);
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+
+                    eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals2 + ', offsetY: ' + offsetYvals2 + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                    eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                    console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                    console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                    sourceNodeCountPre++;
+                    //sourceNodeCount++;
+                    console.log("SOURCE NODE");
+                    console.log(sourceNodeCount);
+
+                    console.log("TARGET NODE");
+                    console.log(sourceNodeCountPre);
+
+                    console.log("4th loop");
+                    console.log("key: " + key); 
+                    console.log("value");
+                    console.log(value);
+                    console.log("length of value: " + value.length);
+                    console.log("checkNodes: " + checkNodes);
+
+                    console.log("main node counter c: " + c);
+
+                    console.log("value ID: " + value.ID)
+
+                    f++;
+                    console.log("sourceNode dictionary: ");
+                    console.log(sourceNode);
+                    console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+                    
+                    nodes.push(sourceNode[c]);
+
+                   
+                    if (k == 2) {
+                        k = 0;
+                    }
+                    else {
+                        
+                    }
+
+                    console.log("Nodes");
+                    console.log(nodes);
+                    
+                    console.log(nodes);
+                    offsetXvals2 = offsetXvals2;
+                    offsetYvals2 = offsetYvals2 + 200;
+                    checkNodes++;
+                    c++;
+                    console.log("value of c after increment: " + c);
+
+
+                })
+                tk++ 
+
+            }
+
+          
+
+            offsetXvals2 = 700;
+            offsetYvals2 = 1500;
+
+            console.log("counting sub1-node 35");
+            var sub2nodeslen3 = success.data.posts[2].sub1[0].sub2[0].sub3.length;
+            console.log(sub2nodeslen3);
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+
+
+            sourceNodeCount = 45; 
+            var h = 0;
+            var tk = 0; 
+
+            for (var i = 1; i < 2; i++) {
+
+                sourceNodeCount++;
+                
+                if (tk == 1) {
+                    offsetXvals2 = 400;
+                    offsetYvals2 = 470;
+                    //sourceNodeCount = 6;
+                }
+
+                angular.forEach(success.data.posts[2].sub1[0].sub2[0].sub3[0].sub4[1].sub5, function (value, key) {
+
+
+                    console.log("4th loop: i : " + i);
+                    console.log("key: " + key);
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+
+                    eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals2 + ', offsetY: ' + offsetYvals2 + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                    eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                    console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                    console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                    sourceNodeCountPre++;
+                    //sourceNodeCount++;
+                    console.log("SOURCE NODE");
+                    console.log(sourceNodeCount);
+
+                    console.log("TARGET NODE");
+                    console.log(sourceNodeCountPre);
+
+                    console.log("4th loop");
+                    console.log("key: " + key);
+                    console.log("value");
+                    console.log(value);
+                    console.log("length of value: " + value.length);
+                    console.log("checkNodes: " + checkNodes);
+
+                    console.log("main node counter c: " + c);
+
+                    console.log("value ID: " + value.ID)
+
+                    f++;
+                    console.log("sourceNode dictionary: ");
+                    console.log(sourceNode);
+                    console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+                   
+                    nodes.push(sourceNode[c]);
+
+                    
+                    if (k == 2) {
+                        k = 0; 
+                    }
+                    else {
+                        
+                    }
+
+                    console.log("Nodes");
+                    console.log(nodes);
+                    
+                    console.log(nodes);
+                    offsetXvals2 = offsetXvals2;
+                    offsetYvals2 = offsetYvals2 + 200;
+                    checkNodes++;
+                    c++;
+                    console.log("value of c after increment: " + c);
+
+
+                })
+                tk++ 
+
+            }
+
+          
+
+            offsetXvals2 = 800;
+            offsetYvals2 = 1500;
+
+            console.log("counting sub1-node 35");
+            var sub2nodeslen3 = success.data.posts[2].sub1[0].sub2[0].sub3.length;
+            console.log(sub2nodeslen3);
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+
+
+            sourceNodeCount = 45; 
+            var h = 0;
+            var tk = 0; 
+
+            for (var i = 1; i < 2; i++) {
+
+                sourceNodeCount++;
+                
+                if (tk == 1) {
+                    offsetXvals2 = 400;
+                    offsetYvals2 = 470;
+                    //sourceNodeCount = 6;
+                }
+
+                angular.forEach(success.data.posts[2].sub1[0].sub2[0].sub3[0].sub4[1].sub5[0].sub6, function (value, key) {
+
+
+                    console.log("4th loop: i : " + i);
+                    console.log("key: " + key);
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+
+                    eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals2 + ', offsetY: ' + offsetYvals2 + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                    eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                    console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                    console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                    sourceNodeCountPre++;
+                    //sourceNodeCount++;
+                    console.log("SOURCE NODE");
+                    console.log(sourceNodeCount);
+
+                    console.log("TARGET NODE");
+                    console.log(sourceNodeCountPre);
+
+                    console.log("4th loop");
+                    console.log("key: " + key); 
+                    console.log("value");
+                    console.log(value);
+                    console.log("length of value: " + value.length);
+                    console.log("checkNodes: " + checkNodes);
+
+                    console.log("main node counter c: " + c);
+
+                    console.log("value ID: " + value.ID)
+
+                    f++;
+                    console.log("sourceNode dictionary: ");
+                    console.log(sourceNode);
+                    console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+                    
+                    nodes.push(sourceNode[c]);
+
+                    
+                    if (k == 2) {
+                        k = 0; 
+                    }
+                    else {
+                       
+                    }
+
+                    console.log("Nodes");
+                    console.log(nodes);
+                    
+                    console.log(nodes);
+                    offsetXvals2 = offsetXvals2;
+                    offsetYvals2 = offsetYvals2 + 200;
+                    checkNodes++;
+                    c++;
+                    console.log("value of c after increment: " + c);
+
+
+                })
+                tk++ 
+            }
+
+            
+
+            offsetXvals2 = 500;
+            offsetYvals2 = 1800;
+
+            console.log("counting sub1-node 35");
+            var sub2nodeslen3 = success.data.posts[2].sub1[1].sub2[1].sub3.length;
+            console.log(sub2nodeslen3);
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+
+
+            sourceNodeCount = 41; 
+            var h = 0;
+            var tk = 0; 
+            for (var i = 1; i < 2; i++) {
+
+                sourceNodeCount++;
+                
+                if (tk == 1) {
+                    offsetXvals2 = 400;
+                    offsetYvals2 = 470;
+                    //sourceNodeCount = 6;
+                }
+
+                angular.forEach(success.data.posts[2].sub1[1].sub2[1].sub3, function (value, key) {
+
+
+                    console.log("4th loop: i : " + i);
+                    console.log("key: " + key);
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+
+                    eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals2 + ', offsetY: ' + offsetYvals2 + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                    eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                    console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                    console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                    sourceNodeCountPre++;
+                    //sourceNodeCount++;
+                    console.log("SOURCE NODE");
+                    console.log(sourceNodeCount);
+
+                    console.log("TARGET NODE");
+                    console.log(sourceNodeCountPre);
+
+                    console.log("4th loop");
+                    console.log("key: " + key); 
+                    console.log("value");
+                    console.log(value);
+                    console.log("length of value: " + value.length);
+                    console.log("checkNodes: " + checkNodes);
+
+                    console.log("main node counter c: " + c);
+
+                    console.log("value ID: " + value.ID)
+
+                    f++;
+                    console.log("sourceNode dictionary: ");
+                    console.log(sourceNode);
+                    console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+                    
+                    nodes.push(sourceNode[c]);
+
+                   
+                    if (k == 2) {
+                        k = 0; 
+                    }
+                    else {
+                       
+                    }
+
+                    console.log("Nodes");
+                    console.log(nodes);
+                    
+                    console.log(nodes);
+                    offsetXvals2 = offsetXvals2;
+                    offsetYvals2 = offsetYvals2 + 150;
+                    checkNodes++;
+                    c++;
+                    console.log("value of c after increment: " + c);
+
+
+                })
+                tk++ 
+
+            }
+
+            
+            offsetXvals2 = 600;
+            offsetYvals2 = 1850;
+
+            console.log("counting sub1-node 35");
+            var sub2nodeslen3 = success.data.posts[2].sub1[1].sub2[1].sub3[1].sub4.length;
+            console.log(sub2nodeslen3);
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+
+
+            sourceNodeCount = 50; 
+            var h = 0;
+            var tk = 0; 
+
+            for (var i = 1; i < 2; i++) {
+
+                sourceNodeCount++;
+                
+                if (tk == 1) {
+                    offsetXvals2 = 400;
+                    offsetYvals2 = 470;
+                    
+                }
+
+                angular.forEach(success.data.posts[2].sub1[1].sub2[1].sub3[1].sub4, function (value, key) {
+
+
+                    console.log("4th loop: i : " + i);
+                    console.log("key: " + key);
+                    console.log("value: " + JSON.stringify(value, null, '\t'));
+                    console.log("length of value: " + value.length);
+
+                    eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvals2 + ', offsetY: ' + offsetYvals2 + ', labels: [{text: "ID: ' + value.ID + '", offset: {x: 0.5, y: 0.2}},{text: "V: ' + value.Voltage + '", offset: {x: 0.5, y: 0.4}},{text: "C: ' + value.Current + '", offset: {x: 0.5, y: 0.6}},{text: "P: ' + value.Power + '", offset: {x: 0.5, y: 0.8}}], ports: [{name: "in_' + String(value.ID) + '", offset: {x: 0, y: 0.5}, shape: "circle", visibility: "visibile", fillColor: "black"}]};');
+
+                    eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + sourceNodeCount + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+                    console.log("sourceNode in 1 Node: " + sourceNodeCount);
+                    console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+                    sourceNodeCountPre++;
+                    //sourceNodeCount++;
+                    console.log("SOURCE NODE");
+                    console.log(sourceNodeCount);
+
+                    console.log("TARGET NODE");
+                    console.log(sourceNodeCountPre);
+
+                    console.log("4th loop");
+                    console.log("key: " + key); 
+                    console.log("value");
+                    console.log(value);
+                    console.log("length of value: " + value.length);
+                    console.log("checkNodes: " + checkNodes);
+
+                    console.log("main node counter c: " + c);
+
+                    console.log("value ID: " + value.ID)
+
+                    f++;
+                    console.log("sourceNode dictionary: ");
+                    console.log(sourceNode);
+                    console.log("sourceNode dictionary length: " + Object.keys(sourceNode).length);
+                    
+                    nodes.push(sourceNode[c]);
+
+
+                    if (k == 2) {
+                        k = 0;
+                    }
+                    else {
+                        
+                    }
+
+                    console.log("Nodes");
+                    console.log(nodes);
+
+                    console.log(nodes);
+                    offsetXvals2 = offsetXvals2 + 100;
+                    offsetYvals2 = offsetYvals2 + 100;
+                    checkNodes++;
+                    c++;
+                    console.log("value of c after increment: " + c);
+
+
+                })
+                tk++ 
+
+            }
+
+           
+
+             offsetXvalsLoad2 = 1050;
+            offsetYvalsLoad2 = 1630;
+
+            console.log("load 2");
+
+            
+            console.log("sourceNodeCount value: " + sourceNodeCount);
+
+            sourceNodeCount = 45;
+            var g = 0;
+            
+
+            sourceNodeCount++;
+
+            
+
+            eval('sourceNode[' + c + '] = {name: "mainnode' + String(c) + '", offsetX: ' + offsetXvalsLoad2 + ', offsetY: ' + offsetYvalsLoad2 + ', fillColor: "grey", labels: [{text: "LOAD 3", offset: {x: 0.5, y: 0.5}}]};');
+
+            
+            eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + 47 + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+
+            
+            f++
+            
+
+            eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + 49 + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+            f++
+            
+            
+           
+            eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + 43 + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+            f++
+            
+
+            eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + 50 + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+            f++
+            
+
+           
+            eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + 52 + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+            f++
+            
+
+           
+            eval('connectors.push({name: "flow1' + String(f) + '", sourceNode: sourceNode[' + 53 + '].name, targetNode: sourceNode[' + sourceNodeCountPre + '].name})');
+            f++
+           
+
+            console.log("sourceNode in 1 Node: " + sourceNodeCount);
+            console.log("targetNode in 1 Node: " + sourceNodeCountPre);
+
+            sourceNodeCountPre++; 
+            //sourceNodeCount++; 
+            console.log("LOAD 1");
+            console.log(sourceNodeCount);
+
+            console.log("TARGET NODE");
+            console.log(sourceNodeCountPre);
+
+            console.log("4th loop");
+           
+            console.log("checkNodes: " + checkNodes);
+
+            console.log("main node counter c: " + c);
+
+            
+
+            f++;
+            console.log("sourceNode dictionary: ");
+            console.log(sourceNode);
+           
+            nodes.push(sourceNode[c]);
+
+            console.log("Nodes");
+            console.log(nodes);
+            
+            console.log(nodes);
+            offsetXvals = offsetXvals + 100;
+            offsetYvals = offsetYvals;
+            checkNodes++;
+            c++;
+            console.log("value of c after increment: " + c);
+
+
+
+
+            
+
+            $scope.nodes = nodes;
+            $scope.connectors = connectors;
+        });
+        $scope.defaultSettings = {
+            node: {
+                width: 70,
+                height: 70,
+                fillColor: "darkCyan",
+                borderColor: "black",
+                type: ej.datavisualization.Diagram.Shapes.Flow,
+                shape: ej.datavisualization.Diagram.FlowShapes.Process,
+                labels: [{
+                    fontColor: "white"
+                }]
+
+            },
+            connector: {
+                segments: [{
+                    type: "orthogonal"
+                }]
+            }
+        }
+        $scope.nodes = [];
+        connectors = [];
+        $scope.connectors = connectors;
+    });
+
+</script>
+</body>
+
+</html>

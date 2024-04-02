@@ -4350,6 +4350,7 @@ SubmissionKit.prototype._onSubmitDone = function(e, poCallbackFunc, pbSuccess, p
 			this._appKit.hideLoadMask(_app);
 		}catch(ex){}
 	}
+	return [pbSuccess,e.control];
 };
 
 /**
@@ -4447,7 +4448,7 @@ SubmissionKit.prototype.addFileParameter = function(app, psSubmissionId, paFiles
  * @param {Boolean}  pbAsync (Optional) 공통서브미션 호출시 비동기 호출여부(디폴트 비동기)
  * @param {String} maskType
  */
-SubmissionKit.prototype.send = function(app, psSvcId, paParams, successCallback, pbAppEnable, pbAsync, maskType){
+SubmissionKit.prototype.send = async function(app, psSvcId, paParams, successCallback, pbAppEnable, pbAsync, maskType){
 	var _app = app;
 
 	var submission = _app.lookup(psSvcId);
@@ -4635,6 +4636,10 @@ SubmissionKit.prototype.send = function(app, psSvcId, paParams, successCallback,
 		}
 	}
 	
+//	var vbWithAwait = !!(poOption).withAwait;
+	var vsFuncName = (successCallback.constructor.name+"").toLowerCase();
+	var vbWithAwait = vsFuncName == "asyncfunction" ? true : false;
+	
 	var vbSuccess = true;
 	var _this = this;
 	submission.addEventListenerOnce("before-submit", function(e){
@@ -4658,13 +4663,29 @@ SubmissionKit.prototype.send = function(app, psSvcId, paParams, successCallback,
 	submission.addEventListenerOnce("submit-success", function(e){
 		vbSuccess = _this._onSubmitSuccess(e, vbSuccess);
 	});
-	
-	submission.addEventListenerOnce("submit-done", function(e) {
-		_this._onSubmitDone(e, successCallback, vbSuccess, pbAppEnable);
-	});
+	var doneResult = [];
+	if(vbWithAwait) {
+		submission.addEventListenerOnce("submit-done", function(e){
+			doneResult = _this.onSubmitDone(e,null,vbSuccess,vbAppEnable);
+		})
+	}else {
+		
+		submission.addEventListenerOnce("submit-done", function(e) {
+			_this._onSubmitDone(e, successCallback, vbSuccess, pbAppEnable);
+		});
+	}
 	
 	this._appKit._activeSubmission[this._appKit._activeSubmission.length] = submission;
-	return submission.send();
+	
+	if(vbWithAwait) {
+		
+		return submission.send().then(async function(input){
+			await callbackFunc.apply(null,doneResult);
+		});
+	} else {
+			
+		return submission.send();
+	}
 };
 
 

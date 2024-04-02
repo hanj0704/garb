@@ -12,10 +12,10 @@
 function onBtn2Click(e){
 	var btn2 = e.control;
 	
-	var han = new cpr.animation.Animator(0.7,cpr.animation.TimingFunction.EASE_IN);
+	var han = new cpr.animation.Animator(0.3,cpr.animation.TimingFunction.EASE_IN);
 	han.addTask(function(time){
-		var remains = 500 - (400*time);
-		app.getContainer().getLayout().setColumns([remains+"px","15px","1fr"]);
+//		var remains = 500 - (400*time);
+//		app.getContainer().getLayout().setColumns([remains+"px","15px","1fr"]);
 	});
 	
 	han.run();

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #imageContainer {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    #image {
+      width: 100%;
+      height: 100%;
+      transition: transform 0.3s ease-in-out;
+      transform-origin: 50% 50%;
+    }
+  </style>
+</head>
+<body>
+
+<div id="imageContainer">
+  <img id="image" src="test.JPG" alt="Your Image">
+</div>
+
+<script>
+  function handleKeyPress(event) {
+    const image = document.getElementById('image');
+    
+    // Adjust these values based on your desired zoom and movement
+    const zoomFactor = 1.2;
+    const moveFactor = 20;
+
+    if (event.key === 'w') {
+      const currentTransform = window.getComputedStyle(image).transform;
+      const currentMatrix = new DOMMatrix(currentTransform);
+      
+      // Calculate centering adjustment
+      const centeringAdjustX = (image.clientWidth - image.clientWidth * zoomFactor) / 2;
+      const centeringAdjustY = (image.clientHeight - image.clientHeight * zoomFactor) / 2;
+
+      // Apply zoom and movement with centering adjustment
+      const newScale = currentMatrix.a * zoomFactor;
+      const moveX = currentMatrix.e + moveFactor + (centeringAdjustX/4);
+      const moveY = currentMatrix.f + moveFactor + (centeringAdjustY/3);
+      image.style.transform = `scale(${newScale}) translate(${moveX}px, ${moveY}px)`;
+    }
+  }
+
+  document.addEventListener('keydown', handleKeyPress);
+</script>
+
+</body>
+</html>
