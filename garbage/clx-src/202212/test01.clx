@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-f77eacb6" version="1.0.4120">
   <head std:sid="head-26b17efd">
-    <screen std:sid="screen-f48edbc6" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
-    <screen std:sid="screen-4a32885c" id="default" name="default" minwidth="1024px" maxwidth="1319px" width="1024px" height="768px"/>
-    <screen std:sid="screen-a475c109" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
-    <screen std:sid="screen-85df9e9f" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
-    <cl:model std:sid="model-77bbfdd1"/>
+    <screen std:sid="screen-f48edbc6" id="eXFrame" name="eXFrame" width="1320px" height="680px"/>
+    <screen std:sid="screen-4a32885c" id="default" name="default" width="1024px" height="768px"/>
+    <screen std:sid="screen-a475c109" id="tablet" name="tablet" width="500px" height="667px"/>
+    <screen std:sid="screen-85df9e9f" id="mobile" name="mobile" width="350px" height="525px"/>
+    <cl:model std:sid="model-77bbfdd1">
+      <cl:matrix-submission std:sid="m-submission-1555c03f" id="msm1">
+        <cl:matrix>
+          <cl:request type="object"/>
+          <cl:response type="object"/>
+        </cl:matrix>
+      </cl:matrix-submission>
+    </cl:model>
     <cl:appspec title="visible 오류 확인용"/>
   </head>
   <body std:sid="body-d592c921">

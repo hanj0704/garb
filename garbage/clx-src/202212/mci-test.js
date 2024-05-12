@@ -6,6 +6,7 @@ var URL_PREFIX = "http://localhost:8080";
 function getSearchFields(){
 	return {
 		"패키지+클래스 경로" :  "packageUrl",
+		"가가호호" : "param1"
 	}
 }
 
@@ -147,6 +148,9 @@ function conver2(poData){
 			"linked": false,
 			"format": "object",
 			"data": voResult
+		},
+		"matrixsubmission" : {
+			"action" : ""
 		}
 	}
 	return realResult;
