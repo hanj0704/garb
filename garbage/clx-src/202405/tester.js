@@ -160,3 +160,42 @@ function onBodyTouchstart(event){
 //    }
 //    swiper.emit('touchStart', e);
 }
+
+/*
+ * "1" 버튼(btn9)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn9Click(e){
+	var btn9 = e.control;
+	let id = "qeqe";
+	let div = document.createElement("div");
+		div.setAttribute("class", "testDiv2");
+		let check = document.createElement("input");
+		
+		var idind = Number(id.slice(-1));
+		check.checked = true;
+		
+		check.type = "checkbox";
+		check.id = id;
+		
+		let label = document.createElement("label");
+		label.setAttribute("for", id);
+		let label2 = document.createElement("label");
+		label2.innerHTML = id;
+		label2.style.display = "inline-block";					
+		label2.style.width = "100%";
+		label2.style.textAlign = "center";
+		label2.style.fontWeight = "1000";
+		label2.style.fontSize = "20px";
+		div.appendChild(label2);
+		div.appendChild(check);
+		div.appendChild(label);
+		
+		div.style.top = 100+"px"
+		div.style.left = 100+"px"
+		div.style.width = "70px";//60
+		div.style.height = "35px";//30
+		div.style.position = "absolute";
+		//document.getElementById("diagramCore_canvas").appendChild(div);
+		document.body.appendChild(div);
+}

@@ -99,6 +99,7 @@
     <cl:group std:sid="group-0ef8f81f" id="grp2" style="background-color:aliceBlue;">
       <cl:verticaldata std:sid="v-data-58e767da" width="350px" height="186px" autosize="none"/>
       <cl:button std:sid="button-8cb45aa0" id="btn9" value="1">
+        <cl:listener std:sid="listener-64ddd03c" name="click" handler="onBtn9Click"/>
         <cl:flowlayoutdata std:sid="f-data-66932bbb" width="99%" height="95%"/>
       </cl:button>
       <cl:button std:sid="button-ffd0f3ee" id="btn10" value="2">

@@ -2,9 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-cbfba613" version="1.0.0.0">
   <head std:sid="head-a3d3e5a5">
     <title>excels</title>
-    <screen std:sid="screen-86be523b" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
-    <screen std:sid="screen-5064bba5" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
-    <screen std:sid="screen-c4b533af" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <screen std:sid="screen-86be523b" id="default" name="default" width="1024px" height="768px"/>
+    <screen std:sid="screen-5064bba5" id="tablet" name="tablet" width="500px" height="667px"/>
+    <screen std:sid="screen-c4b533af" id="mobile" name="mobile" width="350px" height="525px"/>
     <cl:model std:sid="model-94baaf42">
       <cl:dataset std:sid="d-set-5789a810" id="ds1">
         <cl:datacolumnlist>
@@ -745,16 +745,10 @@
     </cl:button>
     <cl:grid std:sid="grid-5c981b13" id="grdMst2" fieldLabel="대용량데이터 엑셀 다운로드" readonly="true" datasetid="ds3" resizablecolumns="all" columnMovable="true">
       <cl:xylayoutdata std:sid="xyl-data-5f7e7881" top="209px" right="20px" left="20px" height="206px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
-      <cl:gridcolumn std:sid="g-column-b19d1d74"/>
+      <cl:gridcolumn std:sid="g-column-b19d1d74" width="261px"/>
       <cl:gridcolumn std:sid="g-column-40798d7b"/>
       <cl:gridcolumn std:sid="g-column-555721c2"/>
       <cl:gridcolumn std:sid="g-column-2292fc3b"/>
-      <cl:gridcolumn std:sid="g-column-f223f869"/>
-      <cl:gridcolumn std:sid="g-column-4939ab3a"/>
-      <cl:gridcolumn std:sid="g-column-636a16cf"/>
-      <cl:gridcolumn std:sid="g-column-bf10d6f0"/>
-      <cl:gridcolumn std:sid="g-column-958cca48"/>
-      <cl:gridcolumn std:sid="g-column-2158655d"/>
       <cl:gridheader std:sid="gh-band-33186376">
         <cl:gridrow std:sid="g-row-10e7555b"/>
         <cl:gridrow std:sid="g-row-67281181"/>
@@ -763,49 +757,32 @@
         <cl:gridcell std:sid="gh-cell-d39978f5" rowindex="2" colindex="1" style="border-right-style:solid; color:#343434; border-top-width:1px; border-bottom-color:#000000; border-right-width:1px; border-left-color:#000000; border-right-color:#000000; border-left-width:1px; border-top-style:solid; background-color:#e8eff5; border-left-style:solid; border-bottom-width:1px; border-top-color:#000000; border-bottom-style:solid; text-align:center;" targetcolumnname="column2" sortable="false" filterable="false" text="column2"/>
         <cl:gridcell std:sid="gh-cell-1d649e45" rowindex="2" colindex="2" style="border-right-style:solid; color:#343434; border-top-width:1px; border-bottom-color:#000000; border-right-width:1px; border-left-color:#000000; border-right-color:#000000; border-left-width:1px; border-top-style:solid; background-color:#e8eff5; border-left-style:solid; border-bottom-width:1px; border-top-color:#000000; border-bottom-style:solid; text-align:center;" targetcolumnname="column3" sortable="false" filterable="false" text="column3"/>
         <cl:gridcell std:sid="gh-cell-35d9c202" rowindex="2" colindex="3" style="border-right-style:solid; color:#343434; border-top-width:1px; border-bottom-color:#000000; border-right-width:1px; border-left-color:#000000; border-right-color:#000000; border-left-width:1px; border-top-style:solid; background-color:#e8eff5; border-left-style:solid; border-bottom-width:1px; border-top-color:#000000; border-bottom-style:solid; text-align:center;" targetcolumnname="column4" sortable="false" filterable="false" text="column4"/>
-        <cl:gridcell std:sid="gh-cell-2bf80aa2" rowindex="2" colindex="4" style="border-right-style:solid; color:#343434; border-top-width:1px; border-bottom-color:#000000; border-right-width:1px; border-left-color:#000000; border-right-color:#000000; border-left-width:1px; border-top-style:solid; background-color:#e8eff5; border-left-style:solid; border-bottom-width:1px; border-top-color:#000000; border-bottom-style:solid; text-align:center;" targetcolumnname="column5" sortable="false" filterable="false" text="column5"/>
-        <cl:gridcell std:sid="gh-cell-63dcb20d" rowindex="1" colindex="5" rowspan="2" colspan="2" style="border-right-style:solid; color:#343434; border-top-width:1px; border-bottom-color:#000000; border-right-width:1px; border-left-color:#000000; border-right-color:#000000; border-left-width:1px; border-top-style:solid; background-color:#e8eff5; border-left-style:solid; border-bottom-width:1px; border-top-color:#000000; border-bottom-style:solid; text-align:center;" targetcolumnname="column6" sortable="false" filterable="false" text="column6"/>
-        <cl:gridcell std:sid="gh-cell-d23f03c2" rowindex="2" colindex="7" style="border-right-style:solid; color:#343434; border-top-width:1px; border-bottom-color:#000000; border-right-width:1px; border-left-color:#000000; border-right-color:#000000; border-left-width:1px; border-top-style:solid; background-color:#e8eff5; border-left-style:solid; border-bottom-width:1px; border-top-color:#000000; border-bottom-style:solid; text-align:center;" targetcolumnname="column8" sortable="false" filterable="false" text="column8"/>
-        <cl:gridcell std:sid="gh-cell-df754e49" rowindex="2" colindex="8" style="border-right-style:solid; color:#343434; border-top-width:1px; border-bottom-color:#000000; border-right-width:1px; border-left-color:#000000; border-right-color:#000000; border-left-width:1px; border-top-style:solid; background-color:#e8eff5; border-left-style:solid; border-bottom-width:1px; border-top-color:#000000; border-bottom-style:solid; text-align:center;" targetcolumnname="column9" sortable="false" filterable="false" text="column9"/>
-        <cl:gridcell std:sid="gh-cell-8b63f4aa" rowindex="2" colindex="9" style="border-right-style:solid; color:#343434; border-top-width:1px; border-bottom-color:#000000; border-right-width:1px; border-left-color:#000000; border-right-color:#000000; border-left-width:1px; border-top-style:solid; background-color:#e8eff5; border-left-style:solid; border-bottom-width:1px; border-top-color:#000000; border-bottom-style:solid; text-align:center;" targetcolumnname="column10" sortable="false" filterable="false" text="column10"/>
         <cl:gridcell std:sid="gh-cell-26f53db9" rowindex="1" colindex="1" rowspan="1" colspan="2" style="border-right-style:solid; color:#343434; border-top-width:1px; border-bottom-color:#000000; border-right-width:1px; border-left-color:#000000; border-right-color:#000000; border-left-width:1px; border-top-style:solid; background-color:#e8eff5; border-left-style:solid; border-bottom-width:1px; border-top-color:#000000; border-bottom-style:solid; background-image:none; text-align:center;" text="zz"/>
-        <cl:gridcell std:sid="gh-cell-3c05b42a" rowindex="0" colindex="1" rowspan="1" colspan="4" text="qqqq"/>
-        <cl:gridcell std:sid="gh-cell-cda48e95" rowindex="0" colindex="5" rowspan="1" colspan="5" text="rrr"/>
-        <cl:gridcell std:sid="gh-cell-08202789" rowindex="1" colindex="3" rowspan="1" colspan="2" text="22"/>
-        <cl:gridcell std:sid="gh-cell-a7befc6b" rowindex="1" colindex="7" rowspan="1" colspan="3" text="ㅋㅋ"/>
+        <cl:gridcell std:sid="gh-cell-3c05b42a" rowindex="0" colindex="1" rowspan="1" colspan="3" text="qqqq"/>
+        <cl:gridcell std:sid="gh-cell-08202789" rowindex="1" colindex="3" rowspan="1" colspan="1" text="22"/>
       </cl:gridheader>
       <cl:griddetail std:sid="gd-band-93a2fcb7">
         <cl:gridrow std:sid="g-row-5a578cf3" height="38px"/>
         <cl:gridcell std:sid="gd-cell-f5bfbc4e" rowindex="0" colindex="0" columnname="column1">
-          <cl:output std:sid="output-d7ce4364" class="text-center" value="Output" datatype="date" format="YYYY/MM/DD"/>
+          <cl:output std:sid="output-d7ce4364" class="text-center" value="Output" datatype="date" format="YYYY/MM/DD">
+            <cl:celldata std:sid="c-data-f20c6448"/>
+          </cl:output>
           <cl:expbind property="background-color" category="STYLER" expression="getIndex()%2 ==0 ? &quot;#FF6367&quot; : &quot;#00FFFF&quot;"/>
         </cl:gridcell>
         <cl:gridcell std:sid="gd-cell-73396278" rowindex="0" colindex="1" columnname="column2">
-          <cl:output std:sid="output-c71737ad" value="Output" datatype="number" format="s#,##0.00"/>
+          <cl:output std:sid="output-c71737ad" value="Output" datatype="number" format="s#,##0.00">
+            <cl:celldata std:sid="c-data-3414bfbc"/>
+          </cl:output>
         </cl:gridcell>
         <cl:gridcell std:sid="gd-cell-fbd4012e" rowindex="0" colindex="2" columnname="column3">
-          <cl:output std:sid="output-e12368af" value="Output"/>
+          <cl:output std:sid="output-e12368af" value="Output">
+            <cl:celldata std:sid="c-data-3e94ae7b"/>
+          </cl:output>
         </cl:gridcell>
         <cl:gridcell std:sid="gd-cell-19926ca1" rowindex="0" colindex="3" columnname="column4">
-          <cl:output std:sid="output-0cb6c602" value="Output"/>
-        </cl:gridcell>
-        <cl:gridcell std:sid="gd-cell-52ea3072" rowindex="0" colindex="4" columnname="column5">
-          <cl:output std:sid="output-b5ff2026" value="Output"/>
-        </cl:gridcell>
-        <cl:gridcell std:sid="gd-cell-221c5006" rowindex="0" colindex="5" columnname="column6">
-          <cl:output std:sid="output-2923ec83" value="Output"/>
-        </cl:gridcell>
-        <cl:gridcell std:sid="gd-cell-8b899242" rowindex="0" colindex="6" columnname="column7">
-          <cl:output std:sid="output-511164b8" value="Output"/>
-        </cl:gridcell>
-        <cl:gridcell std:sid="gd-cell-f0e4674a" rowindex="0" colindex="7" columnname="column8">
-          <cl:output std:sid="output-cde149c2" value="Output"/>
-        </cl:gridcell>
-        <cl:gridcell std:sid="gd-cell-c4f86d79" rowindex="0" colindex="8" columnname="column9">
-          <cl:output std:sid="output-e9b23bce" value="Output"/>
-        </cl:gridcell>
-        <cl:gridcell std:sid="gd-cell-2fbbb026" rowindex="0" colindex="9" columnname="column10">
-          <cl:output std:sid="output-81aecfdd" value="Output"/>
+          <cl:output std:sid="output-0cb6c602" value="Output">
+            <cl:celldata std:sid="c-data-6eba19a4"/>
+          </cl:output>
         </cl:gridcell>
       </cl:griddetail>
     </cl:grid>
