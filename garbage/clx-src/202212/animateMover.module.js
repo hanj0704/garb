@@ -46,7 +46,7 @@ var Anime = {
 		});
 	},
 	scroll : function(ev){
-		console.log(this);
+//		console.log(this);
 		var _app = this.ins;
 //		_app.getContainer().
 //		this.children.forEach(function(each){

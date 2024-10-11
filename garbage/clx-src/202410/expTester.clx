@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-6b161955" version="1.0.5321">
+  <head std:sid="head-af1f507f">
+    <screen std:sid="screen-6a230f1e" id="default" name="default" width="1024px" height="768px"/>
+    <screen std:sid="screen-7d6e5eed" id="tablet" name="tablet" width="500px" height="667px"/>
+    <screen std:sid="screen-dacc3dbd" id="mobile" name="mobile" width="350px" height="525px"/>
+    <cl:model std:sid="model-66b50508"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-3560eed9">
+    <cl:combobox std:sid="c-box-9a91cb70" id="cmb1" displayexp="@highlight2()">
+      <cl:xylayoutdata std:sid="xyl-data-17356754" top="20px" left="20px" width="189px" height="26px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:item std:sid="t-item-2c8a87c3" label="label1" value="value1"/>
+      <cl:item std:sid="t-item-09c8c974" label="label2" value="value2"/>
+      <cl:item std:sid="t-item-574c8668" label="label3" value="value3"/>
+      <cl:item std:sid="t-item-7b8e5204" label="label4" value="value4"/>
+      <cl:item std:sid="t-item-47b67529" label="label5" value="value5"/>
+    </cl:combobox>
+    <cl:combobox std:sid="c-box-139ddabd" id="cmb2" displayexp="@highlight1()">
+      <cl:xylayoutdata std:sid="xyl-data-eba08aa9" top="86px" left="20px" width="189px" height="26px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:item std:sid="t-item-d69f1e6c" label="label1" value="value1"/>
+      <cl:item std:sid="t-item-5315e9da" label="label2" value="value2"/>
+      <cl:item std:sid="t-item-e42b7332" label="label3" value="value3"/>
+      <cl:item std:sid="t-item-725d58c9" label="label4" value="value4"/>
+      <cl:item std:sid="t-item-c69590cf" label="label5" value="value5"/>
+    </cl:combobox>
+    <cl:combobox std:sid="c-box-41abfa52" id="cmb3">
+      <cl:listener std:sid="listener-7c743718" name="change" handler="onCmb3Change"/>
+      <cl:xylayoutdata std:sid="xyl-data-16e51d9a" top="165px" left="20px" width="189px" height="26px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:item std:sid="t-item-7a10a6b2" label="label1" value="value1"/>
+      <cl:item std:sid="t-item-8eb0d3cd" label="label2" value="value2"/>
+      <cl:item std:sid="t-item-2a2ce51a" label="label3" value="value3"/>
+      <cl:item std:sid="t-item-06191a4c" label="label4" value="value4"/>
+      <cl:item std:sid="t-item-eaeef8a7" label="label5" value="value5"/>
+    </cl:combobox>
+    <cl:xylayout std:sid="xylayout-2fc7bf8f"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

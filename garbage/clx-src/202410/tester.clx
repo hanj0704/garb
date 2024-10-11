@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ad507241" version="1.0.5321">
+  <head std:sid="head-31b6feb5">
+    <screen std:sid="screen-bfabc031" id="default" name="default" width="1024px" height="768px"/>
+    <screen std:sid="screen-ab8c9413" id="tablet" name="tablet" width="500px" height="667px"/>
+    <screen std:sid="screen-12175efe" id="mobile" name="mobile" width="350px" height="525px"/>
+    <cl:model std:sid="model-53476936"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-c3a4479f">
+    <cl:listener std:sid="listener-7f604450" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-eba61c3e" id="grp1">
+      <cl:xylayoutdata std:sid="xyl-data-4aa153e5" top="20px" left="10px" width="839px" height="460px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:button std:sid="button-f6c0ae09" value="Button">
+        <cl:xylayoutdata std:sid="xyl-data-33e08c33" top="800px" left="236px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      </cl:button>
+      <cl:button std:sid="button-c2549994" id="btn1" value="Button">
+        <cl:xylayoutdata std:sid="xyl-data-ced5dc85" top="20px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      </cl:button>
+      <cl:xylayout std:sid="xylayout-d15d7fbb"/>
+    </cl:group>
+    <cl:button std:sid="button-497bb2b9" id="b3" value="Button">
+      <cl:listener std:sid="listener-2ee4f19b" name="click" handler="onB3Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-2bb3ae16" top="490px" left="10px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:inputbox std:sid="i-box-fcaf257d" id="ipb1">
+      <cl:listener std:sid="listener-0fdada2f" name="input" handler="onIpb1Input"/>
+      <cl:listener std:sid="listener-d4ef407b" name="blur" handler="onIpb1Blur"/>
+      <cl:xylayoutdata std:sid="xyl-data-02eabefd" top="490px" left="213px" width="178px" height="26px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:inputbox>
+    <cl:listbox std:sid="l-box-ab388723" id="lbx1" visible="false">
+      <cl:listener std:sid="listener-a8ffb553" name="focus" handler="onLbx1Focus"/>
+      <cl:listener std:sid="listener-df081390" name="item-click" handler="onLbx1ItemClick"/>
+      <cl:xylayoutdata std:sid="xyl-data-c4a6b7fe" top="515px" left="213px" width="100px" height="150px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:item std:sid="item-6450175d" label="label1" value="value1"/>
+      <cl:item std:sid="item-5e632043" label="label2" value="value2"/>
+      <cl:item std:sid="item-f44cbf19" label="label3" value="value3"/>
+    </cl:listbox>
+    <cl:combobox std:sid="c-box-e93805a9" id="cmb1">
+      <cl:listener std:sid="listener-a70c2c53" name="input" handler="onCmb1Input"/>
+      <cl:listener std:sid="listener-21d266f5" name="keydown" handler="onCmb1Keydown"/>
+      <cl:xylayoutdata std:sid="xyl-data-48aeb641" top="479px" left="438px" width="182px" height="57px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:item std:sid="t-item-6ddd71f9" label="label1" value="value1"/>
+      <cl:item std:sid="t-item-8a43e802" label="label2" value="value2"/>
+      <cl:item std:sid="t-item-e1a677d5" label="label3" value="value3"/>
+      <cl:item std:sid="t-item-678e4f5a" label="label4" value="value4"/>
+    </cl:combobox>
+    <cl:xylayout std:sid="xylayout-adf85be6"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

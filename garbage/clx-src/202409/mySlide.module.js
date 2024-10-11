@@ -26,14 +26,14 @@ function SlideSlope(pcContainer) {
         }
     });
     this._slope = null;
-    this._setup(pcCOntainer.getAppInstance());
+//    this._setup(pcContainer.getAppInstance());
 
 } 
 
 SlideSlope.prototype.isInfinite = true;
 SlideSlope.prototype.showCount = 1;
 SlideSlope.prototype.moveItemCount =0;
-SlideSlope.prototype.animateTime - 0.5;
+SlideSlope.prototype.animateTime = 0.5;
 SlideSlope.prototype.animateDuration = 2;
 SlideSlope.prototype._interval = null;
 
@@ -61,26 +61,28 @@ SlideSlope.prototype.restore = function(){
 SlideSlope.prototype.ride = function(){
 
     let vcContainerSlope = new cpr.controls.Container();
-    vcContainerSlope.clopContent = true;
+    vcContainerSlope.clipContent = true;
 
     let vcFlowLayout = new cpr.controls.layouts.FlowLayout();
-    vcFlowLayout.scrollable = false;
-    vcFlowLayout.linewrap = false;
+    vcFlowLayout.scrollable = true;
+    vcFlowLayout.lineWrap = false;
 
     this._originHSpacing = this._layout.horizontalSpacing;
     this._originVSpacing = this._layout.verticalSpacing;
 
     vcFlowLayout.horizontalSpacing = this._originHSpacing;
-
+	vcContainerSlope.setLayout(vcFlowLayout);
     this._slope = vcContainerSlope;
     this._slLayout = vcFlowLayout;
 
     let itemWidth = "";
     let itemSizeCount = 0;
     let spacingNum = 0;
+    let me = this;
     this._originChild.forEach(function(each){
         let fr = each.userAttr("fraction") != "" ? Number(each.userAttr("fraction")) : 1;
-        itemWidth = "calc((100% -" + (me.showCount) * (vcFlowLayout.horizontalSpacing) + "px) / " + me.showCount+"*"+fr+")";
+        itemWidth = "calc((100% - " + (me.showCount) * (vcFlowLayout.horizontalSpacing) + "px) / " + me.showCount+"*"+fr+")";
+        console.log(itemWidth);
         vcContainerSlope.addChild(each,{
             width : itemWidth,
             height: "100%"
@@ -93,7 +95,7 @@ SlideSlope.prototype.ride = function(){
     });
 
     this._slope.addEventListener("mousedown",this._onMouseDown);
-    this._slope.addEventListener("touchstart",this._onToucnStart);
+//    this._slope.addEventListener("touchstart",this._onToucnStart);
 }
 
 /**
@@ -101,7 +103,8 @@ SlideSlope.prototype.ride = function(){
  * 현재 표시중인 아이템에서 moveItemCOunt만큼 인덱스가 추가된 컨트롤까지 얼마나 스크롤을 이동해야하는지 계산하고
  */
 SlideSlope.prototype.showNext = function(){
-    let moveCount = this.moveItemCount || this.moveItemCount;
+    let moveCount = this.moveItemCount || this.showCount;
+    console.log(moveCount);
     let nowItem = this._findCloseControl(null,false);
     let children = this._slope.getChildren();
     let targetItemIndex = children.indexOf(nowItem) + moveCount;
@@ -113,19 +116,19 @@ SlideSlope.prototype.showNext = function(){
             targetItemIndex = 0;
         }
      }
-     if(targetItemINdex > children.length -1) {
+     if(targetItemIndex > children.length -1) {
         targetItemIndex = children.length - this.showCount;
      }
-     let movement = this._slope.getChildren()[targetItemIndex].getOffsetRect().x - this._slope.getViewportRect().x - this._originHSpacing;
+     let movement = this._slope.getChildren()[targetItemIndex].getOffsetRect().x - this._slope.getViewPortRect().x - this._originHSpacing;
      this._slope.adjustScroll(movement,0,this.animateTime,cpr.animation.TimingFunction.EASE_IN);
 }
 
-SlideSlope.ptototype.showPrev = function(){
+SlideSlope.prototype.showPrev = function(){
 
     let moveCount = 0 || this.moveItemCount;
 
     let nowItem = this._findCloseControl(null,false);
-    let target = this._slope.getChildren().indexOf(newItem)-moveCount;
+    let target = this._slope.getChildren().indexOf(nowItem)-moveCount;
 
     if(this.isInfinite) {
         target = this._reorder2(this._slope.getChildren().indexOf(nowItem),target);
@@ -133,7 +136,7 @@ SlideSlope.ptototype.showPrev = function(){
     if(target<=0) {
         this._slope.scrollTo(0,0,0.5,cpr.animation.TimingFunction.EASE_IN);
     } else {
-        let movement = this._slope.getViewportRect().x - this._originHSpacing - this._slope.getChildren()[target].getOffsetRect().x;
+        let movement = this._slope.getViewPortRect().x - this._originHSpacing - this._slope.getChildren()[target].getOffsetRect().x;
         this._slope.adjustScroll(-movement,0,this.animateTime,cpr.animation.TimingFunction.EASE_IN);
     }
 }
@@ -149,7 +152,7 @@ SlideSlope.prototype._reorder2 = function(nowIndex,targetIndex) {
                 container.reorderChild(targets,container.getChildren().length);
                 container.adjustScroll(-(targets.getActualRect().width+this._originHSpacing),0);
             }
-            cpr.core.DeferredUpdatedManager.INSATNCE.update();
+            cpr.core.DeferredUpdateManager.INSTANCE.update();
             return targetIndex - index;
         }
         return targetIndex;
@@ -159,7 +162,7 @@ SlideSlope.prototype._reorder2 = function(nowIndex,targetIndex) {
             for(let i=0; i<Math.abs(index); i++) {
                 let targets = container.getChildren().pop();
                 container.reorderChild(targets,0);
-                container.adjustScroll((targets.getActualRect().width_this._originHSpacing),0);
+                container.adjustScroll((targets.getActualRect().width-this._originHSpacing),0);
             }
             return 0;
         }
@@ -185,7 +188,7 @@ SlideSlope.prototype._autoReorder = function(){
 }
 
 SlideSlope.prototype._findCloseControl = function(vpX,isComplete) {
-    let viewportX = vpX || this._slope.getViewportRect().x;
+    let viewportX = vpX || this._slope.getViewPortRect().x;
     let complete = isComplete === undefined ? false : isComplete;
     let target = null;
     let me = this;
@@ -198,7 +201,7 @@ SlideSlope.prototype._findCloseControl = function(vpX,isComplete) {
             if(a.getOffsetRect().x - me._originHSpacing - viewportX < 0) {
                 return b;
             }
-            if(a,getOffsetRect().x - me._originHSpacing - viewportX > b.getOffsetRect().x - me._originHSpacing - viewportX) {
+            if(a.getOffsetRect().x - me._originHSpacing - viewportX > b.getOffsetRect().x - me._originHSpacing - viewportX) {
                 return b;
             }
             return a;
@@ -228,9 +231,9 @@ SlideSlope.prototype._onMouseDown = function(e) {
 
     this._startX = e.clientX;
     this._prevX = e.clientX;
-
-    window.addEventListener("mouseup",this._onMouseUp);
+	
     window.addEventListener("mousemove",this._onMouseMove);
+    window.addEventListener("mouseup",this._onMouseUp);
     e.stopPropagation();
 }
 
@@ -239,6 +242,7 @@ SlideSlope.prototype._onMouseMove = function(e){
     if(this._prevX != null) {
         let delta = this._prevX - now;
         this._prevX = now;
+        console.log("delta")
         this._slope.adjustScroll(delta,0);
         if(this.isInfinite) {
             this._autoReorder();

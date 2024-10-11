@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-008da66f" version="1.0.5320">
+  <head std:sid="head-d67aa632">
+    <screen std:sid="screen-32efde5b" id="default" name="default" width="1024px" height="768px"/>
+    <screen std:sid="screen-cc5d31d5" id="tablet" name="tablet" width="500px" height="667px"/>
+    <screen std:sid="screen-71c3a718" id="mobile" name="mobile" width="350px" height="525px"/>
+    <link std:sid="link-eb39652e" href="T24567.less" rel="stylesheet" type="text/css"/>
+    <cl:model std:sid="model-15dfce19"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-cc0beee9">
+    <cl:listener std:sid="listener-34d73e8b" name="init" handler="onBodyInit"/>
+    <cl:group std:sid="group-910c1624" id="left-header" class="left-header">
+      <cl:xylayoutdata std:sid="xyl-data-f5a2ffa9" top="86px" left="43px" width="120px" height="502px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:verticallayout std:sid="v-layout-2b789e2e"/>
+    </cl:group>
+    <cl:mdifolder std:sid="mdifolder-c8db578b" id="mdi1" hideHeader="true">
+      <cl:xylayoutdata std:sid="xyl-data-84a24562" top="86px" left="162px" width="670px" height="502px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:mdifolder>
+    <cl:button std:sid="button-268a9e80" fieldLabel="xxxx" value="Button">
+      <cl:listener std:sid="listener-e58ff01f" name="click" handler="onButtonClick"/>
+      <cl:xylayoutdata std:sid="xyl-data-eb652c85" top="20px" left="43px" width="100px" height="40px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-d087422d"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>
