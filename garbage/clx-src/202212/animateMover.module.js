@@ -9,6 +9,7 @@ var Anime = {
 	/** @type cpr.core.AppInstance */
 	ins : null,
 	children : [],
+	mus : [],
 	prop : {
 		"propNm" : "test"
 	},
@@ -25,6 +26,11 @@ var Anime = {
 				}
 				that.ins = control;
 				var vcContainer = control.getContainer();
+//				var mus = new MutationObserver(function(mutationList,observer){
+//					console.log(mutationList);
+//					console.log(observer);
+//				});
+				
 				var vaChildren = vcContainer.getAllRecursiveChildren().filter(function(each){
 					if(each.userAttr("use-animate") != "") {
 //						each.visible = false;
@@ -33,33 +39,40 @@ var Anime = {
 					}
 //					return each.userAttr("use-animate") == "true";
 				});
+				
 				that.children = vaChildren;
-//				that.objs.
+				var thro = _.debounce(that._scroll.bind(that), 400);
+				control.getContainer().addEventListener("scroll", thro);
+//				new M
 //				cpr.utils.ObjectMap.
 				
 //				that.animate(vaChildren);
 			}
 		});
-		var scroller = _.debounce(this.scroll.bind(this),100);
-		window.addEventListener("scroll", scroller,{
-			capture : true
-		});
-	},
-	scroll : function(ev){
-//		console.log(this);
-		var _app = this.ins;
-//		_app.getContainer().
-//		this.children.forEach(function(each){
-//			if(each.)
+//		var scroller = _.debounce(this.scroll.bind(this),100);
+//		window.addEventListener("scroll", scroller,{
+//			capture : true
 //		});
 	},
-	animate : function(/*cpr.controls.UIControl[]*/controls){
+	_scroll : function(ev){
+		var vaTargets=  this.children;
+	var that = this;
+	vaTargets.forEach(function(each){
+		var q=  window.innerHeight > each.getOffsetRect().top;
+		if(q) {
+			console.log("지금이니");
+			that.animate(each);
+		}
+	});
+	
+	},
+	animate : function(/*cpr.controls.UIControl*/controls){
 		
-		this.ins.addEventListenerOnce("load", function(ev){
+//		this.ins.addEventListenerOnce("load", function(ev){
 				
-			var vaCtrls = controls;
+			var each = controls;
 			
-			vaCtrls.forEach(function(each){
+//			vaCtrls.forEach(function(each){
 				var vsPosition = each.userAttr("position");
 				var voConstraint = each.getActualRect();
 				var vsTrans = null;
@@ -82,16 +95,43 @@ var Anime = {
 					each.style.animateFrom({
 						"opacity" : "0",
 						"transform" : "translateX("+vsTrans+")"
-					});
+					},0.5,cpr.animation.TimingFunction.EASE_IN_OUT_BACK);
 				} else {
 					each.style.animateFrom({
 						"opacity" : "0",
 						"transform" : "translateY("+vsTrans+")"
 					});
 				}
-			});
-		})
+//			});
+//		})
 	}
 }
+/**
+ * 
+ * @param {cpr.core.AppInstance} app
+ * @param {cpr.controls.UIControl[]} target
+ */
+function ScrollObserver(app,target){
+	this._app = app;
+	this.target = target;
 
+}
+ScrollObserver.prototype._scroll = function(ev){
+	var vaTargets=  this.target;
+	
+	vaTargets.forEach(function(each){
+		var q=  window.innerHeight < each.getOffsetRect().top;
+		if(q) {
+			
+		}
+	});
+}
+
+ScrollObserver.prototype.start = function(){
+	var voApp = this._app;
+	
+	voApp.getContainer().addEventListener("scroll", function(e){
+		
+	});
+};
 Anime.init();

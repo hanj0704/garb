@@ -10,7 +10,7 @@
   <body std:sid="body-c3a4479f">
     <cl:listener std:sid="listener-7f604450" name="load" handler="onBodyLoad"/>
     <cl:group std:sid="group-eba61c3e" id="grp1">
-      <cl:xylayoutdata std:sid="xyl-data-4aa153e5" top="20px" left="10px" width="839px" height="460px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:xylayoutdata std:sid="xyl-data-65cf8fe5" top="0px" left="0px" width="784px" height="460px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
       <cl:button std:sid="button-f6c0ae09" value="Button">
         <cl:xylayoutdata std:sid="xyl-data-33e08c33" top="800px" left="236px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
       </cl:button>
@@ -19,33 +19,83 @@
       </cl:button>
       <cl:xylayout std:sid="xylayout-d15d7fbb"/>
     </cl:group>
-    <cl:button std:sid="button-497bb2b9" id="b3" value="Button">
-      <cl:listener std:sid="listener-2ee4f19b" name="click" handler="onB3Click"/>
-      <cl:xylayoutdata std:sid="xyl-data-2bb3ae16" top="490px" left="10px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
-    </cl:button>
-    <cl:inputbox std:sid="i-box-fcaf257d" id="ipb1">
-      <cl:listener std:sid="listener-0fdada2f" name="input" handler="onIpb1Input"/>
-      <cl:listener std:sid="listener-d4ef407b" name="blur" handler="onIpb1Blur"/>
-      <cl:xylayoutdata std:sid="xyl-data-02eabefd" top="490px" left="213px" width="178px" height="26px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
-    </cl:inputbox>
-    <cl:listbox std:sid="l-box-ab388723" id="lbx1" visible="false">
-      <cl:listener std:sid="listener-a8ffb553" name="focus" handler="onLbx1Focus"/>
-      <cl:listener std:sid="listener-df081390" name="item-click" handler="onLbx1ItemClick"/>
-      <cl:xylayoutdata std:sid="xyl-data-c4a6b7fe" top="515px" left="213px" width="100px" height="150px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
-      <cl:item std:sid="item-6450175d" label="label1" value="value1"/>
-      <cl:item std:sid="item-5e632043" label="label2" value="value2"/>
-      <cl:item std:sid="item-f44cbf19" label="label3" value="value3"/>
-    </cl:listbox>
     <cl:combobox std:sid="c-box-e93805a9" id="cmb1">
       <cl:listener std:sid="listener-a70c2c53" name="input" handler="onCmb1Input"/>
       <cl:listener std:sid="listener-21d266f5" name="keydown" handler="onCmb1Keydown"/>
-      <cl:xylayoutdata std:sid="xyl-data-48aeb641" top="479px" left="438px" width="182px" height="57px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:xylayoutdata std:sid="xyl-data-1ff555bd" top="465px" left="0px" width="784px" height="57px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
       <cl:item std:sid="t-item-6ddd71f9" label="label1" value="value1"/>
       <cl:item std:sid="t-item-8a43e802" label="label2" value="value2"/>
       <cl:item std:sid="t-item-e1a677d5" label="label3" value="value3"/>
       <cl:item std:sid="t-item-678e4f5a" label="label4" value="value4"/>
     </cl:combobox>
-    <cl:xylayout std:sid="xylayout-adf85be6"/>
+    <cl:button std:sid="button-497bb2b9" id="b3" value="Button">
+      <cl:listener std:sid="listener-2ee4f19b" name="click" handler="onB3Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-b141b705" top="527px" left="0px" width="784px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:inputbox std:sid="i-box-fcaf257d" id="ipb1">
+      <cl:listener std:sid="listener-0fdada2f" name="input" handler="onIpb1Input"/>
+      <cl:listener std:sid="listener-d4ef407b" name="blur" handler="onIpb1Blur"/>
+      <cl:xylayoutdata std:sid="xyl-data-ce894bef" top="552px" left="0px" width="784px" height="26px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:inputbox>
+    <cl:listbox std:sid="l-box-ab388723" id="lbx1" visible="false">
+      <cl:listener std:sid="listener-a8ffb553" name="focus" handler="onLbx1Focus"/>
+      <cl:listener std:sid="listener-df081390" name="item-click" handler="onLbx1ItemClick"/>
+      <cl:xylayoutdata std:sid="xyl-data-68dcf8c3" top="583px" left="0px" width="784px" height="150px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:item std:sid="item-6450175d" label="label1" value="value1"/>
+      <cl:item std:sid="item-5e632043" label="label2" value="value2"/>
+      <cl:item std:sid="item-f44cbf19" label="label3" value="value3"/>
+    </cl:listbox>
+    <cl:group std:sid="group-a4875ba3" id="grp2">
+      <cl:xylayoutdata std:sid="xyl-data-f91da7a6" top="738px" left="0px" width="784px" height="218px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:button std:sid="button-cedca19f" value="Button">
+        <cl:verticaldata std:sid="v-data-b9a91193" width="100px" height="70px"/>
+      </cl:button>
+      <cl:button std:sid="button-0753d582" value="Button">
+        <cl:verticaldata std:sid="v-data-bc7f98f5" width="261px" height="70px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-944d67cb" value="Button">
+        <cl:verticaldata std:sid="v-data-a96c5d1d" width="261px" height="70px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-a0380c88" value="Button">
+        <cl:verticaldata std:sid="v-data-c1029eeb" width="261px" height="70px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-133cf35a" value="Button">
+        <cl:verticaldata std:sid="v-data-e5f3aa59" width="261px" height="70px" autosize="none"/>
+      </cl:button>
+      <cl:button std:sid="button-b9bd158d" value="Button">
+        <cl:verticaldata std:sid="v-data-9a43dd35" width="261px" height="70px" autosize="none"/>
+      </cl:button>
+      <cl:verticallayout std:sid="v-layout-968a49b8"/>
+    </cl:group>
+    <cl:button std:sid="button-40fac82b" id="btn2" value="Button">
+      <cl:listener std:sid="listener-5545f8b7" name="click" handler="onBtn2Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-ee9a03ac" top="423px" left="811px" width="175px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:htmlsnippet std:sid="htmlsnippet-9ed5e1d0" id="snp1" value="&lt;p>HTML Snippet&lt;/p>&#xD;&#xA;&lt;input id=&quot;qq&quot;>&lt;/input>">
+      <cl:xylayoutdata std:sid="xyl-data-4e203076" top="98px" left="794px" width="287px" height="225px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:htmlsnippet>
+    <cl:button std:sid="button-ccd67e7c" value="Button">
+      <cl:listener std:sid="listener-e6106978" name="click" handler="onButtonClick"/>
+      <cl:xylayoutdata std:sid="xyl-data-2e77159b" top="465px" left="794px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-b79c3b0d" value="Button">
+      <cl:listener std:sid="listener-4df26733" name="click" handler="onButtonClick2"/>
+      <cl:xylayoutdata std:sid="xyl-data-bfe1844e" top="495px" left="794px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-07cb3164" value="Button">
+      <cl:listener std:sid="listener-63677433" name="click" handler="onButtonClick3"/>
+      <cl:xylayoutdata std:sid="xyl-data-1159e209" top="527px" left="794px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-dc66c4ef" value="Button">
+      <cl:listener std:sid="listener-aa052e1c" name="click" handler="onButtonClick4"/>
+      <cl:xylayoutdata std:sid="xyl-data-3aedcd3f" top="555px" left="794px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:inputbox std:sid="i-box-a7bc582d" id="ipb2">
+      <cl:listener std:sid="listener-188cb782" name="value-change" handler="onIpb2ValueChange"/>
+      <cl:listener std:sid="listener-6fb08e86" name="input" handler="onIpb2Input"/>
+      <cl:xylayoutdata std:sid="xyl-data-4576b590" top="588px" left="794px" width="223px" height="39px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:inputbox>
+    <cl:xylayout std:sid="xylayout-7dcad74b"/>
   </body>
   <std:studiosetting>
     <std:hruler/>
