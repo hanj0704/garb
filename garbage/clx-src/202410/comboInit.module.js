@@ -18,3 +18,41 @@ cpr.events.EventBus.INSTANCE.addFilter("input", function(e){
 //		return this._hangul+this._temp;
 //	}
 //})
+
+XMLHttpRequest.prototype._send = XMLHttpRequest.prototype.send;
+
+XMLHttpRequest.prototype.send = function(body){
+	
+	this._onreadystatechange = this.onreadystatechange;
+	
+	var that = this;
+	
+	this.onreadystatechange = function(e){
+		that._onreadystatechange();
+		if(that.state != 200 && that.readyState ==4) {
+			console.log(that._app);
+			console.log(that._uuid);
+		}
+	}
+//	this._send(body);
+	console.log(body);
+//	debugger;
+}
+
+//cpr.core.ResourceLoader.setQueryProvider(function(originURL, allowsCache){
+//	
+//});
+
+
+cpr.core.ResourceLoader.setAppURLResolver(function(appId,allowsCache){
+	var qryParam = {};
+	if(!allowsCache){
+		qryParam = {
+			"v" : "24-09-19"
+		}
+	}
+	return qryParam;
+//	if(appId.indexOf("expTester")) {
+//		return "http://localhost:8080/"
+//	}
+}); 

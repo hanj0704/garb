@@ -2,9 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-51ddeaf3" version="1.0.0.0">
   <head std:sid="head-089da99c">
     <title>test</title>
-    <screen std:sid="screen-7c71e7f7" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
-    <screen std:sid="screen-a3dc077f" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
-    <screen std:sid="screen-0faee001" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <screen std:sid="screen-7c71e7f7" id="default" name="default" width="1024px" height="768px"/>
+    <screen std:sid="screen-a3dc077f" id="tablet" name="tablet" width="500px" height="667px"/>
+    <screen std:sid="screen-0faee001" id="mobile" name="mobile" width="350px" height="525px"/>
     <script std:sid="script-514034cc" src="abc.js" type="text/javascript"/>
     <cl:model std:sid="model-416a1032">
       <cl:dataset std:sid="d-set-e31fb522" id="ds1">
@@ -12,7 +12,7 @@
           <cl:datacolumn std:sid="d-column-04e7d185" name="column1"/>
           <cl:datacolumn std:sid="d-column-7bb5e935" name="column2"/>
           <cl:datacolumn std:sid="d-column-9ed43660" name="column3"/>
-          <cl:datacolumn std:sid="d-column-e6341c56" datatype="number" name="column4"/>
+          <cl:datacolumn std:sid="d-column-e6341c56" name="column4" datatype="number"/>
         </cl:datacolumnlist>
         <cl:datarowlist>
           <cl:datarow>
@@ -23,11 +23,6 @@
           </cl:datarow>
         </cl:datarowlist>
       </cl:dataset>
-      <cl:datamap std:sid="d-map-1715ff69" id="dm1">
-        <cl:datacolumnlist>
-          <cl:datacolumn comment="" std:sid="d-column-bc1410bd" defaultvalue="" name="column1"/>
-        </cl:datacolumnlist>
-      </cl:datamap>
       <cl:dataset std:sid="d-set-a75040cb" id="ds2">
         <cl:datacolumnlist>
           <cl:datacolumn std:sid="d-column-817233c7" name="label"/>
@@ -57,16 +52,22 @@
           </cl:datarow>
         </cl:datarowlist>
       </cl:dataset>
+      <cl:datamap std:sid="d-map-1715ff69" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="" std:sid="d-column-bc1410bd" name="column1" defaultvalue=""/>
+        </cl:datacolumnlist>
+      </cl:datamap>
     </cl:model>
     <cl:appspec title="밍밍밍"/>
   </head>
   <body std:sid="body-c6ae7f87" style="top:0px; left:0px; width:800px; height:600px;">
-    <cl:listener std:sid="listener-8a7140f9" handler="onBodyInit" name="init"/>
+    <cl:listener std:sid="listener-8a7140f9" name="init" handler="onBodyInit"/>
     <cl:button std:sid="button-9d90b866" id="btn1" value="Button">
-      <cl:xylayoutdata std:sid="xyl-data-a5e556bb" height="32px" horizontalAnchor="LEFT" left="20px" top="20px" verticalAnchor="TOP" width="199px"/>
+      <cl:listener std:sid="listener-f0a4cee7" name="click" handler="onBtn1Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-a5e556bb" top="20px" left="20px" width="199px" height="32px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
     <cl:combobox std:sid="c-box-90b4b92f" id="cmb1">
-      <cl:xylayoutdata std:sid="xyl-data-f05a2e92" height="20px" horizontalAnchor="LEFT" left="20px" top="62px" verticalAnchor="TOP" width="100px"/>
+      <cl:xylayoutdata std:sid="xyl-data-f05a2e92" top="62px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
       <cl:item std:sid="item-be54ee10" label="label1" value="value1"/>
       <cl:item std:sid="item-214c6b6e" label="label2" value="value2"/>
       <cl:item std:sid="item-6c5a35ce" label="label3" value="value3"/>
@@ -74,46 +75,46 @@
       <cl:item std:sid="item-34092714" label="label5" value="value5"/>
     </cl:combobox>
     <cl:radiobutton std:sid="r-button-d5f3a1a7" id="rdb1">
-      <cl:xylayoutdata std:sid="xyl-data-f66f6cd1" height="40px" horizontalAnchor="LEFT" left="20px" top="92px" verticalAnchor="TOP" width="200px"/>
+      <cl:xylayoutdata std:sid="xyl-data-f66f6cd1" top="92px" left="20px" width="200px" height="40px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:radiobutton>
     <cl:mdifolder std:sid="mdifolder-6b62d04a" id="mdi1">
-      <cl:xylayoutdata std:sid="xyl-data-4922d7af" height="240px" horizontalAnchor="LEFT" left="20px" top="142px" verticalAnchor="TOP" width="320px"/>
+      <cl:xylayoutdata std:sid="xyl-data-4922d7af" top="142px" left="20px" width="320px" height="240px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:mdifolder>
     <cl:tree std:sid="tree-8f5ec4b6" id="tre1">
-      <cl:xylayoutdata std:sid="xyl-data-64df8fbb" height="150px" horizontalAnchor="LEFT" left="350px" top="142px" verticalAnchor="TOP" width="200px"/>
+      <cl:xylayoutdata std:sid="xyl-data-64df8fbb" top="142px" left="350px" width="200px" height="150px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:tree>
     <cl:listbox std:sid="l-box-afa8a5db" id="lbx1">
-      <cl:xylayoutdata std:sid="xyl-data-e3c808c2" height="150px" horizontalAnchor="LEFT" left="560px" top="142px" verticalAnchor="TOP" width="100px"/>
+      <cl:xylayoutdata std:sid="xyl-data-e3c808c2" top="142px" left="560px" width="100px" height="150px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:listbox>
     <cl:checkboxgroup std:sid="cb-group-f89b704e" id="cbg1">
-      <cl:xylayoutdata std:sid="xyl-data-0b5ac779" height="80px" horizontalAnchor="LEFT" left="350px" top="302px" verticalAnchor="TOP" width="310px"/>
+      <cl:xylayoutdata std:sid="xyl-data-0b5ac779" top="302px" left="350px" width="310px" height="80px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:checkboxgroup>
     <cl:grid std:sid="grid-848ac3bf" id="grd1" datasetid="ds1">
-      <cl:xylayoutdata std:sid="xyl-data-df33b0ab" height="112px" horizontalAnchor="LEFT" left="230px" top="20px" verticalAnchor="TOP" width="430px"/>
+      <cl:xylayoutdata std:sid="xyl-data-df33b0ab" top="20px" left="230px" width="430px" height="112px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
       <cl:gridcolumn std:sid="g-column-b70f4d04"/>
       <cl:gridcolumn std:sid="g-column-e5a3032b"/>
       <cl:gridcolumn std:sid="g-column-1d58f287"/>
       <cl:gridcolumn std:sid="g-column-7141c3ce"/>
       <cl:gridheader std:sid="gh-band-4eb2c4d8">
         <cl:gridrow std:sid="g-row-db2c2326"/>
-        <cl:gridcell std:sid="gh-cell-fb948db3" colindex="0" rowindex="0" filterable="false" sortable="false" targetcolumnname="column1" text="column1"/>
-        <cl:gridcell std:sid="gh-cell-a796f95e" colindex="1" rowindex="0" filterable="false" sortable="false" targetcolumnname="column2" text="column2"/>
-        <cl:gridcell std:sid="gh-cell-5f6b5880" colindex="2" rowindex="0" filterable="false" sortable="false" targetcolumnname="column3" text="column3"/>
-        <cl:gridcell std:sid="gh-cell-faba5c56" colindex="3" rowindex="0" filterable="false" sortable="false" targetcolumnname="column4" text="column4"/>
+        <cl:gridcell std:sid="gh-cell-fb948db3" rowindex="0" colindex="0" targetcolumnname="column1" sortable="false" filterable="false" text="column1"/>
+        <cl:gridcell std:sid="gh-cell-a796f95e" rowindex="0" colindex="1" targetcolumnname="column2" sortable="false" filterable="false" text="column2"/>
+        <cl:gridcell std:sid="gh-cell-5f6b5880" rowindex="0" colindex="2" targetcolumnname="column3" sortable="false" filterable="false" text="column3"/>
+        <cl:gridcell std:sid="gh-cell-faba5c56" rowindex="0" colindex="3" targetcolumnname="column4" sortable="false" filterable="false" text="column4"/>
       </cl:gridheader>
       <cl:griddetail std:sid="gd-band-2b0709f9">
         <cl:gridrow std:sid="g-row-2096ae4c"/>
-        <cl:gridcell std:sid="gd-cell-61775d46" colindex="0" rowindex="0" columnname="column1"/>
-        <cl:gridcell std:sid="gd-cell-7bc0fd8f" colindex="1" rowindex="0" columnname="column2"/>
-        <cl:gridcell std:sid="gd-cell-4cdc645c" colindex="2" rowindex="0" columnname="column3"/>
-        <cl:gridcell std:sid="gd-cell-2000c4be" colindex="3" rowindex="0" columnname="column4"/>
+        <cl:gridcell std:sid="gd-cell-61775d46" rowindex="0" colindex="0" columnname="column1"/>
+        <cl:gridcell std:sid="gd-cell-7bc0fd8f" rowindex="0" colindex="1" columnname="column2"/>
+        <cl:gridcell std:sid="gd-cell-4cdc645c" rowindex="0" colindex="2" columnname="column3"/>
+        <cl:gridcell std:sid="gd-cell-2000c4be" rowindex="0" colindex="3" columnname="column4"/>
       </cl:griddetail>
     </cl:grid>
     <cl:inputbox std:sid="i-box-d045ded9" id="ipb1">
-      <cl:xylayoutdata std:sid="xyl-data-aefbc91d" height="20px" horizontalAnchor="LEFT" left="119px" top="62px" verticalAnchor="TOP" width="100px"/>
+      <cl:xylayoutdata std:sid="xyl-data-aefbc91d" top="62px" left="119px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:inputbox>
     <cl:tabfolder std:sid="t-folder-63b1759e" id="tb1">
-      <cl:xylayoutdata std:sid="xyl-data-4f641f09" height="362px" horizontalAnchor="LEFT" left="670px" top="20px" verticalAnchor="TOP" width="334px"/>
+      <cl:xylayoutdata std:sid="xyl-data-4f641f09" top="20px" left="670px" width="334px" height="362px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
       <cl:tabitem std:sid="t-item-8bf13c59" selected="true" text="tab1">
         <std:metadata>
           <std:property key="is-active-item" value="true"/>
@@ -127,19 +128,19 @@
       </cl:tabitem>
     </cl:tabfolder>
     <cl:embeddedapp std:sid="e-app-254d98b3" id="ea1">
-      <cl:xylayoutdata std:sid="xyl-data-aaa20d14" height="240px" horizontalAnchor="LEFT" left="20px" top="392px" verticalAnchor="TOP" width="320px"/>
+      <cl:xylayoutdata std:sid="xyl-data-aaa20d14" top="392px" left="20px" width="320px" height="240px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:embeddedapp>
     <cl:button std:sid="button-d914e967" id="btn2" value="Button">
-      <cl:listener std:sid="listener-3d4ea16e" handler="onBtn2Click" name="click"/>
-      <cl:xylayoutdata std:sid="xyl-data-546568d4" height="20px" horizontalAnchor="LEFT" left="378px" top="423px" verticalAnchor="TOP" width="100px"/>
+      <cl:listener std:sid="listener-3d4ea16e" name="click" handler="onBtn2Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-546568d4" top="423px" left="378px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
     <cl:button std:sid="button-a6015448" id="btn3" value="Button">
-      <cl:listener std:sid="listener-d1670570" handler="onBtn3Click" name="click"/>
-      <cl:xylayoutdata std:sid="xyl-data-f8b52d51" height="20px" horizontalAnchor="LEFT" left="378px" top="453px" verticalAnchor="TOP" width="100px"/>
+      <cl:listener std:sid="listener-d1670570" name="click" handler="onBtn3Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-f8b52d51" top="453px" left="378px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
     <cl:inputbox std:sid="i-box-36761813" id="ipb2" value="교교교교자">
-      <cl:listener std:sid="listener-65835a30" handler="onIpb2Select" name="select"/>
-      <cl:xylayoutdata std:sid="xyl-data-15f0f2fe" height="20px" horizontalAnchor="LEFT" left="488px" top="453px" verticalAnchor="TOP" width="100px"/>
+      <cl:listener std:sid="listener-65835a30" name="select" handler="onIpb2Select"/>
+      <cl:xylayoutdata std:sid="xyl-data-15f0f2fe" top="453px" left="488px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:inputbox>
     <cl:xylayout std:sid="xylayout-10c88231"/>
   </body>

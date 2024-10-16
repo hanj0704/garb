@@ -24,7 +24,8 @@ function onBtn3Click(/* cpr.events.CMouseEvent */ e){
 //	console.log(dummy);
 	
 	var ipbEle = document.getElementById("uuid-"+ipb.uuid);
-
+	console.log(ipb.uuid);
+	console.log(ipbEle);
 //	b.select();
 //	document.execCommand("copy");
 //	ipbEle.select();
@@ -71,4 +72,13 @@ function onBodyInit(/* cpr.events.CEvent */ e){
 //	});
 
 //app.lookup("ds1").changeRowIndex(sourceIndex, targetIndex);
+}
+
+/*
+ * "Button" 버튼(btn1)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn1Click(e){
+	var btn1 = e.control;
+	console.log(btn1.uuid);
 }

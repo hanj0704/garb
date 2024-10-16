@@ -4,10 +4,12 @@
  *
  * @author HAN
  ************************************************/
-cpr.controls.ComboBox.prototype._getTexts = function(){
-	
-	return this._hangul+this._temp;
-};
+//cpr.controls.ComboBox.prototype._getTexts = function(){
+//	
+//	return this._hangul+this._temp;
+//};
+
+var util = createCommonUtil();
 /*
  * 루트 컨테이너에서 load 이벤트 발생 시 호출.
  * 앱이 최초 구성된후 최초 랜더링 직후에 발생하는 이벤트 입니다.
@@ -275,10 +277,33 @@ var max = 50;
  */
 function onBtn2Click(e){
 	var btn2 = e.control;
-	max = max==50 ? 200 : 50;
-	app.lookup("grp2").style.animateTo({
-							"max-height" : max+"px",
-						}, 0.3, cpr.animation.TimingFunction.EASE_IN_OUT_CUBIC);
+//	max = max==50 ? 200 : 50;
+//	app.lookup("grp2").style.animateTo({
+//							"max-height" : max+"px",
+//						}, 0.3, cpr.animation.TimingFunction.EASE_IN_OUT_CUBIC);
+////	app.lookup("sms1").send();	
+//	util.Submit.send(app, "sms1");
+	
+//	debugger;
+	
+//	var w = new btn2.constructor("btnqq");
+//	
+//	console.log(w.id);
+//	
+//	app.getContainer().addChild( w, {
+//		left: "900px",
+//		top:"100px",
+//		width: "200px",
+//		height: "100px"
+//	});
+//	for(var i in btn2) {
+//		if(i.indexOf("_") == -1){
+//			
+//			w[i] = btn2[i];
+//		}
+//		console.log(i);
+//	}
+//	debugger;
 }
 
 /*
@@ -349,4 +374,14 @@ function onIpb2Input(e){
 //		var q = ipb2;
 //		debugger
 //	},3000)
+}
+
+/*
+ * 루트 컨테이너에서 init 이벤트 발생 시 호출.
+ * 앱이 최초 구성될 때 발생하는 이벤트 입니다.
+ */
+function onBodyInit(e){
+	var q = document.getElementsByName("viewport").item(0);
+	console.log(q);
+	q.setAttribute("content", "width=2560,user-scalable=yes");
 }

@@ -4120,6 +4120,7 @@ SubmissionKit.prototype._onBeforeSubmit = function(e) {
 	 * @type cpr.protocols.Submission
 	 */
 	var submit = e.control;
+	console.log(submit.xhr);
 	var _app = submit.getAppInstance();
 	
 	//메뉴정보(메뉴키) 추가
@@ -4452,6 +4453,7 @@ SubmissionKit.prototype.send = async function(app, psSvcId, paParams, successCal
 	var _app = app;
 
 	var submission = _app.lookup(psSvcId);
+	console.log(submission.xhr);
 	if(submission == null || !(submission instanceof cpr.protocols.Submission)){
 		//요청 서브미션
 		submission = _app.lookup("subCommExbuilder_"+psSvcId);
@@ -4637,7 +4639,7 @@ SubmissionKit.prototype.send = async function(app, psSvcId, paParams, successCal
 	}
 	
 //	var vbWithAwait = !!(poOption).withAwait;
-	var vsFuncName = (successCallback.constructor.name+"").toLowerCase();
+	var vsFuncName = successCallback?  (successCallback.constructor.name+"").toLowerCase() : "function";
 	var vbWithAwait = vsFuncName == "asyncfunction" ? true : false;
 	
 	var vbSuccess = true;
@@ -4684,6 +4686,7 @@ SubmissionKit.prototype.send = async function(app, psSvcId, paParams, successCal
 		});
 	} else {
 			
+		console.log(submission.xhr);
 		return submission.send();
 	}
 };
