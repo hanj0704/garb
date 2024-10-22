@@ -9,7 +9,10 @@ function eventStopper(e){
     e.stopPropagation();
     e.preventDefault();
 }
-
+/**
+ * 
+ * @param {cpr.controls.Container} pcContainer
+ */
 function SlideSlope(pcContainer) {
     if(pcContainer.type != "container" || pcContainer.getLayout().type != "flowlayout") {
         return;
@@ -25,6 +28,7 @@ function SlideSlope(pcContainer) {
             index:idx
         }
     });
+    /** @type cpr.controls.Container */
     this._slope = null;
 //    this._setup(pcContainer.getAppInstance());
 
@@ -64,7 +68,7 @@ SlideSlope.prototype.ride = function(){
     vcContainerSlope.clipContent = true;
 
     let vcFlowLayout = new cpr.controls.layouts.FlowLayout();
-    vcFlowLayout.scrollable = true;
+    vcFlowLayout.scrollable = false;
     vcFlowLayout.lineWrap = false;
 
     this._originHSpacing = this._layout.horizontalSpacing;
@@ -94,6 +98,11 @@ SlideSlope.prototype.ride = function(){
         height:"100%"
     });
 
+	var q = new Pagination(this);
+	if(!this.isInfinite){
+		q.create();
+	}
+//	this._pageNa
     this._slope.addEventListener("mousedown",this._onMouseDown);
 //    this._slope.addEventListener("touchstart",this._onToucnStart);
 }
@@ -139,6 +148,11 @@ SlideSlope.prototype.showPrev = function(){
         let movement = this._slope.getViewPortRect().x - this._originHSpacing - this._slope.getChildren()[target].getOffsetRect().x;
         this._slope.adjustScroll(-movement,0,this.animateTime,cpr.animation.TimingFunction.EASE_IN);
     }
+}
+
+SlideSlope.prototype.moveToItem = function(index){
+	let movement = this._slope.getChildren()[index].getOffsetRect().x - this._slope.getViewPortRect().x - this._originHSpacing;
+     this._slope.adjustScroll(movement,0,this.animateTime,cpr.animation.TimingFunction.EASE_IN);
 }
 
 SlideSlope.prototype._reorder2 = function(nowIndex,targetIndex) {
@@ -289,7 +303,7 @@ SlideSlope.prototype._onTouchMove = function(e){
             document.body.style.overflowY = "hidden";
             let delta = this._prevX - now;
             this._prevX = now;
-            this._slope.adjustScroll(detlta,0);
+            this._slope.adjustScroll(delta,0);
             
             if(this.isInfinite) {
                 this._autoReorder();
@@ -323,6 +337,68 @@ SlideSlope.prototype.autoPlay = function(){
     let that = this;
     this._interval = setInterval(that.showNext.bind(that),that.animateDuration*1000);
 }
+
+/**
+ * 
+ * @param {SlideSlope} target
+ */
+function Pagination(target){
+	this._target = target;
+	this.pageLength = Math.ceil(target._slope.getChildren().length / target.moveItemCount);
+	console.log(target._slope.getChildren().length);
+	console.log(target.moveItemCount);
+	
+//	this.create();
+	
+	
+//	target._slope
+//	var vnChildLength = container.getChildren().length;
+//	var vn
+	
+	
+}
+
+Pagination.prototype.update = function(){
+	
+}
+
+Pagination.prototype.create = function(){
+	
+	var vnPageLength = this.pageLength;
+	
+	var vcPageContainer = new cpr.controls.Container();
+//	vcPageContainer.style.css("background-color", "red");
+	var voFlowLayout = new cpr.controls.layouts.FlowLayout();
+	voFlowLayout.scrollable = false;
+	voFlowLayout.horizontalSpacing = 5;
+	voFlowLayout.horizontalAlign = "center";
+	voFlowLayout.verticalAlign="middle";
+	vcPageContainer.setLayout(voFlowLayout);
+	var that = this._target;
+	for(var i=0;i<vnPageLength;i++) {
+		
+		var indexButton = new cpr.controls.Button();
+		indexButton.userAttr("index", i+"");
+		indexButton.addEventListener("click", function(e){
+			that.moveToItem(Number(e.control.userAttr("index")));
+		});
+		indexButton.style.addClass("page-button");
+		vcPageContainer.addChild(indexButton, {
+			"width" : "10px",
+			"height": "10px",
+			"autoSize":"none"
+		});
+	}
+	
+	this._target._container.floatControl(vcPageContainer,{
+		"bottom":"0px",
+		"height":"20px",
+		"width":"100px",
+		"left": "calc(50% - 40px)"
+	});
+	
+}
+
 
 globals.createSlope = function(pcContainer) {
     return new SlideSlope(pcContainer);

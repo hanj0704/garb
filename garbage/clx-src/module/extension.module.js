@@ -4120,7 +4120,6 @@ SubmissionKit.prototype._onBeforeSubmit = function(e) {
 	 * @type cpr.protocols.Submission
 	 */
 	var submit = e.control;
-	console.log(submit.xhr);
 	var _app = submit.getAppInstance();
 	
 	//메뉴정보(메뉴키) 추가
@@ -4453,7 +4452,6 @@ SubmissionKit.prototype.send = async function(app, psSvcId, paParams, successCal
 	var _app = app;
 
 	var submission = _app.lookup(psSvcId);
-	console.log(submission.xhr);
 	if(submission == null || !(submission instanceof cpr.protocols.Submission)){
 		//요청 서브미션
 		submission = _app.lookup("subCommExbuilder_"+psSvcId);
@@ -4644,10 +4642,17 @@ SubmissionKit.prototype.send = async function(app, psSvcId, paParams, successCal
 	
 	var vbSuccess = true;
 	var _this = this;
+//	var calle = this.send;
+//	var argus = arguments;
 	submission.addEventListenerOnce("before-submit", function(e){
 		_this._onBeforeSubmit(e);
 	});
-	
+	submission.addEventListenerOnce("before-send",function(ev){
+		console.log(ev.control.xhr);
+		var xhr = ev.control.xhr;
+		xhr._app = app;
+		xhr._sub = ev.control;
+	})
 	if(submission.userAttr("responseType") === "TSV"){
 		submission.addEventListener("submit-load-progress", function(e){
 			_this._onSubmitLoadProgress(e);
@@ -4678,15 +4683,13 @@ SubmissionKit.prototype.send = async function(app, psSvcId, paParams, successCal
 	}
 	
 	this._appKit._activeSubmission[this._appKit._activeSubmission.length] = submission;
-	
+	console.log("ㅌX");
 	if(vbWithAwait) {
-		
 		return submission.send().then(async function(input){
 			await callbackFunc.apply(null,doneResult);
 		});
 	} else {
 			
-		console.log(submission.xhr);
 		return submission.send();
 	}
 };

@@ -127,17 +127,16 @@ var CPR_DEFAULTS = {
 		},
 		verticallayout: {
 			spacing: 16,
-			scrollable: false
+			scrollable: true
 		},
 		flowlayout: {
-			scrollable: false,
+			scrollable: true,
 			verticalAlign: "middle",
 			horizontalSpacing: 8,
 			verticalSpacing: 4
 		}
 	},
 	environment: {
-		uuidGenMethod: "insecure",
-		preferNativeScroll: false
+		preferNativeScroll: true
 	}
 }

@@ -146,6 +146,18 @@
       <cl:datamapbind property="value" datacontrolid="dm1" columnname="column2"/>
       <cl:xylayoutdata std:sid="xyl-data-4576b590" top="588px" left="794px" width="223px" height="39px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:inputbox>
+    <cl:button std:sid="button-60356407" value="fetch">
+      <cl:listener std:sid="listener-7370b373" name="click" handler="onButtonClick5"/>
+      <cl:xylayoutdata std:sid="xyl-data-d9ceba9e" top="20px" left="794px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-d16667d6" id="btn3" value="Button">
+      <cl:listener std:sid="listener-a503de8c" name="click" handler="onBtn3Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-c661c2b2" top="393px" left="811px" width="175px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:fileinput std:sid="f-input-b128b705" id="fi1">
+      <cl:listener std:sid="listener-73473f5d" name="value-change" handler="onFi1ValueChange"/>
+      <cl:xylayoutdata std:sid="xyl-data-3072e350" top="356px" left="811px" width="175px" height="27px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:fileinput>
     <cl:xylayout std:sid="xylayout-7dcad74b"/>
   </body>
   <std:studiosetting>

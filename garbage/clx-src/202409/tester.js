@@ -19,7 +19,7 @@ function onBodyInit(e){
  */
 function onBodyLoad(e){
 	slide = createSlope(app.lookup("grp1"));
-	slide.isInfinite = true;
+	slide.isInfinite = false;
 	slide.moveItemCount = 1;
 	slide.showCount = 3;
 	

@@ -94,7 +94,7 @@ function onBtn1Click(e){
 	sub.addFileParameter("test", new Blob([JSON.stringify(data)],{type:"application/json"}));
 	sub.send();
 	
-	app.lookup("t1").name
+//	app.lookup("t1").name
 //	app.lookup("t1").getSelectedTabItem().userAtt
 }
 

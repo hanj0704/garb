@@ -7,24 +7,35 @@
     <cl:model std:sid="model-49555320"/>
     <cl:appspec/>
   </head>
-  <body std:sid="body-3fae405d" class="y-none">
+  <body std:sid="body-3fae405d" class="tt">
     <cl:listener std:sid="listener-71422035" name="init" handler="onBodyInit"/>
     <cl:listener std:sid="listener-1a97edbb" name="transitionend" handler="onBodyTransitionend"/>
     <cl:listener std:sid="listener-f4293f8f" name="animationend" handler="onBodyAnimationend"/>
     <cl:listener std:sid="listener-45e18650" name="transitionstart" handler="onBodyTransitionstart"/>
-    <cl:listener std:sid="listener-1f5b44cf" name="scroll" handler="onBodyScroll"/>
     <cl:listener std:sid="listener-8968f30b" name="load" handler="onBodyLoad"/>
+    <cl:listener std:sid="listener-0b731749" name="scroll" handler="onBodyScroll2"/>
     <cl:group std:sid="group-6acc529d" id="g1" style="background-color:black; background-image:none;">
       <cl:listener std:sid="listener-9cce86b0" name="scroll" handler="onGroupScroll"/>
+      <cl:attribute name="section" value="Y"/>
       <cl:verticaldata std:sid="v-data-f883cc1a" width="400px" height="900px"/>
+      <cl:button std:sid="button-4cb53248" value="Button">
+        <cl:listener std:sid="listener-4c723134" name="click" handler="onButtonClick"/>
+        <cl:xylayoutdata std:sid="xyl-data-bbfb4a11" top="66px" left="120px" width="336px" height="96px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      </cl:button>
+      <cl:button std:sid="button-e77e2202" value="Button">
+        <cl:listener std:sid="listener-c958037a" name="click" handler="onButtonClick2"/>
+        <cl:xylayoutdata std:sid="xyl-data-3e15a66d" top="166px" left="120px" width="336px" height="96px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      </cl:button>
       <cl:xylayout std:sid="xylayout-f6ac9763"/>
     </cl:group>
     <cl:group std:sid="group-95994875" style="background-color:aliceBlue; background-image:none;">
       <cl:listener std:sid="listener-fed1f3bc" name="scroll" handler="onGroupScroll3"/>
+      <cl:attribute name="section" value="Y"/>
       <cl:verticaldata std:sid="v-data-da57a0c8" width="400px" height="900px"/>
       <cl:group std:sid="group-78be0a1d">
         <cl:listener std:sid="listener-7d4c05aa" name="scroll" handler="onGroupScroll2"/>
         <cl:listener std:sid="listener-69a0deb8" name="mouseenter" handler="onGroupMouseenter"/>
+        <cl:attribute name="scrollTarget" value="Y"/>
         <cl:xylayoutdata std:sid="xyl-data-cde7aa6f" top="121px" left="470px" width="456px" height="626px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
         <cl:button std:sid="button-9beae58f" value="Button">
           <cl:verticaldata std:sid="v-data-06b6e866" width="100px" height="300px"/>
@@ -67,14 +78,16 @@
       <cl:xylayout std:sid="xylayout-bc026533"/>
     </cl:group>
     <cl:group std:sid="group-45d0add1" style="background-color:antiqueWhite; background-image:none;">
+      <cl:attribute name="section" value="Y"/>
       <cl:verticaldata std:sid="v-data-6eae7169" width="1024px" height="900px" autosize="none"/>
       <cl:xylayout std:sid="xylayout-29d4f0af"/>
     </cl:group>
     <cl:group std:sid="group-177c54d1" style="background-color:aqua; background-image:none;">
+      <cl:attribute name="section" value="Y"/>
       <cl:verticaldata std:sid="v-data-bc46d3fc" width="1024px" height="900px" autosize="none"/>
       <cl:xylayout std:sid="xylayout-790d5642"/>
     </cl:group>
-    <cl:verticallayout std:sid="v-layout-27b3d107" scrollable="false"/>
+    <cl:verticallayout std:sid="v-layout-27b3d107" animationduration="0.7"/>
   </body>
   <std:studiosetting>
     <std:hruler/>

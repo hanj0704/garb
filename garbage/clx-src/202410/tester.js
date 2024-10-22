@@ -282,7 +282,7 @@ function onBtn2Click(e){
 //							"max-height" : max+"px",
 //						}, 0.3, cpr.animation.TimingFunction.EASE_IN_OUT_CUBIC);
 ////	app.lookup("sms1").send();	
-//	util.Submit.send(app, "sms1");
+	util.Submit.send(app, "sms1");
 	
 //	debugger;
 	
@@ -384,4 +384,41 @@ function onBodyInit(e){
 	var q = document.getElementsByName("viewport").item(0);
 	console.log(q);
 	q.setAttribute("content", "width=2560,user-scalable=yes");
+}
+
+/*
+ * "fetch" 버튼에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+async function onButtonClick5(e){
+	var button = e.control;
+	
+	var res = await fetch("tt.do",{
+		method : "POST",
+		headers : {
+			"Content-Type" : "aplication/json;charset=utf-8"
+		},
+		body:JSON.stringify({"aa":1})
+	});
+	
+	var result = await res.text();
+}
+
+/*
+ * "Button" 버튼(btn3)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn3Click(e){
+	var btn3 = e.control;
+	
+	console.log(app.lookup("sms1")._data);
+}
+
+/*
+ * 파일 인풋에서 value-change 이벤트 발생 시 호출.
+ * FileInput의 value를 변경하여 변경된 값이 저장된 후에 발생하는 이벤트.
+ */
+function onFi1ValueChange(e){
+	var fi1 = e.control;
+	util.Submit.addFileParameter(app, "sms1", e.control.file);
 }

@@ -6,7 +6,7 @@
  ************************************************/
 
 var dragManager = cpr.core.Module.require("module/ControlDragManager");
-var sldieManager = cpr.core.Module.require("module/Slidify");
+var sldieManager = cpr.core.Module.require("202405/new_swipe");
 
 /*
  * "1" 버튼(btn1)에서 mousedown 이벤트 발생 시 호출.
@@ -46,7 +46,8 @@ function onBodyInit(/* cpr.events.CEvent */ e){
     slide.autoPlayDelay = 3;
     slide.autoPlayDuration = 3.0
     slide.showCount = 1
-    slide.showPaginition = false;
+    slide.showPaginition = true;
+    slide.useInfiniteScroll = true;
     slide.navigationButtonStyle = "none"
     slide.start();
 };

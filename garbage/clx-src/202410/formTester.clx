@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-d5b8ded9" version="1.0.5337">
+  <head std:sid="head-7c39c319">
+    <screen std:sid="screen-36125bec" id="default" name="default" width="1024px" height="768px"/>
+    <screen std:sid="screen-c5863b2d" id="tablet" name="tablet" width="500px" height="667px"/>
+    <screen std:sid="screen-96f93fbf" id="mobile" name="mobile" width="350px" height="525px"/>
+    <cl:model std:sid="model-ef69e2e2"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-672807dc">
+    <cl:group std:sid="group-6432eb79">
+      <cl:formdata std:sid="f-data-f33b8b04" row="0" col="1"/>
+      <cl:button std:sid="button-8a22b390" value="Button">
+        <cl:formdata std:sid="f-data-ed416eba" row="0" col="2"/>
+      </cl:button>
+      <cl:button std:sid="button-98554006" value="Button">
+        <cl:formdata std:sid="f-data-9e7654ac" row="1" col="0"/>
+      </cl:button>
+      <cl:button std:sid="button-60910dd8" value="Button">
+        <cl:formdata std:sid="f-data-0e7a8485" row="1" col="2"/>
+      </cl:button>
+      <cl:button std:sid="button-c4c02c89" value="Button">
+        <cl:formdata std:sid="f-data-c853e775" row="2" col="1"/>
+      </cl:button>
+      <cl:button std:sid="button-b7b4465c" value="Button">
+        <cl:formdata std:sid="f-data-0b6ab673" row="2" col="2"/>
+      </cl:button>
+      <cl:button std:sid="button-9b8d82a7" value="Button">
+        <cl:formdata std:sid="f-data-dc20470d" row="3" col="0"/>
+      </cl:button>
+      <cl:button std:sid="button-89a6d9d8" value="Button">
+        <cl:formdata std:sid="f-data-c073977a" row="3" col="2"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-53057de1" scrollable="false" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="100" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="100" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-77e3f575">
+      <cl:formdata std:sid="f-data-1510fbc4" row="1" col="1"/>
+      <cl:xylayout std:sid="xylayout-c605bb22"/>
+    </cl:group>
+    <cl:group std:sid="group-bd5702d1">
+      <cl:formdata std:sid="f-data-7cab28c8" row="2" col="2"/>
+      <cl:xylayout std:sid="xylayout-9d017ec8"/>
+    </cl:group>
+    <cl:group std:sid="group-e6b7b379">
+      <cl:formdata std:sid="f-data-28138a87" row="3" col="2"/>
+      <cl:xylayout std:sid="xylayout-dc281542"/>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-823d7a94" scrollable="false" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

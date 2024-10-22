@@ -26,13 +26,16 @@ XMLHttpRequest.prototype.send = function(body){
 	this._onreadystatechange = this.onreadystatechange;
 	
 	var that = this;
-	
 	this.onreadystatechange = function(e){
 		that._onreadystatechange();
 		if(that.state != 200 && that.readyState ==4) {
 			console.log(that._app);
 			console.log(that._uuid);
 		}
+	}
+	if(that.hasOwnProperty("_app")) {
+		that._sub._data = body;
+		that._sub.abort();
 	}
 //	this._send(body);
 	console.log(body);
