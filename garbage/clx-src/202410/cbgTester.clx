@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-6a131162" version="1.0.5346">
+  <head std:sid="head-cd952c75">
+    <screen std:sid="screen-08336ed9" id="default" name="default" width="1024px" height="768px"/>
+    <screen std:sid="screen-817d7ab6" id="tablet" name="tablet" width="500px" height="667px"/>
+    <screen std:sid="screen-4722b44d" id="mobile" name="mobile" width="350px" height="525px"/>
+    <cl:model std:sid="model-8b100154">
+      <cl:dataset std:sid="d-set-b3a717e6" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-8b358fbe" name="column1"/>
+          <cl:datacolumn std:sid="d-column-3bcc2f19" name="column2"/>
+          <cl:datacolumn std:sid="d-column-e613a358" name="column3"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column11</cl:datavalue>
+            <cl:datavalue columnname="column2">column21</cl:datavalue>
+            <cl:datavalue columnname="column3">column31</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column12</cl:datavalue>
+            <cl:datavalue columnname="column2">column22</cl:datavalue>
+            <cl:datavalue columnname="column3">column32</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column13</cl:datavalue>
+            <cl:datavalue columnname="column2">column23</cl:datavalue>
+            <cl:datavalue columnname="column3">column33</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column14</cl:datavalue>
+            <cl:datavalue columnname="column2">column24</cl:datavalue>
+            <cl:datavalue columnname="column3">column34</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column15</cl:datavalue>
+            <cl:datavalue columnname="column2">column25</cl:datavalue>
+            <cl:datavalue columnname="column3">column35</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column16</cl:datavalue>
+            <cl:datavalue columnname="column2">column26</cl:datavalue>
+            <cl:datavalue columnname="column3">column36</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column17</cl:datavalue>
+            <cl:datavalue columnname="column2">column27</cl:datavalue>
+            <cl:datavalue columnname="column3">column37</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column18</cl:datavalue>
+            <cl:datavalue columnname="column2">column28</cl:datavalue>
+            <cl:datavalue columnname="column3">column38</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column19</cl:datavalue>
+            <cl:datavalue columnname="column2">column29</cl:datavalue>
+            <cl:datavalue columnname="column3">column39</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column110</cl:datavalue>
+            <cl:datavalue columnname="column2">column210</cl:datavalue>
+            <cl:datavalue columnname="column3">column310</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column111</cl:datavalue>
+            <cl:datavalue columnname="column2">column211</cl:datavalue>
+            <cl:datavalue columnname="column3">column311</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-4fce72b0">
+    <cl:checkboxgroup std:sid="cb-group-7a348f5c" id="cbg1" hideicon="true">
+      <cl:listener std:sid="listener-72e58eb0" name="selection-change" handler="onCbg1SelectionChange"/>
+      <cl:xylayoutdata std:sid="xyl-data-6192e8c7" top="20px" left="20px" width="462px" height="152px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:item std:sid="item-c34b0710" label="label1" value="value1"/>
+      <cl:item std:sid="item-87e23451" label="label2" value="value2"/>
+      <cl:item std:sid="item-1308e507" label="label3" value="value3"/>
+      <cl:item std:sid="item-d9259376" label="label4" value="value4"/>
+      <cl:item std:sid="item-49769257" label="label5" value="value5"/>
+      <cl:item std:sid="item-774c0ffd" label="label6" value="value6"/>
+      <cl:item std:sid="item-0393e1ed" label="label7" value="value7"/>
+    </cl:checkboxgroup>
+    <cl:checkboxgroup std:sid="cb-group-e0abde04" id="cbg2">
+      <cl:listener std:sid="listener-954876b0" name="selection-change" handler="onCbg2SelectionChange"/>
+      <cl:xylayoutdata std:sid="xyl-data-9215809c" top="182px" left="20px" width="462px" height="152px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:itemset datasetid="ds1" label="column1" value="column1"/>
+    </cl:checkboxgroup>
+    <cl:output std:sid="output-f24fc39c" value="선행데이터로 아이템을 만든 체크박스그룹">
+      <cl:xylayoutdata std:sid="xyl-data-f79ff5ab" top="20px" left="492px" width="323px" height="65px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:output std:sid="output-ba2c2212" value="데이터셋을 연결한 체크박스그룹">
+      <cl:xylayoutdata std:sid="xyl-data-bab8921e" top="182px" left="492px" width="323px" height="65px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:group std:sid="group-05c8ec3a" clipcontent="false">
+      <cl:xylayoutdata std:sid="xyl-data-1aa69e66" top="344px" left="24px" width="454px" height="169px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:button std:sid="button-1f2871cd" id="b1" value="Button">
+        <cl:listener std:sid="listener-aec60fc0" name="click" handler="onB1Click"/>
+        <cl:formdata std:sid="f-data-3a956b31" row="1" col="0" rowspan="1" colspan="2"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-0a7491f8" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="100" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:menu std:sid="menu-95d45b97">
+      <cl:xylayoutdata std:sid="xyl-data-ebbd58c4" top="523px" left="24px" width="610px" height="170px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:menuitem std:sid="m-item-1470404f" label="label1" value="value1"/>
+      <cl:menuitem std:sid="m-item-907e5724" label="label2" value="value2"/>
+      <cl:menuitem std:sid="m-item-60e97838" label="label3" value="value3"/>
+      <cl:menuitem std:sid="m-item-90b6850c" label="label4" value="value4"/>
+      <cl:menuitem std:sid="m-item-7ceab3f8" label="label5" value="value5"/>
+      <cl:menuitem std:sid="m-item-ca993fca" label="label6" value="value6"/>
+    </cl:menu>
+    <cl:radiobutton std:sid="r-button-d05cc902" id="rdb1" hideicon="true">
+      <cl:xylayoutdata std:sid="xyl-data-8a7604cd" top="381px" left="519px" width="308px" height="104px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:item std:sid="item-cf6f3940" label="label1" value="value1"/>
+      <cl:item std:sid="item-71824dc4" label="label2" value="value2"/>
+      <cl:item std:sid="item-24c06314" label="label3" value="value3"/>
+      <cl:item std:sid="item-6f6a10a4" label="label4" value="value4"/>
+      <cl:item std:sid="item-fe7537d7" label="label5" value="value5"/>
+      <cl:item std:sid="item-aba06a97" label="label6" value="value6"/>
+    </cl:radiobutton>
+    <cl:xylayout std:sid="xylayout-3500893c"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

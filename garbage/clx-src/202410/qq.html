@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서명 캔버스</title>
+</head>
+<body>
+    <div style="width: 300px; height: 200px;">
+        <canvas id="signatureCanvas" style="border: 1px solid black;"></canvas>
+    </div>
+    <button id="saveButton">서명 저장</button>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script>
+        const canvas = document.getElementById("signatureCanvas");
+        const ctx = canvas.getContext("2d");
+        let drawing = false;
+
+        canvas.addEventListener("mousedown", (e) => {
+            drawing = true;
+            ctx.beginPath();
+            ctx.moveTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
+        });
+
+        canvas.addEventListener("mousemove", (e) => {
+            if (!drawing) return;
+            ctx.lineTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
+            ctx.stroke();
+        });
+
+        canvas.addEventListener("mouseup", () => {
+            drawing = false;
+        });
+
+        document.getElementById("saveButton").addEventListener("click", () => {
+            html2canvas(canvas).then((canvasImage) => {
+                const link = document.createElement("a");
+                link.href = canvasImage.toDataURL("image/png");
+                link.download = "signature.png";
+                link.click();
+            });
+        });
+    </script>
+</body>
+</html>

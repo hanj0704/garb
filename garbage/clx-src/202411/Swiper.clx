@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ad4c62f7" version="1.0.5346">
+  <head std:sid="head-2b6da2e3">
+    <screen std:sid="screen-e314fdc1" id="default" name="default" width="1024px" height="768px" useCustomWidth="true" customHeight="600" customWidth="1600" active="true"/>
+    <screen std:sid="screen-fdf96acc" id="tablet" name="tablet" width="500px" height="667px"/>
+    <screen std:sid="screen-6318a5b8" id="mobile" name="mobile" width="350px" height="525px"/>
+    <cl:model std:sid="model-e07b1767"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-d00375b3">
+    <cl:listener std:sid="listener-b7580f84" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-fe91b8bc">
+      <cl:verticaldata std:sid="v-data-d262bc0a" width="400px" height="485px"/>
+      <cl:group std:sid="group-47f55d42" id="grpSlide" class="grp-slide">
+        <cl:verticaldata std:sid="v-data-da463baf" width="1200px" height="312px"/>
+        <cl:button std:sid="button-60252b67" value="Button">
+          <cl:flowlayoutdata std:sid="f-data-41dc7a77" width="100%" height="100%"/>
+        </cl:button>
+        <cl:button std:sid="button-be5e472c" value="Button">
+          <cl:flowlayoutdata std:sid="f-data-ecc40cc7" width="100%" height="100%"/>
+        </cl:button>
+        <cl:button std:sid="button-fa47b79a" value="Button">
+          <cl:flowlayoutdata std:sid="f-data-dacd2bd8" width="100%" height="100%"/>
+        </cl:button>
+        <cl:button std:sid="button-fa6fb02d" value="Button">
+          <cl:flowlayoutdata std:sid="f-data-fa592979" width="100%" height="100%"/>
+        </cl:button>
+        <cl:button std:sid="button-38d2c50a" value="Button">
+          <cl:flowlayoutdata std:sid="f-data-e69d8ab2" width="100%" height="100%"/>
+        </cl:button>
+        <cl:flowlayout std:sid="f-layout-feade184" scrollable="false" hspacing="0" vspacing="0"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-dcd644e3" distribution="center" spacing="0" leftmargin="0" rightmargin="0" topmargin="80" bottommargin="80"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-0cb6b764"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ac29dd99" version="1.0.5346">
+  <head std:sid="head-a491f94a">
+    <screen std:sid="screen-81c24953" id="default" name="default" width="1024px" height="768px"/>
+    <screen std:sid="screen-6e66218e" id="tablet" name="tablet" width="500px" height="667px"/>
+    <screen std:sid="screen-0703926f" id="mobile" name="mobile" width="350px" height="525px"/>
+    <cl:model std:sid="model-ee441bff">
+      <cl:submission std:sid="submission-6fc4d299" id="sms1" action="a.do"/>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-e68c2f6e">
+    <cl:listener std:sid="listener-1ec7b91d" name="load" handler="onBodyLoad"/>
+    <cl:button std:sid="button-ed91b070" value="그냥 반대쪽에 열기">
+      <cl:listener std:sid="listener-808cf565" name="click" handler="onButtonClick"/>
+      <cl:xylayoutdata std:sid="xyl-data-154780d0" top="20px" left="20px" width="158px" height="49px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:button std:sid="button-7f206ff8" value="설정하고 열기">
+      <cl:listener std:sid="listener-826cb82d" name="click" handler="onButtonClick2"/>
+      <cl:xylayoutdata std:sid="xyl-data-39a8a2c7" top="79px" left="20px" width="158px" height="49px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-933687c6"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -5,6 +5,44 @@
  * @author HAN
  ************************************************/
 
+var logs = [];
+
+console._error = console.error;
+
+console.error = function(){
+	
+	this._error.apply(null, arguments);
+	logs.push({"type":"_error","msg":Array.from(arguments)});
+	
+}
+cpr.core.Platform.INSTANCE.onerror = function(report){
+	console.log(report);
+};
+
+
+console._all = function(){
+	
+	logs.forEach(function(each){
+		var callee = console[each.type];
+		callee(each.msg.join("\n"));
+	});
+}
+
+//console._error = console.error;
+//
+//console.error = function(){
+//	
+//	if(!window.hasOwnProperty("_logs")) {
+//		window["_logs"] = [];
+//	}
+//	this._error.apply(null, arguments);
+//	debugger;
+//	
+//}
+//cpr.core.Platform.INSTANCE.onerror = function(report){
+//	console.log(report);
+//};
+
 cpr.events.EventBus.INSTANCE.addFilter("input", function(e){
 	var control = e.control;
 	
@@ -19,28 +57,28 @@ cpr.events.EventBus.INSTANCE.addFilter("input", function(e){
 //	}
 //})
 
-XMLHttpRequest.prototype._send = XMLHttpRequest.prototype.send;
-
-XMLHttpRequest.prototype.send = function(body){
-	
-	this._onreadystatechange = this.onreadystatechange;
-	
-	var that = this;
-	this.onreadystatechange = function(e){
-		that._onreadystatechange();
-		if(that.state != 200 && that.readyState ==4) {
-			console.log(that._app);
-			console.log(that._uuid);
-		}
-	}
-	if(that.hasOwnProperty("_app")) {
-		that._sub._data = body;
-		that._sub.abort();
-	}
-//	this._send(body);
-	console.log(body);
-//	debugger;
-}
+//XMLHttpRequest.prototype._send = XMLHttpRequest.prototype.send;
+//
+//XMLHttpRequest.prototype.send = function(body){
+//	
+//	this._onreadystatechange = this.onreadystatechange;
+//	
+//	var that = this;
+//	this.onreadystatechange = function(e){
+//		that._onreadystatechange();
+//		if(that.state != 200 && that.readyState ==4) {
+//			console.log(that._app);
+//			console.log(that._uuid);
+//		}
+//	}
+//	if(that.hasOwnProperty("_app")) {
+//		that._sub._data = body;
+//		that._sub.abort();
+//	}
+////	this._send(body);
+//	console.log(body);
+////	debugger;
+//}
 
 //cpr.core.ResourceLoader.setQueryProvider(function(originURL, allowsCache){
 //	

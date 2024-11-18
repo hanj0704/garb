@@ -277,12 +277,12 @@ var max = 50;
  */
 function onBtn2Click(e){
 	var btn2 = e.control;
-//	max = max==50 ? 200 : 50;
-//	app.lookup("grp2").style.animateTo({
-//							"max-height" : max+"px",
-//						}, 0.3, cpr.animation.TimingFunction.EASE_IN_OUT_CUBIC);
+	max = max==50 ? 200 : 50;
+	app.lookup("grp2").style.animateTo({
+							"max-height" : max+"px",
+						}, 0.3, cpr.animation.TimingFunction.EASE_IN_OUT_CUBIC);
 ////	app.lookup("sms1").send();	
-	util.Submit.send(app, "sms1");
+//	util.Submit.send(app, "sms1");
 	
 //	debugger;
 	
@@ -421,4 +421,72 @@ function onBtn3Click(e){
 function onFi1ValueChange(e){
 	var fi1 = e.control;
 	util.Submit.addFileParameter(app, "sms1", e.control.file);
+}
+
+/*
+ * 루트 컨테이너에서 scroll 이벤트 발생 시 호출.
+ * 그룹 컨텐츠가 스크롤될 때 발생하는 이벤트.
+ */
+function onBodyScroll(e){
+	var group = e.control;
+	console.log(e.scrollTop);
+}
+
+/*
+ * "Button" 버튼에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onButtonClick6(e){
+	var button = e.control;
+	
+
+//	app.lookup("msm1").addRequestData("qq", [1,2,3,4,5]);
+//	
+//	app.lookup("msm1").send();
+}
+
+/*
+ * "Button" 버튼에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onButtonClick7(e){
+	var button = e.control;
+	
+	throw new Error("ㅋㅋ");
+}
+
+/*
+ * "Button" 버튼에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onButtonClick8(e){
+	var button = e.control;
+	
+	app.lookup("sms2").send();
+}
+
+/*
+ * "Button" 버튼에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onButtonClick9(e){
+	var button = e.control;
+	app.lookup("sms3").send();
+}
+
+/*
+ * "Button" 버튼(btn1)에서 click 이벤트 발생 시 호출.
+ * 사용자가 컨트롤을 클릭할 때 발생하는 이벤트.
+ */
+function onBtn1Click(e){
+	var btn1 = e.control;
+	/** @type Promise */
+	var q = getScreenDetails();
+	
+	q.then(function(input){
+		console.log(input);
+	}).catch(function(error){
+		//permission denied에 대한 권한 허용 요청 팝업 처리
+		console.log("permission denied에 대한 권한 허용 요청 팝업 처리");
+	});
 }

@@ -39,14 +39,6 @@ cpr.events.EventBus.INSTANCE.addFilter("mouseenter", function(e){
 	}
 });
 function wheel(e){
-//	console.log(e);
-//	console.log(e);
-//	app.
-//	e.preventDefault();
-//	e.stopPropagation();
-	
-//	var target = 
-//	if(scrTargets.length > 0) {
 		
 		var x = e.clientX;
 		var y = e.clientY;
@@ -58,7 +50,6 @@ function wheel(e){
 		if(qw && !scrollEnd) {
 			return;
 		}
-//	}
 	if(transitioned) {
 		return;
 	}
@@ -93,22 +84,6 @@ window.addEventListener("wheel", wheel,{
  * 앱이 최초 구성될 때 발생하는 이벤트 입니다.
  */
 function onBodyInit(e){
-//	document.body.style.overflowY = "hidden";
-//	var w = document.getElementById("uuid-"+q);
-//	console.log(w);
-	
-//	app.getContainer().getAllRecursiveChildren().forEach(function(each){
-//		
-//		if(each instanceof cpr.controls.Container) {
-//			
-//			if(each.)
-//		}
-//		else if(each instanceof cpr.controls.Grid) {
-//			
-//			each.scr
-//		}
-//	});
-//	app.getContainer().style.css("overflow-y","hidden !important")
 	
 }
 
@@ -138,7 +113,6 @@ function onBodyTransitionstart(e){
  */
 function onGroupScroll2(e){
 	var group = e.control;
-//	console.log(scrollTarget);
 	console.log(this);
 	if(!this.hasOwnProperty("_old")) {
 		this._old = 0;
@@ -159,17 +133,6 @@ function onGroupScroll2(e){
  * 앱이 최초 구성된후 최초 랜더링 직후에 발생하는 이벤트 입니다.
  */
 function onBodyLoad(e) {
-//		app.getContainer().getChildren().filter(function(each){
-//			return each.userAttr("section")=="Y";
-//		}).forEach(function(each){
-//		});
-//	var filtered = app.getContainer().getChildren().filter(function(each) {
-//		if (each.userAttr("section") == "Y") {
-//			each.htmlAttr("temp-id", each.uuid);
-//			return true;
-//		}
-//	})
-//	
 	var tempTarget = app.getContainer().getAllRecursiveChildren().filter(function(each) {
 		if (each.userAttr("scrollTarget") == "Y") {
 			each.htmlAttr("temp-id", each.uuid);
@@ -177,54 +140,6 @@ function onBodyLoad(e) {
 		}
 	});
 	scrTargets = tempTarget;
-//	cpr.core.DeferredUpdateManager.INSTANCE.update();
-//	
-//	filtered.forEach(function(each) {
-//		var tems = document.querySelector("[data-usr-temp-id='" + each.uuid + "']");
-////				tems.addEventListener("wheel",function(evt){
-////					console.log("오와와와");
-////					console.log(evt);
-////					evt.preventDefault();
-////					evt.stopPropagation();
-////				});
-//	});
-	
-//		scrollTarget.forEach(function(each){
-//			var temps = document.querySelector("[data-usr-temp-id='"+each.uuid+"']");
-//			console.log(temps);
-//			temps.addEventListener("wheel", function(evt){
-//				console.log(evt);
-//				evt.stopPropagation();
-//				each.addEventListenerOnce("scroll", function(evev){
-//					console.log(evev);
-//				})
-//			});
-//		});
-//		var q= document.querySelectorAll(".cl-container")
-//		console.log(q);
-//		for(var div of q) {
-//			console.log(div);
-//			div.addEventListener("wheel",qwe.bind(div),false)
-//		}
-//		
-//		app.lookup("g1").addEventListener("wheel", function(e){
-//			console.log("와");
-//		});
-//		function qwe(ev){
-//			ev.stopPropagation();
-//			console.log(ev);
-//			console.log(this);
-//			/** @type cpr.controls.Container */
-//			var q= app.lookupByUUID(this.getAttribute("data-usr-temp-id"));
-//			if(!q){
-//				return;
-//			}
-//			console.log(q);
-//			
-//			if(q.getActualRect().height < q.getContentPaneRect().height) {
-//				ev.stopPropagation();	
-//			}
-//		}
 }
 
 /*
@@ -234,8 +149,6 @@ function onBodyLoad(e) {
 function onButtonClick(e){
 	var button = e.control;
 	
-//	document.querySelector(".tt").style.transform = "matrix(0.5, 0, 0, 0.5, -100, 0)";
-//	app.getContainer().style.css("transform","matrix(0.5, 0, 0, 0.5, -100, 0)");
 	app.getContainer().style.animateTo({'transform':"matrix(0.5, 0, 0, 0.5, -100, 0)"},0.5, cpr.animation.TimingFunction.EASE_IN_OUT)
 }
 
@@ -246,5 +159,4 @@ function onButtonClick(e){
 function onButtonClick2(e){
 	var button = e.control;
 	
-//	document.querySelector(".tt").style.transform = "matrix(0.5, 0, 0, 0.5, -100, -100)";
 }

@@ -4648,6 +4648,7 @@ SubmissionKit.prototype.send = async function(app, psSvcId, paParams, successCal
 		_this._onBeforeSubmit(e);
 	});
 	submission.addEventListenerOnce("before-send",function(ev){
+		
 		console.log(ev.control.xhr);
 		var xhr = ev.control.xhr;
 		xhr._app = app;
