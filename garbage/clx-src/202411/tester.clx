@@ -19,6 +19,13 @@
       <cl:listener std:sid="listener-826cb82d" name="click" handler="onButtonClick2"/>
       <cl:xylayoutdata std:sid="xyl-data-39a8a2c7" top="79px" left="20px" width="158px" height="49px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
+    <cl:uicontrolshell std:sid="uic-shell-6bbba260" id="shl1">
+      <cl:xylayoutdata std:sid="xyl-data-be5100f5" top="38px" left="274px" width="662px" height="479px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:uicontrolshell>
+    <cl:group std:sid="group-15e64ad8" id="grp">
+      <cl:xylayoutdata std:sid="xyl-data-ab453bd8" top="138px" left="52px" width="257px" height="324px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:xylayout std:sid="xylayout-d431b081"/>
+    </cl:group>
     <cl:xylayout std:sid="xylayout-933687c6"/>
   </body>
   <std:studiosetting>

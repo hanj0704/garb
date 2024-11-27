@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable Canvas Text</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .canvas-container {
+            width: 400px;
+            height: 200px;
+            border: 1px solid #000;
+            overflow-y: scroll;
+        }
+        canvas {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="canvas-container">
+        <canvas id="myCanvas" width="400" height="800"></canvas>
+    </div>
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const context = canvas.getContext('2d');
+        let textY = 20;  // Starting y position for text
+        const texts = [];
+
+        function addText() {
+            const newText = 'Hello, world!';
+            texts.push(newText);
+
+            // 캔버스를 지우지 않고 텍스트 추가
+//             context.clearRect(0, 0, canvas.width, canvas.height);
+            context.font = '16px Arial';
+            context.fillStyle = '#000';
+
+//             texts.forEach((text, index) => {
+			textY+= 20;
+                context.fillText(newText, 10, textY);
+//             });
+        }
+
+        // Set initial font properties
+        context.font = '16px Arial';
+        context.fillStyle = '#000';
+
+        // Add initial text
+        addText();
+
+        // Simulate adding text periodically
+        setInterval(addText, 1000);
+    </script>
+</body>
+</html>

@@ -191,6 +191,10 @@
       <cl:listener std:sid="listener-9aeedd91" name="click" handler="onButtonClick9"/>
       <cl:xylayoutdata std:sid="xyl-data-867a298c" top="275px" left="917px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
+    <cl:embeddedpage std:sid="e-page-e4f15745" id="ep1" src="http://localhost:8080/ui/app/src/M-1/M11.html">
+      <cl:listener std:sid="listener-77ef570b" name="load" handler="onEp1Load"/>
+      <cl:xylayoutdata std:sid="xyl-data-0ad16a7d" top="305px" left="1044px" width="320px" height="240px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:embeddedpage>
     <cl:xylayout std:sid="xylayout-7dcad74b"/>
   </body>
   <std:studiosetting>

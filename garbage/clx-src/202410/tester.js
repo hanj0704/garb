@@ -490,3 +490,12 @@ function onBtn1Click(e){
 		console.log("permission denied에 대한 권한 허용 요청 팝업 처리");
 	});
 }
+
+/*
+ * 임베디드 페이지에서 load 이벤트 발생 시 호출.
+ * 페이지의 Load가 완료되었을 때 호출되는 Event.
+ */
+function onEp1Load(e){
+	var ep1 = e.control;
+	console.log(e);
+}
