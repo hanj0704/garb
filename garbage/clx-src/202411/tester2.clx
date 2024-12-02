@@ -12,6 +12,7 @@
       <cl:xylayoutdata std:sid="xyl-data-c863279e" top="31px" left="20px" width="739px" height="286px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
     <cl:button std:sid="button-fd2fcd25" value="Button">
+      <cl:listener std:sid="listener-885f2b4d" name="click" handler="onButtonClick"/>
       <cl:xylayoutdata std:sid="xyl-data-8a000bb0" top="358px" left="20px" width="739px" height="286px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
     </cl:button>
     <cl:xylayout std:sid="xylayout-2826f1b6"/>

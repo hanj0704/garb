@@ -26,6 +26,26 @@
       <cl:xylayoutdata std:sid="xyl-data-ab453bd8" top="138px" left="52px" width="257px" height="324px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
       <cl:xylayout std:sid="xylayout-d431b081"/>
     </cl:group>
+    <cl:accordion std:sid="accordion-b3331032" multiple="true">
+      <cl:listener std:sid="listener-710e6702" name="selection-change" handler="onAccordionSelectionChange"/>
+      <cl:xylayoutdata std:sid="xyl-data-968053be" top="485px" left="52px" width="200px" height="244px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:sectionitem std:sid="s-item-9d6f0544" title="item 1">
+        <cl:group std:sid="group-30e7788a">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:xylayout std:sid="xylayout-df49d675"/>
+        </cl:group>
+      </cl:sectionitem>
+      <cl:sectionitem std:sid="s-item-49f97eff" title="item 2">
+        <cl:group std:sid="group-73a61d87">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:xylayout std:sid="xylayout-bdb266f1"/>
+        </cl:group>
+      </cl:sectionitem>
+    </cl:accordion>
     <cl:xylayout std:sid="xylayout-933687c6"/>
   </body>
   <std:studiosetting>

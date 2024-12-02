@@ -223,3 +223,20 @@ function setPopupTargetScreen(){
 		})
 	})
 }
+
+/*
+ * 아코디언에서 selection-change 이벤트 발생 시 호출.
+ * SectionItem이 변경된 후 이벤트.
+ */
+function onAccordionSelectionChange(e){
+	var accordion = e.control;
+//	/** @type Array */
+	var q = e.newSelection;
+	if(q.length > 0) {
+		
+		console.log(q[0].expanded);
+	}
+//	var w=  accordion.getSelectedSections().indexOf(q[0])
+//	console.log(w);
+//	debugger;
+}
