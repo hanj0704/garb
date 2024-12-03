@@ -137,6 +137,7 @@ var CPR_DEFAULTS = {
 		}
 	},
 	environment: {
-		preferNativeScroll: true
+		preferNativeScroll: true,
+		uuidGenMethod: "insecure"
 	}
 }

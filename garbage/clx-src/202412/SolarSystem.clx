@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-bfc4308d" version="1.0.5384">
+  <head std:sid="head-30b79a20">
+    <screen std:sid="screen-719f8b4f" id="default" name="default" width="1024px" height="768px"/>
+    <screen std:sid="screen-056c2a97" id="tablet" name="tablet" width="500px" height="667px"/>
+    <screen std:sid="screen-5285734e" id="mobile" name="mobile" width="350px" height="525px"/>
+    <cl:model std:sid="model-baa13f30"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-6d4941ca">
+    <cl:listener std:sid="listener-b9a26191" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-fa635efb" class="solar">
+      <cl:xylayoutdata std:sid="xyl-data-1416a263" width="800px" height="800px" horizontalAnchor="CENTER" verticalAnchor="CENTER"/>
+      <cl:button std:sid="button-f638055e" id="btnEarth" class="earth" value="지">
+        <cl:xylayoutdata std:sid="xyl-data-6c72770c" width="90px" height="90px" horizontalAnchor="CENTER" verticalAnchor="CENTER"/>
+      </cl:button>
+      <cl:button std:sid="button-0c6137ee" id="btnMoon" class="moon" value="달">
+        <cl:xylayoutdata std:sid="xyl-data-403e2d57" top="302px" width="32px" height="32px" horizontalAnchor="CENTER"/>
+      </cl:button>
+      <cl:button std:sid="button-be276b85" id="btnVenus" class="venus" value="금성">
+        <cl:xylayoutdata std:sid="xyl-data-607ae0c3" top="279px" left="172px" width="78px" height="78px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      </cl:button>
+      <cl:xylayout std:sid="xylayout-fc519482"/>
+    </cl:group>
+    <cl:button std:sid="button-2520a55a" value="Button">
+      <cl:listener std:sid="listener-77ad2eac" name="click" handler="onButtonClick"/>
+      <cl:xylayoutdata std:sid="xyl-data-0c05202f" top="20px" left="20px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-79dab06c"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

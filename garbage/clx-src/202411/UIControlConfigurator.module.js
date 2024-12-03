@@ -9,7 +9,11 @@ Object.defineProperty(cpr.controls.UIControl.prototype, "_h_class", {
 			return this.style.getClasses();
 		}
 	});
-
+Object.defineProperty(cpr.controls.UIControl.prototype, "_htmlElements",{
+	get: function(){
+		return document.getElementById("uuid-"+this.uuid);
+	}
+})
 Object.defineProperty(cpr.controls.UIControl.prototype,"testProp", {
 	get : function(){
 		return new cpr.expression.Expression(this._testProp).evaluate(this.getBindContext());

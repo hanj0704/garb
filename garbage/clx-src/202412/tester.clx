@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-d3905ac2" version="1.0.5384">
+  <head std:sid="head-1939e247">
+    <screen std:sid="screen-feb5f68b" id="default" name="default" width="1024px" height="768px"/>
+    <screen std:sid="screen-66f17562" id="tablet" name="tablet" width="500px" height="667px"/>
+    <screen std:sid="screen-5ce9bd74" id="mobile" name="mobile" width="350px" height="525px"/>
+    <cl:model std:sid="model-99ec1a8d"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-cb96a17c" class="sa">
+    <cl:listener std:sid="listener-86422b59" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-bec6ffd5" class="section first">
+      <cl:verticaldata std:sid="v-data-92c6bdb4" width="400px" height="1100px"/>
+      <cl:group std:sid="group-65e52ee0" class="outer">
+        <cl:xylayoutdata std:sid="xyl-data-a87e6b49" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+        <cl:group std:sid="group-7a0fc24e" class="inner">
+          <cl:xylayoutdata std:sid="xyl-data-ea2ef15d" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+          <cl:group std:sid="group-ccf7973f" class="bg">
+            <cl:xylayoutdata std:sid="xyl-data-033bdba7" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+            <cl:output std:sid="output-cc4d5974" class="heading" value="숭구리당당 숭당당" outputtype="h2">
+              <cl:xylayoutdata std:sid="xyl-data-2fb235a5" width="1000px" height="300px" horizontalAnchor="CENTER" verticalAnchor="CENTER"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-c12a6dc6" scrollable="false"/>
+          </cl:group>
+          <cl:xylayout std:sid="xylayout-1eb3f3a6" scrollable="false"/>
+        </cl:group>
+        <cl:xylayout std:sid="xylayout-bee41599" scrollable="false"/>
+      </cl:group>
+      <cl:xylayout std:sid="xylayout-f7096995" scrollable="false"/>
+    </cl:group>
+    <cl:group std:sid="group-0ac0f06d" class="section second">
+      <cl:verticaldata std:sid="v-data-9381e1b9" width="1024px" height="1100px" autosize="none"/>
+      <cl:group std:sid="group-0aa95138" class="outer">
+        <cl:xylayoutdata std:sid="xyl-data-9001ada7" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+        <cl:group std:sid="group-0b911019" class="inner">
+          <cl:xylayoutdata std:sid="xyl-data-9707c2c2" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+          <cl:group std:sid="group-ef1ce9e0" class="bg">
+            <cl:xylayoutdata std:sid="xyl-data-9d9951aa" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+            <cl:output std:sid="output-901da6e1" class="heading" value="멋진 말" outputtype="h2">
+              <cl:xylayoutdata std:sid="xyl-data-6c65b6df" width="1000px" height="300px" horizontalAnchor="CENTER" verticalAnchor="CENTER"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-a07b8100" scrollable="false"/>
+          </cl:group>
+          <cl:xylayout std:sid="xylayout-3e120e74" scrollable="false"/>
+        </cl:group>
+        <cl:xylayout std:sid="xylayout-fb2bacf7" scrollable="false"/>
+      </cl:group>
+      <cl:xylayout std:sid="xylayout-cac4449d" scrollable="false"/>
+    </cl:group>
+    <cl:group std:sid="group-8b546cf1" class="section third">
+      <cl:verticaldata std:sid="v-data-f780404a" width="1024px" height="1100px" autosize="none"/>
+      <cl:group std:sid="group-dd13a2f4" class="outer">
+        <cl:xylayoutdata std:sid="xyl-data-0e22459b" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+        <cl:group std:sid="group-94b423e1" class="inner">
+          <cl:xylayoutdata std:sid="xyl-data-a791b703" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+          <cl:group std:sid="group-1d7daaf9" class="bg">
+            <cl:xylayoutdata std:sid="xyl-data-41e52851" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+            <cl:output std:sid="output-83d890cc" class="heading" value="난 최고야 늘 멋져" outputtype="h2">
+              <cl:xylayoutdata std:sid="xyl-data-79c5c64c" width="1000px" height="300px" horizontalAnchor="CENTER" verticalAnchor="CENTER"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-39e1acec" scrollable="false"/>
+          </cl:group>
+          <cl:xylayout std:sid="xylayout-b088d26f" scrollable="false"/>
+        </cl:group>
+        <cl:xylayout std:sid="xylayout-f96eaa98" scrollable="false"/>
+      </cl:group>
+      <cl:xylayout std:sid="xylayout-a800d3f1" scrollable="false"/>
+    </cl:group>
+    <cl:group std:sid="group-0819cb1f" class="section fourth">
+      <cl:verticaldata std:sid="v-data-1602580e" width="1024px" height="1100px" autosize="none"/>
+      <cl:group std:sid="group-5f179b59" class="outer">
+        <cl:xylayoutdata std:sid="xyl-data-a2e62038" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+        <cl:group std:sid="group-ccfab75f" class="inner">
+          <cl:xylayoutdata std:sid="xyl-data-dd1bf8b2" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+          <cl:group std:sid="group-2791e3e6" class="bg">
+            <cl:xylayoutdata std:sid="xyl-data-260192a3" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+            <cl:output std:sid="output-693ca19e" class="heading" value="내가 좀 그런편이야" outputtype="h2">
+              <cl:xylayoutdata std:sid="xyl-data-9e2819d5" width="1000px" height="300px" horizontalAnchor="CENTER" verticalAnchor="CENTER"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-7f9ec7c3" scrollable="false"/>
+          </cl:group>
+          <cl:xylayout std:sid="xylayout-5b21cda9" scrollable="false"/>
+        </cl:group>
+        <cl:xylayout std:sid="xylayout-cca09f4b" scrollable="false"/>
+      </cl:group>
+      <cl:xylayout std:sid="xylayout-fa2b6aea" scrollable="false"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-354ab2c3" scrollable="false"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>
